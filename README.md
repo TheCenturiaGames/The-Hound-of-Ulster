@@ -3,7 +3,7 @@ Project repository for the UPC project "The Hound of Ulster"
 
 ## How to use
 ### Running the Engine
-1. Download the latest release from GitHub repository.
+1. Download the latest release from our [github repository](https://github.com/UPCBasicEngine/Sobrassada_Engine).
 2. Unzip the release package into your directory.
 3. Execute **SobrassadaEngine.exe**, located in SobrassadaEngine directory.
 
