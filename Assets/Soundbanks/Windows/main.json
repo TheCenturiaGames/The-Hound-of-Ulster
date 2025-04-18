@@ -1,0 +1,91 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
+    "Language": "SFX",
+    "Hash": "{01448C00-D5EF-79A3-184A-1336D305D74F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
+    "ShortName": "main",
+    "Path": "main.bnk",
+    "Media": [
+     {
+      "Id": "44955986",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "IceGem_Blast.wav",
+      "CachePath": "E5/{E5957BD1-9406-0421-5FC8-87CDD789D341}.wem"
+     },
+     {
+      "Id": "897858080",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Teleporter.wav",
+      "CachePath": "76/{767261F8-9E65-A743-2E99-ED7EDCD73634}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3920196677",
+      "Name": "Ice_Blast",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ice_Blast",
+      "GUID": "{7CDA2D95-E03A-4602-8696-261287040C24}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4906042",
+      "DurationMax": "1.4906042",
+      "MediaRefs": [
+       {
+        "Id": "44955986"
+       }
+      ]
+     },
+     {
+      "Id": "530129416",
+      "Name": "Teleport",
+      "ObjectPath": "\\Events\\Default Work Unit\\Teleport",
+      "GUID": "{80175C61-E855-4773-A72B-C239E0CF5E27}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "13",
+      "DurationMax": "13",
+      "MediaRefs": [
+       {
+        "Id": "897858080"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1908158473",
+      "Name": "Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Pitch",
+      "GUID": "{D3F43A1C-F866-482C-A368-2D33F58CA992}"
+     },
+     {
+      "Id": "2395249601",
+      "Name": "Spatialization",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Spatialization",
+      "GUID": "{567C7AE0-F9CF-4A83-B523-D2869D369424}"
+     },
+     {
+      "Id": "2415836739",
+      "Name": "Volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Volume",
+      "GUID": "{30DC10CF-4BAB-456C-9C95-4F67C938F642}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{962A946F-861B-AF53-DD25-041DF58B61D7}"
+ }
+}
