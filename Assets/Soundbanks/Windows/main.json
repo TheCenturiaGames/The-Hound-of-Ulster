@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
     "Language": "SFX",
-    "Hash": "{01448C00-D5EF-79A3-184A-1336D305D74F}",
+    "Hash": "{32B4AA8A-521C-390C-59F1-AF9EBE8C34F3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -24,15 +24,53 @@
       "CachePath": "E5/{E5957BD1-9406-0421-5FC8-87CDD789D341}.wem"
      },
      {
+      "Id": "630978428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LowDrum.wav",
+      "CachePath": "88/{884ECE58-3FB5-C715-18FD-3F3BF253FB67}.wem"
+     },
+     {
       "Id": "897858080",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Teleporter.wav",
       "CachePath": "76/{767261F8-9E65-A743-2E99-ED7EDCD73634}.wem"
+     },
+     {
+      "Id": "1003432648",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CelticMusic_Legend.wav",
+      "CachePath": "01/{0143DA0F-C9AE-BC79-D6ED-E8E394EE120D}.wem"
+     },
+     {
+      "Id": "1011237675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlasticBucket.wav",
+      "CachePath": "02/{02FDA0F8-6D92-6A94-B4ED-93D6DC19A683}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "902301855",
+      "Name": "Bucket",
+      "ObjectPath": "\\Events\\Default Work Unit\\Bucket",
+      "GUID": "{91F328CB-2A01-4177-9C46-FE12F85A348D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74931973",
+      "DurationMax": "0.74931973",
+      "MediaRefs": [
+       {
+        "Id": "1011237675"
+       }
+      ]
+     },
      {
       "Id": "3920196677",
       "Name": "Ice_Blast",
@@ -45,6 +83,32 @@
       "MediaRefs": [
        {
         "Id": "44955986"
+       }
+      ]
+     },
+     {
+      "Id": "2306510041",
+      "Name": "LowDrum",
+      "ObjectPath": "\\Events\\Default Work Unit\\LowDrum",
+      "GUID": "{4D0683B4-A99C-4799-BB6E-4757A4C6F833}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7230834",
+      "DurationMax": "1.7230834",
+      "MediaRefs": [
+       {
+        "Id": "630978428"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{6A7AA323-177E-4166-80C2-5272C146525F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1003432648"
        }
       ]
      },
@@ -86,6 +150,6 @@
     ]
    }
   ],
-  "FileHash": "{962A946F-861B-AF53-DD25-041DF58B61D7}"
+  "FileHash": "{F30B3A4F-8AC3-37B6-D27A-FEFDDD14DD3F}"
  }
 }

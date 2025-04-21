@@ -277,6 +277,75 @@
 						<ActiveSource Name="Teleporter" ID="{66B46418-E980-41A1-AA69-5C52847F5388}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="LowDrum" ID="{D4E1F045-5559-4C1B-9DCF-E997BCE8F6A6}" ShortID="205271969">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LowDrum" ID="{2C2819F1-25BB-48D4-9DB8-6B86600EF5F8}">
+							<Language>SFX</Language>
+							<AudioFile>LowDrum.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="630978428"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LowDrum" ID="{2C2819F1-25BB-48D4-9DB8-6B86600EF5F8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PlasticBucket" ID="{5E45BA63-7C48-4181-9BAF-D0D2BA27A05B}" ShortID="287460812">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PlasticBucket" ID="{3943ABC3-108F-4769-B7F7-86A0BD3ADBB1}">
+							<Language>SFX</Language>
+							<AudioFile>PlasticBucket.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1011237675"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PlasticBucket" ID="{3943ABC3-108F-4769-B7F7-86A0BD3ADBB1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CelticMusic_Legend" ID="{E32B0CB7-F42B-4B48-A24E-FDA2934DCBA8}" ShortID="637315055">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CelticMusic_Legend" ID="{F3D847FB-8A83-4EAD-8113-1DB46C701119}">
+							<Language>SFX</Language>
+							<AudioFile>CelticMusic_Legend.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1003432648"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CelticMusic_Legend" ID="{F3D847FB-8A83-4EAD-8113-1DB46C701119}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
