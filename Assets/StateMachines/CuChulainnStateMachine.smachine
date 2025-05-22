@@ -1,0 +1,101 @@
+{
+    "StateMachine": {
+        "UID": 1713532028582928,
+        "Name": "CuChulainnStateMachine",
+        "Triggers": [
+            "idle",
+            "run",
+            "attack"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_1",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1599547681894022,
+                "ClipName": "Untitled2_Walk",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1523005150347008,
+                "ClipName": "Untitled2_Run",
+                "Loop": true
+            },
+            {
+                "ClipUID": 1549634421884671,
+                "ClipName": "Untitled2_Survey",
+                "Loop": true
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "Untitled2_Survey",
+                "Position": {
+                    "x": 210.0,
+                    "y": 120.0
+                }
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "Untitled2_Run",
+                "Position": {
+                    "x": 570.0,
+                    "y": 50.0
+                }
+            },
+            {
+                "StateName": "Attack",
+                "ClipName": "Untitled2_Walk",
+                "Position": {
+                    "x": 570.0,
+                    "y": 170.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
