@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{779746FB-8608-4B0E-A678-C4812CD4F0FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ice_Blast" ID="{7CDA2D95-E03A-4602-8696-261287040C24}">
-					<ChildrenList>
-						<Action Name="" ID="{DF19C826-FDDC-4FFE-82ED-4DC822AEF1B6}" ShortID="963048865">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="IceGem_Blast" ID="{C93A9FE7-B761-44FC-8B43-5F4E406A81B7}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Teleport" ID="{80175C61-E855-4773-A72B-C239E0CF5E27}">
-					<ChildrenList>
-						<Action Name="" ID="{6924C432-987C-4C65-B31F-E0EC2E027824}" ShortID="427608038">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Teleporter" ID="{FE684550-8ED8-418F-A3F7-F04323F1C4C3}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Music" ID="{6A7AA323-177E-4166-80C2-5272C146525F}">
 					<ChildrenList>
 						<Action Name="" ID="{AED4B3AB-FB88-4BF8-BA6B-83CEA168DCB8}" ShortID="88733060">
@@ -36,23 +14,45 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="LowDrum" ID="{4D0683B4-A99C-4799-BB6E-4757A4C6F833}">
+				<Event Name="Cave_01" ID="{B10E3B9F-4CFF-4A25-8BCB-FF4B67A91147}">
 					<ChildrenList>
-						<Action Name="" ID="{BAC8F4A3-9F1F-49FD-9F4B-8488E8E58E02}" ShortID="53034180">
+						<Action Name="" ID="{732F6B39-2EA7-4C01-9306-B15C154B7F8E}" ShortID="998024682">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LowDrum" ID="{D4E1F045-5559-4C1B-9DCF-E997BCE8F6A6}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+									<ObjectRef Name="SFX_Cave_01" ID="{4E70A53F-D3C4-4275-A227-0FFAC17ABC51}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Bucket" ID="{91F328CB-2A01-4177-9C46-FE12F85A348D}">
+				<Event Name="Cave_02" ID="{F0D741DB-7C91-400C-8B53-211DC1F269EF}">
 					<ChildrenList>
-						<Action Name="" ID="{77B7D2B0-5B18-4015-AE9A-7511B350756A}" ShortID="753266682">
+						<Action Name="" ID="{2B657956-2C05-4B9A-87AD-507A87202B9E}" ShortID="204724557">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PlasticBucket" ID="{5E45BA63-7C48-4181-9BAF-D0D2BA27A05B}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+									<ObjectRef Name="SFX_Cave_02" ID="{031306A1-E966-45EF-8500-386089B7E3C7}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Water" ID="{E2510F1E-B160-4308-A088-251D21176E0F}">
+					<ChildrenList>
+						<Action Name="" ID="{1A817F3D-0F78-4C78-AE30-C14BD4466C42}" ShortID="316682728">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Water" ID="{8ED1FAA9-3C66-4034-82C5-2914CACD47AA}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Torch" ID="{60271917-AEBD-4C76-8C38-6B743B7A12E4}">
+					<ChildrenList>
+						<Action Name="" ID="{CC929996-D96B-4570-B3C3-644B778339CC}" ShortID="1067898062">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Torch" ID="{131D8300-F78F-491A-AB84-E1EBD14102AA}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

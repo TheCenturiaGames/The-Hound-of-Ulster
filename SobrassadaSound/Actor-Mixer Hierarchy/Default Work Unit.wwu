@@ -3,324 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="IceGem_Blast" ID="{C93A9FE7-B761-44FC-8B43-5F4E406A81B7}" ShortID="282627643">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="IceGem_Blast" ID="{8C4BD62C-09CE-4C41-B619-013350F45EE0}">
-							<Language>SFX</Language>
-							<AudioFile>IceGem_Blast.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="44955986"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{889D5950-C5E7-4816-91E3-FCE73ADEF243}" ShortID="551709593">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{EEF7B77D-4806-452D-B7F7-0F2DA6CCF2B5}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-2000</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>2000</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{A13FCBF4-6688-4AE7-B389-A8696366ED37}" ShortID="392448200">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Spatialization" ID="{567C7AE0-F9CF-4A83-B523-D2869D369424}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{F2B9AC31-D1F4-48F7-872F-0A2E44A92ED9}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{0664FEEC-1258-48CD-8E85-50D5921063EE}" ShortID="785416136">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Volume"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{2BF26F77-2EA9-445C-B88A-E26D32E47BD7}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="IceGem_Blast" ID="{8C4BD62C-09CE-4C41-B619-013350F45EE0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Teleporter" ID="{FE684550-8ED8-418F-A3F7-F04323F1C4C3}" ShortID="138057069">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Teleporter" ID="{66B46418-E980-41A1-AA69-5C52847F5388}">
-							<Language>SFX</Language>
-							<AudioFile>Teleporter.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="897858080"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{369668A5-C498-4163-B27F-327BCCF7FB0E}" ShortID="390849206">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{652780D3-A7DF-4F66-946E-1ABE61BA0A12}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-2000</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>2000</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{61862E2C-E842-486B-8D19-F8CE67530791}" ShortID="1040854207">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Spatialization" ID="{567C7AE0-F9CF-4A83-B523-D2869D369424}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{DEC16CE0-B2BB-429A-B628-951BBB3710A7}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{D796B943-67F1-4743-AC94-B6B9727F778C}" ShortID="94094065">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Volume"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{AA8025C9-7ED5-4CD3-AB89-485098119AED}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="Teleporter" ID="{66B46418-E980-41A1-AA69-5C52847F5388}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="LowDrum" ID="{D4E1F045-5559-4C1B-9DCF-E997BCE8F6A6}" ShortID="205271969">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="LowDrum" ID="{2C2819F1-25BB-48D4-9DB8-6B86600EF5F8}">
-							<Language>SFX</Language>
-							<AudioFile>LowDrum.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="630978428"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="LowDrum" ID="{2C2819F1-25BB-48D4-9DB8-6B86600EF5F8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="PlasticBucket" ID="{5E45BA63-7C48-4181-9BAF-D0D2BA27A05B}" ShortID="287460812">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PlasticBucket" ID="{3943ABC3-108F-4769-B7F7-86A0BD3ADBB1}">
-							<Language>SFX</Language>
-							<AudioFile>PlasticBucket.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1011237675"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PlasticBucket" ID="{3943ABC3-108F-4769-B7F7-86A0BD3ADBB1}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="CelticMusic_Legend" ID="{E32B0CB7-F42B-4B48-A24E-FDA2934DCBA8}" ShortID="637315055">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -344,6 +26,94 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="CelticMusic_Legend" ID="{F3D847FB-8A83-4EAD-8113-1DB46C701119}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_Cave_01" ID="{4E70A53F-D3C4-4275-A227-0FFAC17ABC51}" ShortID="333767494">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Cave_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="503395997"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_Cave_02" ID="{031306A1-E966-45EF-8500-386089B7E3C7}" ShortID="209360453">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Cave_02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="303434784"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Torch" ID="{131D8300-F78F-491A-AB84-E1EBD14102AA}" ShortID="300146024">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Torch.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="779713520"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_Water" ID="{8ED1FAA9-3C66-4034-82C5-2914CACD47AA}" ShortID="935269216">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Water.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="877393879"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
