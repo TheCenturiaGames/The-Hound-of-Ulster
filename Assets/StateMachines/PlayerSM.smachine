@@ -1,0 +1,341 @@
+{
+    "StateMachine": {
+        "UID": 1725925740016938,
+        "Name": "PlayerSM",
+        "Triggers": [
+            "Idle",
+            "Walk",
+            "Attack",
+            "Ranged",
+            "Fall",
+            "Land",
+            "Death",
+            "Respawn",
+            "Dash"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1541394403189613,
+                "ClipName": "MC_Anim_Idle",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1545338687315588,
+                "ClipName": "MC_Anim_Jog",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580367502334666,
+                "ClipName": "MC_Anim_Melee",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_7",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_8",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_9",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_10",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_11",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1542694702532508,
+                "ClipName": "MC_Anim_Dash",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1547625706637510,
+                "ClipName": "MC_Anim_Death",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1507651550714245,
+                "ClipName": "MC_Anim_Range",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1586759215132637,
+                "ClipName": "MC_Anim_Respawn",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1576408509834645,
+                "ClipName": "MC_Anim_Falling",
+                "Loop": true
+            },
+            {
+                "ClipUID": 1520527302962275,
+                "ClipName": "MC_Anim_Landing",
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "MC_Anim_Idle",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "Walk",
+                "ClipName": "MC_Anim_Jog",
+                "Position": {
+                    "x": 10.0,
+                    "y": -100.0
+                }
+            },
+            {
+                "StateName": "Attack",
+                "ClipName": "MC_Anim_Melee",
+                "Position": {
+                    "x": 290.0,
+                    "y": -90.0
+                }
+            },
+            {
+                "StateName": "Ranged",
+                "ClipName": "MC_Anim_Range",
+                "Position": {
+                    "x": 270.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "Fall",
+                "ClipName": "MC_Anim_Falling",
+                "Position": {
+                    "x": 30.0,
+                    "y": 100.0
+                }
+            },
+            {
+                "StateName": "Land",
+                "ClipName": "MC_Anim_Landing",
+                "Position": {
+                    "x": 300.0,
+                    "y": 190.0
+                }
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "MC_Anim_Death",
+                "Position": {
+                    "x": 480.0,
+                    "y": 120.0
+                }
+            },
+            {
+                "StateName": "Respawn",
+                "ClipName": "MC_Anim_Respawn",
+                "Position": {
+                    "x": 510.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "Dash",
+                "ClipName": "MC_Anim_Dash",
+                "Position": {
+                    "x": 270.0,
+                    "y": -170.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack",
+                "Trigger": "Attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack",
+                "Trigger": "Attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Fall",
+                "ToState": "Land",
+                "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Respawn",
+                "Trigger": "Respawn",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Respawn",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Fall",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
