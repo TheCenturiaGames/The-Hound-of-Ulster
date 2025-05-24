@@ -292,7 +292,7 @@
                 "FromState": "Idle",
                 "ToState": "Respawn",
                 "Trigger": "Respawn",
-                "InterpolationTime": 200
+                "InterpolationTime": 0
             },
             {
                 "FromState": "Respawn",
@@ -334,6 +334,18 @@
                 "FromState": "Fall",
                 "ToState": "Idle",
                 "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Fall",
+                "Trigger": "Fall",
                 "InterpolationTime": 200
             }
         ]
