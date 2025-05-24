@@ -3,147 +3,384 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="CelticMusic_Legend" ID="{E32B0CB7-F42B-4B48-A24E-FDA2934DCBA8}" ShortID="637315055">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="Tutorial" ID="{4C59A917-F205-4F97-ACB9-C58C277D6B52}" ShortID="732988448">
 					<ChildrenList>
-						<AudioFileSource Name="CelticMusic_Legend" ID="{F3D847FB-8A83-4EAD-8113-1DB46C701119}">
-							<Language>SFX</Language>
-							<AudioFile>CelticMusic_Legend.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1003432648"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="SFX_Cave_02" ID="{031306A1-E966-45EF-8500-386089B7E3C7}" ShortID="209360453">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Cave_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="303434784"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Cave_01" ID="{4E70A53F-D3C4-4275-A227-0FFAC17ABC51}" ShortID="333767494">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Cave_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="503395997"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Water" ID="{8ED1FAA9-3C66-4034-82C5-2914CACD47AA}" ShortID="935269216">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Water.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="877393879"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Torch" ID="{131D8300-F78F-491A-AB84-E1EBD14102AA}" ShortID="300146024">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Torch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="779713520"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="CelticMusic_Legend" ID="{F3D847FB-8A83-4EAD-8113-1DB46C701119}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="SFX_Cave_01" ID="{4E70A53F-D3C4-4275-A227-0FFAC17ABC51}" ShortID="333767494">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="Level1" ID="{692F4C89-E3D4-4007-9B35-3D242B5AC93D}" ShortID="436305954">
 					<ChildrenList>
-						<AudioFileSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_Cave_01.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="503395997"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="SFX_Wind_01" ID="{54F796F5-0F19-4430-80A4-6E3046ECAEA5}" ShortID="525341614">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Wind_01" ID="{2D494F49-BE5B-42A8-AAA4-4F50BB0EF525}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Wind_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="362047369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Wind_01" ID="{2D494F49-BE5B-42A8-AAA4-4F50BB0EF525}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Waterfall_01" ID="{366AC2D8-B4FE-440F-818B-B688E67E8C70}" ShortID="909650121">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Waterfall_01" ID="{0ED68C20-C879-43D3-9F71-FE42F4F9A889}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Waterfall_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="400074835"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Waterfall_01" ID="{0ED68C20-C879-43D3-9F71-FE42F4F9A889}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Wind_02" ID="{0C4D58B5-287A-4EDE-8107-645F67D97545}" ShortID="884256346">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Wind_02" ID="{468837F7-71C2-41A2-B934-B2315003E96D}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Wind_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="796020091"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Wind_02" ID="{468837F7-71C2-41A2-B934-B2315003E96D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Fire_02" ID="{3E3D9B40-C708-4595-AFAE-1BEBB143FEAD}" ShortID="555566305">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Fire_02" ID="{78F31760-703E-4747-BE0F-C7B96DB11F52}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Fire_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="393785965"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Fire_02" ID="{78F31760-703E-4747-BE0F-C7B96DB11F52}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Fire_01" ID="{DAC58661-B371-4789-9767-0FF3D9EC8215}" ShortID="1056529973">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Fire_01" ID="{3123AB52-86BF-4335-859E-3AC58F981487}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Fire_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="795005591"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Fire_01" ID="{3123AB52-86BF-4335-859E-3AC58F981487}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Waterfall_02" ID="{F265706E-719D-4E62-B86E-DD6D086B2FCA}" ShortID="371094836">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Waterfall_02" ID="{CA6FAE48-F10E-4E16-B807-A0308036A547}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Waterfall_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="904930164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Waterfall_02" ID="{CA6FAE48-F10E-4E16-B807-A0308036A547}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_Cave_01" ID="{6458CE01-409B-47C0-BAB8-36BFAC84E1F6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="SFX_Cave_02" ID="{031306A1-E966-45EF-8500-386089B7E3C7}" ShortID="209360453">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="Music" ID="{428C4DE9-FBAD-4AC2-9CEF-F543466315EC}" ShortID="722314346">
 					<ChildrenList>
-						<AudioFileSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_Cave_02.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="303434784"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="TempleTrack" ID="{43854DF3-9829-46FE-9A11-D6CC4B2D4E4A}" ShortID="387492577">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TempleTrack" ID="{975468A1-C5B1-4AE7-9710-DD7BB8684CC7}">
+									<Language>SFX</Language>
+									<AudioFile>TempleTrack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="567078735"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TempleTrack" ID="{975468A1-C5B1-4AE7-9710-DD7BB8684CC7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BurningCity" ID="{134FA654-B320-4135-B3C5-84539ACD2041}" ShortID="495669395">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BurningCityTrack" ID="{5C3A3E3B-B484-4DFA-ACED-CBD215C09867}">
+									<Language>SFX</Language>
+									<AudioFile>BurningCityTrack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="639641329"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BurningCityTrack" ID="{5C3A3E3B-B484-4DFA-ACED-CBD215C09867}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_Cave_02" ID="{8F7D1846-BBF6-48FF-B187-D555562A2F60}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Torch" ID="{131D8300-F78F-491A-AB84-E1EBD14102AA}" ShortID="300146024">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="All_Levels" ID="{61798DDD-8D89-4450-B276-BC6F0360683C}" ShortID="685530308">
 					<ChildrenList>
-						<AudioFileSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_Torch.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="779713520"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="SFX_TreeOfLife_02" ID="{0E24B3E5-D567-4039-9D7C-7BDC560178B2}" ShortID="741968067">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_TreeOfLife_02" ID="{B57FE5A2-B850-4A4A-AC8B-1482147288D2}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_TreeOfLife_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="5830356"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_TreeOfLife_02" ID="{B57FE5A2-B850-4A4A-AC8B-1482147288D2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_Torch" ID="{FB1BD5AC-B2D5-4B95-AEF8-58B7146E80A8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="SFX_Water" ID="{8ED1FAA9-3C66-4034-82C5-2914CACD47AA}" ShortID="935269216">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_Water.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="877393879"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_Water" ID="{599701DB-1DAE-4D3B-AEA1-B798FB3C348B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

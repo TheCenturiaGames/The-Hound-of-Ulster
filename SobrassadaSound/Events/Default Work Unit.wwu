@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{779746FB-8608-4B0E-A678-C4812CD4F0FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Music" ID="{6A7AA323-177E-4166-80C2-5272C146525F}">
+				<Event Name="Music_Tutorial" ID="{6A7AA323-177E-4166-80C2-5272C146525F}">
 					<ChildrenList>
 						<Action Name="" ID="{AED4B3AB-FB88-4BF8-BA6B-83CEA168DCB8}" ShortID="88733060">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CelticMusic_Legend" ID="{E32B0CB7-F42B-4B48-A24E-FDA2934DCBA8}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+									<ObjectRef Name="TempleTrack" ID="{43854DF3-9829-46FE-9A11-D6CC4B2D4E4A}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,6 +53,94 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Torch" ID="{131D8300-F78F-491A-AB84-E1EBD14102AA}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Waterfall_01" ID="{6A7CE4CF-8A07-4480-9E1E-B270CB9EF3F6}">
+					<ChildrenList>
+						<Action Name="" ID="{7D3F2320-D5EB-47A2-820A-8576A5305543}" ShortID="1011357224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Waterfall_01" ID="{366AC2D8-B4FE-440F-818B-B688E67E8C70}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Waterfall_02" ID="{56D5D7CA-DBC4-44F8-8043-3C4267B623D6}">
+					<ChildrenList>
+						<Action Name="" ID="{F69F3774-00F5-4BE8-AE0B-DE5030860C0D}" ShortID="327611251">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Waterfall_02" ID="{F265706E-719D-4E62-B86E-DD6D086B2FCA}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fire_01" ID="{439D9FD2-4E21-4DD1-9E6D-1B571F369CAC}">
+					<ChildrenList>
+						<Action Name="" ID="{1BDDB5FD-2BEC-44D1-BA07-432285F2BF06}" ShortID="784390645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Fire_01" ID="{DAC58661-B371-4789-9767-0FF3D9EC8215}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fire_02" ID="{A9E6EBD1-E266-4748-B9C3-5027253A677F}">
+					<ChildrenList>
+						<Action Name="" ID="{CF8CA61F-7BA2-43F3-8714-318282998B95}" ShortID="439128665">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Fire_02" ID="{3E3D9B40-C708-4595-AFAE-1BEBB143FEAD}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wind_01" ID="{9761308C-66D1-4C10-9C80-FBE10BBF0A2C}">
+					<ChildrenList>
+						<Action Name="" ID="{9E190E01-9FF4-4146-9BA7-3ED00AD6A7B7}" ShortID="960794838">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Wind_01" ID="{54F796F5-0F19-4430-80A4-6E3046ECAEA5}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wind_02" ID="{B3A8578C-3929-425D-8C90-28CCE083FCD3}">
+					<ChildrenList>
+						<Action Name="" ID="{61504163-B723-4A1D-AB1E-47A667BBAA22}" ShortID="185651928">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Wind_02" ID="{0C4D58B5-287A-4EDE-8107-645F67D97545}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TreeOfLife" ID="{905F2F34-A348-4D92-9B0D-3D4F10CFED6D}">
+					<ChildrenList>
+						<Action Name="" ID="{3E95CC30-9A9E-41A9-BEB8-2721170ACE51}" ShortID="1049387563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_TreeOfLife_02" ID="{0E24B3E5-D567-4039-9D7C-7BDC560178B2}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_City" ID="{D4ADB7FD-7BB6-4050-831A-F299900994B3}">
+					<ChildrenList>
+						<Action Name="" ID="{F781705E-5F55-455D-9300-2AE0C5AE082A}" ShortID="353164886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BurningCity" ID="{134FA654-B320-4135-B3C5-84539ACD2041}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
