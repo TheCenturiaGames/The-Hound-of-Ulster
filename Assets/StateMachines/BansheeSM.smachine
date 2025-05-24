@@ -1,0 +1,107 @@
+{
+    "StateMachine": {
+        "UID": 1716090391733322,
+        "Name": "BansheeSM",
+        "Triggers": [
+            "Idle",
+            "Chase",
+            "Scream"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_1",
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1564303224857880,
+                "ClipName": "CH_Banshee_Anim_idle",
+                "Loop": true
+            },
+            {
+                "ClipUID": 1555994050920865,
+                "ClipName": "CH_Banshee_Anim_chase",
+                "Loop": true
+            },
+            {
+                "ClipUID": 1572315398277207,
+                "ClipName": "CH_Banshee_Anim_scream",
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_Banshee_Anim_idle",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "Chase",
+                "ClipName": "CH_Banshee_Anim_chase",
+                "Position": {
+                    "x": 310.0,
+                    "y": 100.0
+                }
+            },
+            {
+                "StateName": "Scream",
+                "ClipName": "CH_Banshee_Anim_scream",
+                "Position": {
+                    "x": 320.0,
+                    "y": -100.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Chase",
+                "Trigger": "Chase",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "Scream",
+                "Trigger": "Scream",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
+                "ToState": "Chase",
+                "Trigger": "Chase",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Scream",
+                "Trigger": "Scream",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
