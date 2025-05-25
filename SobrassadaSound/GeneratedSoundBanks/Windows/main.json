@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
     "Language": "SFX",
-    "Hash": "{23C218D4-B104-EA9E-0979-ADE60EAD35D0}",
+    "Hash": "{FBC829C0-09A2-FFB6-2EED-B9C4DAD92C0F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
     "Media": [
+     {
+      "Id": "5830356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_TreeOfLife_02.wav",
+      "CachePath": "0D/{0DC2E343-32CC-BEE6-DD5C-763427EB7574}.wem"
+     },
      {
       "Id": "303434784",
       "Language": "SFX",
@@ -22,6 +30,30 @@
       "Location": "Memory",
       "ShortName": "SFX_Cave_02.wav",
       "CachePath": "C4/{C4C3A2AF-1107-6B0E-D001-AB7509B27014}.wem"
+     },
+     {
+      "Id": "362047369",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Wind_01.wav",
+      "CachePath": "B4/{B45F6E27-1831-5540-9F77-B4FDCDBFB31B}.wem"
+     },
+     {
+      "Id": "393785965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Fire_02.wav",
+      "CachePath": "6D/{6DA497E5-23FF-169F-E426-DA0578DA618D}.wem"
+     },
+     {
+      "Id": "400074835",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Waterfall_01.wav",
+      "CachePath": "9A/{9AD8D4CA-CF92-1DC4-2BBB-F2D57EE8AE29}.wem"
      },
      {
       "Id": "503395997",
@@ -40,6 +72,14 @@
       "CachePath": "55/{55AEB0AC-9273-E374-012F-D63F0DD51DC5}.wem"
      },
      {
+      "Id": "639641329",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BurningCityTrack.wav",
+      "CachePath": "79/{79066FCD-7843-40F6-D168-EEE2CF56FDD9}.wem"
+     },
+     {
       "Id": "779713520",
       "Language": "SFX",
       "Streaming": "false",
@@ -48,12 +88,36 @@
       "CachePath": "57/{574327E7-A501-7AD5-0651-6ADD8BACD56E}.wem"
      },
      {
+      "Id": "795005591",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Fire_01.wav",
+      "CachePath": "2C/{2CEE11AB-CCE6-28B1-ACFC-C774DD511A2E}.wem"
+     },
+     {
+      "Id": "796020091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Wind_02.wav",
+      "CachePath": "1F/{1F578F6E-0505-5318-6627-498F37A3CA7A}.wem"
+     },
+     {
       "Id": "877393879",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Water.wav",
       "CachePath": "7A/{7ACFDBD1-94F4-88F5-134C-04E4DAD669D1}.wem"
+     },
+     {
+      "Id": "904930164",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Waterfall_02.wav",
+      "CachePath": "4A/{4A1AD9CE-8B23-B955-E1E0-D5A8568EB931}.wem"
      }
     ],
     "Events": [
@@ -84,6 +148,43 @@
       ]
      },
      {
+      "Id": "1589446069",
+      "Name": "Fire_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_01",
+      "GUID": "{439D9FD2-4E21-4DD1-9E6D-1B571F369CAC}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "795005591"
+       }
+      ]
+     },
+     {
+      "Id": "1589446070",
+      "Name": "Fire_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fire_02",
+      "GUID": "{A9E6EBD1-E266-4748-B9C3-5027253A677F}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "393785965"
+       }
+      ]
+     },
+     {
+      "Id": "3946025416",
+      "Name": "Music_City",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music_City",
+      "GUID": "{D4ADB7FD-7BB6-4050-831A-F299900994B3}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "639641329"
+       }
+      ]
+     },
+     {
       "Id": "931250475",
       "Name": "Music_Tutorial",
       "ObjectPath": "\\Events\\Default Work Unit\\Music_Tutorial",
@@ -109,6 +210,20 @@
       ]
      },
      {
+      "Id": "424126604",
+      "Name": "TreeOfLife",
+      "ObjectPath": "\\Events\\Default Work Unit\\TreeOfLife",
+      "GUID": "{905F2F34-A348-4D92-9B0D-3D4F10CFED6D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.59",
+      "DurationMax": "1.59",
+      "MediaRefs": [
+       {
+        "Id": "5830356"
+       }
+      ]
+     },
+     {
       "Id": "2654748154",
       "Name": "Water",
       "ObjectPath": "\\Events\\Default Work Unit\\Water",
@@ -120,10 +235,82 @@
         "Id": "877393879"
        }
       ]
+     },
+     {
+      "Id": "3996293477",
+      "Name": "Waterfall_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Waterfall_01",
+      "GUID": "{6A7CE4CF-8A07-4480-9E1E-B270CB9EF3F6}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "400074835"
+       }
+      ]
+     },
+     {
+      "Id": "3996293478",
+      "Name": "Waterfall_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Waterfall_02",
+      "GUID": "{56D5D7CA-DBC4-44F8-8043-3C4267B623D6}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "904930164"
+       }
+      ]
+     },
+     {
+      "Id": "1291679911",
+      "Name": "Wind_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Wind_01",
+      "GUID": "{9761308C-66D1-4C10-9C80-FBE10BBF0A2C}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "362047369"
+       }
+      ]
+     },
+     {
+      "Id": "1291679908",
+      "Name": "Wind_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Wind_02",
+      "GUID": "{B3A8578C-3929-425D-8C90-28CCE083FCD3}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "796020091"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1908158473",
+      "Name": "Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Pitch",
+      "GUID": "{D3F43A1C-F866-482C-A368-2D33F58CA992}"
+     },
+     {
+      "Id": "2395249601",
+      "Name": "Spatialization",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Spatialization",
+      "GUID": "{567C7AE0-F9CF-4A83-B523-D2869D369424}"
+     },
+     {
+      "Id": "2415836739",
+      "Name": "Volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Basic parameters\\Volume",
+      "GUID": "{30DC10CF-4BAB-456C-9C95-4F67C938F642}"
      }
     ]
    }
   ],
-  "FileHash": "{BFE58BA0-1B5D-921B-4646-3ADBB83F2494}"
+  "FileHash": "{B71E3614-A685-8732-8449-E240F08EBC16}"
  }
 }
