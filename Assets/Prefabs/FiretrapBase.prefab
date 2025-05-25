@@ -1,18 +1,17 @@
 {
     "Prefab": {
-        "UID": 1677189014014571,
-        "Name": "FireTrap",
+        "UID": 1638109306357786,
+        "Name": "FiretrapBase",
         "GameObjects": [
             {
-                "UID": 8868018427193821821,
-                "ParentUID": 10309131146409751111,
-                "Name": "FireTrap",
+                "UID": 14891016756640533175,
+                "ParentUID": 13386783032395912545,
+                "Name": "FiretrapBase",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1677189014014571,
                 "LocalTransform": [
                     2.0,
                     0.0,
@@ -33,17 +32,17 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16975154008749544725,
+                        "UID": 2723517158409640796,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1165703895193424,
-                        "Material": 1390090227947380,
-                        "RenderMode": 0
+                        "Material": 1326781887355453,
+                        "RenderMode": 1
                     },
                     {
-                        "UID": 15325723250014193399,
+                        "UID": 3134667019286568583,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -53,22 +52,20 @@
                                 "Script Name": "FireballTrap",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Trap Activated": false,
                                 "Activation Range": 10.0,
-                                "Min Attack Cooldown": 0.5,
-                                "Max Attack Cooldown": 3.0,
+                                "Min Attack Cooldown": 3.0,
+                                "Max Attack Cooldown": 20.0,
                                 "Trap Damage": 1,
                                 "Damage Duration": 1.5,
-                                "Fireball Name": "Fireball",
                                 "Rotation Speed": 1.0,
-                                "Falling Height": 20.0,
+                                "Falling Height": 15.0,
                                 "Max Fall Speed": 20.0,
                                 "Gravity": 9.8100004196167
                             }
                         ]
                     },
                     {
-                        "UID": 14840103371832830655,
+                        "UID": 5290777759836119618,
                         "Type": 12,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -76,7 +73,7 @@
                         "Mass": 1.0,
                         "ColliderType": 3,
                         "ColliderLayer": 2,
-                        "Radius": 1.0,
+                        "Radius": 0.800000011920929,
                         "GenerateCallback": false,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -92,12 +89,13 @@
                     }
                 ],
                 "Children": [
-                    8035857468182398034
+                    14119833918543507582,
+                    162070855835229081
                 ]
             },
             {
-                "UID": 8035857468182398034,
-                "ParentUID": 8868018427193821821,
+                "UID": 14119833918543507582,
+                "ParentUID": 14891016756640533175,
                 "Name": "Fireball",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -124,14 +122,55 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9590257597298948812,
+                        "UID": 2026821736811670549,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1194458484681695,
-                        "Material": 1390090227947380,
+                        "Material": 1336781969237153,
                         "RenderMode": 0
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 162070855835229081,
+                "ParentUID": 14891016756640533175,
+                "Name": "FireballShadow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.004999999888241291,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5198116148025222648,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1326842676146302,
+                        "RenderMode": 1
                     }
                 ],
                 "Children": []
