@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
+		"generator":"Khronos glTF Blender I/O v4.4.56",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -8,43 +8,73 @@
 		{
 			"name":"Scene",
 			"nodes":[
-				0
+				0,
+				1
 			]
 		}
 	],
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"FireTrap"
+			"name":"FireTrapBase"
+		},
+		{
+			"mesh":1,
+			"name":"FireTrapShadow"
 		}
 	],
 	"materials":[
 		{
+			"alphaMode":"BLEND",
 			"doubleSided":true,
-			"name":"FireTrapMaterial",
+			"name":"FireTrapBaseMaterial",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
-				"metallicRoughnessTexture":{
-					"index":0
-				}
+				"metallicFactor":0,
+				"roughnessFactor":0.5
+			}
+		},
+		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"name":"FireTrapShadowMaterial",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":1
+				},
+				"metallicFactor":0,
+				"roughnessFactor":0.5
 			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Plane",
+			"name":"FireTrapBaseMesh",
 			"primitives":[
 				{
 					"attributes":{
 						"POSITION":0,
 						"NORMAL":1,
-						"TEXCOORD_0":2,
-						"TANGENT":3
+						"TEXCOORD_0":2
 					},
-					"indices":4,
+					"indices":3,
 					"material":0
+				}
+			]
+		},
+		{
+			"name":"FireTrapShadowMesh",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":4,
+						"NORMAL":5,
+						"TEXCOORD_0":6
+					},
+					"indices":3,
+					"material":1
 				}
 			]
 		}
@@ -64,6 +94,11 @@
 			"mimeType":"image/png",
 			"name":"FireTrap",
 			"uri":"FireTrap.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"FireTrapShadow",
+			"uri":"FireTrapShadow.png"
 		}
 	],
 	"accessors":[
@@ -97,15 +132,37 @@
 		},
 		{
 			"bufferView":3,
-			"componentType":5126,
-			"count":4,
-			"type":"VEC4"
-		},
-		{
-			"bufferView":4,
 			"componentType":5123,
 			"count":6,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":4,
+			"componentType":5126,
+			"count":4,
+			"max":[
+				0.5,
+				0,
+				0.5
+			],
+			"min":[
+				-0.5,
+				0,
+				-0.5
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":5,
+			"componentType":5126,
+			"count":4,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":6,
+			"componentType":5126,
+			"count":4,
+			"type":"VEC2"
 		}
 	],
 	"bufferViews":[
@@ -129,15 +186,27 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":64,
+			"byteLength":12,
 			"byteOffset":128,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":48,
+			"byteOffset":140,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12,
-			"byteOffset":192,
-			"target":34963
+			"byteLength":48,
+			"byteOffset":188,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":32,
+			"byteOffset":236,
+			"target":34962
 		}
 	],
 	"samplers":[
@@ -148,7 +217,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":204,
+			"byteLength":268,
 			"uri":"FireTrap.bin"
 		}
 	]
