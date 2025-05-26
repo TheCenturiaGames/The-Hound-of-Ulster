@@ -1588,6 +1588,204 @@
 								<ActiveSource Name="BurningCityTrack" ID="{5C3A3E3B-B484-4DFA-ACED-CBD215C09867}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="MainMenu" ID="{82A59A27-3E4D-42F1-9849-84F9034BFA0E}" ShortID="426867768">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CelticMusic_Legend" ID="{678C76D3-34EA-4A21-BF7E-47880A60F3A1}">
+									<Language>SFX</Language>
+									<AudioFile>CelticMusic_Legend.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="403188759"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D4F51203-667F-4E5C-8860-F5DC2B92F083}" ShortID="4720143">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A10DA080-135B-476D-A657-091CAB7D5B88}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{B2A3C560-FBA9-4CBF-9C84-C3F048205111}" ShortID="887596800">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0E2174EC-8E4C-49BE-9301-C5DA9EABE83B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="CelticMusic_Legend" ID="{678C76D3-34EA-4A21-BF7E-47880A60F3A1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Forest" ID="{2985C4E4-FF5B-49CE-ACC4-5E6AD6722C3B}" ShortID="990715479">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dance of the Spirit" ID="{94AD7404-AABB-4CD1-B801-ADF888D17159}">
+									<Language>SFX</Language>
+									<AudioFile>Dance of the Spirit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="21657060"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{550C2711-C9CD-406B-B670-9467880A8993}" ShortID="771372827">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{952C5E21-29F2-4983-BC62-5BD69EE5C80C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5525DD76-D2FB-420C-9308-A36F55C7C03F}" ShortID="188777233">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{EB5DF62F-EC9E-44B1-8534-5D0351AA43EA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Dance of the Spirit" ID="{94AD7404-AABB-4CD1-B801-ADF888D17159}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="All_Levels" ID="{61798DDD-8D89-4450-B276-BC6F0360683C}" ShortID="685530308">
@@ -1597,6 +1795,9 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
 								</Reference>
@@ -1669,12 +1870,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-1200</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>1</XPos>
-																		<YPos>0</YPos>
+																		<YPos>1200</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1724,6 +1925,102 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_TreeOfLife_02" ID="{B57FE5A2-B850-4A4A-AC8B-1482147288D2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_IceBlast" ID="{7614FFC1-B135-42C9-B2EB-D2AE3AE6807A}" ShortID="1001871464">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IceGem_Blast" ID="{E322EAE5-A0BA-4078-87A0-D7F019174FE0}">
+									<Language>SFX</Language>
+									<AudioFile>IceGem_Blast.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="600859110"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{48B30826-3AA1-4E6E-A150-74555CC65899}" ShortID="1034786168">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{02B49F14-0DC6-4F67-AD20-5A409216C7AA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{2CF4F79B-B641-4D02-8080-035EA8C707D5}" ShortID="271277830">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{CEB32BE7-4191-487C-AAEA-00399F5F79A2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="IceGem_Blast" ID="{E322EAE5-A0BA-4078-87A0-D7F019174FE0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
