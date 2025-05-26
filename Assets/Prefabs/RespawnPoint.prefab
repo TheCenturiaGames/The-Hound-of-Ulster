@@ -1,0 +1,173 @@
+{
+    "Prefab": {
+        "UID": 1678209590374943,
+        "Name": "RespawnPoint",
+        "GameObjects": [
+            {
+                "UID": 2775131110984051346,
+                "ParentUID": 7129986743466315570,
+                "Name": "RespawnPoint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -9.160867691040039,
+                    0.0,
+                    1.0,
+                    0.0,
+                    6.196084499359131,
+                    0.0,
+                    0.0,
+                    1.0,
+                    37.89234161376953,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11276744882279878412,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "SpawnPoint",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Player name": "walk",
+                                "Set only once": false,
+                                "Set Health for player": 10
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 2235784856515939511,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 0.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            5.0,
+                            3.0,
+                            3.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    8818158172553405054
+                ]
+            },
+            {
+                "UID": 8818158172553405054,
+                "ParentUID": 2775131110984051346,
+                "Name": "TreeOfLife",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.8664827346801758,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -1.5261998176574707,
+                    0.0,
+                    0.0,
+                    1.0,
+                    4.7486114501953125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3881017208073735566,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1199517256288500,
+                        "Material": 0,
+                        "RenderMode": 0
+                    }
+                ],
+                "Children": [
+                    17571650355168208925
+                ]
+            },
+            {
+                "UID": 17571650355168208925,
+                "ParentUID": 8818158172553405054,
+                "Name": "Light_from_the_tree",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    4.2262163162231445,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14539544573990000052,
+                        "Type": 2,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Point Light",
+                        "Intensity": 34.0099983215332,
+                        "ColorRed": 1.0,
+                        "ColorGreen": 1.0,
+                        "ColorBlue": 1.0,
+                        "DrawGizmos": true,
+                        "Range": 10.0,
+                        "GizmosMode": 0
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
