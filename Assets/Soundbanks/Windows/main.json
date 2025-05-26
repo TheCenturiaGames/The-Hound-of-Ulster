@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
     "Language": "SFX",
-    "Hash": "{2AF60833-3F95-E52D-3165-AAFF00345FF6}",
+    "Hash": "{60FB4A57-5F89-15EA-8D5A-9101C71098C3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "SFX_TreeOfLife_02.wav",
       "CachePath": "0D/{0DC2E343-32CC-BEE6-DD5C-763427EB7574}.wem"
+     },
+     {
+      "Id": "21657060",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dance of the Spirit.wav",
+      "CachePath": "90/{90C2E0D6-1FE6-4791-3429-757E8E72D21F}.wem"
      },
      {
       "Id": "303434784",
@@ -56,6 +64,14 @@
       "CachePath": "9A/{9AD8D4CA-CF92-1DC4-2BBB-F2D57EE8AE29}.wem"
      },
      {
+      "Id": "403188759",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CelticMusic_Legend.wav",
+      "CachePath": "01/{0143DA0F-C9AE-BC79-D6ED-E8E394EE120D}.wem"
+     },
+     {
       "Id": "503395997",
       "Language": "SFX",
       "Streaming": "false",
@@ -72,20 +88,20 @@
       "CachePath": "55/{55AEB0AC-9273-E374-012F-D63F0DD51DC5}.wem"
      },
      {
+      "Id": "600859110",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "IceGem_Blast.wav",
+      "CachePath": "E5/{E5957BD1-9406-0421-5FC8-87CDD789D341}.wem"
+     },
+     {
       "Id": "639641329",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BurningCityTrack.wav",
       "CachePath": "79/{79066FCD-7843-40F6-D168-EEE2CF56FDD9}.wem"
-     },
-     {
-      "Id": "762941848",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "IceGem_Blast.wav",
-      "CachePath": "E5/{E5957BD1-9406-0421-5FC8-87CDD789D341}.wem"
      },
      {
       "Id": "779713520",
@@ -126,14 +142,6 @@
       "Location": "Memory",
       "ShortName": "SFX_Waterfall_02.wav",
       "CachePath": "4A/{4A1AD9CE-8B23-B955-E1E0-D5A8568EB931}.wem"
-     },
-     {
-      "Id": "1057524815",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Dance of the Spirit.wav",
-      "CachePath": "90/{90C2E0D6-1FE6-4791-3429-757E8E72D21F}.wem"
      }
     ],
     "Events": [
@@ -192,11 +200,11 @@
       "Id": "491961918",
       "Name": "Forest",
       "ObjectPath": "\\Events\\Default Work Unit\\Forest",
-      "GUID": "{57E79607-9C4E-464D-9116-56C8AD0CBF12}",
+      "GUID": "{54C1B09E-5F55-45BC-9B21-2285AA4C16CD}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "1057524815"
+        "Id": "21657060"
        }
       ]
      },
@@ -204,13 +212,25 @@
       "Id": "3920196677",
       "Name": "Ice_Blast",
       "ObjectPath": "\\Events\\Default Work Unit\\Ice_Blast",
-      "GUID": "{42077554-D64E-419F-B848-8214DA69E347}",
+      "GUID": "{C08C186A-3D6D-4BF5-B00E-AFB166013494}",
       "DurationType": "OneShot",
       "DurationMin": "1.4906042",
       "DurationMax": "1.4906042",
       "MediaRefs": [
        {
-        "Id": "762941848"
+        "Id": "600859110"
+       }
+      ]
+     },
+     {
+      "Id": "3604647259",
+      "Name": "MainMenu",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainMenu",
+      "GUID": "{55941BC9-ACBA-4271-A27B-E5BA82533312}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "403188759"
        }
       ]
      },
@@ -256,6 +276,7 @@
       "Name": "TreeOfLife",
       "ObjectPath": "\\Events\\Default Work Unit\\TreeOfLife",
       "GUID": "{905F2F34-A348-4D92-9B0D-3D4F10CFED6D}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "1.59",
       "DurationMax": "1.59",
@@ -353,6 +374,6 @@
     ]
    }
   ],
-  "FileHash": "{BD37D9E9-27D5-96FD-E45B-9AEB7F9FD1B6}"
+  "FileHash": "{225DBC2B-14A0-1D06-2894-5FFC912B5084}"
  }
 }
