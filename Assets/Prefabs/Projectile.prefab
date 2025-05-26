@@ -1,0 +1,90 @@
+{
+    "Prefab": {
+        "UID": 1620249143070698,
+        "Name": "Projectile",
+        "GameObjects": [
+            {
+                "UID": 14760209040733564134,
+                "ParentUID": 9772868045537941304,
+                "Name": "Projectile",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.05000000074505806,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.05000000074505806,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9540186524391174,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4463122333207144641,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 1301385604602282,
+                        "RenderMode": 0
+                    },
+                    {
+                        "UID": 8079967578937316163,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Projectile",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "Range": 10.0,
+                                "Damage": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 15918707493204409002,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.23850440979003906,
+                        "Length": 0.025000005960464478,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
