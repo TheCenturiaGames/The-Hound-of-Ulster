@@ -1,0 +1,107 @@
+{
+    "StateMachine": {
+        "UID": 1715606604347446,
+        "Name": "ArcherStateMachine",
+        "Triggers": [
+            "run",
+            "idle",
+            "attack"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580961057184111,
+                "ClipName": "CH_EnemyArcher_IDLE",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1594159543637377,
+                "ClipName": "CH_EnemyArcher_walking",
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "Loop": false
+            },
+            {
+                "ClipUID": 1575353152635780,
+                "ClipName": "CH_EnemyArcher_Attack",
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_EnemyArcher_IDLE",
+                "Position": {
+                    "x": 20.0,
+                    "y": -70.0
+                }
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "CH_EnemyArcher_walking",
+                "Position": {
+                    "x": 460.0,
+                    "y": -70.0
+                }
+            },
+            {
+                "StateName": "attack",
+                "ClipName": "CH_EnemyArcher_Attack",
+                "Position": {
+                    "x": 290.0,
+                    "y": 40.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "attack",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 500
+            },
+            {
+                "FromState": "attack",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
