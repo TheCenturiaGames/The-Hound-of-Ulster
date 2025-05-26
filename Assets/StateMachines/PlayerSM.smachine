@@ -166,8 +166,8 @@
                 "StateName": "Respawn",
                 "ClipName": "MC_Anim_Respawn",
                 "Position": {
-                    "x": 510.0,
-                    "y": 0.0
+                    "x": 610.0,
+                    "y": -0.0
                 }
             },
             {
@@ -346,6 +346,12 @@
                 "FromState": "Dash",
                 "ToState": "Fall",
                 "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Death",
+                "ToState": "Respawn",
+                "Trigger": "Respawn",
                 "InterpolationTime": 200
             }
         ]
