@@ -15,7 +15,8 @@
             "AttackEnd",
             "Attack1",
             "Attack2",
-            "Attack0"
+            "Attack0",
+            "Ultimate"
         ],
         "Clips": [
             {
@@ -177,6 +178,11 @@
                 "ClipUID": 1559123022451953,
                 "ClipName": "CH_MC_Melee_back",
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_32",
+                "Loop": false
             }
         ],
         "States": [
@@ -232,7 +238,7 @@
                 "StateName": "Respawn",
                 "ClipName": "CH_MC_Respawn",
                 "Position": {
-                    "x": 640.0,
+                    "x": 720.0,
                     "y": 20.0
                 }
             },
@@ -248,15 +254,15 @@
                 "StateName": "Recovery",
                 "ClipName": "CH_MC_Melee_back",
                 "Position": {
-                    "x": 450.0,
-                    "y": -160.0
+                    "x": 570.0,
+                    "y": -150.0
                 }
             },
             {
                 "StateName": "Attack_1",
                 "ClipName": "CH_MC_Melee_start",
                 "Position": {
-                    "x": 200.0,
+                    "x": 190.0,
                     "y": -250.0
                 }
             },
@@ -264,7 +270,7 @@
                 "StateName": "Attack_2",
                 "ClipName": "CH_MC_Melee_start",
                 "Position": {
-                    "x": 490.0,
+                    "x": 470.0,
                     "y": -250.0
                 }
             },
@@ -272,8 +278,16 @@
                 "StateName": "Attack_3",
                 "ClipName": "CH_MC_Melee_start",
                 "Position": {
-                    "x": 760.0,
+                    "x": 750.0,
                     "y": -250.0
+                }
+            },
+            {
+                "StateName": "Ultimate",
+                "ClipName": "CH_MC_Landing",
+                "Position": {
+                    "x": -20.0,
+                    "y": -380.0
                 }
             }
         ],
@@ -462,7 +476,7 @@
                 "FromState": "Attack_1",
                 "ToState": "Attack_2",
                 "Trigger": "Attack1",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Idle",
@@ -474,13 +488,13 @@
                 "FromState": "Attack_2",
                 "ToState": "Recovery",
                 "Trigger": "AttackEnd",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_1",
                 "ToState": "Recovery",
                 "Trigger": "AttackEnd",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_2",
@@ -492,49 +506,97 @@
                 "FromState": "Attack_2",
                 "ToState": "Attack_3",
                 "Trigger": "Attack2",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_3",
                 "ToState": "Recovery",
                 "Trigger": "AttackEnd",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_1",
                 "ToState": "Dash",
                 "Trigger": "Dash",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_2",
                 "ToState": "Dash",
                 "Trigger": "Dash",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Attack_3",
                 "ToState": "Dash",
                 "Trigger": "Dash",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Idle",
                 "ToState": "Attack_2",
                 "Trigger": "Attack1",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Idle",
                 "ToState": "Attack_3",
                 "Trigger": "Attack2",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
             },
             {
                 "FromState": "Ranged",
                 "ToState": "Attack_1",
                 "Trigger": "Attack0",
-                "InterpolationTime": 50
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "NewState_13",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
             }
         ]
     }
