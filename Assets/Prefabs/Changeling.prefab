@@ -1,0 +1,274 @@
+{
+    "Prefab": {
+        "UID": 1681460269573904,
+        "Name": "Changeling",
+        "GameObjects": [
+            {
+                "UID": 14805080713074448610,
+                "ParentUID": 8823869308913623498,
+                "Name": "Changeling",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    8691791761046828005,
+                    4233680833965322973
+                ]
+            },
+            {
+                "UID": 8691791761046828005,
+                "ParentUID": 14805080713074448610,
+                "Name": "ChangelingScript",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -30.25372886657715,
+                    0.0,
+                    1.0,
+                    0.0,
+                    8.572223663330078,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -34.5395622253418,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4297794318944855869,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1121096887918908,
+                        "Material": 0,
+                        "RenderMode": 2
+                    },
+                    {
+                        "UID": 16240681108894010471,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Changeling",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Max Health": 3,
+                                "Current Health": 3,
+                                "Invulnerable": false,
+                                "Dead": false,
+                                "Damage": 1,
+                                "Attack Range": 1.0,
+                                "Attack Duration": 1.0,
+                                "Attack Cooldown": 1.0,
+                                "Attack Hitbox Delay": 0.0,
+                                "Attack Hitbox Duration": 0.0,
+                                "Heal Cooldown": 0.10000000149011612,
+                                "AI Chase Range": 10.0,
+                                "AI Attack Range": 2.0,
+                                "AI Patrol Point": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Dark Path Name": "DarkPath"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "Radius": 0.25,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": true,
+                        "CenterOffset": [
+                            0.0,
+                            0.5,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 13877356685897632212,
+                        "Type": 15,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "AI Agent",
+                        "Speed": 3.5,
+                        "Acceleration": 8.0,
+                        "Radius": 0.6000000238418579,
+                        "Height": 2.0,
+                        "MaxAngularSpeed": 6.2831854820251465,
+                        "isRadians": true
+                    }
+                ],
+                "Children": [
+                    2227073525197401274
+                ]
+            },
+            {
+                "UID": 4233680833965322973,
+                "ParentUID": 14805080713074448610,
+                "Name": "DarkPath",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -30.560073852539063,
+                    0.0,
+                    1.0,
+                    0.0,
+                    9.064992904663086,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -35.277645111083984,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9247403513600596607,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 2
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.25,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2227073525197401274,
+                "ParentUID": 8691791761046828005,
+                "Name": "Weapon",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "Radius": 0.75,
+                        "Length": 0.25,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.5,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
