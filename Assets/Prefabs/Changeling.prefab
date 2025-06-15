@@ -4,23 +4,24 @@
         "Name": "Changeling",
         "GameObjects": [
             {
-                "UID": 14805080713074448610,
-                "ParentUID": 8823869308913623498,
+                "UID": 779312179027990716,
+                "ParentUID": 1681580029205420704,
                 "Name": "Changeling",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
+                "PrefabUID": 1681460269573904,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
+                    -8.451934814453125,
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    0.3338925838470459,
                     0.0,
                     0.0,
                     1.0,
@@ -32,13 +33,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8691791761046828005,
-                    4233680833965322973
+                    3256366323416916198,
+                    16081921992814912695
                 ]
             },
             {
-                "UID": 8691791761046828005,
-                "ParentUID": 14805080713074448610,
+                "UID": 3256366323416916198,
+                "ParentUID": 779312179027990716,
                 "Name": "ChangelingScript",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -49,15 +50,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    -30.25372886657715,
-                    0.0,
-                    1.0,
-                    0.0,
-                    8.572223663330078,
                     0.0,
                     0.0,
                     1.0,
-                    -34.5395622253418,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
                     0.0,
                     0.0,
                     0.0,
@@ -65,7 +66,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4297794318944855869,
+                        "UID": 13766156191485168821,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -75,7 +76,7 @@
                         "RenderMode": 2
                     },
                     {
-                        "UID": 16240681108894010471,
+                        "UID": 1823469906744480151,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -96,19 +97,20 @@
                                 "Attack Hitbox Delay": 0.0,
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 0.10000000149011612,
-                                "AI Chase Range": 10.0,
-                                "AI Attack Range": 2.0,
+                                "AI Chase Range": 20.0,
+                                "AI Attack Range": 10.0,
                                 "AI Patrol Point": [
                                     0.0,
                                     0.0,
                                     0.0
                                 ],
+                                "Dash Distance": 10.0,
                                 "Dark Path Name": "DarkPath"
                             }
                         ]
                     },
                     {
-                        "UID": 0,
+                        "UID": 12925382072814088286,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -132,7 +134,7 @@
                         ]
                     },
                     {
-                        "UID": 13877356685897632212,
+                        "UID": 7799895858081795192,
                         "Type": 15,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -146,12 +148,12 @@
                     }
                 ],
                 "Children": [
-                    2227073525197401274
+                    10615780409683375005
                 ]
             },
             {
-                "UID": 4233680833965322973,
-                "ParentUID": 14805080713074448610,
+                "UID": 16081921992814912695,
+                "ParentUID": 779312179027990716,
                 "Name": "DarkPath",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -178,7 +180,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9247403513600596607,
+                        "UID": 4250303082112412298,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -188,7 +190,7 @@
                         "RenderMode": 2
                     },
                     {
-                        "UID": 0,
+                        "UID": 3570945560597891909,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -215,8 +217,8 @@
                 "Children": []
             },
             {
-                "UID": 2227073525197401274,
-                "ParentUID": 8691791761046828005,
+                "UID": 10615780409683375005,
+                "ParentUID": 3256366323416916198,
                 "Name": "Weapon",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -243,7 +245,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 0,
+                        "UID": 12597650358830548276,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
