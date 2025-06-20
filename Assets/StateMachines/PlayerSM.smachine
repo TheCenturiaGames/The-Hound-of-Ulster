@@ -1084,13 +1084,13 @@
                 "FromState": "Idle_Break_1",
                 "ToState": "Ranged",
                 "Trigger": "Ranged",
-                "InterpolationTime": 200
+                "InterpolationTime": 0
             },
             {
                 "FromState": "Idle_Break_2",
                 "ToState": "Ranged",
                 "Trigger": "Ranged",
-                "InterpolationTime": 200
+                "InterpolationTime": 0
             },
             {
                 "FromState": "Idle_Break_1",
@@ -1114,6 +1114,18 @@
                 "FromState": "Idle_Break_1",
                 "ToState": "Charge",
                 "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack_2",
+                "Trigger": "Attack1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack_3",
+                "Trigger": "Attack2",
                 "InterpolationTime": 200
             }
         ]
