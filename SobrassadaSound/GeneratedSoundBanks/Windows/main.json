@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
     "Language": "SFX",
-    "Hash": "{60FB4A57-5F89-15EA-8D5A-9101C71098C3}",
+    "Hash": "{6D3866AC-8186-15B0-D058-59E857BEA300}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_TreeOfLife_02.wav",
-      "CachePath": "0D/{0DC2E343-32CC-BEE6-DD5C-763427EB7574}.wem"
+      "CachePath": "E6/{E6D8EEF2-5909-A1A1-C237-E994551BDB79}.wem"
      },
      {
       "Id": "21657060",
@@ -32,12 +32,44 @@
       "CachePath": "90/{90C2E0D6-1FE6-4791-3429-757E8E72D21F}.wem"
      },
      {
+      "Id": "111375023",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Button_02.wav",
+      "CachePath": "02/{02FDA0F8-6D92-6A94-B4ED-93D6DC19A683}.wem"
+     },
+     {
+      "Id": "226908720",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Cave_03.wav",
+      "CachePath": "E0/{E0E69BEA-D88A-92B3-6B26-5A6D9F3F19B4}.wem"
+     },
+     {
+      "Id": "237654140",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_TreeOfLife_03.wav",
+      "CachePath": "46/{46261E3F-D11A-FDA6-6E1B-3D7EF788416F}.wem"
+     },
+     {
       "Id": "303434784",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Cave_02.wav",
       "CachePath": "C4/{C4C3A2AF-1107-6B0E-D001-AB7509B27014}.wem"
+     },
+     {
+      "Id": "345818729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Button_01.wav",
+      "CachePath": "AC/{ACAB6E74-2304-2B44-F05A-F80CBC296155}.wem"
      },
      {
       "Id": "362047369",
@@ -88,12 +120,12 @@
       "CachePath": "55/{55AEB0AC-9273-E374-012F-D63F0DD51DC5}.wem"
      },
      {
-      "Id": "600859110",
+      "Id": "620722210",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "IceGem_Blast.wav",
-      "CachePath": "E5/{E5957BD1-9406-0421-5FC8-87CDD789D341}.wem"
+      "ShortName": "SFX_Water_01.wav",
+      "CachePath": "29/{29982D31-8E57-6F8E-9A64-947415CD530B}.wem"
      },
      {
       "Id": "639641329",
@@ -102,6 +134,14 @@
       "Location": "Memory",
       "ShortName": "BurningCityTrack.wav",
       "CachePath": "79/{79066FCD-7843-40F6-D168-EEE2CF56FDD9}.wem"
+     },
+     {
+      "Id": "747169337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Button_03.wav",
+      "CachePath": "9B/{9BE7F2E2-29BC-04BB-3F86-07679809AB0B}.wem"
      },
      {
       "Id": "779713520",
@@ -128,12 +168,12 @@
       "CachePath": "1F/{1F578F6E-0505-5318-6627-498F37A3CA7A}.wem"
      },
      {
-      "Id": "877393879",
+      "Id": "827111444",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "SFX_Water.wav",
-      "CachePath": "7A/{7ACFDBD1-94F4-88F5-134C-04E4DAD669D1}.wem"
+      "ShortName": "SFX_Cave_04.wav",
+      "CachePath": "59/{59959651-54B9-403D-7F6C-288FF256DBF8}.wem"
      },
      {
       "Id": "904930164",
@@ -146,10 +186,88 @@
     ],
     "Events": [
      {
-      "Id": "4091541804",
-      "Name": "Cave_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cave_01",
-      "GUID": "{B10E3B9F-4CFF-4A25-8BCB-FF4B67A91147}",
+      "Id": "3779517962",
+      "Name": "Play_BurningCity",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BurningCity",
+      "GUID": "{E7E3F39A-A134-451F-9166-72E786C8A660}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "639641329"
+       }
+      ]
+     },
+     {
+      "Id": "207755397",
+      "Name": "Play_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Forest",
+      "GUID": "{D9075865-6940-4B90-93EC-7CF39C73CF94}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "21657060"
+       }
+      ]
+     },
+     {
+      "Id": "3738780720",
+      "Name": "Play_MainMenu",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMenu",
+      "GUID": "{411FAC74-41FA-4A84-BEBB-6F694403B7DE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "403188759"
+       }
+      ]
+     },
+     {
+      "Id": "920741356",
+      "Name": "Play_SFX_Button_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_01",
+      "GUID": "{9D94CB30-E5C6-4289-8B93-6F9E110CFB50}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7555208",
+      "DurationMax": "1.7555208",
+      "MediaRefs": [
+       {
+        "Id": "345818729"
+       }
+      ]
+     },
+     {
+      "Id": "920741359",
+      "Name": "Play_SFX_Button_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_02",
+      "GUID": "{62DDF8B0-A4BA-4ACC-8DA9-844AC5154F20}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74931973",
+      "DurationMax": "0.74931973",
+      "MediaRefs": [
+       {
+        "Id": "111375023"
+       }
+      ]
+     },
+     {
+      "Id": "920741358",
+      "Name": "Play_SFX_Button_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_03",
+      "GUID": "{F7CACBC9-97CA-4359-9ECC-23516D0598E5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74931973",
+      "DurationMax": "0.74931973",
+      "MediaRefs": [
+       {
+        "Id": "747169337"
+       }
+      ]
+     },
+     {
+      "Id": "3434634929",
+      "Name": "Play_SFX_Cave_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_01",
+      "GUID": "{F8F35A90-F7D5-4E9B-8C8F-90F005855173}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -159,10 +277,10 @@
       ]
      },
      {
-      "Id": "4091541807",
-      "Name": "Cave_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cave_02",
-      "GUID": "{F0D741DB-7C91-400C-8B53-211DC1F269EF}",
+      "Id": "3434634930",
+      "Name": "Play_SFX_Cave_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_02",
+      "GUID": "{EE031B47-A5B8-4400-9931-3956FB76927F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -172,10 +290,36 @@
       ]
      },
      {
-      "Id": "1589446069",
-      "Name": "Fire_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Fire_01",
-      "GUID": "{439D9FD2-4E21-4DD1-9E6D-1B571F369CAC}",
+      "Id": "3434634931",
+      "Name": "Play_SFX_Cave_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_03",
+      "GUID": "{D44C70E5-5646-4C18-9A9D-4B7C69FA7CF1}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "226908720"
+       }
+      ]
+     },
+     {
+      "Id": "3434634932",
+      "Name": "Play_SFX_Cave_04",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_04",
+      "GUID": "{F0E73809-E57C-41FD-98DA-914329093326}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "827111444"
+       }
+      ]
+     },
+     {
+      "Id": "3889642976",
+      "Name": "Play_SFX_Fire_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Fire_01",
+      "GUID": "{885DC419-B2DA-457F-8AB2-73EE73FAE23B}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -184,10 +328,10 @@
       ]
      },
      {
-      "Id": "1589446070",
-      "Name": "Fire_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Fire_02",
-      "GUID": "{A9E6EBD1-E266-4748-B9C3-5027253A677F}",
+      "Id": "3889642979",
+      "Name": "Play_SFX_Fire_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Fire_02",
+      "GUID": "{E72CE92C-A7AD-450A-A57D-3CB1B60F9116}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -197,89 +341,13 @@
       ]
      },
      {
-      "Id": "491961918",
-      "Name": "Forest",
-      "ObjectPath": "\\Events\\Default Work Unit\\Forest",
-      "GUID": "{54C1B09E-5F55-45BC-9B21-2285AA4C16CD}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "21657060"
-       }
-      ]
-     },
-     {
-      "Id": "3920196677",
-      "Name": "Ice_Blast",
-      "ObjectPath": "\\Events\\Default Work Unit\\Ice_Blast",
-      "GUID": "{C08C186A-3D6D-4BF5-B00E-AFB166013494}",
+      "Id": "3055317224",
+      "Name": "Play_SFX_TreeOfLife_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_TreeOfLife_02",
+      "GUID": "{08C4734D-83DF-4984-A7BA-A5720FB4D881}",
       "DurationType": "OneShot",
-      "DurationMin": "1.4906042",
-      "DurationMax": "1.4906042",
-      "MediaRefs": [
-       {
-        "Id": "600859110"
-       }
-      ]
-     },
-     {
-      "Id": "3604647259",
-      "Name": "MainMenu",
-      "ObjectPath": "\\Events\\Default Work Unit\\MainMenu",
-      "GUID": "{55941BC9-ACBA-4271-A27B-E5BA82533312}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "403188759"
-       }
-      ]
-     },
-     {
-      "Id": "3946025416",
-      "Name": "Music_City",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music_City",
-      "GUID": "{D4ADB7FD-7BB6-4050-831A-F299900994B3}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "639641329"
-       }
-      ]
-     },
-     {
-      "Id": "931250475",
-      "Name": "Music_Tutorial",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music_Tutorial",
-      "GUID": "{6A7AA323-177E-4166-80C2-5272C146525F}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "567078735"
-       }
-      ]
-     },
-     {
-      "Id": "1904864137",
-      "Name": "Torch",
-      "ObjectPath": "\\Events\\Default Work Unit\\Torch",
-      "GUID": "{60271917-AEBD-4C76-8C38-6B743B7A12E4}",
-      "MaxAttenuation": "30",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "779713520"
-       }
-      ]
-     },
-     {
-      "Id": "424126604",
-      "Name": "TreeOfLife",
-      "ObjectPath": "\\Events\\Default Work Unit\\TreeOfLife",
-      "GUID": "{905F2F34-A348-4D92-9B0D-3D4F10CFED6D}",
-      "MaxAttenuation": "30",
-      "DurationType": "OneShot",
-      "DurationMin": "1.59",
-      "DurationMax": "1.59",
+      "DurationMin": "5.7251773",
+      "DurationMax": "5.7251773",
       "MediaRefs": [
        {
         "Id": "5830356"
@@ -287,23 +355,37 @@
       ]
      },
      {
-      "Id": "2654748154",
-      "Name": "Water",
-      "ObjectPath": "\\Events\\Default Work Unit\\Water",
-      "GUID": "{E2510F1E-B160-4308-A088-251D21176E0F}",
-      "MaxAttenuation": "30",
-      "DurationType": "Infinite",
+      "Id": "3055317225",
+      "Name": "Play_SFX_TreeOfLife_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_TreeOfLife_03",
+      "GUID": "{E3F6244C-180E-4E47-8E93-5EDF3A902CAB}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.4046147",
+      "DurationMax": "3.4046147",
       "MediaRefs": [
        {
-        "Id": "877393879"
+        "Id": "237654140"
        }
       ]
      },
      {
-      "Id": "3996293477",
-      "Name": "Waterfall_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Waterfall_01",
-      "GUID": "{6A7CE4CF-8A07-4480-9E1E-B270CB9EF3F6}",
+      "Id": "3212841747",
+      "Name": "Play_SFX_Water_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Water_01",
+      "GUID": "{EAB33356-9383-4F88-A7B3-C71A20E603B2}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "620722210"
+       }
+      ]
+     },
+     {
+      "Id": "1233267134",
+      "Name": "Play_SFX_Waterfall_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Waterfall_01",
+      "GUID": "{1267F9A2-A83F-4038-AB35-D6FF52B3CC3F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -313,10 +395,10 @@
       ]
      },
      {
-      "Id": "3996293478",
-      "Name": "Waterfall_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Waterfall_02",
-      "GUID": "{56D5D7CA-DBC4-44F8-8043-3C4267B623D6}",
+      "Id": "1233267133",
+      "Name": "Play_SFX_Waterfall_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Waterfall_02",
+      "GUID": "{F459D214-3414-43A2-997D-9A3F07436C8F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -326,10 +408,10 @@
       ]
      },
      {
-      "Id": "1291679911",
-      "Name": "Wind_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Wind_01",
-      "GUID": "{9761308C-66D1-4C10-9C80-FBE10BBF0A2C}",
+      "Id": "4018713014",
+      "Name": "Play_SFX_Wind_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Wind_01",
+      "GUID": "{596D568A-4C77-45BD-AD51-436B8A895265}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -339,15 +421,40 @@
       ]
      },
      {
-      "Id": "1291679908",
-      "Name": "Wind_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Wind_02",
-      "GUID": "{B3A8578C-3929-425D-8C90-28CCE083FCD3}",
+      "Id": "4018713013",
+      "Name": "Play_SFX_Wind_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Wind_02",
+      "GUID": "{818FB92D-26E9-4B1D-9804-0C6E27469D32}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "796020091"
+       }
+      ]
+     },
+     {
+      "Id": "2635547058",
+      "Name": "Play_TempleTrack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TempleTrack",
+      "GUID": "{B35224F2-B6DB-4B21-AE36-B4BE9B7566B0}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "567078735"
+       }
+      ]
+     },
+     {
+      "Id": "2025845440",
+      "Name": "Play_Torch",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Torch",
+      "GUID": "{60E7CCF7-F58F-4F24-B61A-B5039D36FAD7}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "779713520"
        }
       ]
      }
@@ -374,6 +481,6 @@
     ]
    }
   ],
-  "FileHash": "{225DBC2B-14A0-1D06-2894-5FFC912B5084}"
+  "FileHash": "{1CE2DA33-0034-5D6B-55CE-206C7DEFE2EF}"
  }
 }
