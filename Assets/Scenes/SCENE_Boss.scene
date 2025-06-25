@@ -10,14 +10,14 @@
             -16.28835678100586
         ],
         "Camera Front": [
-            0.172943115234375,
-            -0.7362119555473328,
-            -0.6542802453041077
+            0.05283312872052193,
+            -0.6225110292434692,
+            -0.7808256149291992
         ],
         "Camera Up": [
-            0.1880103051662445,
-            0.6772187948226929,
-            -0.7113556265830994
+            0.04197528585791588,
+            0.7830065488815308,
+            -0.6205955743789673
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -57,7 +57,8 @@
                 "Children": [
                     14547429557385646294,
                     18168919769576740115,
-                    17463453328532126461
+                    17463453328532126461,
+                    4107746112324375919
                 ]
             },
             {
@@ -3767,7 +3768,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4684099853038788
+                        "CameraVFOV": 0.4349922835826874
                     }
                 ],
                 "Children": []
@@ -11826,7 +11827,7 @@
                         ]
                     },
                     {
-                        "UID": 13847416335734385233,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -11936,6 +11937,8 @@
                                 "Charged Attack hitbox delay": 0.0,
                                 "Charged Attack hitbox duration": 0.0,
                                 "Aim shadow object": "",
+                                "Melee trail object": "",
+                                "Melee VFX object": "",
                                 "Take mushroom cooldown": 0.20000000298023224,
                                 "Mushroom healing": 2,
                                 "Dash Trail object": "DashTrail",
@@ -11953,7 +11956,7 @@
                         ]
                     },
                     {
-                        "UID": 11819429394062116732,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -12239,7 +12242,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13968252281608657444,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -12360,7 +12363,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6660514228380137886,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -12788,6 +12791,100 @@
                 ],
                 "Components": [],
                 "Children": []
+            },
+            {
+                "UID": 4107746112324375919,
+                "ParentUID": 6788591387451538717,
+                "Name": "Game_Canvas",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.972000002861023,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15105219799909680351,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true
+                    },
+                    {
+                        "UID": 5132408585863748978,
+                        "Type": 9,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas",
+                        "RenderMode": 0
+                    },
+                    {
+                        "UID": 15208677970577765276,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "PauseMenuScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "PanelToShow": "PauseMenuPanel"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 11352679833596164168,
+                        "Type": 20,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas Scaler",
+                        "ReferenceResolution": [
+                            1920.0,
+                            1080.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    3193901209180991874,
+                    10421271901714219172
+                ]
             },
             {
                 "UID": 4869412553087825394,
@@ -17719,6 +17816,76 @@
                 ]
             },
             {
+                "UID": 16893353402824844913,
+                "ParentUID": 3193901209180991874,
+                "Name": "CooldownDecor",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -561.968017578125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -259.53900146484375,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -2.447000026702881,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8075695563417007727,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -561.968017578125,
+                            -259.53900146484375
+                        ],
+                        "Size": [
+                            143.0,
+                            143.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true
+                    },
+                    {
+                        "UID": 1677037035510981820,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1202133531569191,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 10048964963132912563,
                 "ParentUID": 15618525391574453506,
                 "Name": "jnt_jaw",
@@ -20186,6 +20353,250 @@
                     1.0
                 ],
                 "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 3193901209180991874,
+                "ParentUID": 4107746112324375919,
+                "Name": "Cooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    16893353402824844913,
+                    5708357767728565096,
+                    8415400899715261479
+                ]
+            },
+            {
+                "UID": 5708357767728565096,
+                "ParentUID": 3193901209180991874,
+                "Name": "DashCooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -559.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -281.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -3.9000000953674316,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14567293132453649627,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -559.0,
+                            -281.0
+                        ],
+                        "Size": [
+                            75.0,
+                            75.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true
+                    },
+                    {
+                        "UID": 13755808107497882498,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1215467239887490,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8415400899715261479,
+                "ParentUID": 3193901209180991874,
+                "Name": "UltimateCooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -559.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -226.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -3.9010000228881836,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18113892675719555185,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -559.0,
+                            -226.0
+                        ],
+                        "Size": [
+                            75.0,
+                            75.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true
+                    },
+                    {
+                        "UID": 361294180450758004,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1269620042662432,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10421271901714219172,
+                "ParentUID": 4107746112324375919,
+                "Name": "Health",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -640.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    360.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4099323441847025039,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            400.0,
+                            100.0
+                        ],
+                        "Pivot": [
+                            0.0,
+                            1.0
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true
+                    },
+                    {
+                        "UID": 3707107744409348258,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1245742346682234,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
                 "Children": []
             }
         ],
