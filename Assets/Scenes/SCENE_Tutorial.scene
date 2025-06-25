@@ -5,19 +5,19 @@
         "RootGameObject": 8823869308913623498,
         "NavmeshUID": 2024566865993265,
         "Camera Position": [
-            21.00489616394043,
-            25.77192497253418,
-            6.543191432952881
+            -35.01985549926758,
+            34.4190673828125,
+            -6.4867353439331055
         ],
         "Camera Front": [
-            0.6693406105041504,
-            -0.6761420369148254,
-            -0.3079206347465515
+            0.6581469178199768,
+            -0.6388807892799377,
+            -0.398339182138443
         ],
         "Camera Up": [
-            0.61391282081604,
-            0.737117350101471,
-            -0.2824344038963318
+            0.5462151765823364,
+            0.7696411609649658,
+            -0.33060768246650696
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -26,7 +26,20 @@
         "PlayerProjectileMask": 4,
         "EnemyProjectileMask": 8,
         "tags": [
+            "level_exit",
+            "player",
             "isle_1"
+        ],
+        "tagsGO": [
+            [
+                714467811911119984
+            ],
+            [
+                663744027213220753
+            ],
+            [
+                6760208181447783229
+            ]
         ],
         "GameObjects": [
             {
@@ -13604,7 +13617,7 @@
                         ]
                     },
                     {
-                        "UID": 12750735061115067958,
+                        "UID": 12887672752497429773,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -34919,9 +34932,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "tags": [
-                    "isle_1"
-                ],
+                "tags": [],
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -35561,7 +35572,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 13432224965378549807,
+                        "UID": 8510010693026790910,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -39996,7 +40007,7 @@
                         "Name": "Capsule Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
-                        "ColliderLayer": 3,
+                        "ColliderLayer": 4,
                         "Radius": 1.0,
                         "Length": 1.0,
                         "GenerateCallback": true,
@@ -41824,7 +41835,9 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "tags": [],
+                "tags": [
+                    "level_exit"
+                ],
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -43840,7 +43853,9 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "tags": [],
+                "tags": [
+                    "isle_1"
+                ],
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -45061,9 +45076,11 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "tags": [],
+                "tags": [
+                    "player"
+                ],
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 15605623384144880220,
+                "PrefabVersionUID": 15193905723682422708,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -52435,8 +52452,83 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16770328341058904969
+                    16770328341058904969,
+                    4714916329870554727
                 ]
+            },
+            {
+                "UID": 4714916329870554727,
+                "ParentUID": 4640066257634375569,
+                "Name": "LEVEL_EXIT",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "tags": [],
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    87.21281433105469,
+                    0.0,
+                    1.0,
+                    0.0,
+                    13.323704719543457,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -41.91478729248047,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18299068201611777710,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "PlayerLocationScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Location tag": "level_exit"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 12481768725156247613,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 3,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            7.849999904632568,
+                            0.5,
+                            7.949999809265137
+                        ]
+                    }
+                ],
+                "Children": []
             }
         ],
         "Lights Config": {
