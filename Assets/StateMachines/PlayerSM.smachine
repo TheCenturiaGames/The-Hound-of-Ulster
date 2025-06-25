@@ -19,7 +19,8 @@
             "Ultimate",
             "Charge",
             "IdleBreak1",
-            "IdleBreak2"
+            "IdleBreak2",
+            "Heal"
         ],
         "Clips": [
             {
@@ -349,6 +350,12 @@
             {
                 "ClipUID": 1560884572443040,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
+                "ClipTime": 0.5,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_55",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -446,8 +453,8 @@
                 "StateName": "Ultimate",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Ultimate_Attack",
                 "Position": {
-                    "x": -320.0,
-                    "y": -380.0
+                    "x": -20.0,
+                    "y": -400.0
                 }
             },
             {
@@ -488,6 +495,14 @@
                 "Position": {
                     "x": -940.0,
                     "y": -100.0
+                }
+            },
+            {
+                "StateName": "Heal",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
+                "Position": {
+                    "x": -660.0,
+                    "y": -290.0
                 }
             }
         ],
@@ -1144,6 +1159,114 @@
                 "FromState": "Walk",
                 "ToState": "Land",
                 "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Heal",
+                "Trigger": "Heal",
                 "InterpolationTime": 200
             }
         ]
