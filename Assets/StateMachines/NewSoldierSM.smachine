@@ -1,0 +1,164 @@
+{
+    "StateMachine": {
+        "UID": 1752127844091174,
+        "Name": "NewSoldierSM",
+        "Triggers": [
+            "run",
+            "idle",
+            "attack",
+            "thrust"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1590448279252794,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Idle_Normal",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1591665781428841,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1510706550217840,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack1_v1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1555412043789382,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack_Thrust1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1545594351644911,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack2_v1",
+                "ClipTime": 1.0,
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Idle_Normal",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Run",
+                "Position": {
+                    "x": 540.0,
+                    "y": -0.0
+                }
+            },
+            {
+                "StateName": "Attack",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack2_v1",
+                "Position": {
+                    "x": 490.0,
+                    "y": 170.0
+                }
+            },
+            {
+                "StateName": "Thrust",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack_Thrust1",
+                "Position": {
+                    "x": -20.0,
+                    "y": 170.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
