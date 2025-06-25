@@ -6,7 +6,8 @@
             "run",
             "idle",
             "attack",
-            "thrust"
+            "thrust",
+            "damaged"
         ],
         "Clips": [
             {
@@ -62,6 +63,18 @@
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Attack2_v1",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_9",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1538023624707830,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Get_Hit_Normal_1",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -95,6 +108,14 @@
                 "Position": {
                     "x": -20.0,
                     "y": 170.0
+                }
+            },
+            {
+                "StateName": "Damaged",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Get_Hit_Normal_1",
+                "Position": {
+                    "x": 990.0,
+                    "y": 60.0
                 }
             }
         ],
@@ -157,6 +178,54 @@
                 "FromState": "Thrust",
                 "ToState": "Idle",
                 "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Attack",
+                "Trigger": "attack",
                 "InterpolationTime": 200
             }
         ]
