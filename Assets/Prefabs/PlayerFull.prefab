@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 12724491904501170775,
+        "VersionUID": 13363286319959209174,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 12724491904501170775,
+                "PrefabVersionUID": 13363286319959209174,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -272,7 +272,7 @@
                                 "Charged Attack damage": 2,
                                 "Charged Attack hitbox delay": 0.30000001192092896,
                                 "Charged Attack hitbox duration": 0.10000000149011612,
-                                "Aim shadow object": "",
+                                "Aim shadow object": "AimShadow",
                                 "Melee trail object": "SpearMeleeTrail",
                                 "Melee VFX object": "SpearVFX",
                                 "Take mushroom cooldown": 0.20000000298023224,
@@ -280,6 +280,7 @@
                                 "Dash Trail object": "DashTrail",
                                 "Dash decal object": "DashDecal",
                                 "Dash decal disappear": 5.0,
+                                "Heal visual object": "",
                                 "God Mode": false
                             },
                             {
@@ -344,7 +345,8 @@
                     2468204749108620660,
                     10642126741674161982,
                     10871682274146130000,
-                    11020401767199316180
+                    11020401767199316180,
+                    8644901691941722332
                 ]
             },
             {
@@ -404,7 +406,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.436475545167923
+                        "CameraVFOV": 0.4877009391784668
                     }
                 ],
                 "Children": []
@@ -957,6 +959,49 @@
                     17646117804040567517,
                     16621317833484300916
                 ]
+            },
+            {
+                "UID": 8644901691941722332,
+                "ParentUID": 8764511314580067682,
+                "Name": "AimShadow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16827148672959941583,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    10.0,
+                    2.2178573608398438,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13394235471213651929,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1326842676146302,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 16011884067056682764,
@@ -9437,7 +9482,7 @@
                 "UID": 12620093623267373276,
                 "ParentUID": 11729106687555367870,
                 "Name": "SpearMeleeTrail",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -10561,7 +10606,7 @@
                 "UID": 954589392903907862,
                 "ParentUID": 11996081590991801565,
                 "Name": "SpearVFX",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
