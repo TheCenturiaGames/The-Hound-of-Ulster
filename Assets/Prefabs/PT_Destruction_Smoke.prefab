@@ -1,12 +1,12 @@
 {
     "Prefab": {
         "UID": 1645534220414986,
-        "VersionUID": 3804481621614620000,
+        "VersionUID": 11056749204324873477,
         "Name": "PT_Destruction_Smoke",
         "GameObjects": [
             {
-                "UID": 6676543142947225920,
-                "ParentUID": 3408008172474305760,
+                "UID": 9674451814413008562,
+                "ParentUID": 7129986743466315570,
                 "Name": "PT_Destruction_Smoke",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -14,21 +14,21 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1645534220414986,
-                "PrefabVersionUID": 3804481621614620000,
+                "PrefabVersionUID": 11056749204324873477,
                 "PrefabChildUID": 1918523394549752972,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
+                    -35.92955780029297,
+                    0.0,
+                    1.0,
+                    0.0,
+                    5.242057800292969,
                     0.0,
                     0.0,
                     1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    30.469602584838867,
+                    10.800373077392578,
                     0.0,
                     0.0,
                     0.0,
@@ -36,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11600835311209617215,
+                        "UID": 11002204112395833900,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -46,14 +46,14 @@
                             {
                                 "EmitterTag": "Center",
                                 "UseTexture": true,
-                                "Material": 0,
+                                "Material": 1300000000000000,
                                 "Texture": 1288887284223300,
                                 "Addons": [
                                     {
                                         "Enabled": true,
                                         "AddonType": 1,
                                         "Duration": 0.44999998807907104,
-                                        "Loop": false,
+                                        "Loop": true,
                                         "particlesPerSecond": 1,
                                         "MaxParticles": 60,
                                         "RandomLifetime": true,
@@ -67,12 +67,12 @@
                                             1.0
                                         ],
                                         "sizeValuesX": [
-                                            2.0,
-                                            3.0
+                                            0.5,
+                                            2.0
                                         ],
                                         "sizeValuesY": [
-                                            2.0,
-                                            3.0
+                                            0.5,
+                                            2.0
                                         ],
                                         "sizeBezierCombined": [
                                             0.0,
@@ -82,22 +82,22 @@
                                             0.0
                                         ],
                                         "sizeBezierX": [
-                                            0.0,
-                                            0.0,
+                                            0.0078125,
+                                            1.0,
                                             0.9765625,
                                             1.0,
                                             0.0
                                         ],
                                         "sizeBezierY": [
                                             0.0,
-                                            0.0,
+                                            1.0,
                                             1.0,
                                             1.0,
                                             0.0
                                         ],
                                         "rotation": [
                                             0.0,
-                                            2.0
+                                            0.0
                                         ],
                                         "randomRotation": true,
                                         "burst": true,
@@ -171,8 +171,8 @@
                                         ],
                                         "updateXYApart": true,
                                         "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
+                                        "sizeInterpolationX": 1,
+                                        "sizeInterpolationY": 1
                                     },
                                     {
                                         "Enabled": true,
@@ -329,8 +329,8 @@
                                         "Enabled": true,
                                         "AddonType": 5,
                                         "currentShape": 2,
-                                        "currentSpawn": 1,
-                                        "baseRadius": 1.0,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 0.5,
                                         "coneAngle": 35.0,
                                         "coneLength": 1.0,
                                         "cubeSize": [
@@ -347,14 +347,14 @@
                             {
                                 "EmitterTag": "Smaller_peaces",
                                 "UseTexture": true,
-                                "Material": 0,
+                                "Material": 1300000000000000,
                                 "Texture": 1298155502878793,
                                 "Addons": [
                                     {
                                         "Enabled": true,
                                         "AddonType": 1,
                                         "Duration": 0.30000007152557373,
-                                        "Loop": false,
+                                        "Loop": true,
                                         "particlesPerSecond": 1,
                                         "MaxParticles": 31,
                                         "RandomLifetime": true,
@@ -397,8 +397,8 @@
                                             0.0
                                         ],
                                         "rotation": [
-                                            1.0,
-                                            5.0
+                                            0.0,
+                                            0.0
                                         ],
                                         "randomRotation": false,
                                         "burst": true,
@@ -625,8 +625,8 @@
                                         "Enabled": true,
                                         "AddonType": 5,
                                         "currentShape": 2,
-                                        "currentSpawn": 1,
-                                        "baseRadius": 2.0,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 1.0,
                                         "coneAngle": 35.0,
                                         "coneLength": 1.0,
                                         "cubeSize": [
