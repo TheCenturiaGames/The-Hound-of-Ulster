@@ -1,11 +1,12 @@
 {
     "Prefab": {
         "UID": 1681460269573904,
+        "VersionUID": 3712592905992182959,
         "Name": "Changeling",
         "GameObjects": [
             {
-                "UID": 779312179027990716,
-                "ParentUID": 1681580029205420704,
+                "UID": 12380529147218191793,
+                "ParentUID": 15679036427224058330,
                 "Name": "Changeling",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -13,19 +14,21 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1681460269573904,
+                "PrefabVersionUID": 3712592905992182959,
+                "PrefabChildUID": 11285212045044652495,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -8.451934814453125,
+                    -7.064583778381348,
                     0.0,
                     1.0,
                     0.0,
-                    0.3338925838470459,
+                    1.0,
                     0.0,
                     0.0,
                     1.0,
-                    0.0,
+                    9.965863227844238,
                     0.0,
                     0.0,
                     0.0,
@@ -33,19 +36,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3256366323416916198,
-                    16081921992814912695
+                    261966774423822516
                 ]
             },
             {
-                "UID": 3256366323416916198,
-                "ParentUID": 779312179027990716,
+                "UID": 261966774423822516,
+                "ParentUID": 12380529147218191793,
                 "Name": "ChangelingScript",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
+                "PrefabChildUID": 13627140522586542806,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -66,17 +69,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13766156191485168821,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1121096887918908,
-                        "Material": 0,
-                        "RenderMode": 2
-                    },
-                    {
-                        "UID": 1823469906744480151,
+                        "UID": 2616177648779426617,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -97,20 +90,18 @@
                                 "Attack Hitbox Delay": 0.0,
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 0.10000000149011612,
-                                "AI Chase Range": 20.0,
-                                "AI Attack Range": 10.0,
-                                "AI Patrol Point": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
+                                "AI Chase Range": 10.0,
+                                "AI Attack Range": 5.0,
+                                "AI Max Detection Range": 15.0,
+                                "Player search duration": 5.0,
                                 "Dash Distance": 10.0,
-                                "Dark Path Name": "DarkPath"
+                                "Dark Path Name": "DarkPath",
+                                "Body mesh": "BodyMesh"
                             }
                         ]
                     },
                     {
-                        "UID": 12925382072814088286,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -118,14 +109,14 @@
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 2,
-                        "Radius": 0.25,
-                        "Length": 0.5,
+                        "Radius": 9.069411277770996,
+                        "Length": 4.782496452331543,
                         "GenerateCallback": true,
                         "FitToSize": true,
                         "CenterOffset": [
-                            0.0,
-                            0.5,
-                            0.0
+                            -15.280035972595215,
+                            4.782496452331543,
+                            -17.638822555541992
                         ],
                         "CenterRotation": [
                             0.0,
@@ -134,7 +125,7 @@
                         ]
                     },
                     {
-                        "UID": 7799895858081795192,
+                        "UID": 3428882219402865581,
                         "Type": 15,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -148,18 +139,77 @@
                     }
                 ],
                 "Children": [
-                    10615780409683375005
+                    16735856091281575716,
+                    334092728084772048,
+                    9986257883697162506
                 ]
             },
             {
-                "UID": 16081921992814912695,
-                "ParentUID": 779312179027990716,
+                "UID": 16735856091281575716,
+                "ParentUID": 261966774423822516,
+                "Name": "Weapon",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10968852648207237365,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "Radius": 0.75,
+                        "Length": 0.25,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.5,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 334092728084772048,
+                "ParentUID": 261966774423822516,
                 "Name": "DarkPath",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
+                "PrefabChildUID": 5756885439919728422,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -180,17 +230,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4250303082112412298,
+                        "UID": 2395135515144644187,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1175652718975713,
                         "Material": 0,
-                        "RenderMode": 2
+                        "RenderMode": 0,
+                        "ProduceShadows": true
                     },
                     {
-                        "UID": 3570945560597891909,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -217,14 +268,15 @@
                 "Children": []
             },
             {
-                "UID": 10615780409683375005,
-                "ParentUID": 3256366323416916198,
-                "Name": "Weapon",
-                "Mobility": 0,
+                "UID": 9986257883697162506,
+                "ParentUID": 261966774423822516,
+                "Name": "BodyMesh",
+                "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
+                "PrefabChildUID": 12902814037554824436,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -245,28 +297,60 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12597650358830548276,
-                        "Type": 13,
+                        "UID": 14285801279116289466,
+                        "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Capsule Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 2,
-                        "Radius": 0.75,
-                        "Length": 0.25,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            0.5,
-                            0.0
-                        ],
-                        "CenterRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ]
+                        "Name": "Mesh",
+                        "Mesh": 1121096887918908,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": [
+                    9396927089105297054
+                ]
+            },
+            {
+                "UID": 9396927089105297054,
+                "ParentUID": 9986257883697162506,
+                "Name": "VisibleMeshWhenHidden",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3391779482855097303,
+                "LocalTransform": [
+                    0.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    1.25,
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17762002551616633005,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1194458484681695,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
                     }
                 ],
                 "Children": []
