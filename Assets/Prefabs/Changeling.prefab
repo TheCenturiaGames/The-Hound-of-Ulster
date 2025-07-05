@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1681460269573904,
-        "VersionUID": 17788627313670671046,
+        "VersionUID": 2557909605964576375,
         "Name": "Changeling",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1681460269573904,
-                "PrefabVersionUID": 17788627313670671046,
+                "PrefabVersionUID": 2557909605964576375,
                 "PrefabChildUID": 11285212045044652495,
                 "LocalTransform": [
                     1.0,
@@ -90,14 +90,15 @@
                                 "Attack Hitbox Delay": 0.0,
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 0.10000000149011612,
-                                "AI Chase Range": 8.0,
-                                "AI Attack Range": 5.0,
+                                "AI Chase Range": 12.0,
+                                "AI Attack Range": 8.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Dark Path Name": "DarkPath",
+                                "Dash trail mesh": "DashTrailMesh",
+                                "Dash trail collision": "DashTrailCollision",
                                 "Body mesh": "BodyMesh",
-                                "Abs spotted reaction time": 2.0,
-                                "Abs rise duration": 1.0,
+                                "Abs spotted reaction time": 1.0,
+                                "Abs rise duration": 0.5,
                                 "Version": 1
                             }
                         ]
@@ -142,8 +143,9 @@
                 ],
                 "Children": [
                     16735856091281575716,
-                    334092728084772048,
-                    9986257883697162506
+                    9986257883697162506,
+                    7856182724922346960,
+                    16540850690491352911
                 ]
             },
             {
@@ -203,77 +205,10 @@
                 "Children": []
             },
             {
-                "UID": 334092728084772048,
-                "ParentUID": 261966774423822516,
-                "Name": "DarkPath",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 5756885439919728422,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    4.877227783203125,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 2395135515144644187,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1175652718975713,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 0,
-                        "Type": 13,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Capsule Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 5,
-                        "Radius": 0.25,
-                        "Length": 0.5,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "CenterRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 9986257883697162506,
                 "ParentUID": 261966774423822516,
                 "Name": "BodyMesh",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -315,10 +250,112 @@
                 ]
             },
             {
+                "UID": 7856182724922346960,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailMesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1982573828387344308,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16078589108592038998,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16540850690491352911,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailCollision",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12576323142556806163,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2275795887117044913,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            0.5,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 9396927089105297054,
                 "ParentUID": 9986257883697162506,
                 "Name": "VisibleMeshWhenHidden",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
