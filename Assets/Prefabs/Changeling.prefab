@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1681460269573904,
-        "VersionUID": 13279023979264539267,
+        "VersionUID": 2180344056112696065,
         "Name": "Changeling",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1681460269573904,
-                "PrefabVersionUID": 13279023979264539267,
+                "PrefabVersionUID": 2180344056112696065,
                 "PrefabChildUID": 11285212045044652495,
                 "LocalTransform": [
                     1.0,
@@ -99,7 +99,19 @@
                                 "Body mesh": "BodyMesh",
                                 "Abs spotted reaction time": 1.0,
                                 "Abs rise duration": 0.5,
-                                "Version": 1
+                                "Dash attack preparation duration": 1.0,
+                                "Bite attack radius": 0.5,
+                                "Bite attack duration": 0.5,
+                                "Bite attack cooldown": 2.0,
+                                "Dying duration": 2.0,
+                                "Version (0: Random)": 2,
+                                "Chase speed": 1.0,
+                                "Chase Acceleration": 4.0,
+                                "Max sneak angle degrees": 45.0,
+                                "Min sneak speed": 1.0,
+                                "Max sneak speed": 4.0,
+                                "Distance to player for max sneak speed": 2.0,
+                                "Sneak Acceleration": 4.0
                             }
                         ]
                     },
@@ -362,18 +374,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 3391779482855097303,
                 "LocalTransform": [
-                    0.5,
+                    2.0,
                     0.0,
                     0.0,
+                    -0.3417320251464844,
+                    0.0,
+                    2.0,
+                    0.0,
+                    0.7157547473907471,
                     0.0,
                     0.0,
-                    0.5,
-                    0.0,
-                    1.25,
-                    0.0,
-                    0.0,
-                    0.5,
-                    0.0,
+                    2.0,
+                    0.4566764831542969,
                     0.0,
                     0.0,
                     0.0,
@@ -386,9 +398,9 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1194458484681695,
-                        "Material": 0,
-                        "RenderMode": 0,
+                        "Mesh": 1171684177141783,
+                        "Material": 1385723297687892,
+                        "RenderMode": 2,
                         "ProduceShadows": true
                     }
                 ],
