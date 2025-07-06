@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1681460269573904,
-        "VersionUID": 7128157328326511994,
+        "VersionUID": 17046629891392819396,
         "Name": "Changeling",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1681460269573904,
-                "PrefabVersionUID": 7128157328326511994,
+                "PrefabVersionUID": 17046629891392819396,
                 "PrefabChildUID": 11285212045044652495,
                 "LocalTransform": [
                     1.0,
@@ -83,7 +83,7 @@
                                 "Current Health": 2,
                                 "Invulnerable": false,
                                 "Dead": false,
-                                "Damage": 2,
+                                "Damage": 0,
                                 "Attack Range": 1.0,
                                 "Attack Duration": 1.0,
                                 "Attack Cooldown": 5.0,
@@ -91,7 +91,7 @@
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 0.10000000149011612,
                                 "AI Chase Range": 10.0,
-                                "AI Attack Range": 0.0,
+                                "AI Attack Range": 4.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
                                 "Dash trail mesh": "DashTrailMesh",
@@ -104,15 +104,17 @@
                                 "Bite attack duration": 0.5,
                                 "Bite attack cooldown": 2.0,
                                 "Dying duration": 2.0,
-                                "Version (0: Random)": 2,
-                                "Chase speed": 1.0,
+                                "Version (0: Random)": 3,
+                                "Chase speed": 3.0,
                                 "Chase Acceleration": 4.0,
                                 "Max sneak angle degrees": 45.0,
                                 "Min sneak speed": 0.0010000000474974513,
                                 "Max sneak speed": 2.0,
                                 "Distance to player for max sneak speed": 2.0,
                                 "Sneak Acceleration": 4.0,
-                                "Random bite attack chance per second": 0.10000000149011612
+                                "Peek chance per second": 0.10000000149011612,
+                                "Peek duration": 2.0,
+                                "Dash angle degrees": 0.0
                             }
                         ]
                     },
@@ -158,7 +160,13 @@
                     16735856091281575716,
                     9986257883697162506,
                     7856182724922346960,
-                    16540850690491352911
+                    16540850690491352911,
+                    11738055083436609543,
+                    7253165558963810281,
+                    13481515711008743883,
+                    4693821298997578337,
+                    10339272624561816987,
+                    12252019825827169717
                 ]
             },
             {
@@ -336,6 +344,312 @@
                 "Components": [
                     {
                         "UID": 2275795887117044913,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            0.5,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11738055083436609543,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailMesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1982573828387344308,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15618412810066785102,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 7253165558963810281,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailMesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1982573828387344308,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 318067807902086444,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13481515711008743883,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailMesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1982573828387344308,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15718754875615271154,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4693821298997578337,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailCollision",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12576323142556806163,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13689638665656289241,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            0.5,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10339272624561816987,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailCollision",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12576323142556806163,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7043614800898491971,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            0.5,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12252019825827169717,
+                "ParentUID": 261966774423822516,
+                "Name": "DashTrailCollision",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12576323142556806163,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2585014755012809357,
                         "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
