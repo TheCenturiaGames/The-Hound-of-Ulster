@@ -5,19 +5,19 @@
         "RootGameObject": 15679036427224058330,
         "NavmeshUID": 2020055972594979,
         "Camera Position": [
-            -8.615050315856934,
-            13.63754653930664,
-            13.248475074768066
+            -15.444774627685547,
+            2.2333056926727295,
+            4.71183967590332
         ],
         "Camera Front": [
-            0.0945492833852768,
-            -0.892685055732727,
-            -0.44065186381340027
+            0.38199129700660706,
+            -0.21792784333229065,
+            -0.8981037139892578
         ],
         "Camera Up": [
-            0.18711628019809723,
-            0.4514595568180084,
-            -0.872451663017273
+            0.08493243902921677,
+            0.9761525988578796,
+            -0.19978174567222595
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -25,6 +25,8 @@
         "PlayerMask": 39,
         "PlayerProjectileMask": 4,
         "EnemyProjectileMask": 8,
+        "tags": [],
+        "tagsGO": [],
         "GameObjects": [
             {
                 "UID": 15679036427224058330,
@@ -219,6 +221,41 @@
                 ],
                 "Children": [
                     10490309942877962639
+                ]
+            },
+            {
+                "UID": 4432888421565588008,
+                "ParentUID": 4280301075966122334,
+                "Name": "jnt_spine_02",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11759986680125373091,
+                "LocalTransform": [
+                    0.9777187705039978,
+                    0.014235351234674454,
+                    0.20936623215675354,
+                    -0.0009217114420607686,
+                    -0.0017283696215599775,
+                    0.9981904625892639,
+                    -0.05979975312948227,
+                    0.0899403989315033,
+                    -0.20984068512916565,
+                    0.05810564011335373,
+                    0.9760006666183472,
+                    -0.009945869445800781,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    1218139657243740368,
+                    9817248026347465296,
+                    3974548234142691291
                 ]
             },
             {
@@ -450,41 +487,6 @@
                     10222073058809117149,
                     1587984556107525394,
                     7750496400772125309
-                ]
-            },
-            {
-                "UID": 4432888421565588008,
-                "ParentUID": 4280301075966122334,
-                "Name": "jnt_spine_02",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11759986680125373091,
-                "LocalTransform": [
-                    0.9777187705039978,
-                    0.014235351234674454,
-                    0.20936623215675354,
-                    -0.0009217114420607686,
-                    -0.0017283696215599775,
-                    0.9981904625892639,
-                    -0.05979975312948227,
-                    0.0899403989315033,
-                    -0.20984068512916565,
-                    0.05810564011335373,
-                    0.9760006666183472,
-                    -0.009945869445800781,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    1218139657243740368,
-                    9817248026347465296,
-                    3974548234142691291
                 ]
             },
             {
@@ -760,7 +762,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4762154221534729
+                        "CameraVFOV": 0.5118131637573242
                     }
                 ],
                 "Children": []
@@ -3523,8 +3525,8 @@
                 "Name": "DashTrailMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 13010123391730844358,
                 "LocalTransform": [
@@ -5418,8 +5420,8 @@
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 11140646114688501568,
                 "LocalTransform": [
@@ -7006,8 +7008,8 @@
                 "Name": "DashTrailMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 17636336531780320009,
                 "LocalTransform": [
@@ -7567,8 +7569,8 @@
                 "Name": "DashTrailMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 16567529445454474559,
                 "LocalTransform": [
@@ -8087,7 +8089,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1674375140989632,
-                "PrefabVersionUID": 6461055230793936255,
+                "PrefabVersionUID": 2706348684647525458,
                 "PrefabChildUID": 2312459473320058367,
                 "LocalTransform": [
                     1.0,
@@ -8138,6 +8140,7 @@
                                 "Dash trail collision": "DashTrailCollision",
                                 "Body mesh": "BodyMesh",
                                 "Abs spotted reaction time": 1.0,
+                                "TEMP: Burying depth": 0.949999988079071,
                                 "Abs rise duration": 0.5,
                                 "Dash attack preparation duration": 1.0,
                                 "Bite attack radius": 0.5,
@@ -9943,8 +9946,8 @@
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 18133097997724556773,
                 "LocalTransform": [
@@ -10915,8 +10918,8 @@
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 16346385674066018621,
                 "LocalTransform": [
@@ -12999,49 +13002,6 @@
                 "Children": []
             },
             {
-                "UID": 9396927089105297054,
-                "ParentUID": 9986257883697162506,
-                "Name": "VisibleMeshWhenHidden",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 2680802174431631083,
-                "LocalTransform": [
-                    2.0,
-                    0.0,
-                    0.0,
-                    -0.3417320251464844,
-                    0.0,
-                    2.0,
-                    0.0,
-                    0.7157547473907471,
-                    0.0,
-                    0.0,
-                    2.0,
-                    0.4566764831542969,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 17762002551616633005,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1171684177141783,
-                        "Material": 1385723297687892,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 9986257883697162506,
                 "ParentUID": 261966774423822516,
                 "Name": "BodyMesh",
@@ -13076,15 +13036,13 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1121096887918908,
-                        "Material": 0,
+                        "Mesh": 1100698390300805,
+                        "Material": 1323676333881647,
                         "RenderMode": 0,
                         "ProduceShadows": true
                     }
                 ],
-                "Children": [
-                    9396927089105297054
-                ]
+                "Children": []
             },
             {
                 "UID": 13481515711008743883,
@@ -13092,8 +13050,8 @@
                 "Name": "DashTrailMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 8189867935609327510,
                 "LocalTransform": [
@@ -13135,8 +13093,8 @@
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 1922758180689995232,
                 "LocalTransform": [
