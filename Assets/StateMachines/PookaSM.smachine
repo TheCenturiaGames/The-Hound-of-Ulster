@@ -1,0 +1,237 @@
+{
+    "StateMachine": {
+        "UID": 1754373901920523,
+        "Name": "PookaSM",
+        "Triggers": [
+            "Trigger_BreakIdle",
+            "Trigger_BreakIdle2",
+            "Trigger_StartIdle",
+            "Trigger_BuryUp",
+            "Trigger_BuryDown",
+            "Trigger_PrepareDash",
+            "Trigger_Dash",
+            "Trigger_FinishDash",
+            "Trigger_Run"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1531204195817121,
+                "ClipName": "CH_Pooka_Idle",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580322770492668,
+                "ClipName": "CH_Pooka_Scream",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1576568549973237,
+                "ClipName": "CH_Pooka_Wiggle",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1578630281630233,
+                "ClipName": "CH_Pooka_Jump",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_8",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1554694722102054,
+                "ClipName": "CH_Pooka_Stand",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_10",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1511430505116424,
+                "ClipName": "CH_Pooka_Fall",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_12",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1552872487920051,
+                "ClipName": "CH_Pooka_Dash",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_14",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1583549175356892,
+                "ClipName": "CH_Pooka_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_Pooka_Idle",
+                "Position": {
+                    "x": 30.0,
+                    "y": -60.0
+                }
+            },
+            {
+                "StateName": "IdleBreak",
+                "ClipName": "CH_Pooka_Scream",
+                "Position": {
+                    "x": -350.0,
+                    "y": -240.0
+                }
+            },
+            {
+                "StateName": "IdleBreak2",
+                "ClipName": "CH_Pooka_Wiggle",
+                "Position": {
+                    "x": -380.0,
+                    "y": 20.0
+                }
+            },
+            {
+                "StateName": "BuryUp",
+                "ClipName": "CH_Pooka_Jump",
+                "Position": {
+                    "x": 490.0,
+                    "y": -380.0
+                }
+            },
+            {
+                "StateName": "BuryDown",
+                "ClipName": "CH_Pooka_Stand",
+                "Position": {
+                    "x": 490.0,
+                    "y": -250.0
+                }
+            },
+            {
+                "StateName": "DashPreparation",
+                "ClipName": "CH_Pooka_Fall",
+                "Position": {
+                    "x": 1090.0,
+                    "y": -530.0
+                }
+            },
+            {
+                "StateName": "Dash",
+                "ClipName": "CH_Pooka_Dash",
+                "Position": {
+                    "x": 1160.0,
+                    "y": -450.0
+                }
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "CH_Pooka_Run",
+                "Position": {
+                    "x": 810.0,
+                    "y": -480.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "IdleBreak",
+                "Trigger": "Trigger_BreakIdle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleBreak",
+                "ToState": "Idle",
+                "Trigger": "Trigger_StartIdle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "IdleBreak2",
+                "Trigger": "Trigger_BreakIdle2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleBreak2",
+                "ToState": "Idle",
+                "Trigger": "Trigger_StartIdle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "BuryUp",
+                "Trigger": "Trigger_BuryUp",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BuryUp",
+                "ToState": "BuryDown",
+                "Trigger": "Trigger_BuryDown",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BuryDown",
+                "ToState": "Idle",
+                "Trigger": "Trigger_StartIdle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BuryUp",
+                "ToState": "DashPreparation",
+                "Trigger": "Trigger_PrepareDash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BuryUp",
+                "ToState": "Run",
+                "Trigger": "Trigger_Run",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
