@@ -18,7 +18,9 @@
             "Trigger_Peek",
             "Trigger_Hit",
             "Trigger_Hit2",
-            "Trigger_HitUnderground"
+            "Trigger_HitUnderground",
+            "Trigger_GroundIdle",
+            "Trigger_NONE"
         ],
         "Clips": [
             {
@@ -36,12 +38,6 @@
             {
                 "ClipUID": 0,
                 "ClipName": "Clip_2",
-                "ClipTime": 1.0,
-                "Loop": false
-            },
-            {
-                "ClipUID": 1580322770492668,
-                "ClipName": "CH_Pooka_Scream",
                 "ClipTime": 1.0,
                 "Loop": false
             },
@@ -166,12 +162,6 @@
                 "Loop": false
             },
             {
-                "ClipUID": 1564540115848915,
-                "ClipName": "CH_Pooka_Hit_2",
-                "ClipTime": 1.0,
-                "Loop": false
-            },
-            {
                 "ClipUID": 0,
                 "ClipName": "Clip_25",
                 "ClipTime": 1.0,
@@ -182,23 +172,45 @@
                 "ClipName": "CH_Pooka_Wiggle",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 1584088773476317,
+                "ClipName": "CH_Pooka_Idle_flower",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_28",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1541541131492952,
+                "ClipName": "CH_Pooka_Pick",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1590840970804940,
+                "ClipName": "CH_Pooka_Ground_Hit",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1546012632070327,
+                "ClipName": "CH_Pooka_Dig",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
             {
-                "StateName": "Idle",
-                "ClipName": "CH_Pooka_Idle",
+                "StateName": "BurriedIdle",
+                "ClipName": "CH_Pooka_Idle_flower",
                 "Position": {
                     "x": 30.0,
                     "y": -60.0
-                }
-            },
-            {
-                "StateName": "IdleBreak",
-                "ClipName": "CH_Pooka_Scream",
-                "Position": {
-                    "x": -350.0,
-                    "y": -240.0
                 }
             },
             {
@@ -211,7 +223,7 @@
             },
             {
                 "StateName": "BuryDown",
-                "ClipName": "CH_Pooka_Stand",
+                "ClipName": "CH_Pooka_Dig",
                 "Position": {
                     "x": 490.0,
                     "y": -250.0
@@ -237,8 +249,8 @@
                 "StateName": "Run",
                 "ClipName": "CH_Pooka_Run",
                 "Position": {
-                    "x": 810.0,
-                    "y": -480.0
+                    "x": 770.0,
+                    "y": -530.0
                 }
             },
             {
@@ -267,7 +279,7 @@
             },
             {
                 "StateName": "Peek",
-                "ClipName": "CH_Pooka_Bite",
+                "ClipName": "CH_Pooka_Pick",
                 "Position": {
                     "x": 460.0,
                     "y": 150.0
@@ -282,35 +294,23 @@
                 }
             },
             {
-                "StateName": "Hit2",
-                "ClipName": "CH_Pooka_Hit_2",
+                "StateName": "HitUnderground",
+                "ClipName": "CH_Pooka_Ground_Hit",
                 "Position": {
                     "x": 910.0,
                     "y": -190.0
                 }
             },
             {
-                "StateName": "HitUnderground",
-                "ClipName": "CH_Pooka_Wiggle",
+                "StateName": "VisibleIdle",
+                "ClipName": "CH_Pooka_Idle",
                 "Position": {
-                    "x": 740.0,
-                    "y": 60.0
+                    "x": 30.0,
+                    "y": -140.0
                 }
             }
         ],
         "Transitions": [
-            {
-                "FromState": "Idle",
-                "ToState": "IdleBreak",
-                "Trigger": "Trigger_BreakIdle",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "IdleBreak",
-                "ToState": "Idle",
-                "Trigger": "Trigger_StartIdle",
-                "InterpolationTime": 200
-            },
             {
                 "FromState": "IdleBreak2",
                 "ToState": "Idle",
@@ -318,15 +318,9 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Idle",
-                "ToState": "BuryUp",
-                "Trigger": "Trigger_BuryUp",
-                "InterpolationTime": 200
-            },
-            {
                 "FromState": "BuryUp",
                 "ToState": "BuryDown",
-                "Trigger": "Trigger_BuryDown",
+                "Trigger": "Trigger_NONE",
                 "InterpolationTime": 200
             },
             {
@@ -402,33 +396,9 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "IdleBreak",
-                "ToState": "Death",
-                "Trigger": "Trigger_Die",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Idle",
-                "ToState": "Death",
-                "Trigger": "Trigger_Die",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Idle",
-                "ToState": "Bite",
-                "Trigger": "Trigger_Bite",
-                "InterpolationTime": 200
-            },
-            {
                 "FromState": "Bite",
                 "ToState": "Idle",
-                "Trigger": "Trigger_StartIdle",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Idle",
-                "ToState": "Peek",
-                "Trigger": "Trigger_Peek",
+                "Trigger": "Trigger_BreakIdle2",
                 "InterpolationTime": 200
             },
             {
@@ -444,21 +414,9 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Run",
-                "ToState": "Hit2",
-                "Trigger": "Trigger_Hit2",
-                "InterpolationTime": 200
-            },
-            {
                 "FromState": "DashPreparation",
                 "ToState": "Hit1",
                 "Trigger": "Trigger_Hit",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "DashPreparation",
-                "ToState": "Hit2",
-                "Trigger": "Trigger_Hit2",
                 "InterpolationTime": 200
             },
             {
@@ -468,21 +426,9 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Dash",
-                "ToState": "Hit2",
-                "Trigger": "Trigger_Hit2",
-                "InterpolationTime": 200
-            },
-            {
                 "FromState": "DashEnd",
                 "ToState": "Hit1",
                 "Trigger": "Trigger_Hit",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "DashEnd",
-                "ToState": "Hit2",
-                "Trigger": "Trigger_Hit2",
                 "InterpolationTime": 200
             },
             {
@@ -510,9 +456,99 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Hit2",
+                "FromState": "DashEnd",
+                "ToState": "GroundIdle",
+                "Trigger": "Trigger_NONE",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DashEnd",
+                "ToState": "DashPreparation",
+                "Trigger": "Trigger_PrepareDash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Bite",
+                "ToState": "Death",
+                "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Peek",
+                "ToState": "Death",
+                "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "HitUnderground",
+                "ToState": "Death",
+                "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death",
+                "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BuryUp",
+                "ToState": "HitUnderground",
+                "Trigger": "Trigger_HitUnderground",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DashEnd",
+                "ToState": "Idle",
+                "Trigger": "Trigger_StartIdle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DashEnd",
+                "ToState": "VisibleIdle",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "VisibleIdle",
                 "ToState": "Run",
-                "Trigger": "Trigger_Run",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "VisibleIdle",
+                "ToState": "BuryDown",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "VisibleIdle",
+                "ToState": "DashPreparation",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BurriedIdle",
+                "ToState": "BuryUp",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BurriedIdle",
+                "ToState": "Bite",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "BurriedIdle",
+                "ToState": "Peek",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DashEnd",
+                "ToState": "BurriedIdle",
+                "Trigger": "Trigger",
                 "InterpolationTime": 200
             }
         ]
