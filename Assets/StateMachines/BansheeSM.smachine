@@ -43,12 +43,30 @@
                 "ClipName": "CH_Banshee_Anim_scream",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 1514484290139253,
+                "ClipName": "ch_banshee_anim_idle_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1543864370466656,
+                "ClipName": "ch_banshee_anim_shout_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1510509989534901,
+                "ClipName": "ch_banshee_anim_teleport",
+                "ClipTime": 1.0,
+                "Loop": true
             }
         ],
         "States": [
             {
                 "StateName": "Idle",
-                "ClipName": "CH_Banshee_Anim_idle",
+                "ClipName": "ch_banshee_anim_idle_base",
                 "Position": {
                     "x": 0.0,
                     "y": 0.0
@@ -56,7 +74,7 @@
             },
             {
                 "StateName": "Chase",
-                "ClipName": "CH_Banshee_Anim_chase",
+                "ClipName": "ch_banshee_anim_teleport",
                 "Position": {
                     "x": 310.0,
                     "y": 100.0
@@ -64,7 +82,7 @@
             },
             {
                 "StateName": "Scream",
-                "ClipName": "CH_Banshee_Anim_scream",
+                "ClipName": "ch_banshee_anim_shout_base",
                 "Position": {
                     "x": 320.0,
                     "y": -100.0
