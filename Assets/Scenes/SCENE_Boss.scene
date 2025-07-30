@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -17.587297439575195,
-            29.664779663085938,
-            -24.89670181274414
+            -32.80681228637695,
+            16.763504028320313,
+            -55.18074035644531
         ],
         "Camera Front": [
-            -0.35871389508247375,
-            -0.6710101366043091,
-            -0.6488989591598511
+            0.6412407159805298,
+            -0.7504007816314697,
+            -0.1603405773639679
         ],
         "Camera Up": [
-            -0.3244183361530304,
-            0.7418827414512634,
-            -0.586824357509613
+            0.7275663614273071,
+            0.6614701747894287,
+            -0.18194617331027985
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -25,6 +25,8 @@
         "PlayerMask": 39,
         "PlayerProjectileMask": 4,
         "EnemyProjectileMask": 8,
+        "tags": [],
+        "tagsGO": [],
         "GameObjects": [
             {
                 "UID": 6788591387451538717,
@@ -5021,6 +5023,21 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 17360472216204695423,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "BossMirage",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Current Sequence": 1
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -5792,7 +5809,8 @@
                     16517069118321133729,
                     1589074756738372154,
                     14363031781073599909,
-                    9106682105150192031
+                    9106682105150192031,
+                    777294125866722879
                 ]
             },
             {
@@ -12219,13 +12237,12 @@
                             {
                                 "Script Name": "PauseMenuScript",
                                 "Enabled": true,
-                                "WasEnabled": true,
-                                "PanelToShow": "PauseMenuPanel"
+                                "WasEnabled": true
                             }
                         ]
                     },
                     {
-                        "UID": 5292078786649143861,
+                        "UID": 16375399825288127188,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -12989,7 +13006,11 @@
                                 "Dash decal object": "DashDecal",
                                 "Dash decal disappear": 5.0,
                                 "Heal visual object": "",
-                                "God Mode": false
+                                "God Mode": false,
+                                "Dash filled icon": 0,
+                                "Dash empty icon": 0,
+                                "Ultimate filled icon": 0,
+                                "Ultimate empty icon": 0
                             },
                             {
                                 "Script Name": "GodModeScript",
@@ -13114,7 +13135,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.6308026909828186
+                        "CameraVFOV": 0.43569672107696533
                     }
                 ],
                 "Children": []
@@ -14343,6 +14364,66 @@
                     1.0
                 ],
                 "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 8780380501019179783,
+                "ParentUID": 777294125866722879,
+                "Name": "new Game Object",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    7.105427357601002e-14,
+                    0.000003814697265625,
+                    0.0,
+                    1.0,
+                    8.131516293641283e-20,
+                    1.542638897895813,
+                    -7.105427357601002e-14,
+                    -1.81603863891322e-18,
+                    1.0,
+                    -3.5204734802246094,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11136951850354329167,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 9202660099652127585,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Mirage",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Delay Before Damage": 0.0,
+                                "Damage Duration": 0.0,
+                                "Damage": 0,
+                                "Weight Order": 1
+                            }
+                        ]
+                    }
+                ],
                 "Children": []
             },
             {
@@ -21800,6 +21881,160 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 4280551412192899300,
+                "ParentUID": 777294125866722879,
+                "Name": "new Game Object",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    9.947598300641403e-14,
+                    -5.123760223388672,
+                    0.0,
+                    1.0,
+                    9.486769009248164e-20,
+                    1.5426386594772339,
+                    -9.947598300641403e-14,
+                    -3.957337929572091e-18,
+                    1.0,
+                    2.7014732360839844,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6906523136737692622,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 15824415605640434782,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Mirage",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Delay Before Damage": 0.0,
+                                "Damage Duration": 0.0,
+                                "Damage": 0,
+                                "Weight Order": 3
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2437995465208746105,
+                "ParentUID": 777294125866722879,
+                "Name": "new Game Object",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    8.526512829121202e-14,
+                    -5.123771667480469,
+                    0.0,
+                    1.0,
+                    9.486769009248164e-20,
+                    1.5426386594772339,
+                    -8.526512829121202e-14,
+                    -2.8189256484623115e-18,
+                    1.0,
+                    -3.5204734802246094,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 282208128054073660,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 4864637932347419996,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Mirage",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Delay Before Damage": 0.0,
+                                "Damage Duration": 0.0,
+                                "Damage": 0,
+                                "Weight Order": 2
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 777294125866722879,
+                "ParentUID": 11183816527201181535,
+                "Name": "Sequence1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.484279751777649,
+                    -1.7701040633255616e-10,
+                    1.2654766123887384e-10,
+                    -0.6995429992675781,
+                    1.0663825378287584e-10,
+                    1.4842798709869385,
+                    7.140826558532654e-17,
+                    0.42195484042167664,
+                    -1.2654766123887384e-10,
+                    -8.314475410248212e-17,
+                    1.484279751777649,
+                    1.2459192276000977,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    8780380501019179783,
+                    2437995465208746105,
+                    4280551412192899300
+                ]
             }
         ],
         "Lights Config": {
