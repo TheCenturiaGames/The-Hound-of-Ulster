@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1653693544879814,
-        "VersionUID": 6537727639949079774,
+        "VersionUID": 16639836434921545262,
         "Name": "CH_banshee",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1653693544879814,
-                "PrefabVersionUID": 6537727639949079774,
+                "PrefabVersionUID": 16639836434921545262,
                 "PrefabChildUID": 13929604912343936896,
                 "LocalTransform": [
                     1.0,
@@ -120,8 +120,7 @@
                     4313422223095012040,
                     15974348279116581802,
                     5502507587701687179,
-                    10656265337477893760,
-                    10462842726512593853
+                    4448367360950282247
                 ]
             },
             {
@@ -321,7 +320,7 @@
                         ]
                     },
                     {
-                        "UID": 0,
+                        "UID": 3441424027856361959,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -329,17 +328,17 @@
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 1.0,
-                        "Length": 2.0,
+                        "Radius": 0.550000011920929,
+                        "Length": 0.3499999940395355,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
                             0.0,
                             0.0,
-                            2.0
+                            0.0
                         ],
                         "CenterRotation": [
-                            1.570796012878418,
+                            0.0,
                             0.0,
                             0.0
                         ]
@@ -348,27 +347,27 @@
                 "Children": []
             },
             {
-                "UID": 10656265337477893760,
+                "UID": 4448367360950282247,
                 "ParentUID": 3174995302789617811,
-                "Name": "SphereShadow",
+                "Name": "VFX_Banshee_shoutBase",
                 "Mobility": 0,
-                "SelectParent": true,
+                "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9688032368955155659,
+                "PrefabChildUID": 9100059832543233475,
                 "LocalTransform": [
-                    10.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
                     1.0,
                     0.0,
-                    -0.11911281943321228,
+                    2.4795706272125244,
                     0.0,
                     0.0,
-                    10.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -377,61 +376,19 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4031531455318805131,
-                        "Type": 1,
+                        "UID": 2177604578485451247,
+                        "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 1326842676146302,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
+                        "Name": "Animation",
+                        "Animations": 1530968341487396,
+                        "StateMachine": 0
                     }
                 ],
-                "Children": []
-            },
-            {
-                "UID": 10462842726512593853,
-                "ParentUID": 3174995302789617811,
-                "Name": "ScreamVisual",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 10841249828718052339,
-                "LocalTransform": [
-                    2.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    2.0,
-                    0.0,
-                    1.18453049659729,
-                    0.0,
-                    0.0,
-                    3.0,
-                    2.304759979248047,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 17602405873273252948,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1194458484681695,
-                        "Material": 1341050947475688,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
+                "Children": [
+                    7629466237623433654,
+                    10679952182608908508
+                ]
             },
             {
                 "UID": 1881624698025833317,
@@ -467,6 +424,75 @@
                 ]
             },
             {
+                "UID": 7629466237623433654,
+                "ParentUID": 4448367360950282247,
+                "Name": "VFX_Banshee_ShoutBase_Ring",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15073038462693988650,
+                "LocalTransform": [
+                    0.9879128336906433,
+                    0.0,
+                    0.1550103724002838,
+                    -0.05375399440526962,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -2.7845304012298584,
+                    -0.1550103724002838,
+                    0.0,
+                    0.9879128336906433,
+                    -0.026393814012408257,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    10999921996069802365,
+                    11453628397012802115
+                ]
+            },
+            {
+                "UID": 10679952182608908508,
+                "ParentUID": 4448367360950282247,
+                "Name": "VFX_Banshee_ShoutBase_Smoke",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12488282973289637082,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.05375399440526962,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -1.312767744064331,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -0.026393814012408257,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    16106089053138645704,
+                    1115031497724234849,
+                    3120304377177028796
+                ]
+            },
+            {
                 "UID": 17810510247591095363,
                 "ParentUID": 1881624698025833317,
                 "Name": "jnt_spine_01",
@@ -497,6 +523,176 @@
                 "Components": [],
                 "Children": [
                     1617255524767049060
+                ]
+            },
+            {
+                "UID": 10999921996069802365,
+                "ParentUID": 7629466237623433654,
+                "Name": "vfx_glow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16053585147439639305,
+                "LocalTransform": [
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    1.7451934814453125,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    3831885791133084142,
+                    2683487272596469764
+                ]
+            },
+            {
+                "UID": 11453628397012802115,
+                "ParentUID": 7629466237623433654,
+                "Name": "vfx_shadow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5680436183702644556,
+                "LocalTransform": [
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    1.7072738409042358,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    6240585114470866424,
+                    11988317920913875989
+                ]
+            },
+            {
+                "UID": 16106089053138645704,
+                "ParentUID": 10679952182608908508,
+                "Name": "vfx_smoke_a",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 6497022711773528823,
+                "LocalTransform": [
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    16694476880965248776,
+                    5773937075792590609
+                ]
+            },
+            {
+                "UID": 1115031497724234849,
+                "ParentUID": 10679952182608908508,
+                "Name": "vfx_smoke_b",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9884925515781551817,
+                "LocalTransform": [
+                    0.277172714471817,
+                    -0.0,
+                    -1.034422755241394,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    -0.0,
+                    0.0,
+                    1.034422755241394,
+                    0.0,
+                    0.277172714471817,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    2311641483539006854,
+                    4716413846032527507
+                ]
+            },
+            {
+                "UID": 3120304377177028796,
+                "ParentUID": 10679952182608908508,
+                "Name": "vfx_smoke_c",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17964776853839676673,
+                "LocalTransform": [
+                    0.5899391770362854,
+                    0.0,
+                    0.8937711715698242,
+                    0.0,
+                    0.0,
+                    1.0709131956100464,
+                    0.0,
+                    0.0,
+                    -0.8937711715698242,
+                    0.0,
+                    0.5899391770362854,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    2679311564689090460,
+                    13667870533777619417
                 ]
             },
             {
@@ -539,6 +735,467 @@
                     15393941815314112072,
                     10968953113415762913
                 ]
+            },
+            {
+                "UID": 3831885791133084142,
+                "ParentUID": 10999921996069802365,
+                "Name": "mesh_general_glow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11839639015959555460,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    15550850015298599769,
+                    14677688882978843913
+                ]
+            },
+            {
+                "UID": 2683487272596469764,
+                "ParentUID": 10999921996069802365,
+                "Name": "jnt_glow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1007974343821013871,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    3.307731421663823e-16,
+                    2.9802322387695313e-8,
+                    3.0407682061195374e-7,
+                    -8.408177900642627e-16,
+                    0.9999998807907104,
+                    1.7114254902139692e-8,
+                    0.2486914098262787,
+                    -2.9802322387695313e-8,
+                    -1.7114254902139692e-8,
+                    0.9999999403953552,
+                    3.795139491558075e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 6240585114470866424,
+                "ParentUID": 11453628397012802115,
+                "Name": "mesh_dark_glow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7414677862428061558,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12257295960848364779,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1160343488565929,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            11988317920913875989
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 55435977076716034,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11988317920913875989,
+                "ParentUID": 11453628397012802115,
+                "Name": "jnt_shadow",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12442695829403872966,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    5.528174823936176e-16,
+                    2.9802322387695313e-8,
+                    3.0081719160079956e-7,
+                    -1.0628619185332612e-15,
+                    0.9999998807907104,
+                    1.7114249573069173e-8,
+                    0.2445698082447052,
+                    -2.9802322387695313e-8,
+                    -1.7114249573069173e-8,
+                    0.9999999403953552,
+                    3.045424818992615e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 16694476880965248776,
+                "ParentUID": 16106089053138645704,
+                "Name": "mesh_smoke_a",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10615650063903017888,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7137829270422037266,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1138659765208116,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            5773937075792590609
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 2,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 445228526356154668,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5773937075792590609,
+                "ParentUID": 16106089053138645704,
+                "Name": "jnt_smoke",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8476689431537794719,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    -1.805431668831228e-15,
+                    8.498072645579668e-8,
+                    -3.3155083656311035e-7,
+                    -4.714198713877014e-15,
+                    0.9999998211860657,
+                    7.671891211202819e-8,
+                    0.031325697898864746,
+                    -8.498073356122404e-8,
+                    -7.671891211202819e-8,
+                    0.9999998211860657,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 2311641483539006854,
+                "ParentUID": 1115031497724234849,
+                "Name": "mesh_smoke_b",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13779958417177639207,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15381374077722678145,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1187959345233044,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            4716413846032527507
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 3,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 10024901842702570956,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4716413846032527507,
+                "ParentUID": 1115031497724234849,
+                "Name": "jnt_smoke",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12244367448745907065,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    -1.1331526035540245e-16,
+                    2.9802322387695313e-8,
+                    -0.0000029206275939941406,
+                    -3.9672982429384137e-16,
+                    0.9999998807907104,
+                    1.7114270889351246e-8,
+                    0.015633821487426758,
+                    -2.9802322387695313e-8,
+                    -1.7114270889351246e-8,
+                    0.9999999403953552,
+                    9.313225746154785e-10,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 2679311564689090460,
+                "ParentUID": 3120304377177028796,
+                "Name": "mesh_smoke_c",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5208054309394043952,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 867780155447347204,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1111904866161150,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            13667870533777619417
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 4,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 10683048745310535030,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13667870533777619417,
+                "ParentUID": 3120304377177028796,
+                "Name": "jnt_smoke",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 6869363752948026031,
+                "LocalTransform": [
+                    1.0,
+                    2.928983021579227e-16,
+                    3.422854533141617e-8,
+                    -0.000004722491212305613,
+                    -8.786949858831069e-16,
+                    0.9999999403953552,
+                    1.7114272665708086e-8,
+                    0.004689780063927174,
+                    -3.422854533141617e-8,
+                    -1.7114270889351246e-8,
+                    1.0,
+                    -1.625387463510819e-10,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 2982598947945544368,
@@ -843,6 +1500,142 @@
                 "Children": [
                     9514609777790638342
                 ]
+            },
+            {
+                "UID": 15550850015298599769,
+                "ParentUID": 3831885791133084142,
+                "Name": "glow_mesh_1",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15984324541757893814,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10181516352357641489,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1161701853395219,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            2683487272596469764
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 12491571300799603441,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14677688882978843913,
+                "ParentUID": 3831885791133084142,
+                "Name": "glow_mesh_2",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10166581688641282565,
+                "LocalTransform": [
+                    0.9999380707740784,
+                    0.0,
+                    0.011136546730995178,
+                    -0.00000476837158203125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0004074573516845703,
+                    -0.011136531829833984,
+                    0.0,
+                    0.9999380111694336,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3001614639775553868,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1121109368571158,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            2683487272596469764
+                        ],
+                        "ModelUID": 1418533093376269,
+                        "SkinIndex": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 9818216235044758505,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 13147583492748597042,
