@@ -7,7 +7,10 @@
             "idle",
             "attack",
             "thrust",
-            "damaged"
+            "damaged",
+            "death",
+            "idleCombat",
+            "detectPlayer"
         ],
         "Clips": [
             {
@@ -75,6 +78,42 @@
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Get_Hit_Normal_1",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_11",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1553647215385764,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Death",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_13",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1502560893429843,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Idle_Combat",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_15",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1563934486579587,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Detect_Player",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -91,7 +130,7 @@
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Run",
                 "Position": {
                     "x": 540.0,
-                    "y": -0.0
+                    "y": 0.0
                 }
             },
             {
@@ -116,6 +155,30 @@
                 "Position": {
                     "x": 990.0,
                     "y": 60.0
+                }
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Death",
+                "Position": {
+                    "x": 1170.0,
+                    "y": 170.0
+                }
+            },
+            {
+                "StateName": "IdleCombat",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Idle_Combat",
+                "Position": {
+                    "x": 310.0,
+                    "y": 290.0
+                }
+            },
+            {
+                "StateName": "DetectPlayer",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Detect_Player",
+                "Position": {
+                    "x": 920.0,
+                    "y": 320.0
                 }
             }
         ],
@@ -226,6 +289,114 @@
                 "FromState": "Damaged",
                 "ToState": "Attack",
                 "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
                 "InterpolationTime": 200
             }
         ]
