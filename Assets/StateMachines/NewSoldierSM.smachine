@@ -10,7 +10,8 @@
             "damaged",
             "death",
             "idleCombat",
-            "detectPlayer"
+            "detectPlayer",
+            "patrol"
         ],
         "Clips": [
             {
@@ -114,6 +115,18 @@
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Detect_Player",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_17",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1512705913413625,
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Patrol",
+                "ClipTime": 1.0,
+                "Loop": true
             }
         ],
         "States": [
@@ -179,6 +192,14 @@
                 "Position": {
                     "x": 920.0,
                     "y": 320.0
+                }
+            },
+            {
+                "StateName": "Patrol",
+                "ClipName": "CH_BaseEnemy_AllAnimations_AN_Patrol",
+                "Position": {
+                    "x": 510.0,
+                    "y": -140.0
                 }
             }
         ],
@@ -397,6 +418,54 @@
                 "FromState": "DetectPlayer",
                 "ToState": "Damaged",
                 "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
                 "InterpolationTime": 200
             }
         ]
