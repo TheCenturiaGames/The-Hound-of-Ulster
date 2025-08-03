@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -32.80681228637695,
-            16.763504028320313,
-            -55.18074035644531
+            -24.024084091186523,
+            6.948278427124023,
+            -69.20087432861328
         ],
         "Camera Front": [
-            0.6412407159805298,
-            -0.7504007816314697,
-            -0.1603405773639679
+            0.6008915901184082,
+            -0.6443919539451599,
+            0.4729571044445038
         ],
         "Camera Up": [
-            0.7275663614273071,
-            0.6614701747894287,
-            -0.18194617331027985
+            0.5059778690338135,
+            0.7651142477989197,
+            0.3982295095920563
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -12242,7 +12242,7 @@
                         ]
                     },
                     {
-                        "UID": 16375399825288127188,
+                        "UID": 5576785878853114553,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -12982,6 +12982,9 @@
                                 "Attack Hitbox Delay": 0.15000000596046448,
                                 "Attack Hitbox Duration": 0.10000000149011612,
                                 "Heal Cooldown": 1.0,
+                                "God Mode": false,
+                                "Default speed": 7.0,
+                                "Step time": 0.367000013589859,
                                 "Camera Object Name": "Camera Pivot",
                                 "Spear Projectile Name": "SpearProjectile",
                                 "Range attack cooldown": 1.0,
@@ -12997,16 +13000,22 @@
                                 "Charged Attack damage": 2,
                                 "Charged Attack hitbox delay": 0.30000001192092896,
                                 "Charged Attack hitbox duration": 0.10000000149011612,
-                                "Aim shadow object": "AimShadow",
-                                "Melee trail object": "SpearMeleeTrail",
-                                "Melee VFX object": "SpearVFX",
                                 "Take mushroom cooldown": 0.20000000298023224,
                                 "Mushroom healing": 2,
-                                "Dash Trail object": "DashTrail",
-                                "Dash decal object": "DashDecal",
+                                "Riastrad Bar object": 0,
+                                "Riastrad duration": 5.0,
+                                "Riastrad movement speed": 12.0,
+                                "Riastrad animations speed ratio": 1.5,
+                                "Riastrad on damage taken": 2,
+                                "Riastrad on enemy hit": 5,
+                                "Riastrad on enemy defeated": 5,
+                                "Aim shadow object": "",
+                                "Melee trail object": "",
+                                "Melee VFX object": "",
+                                "Dash Trail object": "",
+                                "Dash decal object": "",
                                 "Dash decal disappear": 5.0,
                                 "Heal visual object": "",
-                                "God Mode": false,
                                 "Dash filled icon": 0,
                                 "Dash empty icon": 0,
                                 "Ultimate filled icon": 0,
@@ -14372,7 +14381,7 @@
                 "Name": "new Game Object",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
@@ -14382,10 +14391,10 @@
                     0.000003814697265625,
                     0.0,
                     1.0,
-                    8.131516293641283e-20,
-                    1.542638897895813,
+                    6.776263578034403e-20,
+                    0.07182449102401733,
                     -7.105427357601002e-14,
-                    -1.81603863891322e-18,
+                    -1.7889335846010823e-18,
                     1.0,
                     -3.5204734802246094,
                     0.0,
@@ -14416,10 +14425,12 @@
                                 "Script Name": "Mirage",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Delay Before Damage": 0.0,
-                                "Damage Duration": 0.0,
+                                "Delay Before Damage": 1.6100000143051147,
+                                "Damage Duration": 1.2000000476837158,
                                 "Damage": 0,
-                                "Weight Order": 1
+                                "Weight Order": 1,
+                                "Mirage Warning": 1119009764669529,
+                                "Mirage Damage": 1143325575554155
                             }
                         ]
                     }
@@ -21889,17 +21900,17 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     9.947598300641403e-14,
-                    -5.123760223388672,
+                    -5.123756408691406,
                     0.0,
                     1.0,
                     9.486769009248164e-20,
-                    1.5426386594772339,
+                    0.25283506512641907,
                     -9.947598300641403e-14,
                     -3.957337929572091e-18,
                     1.0,
@@ -21932,10 +21943,12 @@
                                 "Script Name": "Mirage",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Delay Before Damage": 0.0,
-                                "Damage Duration": 0.0,
+                                "Delay Before Damage": 1.7000000476837158,
+                                "Damage Duration": 0.1599999964237213,
                                 "Damage": 0,
-                                "Weight Order": 3
+                                "Weight Order": 3,
+                                "Mirage Warning": 0,
+                                "Mirage Damage": 0
                             }
                         ]
                     }
@@ -21949,7 +21962,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -21959,9 +21972,9 @@
                     0.0,
                     1.0,
                     9.486769009248164e-20,
-                    1.5426386594772339,
+                    0.15024608373641968,
                     -8.526512829121202e-14,
-                    -2.8189256484623115e-18,
+                    -2.791820594150174e-18,
                     1.0,
                     -3.5204734802246094,
                     0.0,
@@ -21992,10 +22005,12 @@
                                 "Script Name": "Mirage",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Delay Before Damage": 0.0,
-                                "Damage Duration": 0.0,
+                                "Delay Before Damage": 0.12999999523162842,
+                                "Damage Duration": 0.09000000357627869,
                                 "Damage": 0,
-                                "Weight Order": 2
+                                "Weight Order": 2,
+                                "Mirage Warning": 0,
+                                "Mirage Damage": 0
                             }
                         ]
                     }
@@ -22008,8 +22023,8 @@
                 "Name": "Sequence1",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.484279751777649,
