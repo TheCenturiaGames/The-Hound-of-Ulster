@@ -1,0 +1,121 @@
+{
+    "StateMachine": {
+        "UID": 1770590789838306,
+        "Name": "FerdiadSM",
+        "Triggers": [
+            "Combo1",
+            "Combo2",
+            "Combo3"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1588582586901691,
+                "ClipName": "CH_Ferdiad_idle_taunt",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1509863457024247,
+                "ClipName": "CH_Ferdiad_combo_attack1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1569237727214782,
+                "ClipName": "CH_Ferdiad_combo_attack2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580876109440473,
+                "ClipName": "CH_Ferdiad_combo_attack3",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1531916660306844,
+                "ClipName": "CH_Ferdiad_idle_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_Ferdiad_idle_base",
+                "Position": {
+                    "x": -50.0,
+                    "y": 30.0
+                }
+            },
+            {
+                "StateName": "Combo1",
+                "ClipName": "CH_Ferdiad_combo_attack1",
+                "Position": {
+                    "x": 190.0,
+                    "y": 160.0
+                }
+            },
+            {
+                "StateName": "Combo2",
+                "ClipName": "CH_Ferdiad_combo_attack2",
+                "Position": {
+                    "x": 190.0,
+                    "y": 240.0
+                }
+            },
+            {
+                "StateName": "Combo3",
+                "ClipName": "CH_Ferdiad_combo_attack3",
+                "Position": {
+                    "x": 190.0,
+                    "y": 320.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "Combo2",
+                "Trigger": "Combo2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "Combo3",
+                "Trigger": "Combo3",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
