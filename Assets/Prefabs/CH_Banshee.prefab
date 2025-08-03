@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1653693544879814,
-        "VersionUID": 12569679373290078022,
+        "VersionUID": 1361523284197326766,
         "Name": "CH_banshee",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1653693544879814,
-                "PrefabVersionUID": 12569679373290078022,
+                "PrefabVersionUID": 1361523284197326766,
                 "PrefabChildUID": 13929604912343936896,
                 "LocalTransform": [
                     1.0,
@@ -65,7 +65,8 @@
                                     1.0,
                                     2.0
                                 ],
-                                "Attack Angular Speed": 1.0
+                                "Attack Angular Speed": 1.0,
+                                "Main scream duration": 2.0
                             }
                         ]
                     },
@@ -432,7 +433,8 @@
                 ],
                 "Children": [
                     13964131537288635369,
-                    14013710187833589030
+                    14013710187833589030,
+                    14487522511302703458
                 ]
             },
             {
@@ -605,6 +607,49 @@
                     6552877502195197686,
                     8680392982178257488
                 ]
+            },
+            {
+                "UID": 14487522511302703458,
+                "ParentUID": 6727878570967573233,
+                "Name": "mesh_warningStar",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4503149929765638912,
+                "LocalTransform": [
+                    -3.5762786865234375e-7,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    2.10951828956604,
+                    1.0,
+                    0.0,
+                    -3.5762786865234375e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3067418406468931421,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1358912580410668,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 17810510247591095363,
