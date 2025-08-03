@@ -20,7 +20,8 @@
             "Charge",
             "IdleBreak1",
             "IdleBreak2",
-            "Heal"
+            "Heal",
+            "Transform"
         ],
         "Clips": [
             {
@@ -242,7 +243,7 @@
             {
                 "ClipUID": 1570389180042554,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Side",
-                "ClipTime": 1.0,
+                "ClipTime": 2.0,
                 "Loop": false
             },
             {
@@ -356,6 +357,12 @@
             {
                 "ClipUID": 0,
                 "ClipName": "Clip_55",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_56",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -503,6 +510,14 @@
                 "Position": {
                     "x": -660.0,
                     "y": -290.0
+                }
+            },
+            {
+                "StateName": "Transform",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Side",
+                "Position": {
+                    "x": -920.0,
+                    "y": 130.0
                 }
             }
         ],
@@ -1267,6 +1282,24 @@
                 "FromState": "Charge_Hold",
                 "ToState": "Heal",
                 "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Transform",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Transform",
+                "Trigger": "Transform",
                 "InterpolationTime": 200
             }
         ]
