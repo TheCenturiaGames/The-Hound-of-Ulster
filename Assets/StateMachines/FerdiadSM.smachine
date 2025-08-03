@@ -5,7 +5,16 @@
         "Triggers": [
             "Combo1",
             "Combo2",
-            "Combo3"
+            "Combo3",
+            "Prepare",
+            "Jump",
+            "Dash",
+            "Land",
+            "Attack",
+            "Recover",
+            "Idle",
+            "Taunt",
+            "Run"
         ],
         "Clips": [
             {
@@ -61,6 +70,96 @@
                 "ClipName": "CH_Ferdiad_idle_base",
                 "ClipTime": 1.0,
                 "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_9",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1510727002193401,
+                "ClipName": "CH_Ferdiad_OverheadStrike_prepare",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_11",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1565090058327420,
+                "ClipName": "CH_Ferdiad_OverheadStrike_jump",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_13",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1596222763399772,
+                "ClipName": "CH_Ferdiad_OverheadStrike_dash",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_15",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1514509981308839,
+                "ClipName": "CH_Ferdiad_OverheadStrike_land",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_17",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1508966198983778,
+                "ClipName": "CH_Ferdiad_OverheadStrike_attack",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_19",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1554587303353020,
+                "ClipName": "CH_Ferdiad_OverheadStrike_recover",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_21",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_22",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1557971267150556,
+                "ClipName": "CH_Ferdiad_Run",
+                "ClipTime": 1.0,
+                "Loop": true
             }
         ],
         "States": [
@@ -95,6 +194,70 @@
                     "x": 190.0,
                     "y": 320.0
                 }
+            },
+            {
+                "StateName": "Overhead_Prepare",
+                "ClipName": "CH_Ferdiad_OverheadStrike_prepare",
+                "Position": {
+                    "x": -330.0,
+                    "y": 160.0
+                }
+            },
+            {
+                "StateName": "Overhead_Jump",
+                "ClipName": "CH_Ferdiad_OverheadStrike_jump",
+                "Position": {
+                    "x": -330.0,
+                    "y": 230.0
+                }
+            },
+            {
+                "StateName": "Overhead_Dash",
+                "ClipName": "CH_Ferdiad_OverheadStrike_dash",
+                "Position": {
+                    "x": -330.0,
+                    "y": 310.0
+                }
+            },
+            {
+                "StateName": "Overhead_Land",
+                "ClipName": "CH_Ferdiad_OverheadStrike_land",
+                "Position": {
+                    "x": -330.0,
+                    "y": 390.0
+                }
+            },
+            {
+                "StateName": "Overhead_Attack",
+                "ClipName": "CH_Ferdiad_OverheadStrike_attack",
+                "Position": {
+                    "x": -330.0,
+                    "y": 480.0
+                }
+            },
+            {
+                "StateName": "Overhead_Recover",
+                "ClipName": "CH_Ferdiad_OverheadStrike_recover",
+                "Position": {
+                    "x": -330.0,
+                    "y": 560.0
+                }
+            },
+            {
+                "StateName": "Taunt",
+                "ClipName": "CH_Ferdiad_idle_taunt",
+                "Position": {
+                    "x": -50.0,
+                    "y": -70.0
+                }
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "CH_Ferdiad_Run",
+                "Position": {
+                    "x": 360.0,
+                    "y": 0.0
+                }
             }
         ],
         "Transitions": [
@@ -112,6 +275,144 @@
             },
             {
                 "FromState": "Combo2",
+                "ToState": "Combo3",
+                "Trigger": "Combo3",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Prepare",
+                "ToState": "Overhead_Jump",
+                "Trigger": "Jump",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Jump",
+                "ToState": "Overhead_Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Dash",
+                "ToState": "Overhead_Land",
+                "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Land",
+                "ToState": "Overhead_Attack",
+                "Trigger": "Attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Attack",
+                "ToState": "Overhead_Recover",
+                "Trigger": "Recover",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Combo2",
+                "Trigger": "Combo2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
                 "ToState": "Combo3",
                 "Trigger": "Combo3",
                 "InterpolationTime": 200
