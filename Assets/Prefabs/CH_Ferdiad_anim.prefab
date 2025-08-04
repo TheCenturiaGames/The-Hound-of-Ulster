@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 16405234629214175809,
+        "VersionUID": 3830491360152156280,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 16405234629214175809,
+                "PrefabVersionUID": 3830491360152156280,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.4352349042892456,
@@ -60,7 +60,12 @@
                                 "AI Chase Range": 13.0,
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
-                                "Player search duration": 5.0
+                                "Player search duration": 5.0,
+                                "Dash Duration": 0.20000000298023224,
+                                "Boss Max Health": 0,
+                                "Mirage1 Threshhold": 0,
+                                "Mirage2 Threshhold": 0,
+                                "Mirage3 Threshhold": 0
                             }
                         ]
                     },
@@ -659,14 +664,14 @@
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 0.699999988079071,
+                        "Radius": 0.800000011920929,
                         "Length": 0.5,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
                             0.0,
-                            -0.20000000298023224,
-                            0.20000000298023224
+                            -0.25,
+                            0.15000000596046448
                         ],
                         "CenterRotation": [
                             0.0,
