@@ -16,7 +16,8 @@
             "Trigger_HitUnderground",
             "Trigger_NONE",
             "Trigger_BurriedIdle",
-            "Trigger_VisibleIdle"
+            "Trigger_VisibleIdle",
+            "Trigger_Wiggle"
         ],
         "Clips": [
             {
@@ -96,6 +97,18 @@
                 "ClipName": "CH_Pooka_Stand",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_13",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1576568549973237,
+                "ClipName": "CH_Pooka_Wiggle",
+                "ClipTime": 1.0,
+                "Loop": true
             }
         ],
         "States": [
@@ -128,7 +141,7 @@
                 "ClipName": "CH_Pooka_Fall",
                 "Position": {
                     "x": 410.0,
-                    "y": -490.0
+                    "y": -580.0
                 }
             },
             {
@@ -136,7 +149,7 @@
                 "ClipName": "CH_Pooka_Dash",
                 "Position": {
                     "x": 710.0,
-                    "y": -490.0
+                    "y": -520.0
                 }
             },
             {
@@ -201,6 +214,14 @@
                 "Position": {
                     "x": 60.0,
                     "y": -290.0
+                }
+            },
+            {
+                "StateName": "Wiggle",
+                "ClipName": "CH_Pooka_Wiggle",
+                "Position": {
+                    "x": 710.0,
+                    "y": -740.0
                 }
             }
         ],
@@ -425,6 +446,42 @@
                 "FromState": "DashEnd",
                 "ToState": "DashPreparation",
                 "Trigger": "Trigger_PrepareDash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DashPreparation",
+                "ToState": "DashEnd",
+                "Trigger": "Trigger_FinishDash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Wiggle",
+                "Trigger": "Trigger_Wiggle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Wiggle",
+                "ToState": "Dash",
+                "Trigger": "Trigger_Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Wiggle",
+                "ToState": "Hit",
+                "Trigger": "Trigger_Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Wiggle",
+                "ToState": "Death",
+                "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Wiggle",
+                "ToState": "DashEnd",
+                "Trigger": "Trigger_FinishDash",
                 "InterpolationTime": 200
             }
         ]
