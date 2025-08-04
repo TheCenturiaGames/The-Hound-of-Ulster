@@ -1,0 +1,331 @@
+{
+    "Prefab": {
+        "UID": 1656123095364820,
+        "VersionUID": 895998543704380113,
+        "Name": "Spout",
+        "GameObjects": [
+            {
+                "UID": 15643195246099977445,
+                "ParentUID": 10309131146409751111,
+                "Name": "Spout",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabVersionUID": 895998543704380113,
+                "PrefabChildUID": 15789214634129406565,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    17.909284591674805,
+                    0.0,
+                    1.0,
+                    0.0,
+                    12.664645195007324,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -58.60663986206055,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15878840793023932089,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Spouts",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Activation Range": 10.0,
+                                "Damage": 1,
+                                "Charging Duration": 1.0,
+                                "Rotation Speed White Waves": 90.0,
+                                "Rotation Speed Tornado": 5.0,
+                                "Min Scale Tornado": 12.0,
+                                "Max Scale Tornado": 0.10000000149011612,
+                                "Initial Scale Tornado": 9.0,
+                                "Rotation Speed Blue Waves": 10.0,
+                                "Character": 14682406276647367202
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 12064337823765412708,
+                        "Type": 12,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 2,
+                        "Radius": 1.399999976158142,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            -0.044925689697265625
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    4097261755405717399,
+                    8865443011386732570,
+                    5642170866561904234,
+                    17522748460705365065,
+                    9140536741503758572
+                ]
+            },
+            {
+                "UID": 4097261755405717399,
+                "ParentUID": 15643195246099977445,
+                "Name": "White_Waves",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1119511371556141501,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.00843048095703125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9322504553433979531,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1182527521037855,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8865443011386732570,
+                "ParentUID": 15643195246099977445,
+                "Name": "Circle_Big_Mesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12220329441396419156,
+                "LocalTransform": [
+                    9.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9384110569953918,
+                    8.950942993164063,
+                    -0.0023050308227539063,
+                    0.0,
+                    -8.950942993164063,
+                    0.9384110569953918,
+                    0.02193450927734375,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17161810085407917879,
+                        "Type": 23,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Decal",
+                        "Material": 1336449682145743
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5642170866561904234,
+                "ParentUID": 15643195246099977445,
+                "Name": "Waves_Cylinder_Mesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14518108096272056755,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.013058662414550781,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.002044677734375,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1719895697064008638,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1151550245048156,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 17522748460705365065,
+                "ParentUID": 15643195246099977445,
+                "Name": "Explosion_Sphere_Mesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8257874721228873126,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3955377839377968368,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175512130860819,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9140536741503758572,
+                "ParentUID": 15643195246099977445,
+                "Name": "Sproud_Vertical_Mesh",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11797840988003238774,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18340479427133283968,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1162434048522830,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 12445234741692204634,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.5600000023841858,
+                                "Moving UV Direction": [
+                                    -1.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.03999999910593033,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
