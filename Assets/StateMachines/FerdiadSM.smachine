@@ -14,7 +14,10 @@
             "Recover",
             "Idle",
             "Taunt",
-            "Run"
+            "Run",
+            "Start",
+            "Charge",
+            "End"
         ],
         "Clips": [
             {
@@ -160,6 +163,42 @@
                 "ClipName": "CH_Ferdiad_Run",
                 "ClipTime": 1.0,
                 "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_24",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1570754666879215,
+                "ClipName": "CH_Ferdiad_ChargeShield_start",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_26",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1542807761288693,
+                "ClipName": "CH_Ferdiad_ChargeShield_charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_28",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1560495811340493,
+                "ClipName": "CH_Ferdiad_ChargeShield_end",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -257,6 +296,30 @@
                 "Position": {
                     "x": 360.0,
                     "y": 0.0
+                }
+            },
+            {
+                "StateName": "ChargeShield_Start",
+                "ClipName": "CH_Ferdiad_ChargeShield_start",
+                "Position": {
+                    "x": -570.0,
+                    "y": -250.0
+                }
+            },
+            {
+                "StateName": "ChargeShield_Charge",
+                "ClipName": "CH_Ferdiad_ChargeShield_charge",
+                "Position": {
+                    "x": -570.0,
+                    "y": -170.0
+                }
+            },
+            {
+                "StateName": "ChargeShield_End",
+                "ClipName": "CH_Ferdiad_ChargeShield_end",
+                "Position": {
+                    "x": -570.0,
+                    "y": -90.0
                 }
             }
         ],
@@ -415,6 +478,114 @@
                 "FromState": "Run",
                 "ToState": "Combo3",
                 "Trigger": "Combo3",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Start",
+                "ToState": "ChargeShield_Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Charge",
+                "ToState": "ChargeShield_End",
+                "Trigger": "End",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Prepare",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Jump",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Dash",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Land",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Attack",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
                 "InterpolationTime": 200
             }
         ]
