@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 3325378353837020694,
+        "VersionUID": 7019382833976869258,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 3325378353837020694,
+                "PrefabVersionUID": 7019382833976869258,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -247,7 +247,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Max Health": 5,
-                                "Current Health": 3,
+                                "Current Health": 5,
                                 "Invulnerable": false,
                                 "Dead": false,
                                 "Damage": 1,
@@ -268,7 +268,7 @@
                                 "Ultimate damage": 5,
                                 "Ultimate cooldown": 5.0,
                                 "Ultimate Animation delay": 1.0,
-                                "Ultimate hitbox delay": 0.5,
+                                "Ultimate hitbox delay": 0.20000000298023224,
                                 "Ultimate hitbox duration": 0.5,
                                 "Charged Attack object": "Charged",
                                 "Attack charging duration": 1.0,
@@ -280,13 +280,24 @@
                                 "Player material": 1364677372303608,
                                 "Take mushroom cooldown": 1.0,
                                 "Mushroom healing": 2,
-                                "Heal knockback object": "",
+                                "Heal knockback object": "Heal Knockback",
+                                "Heal knockback delay": 0.5,
                                 "Riastrad duration": 5.0,
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
                                 "Riastrad on damage taken": 2,
                                 "Riastrad on enemy hit": 5,
                                 "Riastrad on enemy defeated": 5,
+                                "Transform VFX Delay": 0.30000001192092896,
+                                "Riastrad VFX burst": "mesh_brust",
+                                "Riastrad VFX blur": "mesh_blur",
+                                "Riastrad VFX halo": "mesh_halo",
+                                "Riastrad VFX sphere": "mesh_sphere_glow",
+                                "Riastrad VFX crack": "mesh_crack",
+                                "Riastrad VFX waring": "mesh_warning",
+                                "Riastrad VFX smoke 1": "mesh_smoke_a",
+                                "Riastrad VFX smoke 2": "mesh_smoke_a.001",
+                                "Riastrad VFX smoke 3": "mesh_smoke_a.002",
                                 "Aim shadow object": "AimShadow",
                                 "Melee trail object": "SpearMeleeTrail",
                                 "Melee VFX object": "SpearVFX",
@@ -357,7 +368,8 @@
                     15129941817658561255,
                     7823843794212027074,
                     597159521593903207,
-                    2350532849556014876
+                    2350532849556014876,
+                    1538095644980798402
                 ]
             },
             {
@@ -417,7 +429,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.44779571890830994
+                        "CameraVFOV": 0.45666566491127014
                     }
                 ],
                 "Children": []
@@ -738,7 +750,7 @@
                     {
                         "UID": 16257993724095199570,
                         "Type": 14,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Animation",
                         "Animations": 1573885705028004,
@@ -756,7 +768,7 @@
                 "Name": "AimShadow",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 16827148672959941583,
@@ -783,7 +795,7 @@
                         "UID": 10511569993364396706,
                         "Type": 1,
                         "Enabled": false,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1165703895193424,
                         "Material": 1326842676146302,
@@ -964,7 +976,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    -5.6378173828125,
+                    0.0,
                     -0.46775269508361816,
                     0.0,
                     0.883859395980835,
@@ -976,16 +988,15 @@
                 ],
                 "Components": [
                     {
-                        "UID": 0,
-                        "Type": 13,
+                        "UID": 11594917484787772360,
+                        "Type": 12,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Capsule Collider",
+                        "Name": "Sphere Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 4,
-                        "Radius": 2.1500000953674316,
-                        "Length": 0.20000000298023224,
+                        "Radius": 2.5,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -1051,6 +1062,61 @@
                         ],
                         "CenterRotation": [
                             1.570796012878418,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1538095644980798402,
+                "ParentUID": 15061683712248854300,
+                "Name": "Heal Knockback",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2191582484073007304,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2578124600953267890,
+                        "Type": 12,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 4,
+                        "Radius": 2.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
                             0.0,
                             0.0
                         ]
@@ -1345,17 +1411,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 9898372524740769013,
                 "LocalTransform": [
-                    0.9879128336906433,
+                    1.4818692207336426,
                     0.0,
-                    0.15501035749912262,
-                    0.0,
-                    0.0,
-                    1.0,
+                    0.23251557350158691,
                     0.0,
                     0.0,
-                    -0.15501035749912262,
+                    1.5,
                     0.0,
-                    0.9879128336906433,
+                    0.0,
+                    -0.23251557350158691,
+                    0.0,
+                    1.4818692207336426,
                     0.0,
                     0.0,
                     0.0,
@@ -1991,17 +2057,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 15564943311347967948,
                 "LocalTransform": [
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
@@ -2025,17 +2091,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 17035650900842581867,
                 "LocalTransform": [
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    2.5,
                     0.0,
                     0.0,
                     0.0,
@@ -2093,17 +2159,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 1783344370459097909,
                 "LocalTransform": [
-                    1.0,
+                    1.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    1.0,
+                    1.5,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    1.0,
+                    1.5,
                     0.0,
                     0.0,
                     0.0,
@@ -2127,17 +2193,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 14946819040235822092,
                 "LocalTransform": [
-                    1.0,
+                    1.5,
                     0.0,
                     0.0,
                     0.007750894408673048,
                     0.0,
-                    1.0,
+                    1.5,
                     0.0,
                     0.9356153011322021,
                     0.0,
                     0.0,
-                    1.0,
+                    1.5,
                     0.11857118457555771,
                     0.0,
                     0.0,
@@ -3292,7 +3358,7 @@
                         "UID": 13794219421533575105,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -3300,15 +3366,15 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     -1.0,
                                     -1.0
                                 ],
                                 "Double sided": true,
                                 "Start UV Offset": [
-                                    0.0,
-                                    0.0
+                                    0.4000000059604645,
+                                    0.4000000059604645
                                 ]
                             }
                         ]
@@ -3396,7 +3462,7 @@
                         "UID": 11810561061964044857,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -3404,15 +3470,15 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
                                 ],
                                 "Double sided": true,
                                 "Start UV Offset": [
-                                    0.0,
-                                    0.0
+                                    0.30000001192092896,
+                                    0.30000001192092896
                                 ]
                             }
                         ]
@@ -3484,7 +3550,7 @@
                         "UID": 17594905738070619899,
                         "Type": 1,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1138523753049205,
                         "Material": 0,
@@ -3579,7 +3645,7 @@
                         "UID": 18233431795326907979,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -3587,7 +3653,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 0.5,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
@@ -3683,7 +3749,7 @@
                         "UID": 2967338643120142718,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -3691,7 +3757,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 0.5,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
@@ -3771,7 +3837,7 @@
                         "UID": 16565519325226392422,
                         "Type": 1,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1127419588249633,
                         "Material": 0,
@@ -3897,7 +3963,7 @@
                         "UID": 5401618699527974030,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -3905,7 +3971,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
@@ -4001,7 +4067,7 @@
                         "UID": 1091197006404091689,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -4009,7 +4075,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
@@ -4105,7 +4171,7 @@
                         "UID": 10489192760825133665,
                         "Type": 26,
                         "Enabled": true,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Shader script",
                         "Scripts": [
                             {
@@ -4113,7 +4179,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     1.0,
                                     1.0
@@ -10869,8 +10935,8 @@
                 "Name": "SpearMeleeTrail",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
+                "Enabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 11259417994671014122,
                 "LocalTransform": [
@@ -10895,8 +10961,8 @@
                     {
                         "UID": 12971154272660527885,
                         "Type": 22,
-                        "Enabled": false,
-                        "WasEnabled": true,
+                        "Enabled": true,
+                        "WasEnabled": false,
                         "Name": "Spline",
                         "Alpha": 0.5,
                         "Loop": false,
@@ -10905,8 +10971,8 @@
                     {
                         "UID": 9858140377049032996,
                         "Type": 24,
-                        "Enabled": false,
-                        "WasEnabled": true,
+                        "Enabled": true,
+                        "WasEnabled": false,
                         "Name": "Trail",
                         "MinDistance": 0.009999999776482582,
                         "LifeTime": 0.20000000298023224,
@@ -11993,8 +12059,8 @@
                 "Name": "SpearVFX",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
+                "Enabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 6115197593418395163,
                 "LocalTransform": [
@@ -12019,8 +12085,8 @@
                     {
                         "UID": 2082234546459256285,
                         "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": true,
+                        "Enabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1128358019172076,
                         "Material": 0,
