@@ -21,7 +21,8 @@
             "IdleBreak1",
             "IdleBreak2",
             "Heal",
-            "Transform"
+            "Transform",
+            "Hurt"
         ],
         "Clips": [
             {
@@ -34,7 +35,7 @@
                 "ClipUID": 1509899942601292,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle",
                 "ClipTime": 1.0,
-                "Loop": false
+                "Loop": true
             },
             {
                 "ClipUID": 1533011458956307,
@@ -46,7 +47,7 @@
                 "ClipUID": 1594248336744417,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
                 "ClipTime": 1.0,
-                "Loop": false
+                "Loop": true
             },
             {
                 "ClipUID": 1594159543637377,
@@ -147,6 +148,12 @@
             {
                 "ClipUID": 1527990214751258,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Dash",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_21",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -276,8 +283,8 @@
                 "StateName": "Idle_Break_1",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Behind",
                 "Position": {
-                    "x": -950.0,
-                    "y": 10.0
+                    "x": -940.0,
+                    "y": 110.0
                 }
             },
             {
@@ -285,7 +292,7 @@
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Side",
                 "Position": {
                     "x": -940.0,
-                    "y": -100.0
+                    "y": 30.0
                 }
             },
             {
@@ -300,8 +307,16 @@
                 "StateName": "Transform",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_RiastradTransfrom",
                 "Position": {
-                    "x": -920.0,
-                    "y": 130.0
+                    "x": -890.0,
+                    "y": 180.0
+                }
+            },
+            {
+                "StateName": "Hurt",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitNormal",
+                "Position": {
+                    "x": -790.0,
+                    "y": -90.0
                 }
             }
         ],
@@ -1084,6 +1099,54 @@
                 "FromState": "Walk",
                 "ToState": "Transform",
                 "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Death",
+                "Trigger": "Death",
                 "InterpolationTime": 200
             }
         ]
