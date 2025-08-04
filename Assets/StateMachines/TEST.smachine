@@ -1,0 +1,68 @@
+{
+    "StateMachine": {
+        "UID": 1710949090601941,
+        "Name": "TEST",
+        "Triggers": [
+            "Walk",
+            "Idle"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1509899942601292,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1594248336744417,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
+                "ClipTime": 1.0,
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "NewState_0",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            },
+            {
+                "StateName": "NewState_1",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
+                "Position": {
+                    "x": -50.0,
+                    "y": 90.0
+                }
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "NewState_0",
+                "ToState": "NewState_1",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "NewState_1",
+                "ToState": "NewState_0",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
