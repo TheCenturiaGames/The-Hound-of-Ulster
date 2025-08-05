@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1667661468865896,
-        "VersionUID": 10997681807894224205,
+        "VersionUID": 6374742121641801722,
         "Name": "CH_Pooka",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1667661468865896,
-                "PrefabVersionUID": 10997681807894224205,
+                "PrefabVersionUID": 6374742121641801722,
                 "PrefabChildUID": 7058584890079411930,
                 "LocalTransform": [
                     1.0,
@@ -91,7 +91,7 @@
                                 "Current Health": 2,
                                 "Invulnerable": false,
                                 "Dead": false,
-                                "Damage": 1,
+                                "Damage": 0,
                                 "Attack Range": 1.0,
                                 "Attack Duration": 1.0,
                                 "Attack Cooldown": 5.0,
@@ -105,11 +105,12 @@
                                 "Dash trail mesh": "DashTrailMesh",
                                 "Dash trail collision": "DashTrailCollision",
                                 "Abs spotted reaction time": 0.10000000149011612,
-                                "Bite attack radius": 0.5,
+                                "Bite attack radius": 1.0,
                                 "Bite attack cooldown": 2.0,
                                 "Dash speed": 15.0,
                                 "Min dash distance": 1.0,
-                                "Version (0: Random)": 1,
+                                "Version (0: Random)": 2,
+                                "Swap states (% / s) (Only with version 0)": 5.0,
                                 "Chase speed": 3.0,
                                 "Chase Acceleration": 4.0,
                                 "Max sneak angle degrees": 45.0,
@@ -118,7 +119,7 @@
                                 "Distance to player for max sneak speed": 2.0,
                                 "Sneak Acceleration": 4.0,
                                 "Peek chance per second": 0.10000000149011612,
-                                "Dash angle degrees": 40.0,
+                                "Dash angle degrees": 30.0,
                                 "Time between dashes": 2.0
                             }
                         ]
@@ -769,7 +770,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 3849694805226025139,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
