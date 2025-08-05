@@ -170,7 +170,8 @@
                 "Position": {
                     "x": 60.0,
                     "y": 60.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "BuryUp",
@@ -178,7 +179,8 @@
                 "Position": {
                     "x": 160.0,
                     "y": -140.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "BuryDown",
@@ -186,7 +188,8 @@
                 "Position": {
                     "x": 460.0,
                     "y": -140.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "DashPreparation",
@@ -194,7 +197,8 @@
                 "Position": {
                     "x": 410.0,
                     "y": -580.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Dash",
@@ -202,7 +206,8 @@
                 "Position": {
                     "x": 710.0,
                     "y": -520.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Run",
@@ -210,7 +215,8 @@
                 "Position": {
                     "x": 510.0,
                     "y": -390.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "DashEnd",
@@ -218,7 +224,8 @@
                 "Position": {
                     "x": 1010.0,
                     "y": -490.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Death",
@@ -226,7 +233,8 @@
                 "Position": {
                     "x": 780.0,
                     "y": -130.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Bite",
@@ -234,7 +242,8 @@
                 "Position": {
                     "x": 460.0,
                     "y": 110.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Peek",
@@ -242,7 +251,8 @@
                 "Position": {
                     "x": 460.0,
                     "y": 260.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Hit",
@@ -250,7 +260,8 @@
                 "Position": {
                     "x": 780.0,
                     "y": -210.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "HitUnderground",
@@ -258,7 +269,8 @@
                 "Position": {
                     "x": 780.0,
                     "y": -50.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "VisibleIdle",
@@ -266,7 +278,8 @@
                 "Position": {
                     "x": 60.0,
                     "y": -290.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Wiggle",
@@ -274,7 +287,8 @@
                 "Position": {
                     "x": 710.0,
                     "y": -740.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Run2",
@@ -282,7 +296,8 @@
                 "Position": {
                     "x": 510.0,
                     "y": -330.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Hit2",
@@ -290,7 +305,8 @@
                 "Position": {
                     "x": 780.0,
                     "y": -270.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Scream",
@@ -298,7 +314,8 @@
                 "Position": {
                     "x": 1310.0,
                     "y": -540.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Scream2",
@@ -306,7 +323,8 @@
                 "Position": {
                     "x": 1310.0,
                     "y": -440.0
-                }
+                },
+                "Triggers": []
             }
         ],
         "Transitions": [
@@ -740,6 +758,18 @@
                 "FromState": "HitUnderground",
                 "ToState": "Death",
                 "Trigger": "Trigger_Die",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run2",
+                "ToState": "BuryDown",
+                "Trigger": "Trigger_BuryDown",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "BuryDown",
+                "Trigger": "Trigger_BuryDown",
                 "InterpolationTime": 200
             }
         ]
