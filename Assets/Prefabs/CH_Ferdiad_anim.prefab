@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 3830491360152156280,
+        "VersionUID": 14595706618467669965,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 3830491360152156280,
+                "PrefabVersionUID": 14595706618467669965,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.4352349042892456,
@@ -61,8 +61,11 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Dash Duration": 0.20000000298023224,
                                 "Boss Max Health": 0,
+                                "Dash Duration": 0.20000000298023224,
+                                "Shield Collider": "jnt_shield",
+                                "Close Area": "CloseArea",
+                                "Big Area": "BigArea",
                                 "Mirage1 Threshhold": 0,
                                 "Mirage2 Threshhold": 0,
                                 "Mirage3 Threshhold": 0
@@ -130,7 +133,9 @@
                 ],
                 "Children": [
                     2758611806281858298,
-                    3337343403257978484
+                    3337343403257978484,
+                    15209151249285792961,
+                    11206828007842117209
                 ]
             },
             {
@@ -202,6 +207,140 @@
                     4406781688209285496,
                     12175724164425344309
                 ]
+            },
+            {
+                "UID": 15209151249285792961,
+                "ParentUID": 16776525456551453907,
+                "Name": "CloseArea",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8301101514691162552,
+                "LocalTransform": [
+                    10.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    10.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6593300315165822787,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1326842676146302,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 17004615960520758954,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 2.25,
+                        "Length": 1.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11206828007842117209,
+                "ParentUID": 16776525456551453907,
+                "Name": "BigArea",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17651538887967637495,
+                "LocalTransform": [
+                    30.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    30.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18168358919360942096,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1326842676146302,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 7037806051234191248,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 6.75,
+                        "Length": 1.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 1635359410324629016,
