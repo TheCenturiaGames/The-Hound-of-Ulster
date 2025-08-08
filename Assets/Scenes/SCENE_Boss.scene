@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -18.076385498046875,
-            25.06757354736328,
-            -48.37644958496094
+            -26.083778381347656,
+            9.547212600708008,
+            -59.564632415771484
         ],
         "Camera Front": [
-            0.02030736394226551,
-            -0.8989202976226807,
-            -0.43764135241508484
+            0.784138023853302,
+            -0.5887966752052307,
+            -0.19607651233673096
         ],
         "Camera Up": [
-            0.041626542806625366,
-            0.43873411417007446,
-            -0.8976523876190186
+            0.5706580281257629,
+            0.8086923956871033,
+            -0.14270980656147003
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -25,8 +25,15 @@
         "PlayerMask": 39,
         "PlayerProjectileMask": 4,
         "EnemyProjectileMask": 8,
-        "tags": [],
-        "tagsGO": [],
+        "tags": [
+            "UPDATE"
+        ],
+        "tagsGO": [
+            [
+                4919968045354205814,
+                16776525456551453907
+            ]
+        ],
         "GameObjects": [
             {
                 "UID": 6788591387451538717,
@@ -63,7 +70,8 @@
                     16088456706799281289,
                     9712974223873665911,
                     16865153113853310621,
-                    16776525456551453907
+                    16776525456551453907,
+                    6465919604920796203
                 ]
             },
             {
@@ -12728,7 +12736,7 @@
                         ]
                     },
                     {
-                        "UID": 15275280296305181834,
+                        "UID": 10134774608057497114,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -13130,7 +13138,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 2232863922168955656,
+                "PrefabVersionUID": 10693351903211669533,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -13525,7 +13533,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Max Health": 10,
-                                "Current Health": 3,
+                                "Current Health": 10,
                                 "Invulnerable": false,
                                 "Dead": false,
                                 "Damage": 1,
@@ -13697,7 +13705,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.43569672107696533
+                        "CameraVFOV": 0.473613977432251
                     }
                 ],
                 "Children": []
@@ -22793,7 +22801,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 14595706618467669965,
+                "PrefabVersionUID": 6045149183475050835,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.4352349042892456,
@@ -22840,7 +22848,11 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Dash Duration": 0.20000000298023224,
+                                "Dash Duration": 0.5,
+                                "Height Jump": 0.0,
+                                "Jump Duration": 0.4000000059604645,
+                                "Fall Duration": 0.10000000149011612,
+                                "Close Area Damage": 2,
                                 "Shield Collider": "jnt_shield",
                                 "Close Area": "CloseArea",
                                 "Big Area": "BigArea"
@@ -24938,6 +24950,81 @@
                                 "Mirage Warning": 0,
                                 "Mirage Damage": 0
                             }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6465919604920796203,
+                "ParentUID": 6788591387451538717,
+                "Name": "RespawnPoint",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -28.33734893798828,
+                    0.0,
+                    1.0,
+                    0.0,
+                    3.121037006378174,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -62.984886169433594,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12358513062858233938,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "SpawnPoint",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Player name": "walk",
+                                "Set only once": false,
+                                "Set Health for player": 10
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 5566612392411610817,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 0.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            5.0,
+                            3.0,
+                            3.0
                         ]
                     }
                 ],
