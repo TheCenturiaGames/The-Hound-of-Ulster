@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1653693544879814,
-        "VersionUID": 14887945036432434580,
+        "VersionUID": 6141142335162266482,
         "Name": "CH_banshee",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1653693544879814,
-                "PrefabVersionUID": 14887945036432434580,
+                "PrefabVersionUID": 6141142335162266482,
                 "PrefabChildUID": 13929604912343936896,
                 "LocalTransform": [
                     1.0,
@@ -67,7 +67,7 @@
                                 ],
                                 "Attack Angular Speed": 1.0,
                                 "Main scream duration": 2.0,
-                                "Warning duration": 0.20000000298023224
+                                "Warning duration": 0.30000001192092896
                             }
                         ]
                     },
@@ -564,7 +564,7 @@
                         "UID": 1655542347157702422,
                         "Type": 1,
                         "Enabled": false,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1150212522424348,
                         "Material": 0,
@@ -583,7 +583,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     0.0,
                                     1.0
@@ -591,7 +591,7 @@
                                 "Double sided": false,
                                 "Start UV Offset": [
                                     0.0,
-                                    0.0
+                                    0.30000001192092896
                                 ]
                             }
                         ]
@@ -617,7 +617,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    1.7248705625534058,
+                    1.8291083574295044,
                     0.0,
                     0.0,
                     1.0,
@@ -632,7 +632,7 @@
                         "UID": 9290347912680560579,
                         "Type": 1,
                         "Enabled": false,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1138751780167925,
                         "Material": 0,
@@ -700,7 +700,7 @@
                         "UID": 9231909391260331153,
                         "Type": 1,
                         "Enabled": false,
-                        "WasEnabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1104308109756698,
                         "Material": 0,
@@ -719,7 +719,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 2.0,
                                 "Moving UV Direction": [
                                     0.0,
                                     1.0
@@ -727,7 +727,7 @@
                                 "Double sided": false,
                                 "Start UV Offset": [
                                     0.0,
-                                    0.0
+                                    0.3499999940395355
                                 ]
                             }
                         ]
@@ -1144,7 +1144,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 3.0,
                                 "Moving UV Direction": [
                                     0.0,
                                     1.0
@@ -1223,8 +1223,8 @@
                     {
                         "UID": 9643653569280714223,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1138659765208116,
                         "Material": 0,
@@ -1235,6 +1235,31 @@
                         "ModelUID": 1418533093376269,
                         "SkinIndex": 2,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 1050362312278167417,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "Double sided": true,
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1273,7 +1298,7 @@
             {
                 "UID": 4266569065537171065,
                 "ParentUID": 143217284468758284,
-                "Name": "mesh_smoke_a.001",
+                "Name": "mesh_smoke_b",
                 "Mobility": 1,
                 "SelectParent": true,
                 "Enabled": true,
@@ -1302,8 +1327,8 @@
                     {
                         "UID": 12842806865571202876,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1187959345233044,
                         "Material": 0,
@@ -1314,6 +1339,31 @@
                         "ModelUID": 1418533093376269,
                         "SkinIndex": 3,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 13790049713792699230,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "Double sided": true,
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1352,7 +1402,7 @@
             {
                 "UID": 7286193705658336185,
                 "ParentUID": 6734995236684043447,
-                "Name": "mesh_smoke_a.002",
+                "Name": "mesh_smoke_c",
                 "Mobility": 1,
                 "SelectParent": true,
                 "Enabled": true,
@@ -1381,8 +1431,8 @@
                     {
                         "UID": 17940976477997834864,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1111904866161150,
                         "Material": 0,
@@ -1393,6 +1443,31 @@
                         "ModelUID": 1418533093376269,
                         "SkinIndex": 4,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 2325146956540738254,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "Double sided": true,
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1409,17 +1484,17 @@
                 "PrefabChildUID": 11028773180706099581,
                 "LocalTransform": [
                     1.0,
-                    3.307740686086684e-16,
-                    2.9802322387695313e-8,
-                    -0.000005502719432115555,
-                    -8.408192194323612e-16,
+                    2.928983021579227e-16,
+                    3.422854533141617e-8,
+                    -0.000002831027359206928,
+                    -8.786949858831069e-16,
                     0.9999999403953552,
-                    1.7114274442064925e-8,
-                    -0.00005805492401123047,
-                    -2.9802322387695313e-8,
-                    -1.7114272665708086e-8,
+                    1.7114272665708086e-8,
+                    0.016162171959877014,
+                    -3.422854533141617e-8,
+                    -1.7114270889351246e-8,
                     1.0,
-                    -9.313225746154785e-10,
+                    -5.552868165281666e-10,
                     0.0,
                     0.0,
                     0.0,
@@ -1789,7 +1864,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 3.0,
                                 "Moving UV Direction": [
                                     0.0,
                                     1.0
@@ -1862,7 +1937,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 1.0,
+                                "Animation Speed": 3.0,
                                 "Moving UV Direction": [
                                     0.0,
                                     1.0
