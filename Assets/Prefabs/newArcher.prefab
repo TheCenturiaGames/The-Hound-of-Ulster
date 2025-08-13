@@ -1,11 +1,11 @@
 {
     "Prefab": {
         "UID": 1669361420756956,
-        "VersionUID": 3363049061771795377,
+        "VersionUID": 3530155655116938113,
         "Name": "newArcher",
         "GameObjects": [
             {
-                "UID": 15777261911464330945,
+                "UID": 11059107643456920102,
                 "ParentUID": 10309131146409751111,
                 "Name": "newArcher",
                 "Mobility": 0,
@@ -14,21 +14,21 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1669361420756956,
-                "PrefabVersionUID": 3363049061771795377,
+                "PrefabVersionUID": 3530155655116938113,
                 "PrefabChildUID": 6466073319997088336,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    47.38999938964844,
+                    -26.413999557495117,
                     0.0,
                     1.0,
                     0.0,
-                    0.7300000190734863,
+                    7.038000106811523,
                     0.0,
                     0.0,
                     1.0,
-                    67.68499755859375,
+                    6.99399995803833,
                     0.0,
                     0.0,
                     0.0,
@@ -36,13 +36,17 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13979495159227145075,
-                    9022900645378892900
+                    299419406154173441,
+                    11655550211718276925,
+                    9328977929996136447,
+                    14295343120248492271,
+                    2401667716532416336,
+                    15357250062258927311
                 ]
             },
             {
-                "UID": 13979495159227145075,
-                "ParentUID": 15777261911464330945,
+                "UID": 299419406154173441,
+                "ParentUID": 11059107643456920102,
                 "Name": "running",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -70,7 +74,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13376100901912336925,
+                        "UID": 14072636084273007736,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -88,11 +92,11 @@
                                 "Attack Range": 1.0,
                                 "Attack Duration": 2.0,
                                 "Attack Cooldown": 1.0,
-                                "Attack Hitbox Delay": 0.0,
+                                "Attack Hitbox Delay": 1.0,
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 1.0,
                                 "AI Chase Range": 9.0,
-                                "AI Attack Range": 10.0,
+                                "AI Attack Range": 15.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
                                 "AI Patrol Point": [
@@ -100,14 +104,14 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Arrow Projectile Name": "Projectile",
+                                "Arrow Projectile Name": "Arrow_0",
                                 "Escape Range": 8.0,
-                                "Aim Duration": 1.0,
-                                "Has Multiple Shoots ": false,
+                                "Aim Duration": 0.20000000298023224,
+                                "Has Multiple Shoots ": true,
                                 "Number of Shoots": 5,
                                 "Knockback Time": 0.20000000298023224,
                                 "Knockback Force": 7.0,
-                                "Is Static ": false
+                                "Is Static ": true
                             }
                         ]
                     },
@@ -136,7 +140,7 @@
                         ]
                     },
                     {
-                        "UID": 4863230723631733679,
+                        "UID": 14329833473606496298,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -145,7 +149,7 @@
                         "StateMachine": 1783005663550599
                     },
                     {
-                        "UID": 17396647907688983020,
+                        "UID": 445731230362170341,
                         "Type": 15,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -159,13 +163,13 @@
                     }
                 ],
                 "Children": [
-                    10460488917430343755
+                    264552743136616837
                 ]
             },
             {
-                "UID": 9022900645378892900,
-                "ParentUID": 15777261911464330945,
-                "Name": "Projectile",
+                "UID": 11655550211718276925,
+                "ParentUID": 11059107643456920102,
+                "Name": "Arrow_0",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
@@ -173,18 +177,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 2868804070843035874,
                 "LocalTransform": [
-                    0.058867037296295166,
+                    3.0,
                     0.0,
                     0.0,
+                    0.3826770782470703,
+                    0.0,
+                    3.0,
+                    0.0,
+                    1.0299911499023438,
                     0.0,
                     0.0,
-                    0.05991770327091217,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
+                    3.0,
+                    0.1432795524597168,
                     0.0,
                     0.0,
                     0.0,
@@ -192,18 +196,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1779537249734894415,
+                        "UID": 5081855198165457888,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1175652718975713,
+                        "Mesh": 1179312278252700,
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 11835578135864152150,
+                        "UID": 12159592959259041002,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -213,8 +217,8 @@
                                 "Script Name": "Projectile",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Speed": 10.0,
-                                "Range": 10.0,
+                                "Speed": 20.0,
+                                "Range": 20.0,
                                 "Damage": 1
                             }
                         ]
@@ -228,31 +232,31 @@
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 0.25,
-                        "Length": 0.10761165618896484,
+                        "Radius": 0.1899999976158142,
+                        "Length": 0.5,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
                             0.0,
                             0.0,
-                            0.0
+                            0.44999998807907104
                         ],
                         "CenterRotation": [
-                            0.0,
+                            1.570796012878418,
                             0.0,
                             0.0
                         ]
                     },
                     {
-                        "UID": 2814449820289329359,
+                        "UID": 14389928122606936778,
                         "Type": 24,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Trail",
                         "MinDistance": 0.5,
                         "LifeTime": 0.5,
-                        "Width": 0.10000000149011612,
-                        "Cutoff": 0.10000000149011612,
+                        "Width": 0.5,
+                        "Cutoff": 0.25,
                         "UseCurve": true,
                         "InvertCurve": false,
                         "Curve": [
@@ -262,7 +266,7 @@
                             0.984375,
                             0.0
                         ],
-                        "Texture": 1254486236908938,
+                        "Texture": 1209965877356503,
                         "HasTexture": true,
                         "Color": [
                             0.022295314818620682,
@@ -288,11 +292,493 @@
                         ]
                     }
                 ],
-                "Children": []
+                "Children": [
+                    14454509964182260097
+                ]
             },
             {
-                "UID": 10460488917430343755,
-                "ParentUID": 13979495159227145075,
+                "UID": 9328977929996136447,
+                "ParentUID": 11059107643456920102,
+                "Name": "Arrow_1",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15619798955921430451,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.11169242858886719,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.47762155532836914,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.19574642181396484,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 909303885165857360,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1179312278252700,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 5545410389349110005,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Projectile",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "Range": 10.0,
+                                "Damage": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.1899999976158142,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.44999998807907104
+                        ],
+                        "CenterRotation": [
+                            1.5709999799728394,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 4909706609441752669,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.5,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.3828125,
+                            0.4140625,
+                            0.96875,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.057500019669532776,
+                            0.5186250805854797,
+                            0.6000000238418579,
+                            1.0,
+                            0.0,
+                            0.4867013990879059,
+                            0.820797860622406,
+                            0.8916666507720947,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    6261928046284757461
+                ]
+            },
+            {
+                "UID": 14295343120248492271,
+                "ParentUID": 11059107643456920102,
+                "Name": "Arrow_2",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1968894711338025894,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.07355690002441406,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.47432613372802734,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10536516504102924986,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1179312278252700,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 6234099832066445204,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Projectile",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "Range": 10.0,
+                                "Damage": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.1899999976158142,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.44999998807907104
+                        ],
+                        "CenterRotation": [
+                            1.5709999799728394,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 16023766376886471466,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.5,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.109375,
+                            0.3984375,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1209965877356503,
+                        "HasTexture": true,
+                        "Color": [
+                            0.04156249389052391,
+                            0.45164579153060913,
+                            0.5541666746139526,
+                            1.0,
+                            0.0,
+                            0.32343751192092896,
+                            0.560742199420929,
+                            0.675000011920929,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    5025207994907578247
+                ]
+            },
+            {
+                "UID": 2401667716532416336,
+                "ParentUID": 11059107643456920102,
+                "Name": "Arrow_3",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13542878083106023808,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.13689041137695313,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.6388177871704102,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11711467713973970905,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1179312278252700,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 4218319849179480305,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Projectile",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "Range": 10.0,
+                                "Damage": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.1899999976158142,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.44999998807907104
+                        ],
+                        "CenterRotation": [
+                            1.5709999799728394,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 10815545188127984775,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.5,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.046875,
+                            0.125,
+                            0.9765625,
+                            0.0
+                        ],
+                        "Texture": 1209965877356503,
+                        "HasTexture": true,
+                        "Color": [
+                            0.03670139238238335,
+                            0.4662386476993561,
+                            0.6291666626930237,
+                            1.0,
+                            0.0,
+                            0.30937501788139343,
+                            0.49921873211860657,
+                            0.5625,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    8187720176628203190
+                ]
+            },
+            {
+                "UID": 15357250062258927311,
+                "ParentUID": 11059107643456920102,
+                "Name": "Arrow_4",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5804919470632770944,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.1663360595703125,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.7560577392578125,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11596773198438618727,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1179312278252700,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 11956717337115055684,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Projectile",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "Range": 10.0,
+                                "Damage": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.1899999976158142,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.1899999976158142
+                        ],
+                        "CenterRotation": [
+                            1.5709999799728394,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 4360396354662657237,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.5,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.984375,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.037152767181396484,
+                            0.3027951717376709,
+                            0.44583332538604736,
+                            1.0,
+                            0.0,
+                            0.27906250953674316,
+                            0.4113203287124634,
+                            0.4750000238418579,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    1962829960293324302
+                ]
+            },
+            {
+                "UID": 264552743136616837,
+                "ParentUID": 299419406154173441,
                 "Name": "group",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -320,13 +806,343 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2674262778857092579,
-                    2407859738111112092
+                    8824837869803943900,
+                    8105170413184083707
                 ]
             },
             {
-                "UID": 2674262778857092579,
-                "ParentUID": 10460488917430343755,
+                "UID": 14454509964182260097,
+                "ParentUID": 11655550211718276925,
+                "Name": "Trail",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16312384748754989439,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.07888078689575195,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17175822239619850094,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.15000000596046448,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.8958333134651184,
+                            0.6802734136581421,
+                            0.03359377011656761,
+                            1.0,
+                            0.0,
+                            0.9291666746139526,
+                            0.5043632388114929,
+                            0.034843772649765015,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6261928046284757461,
+                "ParentUID": 9328977929996136447,
+                "Name": "Trail",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12764344336569009415,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.09386062622070313,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2297388601097881002,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.15000000596046448,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.8958333134651184,
+                            0.670008659362793,
+                            0.074652761220932,
+                            1.0,
+                            0.0,
+                            0.9666666388511658,
+                            0.8393888473510742,
+                            0.3302777409553528,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5025207994907578247,
+                "ParentUID": 14295343120248492271,
+                "Name": "Trail",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13383071587914072143,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.09307503700256348,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12790885869397600209,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.15000000596046448,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1200000000000000,
+                        "HasTexture": false,
+                        "Color": [
+                            0.8416666984558105,
+                            0.6593932509422302,
+                            0.03156252205371857,
+                            1.0,
+                            0.0,
+                            0.8666666746139526,
+                            0.7149999737739563,
+                            0.2600000202655792,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8187720176628203190,
+                "ParentUID": 2401667716532416336,
+                "Name": "Trail",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17198310859646518614,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.08629584312438965,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7800928080009229749,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.15000000596046448,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.8916666507720947,
+                            0.7701770663261414,
+                            0.08173608779907227,
+                            1.0,
+                            0.0,
+                            0.9708333611488342,
+                            0.8616145849227905,
+                            0.4247395992279053,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1962829960293324302,
+                "ParentUID": 15357250062258927311,
+                "Name": "Trail",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9796847953922983334,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.09393858909606934,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14789592453459644481,
+                        "Type": 24,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Trail",
+                        "MinDistance": 0.5,
+                        "LifeTime": 0.5,
+                        "Width": 0.15000000596046448,
+                        "Cutoff": 0.10000000149011612,
+                        "UseCurve": true,
+                        "InvertCurve": false,
+                        "Curve": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "Texture": 1250412645645100,
+                        "HasTexture": true,
+                        "Color": [
+                            0.9083333015441895,
+                            0.8042533993721008,
+                            0.07569442689418793,
+                            1.0,
+                            0.0,
+                            0.925000011920929,
+                            0.7523333430290222,
+                            0.061666663736104965,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8824837869803943900,
+                "ParentUID": 264552743136616837,
                 "Name": "cw",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -354,18 +1170,18 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17096506282486933333,
-                    12100961796842940671,
-                    10367017218706322551,
-                    2203963482049294283,
-                    11420181183566214898,
-                    13739360525617166433,
-                    9110187237533654717
+                    6179401574825838869,
+                    1421985038593276311,
+                    4841781377983187050,
+                    5927374215921478181,
+                    9935081964757908360,
+                    17762385991037537422,
+                    17629931961709643053
                 ]
             },
             {
-                "UID": 2407859738111112092,
-                "ParentUID": 10460488917430343755,
+                "UID": 8105170413184083707,
+                "ParentUID": 264552743136616837,
                 "Name": "Bow_Arrow_Mesh",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -420,8 +1236,8 @@
                 "Children": []
             },
             {
-                "UID": 17096506282486933333,
-                "ParentUID": 2674262778857092579,
+                "UID": 6179401574825838869,
+                "ParentUID": 8824837869803943900,
                 "Name": "Archer_Enemy_LP_V3",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -449,7 +1265,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11375743078022023526,
+                        "UID": 15408129451849362156,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -458,68 +1274,68 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            9110187237533654717,
-                            6549553925317323127,
-                            17465929503216211511,
-                            10364938755850817109,
-                            12354230790789767706,
-                            358678610343531719,
-                            349540412485890899,
-                            12367312034405063560,
-                            8861623959049973649,
-                            6356544604279431167,
-                            16743729748664871829,
-                            17635084051769568617,
-                            15637689154802246202,
-                            16708344296728045388,
-                            8902803359953815212,
-                            525038116377048778,
-                            10402488013026689783,
-                            8364245884720682372,
-                            16053936614605733574,
-                            765702916459090390,
-                            3031436382494337891,
-                            4151435124774701375,
-                            17703047388795661861,
-                            13491821763764760444,
-                            10480306939336805385,
-                            2511735339122192951,
-                            2976213997603504268,
-                            14377540471618534985,
-                            13401109780881936963,
-                            18125499403095568795,
-                            11567633275650469648,
-                            3971443828703654326,
-                            14079254980980949530,
-                            4577410190352088720,
-                            3875052827746747347,
-                            18087757380367824244,
-                            8345316660573885917,
-                            11427281171654406021,
-                            9259907981003136586,
-                            16014038990159384640,
-                            12047504268392080816,
-                            13742825327603978489,
-                            13599461281723696694,
-                            14512956933940105263,
-                            3247306385426870415,
-                            7433971765274439354,
-                            13800117787143149034,
-                            7054096005260053412,
-                            3119578412856960925,
-                            1808927362718565282,
-                            7108067473533503812,
-                            17074015265829734747,
-                            15419030779542066492,
-                            5745997379596060700,
-                            9071070253227327065,
-                            17164739781630212414,
-                            10221031018427220710,
-                            13496699452506063091,
-                            14694208887772124052,
-                            5697506429970537725,
-                            13747247858398006274,
-                            1400830719030628033
+                            17629931961709643053,
+                            10801692701913511655,
+                            7932747835465229984,
+                            5063974031747348208,
+                            3042982137526208149,
+                            9939809043734679484,
+                            11734294993366647199,
+                            5132946547827816304,
+                            13460352848617667692,
+                            12933584880351588315,
+                            5463532837837972518,
+                            8150563352680539131,
+                            5346027139033906967,
+                            10663437838674354594,
+                            12406917806797726186,
+                            4226186286605718941,
+                            1723377760804190117,
+                            10779262636125132597,
+                            11888465871832352792,
+                            227831904091430152,
+                            14983090682844905090,
+                            3189956630095227091,
+                            13663833766019468145,
+                            10289478461949479016,
+                            14633923109628737832,
+                            8335939147554197152,
+                            1757224064786207297,
+                            8600547631679922816,
+                            11923735959077588613,
+                            13696055081438852903,
+                            14364143366693256412,
+                            15260888598270898542,
+                            16773342954456155131,
+                            2904962801226538238,
+                            498715690561811443,
+                            6909893057063971231,
+                            11784731882483531960,
+                            3131484431290531467,
+                            2483599089151160750,
+                            6748750788210336793,
+                            10236468124152412989,
+                            2038726471029202908,
+                            3249000103170318293,
+                            7433157701157060359,
+                            13607472960118320603,
+                            10637614655065377830,
+                            18276199230295817717,
+                            15512691219368437964,
+                            7802336366779251853,
+                            15477956285133195371,
+                            18375201136949859118,
+                            594565714438735361,
+                            15309185352097186658,
+                            9537971931015769019,
+                            17902993731335863972,
+                            5524460328857193117,
+                            6784969657700820612,
+                            15244890118335404369,
+                            9670652227183557486,
+                            1372206952304118671,
+                            6146458298060792885,
+                            5710591075255002223
                         ],
                         "ModelUID": 1469697411135734,
                         "SkinIndex": 0,
@@ -529,8 +1345,8 @@
                 "Children": []
             },
             {
-                "UID": 12100961796842940671,
-                "ParentUID": 2674262778857092579,
+                "UID": 1421985038593276311,
+                "ParentUID": 8824837869803943900,
                 "Name": "arrow_ctl_grp",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -558,12 +1374,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3980794321646167863
+                    101004506272481872
                 ]
             },
             {
-                "UID": 10367017218706322551,
-                "ParentUID": 2674262778857092579,
+                "UID": 4841781377983187050,
+                "ParentUID": 8824837869803943900,
                 "Name": "bow_handle_grp",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -591,12 +1407,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1001468299208066252
+                    15457944436800673743
                 ]
             },
             {
-                "UID": 2203963482049294283,
-                "ParentUID": 2674262778857092579,
+                "UID": 5927374215921478181,
+                "ParentUID": 8824837869803943900,
                 "Name": "ctrl_RootShape",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -624,14 +1440,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12438739997321385643,
-                    11725768249849690872,
-                    11392747343932797740
+                    16124199600298483926,
+                    3944087630452585777,
+                    14627136221141861416
                 ]
             },
             {
-                "UID": 11420181183566214898,
-                "ParentUID": 2674262778857092579,
+                "UID": 9935081964757908360,
+                "ParentUID": 8824837869803943900,
                 "Name": "WP_EnemyArcher_BackpackArrow",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -659,7 +1475,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 8377390875273830721,
+                        "UID": 15680884263777198919,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -668,68 +1484,68 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            9110187237533654717,
-                            6549553925317323127,
-                            17465929503216211511,
-                            10364938755850817109,
-                            12354230790789767706,
-                            358678610343531719,
-                            349540412485890899,
-                            12367312034405063560,
-                            8861623959049973649,
-                            6356544604279431167,
-                            16743729748664871829,
-                            17635084051769568617,
-                            15637689154802246202,
-                            16708344296728045388,
-                            8902803359953815212,
-                            525038116377048778,
-                            10402488013026689783,
-                            8364245884720682372,
-                            16053936614605733574,
-                            765702916459090390,
-                            3031436382494337891,
-                            4151435124774701375,
-                            17703047388795661861,
-                            13491821763764760444,
-                            10480306939336805385,
-                            2511735339122192951,
-                            2976213997603504268,
-                            14377540471618534985,
-                            13401109780881936963,
-                            18125499403095568795,
-                            11567633275650469648,
-                            3971443828703654326,
-                            14079254980980949530,
-                            4577410190352088720,
-                            3875052827746747347,
-                            18087757380367824244,
-                            8345316660573885917,
-                            11427281171654406021,
-                            9259907981003136586,
-                            16014038990159384640,
-                            12047504268392080816,
-                            13742825327603978489,
-                            13599461281723696694,
-                            14512956933940105263,
-                            3247306385426870415,
-                            7433971765274439354,
-                            13800117787143149034,
-                            7054096005260053412,
-                            3119578412856960925,
-                            1808927362718565282,
-                            7108067473533503812,
-                            17074015265829734747,
-                            15419030779542066492,
-                            5745997379596060700,
-                            9071070253227327065,
-                            17164739781630212414,
-                            10221031018427220710,
-                            13496699452506063091,
-                            14694208887772124052,
-                            5697506429970537725,
-                            13747247858398006274,
-                            1400830719030628033
+                            17629931961709643053,
+                            10801692701913511655,
+                            7932747835465229984,
+                            5063974031747348208,
+                            3042982137526208149,
+                            9939809043734679484,
+                            11734294993366647199,
+                            5132946547827816304,
+                            13460352848617667692,
+                            12933584880351588315,
+                            5463532837837972518,
+                            8150563352680539131,
+                            5346027139033906967,
+                            10663437838674354594,
+                            12406917806797726186,
+                            4226186286605718941,
+                            1723377760804190117,
+                            10779262636125132597,
+                            11888465871832352792,
+                            227831904091430152,
+                            14983090682844905090,
+                            3189956630095227091,
+                            13663833766019468145,
+                            10289478461949479016,
+                            14633923109628737832,
+                            8335939147554197152,
+                            1757224064786207297,
+                            8600547631679922816,
+                            11923735959077588613,
+                            13696055081438852903,
+                            14364143366693256412,
+                            15260888598270898542,
+                            16773342954456155131,
+                            2904962801226538238,
+                            498715690561811443,
+                            6909893057063971231,
+                            11784731882483531960,
+                            3131484431290531467,
+                            2483599089151160750,
+                            6748750788210336793,
+                            10236468124152412989,
+                            2038726471029202908,
+                            3249000103170318293,
+                            7433157701157060359,
+                            13607472960118320603,
+                            10637614655065377830,
+                            18276199230295817717,
+                            15512691219368437964,
+                            7802336366779251853,
+                            15477956285133195371,
+                            18375201136949859118,
+                            594565714438735361,
+                            15309185352097186658,
+                            9537971931015769019,
+                            17902993731335863972,
+                            5524460328857193117,
+                            6784969657700820612,
+                            15244890118335404369,
+                            9670652227183557486,
+                            1372206952304118671,
+                            6146458298060792885,
+                            5710591075255002223
                         ],
                         "ModelUID": 1469697411135734,
                         "SkinIndex": 0,
@@ -739,8 +1555,8 @@
                 "Children": []
             },
             {
-                "UID": 13739360525617166433,
-                "ParentUID": 2674262778857092579,
+                "UID": 17762385991037537422,
+                "ParentUID": 8824837869803943900,
                 "Name": "WP_EnemyArcher_Bow_LP",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -768,7 +1584,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7860226334674307012,
+                        "UID": 2486011074508451614,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -777,68 +1593,68 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            9110187237533654717,
-                            6549553925317323127,
-                            17465929503216211511,
-                            10364938755850817109,
-                            12354230790789767706,
-                            358678610343531719,
-                            349540412485890899,
-                            12367312034405063560,
-                            8861623959049973649,
-                            6356544604279431167,
-                            16743729748664871829,
-                            17635084051769568617,
-                            15637689154802246202,
-                            16708344296728045388,
-                            8902803359953815212,
-                            525038116377048778,
-                            10402488013026689783,
-                            8364245884720682372,
-                            16053936614605733574,
-                            765702916459090390,
-                            3031436382494337891,
-                            4151435124774701375,
-                            17703047388795661861,
-                            13491821763764760444,
-                            10480306939336805385,
-                            2511735339122192951,
-                            2976213997603504268,
-                            14377540471618534985,
-                            13401109780881936963,
-                            18125499403095568795,
-                            11567633275650469648,
-                            3971443828703654326,
-                            14079254980980949530,
-                            4577410190352088720,
-                            3875052827746747347,
-                            18087757380367824244,
-                            8345316660573885917,
-                            11427281171654406021,
-                            9259907981003136586,
-                            16014038990159384640,
-                            12047504268392080816,
-                            13742825327603978489,
-                            13599461281723696694,
-                            14512956933940105263,
-                            3247306385426870415,
-                            7433971765274439354,
-                            13800117787143149034,
-                            7054096005260053412,
-                            3119578412856960925,
-                            1808927362718565282,
-                            7108067473533503812,
-                            17074015265829734747,
-                            15419030779542066492,
-                            5745997379596060700,
-                            9071070253227327065,
-                            17164739781630212414,
-                            10221031018427220710,
-                            13496699452506063091,
-                            14694208887772124052,
-                            5697506429970537725,
-                            13747247858398006274,
-                            1400830719030628033
+                            17629931961709643053,
+                            10801692701913511655,
+                            7932747835465229984,
+                            5063974031747348208,
+                            3042982137526208149,
+                            9939809043734679484,
+                            11734294993366647199,
+                            5132946547827816304,
+                            13460352848617667692,
+                            12933584880351588315,
+                            5463532837837972518,
+                            8150563352680539131,
+                            5346027139033906967,
+                            10663437838674354594,
+                            12406917806797726186,
+                            4226186286605718941,
+                            1723377760804190117,
+                            10779262636125132597,
+                            11888465871832352792,
+                            227831904091430152,
+                            14983090682844905090,
+                            3189956630095227091,
+                            13663833766019468145,
+                            10289478461949479016,
+                            14633923109628737832,
+                            8335939147554197152,
+                            1757224064786207297,
+                            8600547631679922816,
+                            11923735959077588613,
+                            13696055081438852903,
+                            14364143366693256412,
+                            15260888598270898542,
+                            16773342954456155131,
+                            2904962801226538238,
+                            498715690561811443,
+                            6909893057063971231,
+                            11784731882483531960,
+                            3131484431290531467,
+                            2483599089151160750,
+                            6748750788210336793,
+                            10236468124152412989,
+                            2038726471029202908,
+                            3249000103170318293,
+                            7433157701157060359,
+                            13607472960118320603,
+                            10637614655065377830,
+                            18276199230295817717,
+                            15512691219368437964,
+                            7802336366779251853,
+                            15477956285133195371,
+                            18375201136949859118,
+                            594565714438735361,
+                            15309185352097186658,
+                            9537971931015769019,
+                            17902993731335863972,
+                            5524460328857193117,
+                            6784969657700820612,
+                            15244890118335404369,
+                            9670652227183557486,
+                            1372206952304118671,
+                            6146458298060792885,
+                            5710591075255002223
                         ],
                         "ModelUID": 1469697411135734,
                         "SkinIndex": 0,
@@ -848,8 +1664,8 @@
                 "Children": []
             },
             {
-                "UID": 9110187237533654717,
-                "ParentUID": 2674262778857092579,
+                "UID": 17629931961709643053,
+                "ParentUID": 8824837869803943900,
                 "Name": "jnt_RootBone",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -877,14 +1693,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6549553925317323127,
-                    7108067473533503812,
-                    11503559124619022638
+                    10801692701913511655,
+                    18375201136949859118,
+                    4440563549457400009
                 ]
             },
             {
-                "UID": 3980794321646167863,
-                "ParentUID": 12100961796842940671,
+                "UID": 101004506272481872,
+                "ParentUID": 1421985038593276311,
                 "Name": "arrow_ctl",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -914,8 +1730,8 @@
                 "Children": []
             },
             {
-                "UID": 1001468299208066252,
-                "ParentUID": 10367017218706322551,
+                "UID": 15457944436800673743,
+                "ParentUID": 4841781377983187050,
                 "Name": "bow_handle",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -943,12 +1759,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5297281845912163465
+                    10759459453571219201
                 ]
             },
             {
-                "UID": 12438739997321385643,
-                "ParentUID": 2203963482049294283,
+                "UID": 16124199600298483926,
+                "ParentUID": 5927374215921478181,
                 "Name": "grp_hip",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -976,12 +1792,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    692700397303615299
+                    12415539015356635011
                 ]
             },
             {
-                "UID": 11725768249849690872,
-                "ParentUID": 2203963482049294283,
+                "UID": 3944087630452585777,
+                "ParentUID": 5927374215921478181,
                 "Name": "leg_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1009,12 +1825,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14285524266415221013
+                    7370964733345447146
                 ]
             },
             {
-                "UID": 11392747343932797740,
-                "ParentUID": 2203963482049294283,
+                "UID": 14627136221141861416,
+                "ParentUID": 5927374215921478181,
                 "Name": "leg_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1042,13 +1858,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3731718464866598939,
-                    6038398746966419378
+                    3160543912332262053,
+                    7987145938345859069
                 ]
             },
             {
-                "UID": 6549553925317323127,
-                "ParentUID": 9110187237533654717,
+                "UID": 10801692701913511655,
+                "ParentUID": 17629931961709643053,
                 "Name": "jnt_Pelvis",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1076,14 +1892,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17465929503216211511,
-                    349540412485890899,
-                    16743729748664871829
+                    7932747835465229984,
+                    11734294993366647199,
+                    5463532837837972518
                 ]
             },
             {
-                "UID": 7108067473533503812,
-                "ParentUID": 9110187237533654717,
+                "UID": 18375201136949859118,
+                "ParentUID": 17629931961709643053,
                 "Name": "Root",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1111,14 +1927,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17074015265829734747,
-                    10221031018427220710,
-                    1400830719030628033
+                    594565714438735361,
+                    6784969657700820612,
+                    5710591075255002223
                 ]
             },
             {
-                "UID": 11503559124619022638,
-                "ParentUID": 9110187237533654717,
+                "UID": 4440563549457400009,
+                "ParentUID": 17629931961709643053,
                 "Name": "arrow_jnt",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1148,8 +1964,8 @@
                 "Children": []
             },
             {
-                "UID": 5297281845912163465,
-                "ParentUID": 1001468299208066252,
+                "UID": 10759459453571219201,
+                "ParentUID": 15457944436800673743,
                 "Name": "String_ctl_grp",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1177,12 +1993,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15867145802639274129
+                    17273379605097322614
                 ]
             },
             {
-                "UID": 692700397303615299,
-                "ParentUID": 12438739997321385643,
+                "UID": 12415539015356635011,
+                "ParentUID": 16124199600298483926,
                 "Name": "ctrl_hip",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1210,12 +2026,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13359418626329295608
+                    10855877350049370054
                 ]
             },
             {
-                "UID": 14285524266415221013,
-                "ParentUID": 11725768249849690872,
+                "UID": 7370964733345447146,
+                "ParentUID": 3944087630452585777,
                 "Name": "grp_foot_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1243,12 +2059,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17017180798962204285
+                    60643004953846945
                 ]
             },
             {
-                "UID": 3731718464866598939,
-                "ParentUID": 11392747343932797740,
+                "UID": 3160543912332262053,
+                "ParentUID": 14627136221141861416,
                 "Name": "grp_foot_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1276,12 +2092,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8805494612688352857
+                    7974534722095783971
                 ]
             },
             {
-                "UID": 6038398746966419378,
-                "ParentUID": 11392747343932797740,
+                "UID": 7987145938345859069,
+                "ParentUID": 14627136221141861416,
                 "Name": "grp_knee_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1309,12 +2125,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14308902311277014210
+                    3403400250706722966
                 ]
             },
             {
-                "UID": 17465929503216211511,
-                "ParentUID": 6549553925317323127,
+                "UID": 7932747835465229984,
+                "ParentUID": 10801692701913511655,
                 "Name": "jnt_leg_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1342,12 +2158,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10364938755850817109
+                    5063974031747348208
                 ]
             },
             {
-                "UID": 349540412485890899,
-                "ParentUID": 6549553925317323127,
+                "UID": 11734294993366647199,
+                "ParentUID": 10801692701913511655,
                 "Name": "jnt_leg_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1375,12 +2191,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12367312034405063560
+                    5132946547827816304
                 ]
             },
             {
-                "UID": 16743729748664871829,
-                "ParentUID": 6549553925317323127,
+                "UID": 5463532837837972518,
+                "ParentUID": 10801692701913511655,
                 "Name": "jnt_spine_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1408,16 +2224,16 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17635084051769568617,
-                    16708344296728045388,
-                    525038116377048778,
-                    8364245884720682372,
-                    16053936614605733574
+                    8150563352680539131,
+                    10663437838674354594,
+                    4226186286605718941,
+                    10779262636125132597,
+                    11888465871832352792
                 ]
             },
             {
-                "UID": 17074015265829734747,
-                "ParentUID": 7108067473533503812,
+                "UID": 594565714438735361,
+                "ParentUID": 18375201136949859118,
                 "Name": "bow_down_jnt1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1445,12 +2261,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15419030779542066492
+                    15309185352097186658
                 ]
             },
             {
-                "UID": 10221031018427220710,
-                "ParentUID": 7108067473533503812,
+                "UID": 6784969657700820612,
+                "ParentUID": 18375201136949859118,
                 "Name": "bow_up_jnt1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1478,12 +2294,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13496699452506063091
+                    15244890118335404369
                 ]
             },
             {
-                "UID": 1400830719030628033,
-                "ParentUID": 7108067473533503812,
+                "UID": 5710591075255002223,
+                "ParentUID": 18375201136949859118,
                 "Name": "String",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1513,8 +2329,8 @@
                 "Children": []
             },
             {
-                "UID": 15867145802639274129,
-                "ParentUID": 5297281845912163465,
+                "UID": 17273379605097322614,
+                "ParentUID": 10759459453571219201,
                 "Name": "String_ctl",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1544,8 +2360,8 @@
                 "Children": []
             },
             {
-                "UID": 13359418626329295608,
-                "ParentUID": 692700397303615299,
+                "UID": 10855877350049370054,
+                "ParentUID": 12415539015356635011,
                 "Name": "grp_spine_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1573,12 +2389,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4990776986074795649
+                    18101507889520777032
                 ]
             },
             {
-                "UID": 17017180798962204285,
-                "ParentUID": 14285524266415221013,
+                "UID": 60643004953846945,
+                "ParentUID": 7370964733345447146,
                 "Name": "ctrl_foot_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1606,12 +2422,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12079732232528543470
+                    16771545649012343047
                 ]
             },
             {
-                "UID": 8805494612688352857,
-                "ParentUID": 3731718464866598939,
+                "UID": 7974534722095783971,
+                "ParentUID": 3160543912332262053,
                 "Name": "ctrl_foot_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1639,12 +2455,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11844264843736045226
+                    4408008853272448090
                 ]
             },
             {
-                "UID": 14308902311277014210,
-                "ParentUID": 6038398746966419378,
+                "UID": 3403400250706722966,
+                "ParentUID": 7987145938345859069,
                 "Name": "ctrl_knee_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1674,8 +2490,8 @@
                 "Children": []
             },
             {
-                "UID": 10364938755850817109,
-                "ParentUID": 17465929503216211511,
+                "UID": 5063974031747348208,
+                "ParentUID": 7932747835465229984,
                 "Name": "jnt_leg_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1703,12 +2519,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12354230790789767706
+                    3042982137526208149
                 ]
             },
             {
-                "UID": 12367312034405063560,
-                "ParentUID": 349540412485890899,
+                "UID": 5132946547827816304,
+                "ParentUID": 11734294993366647199,
                 "Name": "jnt_leg_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1736,12 +2552,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8861623959049973649
+                    13460352848617667692
                 ]
             },
             {
-                "UID": 17635084051769568617,
-                "ParentUID": 16743729748664871829,
+                "UID": 8150563352680539131,
+                "ParentUID": 5463532837837972518,
                 "Name": "jnt_cloth_1_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1769,12 +2585,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15637689154802246202
+                    5346027139033906967
                 ]
             },
             {
-                "UID": 16708344296728045388,
-                "ParentUID": 16743729748664871829,
+                "UID": 10663437838674354594,
+                "ParentUID": 5463532837837972518,
                 "Name": "jnt_cloth_2_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1802,12 +2618,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8902803359953815212
+                    12406917806797726186
                 ]
             },
             {
-                "UID": 525038116377048778,
-                "ParentUID": 16743729748664871829,
+                "UID": 4226186286605718941,
+                "ParentUID": 5463532837837972518,
                 "Name": "jnt_cloth_3_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1835,12 +2651,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10402488013026689783
+                    1723377760804190117
                 ]
             },
             {
-                "UID": 8364245884720682372,
-                "ParentUID": 16743729748664871829,
+                "UID": 10779262636125132597,
+                "ParentUID": 5463532837837972518,
                 "Name": "jnt_cloth_front_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1870,8 +2686,8 @@
                 "Children": []
             },
             {
-                "UID": 16053936614605733574,
-                "ParentUID": 16743729748664871829,
+                "UID": 11888465871832352792,
+                "ParentUID": 5463532837837972518,
                 "Name": "jnt_spine_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1899,13 +2715,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    765702916459090390,
-                    4151435124774701375
+                    227831904091430152,
+                    3189956630095227091
                 ]
             },
             {
-                "UID": 15419030779542066492,
-                "ParentUID": 17074015265829734747,
+                "UID": 15309185352097186658,
+                "ParentUID": 594565714438735361,
                 "Name": "bow_down_jnt2",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1933,12 +2749,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5745997379596060700
+                    9537971931015769019
                 ]
             },
             {
-                "UID": 13496699452506063091,
-                "ParentUID": 10221031018427220710,
+                "UID": 15244890118335404369,
+                "ParentUID": 6784969657700820612,
                 "Name": "bow_up_jnt2",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1966,12 +2782,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14694208887772124052
+                    9670652227183557486
                 ]
             },
             {
-                "UID": 4990776986074795649,
-                "ParentUID": 13359418626329295608,
+                "UID": 18101507889520777032,
+                "ParentUID": 10855877350049370054,
                 "Name": "ctrl_spine_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1999,13 +2815,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12812518183618880658,
-                    17835198665266174575
+                    16671712596879103741,
+                    5634868590824926624
                 ]
             },
             {
-                "UID": 12079732232528543470,
-                "ParentUID": 17017180798962204285,
+                "UID": 16771545649012343047,
+                "ParentUID": 60643004953846945,
                 "Name": "grp_foot_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2033,12 +2849,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6950310582844081886
+                    3969934200537645226
                 ]
             },
             {
-                "UID": 11844264843736045226,
-                "ParentUID": 8805494612688352857,
+                "UID": 4408008853272448090,
+                "ParentUID": 7974534722095783971,
                 "Name": "grp_foot_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2066,12 +2882,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5718717581461671747
+                    2073653303218929765
                 ]
             },
             {
-                "UID": 12354230790789767706,
-                "ParentUID": 10364938755850817109,
+                "UID": 3042982137526208149,
+                "ParentUID": 5063974031747348208,
                 "Name": "jnt_leg_L_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2099,12 +2915,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    358678610343531719
+                    9939809043734679484
                 ]
             },
             {
-                "UID": 8861623959049973649,
-                "ParentUID": 12367312034405063560,
+                "UID": 13460352848617667692,
+                "ParentUID": 5132946547827816304,
                 "Name": "jnt_leg_R_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2132,12 +2948,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6356544604279431167
+                    12933584880351588315
                 ]
             },
             {
-                "UID": 15637689154802246202,
-                "ParentUID": 17635084051769568617,
+                "UID": 5346027139033906967,
+                "ParentUID": 8150563352680539131,
                 "Name": "jnt_cloth_1_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2167,8 +2983,8 @@
                 "Children": []
             },
             {
-                "UID": 8902803359953815212,
-                "ParentUID": 16708344296728045388,
+                "UID": 12406917806797726186,
+                "ParentUID": 10663437838674354594,
                 "Name": "jnt_cloth_2_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2198,8 +3014,8 @@
                 "Children": []
             },
             {
-                "UID": 10402488013026689783,
-                "ParentUID": 525038116377048778,
+                "UID": 1723377760804190117,
+                "ParentUID": 4226186286605718941,
                 "Name": "jnt_cloth_3_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2229,8 +3045,8 @@
                 "Children": []
             },
             {
-                "UID": 765702916459090390,
-                "ParentUID": 16053936614605733574,
+                "UID": 227831904091430152,
+                "ParentUID": 11888465871832352792,
                 "Name": "jnt_Pouch_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2258,12 +3074,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3031436382494337891
+                    14983090682844905090
                 ]
             },
             {
-                "UID": 4151435124774701375,
-                "ParentUID": 16053936614605733574,
+                "UID": 3189956630095227091,
+                "ParentUID": 11888465871832352792,
                 "Name": "jnt_spine_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2291,17 +3107,17 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17703047388795661861,
-                    13491821763764760444,
-                    10480306939336805385,
-                    3875052827746747347,
-                    3247306385426870415,
-                    3119578412856960925
+                    13663833766019468145,
+                    10289478461949479016,
+                    14633923109628737832,
+                    498715690561811443,
+                    13607472960118320603,
+                    7802336366779251853
                 ]
             },
             {
-                "UID": 5745997379596060700,
-                "ParentUID": 15419030779542066492,
+                "UID": 9537971931015769019,
+                "ParentUID": 15309185352097186658,
                 "Name": "bow_down_jnt3",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2329,12 +3145,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9071070253227327065
+                    17902993731335863972
                 ]
             },
             {
-                "UID": 14694208887772124052,
-                "ParentUID": 13496699452506063091,
+                "UID": 9670652227183557486,
+                "ParentUID": 15244890118335404369,
                 "Name": "bow_up_jnt3",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2362,12 +3178,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5697506429970537725
+                    1372206952304118671
                 ]
             },
             {
-                "UID": 12812518183618880658,
-                "ParentUID": 4990776986074795649,
+                "UID": 16671712596879103741,
+                "ParentUID": 18101507889520777032,
                 "Name": "grp_Cloth",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2395,15 +3211,15 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13188157078695156512,
-                    7342715077219588857,
-                    2138022355780204533,
-                    15514814114380849771
+                    15405108821105460897,
+                    14450370141308322328,
+                    1779318744026709336,
+                    12553112402268110487
                 ]
             },
             {
-                "UID": 17835198665266174575,
-                "ParentUID": 4990776986074795649,
+                "UID": 5634868590824926624,
+                "ParentUID": 18101507889520777032,
                 "Name": "grp_spine_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2431,12 +3247,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11918323624140648944
+                    6077959000557905257
                 ]
             },
             {
-                "UID": 6950310582844081886,
-                "ParentUID": 12079732232528543470,
+                "UID": 3969934200537645226,
+                "ParentUID": 16771545649012343047,
                 "Name": "ctrl_foot_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2466,8 +3282,8 @@
                 "Children": []
             },
             {
-                "UID": 5718717581461671747,
-                "ParentUID": 11844264843736045226,
+                "UID": 2073653303218929765,
+                "ParentUID": 4408008853272448090,
                 "Name": "ctrl_foot_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2497,8 +3313,8 @@
                 "Children": []
             },
             {
-                "UID": 358678610343531719,
-                "ParentUID": 12354230790789767706,
+                "UID": 9939809043734679484,
+                "ParentUID": 3042982137526208149,
                 "Name": "jnt_foot_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2528,8 +3344,8 @@
                 "Children": []
             },
             {
-                "UID": 6356544604279431167,
-                "ParentUID": 8861623959049973649,
+                "UID": 12933584880351588315,
+                "ParentUID": 13460352848617667692,
                 "Name": "jnt_foot_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2559,8 +3375,8 @@
                 "Children": []
             },
             {
-                "UID": 3031436382494337891,
-                "ParentUID": 765702916459090390,
+                "UID": 14983090682844905090,
+                "ParentUID": 227831904091430152,
                 "Name": "jnt_Pouch_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2590,8 +3406,8 @@
                 "Children": []
             },
             {
-                "UID": 17703047388795661861,
-                "ParentUID": 4151435124774701375,
+                "UID": 13663833766019468145,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_cape_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2621,8 +3437,8 @@
                 "Children": []
             },
             {
-                "UID": 13491821763764760444,
-                "ParentUID": 4151435124774701375,
+                "UID": 10289478461949479016,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_cape_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2652,8 +3468,8 @@
                 "Children": []
             },
             {
-                "UID": 10480306939336805385,
-                "ParentUID": 4151435124774701375,
+                "UID": 14633923109628737832,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2681,12 +3497,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2511735339122192951
+                    8335939147554197152
                 ]
             },
             {
-                "UID": 3875052827746747347,
-                "ParentUID": 4151435124774701375,
+                "UID": 498715690561811443,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_clavicle_R1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2714,12 +3530,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18087757380367824244
+                    6909893057063971231
                 ]
             },
             {
-                "UID": 3247306385426870415,
-                "ParentUID": 4151435124774701375,
+                "UID": 13607472960118320603,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_Neck_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2747,14 +3563,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7433971765274439354,
-                    13800117787143149034,
-                    7054096005260053412
+                    10637614655065377830,
+                    18276199230295817717,
+                    15512691219368437964
                 ]
             },
             {
-                "UID": 3119578412856960925,
-                "ParentUID": 4151435124774701375,
+                "UID": 7802336366779251853,
+                "ParentUID": 3189956630095227091,
                 "Name": "jnt_Quiver",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2782,12 +3598,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1808927362718565282
+                    15477956285133195371
                 ]
             },
             {
-                "UID": 9071070253227327065,
-                "ParentUID": 5745997379596060700,
+                "UID": 17902993731335863972,
+                "ParentUID": 9537971931015769019,
                 "Name": "bow_down_jnt4",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2815,12 +3631,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17164739781630212414
+                    5524460328857193117
                 ]
             },
             {
-                "UID": 5697506429970537725,
-                "ParentUID": 14694208887772124052,
+                "UID": 1372206952304118671,
+                "ParentUID": 9670652227183557486,
                 "Name": "bow_up_jnt4",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2848,12 +3664,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13747247858398006274
+                    6146458298060792885
                 ]
             },
             {
-                "UID": 13188157078695156512,
-                "ParentUID": 12812518183618880658,
+                "UID": 15405108821105460897,
+                "ParentUID": 16671712596879103741,
                 "Name": "grp_cloth_1_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2881,12 +3697,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4836471986491143657
+                    370985909781359896
                 ]
             },
             {
-                "UID": 7342715077219588857,
-                "ParentUID": 12812518183618880658,
+                "UID": 14450370141308322328,
+                "ParentUID": 16671712596879103741,
                 "Name": "grp_cloth_2_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2914,12 +3730,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    505046222786113153
+                    13747748002562019415
                 ]
             },
             {
-                "UID": 2138022355780204533,
-                "ParentUID": 12812518183618880658,
+                "UID": 1779318744026709336,
+                "ParentUID": 16671712596879103741,
                 "Name": "grp_cloth_3_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2947,12 +3763,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14500324092179083450
+                    14419747842363332894
                 ]
             },
             {
-                "UID": 15514814114380849771,
-                "ParentUID": 12812518183618880658,
+                "UID": 12553112402268110487,
+                "ParentUID": 16671712596879103741,
                 "Name": "grp_cloth_front_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2980,12 +3796,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14130651282559521484
+                    15578597306726358829
                 ]
             },
             {
-                "UID": 11918323624140648944,
-                "ParentUID": 17835198665266174575,
+                "UID": 6077959000557905257,
+                "ParentUID": 5634868590824926624,
                 "Name": "ctrl_spine_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3013,13 +3829,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18354059053947456994,
-                    14846747347261400432
+                    18160335661546789956,
+                    153343473963732015
                 ]
             },
             {
-                "UID": 2511735339122192951,
-                "ParentUID": 10480306939336805385,
+                "UID": 8335939147554197152,
+                "ParentUID": 14633923109628737832,
                 "Name": "jnt_arm_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3047,12 +3863,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2976213997603504268
+                    1757224064786207297
                 ]
             },
             {
-                "UID": 18087757380367824244,
-                "ParentUID": 3875052827746747347,
+                "UID": 6909893057063971231,
+                "ParentUID": 498715690561811443,
                 "Name": "jnt_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3080,12 +3896,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8345316660573885917
+                    11784731882483531960
                 ]
             },
             {
-                "UID": 7433971765274439354,
-                "ParentUID": 3247306385426870415,
+                "UID": 10637614655065377830,
+                "ParentUID": 13607472960118320603,
                 "Name": "jnt_Head_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3115,8 +3931,8 @@
                 "Children": []
             },
             {
-                "UID": 13800117787143149034,
-                "ParentUID": 3247306385426870415,
+                "UID": 18276199230295817717,
+                "ParentUID": 13607472960118320603,
                 "Name": "jnt_Hood_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3146,8 +3962,8 @@
                 "Children": []
             },
             {
-                "UID": 7054096005260053412,
-                "ParentUID": 3247306385426870415,
+                "UID": 15512691219368437964,
+                "ParentUID": 13607472960118320603,
                 "Name": "jnt_Hood_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3177,8 +3993,8 @@
                 "Children": []
             },
             {
-                "UID": 1808927362718565282,
-                "ParentUID": 3119578412856960925,
+                "UID": 15477956285133195371,
+                "ParentUID": 7802336366779251853,
                 "Name": "Arrows_Quiver_jnt",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3208,8 +4024,8 @@
                 "Children": []
             },
             {
-                "UID": 17164739781630212414,
-                "ParentUID": 9071070253227327065,
+                "UID": 5524460328857193117,
+                "ParentUID": 17902993731335863972,
                 "Name": "bow_down_jnt5",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3239,8 +4055,8 @@
                 "Children": []
             },
             {
-                "UID": 13747247858398006274,
-                "ParentUID": 5697506429970537725,
+                "UID": 6146458298060792885,
+                "ParentUID": 1372206952304118671,
                 "Name": "bow_up_jnt5",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3270,8 +4086,8 @@
                 "Children": []
             },
             {
-                "UID": 4836471986491143657,
-                "ParentUID": 13188157078695156512,
+                "UID": 370985909781359896,
+                "ParentUID": 15405108821105460897,
                 "Name": "ctrl_cloth_1_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3299,12 +4115,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6718237419991705934
+                    15103164504483305207
                 ]
             },
             {
-                "UID": 505046222786113153,
-                "ParentUID": 7342715077219588857,
+                "UID": 13747748002562019415,
+                "ParentUID": 14450370141308322328,
                 "Name": "ctrl_cloth_2_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3332,12 +4148,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15575532922441314470
+                    12265961927986916042
                 ]
             },
             {
-                "UID": 14500324092179083450,
-                "ParentUID": 2138022355780204533,
+                "UID": 14419747842363332894,
+                "ParentUID": 1779318744026709336,
                 "Name": "ctrl_cloth_3_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3365,12 +4181,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16139462288869374512
+                    3320500175461509508
                 ]
             },
             {
-                "UID": 14130651282559521484,
-                "ParentUID": 15514814114380849771,
+                "UID": 15578597306726358829,
+                "ParentUID": 12553112402268110487,
                 "Name": "ctrl_cloth_front_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3400,8 +4216,8 @@
                 "Children": []
             },
             {
-                "UID": 18354059053947456994,
-                "ParentUID": 11918323624140648944,
+                "UID": 18160335661546789956,
+                "ParentUID": 6077959000557905257,
                 "Name": "grp_Pouch_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3429,13 +4245,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15107199305114618113,
-                    13502741439855174203
+                    6272589955734527844,
+                    13526322558357440078
                 ]
             },
             {
-                "UID": 14846747347261400432,
-                "ParentUID": 11918323624140648944,
+                "UID": 153343473963732015,
+                "ParentUID": 6077959000557905257,
                 "Name": "grp_spine_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3463,12 +4279,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4727070098918678201
+                    11815222925100268253
                 ]
             },
             {
-                "UID": 2976213997603504268,
-                "ParentUID": 2511735339122192951,
+                "UID": 1757224064786207297,
+                "ParentUID": 8335939147554197152,
                 "Name": "jnt_arm_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3496,12 +4312,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14377540471618534985
+                    8600547631679922816
                 ]
             },
             {
-                "UID": 8345316660573885917,
-                "ParentUID": 18087757380367824244,
+                "UID": 11784731882483531960,
+                "ParentUID": 6909893057063971231,
                 "Name": "jnt_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3529,12 +4345,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11427281171654406021
+                    3131484431290531467
                 ]
             },
             {
-                "UID": 6718237419991705934,
-                "ParentUID": 4836471986491143657,
+                "UID": 15103164504483305207,
+                "ParentUID": 370985909781359896,
                 "Name": "grp_cloth_1_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3562,12 +4378,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17647688168323689534
+                    14435373843812134834
                 ]
             },
             {
-                "UID": 15575532922441314470,
-                "ParentUID": 505046222786113153,
+                "UID": 12265961927986916042,
+                "ParentUID": 13747748002562019415,
                 "Name": "grp_cloth_2_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3595,12 +4411,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14869854216377225759
+                    10262035980701715234
                 ]
             },
             {
-                "UID": 16139462288869374512,
-                "ParentUID": 14500324092179083450,
+                "UID": 3320500175461509508,
+                "ParentUID": 14419747842363332894,
                 "Name": "grp_cloth_3_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3628,12 +4444,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14865088576559013808
+                    7335068060344398621
                 ]
             },
             {
-                "UID": 15107199305114618113,
-                "ParentUID": 18354059053947456994,
+                "UID": 6272589955734527844,
+                "ParentUID": 18160335661546789956,
                 "Name": "ctrl_Pouch_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3663,8 +4479,8 @@
                 "Children": []
             },
             {
-                "UID": 13502741439855174203,
-                "ParentUID": 18354059053947456994,
+                "UID": 13526322558357440078,
+                "ParentUID": 18160335661546789956,
                 "Name": "grp_Pouch_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3692,12 +4508,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9319404438736822649
+                    6971745673265100992
                 ]
             },
             {
-                "UID": 4727070098918678201,
-                "ParentUID": 14846747347261400432,
+                "UID": 11815222925100268253,
+                "ParentUID": 153343473963732015,
                 "Name": "ctrl_spine_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3725,16 +4541,16 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18428143497197639786,
-                    1039778585385397185,
-                    16799976920774236682,
-                    6191818101347433653,
-                    17638499413586429086
+                    1414851287219880651,
+                    487885497270526462,
+                    17113443386905366797,
+                    11481808984649998127,
+                    10568286943726771510
                 ]
             },
             {
-                "UID": 14377540471618534985,
-                "ParentUID": 2976213997603504268,
+                "UID": 8600547631679922816,
+                "ParentUID": 1757224064786207297,
                 "Name": "jnt_wrist_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3762,14 +4578,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13401109780881936963,
-                    11567633275650469648,
-                    14079254980980949530
+                    11923735959077588613,
+                    14364143366693256412,
+                    16773342954456155131
                 ]
             },
             {
-                "UID": 11427281171654406021,
-                "ParentUID": 8345316660573885917,
+                "UID": 3131484431290531467,
+                "ParentUID": 11784731882483531960,
                 "Name": "jnt_wrist_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3797,14 +4613,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9259907981003136586,
-                    12047504268392080816,
-                    13599461281723696694
+                    2483599089151160750,
+                    10236468124152412989,
+                    3249000103170318293
                 ]
             },
             {
-                "UID": 17647688168323689534,
-                "ParentUID": 6718237419991705934,
+                "UID": 14435373843812134834,
+                "ParentUID": 15103164504483305207,
                 "Name": "ctrl_cloth_1_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3834,8 +4650,8 @@
                 "Children": []
             },
             {
-                "UID": 14869854216377225759,
-                "ParentUID": 15575532922441314470,
+                "UID": 10262035980701715234,
+                "ParentUID": 12265961927986916042,
                 "Name": "ctrl_cloth_2_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3865,8 +4681,8 @@
                 "Children": []
             },
             {
-                "UID": 14865088576559013808,
-                "ParentUID": 16139462288869374512,
+                "UID": 7335068060344398621,
+                "ParentUID": 3320500175461509508,
                 "Name": "ctrl_cloth_3_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3896,8 +4712,8 @@
                 "Children": []
             },
             {
-                "UID": 9319404438736822649,
-                "ParentUID": 13502741439855174203,
+                "UID": 6971745673265100992,
+                "ParentUID": 13526322558357440078,
                 "Name": "ctrl_Pouch_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3927,8 +4743,8 @@
                 "Children": []
             },
             {
-                "UID": 18428143497197639786,
-                "ParentUID": 4727070098918678201,
+                "UID": 1414851287219880651,
+                "ParentUID": 11815222925100268253,
                 "Name": "gr_cape",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3956,13 +4772,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17478384367237397057,
-                    3941634936735395587
+                    11702447337569037229,
+                    13165270278680884432
                 ]
             },
             {
-                "UID": 1039778585385397185,
-                "ParentUID": 4727070098918678201,
+                "UID": 487885497270526462,
+                "ParentUID": 11815222925100268253,
                 "Name": "grp_clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -3990,12 +4806,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16317556209431480294
+                    4288195469787653723
                 ]
             },
             {
-                "UID": 16799976920774236682,
-                "ParentUID": 4727070098918678201,
+                "UID": 17113443386905366797,
+                "ParentUID": 11815222925100268253,
                 "Name": "grp_clavicle_R1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4023,12 +4839,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17040825582796690851
+                    4272730871531155726
                 ]
             },
             {
-                "UID": 6191818101347433653,
-                "ParentUID": 4727070098918678201,
+                "UID": 11481808984649998127,
+                "ParentUID": 11815222925100268253,
                 "Name": "grp_neck",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4056,12 +4872,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1798188950071159674
+                    5264783165598752680
                 ]
             },
             {
-                "UID": 17638499413586429086,
-                "ParentUID": 4727070098918678201,
+                "UID": 10568286943726771510,
+                "ParentUID": 11815222925100268253,
                 "Name": "grp_Quiver",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4089,12 +4905,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    519960266030233559
+                    5689844891575531112
                 ]
             },
             {
-                "UID": 13401109780881936963,
-                "ParentUID": 14377540471618534985,
+                "UID": 11923735959077588613,
+                "ParentUID": 8600547631679922816,
                 "Name": "jnt_Lower_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4122,12 +4938,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18125499403095568795
+                    13696055081438852903
                 ]
             },
             {
-                "UID": 11567633275650469648,
-                "ParentUID": 14377540471618534985,
+                "UID": 14364143366693256412,
+                "ParentUID": 8600547631679922816,
                 "Name": "jnt_Thumb_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4155,12 +4971,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3971443828703654326
+                    15260888598270898542
                 ]
             },
             {
-                "UID": 14079254980980949530,
-                "ParentUID": 14377540471618534985,
+                "UID": 16773342954456155131,
+                "ParentUID": 8600547631679922816,
                 "Name": "jnt_Upper_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4188,12 +5004,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4577410190352088720
+                    2904962801226538238
                 ]
             },
             {
-                "UID": 9259907981003136586,
-                "ParentUID": 11427281171654406021,
+                "UID": 2483599089151160750,
+                "ParentUID": 3131484431290531467,
                 "Name": "jnt_Rower_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4221,12 +5037,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16014038990159384640
+                    6748750788210336793
                 ]
             },
             {
-                "UID": 12047504268392080816,
-                "ParentUID": 11427281171654406021,
+                "UID": 10236468124152412989,
+                "ParentUID": 3131484431290531467,
                 "Name": "jnt_Thumb_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4254,12 +5070,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13742825327603978489
+                    2038726471029202908
                 ]
             },
             {
-                "UID": 13599461281723696694,
-                "ParentUID": 11427281171654406021,
+                "UID": 3249000103170318293,
+                "ParentUID": 3131484431290531467,
                 "Name": "jnt_Upper_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4287,12 +5103,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14512956933940105263
+                    7433157701157060359
                 ]
             },
             {
-                "UID": 17478384367237397057,
-                "ParentUID": 18428143497197639786,
+                "UID": 11702447337569037229,
+                "ParentUID": 1414851287219880651,
                 "Name": "grp_cape_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4320,12 +5136,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13465207954054860754
+                    8415110812921748058
                 ]
             },
             {
-                "UID": 3941634936735395587,
-                "ParentUID": 18428143497197639786,
+                "UID": 13165270278680884432,
+                "ParentUID": 1414851287219880651,
                 "Name": "grp_cape_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4353,12 +5169,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18426002017560488120
+                    17348215555252118677
                 ]
             },
             {
-                "UID": 16317556209431480294,
-                "ParentUID": 1039778585385397185,
+                "UID": 4288195469787653723,
+                "ParentUID": 487885497270526462,
                 "Name": "ctrl_clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4386,12 +5202,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9614040943319414716
+                    5345379606370936
                 ]
             },
             {
-                "UID": 17040825582796690851,
-                "ParentUID": 16799976920774236682,
+                "UID": 4272730871531155726,
+                "ParentUID": 17113443386905366797,
                 "Name": "ctrl_clavicle_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4419,12 +5235,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13488307895276208580
+                    13346660317949854391
                 ]
             },
             {
-                "UID": 1798188950071159674,
-                "ParentUID": 6191818101347433653,
+                "UID": 5264783165598752680,
+                "ParentUID": 11481808984649998127,
                 "Name": "ctrl_neck",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4452,13 +5268,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5137777682663975588,
-                    11800476847864860967
+                    4154098013303642250,
+                    16267584674679511353
                 ]
             },
             {
-                "UID": 519960266030233559,
-                "ParentUID": 17638499413586429086,
+                "UID": 5689844891575531112,
+                "ParentUID": 10568286943726771510,
                 "Name": "ctrl_Quiver",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4486,12 +5302,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7438889939033721644
+                    11553064059445300208
                 ]
             },
             {
-                "UID": 18125499403095568795,
-                "ParentUID": 13401109780881936963,
+                "UID": 13696055081438852903,
+                "ParentUID": 11923735959077588613,
                 "Name": "jnt_Lower_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4521,8 +5337,8 @@
                 "Children": []
             },
             {
-                "UID": 3971443828703654326,
-                "ParentUID": 11567633275650469648,
+                "UID": 15260888598270898542,
+                "ParentUID": 14364143366693256412,
                 "Name": "jnt_Thumb_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4552,8 +5368,8 @@
                 "Children": []
             },
             {
-                "UID": 4577410190352088720,
-                "ParentUID": 14079254980980949530,
+                "UID": 2904962801226538238,
+                "ParentUID": 16773342954456155131,
                 "Name": "jnt_Upper_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4583,8 +5399,8 @@
                 "Children": []
             },
             {
-                "UID": 16014038990159384640,
-                "ParentUID": 9259907981003136586,
+                "UID": 6748750788210336793,
+                "ParentUID": 2483599089151160750,
                 "Name": "jnt_Rower_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4614,8 +5430,8 @@
                 "Children": []
             },
             {
-                "UID": 13742825327603978489,
-                "ParentUID": 12047504268392080816,
+                "UID": 2038726471029202908,
+                "ParentUID": 10236468124152412989,
                 "Name": "jnt_Thumb_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4645,8 +5461,8 @@
                 "Children": []
             },
             {
-                "UID": 14512956933940105263,
-                "ParentUID": 13599461281723696694,
+                "UID": 7433157701157060359,
+                "ParentUID": 3249000103170318293,
                 "Name": "jnt_Upper_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4676,8 +5492,8 @@
                 "Children": []
             },
             {
-                "UID": 13465207954054860754,
-                "ParentUID": 17478384367237397057,
+                "UID": 8415110812921748058,
+                "ParentUID": 11702447337569037229,
                 "Name": "ctrl_cape_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4707,8 +5523,8 @@
                 "Children": []
             },
             {
-                "UID": 18426002017560488120,
-                "ParentUID": 3941634936735395587,
+                "UID": 17348215555252118677,
+                "ParentUID": 13165270278680884432,
                 "Name": "ctrl_cape_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4738,8 +5554,8 @@
                 "Children": []
             },
             {
-                "UID": 9614040943319414716,
-                "ParentUID": 16317556209431480294,
+                "UID": 5345379606370936,
+                "ParentUID": 4288195469787653723,
                 "Name": "grp_wrist_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4767,12 +5583,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4307005489479786140
+                    7812404706421990511
                 ]
             },
             {
-                "UID": 13488307895276208580,
-                "ParentUID": 17040825582796690851,
+                "UID": 13346660317949854391,
+                "ParentUID": 4272730871531155726,
                 "Name": "grp_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4800,12 +5616,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3039968065303679149
+                    4907972767463426178
                 ]
             },
             {
-                "UID": 5137777682663975588,
-                "ParentUID": 1798188950071159674,
+                "UID": 4154098013303642250,
+                "ParentUID": 5264783165598752680,
                 "Name": "grp_Head",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4833,12 +5649,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5985496734295506628
+                    11645044654497465713
                 ]
             },
             {
-                "UID": 11800476847864860967,
-                "ParentUID": 1798188950071159674,
+                "UID": 16267584674679511353,
+                "ParentUID": 5264783165598752680,
                 "Name": "grp_Hood",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4866,13 +5682,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11298648449557651998,
-                    2612190643318995708
+                    293248705138664052,
+                    15106134200384407764
                 ]
             },
             {
-                "UID": 7438889939033721644,
-                "ParentUID": 519960266030233559,
+                "UID": 11553064059445300208,
+                "ParentUID": 5689844891575531112,
                 "Name": "Arrows_Quiver_jnt_ctl_grp",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4900,12 +5716,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17105010279488377228
+                    9019195905449679935
                 ]
             },
             {
-                "UID": 4307005489479786140,
-                "ParentUID": 9614040943319414716,
+                "UID": 7812404706421990511,
+                "ParentUID": 5345379606370936,
                 "Name": "ctrl_wrist_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4933,13 +5749,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7362277535839345533,
-                    7945967340613920985
+                    3038514998478760402,
+                    17667080354499839041
                 ]
             },
             {
-                "UID": 3039968065303679149,
-                "ParentUID": 13488307895276208580,
+                "UID": 4907972767463426178,
+                "ParentUID": 13346660317949854391,
                 "Name": "ctrl_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -4967,12 +5783,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8437079570269917490
+                    707805337758618308
                 ]
             },
             {
-                "UID": 5985496734295506628,
-                "ParentUID": 5137777682663975588,
+                "UID": 11645044654497465713,
+                "ParentUID": 4154098013303642250,
                 "Name": "ctrl_Head",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5002,8 +5818,8 @@
                 "Children": []
             },
             {
-                "UID": 11298648449557651998,
-                "ParentUID": 11800476847864860967,
+                "UID": 293248705138664052,
+                "ParentUID": 16267584674679511353,
                 "Name": "grp_Hood_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5031,12 +5847,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12252019641140582286
+                    16172058565306719908
                 ]
             },
             {
-                "UID": 2612190643318995708,
-                "ParentUID": 11800476847864860967,
+                "UID": 15106134200384407764,
+                "ParentUID": 16267584674679511353,
                 "Name": "grp_Hood_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5064,12 +5880,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1681013320559267897
+                    12785278385163299727
                 ]
             },
             {
-                "UID": 17105010279488377228,
-                "ParentUID": 7438889939033721644,
+                "UID": 9019195905449679935,
+                "ParentUID": 11553064059445300208,
                 "Name": "Arrows_Quiver_jnt_ctl",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5099,8 +5915,8 @@
                 "Children": []
             },
             {
-                "UID": 7362277535839345533,
-                "ParentUID": 4307005489479786140,
+                "UID": 3038514998478760402,
+                "ParentUID": 7812404706421990511,
                 "Name": "grp_handGrip_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5128,12 +5944,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5595251333503547941
+                    14898559421298718358
                 ]
             },
             {
-                "UID": 7945967340613920985,
-                "ParentUID": 4307005489479786140,
+                "UID": 17667080354499839041,
+                "ParentUID": 7812404706421990511,
                 "Name": "ikHandle_L_arm",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5161,14 +5977,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16702056543071506618,
-                    17068310705170966610,
-                    17276728045943979306
+                    15192901651426872549,
+                    5008919952173213768,
+                    15610396497327327751
                 ]
             },
             {
-                "UID": 8437079570269917490,
-                "ParentUID": 3039968065303679149,
+                "UID": 707805337758618308,
+                "ParentUID": 4907972767463426178,
                 "Name": "grp_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5196,12 +6012,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6782952944591070879
+                    16319780282628545870
                 ]
             },
             {
-                "UID": 12252019641140582286,
-                "ParentUID": 11298648449557651998,
+                "UID": 16172058565306719908,
+                "ParentUID": 293248705138664052,
                 "Name": "ctrl_Hood_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5231,8 +6047,8 @@
                 "Children": []
             },
             {
-                "UID": 1681013320559267897,
-                "ParentUID": 2612190643318995708,
+                "UID": 12785278385163299727,
+                "ParentUID": 15106134200384407764,
                 "Name": "ctrl_Hood_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5262,8 +6078,8 @@
                 "Children": []
             },
             {
-                "UID": 5595251333503547941,
-                "ParentUID": 7362277535839345533,
+                "UID": 14898559421298718358,
+                "ParentUID": 3038514998478760402,
                 "Name": "ctrl_handGrip_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5293,8 +6109,8 @@
                 "Children": []
             },
             {
-                "UID": 16702056543071506618,
-                "ParentUID": 7945967340613920985,
+                "UID": 15192901651426872549,
+                "ParentUID": 17667080354499839041,
                 "Name": "grp_Lower_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5322,12 +6138,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15684381656504137171
+                    2857285086776199657
                 ]
             },
             {
-                "UID": 17068310705170966610,
-                "ParentUID": 7945967340613920985,
+                "UID": 5008919952173213768,
+                "ParentUID": 17667080354499839041,
                 "Name": "grp_Thumb_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5355,12 +6171,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    610413258186822699
+                    12541437529836371755
                 ]
             },
             {
-                "UID": 17276728045943979306,
-                "ParentUID": 7945967340613920985,
+                "UID": 15610396497327327751,
+                "ParentUID": 17667080354499839041,
                 "Name": "grp_Upper_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5388,12 +6204,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9946934475621566915
+                    1006828462331505502
                 ]
             },
             {
-                "UID": 6782952944591070879,
-                "ParentUID": 8437079570269917490,
+                "UID": 16319780282628545870,
+                "ParentUID": 707805337758618308,
                 "Name": "ctrl_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5421,12 +6237,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9505019918145703476
+                    13895156216549060472
                 ]
             },
             {
-                "UID": 15684381656504137171,
-                "ParentUID": 16702056543071506618,
+                "UID": 2857285086776199657,
+                "ParentUID": 15192901651426872549,
                 "Name": "ctrl_Lower_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5454,12 +6270,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5183279389675386740
+                    16486259697502711735
                 ]
             },
             {
-                "UID": 610413258186822699,
-                "ParentUID": 17068310705170966610,
+                "UID": 12541437529836371755,
+                "ParentUID": 5008919952173213768,
                 "Name": "ctrl_Thumb_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5487,12 +6303,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14651855545902595360
+                    14507258931802709385
                 ]
             },
             {
-                "UID": 9946934475621566915,
-                "ParentUID": 17276728045943979306,
+                "UID": 1006828462331505502,
+                "ParentUID": 15610396497327327751,
                 "Name": "ctrl_Upper_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5520,12 +6336,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13889485191538609892
+                    15386771453046035904
                 ]
             },
             {
-                "UID": 9505019918145703476,
-                "ParentUID": 6782952944591070879,
+                "UID": 13895156216549060472,
+                "ParentUID": 16319780282628545870,
                 "Name": "grp_wrist_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5553,12 +6369,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16009785606509291770
+                    2225078106880686027
                 ]
             },
             {
-                "UID": 5183279389675386740,
-                "ParentUID": 15684381656504137171,
+                "UID": 16486259697502711735,
+                "ParentUID": 2857285086776199657,
                 "Name": "grp_Lower_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5586,12 +6402,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15293487254158695956
+                    5760185591666257662
                 ]
             },
             {
-                "UID": 14651855545902595360,
-                "ParentUID": 610413258186822699,
+                "UID": 14507258931802709385,
+                "ParentUID": 12541437529836371755,
                 "Name": "grp_Thumb_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5619,12 +6435,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7122697906899920873
+                    463548697087763993
                 ]
             },
             {
-                "UID": 13889485191538609892,
-                "ParentUID": 9946934475621566915,
+                "UID": 15386771453046035904,
+                "ParentUID": 1006828462331505502,
                 "Name": "grp_Upper_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5652,12 +6468,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10088244007772192461
+                    9104779730218209756
                 ]
             },
             {
-                "UID": 16009785606509291770,
-                "ParentUID": 9505019918145703476,
+                "UID": 2225078106880686027,
+                "ParentUID": 13895156216549060472,
                 "Name": "ctrl_wrist_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5685,15 +6501,15 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7028275742276110588,
-                    13755271137687342999,
-                    8989551487625190414,
-                    4786186106577223699
+                    11155200272494240006,
+                    513679453153283041,
+                    7120698249381768548,
+                    7610675124683809871
                 ]
             },
             {
-                "UID": 15293487254158695956,
-                "ParentUID": 5183279389675386740,
+                "UID": 5760185591666257662,
+                "ParentUID": 16486259697502711735,
                 "Name": "ctrl_Lower_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5723,8 +6539,8 @@
                 "Children": []
             },
             {
-                "UID": 7122697906899920873,
-                "ParentUID": 14651855545902595360,
+                "UID": 463548697087763993,
+                "ParentUID": 14507258931802709385,
                 "Name": "ctrl_Thumb_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5754,8 +6570,8 @@
                 "Children": []
             },
             {
-                "UID": 10088244007772192461,
-                "ParentUID": 13889485191538609892,
+                "UID": 9104779730218209756,
+                "ParentUID": 15386771453046035904,
                 "Name": "ctrl_Upper_L_01.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5785,8 +6601,8 @@
                 "Children": []
             },
             {
-                "UID": 7028275742276110588,
-                "ParentUID": 16009785606509291770,
+                "UID": 11155200272494240006,
+                "ParentUID": 2225078106880686027,
                 "Name": "grp_handGrip_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5814,12 +6630,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8790022300545551929
+                    16580108242765969761
                 ]
             },
             {
-                "UID": 13755271137687342999,
-                "ParentUID": 16009785606509291770,
+                "UID": 513679453153283041,
+                "ParentUID": 2225078106880686027,
                 "Name": "grp_Lower_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5847,12 +6663,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10849813350636059317
+                    14516465910381608664
                 ]
             },
             {
-                "UID": 8989551487625190414,
-                "ParentUID": 16009785606509291770,
+                "UID": 7120698249381768548,
+                "ParentUID": 2225078106880686027,
                 "Name": "grp_Thumb_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5880,12 +6696,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    626532600461161252
+                    6973415794075657251
                 ]
             },
             {
-                "UID": 4786186106577223699,
-                "ParentUID": 16009785606509291770,
+                "UID": 7610675124683809871,
+                "ParentUID": 2225078106880686027,
                 "Name": "grp_Upper_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5913,12 +6729,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12186112243796401736
+                    4297246027417003158
                 ]
             },
             {
-                "UID": 8790022300545551929,
-                "ParentUID": 7028275742276110588,
+                "UID": 16580108242765969761,
+                "ParentUID": 11155200272494240006,
                 "Name": "ctrl_handGrip_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5948,8 +6764,8 @@
                 "Children": []
             },
             {
-                "UID": 10849813350636059317,
-                "ParentUID": 13755271137687342999,
+                "UID": 14516465910381608664,
+                "ParentUID": 513679453153283041,
                 "Name": "ctrl_Lower_L_01.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -5977,12 +6793,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4131957355692874106
+                    18427548312456727269
                 ]
             },
             {
-                "UID": 626532600461161252,
-                "ParentUID": 8989551487625190414,
+                "UID": 6973415794075657251,
+                "ParentUID": 7120698249381768548,
                 "Name": "ctrl_Upper_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6010,12 +6826,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3328038618098405281
+                    5254531058506413640
                 ]
             },
             {
-                "UID": 12186112243796401736,
-                "ParentUID": 4786186106577223699,
+                "UID": 4297246027417003158,
+                "ParentUID": 7610675124683809871,
                 "Name": "ctrl_Upper_R_01.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6043,12 +6859,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7916909465915997358
+                    14038330168390363144
                 ]
             },
             {
-                "UID": 4131957355692874106,
-                "ParentUID": 10849813350636059317,
+                "UID": 18427548312456727269,
+                "ParentUID": 14516465910381608664,
                 "Name": "grp_Lower_L_02.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6076,12 +6892,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4111537057939549991
+                    5937793417130105810
                 ]
             },
             {
-                "UID": 3328038618098405281,
-                "ParentUID": 626532600461161252,
+                "UID": 5254531058506413640,
+                "ParentUID": 6973415794075657251,
                 "Name": "grp_Thumb_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6109,12 +6925,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5991833155015421545
+                    5688096884565452354
                 ]
             },
             {
-                "UID": 7916909465915997358,
-                "ParentUID": 12186112243796401736,
+                "UID": 14038330168390363144,
+                "ParentUID": 4297246027417003158,
                 "Name": "grp_Upper_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6142,12 +6958,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6340060463044477598
+                    6256057512514405693
                 ]
             },
             {
-                "UID": 4111537057939549991,
-                "ParentUID": 4131957355692874106,
+                "UID": 5937793417130105810,
+                "ParentUID": 18427548312456727269,
                 "Name": "ctrl_Lower_L_02.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6177,8 +6993,8 @@
                 "Children": []
             },
             {
-                "UID": 5991833155015421545,
-                "ParentUID": 3328038618098405281,
+                "UID": 5688096884565452354,
+                "ParentUID": 5254531058506413640,
                 "Name": "ctrl_Thumb_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -6208,8 +7024,8 @@
                 "Children": []
             },
             {
-                "UID": 6340060463044477598,
-                "ParentUID": 7916909465915997358,
+                "UID": 6256057512514405693,
+                "ParentUID": 14038330168390363144,
                 "Name": "ctrl_Upper_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
