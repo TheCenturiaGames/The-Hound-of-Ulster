@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 3614859598622442450,
+        "VersionUID": 8283741211695153621,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 3614859598622442450,
+                "PrefabVersionUID": 8283741211695153621,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -264,6 +264,8 @@
                                 "Spear Projectile Name": "SpearProjectile",
                                 "Range attack cooldown": 1.0,
                                 "Dash cooldown": 1.0,
+                                "Dash unlocked": false,
+                                "Ultimate unlocked": false,
                                 "Ultimate object": "Ultimate",
                                 "Ultimate damage": 10,
                                 "Ultimate cooldown": 5.0,
@@ -282,6 +284,7 @@
                                 "Mushroom healing": 2,
                                 "Heal knockback object": "Charged",
                                 "Heal knockback delay": 1.0,
+                                "Riastrad Bar object": "BarFill",
                                 "Riastrad duration": 5.0,
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
@@ -310,6 +313,13 @@
                                 "Dash empty icon": 0,
                                 "Ultimate filled icon": 0,
                                 "Ultimate empty icon": 0
+                            },
+                            {
+                                "Script Name": "GodModeScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Camera Name": "Camera",
+                                "Free camera FOV": 90.0
                             }
                         ]
                     },
@@ -428,7 +438,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.5750116109848022
+                        "CameraVFOV": 0.43294286727905273
                     }
                 ],
                 "Children": []
