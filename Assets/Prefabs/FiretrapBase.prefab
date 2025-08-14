@@ -1,11 +1,11 @@
 {
     "Prefab": {
         "UID": 1648264165982104,
-        "VersionUID": 3272639174605705249,
+        "VersionUID": 8739018526686000763,
         "Name": "FiretrapBase",
         "GameObjects": [
             {
-                "UID": 6096231457724403629,
+                "UID": 12027530297990130212,
                 "ParentUID": 3550964722403993,
                 "Name": "FiretrapBase",
                 "Mobility": 0,
@@ -13,7 +13,8 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 3272639174605705249,
+                "PrefabUID": 1648264165982104,
+                "PrefabVersionUID": 8739018526686000763,
                 "PrefabChildUID": 7434705662527623304,
                 "LocalTransform": [
                     6.345149517059326,
@@ -35,18 +36,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6354195970716666053,
+                        "UID": 744062003573971727,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 0,
                         "Material": 1300000000000000,
-                        "RenderMode": 2,
+                        "RenderMode": 0,
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 3435665461403399464,
+                        "UID": 5760110913859381783,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -60,42 +61,45 @@
                                 "Min Attack Cooldown": 0.5,
                                 "Max Attack Cooldown": 1.0,
                                 "Trap Damage": 1,
-                                "Damage Duration": 1.5,
+                                "Damage Duration": 2.5,
                                 "Rotation Speed": 1.0,
                                 "Falling Height": 20.0,
                                 "Max Fall Speed": 20.0,
                                 "Gravity": 13.0,
                                 "Mini Prototype": 17179757614441501746,
-                                "Mini Count": 6,
+                                "Mini Count": 4,
                                 "Mini Lifetime": 2.0,
-                                "Impact Prefab": 3544810003248839410,
+                                "Impact Prefab": 6983518085985224794,
                                 "Max Launch Radius": 6.0,
                                 "Direction arc": -180.0,
-                                "Landing Indicator": 5588323597870982723,
-                                "Indicator Scale": 0.10000000149011612,
-                                "Life 1": 2.0,
                                 "VFX Main Light": 14764788662502831194,
                                 "VFX Light Impact": 252621371100125244,
                                 "VFX Fire Impact": 17871755678718166508,
                                 "VFX Bomb Ground": 7141150777092117831,
                                 "VFX Black Stain": 7162974813171368947,
                                 "VFX Delay (Main Light)": 0.0,
-                                "VFX Delay (Light Impact)": 0.0,
-                                "VFX Delay (Fire Impact)": 0.15000000596046448,
-                                "VFX Delay (Bomb Ground)": 0.3499999940395355,
-                                "VFX Delay (Black Stain)": 0.699999988079071,
-                                "VFX Life (Main Light)": 0.6000000238418579,
-                                "VFX Life (Light Impact)": 0.4000000059604645,
-                                "VFX Life (Fire Impact)": 1.5,
+                                "VFX Delay (Light Impact)": 0.07999999821186066,
+                                "VFX Delay (Fire Impact)": 0.20000000298023224,
+                                "VFX Delay (Bomb Ground)": 0.05000000074505806,
+                                "VFX Delay (Black Stain)": 0.550000011920929,
+                                "VFX Life (Main Light)": 0.550000011920929,
+                                "VFX Life (Light Impact)": 0.30000001192092896,
+                                "VFX Life (Fire Impact)": 0.8999999761581421,
                                 "VFX Life (Bomb Ground)": 3.0,
                                 "VFX Life (Black Stain)": 2.5,
-                                "VFX Indicator (pre-fall)": 0,
-                                "VFX Indicator Scale": 1.0
+                                "VFX Indicator (pre-fall)": 4433152192667841350,
+                                "VFX Indicator Scale": 1.0,
+                                "VFX Indicator World Radius": 0.6000000238418579,
+                                "Mini Indicator VFX (pre-fall)": 4573967744032429649,
+                                "Mini Indicator Scale": 0.4000000059604645,
+                                "Mini Start Height": 0.5,
+                                "Mini Up Speed": 4.5,
+                                "Mini Landing Radius": 0.6000000238418579
                             }
                         ]
                     },
                     {
-                        "UID": 5920886914849705971,
+                        "UID": 17213849607420282078,
                         "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -116,13 +120,13 @@
                             0.0
                         ],
                         "Size": [
-                            5.0,
+                            2.0,
                             1.0,
                             5.0
                         ]
                     },
                     {
-                        "UID": 15082977981294406106,
+                        "UID": 11605259972341955832,
                         "Type": 12,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -146,13 +150,13 @@
                     }
                 ],
                 "Children": [
-                    4716979244692420629,
-                    17016511288607443083
+                    1459765888454820163,
+                    6983518085985224794
                 ]
             },
             {
-                "UID": 4716979244692420629,
-                "ParentUID": 6096231457724403629,
+                "UID": 1459765888454820163,
+                "ParentUID": 12027530297990130212,
                 "Name": "Fireball",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -180,7 +184,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12032464926035911148,
+                        "UID": 18370220397387806890,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -194,8 +198,8 @@
                 "Children": []
             },
             {
-                "UID": 17016511288607443083,
-                "ParentUID": 6096231457724403629,
+                "UID": 6983518085985224794,
+                "ParentUID": 12027530297990130212,
                 "Name": "FireballShadow",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -223,7 +227,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 3782550931178645939,
+                        "UID": 13154596841352028820,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
