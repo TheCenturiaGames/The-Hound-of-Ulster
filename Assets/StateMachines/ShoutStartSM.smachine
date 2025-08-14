@@ -1,0 +1,63 @@
+{
+    "StateMachine": {
+        "UID": 1721776990622567,
+        "Name": "ShoutStartSM",
+        "Triggers": [
+            "Reset"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1527781157687336,
+                "ClipName": "vfx_banshee_shoutstart_VFX_shoutStart",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "ShoutStart_1",
+                "ClipName": "vfx_banshee_shoutstart_VFX_shoutStart",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "ShoutStart_2",
+                "ClipName": "vfx_banshee_shoutstart_VFX_shoutStart",
+                "Position": {
+                    "x": 0.0,
+                    "y": 160.0
+                },
+                "Triggers": []
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "ShoutStart_1",
+                "ToState": "ShoutStart_2",
+                "Trigger": "Reset",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShoutStart_2",
+                "ToState": "ShoutStart_1",
+                "Trigger": "Reset",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
