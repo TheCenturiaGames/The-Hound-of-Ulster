@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 4625150251558384093,
+        "VersionUID": 1681291398429491766,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 4625150251558384093,
+                "PrefabVersionUID": 1681291398429491766,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -246,7 +246,7 @@
                                 "Script Name": "CuChulainnScript",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Max Health": 5,
+                                "Max Health": 10,
                                 "Current Health": 3,
                                 "Invulnerable": false,
                                 "Dead": false,
@@ -264,7 +264,8 @@
                                 "Spear Projectile Name": "SpearProjectile",
                                 "Range attack cooldown": 1.0,
                                 "Dash cooldown": 1.0,
-                                "Dash Icon Name": "",
+                                "Dash Icon Name": "DashCooldown",
+                                "Health Bar Name": "HealthBarFill",
                                 "Dash unlocked": false,
                                 "Ultimate unlocked": false,
                                 "Ultimate object": "Ultimate",
@@ -273,7 +274,7 @@
                                 "Ultimate Animation delay": 1.0,
                                 "Ultimate hitbox delay": 0.20000000298023224,
                                 "Ultimate hitbox duration": 0.4000000059604645,
-                                "Ultimate Icon Name": "",
+                                "Ultimate Icon Name": "UltimateCooldown",
                                 "Charged Attack object": "Charged",
                                 "Attack charging duration": 1.0,
                                 "Charge threshold": 0.20000000298023224,
@@ -312,11 +313,7 @@
                                 "Dash decal disappear": 5.0,
                                 "Heal vfx object": "HealVfx",
                                 "Heal particles object": "HealParticles",
-                                "Riastrad VFX object": "riastrad_all",
-                                "Dash filled icon": 0,
-                                "Dash empty icon": 0,
-                                "Ultimate filled icon": 0,
-                                "Ultimate empty icon": 0
+                                "Riastrad VFX object": "riastrad_all"
                             },
                             {
                                 "Script Name": "GodModeScript",
@@ -442,7 +439,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4869769215583801
+                        "CameraVFOV": 0.5054389238357544
                     }
                 ],
                 "Children": []
@@ -1049,17 +1046,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 14876040250674459217,
                 "LocalTransform": [
-                    2.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
-                    2.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
