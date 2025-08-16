@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1667661468865896,
-        "VersionUID": 11570495741659832762,
+        "VersionUID": 6775497013908387594,
         "Name": "CH_Pooka",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1667661468865896,
-                "PrefabVersionUID": 11570495741659832762,
+                "PrefabVersionUID": 6775497013908387594,
                 "PrefabChildUID": 7058584890079411930,
                 "LocalTransform": [
                     1.0,
@@ -120,7 +120,9 @@
                                 "Sneak Acceleration": 4.0,
                                 "Peek chance per second": 0.10000000149011612,
                                 "Dash angle degrees": 60.0,
-                                "Time between dashes": 2.0
+                                "Time between dashes": 2.0,
+                                "VFX_DigUpRocks": "VFX_DigUpRocks",
+                                "VFX_DigUpHole": "VFX_DigUpHole"
                             }
                         ]
                     },
@@ -188,7 +190,8 @@
                     16913202842926354399,
                     15788577491172782254,
                     2076872484929499721,
-                    3069260333051274218
+                    3069260333051274218,
+                    16134325678122497815
                 ]
             },
             {
@@ -853,6 +856,49 @@
                 ]
             },
             {
+                "UID": 16134325678122497815,
+                "ParentUID": 1906700613931703511,
+                "Name": "VFX_DigUpHole",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10185561495437780910,
+                "LocalTransform": [
+                    0.009999999776482582,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -1.1920929798847624e-9,
+                    -0.009999999776482582,
+                    0.0,
+                    0.0,
+                    0.009999999776482582,
+                    -1.1920929798847624e-9,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1400218667679742457,
+                        "Type": 14,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Animation",
+                        "Animations": 1577263245370315,
+                        "StateMachine": 0
+                    }
+                ],
+                "Children": [
+                    12990606554993220056
+                ]
+            },
+            {
                 "UID": 3590757032573055114,
                 "ParentUID": 12292732828672055008,
                 "Name": "cw",
@@ -960,6 +1006,40 @@
                     9791316118173971593,
                     7151658709468413764,
                     4749328925880143766
+                ]
+            },
+            {
+                "UID": 12990606554993220056,
+                "ParentUID": 16134325678122497815,
+                "Name": "hole",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1011668917397844297,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    13372919688328113249,
+                    11715804674747501298
                 ]
             },
             {
@@ -1479,6 +1559,85 @@
                 "Children": [
                     16303158807588101605
                 ]
+            },
+            {
+                "UID": 13372919688328113249,
+                "ParentUID": 12990606554993220056,
+                "Name": "hole_bind",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1047563949694720908,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11098929980201150942,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1146108636565993,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "Bones": [
+                            11715804674747501298
+                        ],
+                        "ModelUID": 1433094692063020,
+                        "SkinIndex": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11715804674747501298,
+                "ParentUID": 12990606554993220056,
+                "Name": "hole_01_JNT",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11357674721009890615,
+                "LocalTransform": [
+                    0.9890328049659729,
+                    -0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -1.1790189802241002e-7,
+                    0.9890329241752625,
+                    0.0,
+                    -0.0,
+                    -0.9890329241752625,
+                    -1.1790189802241002e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 17031630711926930216,
