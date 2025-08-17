@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1645441348907473,
-        "VersionUID": 3305681950195970455,
+        "VersionUID": 1937796165814499128,
         "Name": "Mirage",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1645441348907473,
-                "PrefabVersionUID": 3305681950195970455,
+                "PrefabVersionUID": 1937796165814499128,
                 "PrefabChildUID": 13405711659532577537,
                 "LocalTransform": [
                     3.838310718536377,
@@ -59,7 +59,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 9486086922956563515,
                 "LocalTransform": [
@@ -90,7 +90,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 5082900086156830298,
                 "LocalTransform": [
@@ -120,7 +120,7 @@
                         "Name": "Script",
                         "Scripts": [
                             {
-                                "Script Name": "Boss",
+                                "Script Name": "MirageBossDash",
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Max Health": 60,
@@ -131,26 +131,19 @@
                                 "Attack Range": 1.0,
                                 "Attack Duration": 0.5,
                                 "Attack Cooldown": 1.0,
-                                "Attack Hitbox Delay": 0.15000000596046448,
-                                "Attack Hitbox Duration": 0.30000001192092896,
+                                "Attack Hitbox Delay": 0.0,
+                                "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 1.0,
-                                "AI Chase Range": 13.0,
-                                "AI Attack Range": 2.0,
-                                "AI Max Detection Range": 15.0,
+                                "AI Chase Range": 15.0,
+                                "AI Attack Range": 3.0,
+                                "AI Max Detection Range": 20.0,
                                 "Player search duration": 5.0,
-                                "Dash Duration": 0.30000001192092896,
-                                "Height Jump": 0.0,
-                                "Jump Duration": 0.4000000059604645,
-                                "Fall Duration": 0.10000000149011612,
-                                "Close Area Damage": 2,
-                                "Shield Collider": "jnt_shield",
-                                "Close Area": "CloseArea",
-                                "Big Area": "BigArea"
+                                "Dash Duration": 0.5
                             }
                         ]
                     },
                     {
-                        "UID": 18382613623334126948,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -181,19 +174,6 @@
                         "Name": "Animation",
                         "Animations": 1526733547884199,
                         "StateMachine": 1770590789838306
-                    },
-                    {
-                        "UID": 12710662946498928982,
-                        "Type": 15,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "AI Agent",
-                        "Speed": 3.5,
-                        "Acceleration": 8.0,
-                        "Radius": 0.6000000238418579,
-                        "Height": 2.0,
-                        "MaxAngularSpeed": 6.2831854820251465,
-                        "isRadians": true
                     },
                     {
                         "UID": 7187377005291192741,
@@ -736,7 +716,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6382325773837285837,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
