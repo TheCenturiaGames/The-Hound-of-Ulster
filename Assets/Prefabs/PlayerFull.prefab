@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 4983949488013799378,
+        "VersionUID": 18396253921839789516,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 4983949488013799378,
+                "PrefabVersionUID": 18396253921839789516,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -350,7 +350,8 @@
                     597159521593903207,
                     7823843794212027074,
                     15129941817658561255,
-                    5606212946334419288
+                    5606212946334419288,
+                    17248424766282212271
                 ]
             },
             {
@@ -410,7 +411,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4892260730266571
+                        "CameraVFOV": 0.5255646705627441
                     }
                 ],
                 "Children": []
@@ -1003,6 +1004,62 @@
                         "Material": 1326842676146302,
                         "RenderMode": 1,
                         "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 17248424766282212271,
+                "ParentUID": 14682406276647367202,
+                "Name": "EnemyDetector",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10507758268360548568,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2276964863019986370,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 3,
+                        "Radius": 2.9000000953674316,
+                        "Length": 1.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
                     }
                 ],
                 "Children": []
