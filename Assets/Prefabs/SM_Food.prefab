@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1649566762205276,
-        "VersionUID": 10532739530242841915,
+        "VersionUID": 7341917523224188430,
         "Name": "SM_Food",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1649566762205276,
-                "PrefabVersionUID": 10532739530242841915,
+                "PrefabVersionUID": 7341917523224188430,
                 "PrefabChildUID": 11350740521346765312,
                 "LocalTransform": [
                     1.0,
@@ -38,7 +38,8 @@
                 "Children": [
                     2901570267530891624,
                     15372826803929328178,
-                    14793699122943619928
+                    14793699122943619928,
+                    1990342759885423589
                 ]
             },
             {
@@ -152,6 +153,53 @@
                     15261501358302875423,
                     5828095335221700579,
                     16684398508116272006
+                ]
+            },
+            {
+                "UID": 1990342759885423589,
+                "ParentUID": 2175039457881852044,
+                "Name": "PR_Food_Caldron",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11991140374359389950,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    3.9130001068115234,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.46821022033691406,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4715147475872386537,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1128403992426195,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": [
+                    14611828048129950180,
+                    10043637622681593027,
+                    16394751496381038634
                 ]
             },
             {
@@ -901,6 +949,135 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1129049544380089,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14611828048129950180,
+                "ParentUID": 1990342759885423589,
+                "Name": "PR_Food_Fire_Wood",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4145707585668427289,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5065132295828218668,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1140213270813581,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10043637622681593027,
+                "ParentUID": 1990342759885423589,
+                "Name": "PR_Food_Spoon",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17184351813566065104,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7506441867358506967,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1180415245723045,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16394751496381038634,
+                "ParentUID": 1990342759885423589,
+                "Name": "PR_Food_Wood_Stand",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4325694316115161947,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11786414746668620959,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1146354384280328,
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
