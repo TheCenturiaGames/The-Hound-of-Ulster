@@ -5,19 +5,19 @@
         "RootGameObject": 10870946366815599275,
         "NavmeshUID": 2084988682450363,
         "Camera Position": [
-            -16.966501235961914,
-            18.925437927246094,
-            30.7008056640625
+            -29.359203338623047,
+            9.788302421569824,
+            19.712387084960938
         ],
         "Camera Front": [
-            0.03121313266456127,
-            -0.6445017457008362,
-            -0.7639656066894531
+            0.707905650138855,
+            -0.5481950044631958,
+            -0.4453672170639038
         ],
         "Camera Up": [
-            0.026275426149368286,
-            0.7652320265769958,
-            -0.6432181000709534
+            0.4633127748966217,
+            0.836884081363678,
+            -0.29148972034454346
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -4034,7 +4034,7 @@
                 "UID": 13633338187843747500,
                 "ParentUID": 7986011859617868237,
                 "Name": "TeleportWarning",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -4775,7 +4775,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1604992300520289,
-                "PrefabVersionUID": 4969309085866697960,
+                "PrefabVersionUID": 3780688628941168894,
                 "PrefabChildUID": 358579691348296292,
                 "LocalTransform": [
                     1.0,
@@ -4914,7 +4914,8 @@
                     3054346212496489306,
                     10515266439577322944,
                     12423102549599199898,
-                    13633338187843747500
+                    13633338187843747500,
+                    1528888863973597306
                 ]
             },
             {
@@ -17741,7 +17742,7 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 17690185660222226580,
                 "LocalTransform": [
-                    5.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -17751,7 +17752,7 @@
                     0.4978679120540619,
                     0.0,
                     0.0,
-                    5.0,
+                    1.0,
                     4.52040958404541,
                     0.0,
                     0.0,
@@ -17765,33 +17766,10 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1194458484681695,
-                        "Material": 0,
-                        "RenderMode": 0,
+                        "Mesh": 1150212522424348,
+                        "Material": 1368547430396679,
+                        "RenderMode": 1,
                         "ProduceShadows": true
-                    },
-                    {
-                        "UID": 14238634674059213127,
-                        "Type": 12,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Sphere Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 5,
-                        "Radius": 2.635999917984009,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            -2.9802322387695313e-8,
-                            -9.5367431640625e-7
-                        ],
-                        "CenterRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ]
                     }
                 ],
                 "Children": []
@@ -17800,7 +17778,7 @@
                 "UID": 12423102549599199898,
                 "ParentUID": 7986011859617868237,
                 "Name": "SlowAreaWarning",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -17814,11 +17792,11 @@
                     0.0,
                     1.0,
                     0.0,
-                    4.063072681427002,
+                    0.731903076171875,
                     0.0,
                     0.0,
                     1.0,
-                    0.0,
+                    4.520000457763672,
                     0.0,
                     0.0,
                     0.0,
@@ -19229,6 +19207,72 @@
                     1.0
                 ],
                 "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 1528888863973597306,
+                "ParentUID": 7986011859617868237,
+                "Name": "SlowAreaIn",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17690185660222226580,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.10000000149011612,
+                    0.0,
+                    0.4978679120540619,
+                    0.0,
+                    0.0,
+                    1.0,
+                    4.52040958404541,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9392110523034360233,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1150212522424348,
+                        "Material": 1383547632611015,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 14402852172166037728,
+                        "Type": 12,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 2.5999999046325684,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
                 "Children": []
             }
         ],
