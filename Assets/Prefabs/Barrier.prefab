@@ -1,72 +1,34 @@
 {
     "Prefab": {
         "UID": 1650512296088959,
-        "VersionUID": 6482416545365762432,
+        "VersionUID": 11320048857555566329,
         "Name": "Barrier",
         "GameObjects": [
             {
-                "UID": 8673845718096017421,
-                "ParentUID": 10309131146409751111,
+                "UID": 11410753375664228064,
+                "ParentUID": 3408008172474305760,
                 "Name": "Barrier",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 6482416545365762432,
+                "PrefabUID": 1650512296088959,
+                "PrefabVersionUID": 11320048857555566329,
                 "PrefabChildUID": 12635059516197155707,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    12.877591133117676,
+                    -43.053192138671875,
                     0.0,
                     1.0,
                     0.0,
-                    9.830599784851074,
+                    0.9134910106658936,
                     0.0,
                     0.0,
                     1.0,
-                    -17.51772689819336,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    17842100235533841429,
-                    10427771327675277693,
-                    16864658166683967051,
-                    59423618202610659,
-                    8992944330563425432,
-                    18150426921180850101,
-                    18110706320976141860
-                ]
-            },
-            {
-                "UID": 17842100235533841429,
-                "ParentUID": 8673845718096017421,
-                "Name": "VFX_Barrier_triangle_light",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 17246527863227331874,
-                "LocalTransform": [
-                    3.7699999809265137,
-                    0.0,
-                    0.0,
-                    0.26519107818603516,
-                    0.0,
-                    3.7699999809265137,
-                    0.0,
-                    -0.7634658813476563,
-                    0.0,
-                    0.0,
-                    3.7699999809265137,
-                    0.0,
+                    29.379047393798828,
                     0.0,
                     0.0,
                     0.0,
@@ -74,22 +36,32 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16491531369980550034,
-                        "Type": 1,
+                        "UID": 10135838815124922190,
+                        "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1183397372909711,
-                        "Material": 0,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MagicBarrier",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Area tag": "LevelStart"
+                            }
+                        ]
                     }
                 ],
-                "Children": []
+                "Children": [
+                    17948663047867993753,
+                    425373077497998299,
+                    10344542037850167324,
+                    2443983395223150234,
+                    18443248609454119475
+                ]
             },
             {
-                "UID": 10427771327675277693,
-                "ParentUID": 8673845718096017421,
+                "UID": 17948663047867993753,
+                "ParentUID": 11410753375664228064,
                 "Name": "VFX_Barrier_rectengular_light",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -117,7 +89,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10178491658508816747,
+                        "UID": 16763505490227922512,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -131,8 +103,8 @@
                 "Children": []
             },
             {
-                "UID": 16864658166683967051,
-                "ParentUID": 8673845718096017421,
+                "UID": 425373077497998299,
+                "ParentUID": 11410753375664228064,
                 "Name": "VFX_Barrier_rim_light",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -160,7 +132,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6066792321189362124,
+                        "UID": 4646603853588515469,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -174,51 +146,8 @@
                 "Children": []
             },
             {
-                "UID": 59423618202610659,
-                "ParentUID": 8673845718096017421,
-                "Name": "VFX_Barier_light_Ground",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 12435072615623276744,
-                "LocalTransform": [
-                    2.240000009536743,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    2.240000009536743,
-                    0.0,
-                    -0.7883768081665039,
-                    0.0,
-                    0.0,
-                    2.240000009536743,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 5297804135286520658,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1191283137810838,
-                        "Material": 0,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 8992944330563425432,
-                "ParentUID": 8673845718096017421,
+                "UID": 10344542037850167324,
+                "ParentUID": 11410753375664228064,
                 "Name": "VFX_Barrier_Symbols",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -246,22 +175,22 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11089610935518943679,
+                        "UID": 5902590508557358407,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1119367066858527,
                         "Material": 0,
-                        "RenderMode": 2,
+                        "RenderMode": 1,
                         "ProduceShadows": true
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 18150426921180850101,
-                "ParentUID": 8673845718096017421,
+                "UID": 2443983395223150234,
+                "ParentUID": 11410753375664228064,
                 "Name": "VFX_Barrier_Main",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -289,7 +218,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4492713466803711479,
+                        "UID": 7421597252803897044,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -303,8 +232,8 @@
                 "Children": []
             },
             {
-                "UID": 18110706320976141860,
-                "ParentUID": 8673845718096017421,
+                "UID": 18443248609454119475,
+                "ParentUID": 11410753375664228064,
                 "Name": "VFX_Barrier_Particles",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -332,7 +261,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9423276943026286351,
+                        "UID": 11947715347763163685,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
