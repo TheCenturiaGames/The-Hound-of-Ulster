@@ -176,7 +176,7 @@
                 "ClipName": "Ch_Archer_Enemy_Animations_idle",
                 "Position": {
                     "x": 210.0,
-                    "y": 110.0
+                    "y": -130.0
                 }
             },
             {
@@ -409,6 +409,18 @@
                 "FromState": "attack",
                 "ToState": "impactBig",
                 "Trigger": "damageBig",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "overdrawing",
+                "ToState": "impactSmall",
+                "Trigger": "damageSmall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "impactSmall",
+                "ToState": "overdrawing",
+                "Trigger": "overdraw",
                 "InterpolationTime": 200
             }
         ]
