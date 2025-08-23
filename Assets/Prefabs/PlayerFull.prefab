@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 18166906642822816077,
+        "VersionUID": 12981890211366599681,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,13 +14,13 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 18166906642822816077,
+                "PrefabVersionUID": 12981890211366599681,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    61.632198333740234,
+                    67.47449493408203,
                     0.0,
                     1.0,
                     0.0,
@@ -285,7 +285,8 @@
                                 "Dash filled icon": 0,
                                 "Dash empty icon": 0,
                                 "Ultimate filled icon": 0,
-                                "Ultimate empty icon": 0
+                                "Ultimate empty icon": 0,
+                                "Enemy detector object": "EnemyDetector"
                             },
                             {
                                 "Script Name": "GodModeScript",
@@ -394,7 +395,7 @@
                         "SeePreview": true,
                         "CameraType": 0,
                         "CameraPosition": [
-                            39.070194244384766,
+                            44.91249084472656,
                             19.66216278076172,
                             82.94564819335938
                         ],
@@ -411,7 +412,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.537208616733551
+                        "CameraVFOV": 0.675588846206665
                     }
                 ],
                 "Children": []
@@ -1014,8 +1015,8 @@
                 "Name": "EnemyDetector",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 10507758268360548568,
                 "LocalTransform": [
@@ -1041,7 +1042,7 @@
                         "UID": 0,
                         "Type": 13,
                         "Enabled": false,
-                        "WasEnabled": false,
+                        "WasEnabled": true,
                         "Name": "Capsule Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
