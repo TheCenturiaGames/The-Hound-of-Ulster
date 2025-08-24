@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 14469882502617409495,
+        "VersionUID": 64194270328904749,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,21 +14,21 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 14469882502617409495,
+                "PrefabVersionUID": 64194270328904749,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    18.729249954223633,
+                    18.5264892578125,
                     0.0,
                     1.0,
                     0.0,
-                    13.090946197509766,
+                    12.999051094055176,
                     0.0,
                     0.0,
                     1.0,
-                    -67.80523681640625,
+                    -64.1860580444336,
                     0.0,
                     0.0,
                     0.0,
@@ -39,7 +39,8 @@
                     2736604616943355550,
                     2134720004974704168,
                     12048827968704989902,
-                    9167422225183838884
+                    9167422225183838884,
+                    4489501157152208723
                 ]
             },
             {
@@ -265,26 +266,31 @@
                                 "Spear Projectile Name": "SpearProjectile",
                                 "Range attack cooldown": 1.0,
                                 "Dash cooldown": 1.0,
+                                "Dash Icon Name": "DashCooldown",
+                                "Health Bar Name": "HealthBarFill",
                                 "Dash unlocked": false,
-                                "Ultimate unlocked": true,
+                                "Ultimate unlocked": false,
                                 "Ultimate object": "Ultimate",
                                 "Ultimate damage": 10,
                                 "Ultimate cooldown": 5.0,
                                 "Ultimate Animation delay": 1.0,
                                 "Ultimate hitbox delay": 0.20000000298023224,
                                 "Ultimate hitbox duration": 0.4000000059604645,
+                                "Ultimate Icon Name": "UltimateCooldown",
                                 "Charged Attack object": "Charged",
                                 "Attack charging duration": 1.0,
+                                "Charge threshold": 0.20000000298023224,
                                 "Charged Attack damage": 2,
                                 "Charged Attack hitbox delay": 0.30000001192092896,
                                 "Charged Attack hitbox duration": 0.10000000149011612,
                                 "Curse duration": 5.0,
                                 "Curse speed": 4.0,
-                                "Player material": 1352589630529784,
+                                "Player material": 0,
                                 "Take mushroom cooldown": 5.0,
                                 "Mushroom healing": 2,
-                                "Heal knockback object": "Charged",
-                                "Heal knockback delay": 1.0,
+                                "Heal knockback object": "Heal Knockback",
+                                "Heal knockback delay": 0.0,
+                                "Riastrad Bar object": "BarFill",
                                 "Riastrad duration": 5.0,
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
@@ -299,21 +305,17 @@
                                 "Riastrad VFX crack": "mesh_crack",
                                 "Riastrad VFX waring": "mesh_warning",
                                 "Riastrad VFX smoke 1": "mesh_smoke_a",
-                                "Riastrad VFX smoke 2": "mesh_smoke_a.001",
-                                "Riastrad VFX smoke 3": "mesh_smoke_a.002",
-                                "Aim shadow object": "AimShadow",
-                                "Melee trail object": "SpearMeleeTrail",
-                                "Melee VFX object": "SpearVFX",
-                                "Dash Trail object": "DashTrail",
-                                "Dash decal object": "DashDecal",
+                                "Riastrad VFX smoke 2": "mesh_smoke_b",
+                                "Riastrad VFX smoke 3": "mesh_smoke_c",
+                                "Aim shadow object": "",
+                                "Melee trail object": "",
+                                "Melee VFX object": "",
+                                "Dash Trail object": "",
+                                "Dash decal object": "",
                                 "Dash decal disappear": 5.0,
                                 "Heal vfx object": "HealVfx",
                                 "Heal particles object": "HealParticles",
-                                "Riastrad VFX object": "riastrad_all",
-                                "Dash filled icon": 0,
-                                "Dash empty icon": 0,
-                                "Ultimate filled icon": 0,
-                                "Ultimate empty icon": 0
+                                "Riastrad VFX object": "riastrad_all"
                             },
                             {
                                 "Script Name": "GodModeScript",
@@ -423,6 +425,64 @@
                 ]
             },
             {
+                "UID": 4489501157152208723,
+                "ParentUID": 3801538224224560235,
+                "Name": "new Game Object",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3594536068050858346,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    2.0401744842529297,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4928291968637797946,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1373601814544747,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 9873826002200316730,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfx",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Camera Object Name": "Camera"
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 9847669193008598916,
                 "ParentUID": 2736604616943355550,
                 "Name": "Camera",
@@ -462,9 +522,9 @@
                         "SeePreview": true,
                         "CameraType": 0,
                         "CameraPosition": [
-                            -3.832754135131836,
-                            32.18994903564453,
-                            -45.24323654174805
+                            -4.035514831542969,
+                            32.098052978515625,
+                            -41.62405776977539
                         ],
                         "CameraFront": [
                             0.6067240834236145,
@@ -479,7 +539,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4869769215583801
+                        "CameraVFOV": 0.4853220582008362
                     }
                 ],
                 "Children": []
@@ -1165,16 +1225,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealGroundHalo",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1225,16 +1276,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealLightBurst",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1285,16 +1327,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealGroundSpikesDark",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": false
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1345,16 +1378,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealSpikesBurst",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1405,16 +1429,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealGroundSpikesLight",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1465,16 +1480,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealSpikesUp",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -1525,16 +1531,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "HealVerticalPlanes",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Animation Speed": 15.0,
-                                "Additive": true
-                            }
-                        ]
+                        "Scripts": []
                     }
                 ],
                 "Children": []
@@ -4452,11 +4449,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
-                                    0.30000001192092896,
-                                    0.30000001192092896
-                                ]
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -4635,11 +4632,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": false,
                                 "Start UV Offset": [
                                     0.0,
                                     0.0
-                                ]
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -4739,11 +4736,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
                                     0.0,
                                     0.0
-                                ]
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -4922,11 +4919,11 @@
                                     -1.0,
                                     -1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
-                                    0.4000000059604645,
-                                    0.4000000059604645
-                                ]
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -5057,11 +5054,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
                                     0.0,
                                     0.0
-                                ]
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -5161,11 +5158,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
                                     0.0,
                                     0.0
-                                ]
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
@@ -5265,11 +5262,11 @@
                                     1.0,
                                     1.0
                                 ],
-                                "Double sided": true,
                                 "Start UV Offset": [
                                     0.0,
                                     0.0
-                                ]
+                                ],
+                                "Double sided": false
                             }
                         ]
                     }
