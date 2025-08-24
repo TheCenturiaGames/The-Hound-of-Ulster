@@ -1,34 +1,34 @@
 {
     "Prefab": {
         "UID": 1645441348907473,
-        "VersionUID": 1937796165814499128,
+        "VersionUID": 17752940079554875812,
         "Name": "Mirage",
         "GameObjects": [
             {
                 "UID": 12239315944155540724,
-                "ParentUID": 6788591387451538717,
+                "ParentUID": 10041647525915617944,
                 "Name": "Mirage",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabUID": 1645441348907473,
-                "PrefabVersionUID": 1937796165814499128,
+                "PrefabVersionUID": 17752940079554875812,
                 "PrefabChildUID": 13405711659532577537,
                 "LocalTransform": [
-                    3.838310718536377,
-                    -0.0,
-                    -1.98356294631958,
-                    -20.510948181152344,
-                    0.0,
+                    -29.75345802307129,
+                    -0.000001128507733483275,
+                    -0.2558872699737549,
+                    -1.2994651794433594,
+                    -0.00003357698005856946,
                     1.0,
-                    -0.0,
-                    1.1965975761413574,
-                    29.75344467163086,
-                    0.0,
-                    0.25588738918304443,
-                    -63.17787551879883,
+                    -2.887706500587228e-7,
+                    1.1967432498931885,
+                    3.8383090496063232,
+                    3.6016616799432535e-14,
+                    -1.9835638999938965,
+                    -5.306974411010742,
                     0.0,
                     0.0,
                     0.0,
@@ -45,6 +45,26 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 13356358008791697079,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Mirage",
+                                "Enabled": false,
+                                "WasEnabled": true,
+                                "Delay Before Damage": 0.10999999940395355,
+                                "Damage Duration": 0.14000000059604645,
+                                "Damage": 1,
+                                "Weight Order": 1,
+                                "Mirage Warning": 0,
+                                "Mirage Damage": 0
+                            }
+                        ]
                     }
                 ],
                 "Children": [
@@ -59,7 +79,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": false,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 9486086922956563515,
                 "LocalTransform": [
@@ -90,7 +110,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": false,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 5082900086156830298,
                 "LocalTransform": [
@@ -137,8 +157,7 @@
                                 "AI Chase Range": 15.0,
                                 "AI Attack Range": 3.0,
                                 "AI Max Detection Range": 20.0,
-                                "Player search duration": 5.0,
-                                "Dash Duration": 0.5
+                                "Player search duration": 5.0
                             }
                         ]
                     },
