@@ -1,7 +1,7 @@
 {
     "StateMachine": {
-        "UID": 1716090391733322,
-        "Name": "BansheeSM",
+        "UID": 1715733738859202,
+        "Name": "BansheeV2_SM",
         "Triggers": [
             "Idle",
             "Chase",
@@ -12,7 +12,8 @@
             "Death",
             "ScreamIn",
             "ScreamOut",
-            "Hit"
+            "Hit",
+            "SlowArea"
         ],
         "Clips": [
             {
@@ -163,7 +164,7 @@
                 "ClipUID": 1543864370466656,
                 "ClipName": "ch_banshee_anim_shout_base",
                 "ClipTime": 1.0,
-                "Loop": true
+                "Loop": false
             },
             {
                 "ClipUID": 1523699342034015,
@@ -180,6 +181,12 @@
             {
                 "ClipUID": 0,
                 "ClipName": "Clip_27",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_28",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -272,6 +279,15 @@
                 "Position": {
                     "x": -1020.0,
                     "y": -1080.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "SlowArea",
+                "ClipName": "ch_banshee_anim_shout_base",
+                "Position": {
+                    "x": -280.0,
+                    "y": -430.0
                 },
                 "Triggers": []
             }
@@ -542,7 +558,43 @@
                 "InterpolationTime": 200
             },
             {
+                "FromState": "ScreamIn",
+                "ToState": "SlowArea",
+                "Trigger": "SlowArea",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SlowArea",
+                "ToState": "ScreamOut",
+                "Trigger": "ScreamOut",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SlowArea",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SlowArea",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SlowArea",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
                 "FromState": "ScreamOut",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SlowArea",
                 "ToState": "Hit",
                 "Trigger": "Hit",
                 "InterpolationTime": 200
