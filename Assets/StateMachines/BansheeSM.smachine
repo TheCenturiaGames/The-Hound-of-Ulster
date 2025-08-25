@@ -156,7 +156,7 @@
             {
                 "ClipUID": 1539860318384358,
                 "ClipName": "ch_banshee_anim_shout_start",
-                "ClipTime": 0.4000000059604645,
+                "ClipTime": 0.699999988079071,
                 "Loop": false
             },
             {
@@ -191,7 +191,8 @@
                 "Position": {
                     "x": -1420.0,
                     "y": -1110.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "SearchRight",
@@ -199,7 +200,8 @@
                 "Position": {
                     "x": -1470.0,
                     "y": -860.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "SearchLeft",
@@ -207,7 +209,8 @@
                 "Position": {
                     "x": -1510.0,
                     "y": -580.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Teleport",
@@ -215,7 +218,8 @@
                 "Position": {
                     "x": -1070.0,
                     "y": -640.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Hit",
@@ -223,7 +227,8 @@
                 "Position": {
                     "x": -670.0,
                     "y": -860.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "ScreamIn",
@@ -231,7 +236,8 @@
                 "Position": {
                     "x": -620.0,
                     "y": -540.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Scream",
@@ -239,7 +245,8 @@
                 "Position": {
                     "x": -280.0,
                     "y": -540.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "ScreamOut",
@@ -247,7 +254,8 @@
                 "Position": {
                     "x": 40.0,
                     "y": -540.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Death",
@@ -255,7 +263,8 @@
                 "Position": {
                     "x": -980.0,
                     "y": -220.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Chase",
@@ -263,7 +272,8 @@
                 "Position": {
                     "x": -1020.0,
                     "y": -1080.0
-                }
+                },
+                "Triggers": []
             }
         ],
         "Transitions": [
@@ -529,6 +539,12 @@
                 "FromState": "ScreamOut",
                 "ToState": "Teleport",
                 "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamOut",
+                "ToState": "Hit",
+                "Trigger": "Hit",
                 "InterpolationTime": 200
             }
         ]
