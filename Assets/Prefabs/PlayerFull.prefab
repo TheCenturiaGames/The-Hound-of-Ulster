@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 16500020342942788643,
+        "VersionUID": 12793138654916525550,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 16500020342942788643,
+                "PrefabVersionUID": 12793138654916525550,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -285,11 +285,11 @@
                                 "Charged Attack hitbox duration": 0.10000000149011612,
                                 "Curse duration": 5.0,
                                 "Curse speed": 4.0,
-                                "Player material": 0,
+                                "Player material": 1352589630529784,
                                 "Take mushroom cooldown": 5.0,
                                 "Mushroom healing": 2,
                                 "Heal knockback object": "Charged",
-                                "Heal knockback delay": 0.0,
+                                "Heal knockback delay": 1.0,
                                 "Riastrad Bar object": "BarFill",
                                 "Riastrad duration": 5.0,
                                 "Riastrad movement speed": 12.0,
@@ -297,7 +297,7 @@
                                 "Riastrad on damage taken": 2,
                                 "Riastrad on enemy hit": 5,
                                 "Riastrad on enemy defeated": 5,
-                                "Transform VFX Delay": 0.3499999940395355,
+                                "Transform VFX Delay": 0.30000001192092896,
                                 "Riastrad VFX burst": "mesh_brust",
                                 "Riastrad VFX blur": "mesh_blur",
                                 "Riastrad VFX halo": "mesh_halo",
@@ -1167,7 +1167,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealGroundHalo",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1218,7 +1227,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealLightBurst",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1269,7 +1287,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealGroundSpikesDark",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": false
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1320,7 +1347,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealSpikesBurst",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1371,7 +1407,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealGroundSpikesLight",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1422,7 +1467,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealSpikesUp",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1473,7 +1527,16 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
-                        "Scripts": []
+                        "Scripts": [
+                            {
+                                "Script Name": "HealVerticalPlanes",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 15.0,
+                                "Additive": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -3525,7 +3588,7 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": true
                             }
                         ]
                     }
@@ -3629,7 +3692,7 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": true
                             }
                         ]
                     }
@@ -3891,7 +3954,7 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": true
                             }
                         ]
                     }
@@ -4074,7 +4137,7 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": true
                             }
                         ]
                     }
@@ -5522,8 +5585,8 @@
                                     1.0
                                 ],
                                 "Start UV Offset": [
-                                    0.0,
-                                    0.0
+                                    0.5600000023841858,
+                                    0.5600000023841858
                                 ],
                                 "Double sided": true
                             }
