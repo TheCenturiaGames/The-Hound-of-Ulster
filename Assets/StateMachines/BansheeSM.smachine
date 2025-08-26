@@ -5,7 +5,14 @@
         "Triggers": [
             "Idle",
             "Chase",
-            "Scream"
+            "Scream",
+            "SearchRight",
+            "SearchLeft",
+            "Teleport",
+            "Death",
+            "ScreamIn",
+            "ScreamOut",
+            "Hit"
         ],
         "Clips": [
             {
@@ -43,69 +50,501 @@
                 "ClipName": "CH_Banshee_Anim_scream",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_8",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_10",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_9",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1514484290139253,
+                "ClipName": "ch_banshee_anim_idle_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_11",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1503038418467881,
+                "ClipName": "ch_banshee_anim_idle_right",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_13",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_14",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1510509989534901,
+                "ClipName": "ch_banshee_anim_teleport",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_16",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_17",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_18",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_19",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_20",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1551264912694103,
+                "ClipName": "ch_banshee_anim_idle_left",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1576713279191811,
+                "ClipName": "ch_banshee_anim_hit",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1539860318384358,
+                "ClipName": "ch_banshee_anim_shout_start",
+                "ClipTime": 0.699999988079071,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1543864370466656,
+                "ClipName": "ch_banshee_anim_shout_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1523699342034015,
+                "ClipName": "ch_banshee_anim_shout_end",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1503113728677048,
+                "ClipName": "ch_banshee_anim_Death",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_27",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
             {
                 "StateName": "Idle",
-                "ClipName": "CH_Banshee_Anim_idle",
+                "ClipName": "ch_banshee_anim_idle_base",
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.0
-                }
+                    "x": -1420.0,
+                    "y": -1110.0
+                },
+                "Triggers": []
             },
             {
-                "StateName": "Chase",
-                "ClipName": "CH_Banshee_Anim_chase",
+                "StateName": "SearchRight",
+                "ClipName": "ch_banshee_anim_idle_right",
                 "Position": {
-                    "x": 310.0,
-                    "y": 100.0
-                }
+                    "x": -1470.0,
+                    "y": -860.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "SearchLeft",
+                "ClipName": "ch_banshee_anim_idle_left",
+                "Position": {
+                    "x": -1510.0,
+                    "y": -580.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Teleport",
+                "ClipName": "ch_banshee_anim_teleport",
+                "Position": {
+                    "x": -1070.0,
+                    "y": -640.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Hit",
+                "ClipName": "ch_banshee_anim_hit",
+                "Position": {
+                    "x": -670.0,
+                    "y": -860.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "ScreamIn",
+                "ClipName": "ch_banshee_anim_shout_start",
+                "Position": {
+                    "x": -620.0,
+                    "y": -540.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Scream",
-                "ClipName": "CH_Banshee_Anim_scream",
+                "ClipName": "ch_banshee_anim_shout_base",
                 "Position": {
-                    "x": 320.0,
-                    "y": -100.0
-                }
+                    "x": -280.0,
+                    "y": -540.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "ScreamOut",
+                "ClipName": "ch_banshee_anim_shout_end",
+                "Position": {
+                    "x": 40.0,
+                    "y": -540.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "ch_banshee_anim_Death",
+                "Position": {
+                    "x": -980.0,
+                    "y": -220.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Chase",
+                "ClipName": "ch_banshee_anim_idle_base",
+                "Position": {
+                    "x": -1020.0,
+                    "y": -1080.0
+                },
+                "Triggers": []
             }
         ],
         "Transitions": [
             {
                 "FromState": "Idle",
-                "ToState": "Chase",
-                "Trigger": "Chase",
+                "ToState": "SearchRight",
+                "Trigger": "SearchRight",
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Chase",
+                "FromState": "SearchRight",
+                "ToState": "SearchLeft",
+                "Trigger": "SearchLeft",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "SearchLeft",
+                "Trigger": "SearchLeft",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "SearchRight",
+                "Trigger": "SearchRight",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchRight",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchRight",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Teleport",
+                "ToState": "ScreamIn",
+                "Trigger": "ScreamIn",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamIn",
                 "ToState": "Scream",
                 "Trigger": "Scream",
                 "InterpolationTime": 200
             },
             {
                 "FromState": "Scream",
-                "ToState": "Chase",
-                "Trigger": "Chase",
+                "ToState": "ScreamOut",
+                "Trigger": "ScreamOut",
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Scream",
+                "FromState": "ScreamOut",
                 "ToState": "Idle",
                 "Trigger": "Idle",
                 "InterpolationTime": 200
             },
             {
                 "FromState": "Idle",
-                "ToState": "Scream",
-                "Trigger": "Scream",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchRight",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Teleport",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchRight",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Teleport",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamIn",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamOut",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Chase",
+                "Trigger": "Chase",
                 "InterpolationTime": 200
             },
             {
                 "FromState": "Chase",
                 "ToState": "Idle",
                 "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchRight",
+                "ToState": "Chase",
+                "Trigger": "Chase",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "SearchLeft",
+                "ToState": "Chase",
+                "Trigger": "Chase",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "SearchRight",
+                "Trigger": "SearchRight",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Chase",
+                "ToState": "SearchLeft",
+                "Trigger": "SearchLeft",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Teleport",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "ScreamIn",
+                "Trigger": "ScreamIn",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamIn",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamIn",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamIn",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamOut",
+                "ToState": "Teleport",
+                "Trigger": "Teleport",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ScreamOut",
+                "ToState": "Hit",
+                "Trigger": "Hit",
                 "InterpolationTime": 200
             }
         ]
