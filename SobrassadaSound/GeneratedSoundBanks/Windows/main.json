@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AEA877A2-151C-40A2-9839-4843226CD743}",
     "Language": "SFX",
-    "Hash": "{8C5C95F8-F361-2052-8583-3D1641A98C69}",
+    "Hash": "{BB14BF29-3D05-3C7A-A797-1E30BCBA9D25}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -184,14 +184,6 @@
       "CachePath": "9A/{9AD8D4CA-CF92-1DC4-2BBB-F2D57EE8AE29}.wem"
      },
      {
-      "Id": "403188759",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "CelticMusic_Legend.wav",
-      "CachePath": "01/{0143DA0F-C9AE-BC79-D6ED-E8E394EE120D}.wem"
-     },
-     {
       "Id": "465386327",
       "Language": "SFX",
       "Streaming": "false",
@@ -232,14 +224,6 @@
       "CachePath": "57/{57CA0BF4-13BF-B1FE-FF93-720AF9552BED}.wem"
      },
      {
-      "Id": "567078735",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "TempleTrack.wav",
-      "CachePath": "55/{55AEB0AC-9273-E374-012F-D63F0DD51DC5}.wem"
-     },
-     {
       "Id": "584858119",
       "Language": "SFX",
       "Streaming": "false",
@@ -254,14 +238,6 @@
       "Location": "Memory",
       "ShortName": "SFX_Water_01.wav",
       "CachePath": "29/{29982D31-8E57-6F8E-9A64-947415CD530B}.wem"
-     },
-     {
-      "Id": "639641329",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "BurningCityTrack.wav",
-      "CachePath": "79/{79066FCD-7843-40F6-D168-EEE2CF56FDD9}.wem"
      },
      {
       "Id": "679678181",
@@ -304,6 +280,14 @@
       "CachePath": "57/{574327E7-A501-7AD5-0651-6ADD8BACD56E}.wem"
      },
      {
+      "Id": "789309608",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "waterSpoutV4.wav",
+      "CachePath": "35/{35C48F2F-1C8E-538B-E6A5-69B86FB0C668}.wem"
+     },
+     {
       "Id": "795005591",
       "Language": "SFX",
       "Streaming": "false",
@@ -344,6 +328,14 @@
       "CachePath": "59/{59959651-54B9-403D-7F6C-288FF256DBF8}.wem"
      },
      {
+      "Id": "883219392",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "First_Theme.wav",
+      "CachePath": "0D/{0DCBE869-C51C-382C-76D6-E81F2A0CFE34}.wem"
+     },
+     {
       "Id": "896702479",
       "Language": "SFX",
       "Streaming": "false",
@@ -378,38 +370,28 @@
     ],
     "Events": [
      {
-      "Id": "3779517962",
-      "Name": "Play_BurningCity",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_BurningCity",
-      "GUID": "{E7E3F39A-A134-451F-9166-72E786C8A660}",
-      "DurationType": "Infinite",
+      "Id": "1086074370",
+      "Name": "Play_First_Theme",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_First_Theme",
+      "GUID": "{2ABEE26A-A339-497C-A192-98ADF7BDDD2E}",
+      "DurationType": "OneShot",
+      "DurationMin": "100.75",
+      "DurationMax": "100.75",
       "MediaRefs": [
        {
-        "Id": "639641329"
+        "Id": "883219392"
        }
       ]
      },
      {
       "Id": "207755397",
       "Name": "Play_Forest",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Forest",
       "GUID": "{D9075865-6940-4B90-93EC-7CF39C73CF94}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "21657060"
-       }
-      ]
-     },
-     {
-      "Id": "3738780720",
-      "Name": "Play_MainMenu",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMenu",
-      "GUID": "{411FAC74-41FA-4A84-BEBB-6F694403B7DE}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "403188759"
        }
       ]
      },
@@ -430,7 +412,7 @@
      {
       "Id": "920741356",
       "Name": "Play_SFX_Button_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_SFX_Button_01",
       "GUID": "{9D94CB30-E5C6-4289-8B93-6F9E110CFB50}",
       "DurationType": "OneShot",
       "DurationMin": "1.7555208",
@@ -444,7 +426,7 @@
      {
       "Id": "920741359",
       "Name": "Play_SFX_Button_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_SFX_Button_02",
       "GUID": "{62DDF8B0-A4BA-4ACC-8DA9-844AC5154F20}",
       "DurationType": "OneShot",
       "DurationMin": "0.74931973",
@@ -458,7 +440,7 @@
      {
       "Id": "920741358",
       "Name": "Play_SFX_Button_03",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Button_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_SFX_Button_03",
       "GUID": "{F7CACBC9-97CA-4359-9ECC-23516D0598E5}",
       "DurationType": "OneShot",
       "DurationMin": "0.74931973",
@@ -472,7 +454,7 @@
      {
       "Id": "3434634929",
       "Name": "Play_SFX_Cave_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Cave_01",
       "GUID": "{F8F35A90-F7D5-4E9B-8C8F-90F005855173}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -485,7 +467,7 @@
      {
       "Id": "3434634930",
       "Name": "Play_SFX_Cave_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Cave_02",
       "GUID": "{EE031B47-A5B8-4400-9931-3956FB76927F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -498,7 +480,7 @@
      {
       "Id": "3434634931",
       "Name": "Play_SFX_Cave_03",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Cave_03",
       "GUID": "{D44C70E5-5646-4C18-9A9D-4B7C69FA7CF1}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -511,7 +493,7 @@
      {
       "Id": "3434634932",
       "Name": "Play_SFX_Cave_04",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Cave_04",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Cave_04",
       "GUID": "{F0E73809-E57C-41FD-98DA-914329093326}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -524,7 +506,7 @@
      {
       "Id": "3889642976",
       "Name": "Play_SFX_Fire_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Fire_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Fire_01",
       "GUID": "{885DC419-B2DA-457F-8AB2-73EE73FAE23B}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -536,7 +518,7 @@
      {
       "Id": "3889642979",
       "Name": "Play_SFX_Fire_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Fire_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Fire_02",
       "GUID": "{E72CE92C-A7AD-450A-A57D-3CB1B60F9116}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -549,7 +531,7 @@
      {
       "Id": "917195537",
       "Name": "Play_SFX_MC_Dash",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MC_Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_SFX_MC_Dash",
       "GUID": "{F4A318E7-7F38-4E4D-ADAA-444E0FA8F4E9}",
       "DurationType": "OneShot",
       "DurationMin": "0.4953229",
@@ -563,7 +545,7 @@
      {
       "Id": "2490745552",
       "Name": "Play_SFX_MC_Hit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MC_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_SFX_MC_Hit",
       "GUID": "{B41D8D07-91B3-4A7E-B6C9-BF8AE58BB944}",
       "DurationType": "OneShot",
       "DurationMin": "0.40754166",
@@ -577,7 +559,7 @@
      {
       "Id": "2204804306",
       "Name": "Play_SFX_MC_Hurt",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MC_Hurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_SFX_MC_Hurt",
       "GUID": "{C782CB6D-A703-4F52-B3A3-945AEF8E9D3C}",
       "DurationType": "OneShot",
       "DurationMin": "0.52405894",
@@ -591,7 +573,7 @@
      {
       "Id": "2177541458",
       "Name": "Play_SFX_MC_NormalAttack_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MC_NormalAttack_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_SFX_MC_NormalAttack_01",
       "GUID": "{F4D2EE4F-9BAD-48A2-99F0-C8D3218954AF}",
       "DurationType": "OneShot",
       "DurationMin": "1.0953177",
@@ -605,7 +587,7 @@
      {
       "Id": "1030865972",
       "Name": "Play_SFX_MC_UltimateAttack",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MC_UltimateAttack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_SFX_MC_UltimateAttack",
       "GUID": "{F63F26EC-FA88-454E-9485-2CEF3D1CA545}",
       "DurationType": "OneShot",
       "DurationMin": "3.5958333",
@@ -619,7 +601,7 @@
      {
       "Id": "2845739403",
       "Name": "Play_SFX_Pooka_Attack",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_Attack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_Attack",
       "GUID": "{CCC7245C-724F-48D0-B839-B9C9557498FA}",
       "DurationType": "OneShot",
       "DurationMin": "0.24922903",
@@ -633,7 +615,7 @@
      {
       "Id": "3129736499",
       "Name": "Play_SFX_Pooka_BuryDown",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_BuryDown",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_BuryDown",
       "GUID": "{B90088D0-50C3-45A2-B5F7-CF765AD34450}",
       "DurationType": "OneShot",
       "DurationMin": "1.4868646",
@@ -647,7 +629,7 @@
      {
       "Id": "3198435252",
       "Name": "Play_SFX_Pooka_BuryUp",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_BuryUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_BuryUp",
       "GUID": "{910AF09D-3081-449F-8755-51D461BDA6C5}",
       "DurationType": "OneShot",
       "DurationMin": "1.8985034",
@@ -661,7 +643,7 @@
      {
       "Id": "2385944011",
       "Name": "Play_SFX_Pooka_Dash",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_Dash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_Dash",
       "GUID": "{A60F8E37-2D30-4A32-B425-AF5168074FE1}",
       "DurationType": "OneShot",
       "DurationMin": "1.8513379",
@@ -675,7 +657,7 @@
      {
       "Id": "4271776059",
       "Name": "Play_SFX_Pooka_Death",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_Death",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_Death",
       "GUID": "{66A5FD07-A018-4D1A-A4AF-0CB759D4D05D}",
       "DurationType": "OneShot",
       "DurationMin": "2.744",
@@ -689,7 +671,7 @@
      {
       "Id": "1906970548",
       "Name": "Play_SFX_Pooka_Hurt",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Pooka_Hurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pooka\\Play_SFX_Pooka_Hurt",
       "GUID": "{0973842B-0844-49DB-A436-58189E328437}",
       "DurationType": "OneShot",
       "DurationMin": "0.3383125",
@@ -703,7 +685,7 @@
      {
       "Id": "3285336459",
       "Name": "Play_SFX_Soldier_Attack",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Soldier_Attack",
+      "ObjectPath": "\\Events\\Default Work Unit\\Soldier\\Play_SFX_Soldier_Attack",
       "GUID": "{A0D2FE1A-940A-45E1-AB55-9C66370C27FA}",
       "DurationType": "OneShot",
       "DurationMin": "0.71183336",
@@ -783,7 +765,7 @@
      {
       "Id": "3055317224",
       "Name": "Play_SFX_TreeOfLife_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_TreeOfLife_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_TreeOfLife_02",
       "GUID": "{08C4734D-83DF-4984-A7BA-A5720FB4D881}",
       "DurationType": "OneShot",
       "DurationMin": "5.7251773",
@@ -797,7 +779,7 @@
      {
       "Id": "3055317225",
       "Name": "Play_SFX_TreeOfLife_03",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_TreeOfLife_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_TreeOfLife_03",
       "GUID": "{E3F6244C-180E-4E47-8E93-5EDF3A902CAB}",
       "DurationType": "OneShot",
       "DurationMin": "3.4046147",
@@ -811,7 +793,7 @@
      {
       "Id": "3212841747",
       "Name": "Play_SFX_Water_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Water_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Water_01",
       "GUID": "{EAB33356-9383-4F88-A7B3-C71A20E603B2}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -822,9 +804,23 @@
       ]
      },
      {
+      "Id": "278128852",
+      "Name": "Play_SFX_Water_Spouts",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Play_SFX_Water_Spouts",
+      "GUID": "{5F567761-65EA-4F15-AC5A-D94F8897D4A5}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.936937",
+      "DurationMax": "10.936937",
+      "MediaRefs": [
+       {
+        "Id": "789309608"
+       }
+      ]
+     },
+     {
       "Id": "1233267134",
       "Name": "Play_SFX_Waterfall_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Waterfall_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Waterfall_01",
       "GUID": "{1267F9A2-A83F-4038-AB35-D6FF52B3CC3F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -837,7 +833,7 @@
      {
       "Id": "1233267133",
       "Name": "Play_SFX_Waterfall_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Waterfall_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Waterfall_02",
       "GUID": "{F459D214-3414-43A2-997D-9A3F07436C8F}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -850,7 +846,7 @@
      {
       "Id": "4018713014",
       "Name": "Play_SFX_Wind_01",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Wind_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Wind_01",
       "GUID": "{596D568A-4C77-45BD-AD51-436B8A895265}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -863,7 +859,7 @@
      {
       "Id": "4018713013",
       "Name": "Play_SFX_Wind_02",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Wind_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_SFX_Wind_02",
       "GUID": "{818FB92D-26E9-4B1D-9804-0C6E27469D32}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -874,21 +870,9 @@
       ]
      },
      {
-      "Id": "2635547058",
-      "Name": "Play_TempleTrack",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_TempleTrack",
-      "GUID": "{B35224F2-B6DB-4B21-AE36-B4BE9B7566B0}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "567078735"
-       }
-      ]
-     },
-     {
       "Id": "2025845440",
       "Name": "Play_Torch",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Torch",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambient\\Play_Torch",
       "GUID": "{60E7CCF7-F58F-4F24-B61A-B5039D36FAD7}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -921,6 +905,6 @@
     ]
    }
   ],
-  "FileHash": "{BA92C42D-1E8F-7AE4-BBAB-429FAF53693D}"
+  "FileHash": "{30FF3AF6-7AE6-4314-C2CE-7C3DBAF4DA3D}"
  }
 }
