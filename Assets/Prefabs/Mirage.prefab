@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1645441348907473,
-        "VersionUID": 17752940079554875812,
+        "VersionUID": 17437352921765272311,
         "Name": "Mirage",
         "GameObjects": [
             {
@@ -10,11 +10,11 @@
                 "Name": "Mirage",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1645441348907473,
-                "PrefabVersionUID": 17752940079554875812,
+                "PrefabVersionUID": 17437352921765272311,
                 "PrefabChildUID": 13405711659532577537,
                 "LocalTransform": [
                     -29.75345802307129,
@@ -55,10 +55,10 @@
                         "Scripts": [
                             {
                                 "Script Name": "Mirage",
-                                "Enabled": false,
+                                "Enabled": true,
                                 "WasEnabled": true,
-                                "Delay Before Damage": 0.10999999940395355,
-                                "Damage Duration": 0.14000000059604645,
+                                "Delay Before Damage": 0.75,
+                                "Damage Duration": 0.8199999928474426,
                                 "Damage": 1,
                                 "Weight Order": 1,
                                 "Mirage Warning": 0,
@@ -68,40 +68,8 @@
                     }
                 ],
                 "Children": [
-                    13368076767910653717,
                     17954108866912668734
                 ]
-            },
-            {
-                "UID": 13368076767910653717,
-                "ParentUID": 12239315944155540724,
-                "Name": "EndPoint",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 9486086922956563515,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.40866541862487793,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.47412097454071045,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -0.06093597412109375,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
             },
             {
                 "UID": 17954108866912668734,
@@ -110,7 +78,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 5082900086156830298,
                 "LocalTransform": [
@@ -209,7 +177,8 @@
                 ],
                 "Children": [
                     14024629155242911484,
-                    2894991211585461543
+                    2894991211585461543,
+                    8506389895299083794
                 ]
             },
             {
@@ -281,6 +250,37 @@
                     4524568200822091046,
                     16692221887797417717
                 ]
+            },
+            {
+                "UID": 8506389895299083794,
+                "ParentUID": 17954108866912668734,
+                "Name": "EndPoint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9486086922956563515,
+                "LocalTransform": [
+                    -4.6334991455078125,
+                    0.02571074664592743,
+                    -1.9753048419952393,
+                    -3.7713871002197266,
+                    -0.12051114439964294,
+                    0.9996364712715149,
+                    0.05330168828368187,
+                    -0.12963652610778809,
+                    29.639236450195313,
+                    0.008083580993115902,
+                    -0.3085736632347107,
+                    25.317302703857422,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 14613550993599548623,
