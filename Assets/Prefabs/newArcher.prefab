@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1669361420756956,
-        "VersionUID": 3776225711915080178,
+        "VersionUID": 12965902490498652213,
         "Name": "newArcher",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1669361420756956,
-                "PrefabVersionUID": 3776225711915080178,
+                "PrefabVersionUID": 12965902490498652213,
                 "PrefabChildUID": 6466073319997088336,
                 "LocalTransform": [
                     1.0,
@@ -37,7 +37,6 @@
                 "Components": [],
                 "Children": [
                     3050812397856494894,
-                    10571812370159667022,
                     1753829125869887164,
                     9677748981108950107,
                     10299009054379996198,
@@ -104,10 +103,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Arrow Projectile Name": "Arrow_0",
+                                "Arrow Projectile Name": "Arrow_1",
                                 "Escape Range": 8.0,
                                 "Aim Duration": 0.20000000298023224,
-                                "Shot Delay Duration": 0.5,
+                                "Shot Delay Duration": 0.20000000298023224,
                                 "Has Multiple Shoots ": false,
                                 "Number of Shoots": 5,
                                 "Knockback Time": 0.20000000298023224,
@@ -165,136 +164,6 @@
                 ],
                 "Children": [
                     17887112815150931544
-                ]
-            },
-            {
-                "UID": 10571812370159667022,
-                "ParentUID": 684810680777286523,
-                "Name": "Arrow_0",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 2868804070843035874,
-                "LocalTransform": [
-                    0.058867037296295166,
-                    0.0,
-                    0.0,
-                    17.597158432006836,
-                    0.0,
-                    0.05991770327091217,
-                    0.0,
-                    12.744950294494629,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -35.75717544555664,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 11661806963798418408,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1179312278252700,
-                        "Material": 1360362310282613,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 13111233096342534312,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "Projectile",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "Speed": 20.0,
-                                "Range": 20.0,
-                                "Damage": 1
-                            }
-                        ]
-                    },
-                    {
-                        "UID": 0,
-                        "Type": 13,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Capsule Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 5,
-                        "Radius": 0.1899999976158142,
-                        "Length": 0.5,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            0.0,
-                            0.44999998807907104
-                        ],
-                        "CenterRotation": [
-                            1.570796012878418,
-                            0.0,
-                            0.0
-                        ]
-                    },
-                    {
-                        "UID": 15017673083139077345,
-                        "Type": 24,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Trail",
-                        "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.5,
-                        "Cutoff": 0.25,
-                        "UseCurve": true,
-                        "InvertCurve": false,
-                        "Curve": [
-                            0.0,
-                            0.0,
-                            1.0,
-                            0.234375,
-                            0.0
-                        ],
-                        "Texture": 1250412645645100,
-                        "HasTexture": true,
-                        "Color": [
-                            0.9143738746643066,
-                            0.9398048520088196,
-                            0.9562289714813232,
-                            1.0,
-                            0.0,
-                            0.8274438977241516,
-                            0.9160314202308655,
-                            0.9562289714813232,
-                            1.0,
-                            0.4631268382072449,
-                            0.7980478405952454,
-                            0.9121264219284058,
-                            0.9595959782600403,
-                            1.0,
-                            0.7227138876914978,
-                            0.7518053650856018,
-                            0.8895533084869385,
-                            0.9461279511451721,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    16315850259422892800
                 ]
             },
             {
@@ -385,10 +254,10 @@
                         "WasEnabled": true,
                         "Name": "Trail",
                         "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.25,
-                        "Cutoff": 0.10000000149011612,
-                        "UseCurve": true,
+                        "LifeTime": 0.949999988079071,
+                        "Width": 1.0,
+                        "Cutoff": 0.15000000596046448,
+                        "UseCurve": false,
                         "InvertCurve": false,
                         "Curve": [
                             1.0,
@@ -405,9 +274,9 @@
                             0.9562289714813232,
                             1.0,
                             0.0,
-                            0.8248137831687927,
-                            0.9276758432388306,
-                            0.9494949579238892,
+                            0.501960813999176,
+                            0.49999234080314636,
+                            0.49999234080314636,
                             1.0,
                             1.0
                         ]
@@ -503,10 +372,10 @@
                         "WasEnabled": true,
                         "Name": "Trail",
                         "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.25,
-                        "Cutoff": 0.10000000149011612,
-                        "UseCurve": true,
+                        "LifeTime": 0.949999988079071,
+                        "Width": 1.0,
+                        "Cutoff": 0.15000000596046448,
+                        "UseCurve": false,
                         "InvertCurve": false,
                         "Curve": [
                             1.0,
@@ -518,14 +387,14 @@
                         "Texture": 1250412645645100,
                         "HasTexture": true,
                         "Color": [
-                            0.8727680444717407,
-                            0.9341495633125305,
-                            0.9494949579238892,
+                            0.9663693308830261,
+                            0.9696451425552368,
+                            0.9704641103744507,
                             1.0,
                             0.0,
-                            0.9271956086158752,
-                            0.9581567645072937,
-                            0.9730639457702637,
+                            0.48948708176612854,
+                            0.49515923857688904,
+                            0.49789029359817505,
                             1.0,
                             1.0
                         ]
@@ -621,10 +490,10 @@
                         "WasEnabled": true,
                         "Name": "Trail",
                         "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.25,
-                        "Cutoff": 0.10000000149011612,
-                        "UseCurve": true,
+                        "LifeTime": 0.949999988079071,
+                        "Width": 1.0,
+                        "Cutoff": 0.15000000596046448,
+                        "UseCurve": false,
                         "InvertCurve": false,
                         "Curve": [
                             1.0,
@@ -739,10 +608,10 @@
                         "WasEnabled": true,
                         "Name": "Trail",
                         "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.25,
-                        "Cutoff": 0.10000000149011612,
-                        "UseCurve": true,
+                        "LifeTime": 0.949999988079071,
+                        "Width": 1.0,
+                        "Cutoff": 0.15000000596046448,
+                        "UseCurve": false,
                         "InvertCurve": false,
                         "Curve": [
                             0.0,
@@ -759,9 +628,9 @@
                             0.8585858345031738,
                             1.0,
                             0.0,
-                            0.7396863698959351,
-                            0.8608527183532715,
-                            0.9191918969154358,
+                            0.489504873752594,
+                            0.49231693148612976,
+                            0.49367088079452515,
                             1.0,
                             1.0
                         ]
@@ -802,72 +671,6 @@
                     12663755151776466850,
                     11699098432858463121
                 ]
-            },
-            {
-                "UID": 16315850259422892800,
-                "ParentUID": 10571812370159667022,
-                "Name": "Trail",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 16312384748754989439,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.07888078689575195,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 7577287680970959627,
-                        "Type": 24,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Trail",
-                        "MinDistance": 0.5,
-                        "LifeTime": 0.5,
-                        "Width": 0.15000000596046448,
-                        "Cutoff": 0.10000000149011612,
-                        "UseCurve": true,
-                        "InvertCurve": false,
-                        "Curve": [
-                            0.0,
-                            0.0,
-                            1.0,
-                            1.0,
-                            0.0
-                        ],
-                        "Texture": 1250412645645100,
-                        "HasTexture": true,
-                        "Color": [
-                            0.8958333134651184,
-                            0.6802734136581421,
-                            0.03359377011656761,
-                            1.0,
-                            0.0,
-                            0.9291666746139526,
-                            0.5043632388114929,
-                            0.034843772649765015,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 12663755151776466850,
