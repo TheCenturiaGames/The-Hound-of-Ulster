@@ -1,11 +1,11 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 10802685143209090578,
+        "VersionUID": 15416388253783149115,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
-                "UID": 16776525456551453907,
+                "UID": 505130474230277025,
                 "ParentUID": 6788591387451538717,
                 "Name": "CH_Ferdiad_anim",
                 "Mobility": 0,
@@ -14,21 +14,21 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 10802685143209090578,
+                "PrefabVersionUID": 15416388253783149115,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
-                    0.4352349042892456,
+                    -1.1920928955078125e-7,
                     0.0,
-                    -0.9003169536590576,
-                    -13.12564468383789,
+                    -0.9999999403953552,
+                    -7.109129428863525,
                     0.0,
                     1.0,
                     0.0,
-                    0.7672779560089111,
-                    0.9003169536590576,
+                    0.48111486434936523,
+                    0.9999999403953552,
                     0.0,
-                    0.4352349042892456,
-                    -63.35114669799805,
+                    -1.1920928955078125e-7,
+                    -64.26294708251953,
                     0.0,
                     0.0,
                     0.0,
@@ -36,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1320163796690522690,
+                        "UID": 499556598659852068,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -61,14 +61,18 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Phase Start": 2,
                                 "Dash Duration": 0.30000001192092896,
-                                "Height Jump": 0.0,
-                                "Jump Duration": 0.4000000059604645,
-                                "Fall Duration": 0.10000000149011612,
                                 "Close Area Damage": 2,
                                 "Shield Collider": "jnt_shield",
                                 "Close Area": "CloseArea",
-                                "Big Area": "BigArea"
+                                "Big Area": "BigArea",
+                                "Overhead Prepare": "OverheadPrepare",
+                                "Overhead Dash": "OverheadDash",
+                                "Overhead Attack": "OverheadAttack",
+                                "Atom": "ParticleAtom",
+                                "Smoke": "ParticleSmoke",
+                                "Charge Shield": "ParticleChargerShield"
                             }
                         ]
                     },
@@ -97,16 +101,16 @@
                         ]
                     },
                     {
-                        "UID": 17209625412841077140,
+                        "UID": 9613249355130292002,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Animation",
-                        "Animations": 1526733547884199,
+                        "Animations": 1531916660306844,
                         "StateMachine": 1770590789838306
                     },
                     {
-                        "UID": 6818488486593031506,
+                        "UID": 7770980441168334621,
                         "Type": 15,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -119,7 +123,7 @@
                         "isRadians": true
                     },
                     {
-                        "UID": 10015985208619330498,
+                        "UID": 593887738566210752,
                         "Type": 18,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -132,20 +136,25 @@
                     }
                 ],
                 "Children": [
-                    2758611806281858298,
-                    3337343403257978484,
-                    6224244032325613911,
-                    7087962508800691244
+                    7880028035440484043,
+                    16333673249565961715,
+                    10833679993656330213,
+                    18388078997681954651,
+                    17675548157225113757,
+                    14937948762486096436,
+                    2858773952733821599,
+                    8286332347337289473,
+                    13599372597801434478
                 ]
             },
             {
-                "UID": 2758611806281858298,
-                "ParentUID": 16776525456551453907,
+                "UID": 7880028035440484043,
+                "ParentUID": 505130474230277025,
                 "Name": "CH_Ferdiad",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 2923402451295174290,
                 "LocalTransform": [
@@ -170,13 +179,13 @@
                 "Children": []
             },
             {
-                "UID": 3337343403257978484,
-                "ParentUID": 16776525456551453907,
+                "UID": 16333673249565961715,
+                "ParentUID": 505130474230277025,
                 "Name": "jnt_RootBone",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 8068673422873006850,
                 "LocalTransform": [
@@ -199,18 +208,18 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1635359410324629016,
-                    10020681762768732504,
-                    6752357330710516387,
-                    233803444245028630,
-                    2641864817159315825,
-                    4406781688209285496,
-                    12175724164425344309
+                    6036719361761233150,
+                    8379086663225072592,
+                    16156265207744447062,
+                    847950296419142321,
+                    13374453278505151912,
+                    13718685278767416494,
+                    1407564572401722953
                 ]
             },
             {
-                "UID": 6224244032325613911,
-                "ParentUID": 16776525456551453907,
+                "UID": 10833679993656330213,
+                "ParentUID": 505130474230277025,
                 "Name": "CloseArea",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -230,7 +239,7 @@
                     0.0,
                     0.0,
                     10.0,
-                    0.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -238,27 +247,15 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7903176622249884191,
-                        "Type": 1,
-                        "Enabled": true,
+                        "UID": 9993002440300254589,
+                        "Type": 12,
+                        "Enabled": false,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 1326842676146302,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 0,
-                        "Type": 13,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Capsule Collider",
+                        "Name": "Sphere Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 2.25,
-                        "Length": 1.0,
+                        "Radius": 2.5999999046325684,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -276,8 +273,8 @@
                 "Children": []
             },
             {
-                "UID": 7087962508800691244,
-                "ParentUID": 16776525456551453907,
+                "UID": 18388078997681954651,
+                "ParentUID": 505130474230277025,
                 "Name": "BigArea",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -297,7 +294,7 @@
                     0.0,
                     0.0,
                     30.0,
-                    0.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -305,27 +302,15 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6850038925835845835,
-                        "Type": 1,
-                        "Enabled": true,
+                        "UID": 6632152579166668821,
+                        "Type": 12,
+                        "Enabled": false,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 1326842676146302,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 0,
-                        "Type": 13,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Capsule Collider",
+                        "Name": "Sphere Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 6.75,
-                        "Length": 1.0,
+                        "Radius": 5.300000190734863,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -343,8 +328,801 @@
                 "Children": []
             },
             {
-                "UID": 1635359410324629016,
-                "ParentUID": 3337343403257978484,
+                "UID": 17675548157225113757,
+                "ParentUID": 505130474230277025,
+                "Name": "OverheadDash",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13299685907204809589,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    18281749710800155775,
+                    3551686108242625370,
+                    4530483394386305780,
+                    7440249030450826810
+                ]
+            },
+            {
+                "UID": 14937948762486096436,
+                "ParentUID": 505130474230277025,
+                "Name": "OverheadAttack",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12274782855762534988,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    4487320184650535622,
+                    16814450808635033307,
+                    3273946661154252660,
+                    5942799720751957643,
+                    16426747601539610876
+                ]
+            },
+            {
+                "UID": 2858773952733821599,
+                "ParentUID": 505130474230277025,
+                "Name": "ParticleAtom",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2166226772282146441,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    0.0,
+                    1.4210854715202004e-14,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16865676227874755878,
+                        "Type": 25,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "ParticleSystem",
+                        "ParticleSystemTag": "AtomCharger",
+                        "Emitters": [
+                            {
+                                "EmitterTag": "Atom",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1206766985156231,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 1.0,
+                                        "Loop": true,
+                                        "particlesPerSecond": 200,
+                                        "MaxParticles": 20,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 0.5,
+                                        "MaxLifetime": 1.0,
+                                        "randomizeSizeCombined": true,
+                                        "randomizeSizeX": false,
+                                        "randomizeSizeY": false,
+                                        "combinedSize": [
+                                            0.5,
+                                            3.0
+                                        ],
+                                        "sizeValuesX": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesY": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "randomRotation": true,
+                                        "burst": true,
+                                        "respawnLoop": false,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": false,
+                                        "sizeInterpolation": 0,
+                                        "sizeInterpolationX": 0,
+                                        "sizeInterpolationY": 0
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": false,
+                                        "gravityValue": 0.0,
+                                        "XSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "YSpeed": [
+                                            0.5,
+                                            2.200000047683716
+                                        ],
+                                        "ZSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "RandX": false,
+                                        "RandY": false,
+                                        "RandZ": false,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.328000009059906,
+                                            0.640999972820282,
+                                            1.0,
+                                            0.009999999776482582,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 0,
+                                        "speedYInterpolation": 1,
+                                        "speedZInterpoaltion": 0,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 3,
+                                        "Rows": 1,
+                                        "Columns": 1,
+                                        "AnimationSpeed": 0.20000000298023224,
+                                        "MinXTiles": 1,
+                                        "MaxXTiles": 1,
+                                        "MinYTiles": 1,
+                                        "MaxYTiles": 1,
+                                        "RandomizeTiles": false
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            [
+                                                1.0,
+                                                0.33703503012657166,
+                                                0.5443626642227173,
+                                                0.9886363744735718,
+                                                1.0
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 5,
+                                        "currentShape": 0,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 1.0,
+                                        "coneAngle": 35.0,
+                                        "coneLength": 1.0,
+                                        "cubeSize": [
+                                            1.0,
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 0,
+                                "blendingMode": 1,
+                                "colorIntensity": 1.7000000476837158
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8286332347337289473,
+                "ParentUID": 505130474230277025,
+                "Name": "ParticleSmoke",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 18262413274203188928,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    0.0,
+                    1.4210854715202004e-14,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9323870650056296324,
+                        "Type": 25,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "ParticleSystem",
+                        "ParticleSystemTag": "SmokeEnergy",
+                        "Emitters": [
+                            {
+                                "EmitterTag": "Smoke",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1287093177482901,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 1.0,
+                                        "Loop": true,
+                                        "particlesPerSecond": 105,
+                                        "MaxParticles": 80,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 0.0,
+                                        "MaxLifetime": 0.5,
+                                        "randomizeSizeCombined": true,
+                                        "randomizeSizeX": false,
+                                        "randomizeSizeY": false,
+                                        "combinedSize": [
+                                            0.5,
+                                            3.0
+                                        ],
+                                        "sizeValuesX": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesY": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "randomRotation": false,
+                                        "burst": false,
+                                        "respawnLoop": false,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": false,
+                                        "sizeInterpolation": 0,
+                                        "sizeInterpolationX": 0,
+                                        "sizeInterpolationY": 0
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": false,
+                                        "gravityValue": 0.0,
+                                        "XSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "YSpeed": [
+                                            0.20000000298023224,
+                                            2.0
+                                        ],
+                                        "ZSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "RandX": false,
+                                        "RandY": false,
+                                        "RandZ": false,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 0,
+                                        "speedYInterpolation": 1,
+                                        "speedZInterpoaltion": 0,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 3,
+                                        "Rows": 1,
+                                        "Columns": 1,
+                                        "AnimationSpeed": 0.20000000298023224,
+                                        "MinXTiles": 1,
+                                        "MaxXTiles": 1,
+                                        "MinYTiles": 1,
+                                        "MaxYTiles": 1,
+                                        "RandomizeTiles": false
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            [
+                                                0.3733850419521332,
+                                                0.04313725605607033,
+                                                0.11764705926179886,
+                                                0.5607843399047852,
+                                                1.0
+                                            ],
+                                            [
+                                                0.7532299757003784,
+                                                0.18039216101169586,
+                                                0.9137254953384399,
+                                                0.8392156958580017,
+                                                1.0
+                                            ],
+                                            [
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 5,
+                                        "currentShape": 3,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 1.3799999952316284,
+                                        "coneAngle": 19.649999618530273,
+                                        "coneLength": 0.8999999761581421,
+                                        "cubeSize": [
+                                            1.0,
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 0,
+                                "blendingMode": 1,
+                                "colorIntensity": 0.3799999952316284
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13599372597801434478,
+                "ParentUID": 505130474230277025,
+                "Name": "OverheadPrepare",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11773331737793221837,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    14811395190450754574,
+                    1197309780474834974
+                ]
+            },
+            {
+                "UID": 6036719361761233150,
+                "ParentUID": 16333673249565961715,
                 "Name": "CH_Ferdiad.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -372,7 +1150,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6168412993458096059,
+                        "UID": 3317671975256600601,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -381,67 +1159,67 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            4406781688209285496,
-                            2230753989577959355,
-                            261690848367094064,
-                            10086365216887991053,
-                            2296485346243953205,
-                            3410978598531684206,
-                            9270336648473059664,
-                            16416653002041161680,
-                            8325922356944536328,
-                            7370190759102721049,
-                            17181195919224467143,
-                            16144926769849523478,
-                            8594015773895173647,
-                            13089450150881537754,
-                            11810030427332957933,
-                            1191092843386983701,
-                            6695129855079900053,
-                            9701756652612693245,
-                            16142285472471164363,
-                            10754753003656830047,
-                            7566244011459788994,
-                            12063991068254886008,
-                            10257869708990372958,
-                            13114049115822746607,
-                            5877866072702693232,
-                            12643279765879575673,
-                            3072242995668898817,
-                            16288638511853416796,
-                            6719773943678958908,
-                            9232922659189920609,
-                            17652035810853962886,
-                            12338682323347461070,
-                            5492063694325823716,
-                            284245375735253949,
-                            12271491367105397716,
-                            273259199588254279,
-                            5478720397623110940,
-                            3790581232853411580,
-                            6953696493592802485,
-                            6903587131106167014,
-                            2505011823905026871,
-                            17779450713887885708,
-                            15801012430517709837,
-                            16160952458843886846,
-                            9622283630274758710,
-                            7844684992698245679,
-                            12876810896193992668,
-                            18180826835999318405,
-                            4373864894641939354,
-                            12252488075046967596,
-                            15029501528910820329,
-                            12703452704813008849,
-                            6927841204582801526,
-                            4236218925901603494,
-                            16933984752722901116,
-                            7443263596602670885,
-                            16542871402280472371,
-                            12639205038585151955,
-                            12090506865222270138,
-                            12175724164425344309,
-                            13189653353591390659
+                            13718685278767416494,
+                            2748881511814778663,
+                            14125833470927878734,
+                            15032660807741508886,
+                            13727372334537299847,
+                            10747710023593638266,
+                            16704739158705007273,
+                            7002216327341592286,
+                            14688296730799009637,
+                            3998218633577350845,
+                            3255026327733874394,
+                            15237360605080259040,
+                            9209012923118028525,
+                            3975910877555326816,
+                            12903383439189124202,
+                            3130173959691326741,
+                            9998153216078883552,
+                            1196835793085715983,
+                            137236033236690469,
+                            18160387373791270636,
+                            7273892079964275366,
+                            10779210009037788595,
+                            13243803392319841491,
+                            11233142943112971297,
+                            17683259960437160021,
+                            9411153866312041379,
+                            5163487305496866872,
+                            9731935746698008587,
+                            940809870776580739,
+                            3608482293446044990,
+                            7000894405173966838,
+                            12505421209991926360,
+                            18223737201206752069,
+                            13117159276611252352,
+                            13752871607937111435,
+                            3787503645624884363,
+                            9705962326992642459,
+                            17395675756147869626,
+                            4701184302261525410,
+                            4645986420556303272,
+                            10521165238985625490,
+                            747034345217815155,
+                            8816769037352995853,
+                            5954397587466741862,
+                            16561366887829029423,
+                            14883098920507508800,
+                            11435228772393265206,
+                            11847604204874589760,
+                            3291346302393454013,
+                            13242345454923058867,
+                            10237025967842369108,
+                            5388695865464320590,
+                            10120937472304965353,
+                            7827579058968609158,
+                            8064991730111890507,
+                            6409960127269312381,
+                            8618145454512618004,
+                            16548888761887901405,
+                            13668359455010168436,
+                            1407564572401722953,
+                            9232845838159623146
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
@@ -451,8 +1229,8 @@
                 "Children": []
             },
             {
-                "UID": 10020681762768732504,
-                "ParentUID": 3337343403257978484,
+                "UID": 8379086663225072592,
+                "ParentUID": 16333673249565961715,
                 "Name": "CH_Ferdiad_Braid",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -480,7 +1258,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6881670614292019054,
+                        "UID": 17032347781225473359,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -489,67 +1267,67 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            4406781688209285496,
-                            2230753989577959355,
-                            261690848367094064,
-                            10086365216887991053,
-                            2296485346243953205,
-                            3410978598531684206,
-                            9270336648473059664,
-                            16416653002041161680,
-                            8325922356944536328,
-                            7370190759102721049,
-                            17181195919224467143,
-                            16144926769849523478,
-                            8594015773895173647,
-                            13089450150881537754,
-                            11810030427332957933,
-                            1191092843386983701,
-                            6695129855079900053,
-                            9701756652612693245,
-                            16142285472471164363,
-                            10754753003656830047,
-                            7566244011459788994,
-                            12063991068254886008,
-                            10257869708990372958,
-                            13114049115822746607,
-                            5877866072702693232,
-                            12643279765879575673,
-                            3072242995668898817,
-                            16288638511853416796,
-                            6719773943678958908,
-                            9232922659189920609,
-                            17652035810853962886,
-                            12338682323347461070,
-                            5492063694325823716,
-                            284245375735253949,
-                            12271491367105397716,
-                            273259199588254279,
-                            5478720397623110940,
-                            3790581232853411580,
-                            6953696493592802485,
-                            6903587131106167014,
-                            2505011823905026871,
-                            17779450713887885708,
-                            15801012430517709837,
-                            16160952458843886846,
-                            9622283630274758710,
-                            7844684992698245679,
-                            12876810896193992668,
-                            18180826835999318405,
-                            4373864894641939354,
-                            12252488075046967596,
-                            15029501528910820329,
-                            12703452704813008849,
-                            6927841204582801526,
-                            4236218925901603494,
-                            16933984752722901116,
-                            7443263596602670885,
-                            16542871402280472371,
-                            12639205038585151955,
-                            12090506865222270138,
-                            12175724164425344309,
-                            13189653353591390659
+                            13718685278767416494,
+                            2748881511814778663,
+                            14125833470927878734,
+                            15032660807741508886,
+                            13727372334537299847,
+                            10747710023593638266,
+                            16704739158705007273,
+                            7002216327341592286,
+                            14688296730799009637,
+                            3998218633577350845,
+                            3255026327733874394,
+                            15237360605080259040,
+                            9209012923118028525,
+                            3975910877555326816,
+                            12903383439189124202,
+                            3130173959691326741,
+                            9998153216078883552,
+                            1196835793085715983,
+                            137236033236690469,
+                            18160387373791270636,
+                            7273892079964275366,
+                            10779210009037788595,
+                            13243803392319841491,
+                            11233142943112971297,
+                            17683259960437160021,
+                            9411153866312041379,
+                            5163487305496866872,
+                            9731935746698008587,
+                            940809870776580739,
+                            3608482293446044990,
+                            7000894405173966838,
+                            12505421209991926360,
+                            18223737201206752069,
+                            13117159276611252352,
+                            13752871607937111435,
+                            3787503645624884363,
+                            9705962326992642459,
+                            17395675756147869626,
+                            4701184302261525410,
+                            4645986420556303272,
+                            10521165238985625490,
+                            747034345217815155,
+                            8816769037352995853,
+                            5954397587466741862,
+                            16561366887829029423,
+                            14883098920507508800,
+                            11435228772393265206,
+                            11847604204874589760,
+                            3291346302393454013,
+                            13242345454923058867,
+                            10237025967842369108,
+                            5388695865464320590,
+                            10120937472304965353,
+                            7827579058968609158,
+                            8064991730111890507,
+                            6409960127269312381,
+                            8618145454512618004,
+                            16548888761887901405,
+                            13668359455010168436,
+                            1407564572401722953,
+                            9232845838159623146
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
@@ -559,8 +1337,8 @@
                 "Children": []
             },
             {
-                "UID": 6752357330710516387,
-                "ParentUID": 3337343403257978484,
+                "UID": 16156265207744447062,
+                "ParentUID": 16333673249565961715,
                 "Name": "Spear_Bones",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -590,8 +1368,8 @@
                 "Children": []
             },
             {
-                "UID": 233803444245028630,
-                "ParentUID": 3337343403257978484,
+                "UID": 847950296419142321,
+                "ParentUID": 16333673249565961715,
                 "Name": "transform1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -621,8 +1399,8 @@
                 "Children": []
             },
             {
-                "UID": 2641864817159315825,
-                "ParentUID": 3337343403257978484,
+                "UID": 13374453278505151912,
+                "ParentUID": 16333673249565961715,
                 "Name": "WP_Shield",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -650,7 +1428,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12939684257983984381,
+                        "UID": 9696823703926346855,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -659,67 +1437,67 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            4406781688209285496,
-                            2230753989577959355,
-                            261690848367094064,
-                            10086365216887991053,
-                            2296485346243953205,
-                            3410978598531684206,
-                            9270336648473059664,
-                            16416653002041161680,
-                            8325922356944536328,
-                            7370190759102721049,
-                            17181195919224467143,
-                            16144926769849523478,
-                            8594015773895173647,
-                            13089450150881537754,
-                            11810030427332957933,
-                            1191092843386983701,
-                            6695129855079900053,
-                            9701756652612693245,
-                            16142285472471164363,
-                            10754753003656830047,
-                            7566244011459788994,
-                            12063991068254886008,
-                            10257869708990372958,
-                            13114049115822746607,
-                            5877866072702693232,
-                            12643279765879575673,
-                            3072242995668898817,
-                            16288638511853416796,
-                            6719773943678958908,
-                            9232922659189920609,
-                            17652035810853962886,
-                            12338682323347461070,
-                            5492063694325823716,
-                            284245375735253949,
-                            12271491367105397716,
-                            273259199588254279,
-                            5478720397623110940,
-                            3790581232853411580,
-                            6953696493592802485,
-                            6903587131106167014,
-                            2505011823905026871,
-                            17779450713887885708,
-                            15801012430517709837,
-                            16160952458843886846,
-                            9622283630274758710,
-                            7844684992698245679,
-                            12876810896193992668,
-                            18180826835999318405,
-                            4373864894641939354,
-                            12252488075046967596,
-                            15029501528910820329,
-                            12703452704813008849,
-                            6927841204582801526,
-                            4236218925901603494,
-                            16933984752722901116,
-                            7443263596602670885,
-                            16542871402280472371,
-                            12639205038585151955,
-                            12090506865222270138,
-                            12175724164425344309,
-                            13189653353591390659
+                            13718685278767416494,
+                            2748881511814778663,
+                            14125833470927878734,
+                            15032660807741508886,
+                            13727372334537299847,
+                            10747710023593638266,
+                            16704739158705007273,
+                            7002216327341592286,
+                            14688296730799009637,
+                            3998218633577350845,
+                            3255026327733874394,
+                            15237360605080259040,
+                            9209012923118028525,
+                            3975910877555326816,
+                            12903383439189124202,
+                            3130173959691326741,
+                            9998153216078883552,
+                            1196835793085715983,
+                            137236033236690469,
+                            18160387373791270636,
+                            7273892079964275366,
+                            10779210009037788595,
+                            13243803392319841491,
+                            11233142943112971297,
+                            17683259960437160021,
+                            9411153866312041379,
+                            5163487305496866872,
+                            9731935746698008587,
+                            940809870776580739,
+                            3608482293446044990,
+                            7000894405173966838,
+                            12505421209991926360,
+                            18223737201206752069,
+                            13117159276611252352,
+                            13752871607937111435,
+                            3787503645624884363,
+                            9705962326992642459,
+                            17395675756147869626,
+                            4701184302261525410,
+                            4645986420556303272,
+                            10521165238985625490,
+                            747034345217815155,
+                            8816769037352995853,
+                            5954397587466741862,
+                            16561366887829029423,
+                            14883098920507508800,
+                            11435228772393265206,
+                            11847604204874589760,
+                            3291346302393454013,
+                            13242345454923058867,
+                            10237025967842369108,
+                            5388695865464320590,
+                            10120937472304965353,
+                            7827579058968609158,
+                            8064991730111890507,
+                            6409960127269312381,
+                            8618145454512618004,
+                            16548888761887901405,
+                            13668359455010168436,
+                            1407564572401722953,
+                            9232845838159623146
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
@@ -729,8 +1507,8 @@
                 "Children": []
             },
             {
-                "UID": 4406781688209285496,
-                "ParentUID": 3337343403257978484,
+                "UID": 13718685278767416494,
+                "ParentUID": 16333673249565961715,
                 "Name": "jnt_pelvis",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -758,16 +1536,16 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2230753989577959355,
-                    3410978598531684206,
-                    9270336648473059664,
-                    16144926769849523478,
-                    6695129855079900053
+                    2748881511814778663,
+                    10747710023593638266,
+                    16704739158705007273,
+                    15237360605080259040,
+                    9998153216078883552
                 ]
             },
             {
-                "UID": 12175724164425344309,
-                "ParentUID": 3337343403257978484,
+                "UID": 1407564572401722953,
+                "ParentUID": 16333673249565961715,
                 "Name": "jnt_shield",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -820,12 +1598,711 @@
                     }
                 ],
                 "Children": [
-                    13189653353591390659
+                    9232845838159623146,
+                    1097441186911107493
                 ]
             },
             {
-                "UID": 2230753989577959355,
-                "ParentUID": 4406781688209285496,
+                "UID": 18281749710800155775,
+                "ParentUID": 17675548157225113757,
+                "Name": "Dash_Energy_Ground",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12151966949409411813,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5944591580088889351,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1145675244430200,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 3551686108242625370,
+                "ParentUID": 17675548157225113757,
+                "Name": "Dash_Energy",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14403426581813382717,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11036135900497610132,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1157683921817003,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4530483394386305780,
+                "ParentUID": 17675548157225113757,
+                "Name": "Lights_Shield",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14332697481534112615,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5614651194910668127,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1153157011129301,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 14599232843777432039,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 2.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 7440249030450826810,
+                "ParentUID": 17675548157225113757,
+                "Name": "Shield_Expansion",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14387579553469795039,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 143344984506444148,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1156647636514039,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 9785328050718316499,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 2.799999952316284,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.699999988079071
+                                ],
+                                "Double sided": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4487320184650535622,
+                "ParentUID": 14937948762486096436,
+                "Name": "Cyl_Explosion",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13395928669257563229,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -0.30000001192092896,
+                    0.0,
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 652618962457366433,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1122065165613662,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 15859676870879773465,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 2.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16814450808635033307,
+                "ParentUID": 14937948762486096436,
+                "Name": "Cyl_Energy",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9214165356780907450,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.000213623046875,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18274169778106572162,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1166451252713038,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 13108671652290605681,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.6000000238418579,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 3273946661154252660,
+                "ParentUID": 14937948762486096436,
+                "Name": "Lightings",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15237224564080880361,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.000232696533203125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.30000001192092896,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4719013760730191327,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1146190229539334,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 6319605169330353766,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.2999999523162842,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.4000000059604645,
+                                    0.4000000059604645
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5942799720751957643,
+                "ParentUID": 14937948762486096436,
+                "Name": "Expansion_B",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2369588296247728128,
+                "LocalTransform": [
+                    1.0000004768371582,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.1767398715019226,
+                    0.0,
+                    0.0,
+                    1.0000004768371582,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7863680807097333683,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1121006613066598,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 11251833887201616805,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.800000011920929,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.800000011920929
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.30000001192092896
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16426747601539610876,
+                "ParentUID": 14937948762486096436,
+                "Name": "Expansion_S",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13526904514384648235,
+                "LocalTransform": [
+                    1.0,
+                    -0.0,
+                    -1.4210854715202004e-14,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -0.0,
+                    0.17080086469650269,
+                    1.4210854715202004e-14,
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13841757568759295771,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1143509125169573,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 1971004162884887491,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.2999999523162842,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.8999999761581421
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    -0.6000000238418579
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14811395190450754574,
+                "ParentUID": 13599372597801434478,
+                "Name": "Cyl_Charger",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3159845496378979820,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.10000000149011612,
+                    0.0,
+                    0.0,
+                    0.9999998807907104,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6852512042453576361,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1154809900744196,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 5222410560488651243,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.6000000238418579,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.800000011920929
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1197309780474834974,
+                "ParentUID": 13599372597801434478,
+                "Name": "Cyl_Charger_Lights",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10998545496868072598,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.15000000596046448,
+                    0.0,
+                    0.0,
+                    0.9999998807907104,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5388924971323616825,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1163058625637811,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 2188559808891463932,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.5,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.800000011920929
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2748881511814778663,
+                "ParentUID": 13718685278767416494,
                 "Name": "jnt_cloth_front",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -853,12 +2330,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    261690848367094064
+                    14125833470927878734
                 ]
             },
             {
-                "UID": 3410978598531684206,
-                "ParentUID": 4406781688209285496,
+                "UID": 10747710023593638266,
+                "ParentUID": 13718685278767416494,
                 "Name": "jnt_knife",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -888,8 +2365,8 @@
                 "Children": []
             },
             {
-                "UID": 9270336648473059664,
-                "ParentUID": 4406781688209285496,
+                "UID": 16704739158705007273,
+                "ParentUID": 13718685278767416494,
                 "Name": "jnt_leg_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -917,12 +2394,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16416653002041161680
+                    7002216327341592286
                 ]
             },
             {
-                "UID": 16144926769849523478,
-                "ParentUID": 4406781688209285496,
+                "UID": 15237360605080259040,
+                "ParentUID": 13718685278767416494,
                 "Name": "jnt_leg_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -950,12 +2427,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8594015773895173647
+                    9209012923118028525
                 ]
             },
             {
-                "UID": 6695129855079900053,
-                "ParentUID": 4406781688209285496,
+                "UID": 9998153216078883552,
+                "ParentUID": 13718685278767416494,
                 "Name": "jnt_spine_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -983,12 +2460,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9701756652612693245
+                    1196835793085715983
                 ]
             },
             {
-                "UID": 13189653353591390659,
-                "ParentUID": 12175724164425344309,
+                "UID": 9232845838159623146,
+                "ParentUID": 1407564572401722953,
                 "Name": "joint1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1018,8 +2495,337 @@
                 "Children": []
             },
             {
-                "UID": 261690848367094064,
-                "ParentUID": 2230753989577959355,
+                "UID": 1097441186911107493,
+                "ParentUID": 1407564572401722953,
+                "Name": "ParticleChargerShield",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10913291913193123611,
+                "LocalTransform": [
+                    1.0,
+                    -2.5331974029541016e-7,
+                    0.000005900805717828916,
+                    -0.0001220703125,
+                    2.533157612560899e-7,
+                    1.0,
+                    6.761404165445128e-7,
+                    0.20000000298023224,
+                    -0.000005900819814996794,
+                    -6.761405302313506e-7,
+                    0.999997615814209,
+                    0.20000000298023224,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11264863762175315719,
+                        "Type": 25,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "ParticleSystem",
+                        "ParticleSystemTag": "ChargerShield",
+                        "Emitters": [
+                            {
+                                "EmitterTag": "Charger",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1298027847005657,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 0.20000000298023224,
+                                        "Loop": true,
+                                        "particlesPerSecond": 50,
+                                        "MaxParticles": 1,
+                                        "RandomLifetime": false,
+                                        "MinLifetime": 0.5,
+                                        "MaxLifetime": 0.6000000238418579,
+                                        "randomizeSizeCombined": false,
+                                        "randomizeSizeX": false,
+                                        "randomizeSizeY": false,
+                                        "combinedSize": [
+                                            0.5,
+                                            1.5
+                                        ],
+                                        "sizeValuesX": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesY": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "randomRotation": false,
+                                        "burst": false,
+                                        "respawnLoop": false,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": false,
+                                        "sizeInterpolation": 1,
+                                        "sizeInterpolationX": 0,
+                                        "sizeInterpolationY": 0
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": false,
+                                        "gravityValue": 0.0,
+                                        "XSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "YSpeed": [
+                                            0.20000000298023224,
+                                            0.0
+                                        ],
+                                        "ZSpeed": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "RandX": false,
+                                        "RandY": false,
+                                        "RandZ": false,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 0,
+                                        "speedYInterpolation": 0,
+                                        "speedZInterpoaltion": 0,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 3,
+                                        "Rows": 1,
+                                        "Columns": 1,
+                                        "AnimationSpeed": 1.0,
+                                        "MinXTiles": 1,
+                                        "MaxXTiles": 1,
+                                        "MinYTiles": 1,
+                                        "MaxYTiles": 1,
+                                        "RandomizeTiles": false
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.12273906171321869,
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            [
+                                                0.5206719040870667,
+                                                0.19369837641716003,
+                                                0.470598965883255,
+                                                0.8522727489471436,
+                                                1.0
+                                            ],
+                                            [
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ]
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 0,
+                                "blendingMode": 1,
+                                "colorIntensity": 1.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14125833470927878734,
+                "ParentUID": 2748881511814778663,
                 "Name": "jnt_cloth_Center_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1047,12 +2853,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10086365216887991053
+                    15032660807741508886
                 ]
             },
             {
-                "UID": 16416653002041161680,
-                "ParentUID": 9270336648473059664,
+                "UID": 7002216327341592286,
+                "ParentUID": 16704739158705007273,
                 "Name": "jnt_leg_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1080,13 +2886,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8325922356944536328,
-                    7370190759102721049
+                    14688296730799009637,
+                    3998218633577350845
                 ]
             },
             {
-                "UID": 8594015773895173647,
-                "ParentUID": 16144926769849523478,
+                "UID": 9209012923118028525,
+                "ParentUID": 15237360605080259040,
                 "Name": "jnt_leg_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1114,13 +2920,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13089450150881537754,
-                    11810030427332957933
+                    3975910877555326816,
+                    12903383439189124202
                 ]
             },
             {
-                "UID": 9701756652612693245,
-                "ParentUID": 6695129855079900053,
+                "UID": 1196835793085715983,
+                "ParentUID": 9998153216078883552,
                 "Name": "jnt_spine_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1148,12 +2954,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16142285472471164363
+                    137236033236690469
                 ]
             },
             {
-                "UID": 10086365216887991053,
-                "ParentUID": 261690848367094064,
+                "UID": 15032660807741508886,
+                "ParentUID": 14125833470927878734,
                 "Name": "jnt_cloth_Center_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1181,12 +2987,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2296485346243953205
+                    13727372334537299847
                 ]
             },
             {
-                "UID": 8325922356944536328,
-                "ParentUID": 16416653002041161680,
+                "UID": 14688296730799009637,
+                "ParentUID": 7002216327341592286,
                 "Name": "jnt_knee_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1216,8 +3022,8 @@
                 "Children": []
             },
             {
-                "UID": 7370190759102721049,
-                "ParentUID": 16416653002041161680,
+                "UID": 3998218633577350845,
+                "ParentUID": 7002216327341592286,
                 "Name": "jnt_leg_L_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1245,12 +3051,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17181195919224467143
+                    3255026327733874394
                 ]
             },
             {
-                "UID": 13089450150881537754,
-                "ParentUID": 8594015773895173647,
+                "UID": 3975910877555326816,
+                "ParentUID": 9209012923118028525,
                 "Name": "jnt_knee_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1280,8 +3086,8 @@
                 "Children": []
             },
             {
-                "UID": 11810030427332957933,
-                "ParentUID": 8594015773895173647,
+                "UID": 12903383439189124202,
+                "ParentUID": 9209012923118028525,
                 "Name": "jnt_leg_R_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1309,12 +3115,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1191092843386983701
+                    3130173959691326741
                 ]
             },
             {
-                "UID": 16142285472471164363,
-                "ParentUID": 9701756652612693245,
+                "UID": 137236033236690469,
+                "ParentUID": 1196835793085715983,
                 "Name": "jnt_spine_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1342,14 +3148,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10754753003656830047,
-                    12271491367105397716,
-                    12252488075046967596
+                    18160387373791270636,
+                    13752871607937111435,
+                    13242345454923058867
                 ]
             },
             {
-                "UID": 2296485346243953205,
-                "ParentUID": 10086365216887991053,
+                "UID": 13727372334537299847,
+                "ParentUID": 15032660807741508886,
                 "Name": "jnt_cloth_Center_03",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1379,8 +3185,8 @@
                 "Children": []
             },
             {
-                "UID": 17181195919224467143,
-                "ParentUID": 7370190759102721049,
+                "UID": 3255026327733874394,
+                "ParentUID": 3998218633577350845,
                 "Name": "jnt_foot_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1410,8 +3216,8 @@
                 "Children": []
             },
             {
-                "UID": 1191092843386983701,
-                "ParentUID": 11810030427332957933,
+                "UID": 3130173959691326741,
+                "ParentUID": 12903383439189124202,
                 "Name": "jnt_foot_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1441,8 +3247,8 @@
                 "Children": []
             },
             {
-                "UID": 10754753003656830047,
-                "ParentUID": 16142285472471164363,
+                "UID": 18160387373791270636,
+                "ParentUID": 137236033236690469,
                 "Name": "jnt_clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1470,13 +3276,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7566244011459788994,
-                    284245375735253949
+                    7273892079964275366,
+                    13117159276611252352
                 ]
             },
             {
-                "UID": 12271491367105397716,
-                "ParentUID": 16142285472471164363,
+                "UID": 13752871607937111435,
+                "ParentUID": 137236033236690469,
                 "Name": "jnt_clavicle_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1504,13 +3310,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    273259199588254279,
-                    4373864894641939354
+                    3787503645624884363,
+                    3291346302393454013
                 ]
             },
             {
-                "UID": 12252488075046967596,
-                "ParentUID": 16142285472471164363,
+                "UID": 13242345454923058867,
+                "ParentUID": 137236033236690469,
                 "Name": "jnt_Neck_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1538,12 +3344,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15029501528910820329
+                    10237025967842369108
                 ]
             },
             {
-                "UID": 7566244011459788994,
-                "ParentUID": 10754753003656830047,
+                "UID": 7273892079964275366,
+                "ParentUID": 18160387373791270636,
                 "Name": "jnt_arm_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1571,12 +3377,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12063991068254886008
+                    10779210009037788595
                 ]
             },
             {
-                "UID": 284245375735253949,
-                "ParentUID": 10754753003656830047,
+                "UID": 13117159276611252352,
+                "ParentUID": 18160387373791270636,
                 "Name": "jnt_shoulder_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1606,8 +3412,8 @@
                 "Children": []
             },
             {
-                "UID": 273259199588254279,
-                "ParentUID": 12271491367105397716,
+                "UID": 3787503645624884363,
+                "ParentUID": 13752871607937111435,
                 "Name": "jnt_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1635,12 +3441,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5478720397623110940
+                    9705962326992642459
                 ]
             },
             {
-                "UID": 4373864894641939354,
-                "ParentUID": 12271491367105397716,
+                "UID": 3291346302393454013,
+                "ParentUID": 13752871607937111435,
                 "Name": "jnt_shoulder_L.001",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1670,8 +3476,8 @@
                 "Children": []
             },
             {
-                "UID": 15029501528910820329,
-                "ParentUID": 12252488075046967596,
+                "UID": 10237025967842369108,
+                "ParentUID": 13242345454923058867,
                 "Name": "jnt_Head_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1699,14 +3505,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12703452704813008849,
-                    12639205038585151955,
-                    12090506865222270138
+                    5388695865464320590,
+                    16548888761887901405,
+                    13668359455010168436
                 ]
             },
             {
-                "UID": 12063991068254886008,
-                "ParentUID": 7566244011459788994,
+                "UID": 10779210009037788595,
+                "ParentUID": 7273892079964275366,
                 "Name": "jnt_arm_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1734,12 +3540,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10257869708990372958
+                    13243803392319841491
                 ]
             },
             {
-                "UID": 5478720397623110940,
-                "ParentUID": 273259199588254279,
+                "UID": 9705962326992642459,
+                "ParentUID": 3787503645624884363,
                 "Name": "jnt_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1767,12 +3573,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3790581232853411580
+                    17395675756147869626
                 ]
             },
             {
-                "UID": 12703452704813008849,
-                "ParentUID": 15029501528910820329,
+                "UID": 5388695865464320590,
+                "ParentUID": 10237025967842369108,
                 "Name": "jnt_braid_1",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1800,12 +3606,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6927841204582801526
+                    10120937472304965353
                 ]
             },
             {
-                "UID": 12639205038585151955,
-                "ParentUID": 15029501528910820329,
+                "UID": 16548888761887901405,
+                "ParentUID": 10237025967842369108,
                 "Name": "jnt_Eye_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1835,8 +3641,8 @@
                 "Children": []
             },
             {
-                "UID": 12090506865222270138,
-                "ParentUID": 15029501528910820329,
+                "UID": 13668359455010168436,
+                "ParentUID": 10237025967842369108,
                 "Name": "jnt_Eye_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1866,8 +3672,8 @@
                 "Children": []
             },
             {
-                "UID": 10257869708990372958,
-                "ParentUID": 12063991068254886008,
+                "UID": 13243803392319841491,
+                "ParentUID": 10779210009037788595,
                 "Name": "jnt_wrist_L",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1895,16 +3701,16 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13114049115822746607,
-                    12643279765879575673,
-                    16288638511853416796,
-                    9232922659189920609,
-                    12338682323347461070
+                    11233142943112971297,
+                    9411153866312041379,
+                    9731935746698008587,
+                    3608482293446044990,
+                    12505421209991926360
                 ]
             },
             {
-                "UID": 3790581232853411580,
-                "ParentUID": 5478720397623110940,
+                "UID": 17395675756147869626,
+                "ParentUID": 9705962326992642459,
                 "Name": "jnt_wrist_R",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1932,16 +3738,16 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6953696493592802485,
-                    2505011823905026871,
-                    15801012430517709837,
-                    9622283630274758710,
-                    12876810896193992668
+                    4701184302261525410,
+                    10521165238985625490,
+                    8816769037352995853,
+                    16561366887829029423,
+                    11435228772393265206
                 ]
             },
             {
-                "UID": 6927841204582801526,
-                "ParentUID": 12703452704813008849,
+                "UID": 10120937472304965353,
+                "ParentUID": 5388695865464320590,
                 "Name": "jnt_braid_2",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -1969,12 +3775,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4236218925901603494
+                    7827579058968609158
                 ]
             },
             {
-                "UID": 13114049115822746607,
-                "ParentUID": 10257869708990372958,
+                "UID": 11233142943112971297,
+                "ParentUID": 13243803392319841491,
                 "Name": "jnt_Index_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2002,12 +3808,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5877866072702693232
+                    17683259960437160021
                 ]
             },
             {
-                "UID": 12643279765879575673,
-                "ParentUID": 10257869708990372958,
+                "UID": 9411153866312041379,
+                "ParentUID": 13243803392319841491,
                 "Name": "jnt_Ling_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2035,12 +3841,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3072242995668898817
+                    5163487305496866872
                 ]
             },
             {
-                "UID": 16288638511853416796,
-                "ParentUID": 10257869708990372958,
+                "UID": 9731935746698008587,
+                "ParentUID": 13243803392319841491,
                 "Name": "jnt_Mid_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2068,12 +3874,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6719773943678958908
+                    940809870776580739
                 ]
             },
             {
-                "UID": 9232922659189920609,
-                "ParentUID": 10257869708990372958,
+                "UID": 3608482293446044990,
+                "ParentUID": 13243803392319841491,
                 "Name": "jnt_Pink_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2101,12 +3907,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17652035810853962886
+                    7000894405173966838
                 ]
             },
             {
-                "UID": 12338682323347461070,
-                "ParentUID": 10257869708990372958,
+                "UID": 12505421209991926360,
+                "ParentUID": 13243803392319841491,
                 "Name": "jnt_Thumb_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2134,12 +3940,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5492063694325823716
+                    18223737201206752069
                 ]
             },
             {
-                "UID": 6953696493592802485,
-                "ParentUID": 3790581232853411580,
+                "UID": 4701184302261525410,
+                "ParentUID": 17395675756147869626,
                 "Name": "jnt_Index_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2167,12 +3973,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6903587131106167014
+                    4645986420556303272
                 ]
             },
             {
-                "UID": 2505011823905026871,
-                "ParentUID": 3790581232853411580,
+                "UID": 10521165238985625490,
+                "ParentUID": 17395675756147869626,
                 "Name": "jnt_Mid_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2200,12 +4006,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17779450713887885708
+                    747034345217815155
                 ]
             },
             {
-                "UID": 15801012430517709837,
-                "ParentUID": 3790581232853411580,
+                "UID": 8816769037352995853,
+                "ParentUID": 17395675756147869626,
                 "Name": "jnt_Pink_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2233,12 +4039,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16160952458843886846
+                    5954397587466741862
                 ]
             },
             {
-                "UID": 9622283630274758710,
-                "ParentUID": 3790581232853411580,
+                "UID": 16561366887829029423,
+                "ParentUID": 17395675756147869626,
                 "Name": "jnt_Ring_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2266,12 +4072,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7844684992698245679
+                    14883098920507508800
                 ]
             },
             {
-                "UID": 12876810896193992668,
-                "ParentUID": 3790581232853411580,
+                "UID": 11435228772393265206,
+                "ParentUID": 17395675756147869626,
                 "Name": "jnt_Thumb_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2299,12 +4105,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18180826835999318405
+                    11847604204874589760
                 ]
             },
             {
-                "UID": 4236218925901603494,
-                "ParentUID": 6927841204582801526,
+                "UID": 7827579058968609158,
+                "ParentUID": 10120937472304965353,
                 "Name": "jnt_braid_3",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2332,12 +4138,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16933984752722901116
+                    8064991730111890507
                 ]
             },
             {
-                "UID": 5877866072702693232,
-                "ParentUID": 13114049115822746607,
+                "UID": 17683259960437160021,
+                "ParentUID": 11233142943112971297,
                 "Name": "jnt_Index_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2367,8 +4173,8 @@
                 "Children": []
             },
             {
-                "UID": 3072242995668898817,
-                "ParentUID": 12643279765879575673,
+                "UID": 5163487305496866872,
+                "ParentUID": 9411153866312041379,
                 "Name": "jnt_Ling_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2398,8 +4204,8 @@
                 "Children": []
             },
             {
-                "UID": 6719773943678958908,
-                "ParentUID": 16288638511853416796,
+                "UID": 940809870776580739,
+                "ParentUID": 9731935746698008587,
                 "Name": "jnt_Mid_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2429,8 +4235,8 @@
                 "Children": []
             },
             {
-                "UID": 17652035810853962886,
-                "ParentUID": 9232922659189920609,
+                "UID": 7000894405173966838,
+                "ParentUID": 3608482293446044990,
                 "Name": "jnt_Pink_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2460,8 +4266,8 @@
                 "Children": []
             },
             {
-                "UID": 5492063694325823716,
-                "ParentUID": 12338682323347461070,
+                "UID": 18223737201206752069,
+                "ParentUID": 12505421209991926360,
                 "Name": "jnt_Thumb_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2491,8 +4297,8 @@
                 "Children": []
             },
             {
-                "UID": 6903587131106167014,
-                "ParentUID": 6953696493592802485,
+                "UID": 4645986420556303272,
+                "ParentUID": 4701184302261525410,
                 "Name": "jnt_Index_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2522,8 +4328,8 @@
                 "Children": []
             },
             {
-                "UID": 17779450713887885708,
-                "ParentUID": 2505011823905026871,
+                "UID": 747034345217815155,
+                "ParentUID": 10521165238985625490,
                 "Name": "jnt_Mid_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2553,8 +4359,8 @@
                 "Children": []
             },
             {
-                "UID": 16160952458843886846,
-                "ParentUID": 15801012430517709837,
+                "UID": 5954397587466741862,
+                "ParentUID": 8816769037352995853,
                 "Name": "jnt_Pink_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2584,8 +4390,8 @@
                 "Children": []
             },
             {
-                "UID": 7844684992698245679,
-                "ParentUID": 9622283630274758710,
+                "UID": 14883098920507508800,
+                "ParentUID": 16561366887829029423,
                 "Name": "jnt_Ring_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2615,8 +4421,8 @@
                 "Children": []
             },
             {
-                "UID": 18180826835999318405,
-                "ParentUID": 12876810896193992668,
+                "UID": 11847604204874589760,
+                "ParentUID": 11435228772393265206,
                 "Name": "jnt_Thumb_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2646,8 +4452,8 @@
                 "Children": []
             },
             {
-                "UID": 16933984752722901116,
-                "ParentUID": 4236218925901603494,
+                "UID": 8064991730111890507,
+                "ParentUID": 7827579058968609158,
                 "Name": "jnt_braid_4",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2675,12 +4481,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7443263596602670885
+                    6409960127269312381
                 ]
             },
             {
-                "UID": 7443263596602670885,
-                "ParentUID": 16933984752722901116,
+                "UID": 6409960127269312381,
+                "ParentUID": 8064991730111890507,
                 "Name": "jnt_braid_5",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -2708,12 +4514,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16542871402280472371
+                    8618145454512618004
                 ]
             },
             {
-                "UID": 16542871402280472371,
-                "ParentUID": 7443263596602670885,
+                "UID": 8618145454512618004,
+                "ParentUID": 6409960127269312381,
                 "Name": "jnt_braid_end",
                 "Mobility": 0,
                 "SelectParent": true,

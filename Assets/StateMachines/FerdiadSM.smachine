@@ -17,7 +17,9 @@
             "Run",
             "Start",
             "Charge",
-            "End"
+            "End",
+            "BlastCharge",
+            "BlastHit"
         ],
         "Clips": [
             {
@@ -199,6 +201,30 @@
                 "ClipName": "CH_Ferdiad_ChargeShield_end",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_30",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1510939002137095,
+                "ClipName": "CH_Ferdiad_Shield_Blast_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_32",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1504397673479502,
+                "ClipName": "CH_Ferdiad_Shield_Blast_Hit",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -208,7 +234,8 @@
                 "Position": {
                     "x": -50.0,
                     "y": 30.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Combo1",
@@ -216,7 +243,8 @@
                 "Position": {
                     "x": 190.0,
                     "y": 160.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Combo2",
@@ -224,7 +252,8 @@
                 "Position": {
                     "x": 190.0,
                     "y": 240.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Combo3",
@@ -232,7 +261,8 @@
                 "Position": {
                     "x": 190.0,
                     "y": 320.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Prepare",
@@ -240,7 +270,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 160.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Jump",
@@ -248,7 +279,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 230.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Dash",
@@ -256,7 +288,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 310.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Land",
@@ -264,7 +297,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 390.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Attack",
@@ -272,7 +306,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 480.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Overhead_Recover",
@@ -280,7 +315,8 @@
                 "Position": {
                     "x": -330.0,
                     "y": 560.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Taunt",
@@ -288,7 +324,8 @@
                 "Position": {
                     "x": -50.0,
                     "y": -70.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Run",
@@ -296,7 +333,8 @@
                 "Position": {
                     "x": 360.0,
                     "y": 0.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "ChargeShield_Start",
@@ -304,7 +342,8 @@
                 "Position": {
                     "x": -570.0,
                     "y": -250.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "ChargeShield_Charge",
@@ -312,7 +351,8 @@
                 "Position": {
                     "x": -570.0,
                     "y": -170.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "ChargeShield_End",
@@ -320,7 +360,26 @@
                 "Position": {
                     "x": -570.0,
                     "y": -90.0
-                }
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "ShieldBlast_Charge",
+                "ClipName": "CH_Ferdiad_Shield_Blast_Charge",
+                "Position": {
+                    "x": -70.0,
+                    "y": -340.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "ShieldBlast_Hit",
+                "ClipName": "CH_Ferdiad_Shield_Blast_Hit",
+                "Position": {
+                    "x": -70.0,
+                    "y": -260.0
+                },
+                "Triggers": []
             }
         ],
         "Transitions": [
@@ -590,6 +649,102 @@
             },
             {
                 "FromState": "Combo3",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Charge",
+                "ToState": "ShieldBlast_Hit",
+                "Trigger": "BlastHit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
                 "ToState": "Overhead_Prepare",
                 "Trigger": "Prepare",
                 "InterpolationTime": 200
