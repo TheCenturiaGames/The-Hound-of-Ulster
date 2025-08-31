@@ -1,0 +1,778 @@
+{
+    "Prefab": {
+        "UID": 1644949622024051,
+        "VersionUID": 8641899164778356608,
+        "Name": "Spouts",
+        "GameObjects": [
+            {
+                "UID": 8685397786832225288,
+                "ParentUID": 8823869308913623498,
+                "Name": "Spouts",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1644949622024051,
+                "PrefabVersionUID": 8641899164778356608,
+                "PrefabChildUID": 12170037548430815399,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -29.193681716918945,
+                    0.0,
+                    1.0,
+                    0.0,
+                    6.715296745300293,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -18.511104583740234,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14137524531353757639,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Spouts",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Enable Rune": false,
+                                "Activation Range": 10.0,
+                                "Damage": 1,
+                                "Charging Duration": 1.0,
+                                "Rotation Speed White Waves": 10.0,
+                                "Rotation Speed Tornado": 5.0,
+                                "Min Scale Tornado": 9.5,
+                                "Max Scale Tornado": 0.20000000298023224,
+                                "Initial Scale Tornado": 12.0,
+                                "Rotation Speed Blue Waves": 7.5,
+                                "Explosion Duration": 0.33000001311302185,
+                                "Water Spout Duration": 2.5,
+                                "Character": 16608980812391007100
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 2913752486903553306,
+                        "Type": 12,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 2,
+                        "Radius": 1.399999976158142,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            -0.04500000178813934
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    2929134027736150356,
+                    8762799493256084269,
+                    1041145768652053979,
+                    12304717691098310919,
+                    4615422611424119165,
+                    4947239498231865036,
+                    6320451205702473290
+                ]
+            },
+            {
+                "UID": 2929134027736150356,
+                "ParentUID": 8685397786832225288,
+                "Name": "White_Waves",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17903665402094264046,
+                "LocalTransform": [
+                    -0.3387603163719177,
+                    0.0,
+                    -0.941092848777771,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.10000000149011612,
+                    0.941092848777771,
+                    0.0,
+                    -0.3387603163719177,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3924571949079892148,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1101492281023459,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 14821073983130162462,
+                        "Type": 26,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.2199999988079071,
+                                "Moving UV Direction": [
+                                    0.019999999552965164,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.38999998569488525
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8762799493256084269,
+                "ParentUID": 8685397786832225288,
+                "Name": "Circle_Big_Mesh",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7982924763177606782,
+                "LocalTransform": [
+                    -9.21382999420166,
+                    -2.314635992050171,
+                    0.00005549192428588867,
+                    0.0,
+                    0.00001649405930947978,
+                    0.0001570093008922413,
+                    9.500000953674316,
+                    0.0,
+                    -2.3146347999572754,
+                    9.213824272155762,
+                    -0.0001494884490966797,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 746054995194759248,
+                        "Type": 23,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Decal",
+                        "Material": 1314956212458374
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1041145768652053979,
+                "ParentUID": 8685397786832225288,
+                "Name": "Waves_Cylinder_Mesh",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8057591287011137945,
+                "LocalTransform": [
+                    0.9910236597061157,
+                    0.0,
+                    0.13317693769931793,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.13317693769931793,
+                    0.0,
+                    0.9910236597061157,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11871321042248465538,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1153283910831764,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12304717691098310919,
+                "ParentUID": 8685397786832225288,
+                "Name": "Sproud_Vertical_Mesh",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8127248620958009051,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4785827436634289242,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1112378694671950,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 15108134338946694793,
+                        "Type": 26,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.10000000149011612,
+                                "Moving UV Direction": [
+                                    -1.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.03999999910593033,
+                                    0.0
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4615422611424119165,
+                "ParentUID": 8685397786832225288,
+                "Name": "Explosion_Sphere_Mesh",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17567757565637589328,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9326928033431165972,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1137850322920853,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 2922848404417852799,
+                        "Type": 26,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": false,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 2.259999990463257,
+                                "Moving UV Direction": [
+                                    1.0,
+                                    1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    -0.41999998688697815
+                                ],
+                                "Double sided": false
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4947239498231865036,
+                "ParentUID": 8685397786832225288,
+                "Name": "Particles",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17794184571743264130,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2371335676182347383,
+                        "Type": 25,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "ParticleSystem",
+                        "ParticleSystemTag": "Water Explosion",
+                        "Emitters": [
+                            {
+                                "EmitterTag": "Water",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1285516637824419,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 1.0,
+                                        "Loop": false,
+                                        "particlesPerSecond": 100,
+                                        "MaxParticles": 150,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 0.0,
+                                        "MaxLifetime": 1.0,
+                                        "randomizeSizeCombined": true,
+                                        "randomizeSizeX": false,
+                                        "randomizeSizeY": false,
+                                        "combinedSize": [
+                                            0.25,
+                                            0.800000011920929
+                                        ],
+                                        "sizeValuesX": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesY": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "randomRotation": false,
+                                        "burst": false,
+                                        "respawnLoop": false,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": false,
+                                        "sizeInterpolation": 0,
+                                        "sizeInterpolationX": 0,
+                                        "sizeInterpolationY": 0
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": false,
+                                        "gravityValue": 0.0,
+                                        "XSpeed": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "YSpeed": [
+                                            0.0,
+                                            10.0
+                                        ],
+                                        "ZSpeed": [
+                                            0.0,
+                                            3.0
+                                        ],
+                                        "RandX": false,
+                                        "RandY": false,
+                                        "RandZ": false,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 1,
+                                        "speedYInterpolation": 1,
+                                        "speedZInterpoaltion": 1,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 3,
+                                        "Rows": 1,
+                                        "Columns": 1,
+                                        "AnimationSpeed": 1.2000000476837158,
+                                        "MinXTiles": 1,
+                                        "MaxXTiles": 1,
+                                        "MinYTiles": 1,
+                                        "MaxYTiles": 1,
+                                        "RandomizeTiles": false
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.0476190485060215,
+                                                0.0,
+                                                0.07058823853731155,
+                                                0.13725490868091583,
+                                                1.0
+                                            ],
+                                            [
+                                                0.32695260643959045,
+                                                0.0,
+                                                0.42352941632270813,
+                                                0.8117647171020508,
+                                                1.0
+                                            ],
+                                            [
+                                                0.6759446263313293,
+                                                0.0,
+                                                1.0,
+                                                0.8980392217636108,
+                                                1.0
+                                            ],
+                                            [
+                                                0.9224653244018555,
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 5,
+                                        "currentShape": 3,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 1.3799999952316284,
+                                        "coneAngle": 19.649999618530273,
+                                        "coneLength": 0.8999999761581421,
+                                        "cubeSize": [
+                                            1.0,
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 0,
+                                "blendingMode": 1,
+                                "colorIntensity": 0.7549999952316284
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6320451205702473290,
+                "ParentUID": 8685397786832225288,
+                "Name": "Rune_Decal",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 18040980515550739940,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -1.1920928955078125e-7,
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    -0.9999999403953552,
+                    -1.1920928955078125e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13456310188068866297,
+                        "Type": 23,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Decal",
+                        "Material": 1378894509356618
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
