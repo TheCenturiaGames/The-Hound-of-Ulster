@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 13388194677884803743,
+        "VersionUID": 3553482198190989943,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 13388194677884803743,
+                "PrefabVersionUID": 3553482198190989943,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
@@ -64,7 +64,7 @@
                                 "Phase Start": 1,
                                 "Dash Duration": 0.30000001192092896,
                                 "Close Area Damage": 3,
-                                "Shield Collider": "jnt_shield",
+                                "Shield Collider": "ShieldCollider",
                                 "Close Area": "CloseArea",
                                 "Big Area": "BigArea",
                                 "Overhead Prepare": "OverheadPrepare",
@@ -1635,7 +1635,8 @@
                 ],
                 "Children": [
                     9232845838159623146,
-                    1097441186911107493
+                    1097441186911107493,
+                    7183561483474709975
                 ]
             },
             {
@@ -2989,6 +2990,62 @@
                                 "blendingMode": 1,
                                 "colorIntensity": 1.0
                             }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 7183561483474709975,
+                "ParentUID": 1407564572401722953,
+                "Name": "ShieldCollider",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4415947842462288690,
+                "LocalTransform": [
+                    1.0,
+                    -7.450580596923828e-9,
+                    -5.960464477539063e-8,
+                    0.00000762939453125,
+                    1.4901161193847656e-8,
+                    1.0,
+                    7.450580596923828e-9,
+                    -9.5367431640625e-7,
+                    0.0,
+                    -7.450580596923828e-9,
+                    1.0,
+                    -0.000003814697265625,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 369989796229216938,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.800000011920929,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            -0.25,
+                            0.15000000596046448
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
                         ]
                     }
                 ],
