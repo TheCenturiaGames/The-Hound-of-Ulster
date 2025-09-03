@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1695279576861696,
-        "VersionUID": 3288286612583759936,
+        "VersionUID": 10616039370344281307,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1695279576861696,
-                "PrefabVersionUID": 3288286612583759936,
+                "PrefabVersionUID": 10616039370344281307,
                 "PrefabChildUID": 684964692211125930,
                 "LocalTransform": [
                     1.0,
@@ -309,6 +309,12 @@
                                 "Aim shadow object": "",
                                 "Melee trail object": "",
                                 "Melee VFX object": "",
+                                "Melee VFX Horizontal 1": "AttackVfxH1",
+                                "Melee VFX Vertical 1": "AttackVfxV1",
+                                "Melee VFX Horizontal 2": "AttackVfxH2",
+                                "Melee VFX Vertical 2": "AttackVfxV2",
+                                "Melee VFX Horizontal 3": "AttackVfxH3",
+                                "Attack VFX Vertical 3": "AttackVfxV3",
                                 "Dash Trail object": "",
                                 "Dash decal object": "",
                                 "Dash decal disappear": 5.0,
@@ -380,7 +386,8 @@
                     13831503455884716491,
                     819380067327803364,
                     18056430858579640793,
-                    8148265495044206791
+                    8148265495044206791,
+                    10065962747832909405
                 ]
             },
             {
@@ -440,7 +447,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.43808698654174805
+                        "CameraVFOV": 0.5232495665550232
                     }
                 ],
                 "Children": []
@@ -1079,6 +1086,70 @@
                     16450972382864471447,
                     6525401962048283754
                 ]
+            },
+            {
+                "UID": 10065962747832909405,
+                "ParentUID": 12048827968704989902,
+                "Name": "AttackVfxV3",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3594536068050858346,
+                "LocalTransform": [
+                    -0.000010013580322265625,
+                    -1.0000001192092896,
+                    0.000032824522349983454,
+                    0.0,
+                    -0.00000286102294921875,
+                    -0.000007748603820800781,
+                    -4.3023762702941895,
+                    0.5,
+                    6.000000953674316,
+                    -0.0000015497207641601563,
+                    -0.0000025644158085924573,
+                    0.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4785393466104056320,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1340022874678220,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 16785217077945580031,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 1389.0,
+                                "Cell height": 996.0,
+                                "Update Rate": 0.03500000014901161,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Texture": 1256155917434214
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 14740564920576904537,
@@ -3233,7 +3304,9 @@
                 "Children": [
                     612990757086816696,
                     4489501157152208723,
-                    17916916389863556658
+                    17916916389863556658,
+                    729043350410631248,
+                    12672917242924476941
                 ]
             },
             {
@@ -5229,7 +5302,7 @@
             {
                 "UID": 4489501157152208723,
                 "ParentUID": 14149360429014551619,
-                "Name": "AttackVfxV",
+                "Name": "AttackVfxV1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -5237,17 +5310,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 3594536068050858346,
                 "LocalTransform": [
-                    -0.02791483700275421,
-                    -0.3749692440032959,
-                    1.0476446377083448e-9,
+                    2.483725438651163e-7,
+                    -8.940350681996279e-8,
+                    0.5289999842643738,
                     0.0,
-                    -2.9996604919433594,
-                    0.003489441005513072,
-                    -2.115894091048176e-7,
+                    -4.166999816894531,
+                    -8.940350681996279e-8,
+                    1.5765428074132615e-8,
                     0.00028228759765625,
-                    0.0000016925104091569665,
-                    -3.0165738795773223e-9,
-                    -0.3749856948852539,
+                    6.209313596627908e-7,
+                    -0.3749854862689972,
+                    -1.2612342459306092e-7,
                     -0.00007891654968261719,
                     0.0,
                     0.0,
@@ -5278,12 +5351,12 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1389.0,
-                                "Cell height": 996.0,
-                                "Update Rate": 0.02500000037252903,
+                                "Cell width": 4167.0,
+                                "Cell height": 529.2000122070313,
+                                "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
-                                "Texture": 1256155917434214
+                                "Texture": 1222302311586860
                             }
                         ]
                     }
@@ -5293,7 +5366,7 @@
             {
                 "UID": 17916916389863556658,
                 "ParentUID": 14149360429014551619,
-                "Name": "AttackVfxH",
+                "Name": "AttackVfxH1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -5301,18 +5374,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 3594536068050858346,
                 "LocalTransform": [
-                    1.787926322549538e-7,
-                    6.705600696932379e-8,
-                    0.3749881982803345,
+                    -4.967614017914457e-7,
+                    0.9999976754188538,
                     0.0,
-                    -2.9996423721313477,
-                    2.905760254634515e-7,
-                    1.1175519176731541e-8,
-                    0.000080108642578125,
-                    -0.0000022349079245032044,
-                    -0.375004380941391,
-                    8.940415341385233e-8,
-                    -0.0003001689910888672,
+                    -0.000003814697265625,
+                    -4.167136192321777,
+                    -1.1920901954454166e-7,
+                    5.960464477539063e-8,
+                    0.00008392333984375,
+                    4.695278335020703e-7,
+                    2.131623463895796e-14,
+                    0.529000997543335,
+                    -0.00031256675720214844,
                     0.0,
                     0.0,
                     0.0,
@@ -5342,12 +5415,140 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1389.0,
-                                "Cell height": 996.0,
+                                "Cell width": 4167.0,
+                                "Cell height": 529.2000122070313,
+                                "Update Rate": 0.03999999910593033,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Texture": 1222302311586860
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 729043350410631248,
+                "ParentUID": 14149360429014551619,
+                "Name": "AttackVfxV2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3594536068050858346,
+                "LocalTransform": [
+                    2.384185791015625e-7,
+                    -1.4901161193847656e-7,
+                    1.7851811647415161,
+                    -0.0000019073486328125,
+                    -4.0,
+                    -2.384185791015625e-7,
+                    5.320254459206808e-8,
+                    0.000286102294921875,
+                    9.5367431640625e-7,
+                    -1.0,
+                    -4.2562035673654464e-7,
+                    -0.00007891654968261719,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12385449352529935824,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1340022874678220,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 1812303094229722971,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 1741.0,
+                                "Cell height": 777.1599731445313,
                                 "Update Rate": 0.02500000037252903,
                                 "Row major": false,
                                 "Double sided": true,
-                                "Texture": 1256155917434214
+                                "Texture": 1246023184897247
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12672917242924476941,
+                "ParentUID": 14149360429014551619,
+                "Name": "AttackVfxH2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3594536068050858346,
+                "LocalTransform": [
+                    -0.0000019073486328125,
+                    0.9999999403953552,
+                    6.3422366960812476e-15,
+                    -0.000003814697265625,
+                    -3.999999761581421,
+                    -4.76837158203125e-7,
+                    2.0114342191845935e-7,
+                    0.00008392333984375,
+                    4.506958930505789e-7,
+                    5.3290705182007514e-14,
+                    1.785180926322937,
+                    -0.00031256675720214844,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10655940512425865263,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1340022874678220,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 2592698971202737730,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 1741.0,
+                                "Cell height": 777.1599731445313,
+                                "Update Rate": 0.02500000037252903,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Texture": 1246023184897247
                             }
                         ]
                     }
