@@ -1,34 +1,33 @@
 {
     "Prefab": {
-        "UID": 1631485309047928,
-        "VersionUID": 14782797670694844999,
-        "Name": "Destructible_Tributes_Jar01",
+        "UID": 1637251201056370,
+        "VersionUID": 13644686826451348959,
+        "Name": "Destructible_BushGreen_04_V1",
         "GameObjects": [
             {
-                "UID": 6804882973591359722,
+                "UID": 11493249137609190105,
                 "ParentUID": 6788591387451538717,
-                "Name": "Destructible_Tributes_Jar01",
+                "Name": "Destructible_BushGreen_04_V1",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1631485309047928,
-                "PrefabVersionUID": 14782797670694844999,
-                "PrefabChildUID": 2242980967530333094,
+                "PrefabVersionUID": 13644686826451348959,
+                "PrefabChildUID": 16467580895483500206,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -29.14238739013672,
+                    -27.91691780090332,
                     0.0,
                     1.0,
                     0.0,
-                    0.3847633898258209,
+                    1.063940167427063,
                     0.0,
                     0.0,
                     1.0,
-                    -70.72134399414063,
+                    -64.88703918457031,
                     0.0,
                     0.0,
                     0.0,
@@ -36,18 +35,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10144681355526237861,
+                        "UID": 11288616256945676432,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1124274426101180,
-                        "Material": 0,
-                        "RenderMode": 1,
+                        "Mesh": 1119829685838340,
+                        "Material": 1385723297687892,
+                        "RenderMode": 2,
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 14209295431492856828,
+                        "UID": 14712936520066114575,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -73,7 +72,7 @@
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
                                 "Destroyed mesh": "DestroyedMesh",
-                                "Destruction particle system": "PT_Destruction_Smoke",
+                                "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
                             }
                         ]
@@ -104,20 +103,20 @@
                     }
                 ],
                 "Children": [
-                    17709491666482636482,
-                    15576090925047636518
+                    3754126333904121322,
+                    14479080517454262995
                 ]
             },
             {
-                "UID": 17709491666482636482,
-                "ParentUID": 6804882973591359722,
+                "UID": 3754126333904121322,
+                "ParentUID": 11493249137609190105,
                 "Name": "DestroyedMesh",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": false,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2319837444787661185,
+                "PrefabChildUID": 17420880510276139069,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -138,42 +137,42 @@
                 ],
                 "Components": [
                     {
-                        "UID": 14221371099589611953,
+                        "UID": 12072715675532534692,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1135062528935504,
-                        "Material": 1304089432007967,
-                        "RenderMode": 1,
+                        "Mesh": 1119829685838340,
+                        "Material": 1385723297687892,
+                        "RenderMode": 2,
                         "ProduceShadows": true
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 15576090925047636518,
-                "ParentUID": 6804882973591359722,
-                "Name": "PT_Destruction_Smoke",
+                "UID": 14479080517454262995,
+                "ParentUID": 11493249137609190105,
+                "Name": "PT_Destruction_Smoke_Greenish",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18040330813906239942,
+                "PrefabChildUID": 1071334857288344800,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    1.9498176574707031,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.14200648665428162,
                     0.0,
                     0.0,
                     1.0,
-                    0.9131698608398438,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
                     0.0,
                     0.0,
                     0.0,
@@ -181,12 +180,12 @@
                 ],
                 "Components": [
                     {
-                        "UID": 3540436637742470144,
+                        "UID": 15669361139294774714,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "ParticleSystem",
-                        "ParticleSystemTag": "Smoke",
+                        "ParticleSystemTag": "Greenish",
                         "Emitters": [
                             {
                                 "EmitterTag": "Center",
@@ -449,16 +448,16 @@
                                         "ColorMarks": [
                                             [
                                                 0.0,
-                                                0.29545456171035767,
-                                                0.16125239431858063,
-                                                0.11918904632329941,
+                                                0.39626726508140564,
+                                                0.5795454978942871,
+                                                0.3194085955619812,
                                                 1.0
                                             ],
                                             [
                                                 0.49295774102211,
-                                                0.5056818127632141,
-                                                0.36136919260025024,
-                                                0.2614605128765106,
+                                                0.21924304962158203,
+                                                0.3181818127632141,
+                                                0.21694214642047882,
                                                 1.0
                                             ],
                                             [
