@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1682242295416412,
-        "VersionUID": 6992528433478957275,
+        "VersionUID": 4433602909547013654,
         "Name": "NewSoldier",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1682242295416412,
-                "PrefabVersionUID": 6992528433478957275,
+                "PrefabVersionUID": 4433602909547013654,
                 "PrefabChildUID": 12812678401381065130,
                 "LocalTransform": [
                     1.0,
@@ -61,6 +61,7 @@
                                 "AI Attack Range": 1.2999999523162842,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
@@ -313,7 +314,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1600748895571709,
-                "PrefabVersionUID": 3938431659546529282,
+                "PrefabVersionUID": 13633116538168539177,
                 "PrefabChildUID": 10313792713188357615,
                 "LocalTransform": [
                     1.0000001192092896,
@@ -371,8 +372,8 @@
                     {
                         "UID": 6045128764869547416,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1172307349938253,
                         "Material": 0,
@@ -448,6 +449,21 @@
                         "ModelUID": 1430171191636502,
                         "SkinIndex": 0,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 14421999060193713911,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 2
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -861,7 +877,7 @@
                                 "RenderType": 1,
                                 "Cell width": 750.0,
                                 "Cell height": 750.0,
-                                "Update Rate": 0.03999999910593033,
+                                "Update Rate": 0.009999999776482582,
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
@@ -883,17 +899,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 11647685002672666171,
                 "LocalTransform": [
-                    -7.152557373046875e-7,
-                    -2.0,
-                    0.0000325888795487117,
+                    -0.0000011920928955078125,
+                    -1.0,
+                    0.00008147220796672627,
                     0.0,
-                    2.0,
-                    -7.152557373046875e-7,
-                    0.0,
+                    2.5,
+                    -4.76837158203125e-7,
+                    -4.54747394254551e-12,
                     1.0,
-                    9.094947017729282e-12,
-                    0.000032588875910732895,
-                    2.000000238418579,
+                    3.637978807091713e-11,
+                    0.00003258888318669051,
+                    2.500000238418579,
                     -1.0,
                     0.0,
                     0.0,
@@ -926,7 +942,7 @@
                                 "RenderType": 1,
                                 "Cell width": 750.0,
                                 "Cell height": 750.0,
-                                "Update Rate": 0.03999999910593033,
+                                "Update Rate": 0.009999999776482582,
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
