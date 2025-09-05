@@ -1,12 +1,12 @@
 {
     "Prefab": {
         "UID": 1685651725704966,
-        "VersionUID": 14463061795009779002,
+        "VersionUID": 7868098656301121938,
         "Name": "Bomb_VFX",
         "GameObjects": [
             {
-                "UID": 635723047442966998,
-                "ParentUID": 10309131146409751111,
+                "UID": 5188698248773333712,
+                "ParentUID": 8823869308913623498,
                 "Name": "Bomb_VFX",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1685651725704966,
-                "PrefabVersionUID": 14463061795009779002,
+                "PrefabVersionUID": 7868098656301121938,
                 "PrefabChildUID": 5743133122556233577,
                 "LocalTransform": [
                     1.0,
@@ -36,27 +36,27 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4497499319065654833,
-                    9579419449599293547,
-                    3878579693017010054,
-                    3382443395466403384,
-                    6902807019255686524,
-                    17333823131356596411,
-                    12872584927764541009,
-                    569583202700768787,
-                    3411259876204411240,
-                    390303748868476133,
-                    4438291741219969274,
-                    15153675843770178867
+                    14764788662502831194,
+                    7162974813171368947,
+                    6218951142365405632,
+                    7141150777092117831,
+                    4573967744032429649,
+                    17871755678718166508,
+                    14633274374367544158,
+                    252621371100125244,
+                    8532596793211327662,
+                    9091354621652301963,
+                    3949187720500557222,
+                    4433152192667841350
                 ]
             },
             {
-                "UID": 4497499319065654833,
-                "ParentUID": 635723047442966998,
+                "UID": 14764788662502831194,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Main_Light_Impact",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 14316871185333723296,
@@ -80,9 +80,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9685479068293152041,
+                        "UID": 11058413105922043540,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1150977474088050,
@@ -94,12 +94,12 @@
                 "Children": []
             },
             {
-                "UID": 9579419449599293547,
-                "ParentUID": 635723047442966998,
+                "UID": 7162974813171368947,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Ground_BlackStains",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 100795664397360043,
@@ -123,22 +123,57 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13386249949593782931,
+                        "UID": 2922067111432220134,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1198363123771269,
                         "Material": 0,
                         "RenderMode": 1,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 15675959518611363999,
+                        "Type": 26,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVClipErode",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.0,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Erosion Level": -0.20000000298023224,
+                                "Edge Feather": 0.05000000074505806,
+                                "Clip Min UV": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Clip Max UV": [
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 3878579693017010054,
-                "ParentUID": 635723047442966998,
+                "UID": 6218951142365405632,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_FireShadow_Ipact",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -166,7 +201,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 8354798800692942421,
+                        "UID": 13090148549654672319,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -180,12 +215,12 @@
                 "Children": []
             },
             {
-                "UID": 3382443395466403384,
-                "ParentUID": 635723047442966998,
+                "UID": 7141150777092117831,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Ground_After",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 8177082774659081209,
@@ -209,9 +244,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10956751669457860738,
+                        "UID": 7618126781804830361,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1176360029667402,
@@ -223,12 +258,12 @@
                 "Children": []
             },
             {
-                "UID": 6902807019255686524,
-                "ParentUID": 635723047442966998,
+                "UID": 4573967744032429649,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Indicator_Small",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 8827059997349286076,
@@ -252,69 +287,51 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7345339847295891356,
+                        "UID": 6563392293745450067,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1111697724113739,
                         "Material": 0,
                         "RenderMode": 2,
                         "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 17333823131356596411,
-                "ParentUID": 635723047442966998,
-                "Name": "VFX_Bomb_Indicator",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 5625426854118217958,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    5.275056838989258,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.00013157659850548953,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -2.753371000289917,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
+                    },
                     {
-                        "UID": 12230034923435229282,
-                        "Type": 1,
-                        "Enabled": true,
+                        "UID": 3613966638971935082,
+                        "Type": 26,
+                        "Enabled": false,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1166609176530701,
-                        "Material": 0,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.10000000149011612,
+                                "Moving UV Direction": [
+                                    0.699999988079071,
+                                    0.699999988079071
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true
+                            }
+                        ]
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 12872584927764541009,
-                "ParentUID": 635723047442966998,
+                "UID": 17871755678718166508,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Fire_Ipact",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 7508360529070408886,
@@ -338,22 +355,22 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13851615073629783112,
+                        "UID": 3319010931540638871,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1158976236490174,
                         "Material": 0,
-                        "RenderMode": 2,
+                        "RenderMode": 1,
                         "ProduceShadows": true
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 569583202700768787,
-                "ParentUID": 635723047442966998,
+                "UID": 14633274374367544158,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Shadow",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -381,7 +398,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12131533212485574405,
+                        "UID": 4650172178850137977,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -395,12 +412,12 @@
                 "Children": []
             },
             {
-                "UID": 3411259876204411240,
-                "ParentUID": 635723047442966998,
+                "UID": 252621371100125244,
+                "ParentUID": 5188698248773333712,
                 "Name": "VFX_Bomb_Light_Impact",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
+                "Enabled": false,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 10492051520217707028,
@@ -424,9 +441,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 3042120557415486003,
+                        "UID": 1707978524419564647,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1103964426077250,
@@ -438,8 +455,8 @@
                 "Children": []
             },
             {
-                "UID": 390303748868476133,
-                "ParentUID": 635723047442966998,
+                "UID": 8532596793211327662,
+                "ParentUID": 5188698248773333712,
                 "Name": "Bomb_animation_wind",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -467,7 +484,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 54418590206723175,
+                        "UID": 2377193092909954633,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -477,13 +494,13 @@
                     }
                 ],
                 "Children": [
-                    18356188979935301930,
-                    3406058547841269187
+                    12623908586728987212,
+                    1061413974853040586
                 ]
             },
             {
-                "UID": 4438291741219969274,
-                "ParentUID": 635723047442966998,
+                "UID": 9091354621652301963,
+                "ParentUID": 5188698248773333712,
                 "Name": "Bomb_animation_single",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -511,7 +528,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13821467178692563238,
+                        "UID": 6231013792205265331,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -521,12 +538,12 @@
                     }
                 ],
                 "Children": [
-                    14301320291195488935
+                    14926094997471658116
                 ]
             },
             {
-                "UID": 15153675843770178867,
-                "ParentUID": 635723047442966998,
+                "UID": 3949187720500557222,
+                "ParentUID": 5188698248773333712,
                 "Name": "Bomb_animation",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -554,7 +571,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16191351785242227900,
+                        "UID": 16971553367630158709,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -564,12 +581,80 @@
                     }
                 ],
                 "Children": [
-                    15492627229287743956
+                    9812985511448886884
                 ]
             },
             {
-                "UID": 18356188979935301930,
-                "ParentUID": 390303748868476133,
+                "UID": 4433152192667841350,
+                "ParentUID": 5188698248773333712,
+                "Name": "VFX_Bomb_Indicator",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5625426854118217958,
+                "LocalTransform": [
+                    0.9987989068031311,
+                    0.00000692003686708631,
+                    0.04897697642445564,
+                    27.79323959350586,
+                    -0.000006859519999125041,
+                    0.9997963309288025,
+                    -0.000001431457690159732,
+                    6.177213668823242,
+                    -0.048996929079294205,
+                    0.0000010940025276795495,
+                    0.9983921647071838,
+                    -4.512511730194092,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10027524048641834005,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1166609176530701,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 14288755663210852537,
+                        "Type": 26,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.20000000298023224,
+                                "Moving UV Direction": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12623908586728987212,
+                "ParentUID": 8532596793211327662,
                 "Name": "VFX_Bomb_Wind_Top1",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -597,7 +682,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4165198712315066428,
+                        "UID": 7862052103327768055,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -606,7 +691,7 @@
                         "Material": 0,
                         "RenderMode": 1,
                         "Bones": [
-                            3406058547841269187
+                            1061413974853040586
                         ],
                         "ModelUID": 1493909755329049,
                         "SkinIndex": 0,
@@ -616,8 +701,8 @@
                 "Children": []
             },
             {
-                "UID": 3406058547841269187,
-                "ParentUID": 390303748868476133,
+                "UID": 1061413974853040586,
+                "ParentUID": 8532596793211327662,
                 "Name": "Jnt_Wind",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -647,8 +732,8 @@
                 "Children": []
             },
             {
-                "UID": 14301320291195488935,
-                "ParentUID": 4438291741219969274,
+                "UID": 14926094997471658116,
+                "ParentUID": 9091354621652301963,
                 "Name": "pasted__Bomb",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -676,12 +761,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2950145039096956392
+                    17197718333533388100
                 ]
             },
             {
-                "UID": 15492627229287743956,
-                "ParentUID": 15153675843770178867,
+                "UID": 9812985511448886884,
+                "ParentUID": 3949187720500557222,
                 "Name": "Joints_bomb_vfx",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -709,12 +794,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8306792232445947197
+                    17640421704604525870
                 ]
             },
             {
-                "UID": 2950145039096956392,
-                "ParentUID": 14301320291195488935,
+                "UID": 17197718333533388100,
+                "ParentUID": 14926094997471658116,
                 "Name": "pasted__Joints_bomb_vfx",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -742,12 +827,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4552707465909038981
+                    17439704699295060669
                 ]
             },
             {
-                "UID": 8306792232445947197,
-                "ParentUID": 15492627229287743956,
+                "UID": 17640421704604525870,
+                "ParentUID": 9812985511448886884,
                 "Name": "jnt_Main",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -775,18 +860,18 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13220851732953085793,
-                    11128544212506187787,
-                    2615798448560028900,
-                    6187842756912232399,
-                    13423974959680368865,
-                    12363355510821632600,
-                    2283041575742571427
+                    7983265724683402068,
+                    11145480423556942516,
+                    10821017039391483313,
+                    17933950978734895272,
+                    7300168724981084018,
+                    6366917908723494114,
+                    8126871185998784220
                 ]
             },
             {
-                "UID": 4552707465909038981,
-                "ParentUID": 2950145039096956392,
+                "UID": 17439704699295060669,
+                "ParentUID": 17197718333533388100,
                 "Name": "pasted__jnt_Main.001",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -814,14 +899,14 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2736465470632285880,
-                    7710463151945048266,
-                    16384735465992912119
+                    5211391050560069116,
+                    16915439028127525915,
+                    16147198127108077928
                 ]
             },
             {
-                "UID": 13220851732953085793,
-                "ParentUID": 8306792232445947197,
+                "UID": 7983265724683402068,
+                "ParentUID": 17640421704604525870,
                 "Name": "transform1.001",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -849,12 +934,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10979456239645748722
+                    13803823716797588008
                 ]
             },
             {
-                "UID": 11128544212506187787,
-                "ParentUID": 8306792232445947197,
+                "UID": 11145480423556942516,
+                "ParentUID": 17640421704604525870,
                 "Name": "VFX_Bomb_Smoke",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -882,7 +967,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 17592748822070718914,
+                        "UID": 2188549599588712223,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -891,11 +976,11 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            2615798448560028900,
-                            6187842756912232399,
-                            13423974959680368865,
-                            12363355510821632600,
-                            2283041575742571427
+                            10821017039391483313,
+                            17933950978734895272,
+                            7300168724981084018,
+                            6366917908723494114,
+                            8126871185998784220
                         ],
                         "ModelUID": 1469114396301098,
                         "SkinIndex": 1,
@@ -905,8 +990,8 @@
                 "Children": []
             },
             {
-                "UID": 2615798448560028900,
-                "ParentUID": 8306792232445947197,
+                "UID": 10821017039391483313,
+                "ParentUID": 17640421704604525870,
                 "Name": "jont_Sphere1",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -936,8 +1021,8 @@
                 "Children": []
             },
             {
-                "UID": 6187842756912232399,
-                "ParentUID": 8306792232445947197,
+                "UID": 17933950978734895272,
+                "ParentUID": 17640421704604525870,
                 "Name": "jont_Sphere2",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -967,8 +1052,8 @@
                 "Children": []
             },
             {
-                "UID": 13423974959680368865,
-                "ParentUID": 8306792232445947197,
+                "UID": 7300168724981084018,
+                "ParentUID": 17640421704604525870,
                 "Name": "jont_Sphere3",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -998,8 +1083,8 @@
                 "Children": []
             },
             {
-                "UID": 12363355510821632600,
-                "ParentUID": 8306792232445947197,
+                "UID": 6366917908723494114,
+                "ParentUID": 17640421704604525870,
                 "Name": "jont_Sphere4",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1029,8 +1114,8 @@
                 "Children": []
             },
             {
-                "UID": 2283041575742571427,
-                "ParentUID": 8306792232445947197,
+                "UID": 8126871185998784220,
+                "ParentUID": 17640421704604525870,
                 "Name": "jont_Sphere5",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1060,8 +1145,8 @@
                 "Children": []
             },
             {
-                "UID": 2736465470632285880,
-                "ParentUID": 4552707465909038981,
+                "UID": 5211391050560069116,
+                "ParentUID": 17439704699295060669,
                 "Name": "pasted__transform1",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1089,12 +1174,12 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5852123571362132693
+                    17015171447545799911
                 ]
             },
             {
-                "UID": 7710463151945048266,
-                "ParentUID": 4552707465909038981,
+                "UID": 16915439028127525915,
+                "ParentUID": 17439704699295060669,
                 "Name": "pasted__VFX_Bomb_Smoke",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1122,7 +1207,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 15925064869402271,
+                        "UID": 6798054818389715150,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1131,7 +1216,7 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            16384735465992912119
+                            16147198127108077928
                         ],
                         "ModelUID": 1438966964614766,
                         "SkinIndex": 1,
@@ -1141,8 +1226,8 @@
                 "Children": []
             },
             {
-                "UID": 16384735465992912119,
-                "ParentUID": 4552707465909038981,
+                "UID": 16147198127108077928,
+                "ParentUID": 17439704699295060669,
                 "Name": "pasted__jont_Sphere3",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1172,8 +1257,8 @@
                 "Children": []
             },
             {
-                "UID": 10979456239645748722,
-                "ParentUID": 13220851732953085793,
+                "UID": 13803823716797588008,
+                "ParentUID": 7983265724683402068,
                 "Name": "pasted__jnt_Main",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1201,17 +1286,17 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7895168074937172776,
-                    15753419281049230070,
-                    13880295732415295056,
-                    6440642861678760922,
-                    9972453514781270538,
-                    1167322434017642181
+                    7098194266008047919,
+                    5632041833752491448,
+                    12001232194968953847,
+                    5551782076617150410,
+                    1309476915896116869,
+                    17275359883408905436
                 ]
             },
             {
-                "UID": 5852123571362132693,
-                "ParentUID": 2736465470632285880,
+                "UID": 17015171447545799911,
+                "ParentUID": 5211391050560069116,
                 "Name": "pasted__pasted__jnt_Main",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1239,13 +1324,13 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12604691925826594365,
-                    17995328112874058926
+                    17605655665711930363,
+                    3261069646544429776
                 ]
             },
             {
-                "UID": 7895168074937172776,
-                "ParentUID": 10979456239645748722,
+                "UID": 7098194266008047919,
+                "ParentUID": 13803823716797588008,
                 "Name": "Bomb_Sphere",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1273,7 +1358,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10973775649588014363,
+                        "UID": 13322759279327719233,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1282,11 +1367,11 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            15753419281049230070,
-                            13880295732415295056,
-                            6440642861678760922,
-                            9972453514781270538,
-                            1167322434017642181
+                            5632041833752491448,
+                            12001232194968953847,
+                            5551782076617150410,
+                            1309476915896116869,
+                            17275359883408905436
                         ],
                         "ModelUID": 1469114396301098,
                         "SkinIndex": 0,
@@ -1296,8 +1381,8 @@
                 "Children": []
             },
             {
-                "UID": 15753419281049230070,
-                "ParentUID": 10979456239645748722,
+                "UID": 5632041833752491448,
+                "ParentUID": 13803823716797588008,
                 "Name": "pasted__jont_Sphere1",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1327,8 +1412,8 @@
                 "Children": []
             },
             {
-                "UID": 13880295732415295056,
-                "ParentUID": 10979456239645748722,
+                "UID": 12001232194968953847,
+                "ParentUID": 13803823716797588008,
                 "Name": "pasted__jont_Sphere2",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1358,8 +1443,8 @@
                 "Children": []
             },
             {
-                "UID": 6440642861678760922,
-                "ParentUID": 10979456239645748722,
+                "UID": 5551782076617150410,
+                "ParentUID": 13803823716797588008,
                 "Name": "pasted__jont_Sphere3",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1389,8 +1474,8 @@
                 "Children": []
             },
             {
-                "UID": 9972453514781270538,
-                "ParentUID": 10979456239645748722,
+                "UID": 1309476915896116869,
+                "ParentUID": 13803823716797588008,
                 "Name": "pasted__jont_Sphere4",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1420,8 +1505,8 @@
                 "Children": []
             },
             {
-                "UID": 1167322434017642181,
-                "ParentUID": 10979456239645748722,
+                "UID": 17275359883408905436,
+                "ParentUID": 13803823716797588008,
                 "Name": "pasted__jont_Sphere5",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1451,8 +1536,8 @@
                 "Children": []
             },
             {
-                "UID": 12604691925826594365,
-                "ParentUID": 5852123571362132693,
+                "UID": 17605655665711930363,
+                "ParentUID": 17015171447545799911,
                 "Name": "pasted__Bomb_Sphere",
                 "Mobility": 1,
                 "SelectParent": true,
@@ -1480,7 +1565,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12099146078575935028,
+                        "UID": 8293585655358376365,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1489,7 +1574,7 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            17995328112874058926
+                            3261069646544429776
                         ],
                         "ModelUID": 1438966964614766,
                         "SkinIndex": 0,
@@ -1499,8 +1584,8 @@
                 "Children": []
             },
             {
-                "UID": 17995328112874058926,
-                "ParentUID": 5852123571362132693,
+                "UID": 3261069646544429776,
+                "ParentUID": 17015171447545799911,
                 "Name": "pasted__pasted__jont_Sphere3",
                 "Mobility": 1,
                 "SelectParent": true,
