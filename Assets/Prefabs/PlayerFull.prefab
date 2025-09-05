@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 11759035393873532862,
+        "VersionUID": 424658915939378344,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 11759035393873532862,
+                "PrefabVersionUID": 424658915939378344,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -249,7 +249,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Max Health": 10,
-                                "Current Health": 3,
+                                "Current Health": 10,
                                 "Invulnerable": false,
                                 "Dead": false,
                                 "Damage": 1,
@@ -259,7 +259,7 @@
                                 "Attack Hitbox Delay": 0.20000000298023224,
                                 "Attack Hitbox Duration": 0.10000000149011612,
                                 "Heal Cooldown": 1.0,
-                                "God Mode": false,
+                                "God Mode": true,
                                 "Default speed": 7.0,
                                 "Step time": 0.367000013589859,
                                 "Camera Object Name": "Camera Pivot",
@@ -269,6 +269,8 @@
                                 "Dash Icon Name": "DashCooldown",
                                 "Health Bar Name": "HealthBarFill",
                                 "Melee VFX delay": 0.10000000149011612,
+                                "Time Stop on hit duration": 0.05000000074505806,
+                                "Time Stop on death duration": 0.10000000149011612,
                                 "Dash unlocked": true,
                                 "Ultimate unlocked": true,
                                 "Ultimate object": "ultimate_mc_all",
@@ -391,7 +393,7 @@
                     12086583108475478972,
                     1737715697861383320,
                     8326906959797741726,
-                    6681300282887379128
+                    16960947005892835887
                 ]
             },
             {
@@ -1132,7 +1134,7 @@
                 ]
             },
             {
-                "UID": 6681300282887379128,
+                "UID": 16960947005892835887,
                 "ParentUID": 6066264216335019313,
                 "Name": "AttackVfxV3",
                 "Mobility": 1,
@@ -1161,7 +1163,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 8495457965468345833,
+                        "UID": 4372133195887104065,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
@@ -1172,7 +1174,7 @@
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 4457649627231299619,
+                        "UID": 9099695901180006073,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1188,6 +1190,7 @@
                                 "Update Rate": 0.03500000014901161,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1245368692058688
                             }
                         ]
@@ -3260,10 +3263,8 @@
                     15708526773484261226,
                     3149694481570625829,
                     15668053244717720188,
-                    17084470601183875477,
-                    8319152382312969439,
-                    16191253763909708126,
-                    1677987741932768633
+                    3070168570148095356,
+                    12197559749858795618
                 ]
             },
             {
@@ -5148,7 +5149,7 @@
                 "Children": []
             },
             {
-                "UID": 17084470601183875477,
+                "UID": 3070168570148095356,
                 "ParentUID": 14927191215449225593,
                 "Name": "AttackVfxH1",
                 "Mobility": 1,
@@ -5177,7 +5178,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16127898898415923052,
+                        "UID": 9448133846409615260,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
@@ -5188,7 +5189,7 @@
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 5039869223688690199,
+                        "UID": 16111553229171173563,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -5204,6 +5205,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -5212,7 +5214,7 @@
                 "Children": []
             },
             {
-                "UID": 8319152382312969439,
+                "UID": 12197559749858795618,
                 "ParentUID": 14927191215449225593,
                 "Name": "AttackVfxV1",
                 "Mobility": 1,
@@ -5241,7 +5243,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10878843380609650033,
+                        "UID": 6925476065193164381,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
@@ -5252,7 +5254,7 @@
                         "ProduceShadows": true
                     },
                     {
-                        "UID": 17182494978910583400,
+                        "UID": 6979983489648511488,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -5268,135 +5270,8 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 16191253763909708126,
-                "ParentUID": 14927191215449225593,
-                "Name": "AttackVfxH2",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 13133417116646016487,
-                "LocalTransform": [
-                    0.0,
-                    1.7165186250167608e-7,
-                    1.784999966621399,
-                    0.000014066696166992188,
-                    4.0,
-                    -0.000006637205387960421,
-                    -1.063942889345526e-7,
-                    0.0,
-                    0.000027418136596679688,
-                    0.9599468111991882,
-                    -4.255771557382104e-7,
-                    0.0000057220458984375,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10481662998457847149,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 1691308713033656464,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 1741.0,
-                                "Cell height": 777.1699829101563,
-                                "Update Rate": 0.02500000037252903,
-                                "Row major": false,
-                                "Double sided": true,
-                                "Texture": 1291988928558601
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 1677987741932768633,
-                "ParentUID": 14927191215449225593,
-                "Name": "AttackVfxV2",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 13133417116646016487,
-                "LocalTransform": [
-                    -0.000029087066650390625,
-                    -0.9599468111991882,
-                    2.5366375192297126e-14,
-                    0.000014066696166992188,
-                    4.0,
-                    -0.000006980509169807192,
-                    6.285109748205286e-7,
-                    0.0,
-                    -0.0000014084280337556265,
-                    2.4145746166381876e-12,
-                    1.784999966621399,
-                    0.0000057220458984375,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 11624841548171030075,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 5103197915227503075,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 1741.0,
-                                "Cell height": 777.1699829101563,
-                                "Update Rate": 0.02500000037252903,
-                                "Row major": false,
-                                "Double sided": true,
-                                "Texture": 1291988928558601
                             }
                         ]
                     }
