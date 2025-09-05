@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1682242295416412,
-        "VersionUID": 13469650615686918517,
+        "VersionUID": 6992528433478957275,
         "Name": "NewSoldier",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1682242295416412,
-                "PrefabVersionUID": 13469650615686918517,
+                "PrefabVersionUID": 6992528433478957275,
                 "PrefabChildUID": 12812678401381065130,
                 "LocalTransform": [
                     1.0,
@@ -47,7 +47,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Max Health": 3,
-                                "Current Health": 3,
+                                "Current Health": 100000,
                                 "Invulnerable": false,
                                 "Dead": false,
                                 "Damage": 1,
@@ -61,8 +61,9 @@
                                 "AI Attack Range": 1.2999999523162842,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "On Hit VFX 1": "OnHitVFX1",
-                                "On Hit VFX 2": "OnHitVFX2",
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "AI Patrol Point": [
                                     0.0,
                                     0.0,
@@ -130,8 +131,7 @@
                     10758304492373737915,
                     7361024699340530030,
                     703388673985019145,
-                    1154319351484231513,
-                    10900932136994243529
+                    8316631685276272387
                 ]
             },
             {
@@ -304,134 +304,40 @@
                 "Children": []
             },
             {
-                "UID": 1154319351484231513,
+                "UID": 8316631685276272387,
                 "ParentUID": 9623510915598885360,
-                "Name": "OnHitVFX1",
+                "Name": "OnHitPivot",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11647685002672666171,
+                "PrefabUID": 1600748895571709,
+                "PrefabVersionUID": 3938431659546529282,
+                "PrefabChildUID": 10313792713188357615,
                 "LocalTransform": [
-                    -0.000002503395535313757,
-                    -1.5000005960464478,
-                    0.000007241965704452014,
+                    1.0000001192092896,
                     0.0,
-                    -0.0000022351746338244993,
-                    -0.000007510186605941271,
-                    -1.5000005960464478,
-                    1.5,
-                    1.5000005960464478,
-                    -0.0000022351746338244993,
-                    -0.000002503395535313757,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0000001192092896,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [
-                    {
-                        "UID": 8787350422504343774,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 8211758858298487068,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 750.0,
-                                "Cell height": 750.0,
-                                "Update Rate": 0.03999999910593033,
-                                "Row major": false,
-                                "Double sided": true,
-                                "Is One Shot": true,
-                                "Texture": 1299747800702359
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 10900932136994243529,
-                "ParentUID": 9623510915598885360,
-                "Name": "OnHitVFX2",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11647685002672666171,
-                "LocalTransform": [
-                    1.5000003576278687,
-                    0.0,
-                    0.000016093263184302486,
-                    0.0,
-                    0.000016093261365313083,
-                    -0.0000025033957626874326,
-                    -1.5000003576278687,
-                    1.5,
-                    2.728484799208175e-11,
-                    1.500000238418579,
-                    -0.000002503395990061108,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12972027586812107275,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 730235725674766141,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 750.0,
-                                "Cell height": 750.0,
-                                "Update Rate": 0.03999999910593033,
-                                "Row major": false,
-                                "Double sided": true,
-                                "Is One Shot": true,
-                                "Texture": 1299747800702359
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
+                "Components": [],
+                "Children": [
+                    1154319351484231513,
+                    2193746920682480335
+                ]
             },
             {
                 "UID": 203426997508274814,
@@ -900,6 +806,136 @@
                 "Children": [
                     18097039805565207545
                 ]
+            },
+            {
+                "UID": 1154319351484231513,
+                "ParentUID": 8316631685276272387,
+                "Name": "OnHitVfx1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11647685002672666171,
+                "LocalTransform": [
+                    2.000000238418579,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    2.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    2.000000238418579,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8787350422504343774,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 8211758858298487068,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 750.0,
+                                "Cell height": 750.0,
+                                "Update Rate": 0.03999999910593033,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Texture": 1299747800702359
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2193746920682480335,
+                "ParentUID": 8316631685276272387,
+                "Name": "OnHitVfx2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11647685002672666171,
+                "LocalTransform": [
+                    -7.152557373046875e-7,
+                    -2.0,
+                    0.0000325888795487117,
+                    0.0,
+                    2.0,
+                    -7.152557373046875e-7,
+                    0.0,
+                    1.0,
+                    9.094947017729282e-12,
+                    0.000032588875910732895,
+                    2.000000238418579,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17490909047083668438,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 4186946657520226352,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 750.0,
+                                "Cell height": 750.0,
+                                "Update Rate": 0.03999999910593033,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Texture": 1299747800702359
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 2093492641393610467,
