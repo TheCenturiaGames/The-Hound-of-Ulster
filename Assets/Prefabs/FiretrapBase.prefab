@@ -1,30 +1,34 @@
 {
     "Prefab": {
-        "UID": 1638109306357786,
+        "UID": 1648264165982104,
+        "VersionUID": 14077859085392502591,
         "Name": "FiretrapBase",
         "GameObjects": [
             {
-                "UID": 14891016756640533175,
-                "ParentUID": 13386783032395912545,
+                "UID": 6096231457724403629,
+                "ParentUID": 3550964722403993,
                 "Name": "FiretrapBase",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
+                "PrefabUID": 1648264165982104,
+                "PrefabVersionUID": 14077859085392502591,
+                "PrefabChildUID": 7434705662527623304,
                 "LocalTransform": [
-                    2.0,
+                    6.345149517059326,
                     0.0,
+                    -0.0004642754793167114,
+                    -5.546972751617432,
                     0.0,
+                    3.171999931335449,
                     0.0,
+                    6.177213668823242,
+                    0.00041747093200683594,
                     0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    2.0,
-                    0.0,
+                    6.34381628036499,
+                    -18.34741973876953,
                     0.0,
                     0.0,
                     0.0,
@@ -32,17 +36,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2723517158409640796,
+                        "UID": 6354195970716666053,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 1326781887355453,
-                        "RenderMode": 1
+                        "Mesh": 0,
+                        "Material": 1300000000000000,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
                     },
                     {
-                        "UID": 3134667019286568583,
+                        "UID": 3435665461403399464,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -52,28 +57,83 @@
                                 "Script Name": "FireballTrap",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Activation Range": 10.0,
-                                "Min Attack Cooldown": 3.0,
-                                "Max Attack Cooldown": 20.0,
+                                "Activation Range": 12.0,
+                                "Min Attack Cooldown": 0.5,
+                                "Max Attack Cooldown": 1.0,
                                 "Trap Damage": 1,
-                                "Damage Duration": 1.5,
+                                "Damage Duration": 2.5,
                                 "Rotation Speed": 1.0,
-                                "Falling Height": 15.0,
+                                "Falling Height": 20.0,
                                 "Max Fall Speed": 20.0,
-                                "Gravity": 9.8100004196167
+                                "Gravity": 13.0,
+                                "Mini Prototype": 17179757614441501746,
+                                "Mini Count": 4,
+                                "Mini Lifetime": 4.0,
+                                "Impact Prefab": 6983518085985224794,
+                                "Max Launch Radius": 6.0,
+                                "Direction arc": -180.0,
+                                "VFX Main Light": 14764788662502831194,
+                                "VFX Light Impact": 252621371100125244,
+                                "VFX Fire Impact": 17871755678718166508,
+                                "VFX Bomb Ground": 7141150777092117831,
+                                "VFX Black Stain": 7162974813171368947,
+                                "VFX Delay (Main Light)": 0.0,
+                                "VFX Delay (Light Impact)": 0.07999999821186066,
+                                "VFX Delay (Fire Impact)": 0.20000000298023224,
+                                "VFX Delay (Bomb Ground)": 0.20000000298023224,
+                                "VFX Delay (Black Stain)": 0.550000011920929,
+                                "VFX Life (Main Light)": 0.550000011920929,
+                                "VFX Life (Light Impact)": 0.30000001192092896,
+                                "VFX Life (Fire Impact)": 0.800000011920929,
+                                "VFX Life (Bomb Ground)": 3.0,
+                                "VFX Life (Black Stain)": 5.0,
+                                "VFX Indicator (pre-fall)": 4433152192667841350,
+                                "VFX Indicator World Radius": 0.6000000238418579,
+                                "Mini Indicator VFX (pre-fall)": 4573967744032429649,
+                                "Mini Indicator Scale": 0.4000000059604645,
+                                "Mini Start Height": 0.5,
+                                "Mini Up Speed": 4.5,
+                                "Mini Landing Radius": 0.6000000238418579
                             }
                         ]
                     },
                     {
-                        "UID": 5290777759836119618,
+                        "UID": 5920886914849705971,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            2.0,
+                            1.0,
+                            5.0
+                        ]
+                    },
+                    {
+                        "UID": 15082977981294406106,
                         "Type": 12,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Sphere Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 3,
+                        "Mass": 0.0,
+                        "ColliderType": 0,
                         "ColliderLayer": 2,
-                        "Radius": 0.800000011920929,
+                        "Radius": 1.0,
                         "GenerateCallback": false,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -89,19 +149,20 @@
                     }
                 ],
                 "Children": [
-                    14119833918543507582,
-                    162070855835229081
+                    4716979244692420629,
+                    17016511288607443083
                 ]
             },
             {
-                "UID": 14119833918543507582,
-                "ParentUID": 14891016756640533175,
+                "UID": 4716979244692420629,
+                "ParentUID": 6096231457724403629,
                 "Name": "Fireball",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
+                "PrefabChildUID": 7463601648694001747,
                 "LocalTransform": [
                     0.30000001192092896,
                     0.0,
@@ -122,27 +183,29 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2026821736811670549,
+                        "UID": 12032464926035911148,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1194458484681695,
                         "Material": 1336781969237153,
-                        "RenderMode": 0
+                        "RenderMode": 0,
+                        "ProduceShadows": true
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 162070855835229081,
-                "ParentUID": 14891016756640533175,
+                "UID": 17016511288607443083,
+                "ParentUID": 6096231457724403629,
                 "Name": "FireballShadow",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
+                "PrefabChildUID": 10279796478057641798,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -163,14 +226,15 @@
                 ],
                 "Components": [
                     {
-                        "UID": 5198116148025222648,
+                        "UID": 3782550931178645939,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1165703895193424,
                         "Material": 1326842676146302,
-                        "RenderMode": 1
+                        "RenderMode": 1,
+                        "ProduceShadows": true
                     }
                 ],
                 "Children": []
