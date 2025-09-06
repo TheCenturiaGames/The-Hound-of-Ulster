@@ -5,19 +5,19 @@
         "RootGameObject": 3408008172474305760,
         "NavmeshUID": 2083739643501027,
         "Camera Position": [
-            -42.53023147583008,
-            10.065675735473633,
-            -1.6546647548675537
+            -54.92829895019531,
+            39.8668327331543,
+            39.231136322021484
         ],
         "Camera Front": [
-            0.5304468274116516,
-            -0.6765508651733398,
-            -0.5107886791229248
+            0.1635361760854721,
+            -0.6817403435707092,
+            -0.7130820751190186
         ],
         "Camera Up": [
-            0.4864625036716461,
-            0.7374886274337769,
-            -0.46847081184387207
+            0.1521008312702179,
+            0.7326979637145996,
+            -0.663339376449585
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -942,7 +942,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 10070499238841455951,
                 "LocalTransform": [
@@ -1733,7 +1733,7 @@
                         ]
                     },
                     {
-                        "UID": 16142481442120645943,
+                        "UID": 7553457012233672597,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2084,7 +2084,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 6218394058896983822,
                 "LocalTransform": [
@@ -4108,7 +4108,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 4540006796925023904,
                 "LocalTransform": [
@@ -6472,7 +6472,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 16240217571329710541,
                 "LocalTransform": [
@@ -7363,7 +7363,6 @@
                     13589048720642212367,
                     4813376091194641265,
                     5337578681154906419,
-                    7131533442096024917,
                     7235541995974941131,
                     4676765625789944550,
                     6398134803989338436,
@@ -7489,7 +7488,11 @@
                     12665493400462600563,
                     14590493087904577096,
                     6483584035186000227,
-                    15538415226279964281
+                    15538415226279964281,
+                    9712935285068976389,
+                    911154874276095027,
+                    90540834251615624,
+                    9370906084685927482
                 ]
             },
             {
@@ -7691,8 +7694,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9237650481208078374,
                 "LocalTransform": [
@@ -8135,15 +8138,15 @@
                     1.668967604637146,
                     -7.776543498039246e-8,
                     -0.5170124769210815,
-                    -29.951637268066406,
+                    -28.964929580688477,
                     -0.003960127010941505,
                     -2.5194387435913086,
                     -0.012779501266777515,
-                    -1.6258883476257324,
+                    0.2106471061706543,
                     -0.5169896483421326,
                     0.019296305254101753,
                     -1.6689015626907349,
-                    -52.759151458740234,
+                    -57.26041030883789,
                     0.0,
                     0.0,
                     0.0,
@@ -9397,7 +9400,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 1008756173686261161,
                 "LocalTransform": [
@@ -11393,6 +11396,79 @@
                     5081751009159925302,
                     3962915049339268961
                 ]
+            },
+            {
+                "UID": 12712583944710913749,
+                "ParentUID": 5335756803804961798,
+                "Name": "Rising tile",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    -0.2693901062011719,
+                    0.0,
+                    2.0,
+                    0.0,
+                    -7.152557373046875e-7,
+                    0.0,
+                    0.0,
+                    3.000000238418579,
+                    0.8052616119384766,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7108471151168361133,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1115255356403839,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 16091786502890681284,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "TileFloatScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10,
+                                "MinDistanceToPlayer": 10.0,
+                                "Starting Position": [
+                                    0.0,
+                                    -10.0,
+                                    0.0
+                                ],
+                                "Starting Rotation": [
+                                    -0.0,
+                                    0.0,
+                                    -0.0
+                                ],
+                                "Starting Scale": [
+                                    3.0,
+                                    2.0,
+                                    3.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 13519343003104471256,
@@ -13550,7 +13626,7 @@
             },
             {
                 "UID": 764014902524737909,
-                "ParentUID": 13142511883090352604,
+                "ParentUID": 1683763402632660788,
                 "Name": "Pr_Hanging_Bridge_long",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -13558,18 +13634,18 @@
                 "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
-                    0.010212610475718975,
+                    -0.999239444732666,
                     0.0,
-                    -1.0000277757644653,
-                    61.74540328979492,
+                    0.040984589606523514,
+                    -8.084339141845703,
                     0.0,
                     1.0,
                     0.0,
-                    -5.31054162979126,
-                    1.0000277757644653,
+                    -1.5633937120437622,
+                    -0.040984589606523514,
                     0.0,
-                    0.010212610475718975,
-                    35.520816802978516,
+                    -0.999239444732666,
+                    84.78226470947266,
                     0.0,
                     0.0,
                     0.0,
@@ -13582,7 +13658,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1142026519646891,
+                        "Mesh": 1123832578671507,
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
@@ -14521,7 +14597,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 5743349321829594227,
                 "LocalTransform": [
@@ -15713,7 +15789,6 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15585807514051914006,
                     9813655910876359525,
                     17030999886969610812,
                     16411553448872735239,
@@ -15728,7 +15803,10 @@
                     11273378389393059569,
                     4066199090620595251,
                     10831151896270955550,
-                    13019304200649738736
+                    13019304200649738736,
+                    12799187428423965522,
+                    5335756803804961798,
+                    1121989049503077880
                 ]
             },
             {
@@ -17119,8 +17197,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13477209296537836814,
                 "LocalTransform": [
@@ -18980,7 +19058,8 @@
                     5411792070003481006,
                     15263235084315135536,
                     890696707182273723,
-                    4979111330792211179
+                    4979111330792211179,
+                    11811600044279656392
                 ]
             },
             {
@@ -19270,7 +19349,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 1126334991198732100,
                 "LocalTransform": [
@@ -21151,38 +21230,6 @@
                     }
                 ],
                 "Children": []
-            },
-            {
-                "UID": 15585807514051914006,
-                "ParentUID": 16205209030357674676,
-                "Name": "RisingTiles",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -1.1920944587018312e-7,
-                    0.0,
-                    1.0000011920928955,
-                    18.011253356933594,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.16115884482860565,
-                    -1.0000011920928955,
-                    -0.0,
-                    -1.1920944587018312e-7,
-                    -16.511859893798828,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    10006174747288195058
-                ]
             },
             {
                 "UID": 10578525272340680815,
@@ -28535,10 +28582,10 @@
                     6675000984171537843,
                     6474717549953802662,
                     3400461779724007000,
-                    764014902524737909,
                     4157364174128010352,
                     9677804245348961147,
-                    9059081916116205300
+                    9059081916116205300,
+                    6743236738209198349
                 ]
             },
             {
@@ -29784,7 +29831,6 @@
                     14683176170605022149,
                     15359191560682186540,
                     18340660909623244507,
-                    6743236738209198349,
                     13859662276274747527,
                     17652414736191067536,
                     7526592887772250146,
@@ -33287,11 +33333,11 @@
                     0.0,
                     1.0,
                     0.0,
-                    -1.736882209777832,
+                    -0.15507793426513672,
                     0.0,
                     0.0,
                     1.0,
-                    19.155065536499023,
+                    17.57077980041504,
                     0.0,
                     0.0,
                     0.0,
@@ -36974,7 +37020,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9598610013857378703,
                 "LocalTransform": [
@@ -37297,79 +37343,6 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 10006174747288195058,
-                "ParentUID": 15585807514051914006,
-                "Name": "Rising tile",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    3.0,
-                    0.0,
-                    0.0,
-                    -0.2693901062011719,
-                    0.0,
-                    2.0,
-                    0.0,
-                    -7.152557373046875e-7,
-                    0.0,
-                    0.0,
-                    3.000000238418579,
-                    0.8052616119384766,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 3629954733508163948,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1115255356403839,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 1764716559118165004,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "TileFloatScript",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "Speed": 10,
-                                "MinDistanceToPlayer": 10.0,
-                                "Starting Position": [
-                                    0.0,
-                                    -10.0,
-                                    0.0
-                                ],
-                                "Starting Rotation": [
-                                    -0.0,
-                                    0.0,
-                                    -0.0
-                                ],
-                                "Starting Scale": [
-                                    3.0,
-                                    2.0,
-                                    3.0
-                                ]
-                            }
-                        ]
                     }
                 ],
                 "Children": []
@@ -37843,7 +37816,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 923795464283715108,
                 "LocalTransform": [
@@ -41284,18 +41257,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 12980345037474995869,
                 "LocalTransform": [
-                    -57.987186431884766,
+                    -57.090476989746094,
                     0.0,
                     0.828662097454071,
-                    -25.51519775390625,
+                    -24.46991729736328,
                     0.0,
                     0.64000004529953,
                     0.0,
                     22.423131942749023,
-                    -0.9446924328804016,
+                    -0.9300841689109802,
                     0.0,
                     -50.866302490234375,
-                    -57.340118408203125,
+                    -59.702537536621094,
                     0.0,
                     0.0,
                     0.0,
@@ -44022,49 +43995,6 @@
                 ]
             },
             {
-                "UID": 7131533442096024917,
-                "ParentUID": 290759499312642445,
-                "Name": "WaterfallRock",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 1992751871863016980,
-                "LocalTransform": [
-                    -1.1020452976226807,
-                    0.0,
-                    -1.6689823865890503,
-                    -10.06494140625,
-                    0.0,
-                    2.0,
-                    0.0,
-                    -21.431570053100586,
-                    1.6689823865890503,
-                    0.0,
-                    -1.1020452976226807,
-                    37.094390869140625,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 15758232917905059116,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1110874270878359,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 16817265969107862203,
                 "ParentUID": 6675000984171537843,
                 "Name": "EN_PR_Vegetation_BushGreen_04_V1",
@@ -44164,11 +44094,11 @@
                     0.32355615496635437,
                     0.0,
                     -1.23843252658844,
-                    13.304449081420898,
+                    13.304336547851563,
                     0.0,
                     1.2799999713897705,
                     0.0,
-                    0.8958591222763062,
+                    0.4664478898048401,
                     1.23843252658844,
                     0.0,
                     0.32355615496635437,
@@ -44564,6 +44494,49 @@
                         "Mesh": 1164741285937499,
                         "Material": 0,
                         "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9370906084685927482,
+                "ParentUID": 290759499312642445,
+                "Name": "WaterfallRock",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1992751871863016980,
+                "LocalTransform": [
+                    -1.1020452976226807,
+                    0.0,
+                    -1.6689823865890503,
+                    14.595500946044922,
+                    0.0,
+                    1.2058392763137817,
+                    0.0,
+                    -13.589223861694336,
+                    1.6689823865890503,
+                    0.0,
+                    -1.1020452976226807,
+                    38.2626953125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15832969098647310185,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1110874270878359,
+                        "Material": 0,
+                        "RenderMode": 0,
                         "ProduceShadows": true
                     }
                 ],
@@ -46811,18 +46784,18 @@
                 "NavmeshValid": true,
                 "PrefabChildUID": 8762642814604319406,
                 "LocalTransform": [
-                    14.226635932922363,
-                    -0.0000017195245618495392,
-                    2.8684029604938033e-15,
-                    14.992431640625,
-                    0.000006396228855010122,
+                    14.226639747619629,
+                    0.0,
+                    0.0,
+                    15.554492950439453,
+                    0.0,
                     3.8249123096466064,
-                    -0.000010950486284855288,
-                    -13.09168815612793,
-                    2.8719422673351147e-12,
-                    0.0000017193581243191147,
-                    24.345836639404297,
-                    25.123138427734375,
+                    -0.000019532590158632956,
+                    -13.091806411743164,
+                    0.0,
+                    0.000006396228400262771,
+                    11.680377006530762,
+                    27.778961181640625,
                     0.0,
                     0.0,
                     0.0,
@@ -47330,7 +47303,9 @@
                     17014287992811989863,
                     4527826896872297402,
                     10599792375277732596,
-                    6881768639919575745
+                    6881768639919575745,
+                    764014902524737909,
+                    8742135898841490151
                 ]
             },
             {
@@ -49943,7 +49918,6 @@
                     2957684594148413667,
                     11912341303444458416,
                     5417966619372068026,
-                    11811600044279656392,
                     11161928387695944194,
                     2857442186341582387,
                     8895450054883226725,
@@ -51001,8 +50975,8 @@
             },
             {
                 "UID": 6743236738209198349,
-                "ParentUID": 18345928282769128889,
-                "Name": "Rune",
+                "ParentUID": 13142511883090352604,
+                "Name": "Rune-door",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -51010,18 +50984,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 3562399618265986211,
                 "LocalTransform": [
-                    -1.8038289546966553,
+                    0.5354195833206177,
                     0.0,
-                    0.34853512048721313,
-                    -9.036356925964355,
+                    2.468789577484131,
+                    42.12723159790039,
                     0.0,
-                    1.7379308938980103,
+                    2.5199997425079346,
                     0.0,
-                    4.587808609008789,
-                    -0.3692546486854553,
+                    0.14675211906433105,
+                    -2.6155521869659424,
                     0.0,
-                    -1.702613353729248,
-                    35.8460693359375,
+                    0.5053762793540955,
+                    34.26797103881836,
                     0.0,
                     0.0,
                     0.0,
@@ -59832,7 +59806,6 @@
                     8328372933208526438,
                     18257279760177859768,
                     14336416575476702194,
-                    4780558156492013712,
                     7601657647428795170
                 ]
             },
@@ -63685,6 +63658,49 @@
                 "Children": []
             },
             {
+                "UID": 9712935285068976389,
+                "ParentUID": 290759499312642445,
+                "Name": "WaterfallRock",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1992751871863016980,
+                "LocalTransform": [
+                    -1.1020452976226807,
+                    0.0,
+                    -1.6689823865890503,
+                    -10.06494140625,
+                    0.0,
+                    2.0,
+                    0.0,
+                    -21.431570053100586,
+                    1.6689823865890503,
+                    0.0,
+                    -1.1020452976226807,
+                    37.094390869140625,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 306337993358105448,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1110874270878359,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 9161366416405928866,
                 "ParentUID": 17014287992811989863,
                 "Name": "EN_PR_Vegetation_PlantTall_Individual_03_V1",
@@ -64892,7 +64908,7 @@
                     0.0,
                     0.0,
                     1.0,
-                    95.08954620361328,
+                    94.8277587890625,
                     0.0,
                     0.0,
                     0.0,
@@ -65194,7 +65210,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 5052587442193548138,
                 "LocalTransform": [
@@ -68935,7 +68951,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 7255847946960354335,
                 "LocalTransform": [
@@ -70821,7 +70837,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 7034405408508845338,
                 "LocalTransform": [
@@ -71429,6 +71445,49 @@
                         "Name": "Mesh",
                         "Mesh": 1119761960597213,
                         "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 911154874276095027,
+                "ParentUID": 290759499312642445,
+                "Name": "Cube",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": true,
+                "PrefabChildUID": 8762642814604319406,
+                "LocalTransform": [
+                    9.750961303710938,
+                    7.341080987544046e-8,
+                    7.685206890106201,
+                    17.058536529541016,
+                    0.000006396228400262771,
+                    3.8249123096466064,
+                    -0.000004747166258312063,
+                    -13.091936111450195,
+                    -10.359345436096191,
+                    0.0000024305511487909826,
+                    7.233872890472412,
+                    20.614059448242188,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14984076080279940133,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 1347218959603599,
                         "RenderMode": 0,
                         "ProduceShadows": true
                     }
@@ -72691,7 +72750,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 4023629944621102273,
                 "LocalTransform": [
@@ -74783,7 +74842,7 @@
             },
             {
                 "UID": 11811600044279656392,
-                "ParentUID": 4527826896872297402,
+                "ParentUID": 8146950891619487911,
                 "Name": "Circle_Runes",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -74792,18 +74851,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 13002420741242468221,
                 "LocalTransform": [
-                    -6.22343463874131e-7,
-                    0.0,
-                    -1.7401957511901855,
-                    5.939061164855957,
-                    0.0,
-                    2.0192270278930664,
-                    0.0,
-                    -3.775329113006592,
+                    6.223440323083196e-7,
+                    -0.0000011393689192118472,
                     1.7401957511901855,
-                    0.0,
-                    -6.22343463874131e-7,
-                    117.9459228515625,
+                    11.369466781616211,
+                    -9.81922426035453e-7,
+                    2.0192270278930664,
+                    9.819231081564794e-7,
+                    -3.9319798946380615,
+                    -1.7401957511901855,
+                    -0.0000011393689192118472,
+                    6.22343463874131e-7,
+                    0.3295154571533203,
                     0.0,
                     0.0,
                     0.0,
@@ -78075,6 +78134,79 @@
                         "Material": 0,
                         "RenderMode": 2,
                         "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9771953000807606722,
+                "ParentUID": 12799187428423965522,
+                "Name": "Rising tile",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    -0.2693901062011719,
+                    0.0,
+                    2.0,
+                    0.0,
+                    -7.152557373046875e-7,
+                    0.0,
+                    0.0,
+                    3.000000238418579,
+                    0.8052616119384766,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1723564367273192636,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1115255356403839,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 4344728910402643164,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "TileFloatScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10,
+                                "MinDistanceToPlayer": 10.0,
+                                "Starting Position": [
+                                    0.0,
+                                    -10.0,
+                                    0.0
+                                ],
+                                "Starting Rotation": [
+                                    -0.0,
+                                    0.0,
+                                    -0.0
+                                ],
+                                "Starting Scale": [
+                                    3.0,
+                                    2.0,
+                                    3.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -83234,7 +83366,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 6238513609575236142,
                 "LocalTransform": [
@@ -83623,7 +83755,7 @@
                     -0.6062986254692078,
                     5.226203918457031,
                     -0.18498066067695618,
-                    37.88571548461914,
+                    34.909507751464844,
                     0.0,
                     0.0,
                     0.0,
@@ -84791,7 +84923,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13408911436266356487,
                 "LocalTransform": [
@@ -85933,6 +86065,38 @@
                 "Children": []
             },
             {
+                "UID": 1121989049503077880,
+                "ParentUID": 16205209030357674676,
+                "Name": "RisingTiles",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.1920944587018312e-7,
+                    0.0,
+                    1.0000011920928955,
+                    -7.856882095336914,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -2.0428881645202637,
+                    -1.0000011920928955,
+                    -0.0,
+                    -1.1920944587018312e-7,
+                    -37.2304801940918,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    4232766098477716034
+                ]
+            },
+            {
                 "UID": 17143752573364000393,
                 "ParentUID": 1260462744873225712,
                 "Name": "SpearMeleeTrail",
@@ -86271,49 +86435,6 @@
                 "Children": [
                     4947678983589499386
                 ]
-            },
-            {
-                "UID": 4780558156492013712,
-                "ParentUID": 10714728031365892063,
-                "Name": "Collider",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": true,
-                "PrefabChildUID": 8914496267245568427,
-                "LocalTransform": [
-                    12.908893585205078,
-                    0.0,
-                    0.0,
-                    48.007991790771484,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -6.196040630340576,
-                    0.0,
-                    0.0,
-                    11.748180389404297,
-                    -18.731653213500977,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 13602130711593862159,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1175652718975713,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 1301111966419893552,
@@ -89040,8 +89161,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 2616853906637254047,
                 "LocalTransform": [
@@ -92984,7 +93105,8 @@
                     9032433454048459254,
                     18281119762030367439,
                     17624086541020144984,
-                    14995517276933102942
+                    14995517276933102942,
+                    17476295957076391843
                 ]
             },
             {
@@ -93098,7 +93220,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 14767744897758235873,
                 "LocalTransform": [
@@ -93141,7 +93263,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 10127472224944596580,
                 "LocalTransform": [
@@ -93184,7 +93306,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13315320674823959126,
                 "LocalTransform": [
@@ -93227,7 +93349,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13778752400876325541,
                 "LocalTransform": [
@@ -93270,7 +93392,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 5914100327015344125,
                 "LocalTransform": [
@@ -93313,7 +93435,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 8914496267245568427,
                 "LocalTransform": [
@@ -93356,7 +93478,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 17717263909454178770,
                 "LocalTransform": [
@@ -93399,7 +93521,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 8914496267245568427,
                 "LocalTransform": [
@@ -93442,7 +93564,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 8914496267245568427,
                 "LocalTransform": [
@@ -93485,7 +93607,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13315320674823959126,
                 "LocalTransform": [
@@ -93527,8 +93649,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 18409378553917951284,
                 "LocalTransform": [
@@ -93570,8 +93692,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 7959190994768273809,
                 "LocalTransform": [
@@ -93613,8 +93735,8 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 180459287588629908,
                 "LocalTransform": [
@@ -93656,23 +93778,23 @@
                 "Name": "Tiles",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13477209296537836814,
                 "LocalTransform": [
-                    -5.964612007141113,
+                    -0.2319200336933136,
                     0.0,
-                    0.03632208704948425,
-                    -170.18861389160156,
+                    -2.3367903232574463,
+                    -143.18429565429688,
                     0.0,
                     0.2338559627532959,
                     0.0,
-                    0.10420547425746918,
-                    -0.09265247732400894,
+                    -2.1343493461608887,
+                    5.960822582244873,
                     0.0,
-                    -2.3382766246795654,
-                    -118.74297332763672,
+                    -0.0909179300069809,
+                    -139.5541534423828,
                     0.0,
                     0.0,
                     0.0,
@@ -94732,7 +94854,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9223424064784435077,
                 "LocalTransform": [
@@ -94775,7 +94897,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 18261190520142940093,
                 "LocalTransform": [
@@ -94818,7 +94940,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 14617904705017055316,
                 "LocalTransform": [
@@ -94861,7 +94983,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 11764638510055288756,
                 "LocalTransform": [
@@ -94904,7 +95026,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 11879891818483825329,
                 "LocalTransform": [
@@ -94947,7 +95069,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 18416778421483756968,
                 "LocalTransform": [
@@ -94990,7 +95112,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 13024954446271654490,
                 "LocalTransform": [
@@ -95076,7 +95198,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 3074355599772857492,
                 "LocalTransform": [
@@ -95119,7 +95241,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9888354076246858227,
                 "LocalTransform": [
@@ -95162,7 +95284,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 14396550674391294939,
                 "LocalTransform": [
@@ -95205,7 +95327,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 16433324522851762829,
                 "LocalTransform": [
@@ -95248,7 +95370,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 16895029639767970980,
                 "LocalTransform": [
@@ -95291,7 +95413,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 14153281853556296855,
                 "LocalTransform": [
@@ -95334,7 +95456,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 16148184100077990228,
                 "LocalTransform": [
@@ -95377,7 +95499,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 2021660360881930430,
                 "LocalTransform": [
@@ -95451,7 +95573,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 7465477458822582757,
                 "LocalTransform": [
@@ -95494,7 +95616,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 1523847422654727496,
                 "LocalTransform": [
@@ -95537,7 +95659,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 1322011766389807706,
                 "LocalTransform": [
@@ -95580,7 +95702,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 10515762340244862089,
                 "LocalTransform": [
@@ -95623,7 +95745,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9888354076246858227,
                 "LocalTransform": [
@@ -95666,7 +95788,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": true,
                 "PrefabChildUID": 9888354076246858227,
                 "LocalTransform": [
@@ -99822,6 +99944,271 @@
                         "Name": "Mesh",
                         "Mesh": 1185008788029156,
                         "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12799187428423965522,
+                "ParentUID": 16205209030357674676,
+                "Name": "RisingTiles",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.1920944587018312e-7,
+                    0.0,
+                    1.0000011920928955,
+                    18.011253356933594,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.16115884482860565,
+                    -1.0000011920928955,
+                    -0.0,
+                    -1.1920944587018312e-7,
+                    -16.511859893798828,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    9771953000807606722
+                ]
+            },
+            {
+                "UID": 5335756803804961798,
+                "ParentUID": 16205209030357674676,
+                "Name": "RisingTiles",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.1920944587018312e-7,
+                    0.0,
+                    1.0000011920928955,
+                    -5.88292121887207,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -2.0428881645202637,
+                    -1.0000011920928955,
+                    -0.0,
+                    -1.1920944587018312e-7,
+                    -37.2304801940918,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    12712583944710913749
+                ]
+            },
+            {
+                "UID": 17476295957076391843,
+                "ParentUID": 18296827394950883502,
+                "Name": "Tiles",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": true,
+                "PrefabChildUID": 13477209296537836814,
+                "LocalTransform": [
+                    -5.964612007141113,
+                    0.0,
+                    0.03632208704948425,
+                    -170.18861389160156,
+                    0.0,
+                    0.2338559627532959,
+                    0.0,
+                    0.10420547425746918,
+                    -0.09265247732400894,
+                    0.0,
+                    -2.3382766246795654,
+                    -118.74297332763672,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4946302583173618709,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4232766098477716034,
+                "ParentUID": 1121989049503077880,
+                "Name": "Rising tile",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    -0.2693901062011719,
+                    0.0,
+                    2.0,
+                    0.0,
+                    -7.152557373046875e-7,
+                    0.0,
+                    0.0,
+                    3.000000238418579,
+                    0.8052616119384766,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4864968598649725233,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1115255356403839,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 10221450304226234408,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "TileFloatScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10,
+                                "MinDistanceToPlayer": 10.0,
+                                "Starting Position": [
+                                    0.0,
+                                    -10.0,
+                                    0.0
+                                ],
+                                "Starting Rotation": [
+                                    -0.0,
+                                    0.0,
+                                    -0.0
+                                ],
+                                "Starting Scale": [
+                                    3.0,
+                                    2.0,
+                                    3.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8742135898841490151,
+                "ParentUID": 1683763402632660788,
+                "Name": "Pr_Hanging_Bridge_long",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0000276565551758,
+                    0.0,
+                    0.010212728753685951,
+                    -8.571613311767578,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -3.5736594200134277,
+                    -0.010212728753685951,
+                    0.0,
+                    1.0000276565551758,
+                    78.31989288330078,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13408043005571751726,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1142026519646891,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 90540834251615624,
+                "ParentUID": 290759499312642445,
+                "Name": "Cube",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": true,
+                "PrefabChildUID": 8762642814604319406,
+                "LocalTransform": [
+                    9.750961303710938,
+                    7.341080987544046e-8,
+                    7.685206890106201,
+                    17.058536529541016,
+                    0.000006396228400262771,
+                    3.8249123096466064,
+                    -0.000004747166258312063,
+                    -13.091936111450195,
+                    -10.359345436096191,
+                    0.0000024305511487909826,
+                    7.233872890472412,
+                    32.03495788574219,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1209932451588437331,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 1347218959603599,
                         "RenderMode": 0,
                         "ProduceShadows": true
                     }
