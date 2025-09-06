@@ -1,0 +1,135 @@
+{
+    "Prefab": {
+        "UID": 1677131874257851,
+        "VersionUID": 5450176269471116592,
+        "Name": "MiniFireball",
+        "GameObjects": [
+            {
+                "UID": 6004782755749141729,
+                "ParentUID": 6303802994057220700,
+                "Name": "MiniFireball",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabVersionUID": 5450176269471116592,
+                "PrefabChildUID": 16938629315450422837,
+                "LocalTransform": [
+                    0.0999988466501236,
+                    0.0,
+                    1.1874362826347351e-8,
+                    0.33036211133003235,
+                    0.0,
+                    0.20000003278255463,
+                    0.0,
+                    5.0,
+                    -1.7462298274040222e-8,
+                    -0.0,
+                    0.10000000149011612,
+                    0.00006389617919921875,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8551581792707528280,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1194458484681695,
+                        "Material": 1336781969237153,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 12134942840428150679,
+                        "Type": 7,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MiniFireball",
+                                "Enabled": true,
+                                "WasEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 6361110739632778847,
+                        "Type": 12,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 1,
+                        "Radius": 0.5629440546035767,
+                        "GenerateCallback": true,
+                        "FitToSize": true,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    10795870594684399062
+                ]
+            },
+            {
+                "UID": 10795870594684399062,
+                "ParentUID": 6004782755749141729,
+                "Name": "Shadow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7115629934016909069,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12031058327215467045,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1326842676146302,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}

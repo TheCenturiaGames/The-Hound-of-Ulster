@@ -15,7 +15,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -95,26 +96,19 @@
 				0.3378473222255707,
 				0.033741436898708344
 			]
-		}
-	],
-	"animations":[
+		},
 		{
-			"channels":[
-				{
-					"sampler":0,
-					"target":{
-						"node":0,
-						"path":"rotation"
-					}
-				}
+			"mesh":5,
+			"name":"Circle_Big_Mesh.001",
+			"scale":[
+				0.08911711722612381,
+				0.08911711722612381,
+				0.08911711722612381
 			],
-			"name":"Sproud_Vertical_AN",
-			"samplers":[
-				{
-					"input":20,
-					"interpolation":"LINEAR",
-					"output":21
-				}
+			"translation":[
+				0,
+				-0.11052606999874115,
+				7.557923316955566
 			]
 		}
 	],
@@ -223,6 +217,27 @@
 				"metallicFactor":0,
 				"roughnessFactor":0.5527864098548889
 			}
+		},
+		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularColorFactor":[
+						2.0,
+						2.0,
+						2.0
+					]
+				}
+			},
+			"name":"M_Rune",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":5
+				},
+				"metallicFactor":0,
+				"roughnessFactor":0.5527864098548889
+			}
 		}
 	],
 	"meshes":[
@@ -295,6 +310,20 @@
 					"material":4
 				}
 			]
+		},
+		{
+			"name":"Mesh.001",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":20,
+						"NORMAL":21,
+						"TEXCOORD_0":22
+					},
+					"indices":15,
+					"material":5
+				}
+			]
 		}
 	],
 	"textures":[
@@ -317,6 +346,10 @@
 		{
 			"sampler":0,
 			"source":4
+		},
+		{
+			"sampler":0,
+			"source":5
 		}
 	],
 	"images":[
@@ -344,6 +377,11 @@
 			"mimeType":"image/png",
 			"name":"Explosion2",
 			"uri":"Explosion2.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"SimboL_WaterSpout",
+			"uri":"SimboL_WaterSpout.png"
 		}
 	],
 	"accessors":[
@@ -520,20 +558,30 @@
 		{
 			"bufferView":20,
 			"componentType":5126,
-			"count":50,
+			"count":37,
 			"max":[
-				5.633333333333334
+				28.284271240234375,
+				0,
+				27.854572296142578
 			],
 			"min":[
-				4
+				-28.284271240234375,
+				0,
+				-27.854570388793945
 			],
-			"type":"SCALAR"
+			"type":"VEC3"
 		},
 		{
 			"bufferView":21,
 			"componentType":5126,
-			"count":50,
-			"type":"VEC4"
+			"count":37,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":22,
+			"componentType":5126,
+			"count":37,
+			"type":"VEC2"
 		}
 	],
 	"bufferViews":[
@@ -659,13 +707,21 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":200,
-			"byteOffset":34216
+			"byteLength":444,
+			"byteOffset":34216,
+			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":800,
-			"byteOffset":34416
+			"byteLength":444,
+			"byteOffset":34660,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":296,
+			"byteOffset":35104,
+			"target":34962
 		}
 	],
 	"samplers":[
@@ -682,7 +738,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":35216,
+			"byteLength":35400,
 			"uri":"VFX_WaterSproudBlockout_GLTF.bin"
 		}
 	]
