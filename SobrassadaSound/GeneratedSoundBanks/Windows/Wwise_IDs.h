@@ -13,8 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_ARCHER_ATTACK = 1881066410U;
-        static const AkUniqueID PLAY_ARCHER_OVERSHOOT = 3498031381U;
         static const AkUniqueID PLAY_FIRST_THEME = 1086074370U;
         static const AkUniqueID PLAY_FOREST = 207755397U;
         static const AkUniqueID PLAY_SFX_BANSHEE_ATTACK = 2747797885U;
