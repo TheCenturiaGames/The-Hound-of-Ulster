@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{779746FB-8608-4B0E-A678-C4812CD4F0FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_SFX_Banshee_Attack" ID="{8DCB09FD-FA98-4141-A683-C798DBD02C5B}">
-					<ChildrenList>
-						<Action Name="" ID="{D889DBBA-7BD7-4F64-8A21-52BE55718CD2}" ShortID="494751090">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Banshee_Attack" ID="{1CDFC081-043C-4162-9EF5-AD4A96607A39}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_SFX_Steps_Grass" ID="{812EBAFA-F6A3-4326-AF09-2E01CD2B152F}">
 					<ChildrenList>
 						<Action Name="" ID="{34090465-2B4E-41B2-99D2-BD0130C7EF9F}" ShortID="739551296">
@@ -425,6 +414,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_Catapult" ID="{033FD4F6-AD19-4D9D-8B8B-DD8FADC3BA0A}">
+							<ChildrenList>
+								<Action Name="" ID="{557272B6-140B-435A-920F-198DC4556AD3}" ShortID="594352327">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Catapult" ID="{E36D01F7-E115-439C-8630-EA6084ADDE40}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Archer" ID="{960D7A9E-C6C6-4888-B803-34AAF42C8932}" ShortID="5732530">
@@ -446,6 +446,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Archer_Attack_03" ID="{0A63E7C7-1612-48BF-826F-D96FC392933B}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Banshee" ID="{3BA1D2CF-ABE9-4235-8D7B-2D5484A76107}" ShortID="437865312">
+					<ChildrenList>
+						<Event Name="Play_SFX_Banshee_Attack" ID="{8DCB09FD-FA98-4141-A683-C798DBD02C5B}">
+							<ChildrenList>
+								<Action Name="" ID="{D889DBBA-7BD7-4F64-8A21-52BE55718CD2}" ShortID="494751090">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Banshee_Attack" ID="{1CDFC081-043C-4162-9EF5-AD4A96607A39}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -5696,6 +5696,28 @@
 								<ActiveSource Name="waterSpoutV4" ID="{A99E48D1-CE4A-47D2-A64A-6560C157600B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="SFX_Catapult" ID="{E36D01F7-E115-439C-8630-EA6084ADDE40}" ShortID="325613135">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Catapult" ID="{F2B33C7B-17B2-4BB6-A034-F4D91D078C14}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Catapult.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="749299643"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Catapult" ID="{F2B33C7B-17B2-4BB6-A034-F4D91D078C14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
