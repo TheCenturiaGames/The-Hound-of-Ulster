@@ -1,34 +1,33 @@
 {
     "Prefab": {
-        "UID": 1676938006035292,
-        "VersionUID": 6842419912601354440,
+        "UID": 1643990284341437,
+        "VersionUID": 7990363754234689419,
         "Name": "EN_Mushroom_Flower",
         "GameObjects": [
             {
-                "UID": 9636799072617657690,
-                "ParentUID": 74893898792880226,
+                "UID": 9187914146972790892,
+                "ParentUID": 10309131146409751111,
                 "Name": "EN_Mushroom_Flower",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1676938006035292,
-                "PrefabVersionUID": 6842419912601354440,
-                "PrefabChildUID": 12617722676987824347,
+                "PrefabVersionUID": 7990363754234689419,
+                "PrefabChildUID": 5488979874998799553,
                 "LocalTransform": [
-                    -1.192093463942001e-7,
-                    -0.000001128507733483275,
-                    -1.0000004768371582,
-                    -14.064346313476563,
-                    -7.769446978139749e-14,
-                    1.0,
-                    -0.000001128507278735924,
-                    0.9272366762161255,
                     1.0000004768371582,
-                    3.6011073815825703e-14,
-                    -1.192093463942001e-7,
-                    -6.9978179931640625,
+                    0.0,
+                    0.0,
+                    -25.65851593017578,
+                    0.0,
+                    1.0,
+                    -7.769453754403327e-14,
+                    10.159133911132813,
+                    0.0,
+                    7.769450366271538e-14,
+                    1.0000004768371582,
+                    -39.01641082763672,
                     0.0,
                     0.0,
                     0.0,
@@ -36,7 +35,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 4439024354257184661,
+                        "UID": 8708207774406204120,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1140029296538362,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 10906288224127718166,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -50,7 +60,7 @@
                         ]
                     },
                     {
-                        "UID": 84755410932811128,
+                        "UID": 542980680347956593,
                         "Type": 12,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -74,21 +84,20 @@
                     }
                 ],
                 "Children": [
-                    12245713822558700994,
-                    10234747248890538921,
-                    15434381645220932708
+                    10689227907548701289,
+                    1728370273062501463
                 ]
             },
             {
-                "UID": 12245713822558700994,
-                "ParentUID": 9636799072617657690,
+                "UID": 10689227907548701289,
+                "ParentUID": 9187914146972790892,
                 "Name": "Light_Mushrooms",
                 "Mobility": 1,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7685479175599492994,
+                "PrefabChildUID": 2829320170122893124,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -109,7 +118,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11557539195851487409,
+                        "UID": 6456707747179959212,
                         "Type": 2,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -126,15 +135,15 @@
                 "Children": []
             },
             {
-                "UID": 10234747248890538921,
-                "ParentUID": 9636799072617657690,
+                "UID": 1728370273062501463,
+                "ParentUID": 9187914146972790892,
                 "Name": "vfx_mushroom_spark",
                 "Mobility": 1,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12935030181749691506,
+                "PrefabChildUID": 14157065514788929315,
                 "LocalTransform": [
                     0.6241966485977173,
                     0.0,
@@ -155,7 +164,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 15138691533722026721,
+                        "UID": 6594915012820002078,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -171,10 +180,10 @@
                                     {
                                         "Enabled": true,
                                         "AddonType": 1,
-                                        "Duration": 3.6999967098236084,
+                                        "Duration": 5.0,
                                         "Loop": true,
-                                        "particlesPerSecond": 7,
-                                        "MaxParticles": 15,
+                                        "particlesPerSecond": 2,
+                                        "MaxParticles": 10,
                                         "RandomLifetime": true,
                                         "MinLifetime": 3.0,
                                         "MaxLifetime": 3.5,
@@ -448,9 +457,9 @@
                                         "coneAngle": 35.0,
                                         "coneLength": 1.0,
                                         "cubeSize": [
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.6000000238418579
+                                            0.5299999713897705,
+                                            0.5299999713897705,
+                                            0.5299999713897705
                                         ]
                                     }
                                 ],
@@ -459,49 +468,6 @@
                                 "colorIntensity": 1.0
                             }
                         ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 15434381645220932708,
-                "ParentUID": 9636799072617657690,
-                "Name": "Mesh",
-                "Mobility": 1,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 728385879044348397,
-                "LocalTransform": [
-                    2.0,
-                    0.0,
-                    0.0,
-                    4.961906433105469,
-                    0.0,
-                    2.0,
-                    0.0,
-                    4.172325134277344e-7,
-                    2.6008099497868605e-42,
-                    0.0,
-                    2.0,
-                    -1.0823135375976563,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 13830299041632103247,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1140029296538362,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
                     }
                 ],
                 "Children": []
