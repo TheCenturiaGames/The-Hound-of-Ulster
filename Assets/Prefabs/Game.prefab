@@ -1,0 +1,1651 @@
+{
+    "Prefab": {
+        "UID": 1691560135971270,
+        "VersionUID": 8842038590703301695,
+        "Name": "Game",
+        "GameObjects": [
+            {
+                "UID": 1467397928536280820,
+                "ParentUID": 3408008172474305760,
+                "Name": "Game",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabVersionUID": 8842038590703301695,
+                "PrefabChildUID": 14442254303973354632,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    9926263141550448363,
+                    3159586866435916127
+                ]
+            },
+            {
+                "UID": 9926263141550448363,
+                "ParentUID": 1467397928536280820,
+                "Name": "Sound",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13060041071014841416,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18014992140526828818,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 207755397,
+                        "Volume": 0.4000000059604645,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 3159586866435916127,
+                "ParentUID": 1467397928536280820,
+                "Name": "HUD",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15901639536191262215,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12815694938954784488,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 356888314399968179,
+                        "Type": 9,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas",
+                        "RenderMode": 0
+                    },
+                    {
+                        "UID": 13368901316213077489,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "PauseMenuScript",
+                                "Enabled": true,
+                                "WasEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 11342282257898483253,
+                        "Type": 20,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas Scaler",
+                        "ReferenceResolution": [
+                            1920.0,
+                            1080.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    10351184995354987772,
+                    480950919644152464,
+                    11759671166713311030,
+                    18047280518652635614,
+                    6584446307015869107
+                ]
+            },
+            {
+                "UID": 10351184995354987772,
+                "ParentUID": 3159586866435916127,
+                "Name": "Health",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11243964018040881486,
+                "LocalTransform": [
+                    0.75,
+                    0.0,
+                    0.0,
+                    -640.0,
+                    0.0,
+                    0.75,
+                    0.0,
+                    360.0,
+                    0.0,
+                    0.0,
+                    0.75,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1184148924055315228,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            546.0,
+                            140.0
+                        ],
+                        "Pivot": [
+                            0.0,
+                            1.0
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3101711080752760903,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1207117911771998,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    523357038927317252
+                ]
+            },
+            {
+                "UID": 480950919644152464,
+                "ParentUID": 3159586866435916127,
+                "Name": "Cooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7550163440483700201,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -0.3059999942779541,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    941362066492991003,
+                    13742889117492269774,
+                    16082443491902477160
+                ]
+            },
+            {
+                "UID": 11759671166713311030,
+                "ParentUID": 3159586866435916127,
+                "Name": "RiastradBar",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16060670790104527648,
+                "LocalTransform": [
+                    0.75,
+                    0.0,
+                    0.0,
+                    -640.0,
+                    0.0,
+                    0.75,
+                    0.0,
+                    360.0,
+                    0.0,
+                    0.0,
+                    0.75,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6435319159123640465,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            546.0,
+                            140.0
+                        ],
+                        "Pivot": [
+                            0.0,
+                            1.0
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 8824954948215264404,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1219109388933019,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    16293439577136189783
+                ]
+            },
+            {
+                "UID": 18047280518652635614,
+                "ParentUID": 3159586866435916127,
+                "Name": "GameOverPanel",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1186850807224425545,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1670856855349066232,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 4893515419789796920,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1231365816552552,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    177711417459179651
+                ]
+            },
+            {
+                "UID": 6584446307015869107,
+                "ParentUID": 3159586866435916127,
+                "Name": "DamageMask",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12172048506191096351,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9966691211646190253,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1277.5,
+                            717.7000122070313
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 1
+                    },
+                    {
+                        "UID": 6683965688307953365,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1221781483262927,
+                        "Color": [
+                            1.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 589714380043955426,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "DamageMask",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Noise Tiling": 7.0,
+                                "Noise Speed": 0.15000000596046448
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 523357038927317252,
+                "ParentUID": 10351184995354987772,
+                "Name": "HealthBarFill",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10445853780998572198,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    272.5,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -70.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14297609675655773514,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -708.625,
+                            377.5
+                        ],
+                        "Size": [
+                            546.0,
+                            140.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 6772390005677048547,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1254540292485976,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 8356215604521101317,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "HealthBarFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Transition Time": 0.75,
+                                "Wave Amplitude": 0.0,
+                                "Wave Frequency": 0.0,
+                                "Wave Speed": 0.0,
+                                "Texture Start": 136.0,
+                                "Texture End": 442.0,
+                                "Texture Width": 546.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 941362066492991003,
+                "ParentUID": 480950919644152464,
+                "Name": "CooldownDecor",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17595635069699561077,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -561.968017578125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -259.53900146484375,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17138915257969717546,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -561.968017578125,
+                            -259.8450012207031
+                        ],
+                        "Size": [
+                            143.0,
+                            143.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 2691748715978030297,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1202133531569191,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13742889117492269774,
+                "ParentUID": 480950919644152464,
+                "Name": "DashCooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2055991054832479576,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -559.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -281.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12633356362257670800,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -559.0,
+                            -281.3059997558594
+                        ],
+                        "Size": [
+                            75.0,
+                            75.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1912204446040016411,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1215467239887490,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 9533775250443124003,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AbilityIconFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Wave Amplitude": 0.03999999910593033,
+                                "Wave Frequency": 10.0,
+                                "Wave Speed": 10.0,
+                                "Other Image": 1208292380114543
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16082443491902477160,
+                "ParentUID": 480950919644152464,
+                "Name": "UltimateCooldown",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 6110554800246152866,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -559.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -226.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15057975390258852557,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -559.0,
+                            -226.30599975585938
+                        ],
+                        "Size": [
+                            75.0,
+                            75.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 10628039037762790117,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1269620042662432,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 6311944258010737035,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AbilityIconFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Wave Amplitude": 0.03999999910593033,
+                                "Wave Frequency": 10.0,
+                                "Wave Speed": 10.0,
+                                "Other Image": 1278452734324605
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16293439577136189783,
+                "ParentUID": 11759671166713311030,
+                "Name": "BarFill",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1658607835267164829,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    265.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -70.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9800071065592401965,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -714.25,
+                            377.5
+                        ],
+                        "Size": [
+                            546.0,
+                            140.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 6124597814298333726,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1292365895959703,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 17638099524174202180,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "RiastradBarFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Transition Time": 0.5,
+                                "Wave Amplitude": 0.004999999888241291,
+                                "Wave Frequency": 40.0,
+                                "Wave Speed": 5.0,
+                                "Texture Start": 129.0,
+                                "Texture End": 427.0,
+                                "Texture Width": 546.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 177711417459179651,
+                "ParentUID": 18047280518652635614,
+                "Name": "Image_Pause_Menu",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5193944344306331276,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5799007360905062616,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 11853661542685642229,
+                        "Type": 7,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MainMenuSelectorScript",
+                                "Enabled": true,
+                                "WasEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 14451697951971560983,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1231365816552552,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    15666357357980698846,
+                    11988177348650619495
+                ]
+            },
+            {
+                "UID": 15666357357980698846,
+                "ParentUID": 177711417459179651,
+                "Name": "MenuItem_Continue",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17916937783442440235,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8862167581872697581,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 8317785473928675333,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    14314958540968472474,
+                    3901371040130769106,
+                    6734453954656439280
+                ]
+            },
+            {
+                "UID": 11988177348650619495,
+                "ParentUID": 177711417459179651,
+                "Name": "MenuItem_Menu",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11147585726098142291,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.047382354736328125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -56.31134033203125,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 706473133272613562,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -0.047382354736328125,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 11393194474456074730,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    6207747800561738987,
+                    8143708508119492321,
+                    14844049179299153700
+                ]
+            },
+            {
+                "UID": 14314958540968472474,
+                "ParentUID": 15666357357980698846,
+                "Name": "RightArrow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8023778935296019269,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86615753173828,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16790004768483323860,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.86615753173828,
+                            -7.0
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 477154940245642047,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 3901371040130769106,
+                "ParentUID": 15666357357980698846,
+                "Name": "ContinueLabel",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11787208894699746205,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    4.149784088134766,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 214262903198659405,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            4.149784088134766,
+                            0.0
+                        ],
+                        "Size": [
+                            60.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 2003710065844572016,
+                        "Type": 10,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Continue",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6734453954656439280,
+                "ParentUID": 15666357357980698846,
+                "Name": "LeftArrow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8495926622716720447,
+                "LocalTransform": [
+                    -1.0,
+                    5.642599489874556e-7,
+                    0.0,
+                    112.85718536376953,
+                    -5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14263459326010332282,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.85718536376953,
+                            -6.999990463256836
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 12386234618424716713,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6207747800561738987,
+                "ParentUID": 11988177348650619495,
+                "Name": "RightArrow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8331068098939898567,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86615753173828,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9409385109978616595,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.91354370117188,
+                            -63.31134033203125
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1865438224324482054,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8143708508119492321,
+                "ParentUID": 11988177348650619495,
+                "Name": "ContinueLabel",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7604531873249306650,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    10.399360656738281,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1775021147266592868,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            10.351978302001953,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            100.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 7455616500742414148,
+                        "Type": 10,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Main Menu",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14844049179299153700,
+                "ParentUID": 11988177348650619495,
+                "Name": "LeftArrow",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11877934922353288276,
+                "LocalTransform": [
+                    -1.0,
+                    5.642599489874556e-7,
+                    0.0,
+                    112.85718536376953,
+                    -5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11059698786568163342,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.80979919433594,
+                            -63.31133270263672
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3653526944103863965,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
