@@ -427,6 +427,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Archer" ID="{5099EA9E-A716-441A-9B6A-EA4405B87006}" ShortID="780832693">
+					<ChildrenList>
+						<Event Name="Play_Archer_Attack" ID="{DF63A7C6-A9E7-40CF-A04F-80C778A18A47}">
+							<ChildrenList>
+								<Action Name="" ID="{236304B2-8638-4ED1-9FFE-94F478505FC9}" ShortID="517743148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Archer_Attack_01" ID="{20EF8E3E-214C-4CDC-8091-632CE9EB6058}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Archer_Overshoot" ID="{5E2C66EE-FA17-424E-8129-7D9E76338958}">
+							<ChildrenList>
+								<Action Name="" ID="{046F0781-2C4C-4EA0-B92F-9146A247AA7E}" ShortID="532675343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Archer_Attack_03" ID="{A5BE69F7-C9E6-47E1-AE23-1B99A8D8FB04}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
