@@ -164,7 +164,7 @@
                 "ClipUID": 1543864370466656,
                 "ClipName": "ch_banshee_anim_shout_base",
                 "ClipTime": 1.0,
-                "Loop": false
+                "Loop": true
             },
             {
                 "ClipUID": 1523699342034015,
@@ -595,6 +595,12 @@
             },
             {
                 "FromState": "SlowArea",
+                "ToState": "Hit",
+                "Trigger": "Hit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Scream",
                 "ToState": "Hit",
                 "Trigger": "Hit",
                 "InterpolationTime": 200
