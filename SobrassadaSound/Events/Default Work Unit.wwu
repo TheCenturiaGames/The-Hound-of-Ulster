@@ -3,39 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{779746FB-8608-4B0E-A678-C4812CD4F0FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_SFX_Steps_Grass" ID="{812EBAFA-F6A3-4326-AF09-2E01CD2B152F}">
-					<ChildrenList>
-						<Action Name="" ID="{34090465-2B4E-41B2-99D2-BD0130C7EF9F}" ShortID="739551296">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps_Grass" ID="{B39CA5DF-72E5-4606-9EC1-5D3F9C096DF2}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_Steps_Rock" ID="{8E14E641-E8B3-49B8-A15F-D65947122141}">
-					<ChildrenList>
-						<Action Name="" ID="{3CAD21C2-5C23-46E0-8899-80B31AE2B142}" ShortID="668092284">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps_Rock" ID="{02DA6A55-24A7-4671-BE79-11572B856423}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_Steps_Wood" ID="{D5FD5DCA-9B41-431B-A0C8-963E77264615}">
-					<ChildrenList>
-						<Action Name="" ID="{6229F1C6-FE05-45C9-955B-0BD54734DE0F}" ShortID="796586807">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps_Wood" ID="{9F1ACCBD-8D28-455E-AC0B-BE49AFDEC28D}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Ambient" ID="{D04C0689-B3FD-4D4F-9F21-1949F484802E}" ShortID="712792198">
 					<ChildrenList>
 						<Event Name="Play_SFX_Fire_02" ID="{E72CE92C-A7AD-450A-A57D-3CB1B60F9116}">
@@ -364,6 +331,50 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_MC_UltimateAttack" ID="{9520023C-FB68-44AA-AA5B-35CA770410C5}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_MC_Transform" ID="{534355C1-D09B-4FE7-BD5A-3036576A2084}">
+							<ChildrenList>
+								<Action Name="" ID="{03A2C5FE-3A56-4C9C-9F76-4FCBEDA9A0A0}" ShortID="412636509">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_MC_Transformation" ID="{7BAE53F4-48AF-4C0F-BAE0-891A73ECB04E}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Steps_Grass" ID="{812EBAFA-F6A3-4326-AF09-2E01CD2B152F}">
+							<ChildrenList>
+								<Action Name="" ID="{34090465-2B4E-41B2-99D2-BD0130C7EF9F}" ShortID="739551296">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps_Grass" ID="{B39CA5DF-72E5-4606-9EC1-5D3F9C096DF2}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Steps_Rock" ID="{8E14E641-E8B3-49B8-A15F-D65947122141}">
+							<ChildrenList>
+								<Action Name="" ID="{3CAD21C2-5C23-46E0-8899-80B31AE2B142}" ShortID="668092284">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps_Rock" ID="{02DA6A55-24A7-4671-BE79-11572B856423}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Steps_Wood" ID="{D5FD5DCA-9B41-431B-A0C8-963E77264615}">
+							<ChildrenList>
+								<Action Name="" ID="{6229F1C6-FE05-45C9-955B-0BD54734DE0F}" ShortID="796586807">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps_Wood" ID="{9F1ACCBD-8D28-455E-AC0B-BE49AFDEC28D}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
