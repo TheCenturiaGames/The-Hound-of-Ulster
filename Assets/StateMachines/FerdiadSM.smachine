@@ -225,6 +225,30 @@
                 "ClipName": "CH_Ferdiad_Shield_Blast_Hit",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_34",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1506548720626152,
+                "ClipName": "CH_Ferdiad_Water_Sprout_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_37",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1526733547884199,
+                "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -378,6 +402,24 @@
                 "Position": {
                     "x": -70.0,
                     "y": -260.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "WaterSpoutCharge",
+                "ClipName": "CH_Ferdiad_Water_Sprout_Charge",
+                "Position": {
+                    "x": 670.0,
+                    "y": 20.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "WaterSpoutHit",
+                "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
+                "Position": {
+                    "x": 660.0,
+                    "y": 110.0
                 },
                 "Triggers": []
             }
@@ -885,6 +927,18 @@
                 "FromState": "Run",
                 "ToState": "Overhead_Prepare",
                 "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutCharge",
+                "ToState": "WaterSpoutHit",
+                "Trigger": "Trigger",
                 "InterpolationTime": 200
             }
         ]
