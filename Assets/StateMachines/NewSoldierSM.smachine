@@ -11,7 +11,9 @@
             "death",
             "idleCombat",
             "detectPlayer",
-            "patrol"
+            "patrol",
+            "search",
+            "cheer"
         ],
         "Clips": [
             {
@@ -127,6 +129,30 @@
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Patrol",
                 "ClipTime": 1.0,
                 "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_19",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1559474106714306,
+                "ClipName": "BaseEnemyAllAnimationsFinal_Search",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_21",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1562110052587186,
+                "ClipName": "BaseEnemyAllAnimationsFinal_Cheer",
+                "ClipTime": 1.0,
+                "Loop": true
             }
         ],
         "States": [
@@ -134,8 +160,8 @@
                 "StateName": "Idle",
                 "ClipName": "CH_BaseEnemy_AllAnimations_AN_Idle_Normal",
                 "Position": {
-                    "x": 0.0,
-                    "y": 0.0
+                    "x": 70.0,
+                    "y": -40.0
                 },
                 "Triggers": []
             },
@@ -208,6 +234,24 @@
                 "Position": {
                     "x": 510.0,
                     "y": -140.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Search",
+                "ClipName": "BaseEnemyAllAnimationsFinal_Search",
+                "Position": {
+                    "x": 1050.0,
+                    "y": -110.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Cheer",
+                "ClipName": "BaseEnemyAllAnimationsFinal_Cheer",
+                "Position": {
+                    "x": 30.0,
+                    "y": 50.0
                 },
                 "Triggers": []
             }
@@ -475,6 +519,162 @@
                 "FromState": "Patrol",
                 "ToState": "DetectPlayer",
                 "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Death",
+                "Trigger": "death",
                 "InterpolationTime": 200
             }
         ]
