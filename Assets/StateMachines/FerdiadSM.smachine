@@ -19,7 +19,9 @@
             "Charge",
             "End",
             "BlastCharge",
-            "BlastHit"
+            "BlastHit",
+            "WaterSpoutHit",
+            "WaterSpoutCharge"
         ],
         "Clips": [
             {
@@ -346,8 +348,8 @@
                 "StateName": "Taunt",
                 "ClipName": "CH_Ferdiad_idle_taunt",
                 "Position": {
-                    "x": -50.0,
-                    "y": -70.0
+                    "x": 30.0,
+                    "y": -100.0
                 },
                 "Triggers": []
             },
@@ -932,13 +934,55 @@
             {
                 "FromState": "Run",
                 "ToState": "WaterSpoutCharge",
-                "Trigger": "Trigger",
+                "Trigger": "WaterSpoutCharge",
                 "InterpolationTime": 200
             },
             {
                 "FromState": "WaterSpoutCharge",
                 "ToState": "WaterSpoutHit",
-                "Trigger": "Trigger",
+                "Trigger": "WaterSpoutHit",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Combo1",
+                "Trigger": "Combo1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
                 "InterpolationTime": 200
             }
         ]
