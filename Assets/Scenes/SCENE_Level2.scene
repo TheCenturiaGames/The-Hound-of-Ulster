@@ -853,95 +853,6 @@
                 "Children": []
             },
             {
-                "UID": 177711417459179651,
-                "ParentUID": 18047280518652635614,
-                "Name": "Image_Pause_Menu",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 5193944344306331276,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 5799007360905062616,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            1280.0,
-                            720.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 11853661542685642229,
-                        "Type": 7,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "MainMenuSelectorScript",
-                                "Enabled": true,
-                                "WasEnabled": true
-                            }
-                        ]
-                    },
-                    {
-                        "UID": 14451697951971560983,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1231365816552552,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    15666357357980698846,
-                    11988177348650619495
-                ]
-            },
-            {
                 "UID": 6459882990662868258,
                 "ParentUID": 12723988912727681663,
                 "Name": "jnt_spine_02",
@@ -1629,11 +1540,16 @@
                                 "Script Name": "PauseMenuScript",
                                 "Enabled": true,
                                 "WasEnabled": true
+                            },
+                            {
+                                "Script Name": "GameOverNavigatorScript",
+                                "Enabled": true,
+                                "WasEnabled": true
                             }
                         ]
                     },
                     {
-                        "UID": 16711171676580903148,
+                        "UID": 9202207647578040813,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1648,8 +1564,10 @@
                     10351184995354987772,
                     480950919644152464,
                     11759671166713311030,
-                    18047280518652635614,
-                    6584446307015869107
+                    6584446307015869107,
+                    9476785638252008047,
+                    14152693772806445055,
+                    4019020532475778901
                 ]
             },
             {
@@ -2280,6 +2198,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -2402,6 +2325,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -3562,6 +3490,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -5139,6 +5072,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -5870,82 +5808,6 @@
                     }
                 ],
                 "Children": []
-            },
-            {
-                "UID": 11988177348650619495,
-                "ParentUID": 177711417459179651,
-                "Name": "MenuItem_Menu",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11147585726098142291,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -0.047382354736328125,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -56.31134033203125,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 706473133272613562,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -0.047382354736328125,
-                            -56.31134033203125
-                        ],
-                        "Size": [
-                            400.0,
-                            200.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 11393194474456074730,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    6207747800561738987,
-                    8143708508119492321,
-                    14844049179299153700
-                ]
             },
             {
                 "UID": 398332551575288120,
@@ -6763,80 +6625,6 @@
                         "Material": 0,
                         "RenderMode": 2,
                         "ProduceShadows": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 3901371040130769106,
-                "ParentUID": 15666357357980698846,
-                "Name": "ContinueLabel",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11787208894699746205,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    4.149784088134766,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 214262903198659405,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            4.149784088134766,
-                            0.0
-                        ],
-                        "Size": [
-                            60.0,
-                            20.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 2003710065844572016,
-                        "Type": 10,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Label",
-                        "Text": "Continue",
-                        "FontSize": 24,
-                        "FontUID": 1978723677050761,
-                        "FontColor": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
                     }
                 ],
                 "Children": []
@@ -7920,78 +7708,6 @@
                         "Material": 1304206285145215,
                         "RenderMode": 0,
                         "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 6734453954656439280,
-                "ParentUID": 15666357357980698846,
-                "Name": "LeftArrow",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 8495926622716720447,
-                "LocalTransform": [
-                    -1.0,
-                    5.642599489874556e-7,
-                    0.0,
-                    112.85718536376953,
-                    -5.642599489874556e-7,
-                    -1.0,
-                    0.0,
-                    -6.999990463256836,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.5,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 14263459326010332282,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            112.85718536376953,
-                            -6.999990463256836
-                        ],
-                        "Size": [
-                            50.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 12386234618424716713,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1210069086411047,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
                     }
                 ],
                 "Children": []
@@ -11650,6 +11366,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -17268,6 +16989,7 @@
                                 "Update Rate": 0.03500000014901161,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1245368692058688
                             }
                         ]
@@ -20419,78 +20141,6 @@
                 "Children": [
                     8170927845019200664
                 ]
-            },
-            {
-                "UID": 14314958540968472474,
-                "ParentUID": 15666357357980698846,
-                "Name": "RightArrow",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 8023778935296019269,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -72.86615753173828,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -7.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.5,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 16790004768483323860,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -72.86615753173828,
-                            -7.0
-                        ],
-                        "Size": [
-                            50.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 477154940245642047,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1210069086411047,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 1269032717936682024,
@@ -24174,49 +23824,6 @@
                 "Children": []
             },
             {
-                "UID": 3490813503500167114,
-                "ParentUID": 6474717549953802662,
-                "Name": "Rock",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 10685731275043297346,
-                "LocalTransform": [
-                    0.5394401550292969,
-                    -0.05168718099594116,
-                    0.9915541410446167,
-                    -8.660781860351563,
-                    -0.08201741427183151,
-                    1.0929450988769531,
-                    0.10262328386306763,
-                    -5.73625373840332,
-                    -1.0076786279678345,
-                    -0.1165969967842102,
-                    0.5224375128746033,
-                    -97.58023071289063,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 603036300347932293,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1119761960597213,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 10775467099115494251,
                 "ParentUID": 14165289118895181458,
                 "Name": "Rock",
@@ -24260,28 +23867,28 @@
                 "Children": []
             },
             {
-                "UID": 1239524624583938084,
-                "ParentUID": 9472295761279121702,
-                "Name": "EN_PR_Vegetation_PlantBig_01_V1",
+                "UID": 3490813503500167114,
+                "ParentUID": 6474717549953802662,
+                "Name": "Rock",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12973765363044249739,
+                "PrefabChildUID": 10685731275043297346,
                 "LocalTransform": [
-                    0.9999998807907104,
-                    0.0,
-                    0.0000013709068298339844,
-                    -21.82573699951172,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -0.19070053100585938,
-                    -5.960464477539063e-8,
-                    0.0,
-                    1.0000003576278687,
-                    -5.078169822692871,
+                    0.5394401550292969,
+                    -0.05168718099594116,
+                    0.9915541410446167,
+                    -8.660781860351563,
+                    -0.08201741427183151,
+                    1.0929450988769531,
+                    0.10262328386306763,
+                    -5.73625373840332,
+                    -1.0076786279678345,
+                    -0.1165969967842102,
+                    0.5224375128746033,
+                    -97.58023071289063,
                     0.0,
                     0.0,
                     0.0,
@@ -24289,14 +23896,57 @@
                 ],
                 "Components": [
                     {
-                        "UID": 14391620345677537539,
+                        "UID": 603036300347932293,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1134232968235493,
+                        "Mesh": 1119761960597213,
                         "Material": 0,
-                        "RenderMode": 2,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8591421000356699476,
+                "ParentUID": 6474717549953802662,
+                "Name": "Rock",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3746193430781592111,
+                "LocalTransform": [
+                    -1.3933749198913574,
+                    0.45366889238357544,
+                    1.4984511137008667,
+                    8.285652160644531,
+                    -1.7361892461776733,
+                    1.5106127262115479,
+                    -0.7752946615219116,
+                    -2.3516845703125,
+                    -2.216505765914917,
+                    -1.4684760570526123,
+                    -0.33467748761177063,
+                    -66.05125427246094,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9810385235968122036,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1119761960597213,
+                        "Material": 0,
+                        "RenderMode": 0,
                         "ProduceShadows": true
                     }
                 ],
@@ -24942,28 +24592,28 @@
                 "Children": []
             },
             {
-                "UID": 8591421000356699476,
-                "ParentUID": 6474717549953802662,
-                "Name": "Rock",
+                "UID": 1239524624583938084,
+                "ParentUID": 9472295761279121702,
+                "Name": "EN_PR_Vegetation_PlantBig_01_V1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": false,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3746193430781592111,
+                "PrefabChildUID": 12973765363044249739,
                 "LocalTransform": [
-                    -1.3933749198913574,
-                    0.45366889238357544,
-                    1.4984511137008667,
-                    8.285652160644531,
-                    -1.7361892461776733,
-                    1.5106127262115479,
-                    -0.7752946615219116,
-                    -2.3516845703125,
-                    -2.216505765914917,
-                    -1.4684760570526123,
-                    -0.33467748761177063,
-                    -66.05125427246094,
+                    0.9999998807907104,
+                    0.0,
+                    0.0000013709068298339844,
+                    -21.82573699951172,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -0.19070053100585938,
+                    -5.960464477539063e-8,
+                    0.0,
+                    1.0000003576278687,
+                    -5.078169822692871,
                     0.0,
                     0.0,
                     0.0,
@@ -24971,14 +24621,14 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9810385235968122036,
+                        "UID": 14391620345677537539,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1119761960597213,
+                        "Mesh": 1134232968235493,
                         "Material": 0,
-                        "RenderMode": 0,
+                        "RenderMode": 2,
                         "ProduceShadows": true
                     }
                 ],
@@ -25774,6 +25424,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -29121,6 +28776,81 @@
                 ]
             },
             {
+                "UID": 13094423240982910426,
+                "ParentUID": 9476785638252008047,
+                "Name": "MenuItem_Continue",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2000002448240624661,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 5627919642005028344,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    3818018469861030085,
+                    3873852755776457190,
+                    3569291232638079458
+                ]
+            },
+            {
                 "UID": 14206809992414141810,
                 "ParentUID": 14165289118895181458,
                 "Name": "EN_PR_Vegetation_PlantTall_Individual_03_V1",
@@ -29652,6 +29382,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -31896,6 +31631,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -32941,80 +32681,6 @@
                 ]
             },
             {
-                "UID": 18047280518652635614,
-                "ParentUID": 3159586866435916127,
-                "Name": "GameOverPanel",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 1186850807224425545,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 1670856855349066232,
-                        "Type": 8,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            1280.0,
-                            720.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 4893515419789796920,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1231365816552552,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    177711417459179651
-                ]
-            },
-            {
                 "UID": 12644188823328447957,
                 "ParentUID": 9309750969595147014,
                 "Name": "CH_Pooka_Idle",
@@ -33068,6 +32734,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -38930,6 +38601,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -44920,6 +44596,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -48434,78 +48115,6 @@
                 ]
             },
             {
-                "UID": 6207747800561738987,
-                "ParentUID": 11988177348650619495,
-                "Name": "RightArrow",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 8331068098939898567,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -72.86615753173828,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -7.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.5,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 9409385109978616595,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -72.91354370117188,
-                            -63.31134033203125
-                        ],
-                        "Size": [
-                            50.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 1865438224324482054,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1210069086411047,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 18005508557275368201,
                 "ParentUID": 6301047036373325352,
                 "Name": "Totem",
@@ -51320,6 +50929,49 @@
                 "Children": []
             },
             {
+                "UID": 79143837823365662,
+                "ParentUID": 630451847419189569,
+                "Name": "Totem",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12960088818722044608,
+                "LocalTransform": [
+                    -0.880751371383667,
+                    0.022764932364225388,
+                    2.102888345718384,
+                    3.1400680541992188,
+                    -0.14386554062366486,
+                    2.2738749980926514,
+                    -0.08487024158239365,
+                    -0.8550823330879211,
+                    -2.0981078147888184,
+                    -0.1654754877090454,
+                    -0.8769495487213135,
+                    -2.1584091186523438,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12782896576735387705,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1130767264037315,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 7539814991418275933,
                 "ParentUID": 6675000984171537843,
                 "Name": "EN_PR_Vegetation_BushGreen_04_V1",
@@ -51438,28 +51090,28 @@
                 ]
             },
             {
-                "UID": 79143837823365662,
-                "ParentUID": 630451847419189569,
-                "Name": "Totem",
+                "UID": 13990940461935670156,
+                "ParentUID": 12696494787956027872,
+                "Name": "EN_PR_Vegetation_BushYellow_01_V1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12960088818722044608,
+                "PrefabChildUID": 5852535864841045516,
                 "LocalTransform": [
-                    -0.880751371383667,
-                    0.022764932364225388,
-                    2.102888345718384,
-                    3.1400680541992188,
-                    -0.14386554062366486,
-                    2.2738749980926514,
-                    -0.08487024158239365,
-                    -0.8550823330879211,
-                    -2.0981078147888184,
-                    -0.1654754877090454,
-                    -0.8769495487213135,
-                    -2.1584091186523438,
+                    -1.4720882177352905,
+                    -1.0682415962219238,
+                    0.6862531304359436,
+                    -0.47518157958984375,
+                    -0.9396805167198181,
+                    1.6232492923736572,
+                    0.5110741853713989,
+                    -3.1825904846191406,
+                    -0.8538655638694763,
+                    0.05528830736875534,
+                    -1.7455658912658691,
+                    -1.3350906372070313,
                     0.0,
                     0.0,
                     0.0,
@@ -51467,13 +51119,56 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12782896576735387705,
+                        "UID": 16883160459866037547,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1130767264037315,
+                        "Mesh": 1152945292748140,
                         "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13742772124981687610,
+                "ParentUID": 113691937952718755,
+                "Name": "Island",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": true,
+                "PrefabChildUID": 12980345037474995869,
+                "LocalTransform": [
+                    -10.687613487243652,
+                    0.0,
+                    -8.19411849975586,
+                    -30.790199279785156,
+                    0.0,
+                    0.20000000298023224,
+                    0.0,
+                    -4.0,
+                    11.481303215026855,
+                    0.0,
+                    -7.627662658691406,
+                    -12.57629108428955,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5702848510988556405,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 1347218959603599,
                         "RenderMode": 0,
                         "ProduceShadows": true
                     }
@@ -51524,71 +51219,28 @@
                 "Children": []
             },
             {
-                "UID": 13742772124981687610,
-                "ParentUID": 113691937952718755,
-                "Name": "Island",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": true,
-                "PrefabChildUID": 12980345037474995869,
-                "LocalTransform": [
-                    -10.687613487243652,
-                    0.0,
-                    -8.19411849975586,
-                    -30.790199279785156,
-                    0.0,
-                    0.20000000298023224,
-                    0.0,
-                    -4.0,
-                    11.481303215026855,
-                    0.0,
-                    -7.627662658691406,
-                    -12.57629108428955,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 5702848510988556405,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1175652718975713,
-                        "Material": 1347218959603599,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 13990940461935670156,
-                "ParentUID": 12696494787956027872,
-                "Name": "EN_PR_Vegetation_BushYellow_01_V1",
+                "UID": 5856784858963409212,
+                "ParentUID": 17014287992811989863,
+                "Name": "EN_PR_Vegetation_BushYellow_03_V1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5852535864841045516,
+                "PrefabChildUID": 1025415354855799769,
                 "LocalTransform": [
-                    -1.4720882177352905,
-                    -1.0682415962219238,
-                    0.6862531304359436,
-                    -0.47518157958984375,
-                    -0.9396805167198181,
-                    1.6232492923736572,
-                    0.5110741853713989,
-                    -3.1825904846191406,
-                    -0.8538655638694763,
-                    0.05528830736875534,
-                    -1.7455658912658691,
-                    -1.3350906372070313,
+                    1.8276140689849854,
+                    0.6922109723091125,
+                    -0.1492406725883484,
+                    1.6510162353515625,
+                    -0.7078902125358582,
+                    1.7964603900909424,
+                    -0.3364832103252411,
+                    5.335152626037598,
+                    0.01795263960957527,
+                    0.3676568865776062,
+                    1.9251234531402588,
+                    -18.988666534423828,
                     0.0,
                     0.0,
                     0.0,
@@ -51596,12 +51248,12 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16883160459866037547,
+                        "UID": 16170326660390112603,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1152945292748140,
+                        "Mesh": 1167148018977502,
                         "Material": 0,
                         "RenderMode": 2,
                         "ProduceShadows": true
@@ -51648,49 +51300,6 @@
                     13721322521630925961,
                     9558817768141857985
                 ]
-            },
-            {
-                "UID": 5856784858963409212,
-                "ParentUID": 17014287992811989863,
-                "Name": "EN_PR_Vegetation_BushYellow_03_V1",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 1025415354855799769,
-                "LocalTransform": [
-                    1.8276140689849854,
-                    0.6922109723091125,
-                    -0.1492406725883484,
-                    1.6510162353515625,
-                    -0.7078902125358582,
-                    1.7964603900909424,
-                    -0.3364832103252411,
-                    5.335152626037598,
-                    0.01795263960957527,
-                    0.3676568865776062,
-                    1.9251234531402588,
-                    -18.988666534423828,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 16170326660390112603,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1167148018977502,
-                        "Material": 0,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 2028747644250851447,
@@ -53611,78 +53220,6 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 14844049179299153700,
-                "ParentUID": 11988177348650619495,
-                "Name": "LeftArrow",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11877934922353288276,
-                "LocalTransform": [
-                    -1.0,
-                    5.642599489874556e-7,
-                    0.0,
-                    112.85718536376953,
-                    -5.642599489874556e-7,
-                    -1.0,
-                    0.0,
-                    -6.999990463256836,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.5,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 11059698786568163342,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            112.80979919433594,
-                            -63.31133270263672
-                        ],
-                        "Size": [
-                            50.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 3653526944103863965,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1210069086411047,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
                     }
                 ],
                 "Children": []
@@ -56849,82 +56386,6 @@
                 "Children": []
             },
             {
-                "UID": 15666357357980698846,
-                "ParentUID": 177711417459179651,
-                "Name": "MenuItem_Continue",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 17916937783442440235,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 8862167581872697581,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            400.0,
-                            200.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 8317785473928675333,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    14314958540968472474,
-                    3901371040130769106,
-                    6734453954656439280
-                ]
-            },
-            {
                 "UID": 6177772437257475004,
                 "ParentUID": 4298278068952956821,
                 "Name": "vfx_mushroom_spark",
@@ -57622,80 +57083,6 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 8143708508119492321,
-                "ParentUID": 11988177348650619495,
-                "Name": "ContinueLabel",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 7604531873249306650,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    10.399360656738281,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 1775021147266592868,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            10.351978302001953,
-                            -56.31134033203125
-                        ],
-                        "Size": [
-                            100.0,
-                            20.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 7455616500742414148,
-                        "Type": 10,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Label",
-                        "Text": "Main Menu",
-                        "FontSize": 24,
-                        "FontUID": 1978723677050761,
-                        "FontColor": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
                     }
                 ],
                 "Children": []
@@ -70269,6 +69656,77 @@
                 "Children": []
             },
             {
+                "UID": 3569291232638079458,
+                "ParentUID": 13094423240982910426,
+                "Name": "LeftArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.0,
+                    -5.642599489874556e-7,
+                    -0.0,
+                    112.85718536376953,
+                    5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    -0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1772829780775580626,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.85718536376953,
+                            -6.999990463256836
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1518669622503747149,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 14540786754502224478,
                 "ParentUID": 3400461779724007000,
                 "Name": "Totem_cluster",
@@ -73899,6 +73357,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -77300,6 +76763,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -77623,6 +77091,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -77980,6 +77453,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -79608,6 +79086,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -84307,6 +83790,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -95579,6 +95067,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -95768,6 +95261,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -96096,6 +95594,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -96414,6 +95917,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -103602,39 +103110,46 @@
                 "Children": []
             },
             {
-                "UID": 13377668525961905896,
-                "ParentUID": 16759346863682292496,
-                "Name": "RisingTilesType2",
+                "UID": 16833994716990345460,
+                "ParentUID": 14516433886586355512,
+                "Name": "SlowAreaWarning",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": false,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1637797062088009,
-                "PrefabVersionUID": 5827907070868448098,
-                "PrefabChildUID": 2061367341524505244,
                 "LocalTransform": [
-                    -1.1191927194595337,
-                    -5.642599489874556e-7,
-                    -2.5361375326216073e-12,
-                    -15.595779418945313,
-                    -6.315156042546732e-7,
                     1.0,
-                    -6.431023393815849e-7,
-                    -0.4122028350830078,
                     0.0,
-                    -5.642599489874556e-7,
-                    -1.1397271156311035,
-                    -8.793253898620605,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.731903076171875,
+                    0.0,
+                    0.0,
+                    1.0,
+                    4.520000457763672,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [],
-                "Children": [
-                    14528669609233892263
-                ]
+                "Components": [
+                    {
+                        "UID": 14907343046678643539,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 1358912580410668,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 12136367886432153297,
@@ -103683,27 +103198,62 @@
                 "Children": []
             },
             {
-                "UID": 16833994716990345460,
-                "ParentUID": 14516433886586355512,
-                "Name": "SlowAreaWarning",
+                "UID": 13377668525961905896,
+                "ParentUID": 16759346863682292496,
+                "Name": "RisingTilesType2",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabUID": 1637797062088009,
+                "PrefabVersionUID": 5827907070868448098,
+                "PrefabChildUID": 2061367341524505244,
+                "LocalTransform": [
+                    -1.1191927194595337,
+                    -5.642599489874556e-7,
+                    -2.5361375326216073e-12,
+                    -15.595779418945313,
+                    -6.315156042546732e-7,
+                    1.0,
+                    -6.431023393815849e-7,
+                    -0.4122028350830078,
+                    0.0,
+                    -5.642599489874556e-7,
+                    -1.1397271156311035,
+                    -8.793253898620605,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    14528669609233892263
+                ]
+            },
+            {
+                "UID": 13634226654885570067,
+                "ParentUID": 6612931893814684744,
+                "Name": "Sword1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
+                    -4.803268893738277e-12,
+                    6.039613253960852e-14,
+                    -0.6435699462890625,
                     0.0,
+                    0.1432727426290512,
+                    -0.9896827936172485,
+                    0.27230340242385864,
                     0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.731903076171875,
-                    0.0,
-                    0.0,
-                    1.0,
-                    4.520000457763672,
+                    0.9897235035896301,
+                    0.14327748119831085,
+                    -4.391929626464844,
                     0.0,
                     0.0,
                     0.0,
@@ -103711,15 +103261,159 @@
                 ],
                 "Components": [
                     {
-                        "UID": 14907343046678643539,
+                        "UID": 3506981598738550534,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 1358912580410668,
-                        "RenderMode": 1,
+                        "Mesh": 1105935979004730,
+                        "Material": 0,
+                        "RenderMode": 0,
                         "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10483007774516907955,
+                "ParentUID": 6675000984171537843,
+                "Name": "EN_Tree_2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.9829453825950623,
+                    0.0,
+                    -0.18389849364757538,
+                    64.90836334228516,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -5.374637603759766,
+                    0.18389849364757538,
+                    0.0,
+                    0.9829453825950623,
+                    16.022043228149414,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10151668955383421844,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1107209137690255,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": [
+                    17753903159978090123
+                ]
+            },
+            {
+                "UID": 9549517162053205022,
+                "ParentUID": 9472295761279121702,
+                "Name": "EN_bush_1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -0.6059808731079102,
+                    -0.1572028249502182,
+                    1.070360779762268,
+                    -17.72962188720703,
+                    -0.10426393896341324,
+                    1.229614496231079,
+                    0.12156431376934052,
+                    -0.14474749565124512,
+                    -1.0768086910247803,
+                    -0.03059248998761177,
+                    -0.6141260862350464,
+                    3.563307762145996,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12135946135282018861,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1128119710357938,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9972580261320760828,
+                "ParentUID": 16170044948918656952,
+                "Name": "DashTrailCollision",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -21.430580139160156,
+                    0.0,
+                    1.0,
+                    0.0,
+                    3.1982479095458984,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -30.656391143798828,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12739828115514076187,
+                        "Type": 11,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            0.5,
+                            0.20000000298023224,
+                            0.24967527389526367
+                        ]
                     }
                 ],
                 "Children": []
@@ -103792,6 +103486,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -103827,192 +103526,6 @@
                     12552006962846282211,
                     14303309601969708208
                 ]
-            },
-            {
-                "UID": 9972580261320760828,
-                "ParentUID": 16170044948918656952,
-                "Name": "DashTrailCollision",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -21.430580139160156,
-                    0.0,
-                    1.0,
-                    0.0,
-                    3.1982479095458984,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -30.656391143798828,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12739828115514076187,
-                        "Type": 11,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Cube Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 2,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "CenterRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            0.5,
-                            0.20000000298023224,
-                            0.24967527389526367
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 9549517162053205022,
-                "ParentUID": 9472295761279121702,
-                "Name": "EN_bush_1",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -0.6059808731079102,
-                    -0.1572028249502182,
-                    1.070360779762268,
-                    -17.72962188720703,
-                    -0.10426393896341324,
-                    1.229614496231079,
-                    0.12156431376934052,
-                    -0.14474749565124512,
-                    -1.0768086910247803,
-                    -0.03059248998761177,
-                    -0.6141260862350464,
-                    3.563307762145996,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12135946135282018861,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1128119710357938,
-                        "Material": 0,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 10483007774516907955,
-                "ParentUID": 6675000984171537843,
-                "Name": "EN_Tree_2",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.9829453825950623,
-                    0.0,
-                    -0.18389849364757538,
-                    64.90836334228516,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -5.374637603759766,
-                    0.18389849364757538,
-                    0.0,
-                    0.9829453825950623,
-                    16.022043228149414,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10151668955383421844,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1107209137690255,
-                        "Material": 0,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": [
-                    17753903159978090123
-                ]
-            },
-            {
-                "UID": 13634226654885570067,
-                "ParentUID": 6612931893814684744,
-                "Name": "Sword1",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    -4.803268893738277e-12,
-                    6.039613253960852e-14,
-                    -0.6435699462890625,
-                    0.0,
-                    0.1432727426290512,
-                    -0.9896827936172485,
-                    0.27230340242385864,
-                    0.0,
-                    0.9897235035896301,
-                    0.14327748119831085,
-                    -4.391929626464844,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 3506981598738550534,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1105935979004730,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 3357029069306736222,
@@ -108922,6 +108435,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -109945,6 +109463,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -118780,6 +118299,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -123616,6 +123140,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -125130,6 +124659,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -125941,6 +125475,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -127630,6 +127169,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -128305,6 +127849,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -138925,6 +138474,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -140304,6 +139858,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -142117,6 +141676,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -143163,6 +142727,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -144022,6 +143591,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -144356,6 +143930,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -144556,6 +144135,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -144692,6 +144276,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -145589,6 +145178,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -146503,6 +146097,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -147395,6 +146994,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -148215,6 +147819,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -149001,6 +148610,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -152357,6 +151971,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -153249,6 +152868,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -155764,6 +155388,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -155911,6 +155540,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -156934,6 +156568,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -157195,6 +156834,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 10.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -157954,6 +157598,80 @@
                 ],
                 "Components": [],
                 "Children": []
+            },
+            {
+                "UID": 4019020532475778901,
+                "ParentUID": 3159586866435916127,
+                "Name": "GameOverPanel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -2.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1539825733096789816,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1948018594201741699,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1231365816552552,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    15487521912179844522,
+                    5388294253742289967
+                ]
             },
             {
                 "UID": 3832375399571539882,
@@ -163416,6 +163134,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -167728,6 +167451,77 @@
                 "Children": []
             },
             {
+                "UID": 3818018469861030085,
+                "ParentUID": 13094423240982910426,
+                "Name": "RightArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86599731445313,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11161643399111320872,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.86599731445313,
+                            -7.0
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 11365369429975007219,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 12522385690975668783,
                 "ParentUID": 17503967771820338841,
                 "Name": "Destructible_FloatingRock_03",
@@ -167795,6 +167589,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -167899,6 +167698,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -168685,6 +168489,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -168949,6 +168758,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -169235,6 +169049,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -169717,6 +169536,77 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12917922057551296934,
+                "ParentUID": 15487521912179844522,
+                "Name": "RightArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86599731445313,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 824411471145398145,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.86599731445313,
+                            -7.0
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 16739533974344946680,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
                     }
                 ],
                 "Children": []
@@ -170537,6 +170427,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -174397,6 +174292,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -177057,6 +176957,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -186128,6 +186033,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -187411,6 +187321,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -187668,6 +187583,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -189062,6 +188982,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -191863,6 +191788,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -195278,6 +195208,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -197574,6 +197509,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -208014,6 +207954,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -208345,6 +208290,36 @@
                 ]
             },
             {
+                "UID": 15777172935479558372,
+                "ParentUID": 3794011627299481549,
+                "Name": "jnt_coin_R_04",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    3.136137394221805e-8,
+                    -8.906623349957954e-8,
+                    0.008385135792195797,
+                    -1.3107601226636234e-8,
+                    0.9801684021949768,
+                    0.1979742795228958,
+                    -0.0601067841053009,
+                    9.351577290317437e-8,
+                    -0.1979742795228958,
+                    0.9801684021949768,
+                    -0.012541467323899269,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
                 "UID": 2024646390808428338,
                 "ParentUID": 9472295761279121702,
                 "Name": "EN_Mushroom_RoundSmall_LP_Cluster",
@@ -208408,36 +208383,6 @@
                     -0.9890329241752625,
                     -1.1790189802241002e-7,
                     0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
-                "UID": 15777172935479558372,
-                "ParentUID": 3794011627299481549,
-                "Name": "jnt_coin_R_04",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    3.136137394221805e-8,
-                    -8.906623349957954e-8,
-                    0.008385135792195797,
-                    -1.3107601226636234e-8,
-                    0.9801684021949768,
-                    0.1979742795228958,
-                    -0.0601067841053009,
-                    9.351577290317437e-8,
-                    -0.1979742795228958,
-                    0.9801684021949768,
-                    -0.012541467323899269,
                     0.0,
                     0.0,
                     0.0,
@@ -208511,36 +208456,6 @@
                 ]
             },
             {
-                "UID": 7943465176661451169,
-                "ParentUID": 12220154697819381391,
-                "Name": "Foot_L",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    5.17218722961843e-7,
-                    -1.6207468434004113e-7,
-                    0.1422264575958252,
-                    -5.17218722961843e-7,
-                    1.0,
-                    1.3970258283535486e-9,
-                    -0.021838543936610222,
-                    1.6207468434004113e-7,
-                    -1.396941895492887e-9,
-                    1.0,
-                    0.00010041426867246628,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
                 "UID": 11686832717968065339,
                 "ParentUID": 6675000984171537843,
                 "Name": "EN_Stump_2_LP_v02",
@@ -208580,6 +208495,36 @@
                         "ProduceShadows": true
                     }
                 ],
+                "Children": []
+            },
+            {
+                "UID": 7943465176661451169,
+                "ParentUID": 12220154697819381391,
+                "Name": "Foot_L",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    5.17218722961843e-7,
+                    -1.6207468434004113e-7,
+                    0.1422264575958252,
+                    -5.17218722961843e-7,
+                    1.0,
+                    1.3970258283535486e-9,
+                    -0.021838543936610222,
+                    1.6207468434004113e-7,
+                    -1.396941895492887e-9,
+                    1.0,
+                    0.00010041426867246628,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
                 "Children": []
             },
             {
@@ -210745,6 +210690,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -210953,6 +210903,77 @@
                             0.5,
                             0.20000000298023224,
                             2.2493135929107666
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8255974382144459128,
+                "ParentUID": 5388294253742289967,
+                "Name": "RightArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86615753173828,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17845724460701008311,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.91354370117188,
+                            -63.31134033203125
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 7091090386616409994,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
                         ]
                     }
                 ],
@@ -212307,6 +212328,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -219773,6 +219799,77 @@
                 ]
             },
             {
+                "UID": 11162600367697002291,
+                "ParentUID": 15487521912179844522,
+                "Name": "LeftArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.0,
+                    -5.642599489874556e-7,
+                    -0.0,
+                    112.85718536376953,
+                    5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    -0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 193013555944222502,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.85718536376953,
+                            -6.999990463256836
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1318738153676388609,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 5345002807089219319,
                 "ParentUID": 15183844771503181290,
                 "Name": "tol_mesh_spike_2",
@@ -220346,6 +220443,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -223113,6 +223215,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -225872,6 +225979,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -229219,6 +229331,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -229681,6 +229798,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -230542,6 +230664,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -230664,6 +230791,11 @@
                                 "AI Attack Range": 5.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Dash trail object": "DashTrailObject",
                                 "Dash trail start mesh": "DashTrailStartMesh",
                                 "Dash trail mid mesh": "DashTrailMidMesh",
@@ -233938,6 +234070,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -234724,6 +234861,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -235114,6 +235256,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -238086,6 +238233,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -239126,6 +239274,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -239230,6 +239383,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -243330,6 +243488,8 @@
                                 "Dash Icon Name": "DashCooldown",
                                 "Health Bar Name": "HealthBarFill",
                                 "Melee VFX delay": 0.10000000149011612,
+                                "Time Stop on hit duration": 0.05000000074505806,
+                                "Time Stop on death duration": 0.10000000149011612,
                                 "Dash unlocked": true,
                                 "Ultimate unlocked": true,
                                 "Ultimate object": "ultimate_attack",
@@ -243587,7 +243747,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.46311429142951965
+                        "CameraVFOV": 0.507655143737793
                     }
                 ],
                 "Children": []
@@ -246709,6 +246869,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -246773,6 +246934,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -257130,6 +257292,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -258705,6 +258872,81 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 3902323271290731074,
+                "ParentUID": 9476785638252008047,
+                "Name": "MenuItem_Menu",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.047382354736328125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -56.31134033203125,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11358534742022211890,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -0.047382354736328125,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 211241306071451821,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    11497358555916792432,
+                    17986836575774780868,
+                    7396924782600890653
+                ]
             },
             {
                 "UID": 11815266000025508847,
@@ -262205,6 +262447,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -262991,6 +263238,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -263734,6 +263986,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -268772,6 +269029,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -268919,6 +269181,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -269023,6 +269290,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -269809,6 +270081,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -271277,6 +271554,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -272292,6 +272574,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -275503,6 +275790,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -278352,6 +278644,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -282932,6 +283229,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -286150,6 +286452,77 @@
                 "Children": []
             },
             {
+                "UID": 17986836575774780868,
+                "ParentUID": 3902323271290731074,
+                "Name": "LeftArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.0,
+                    -5.642599489874556e-7,
+                    0.0,
+                    112.85718536376953,
+                    5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10086172644612710820,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.80979919433594,
+                            -63.31133270263672
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 4345918609858778766,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 6699250350287780942,
                 "ParentUID": 9044270876447428389,
                 "Name": "jnt_side_cloth_R",
@@ -287408,6 +287781,11 @@
                                 "AI Attack Range": 6.0,
                                 "AI Max Detection Range": 12.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Invisible time range": [
                                     1.0,
                                     1.5
@@ -290114,6 +290492,724 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9476785638252008047,
+                "ParentUID": 3159586866435916127,
+                "Name": "PauseMenuPanel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -2.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7950146819563783036,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3869970020927260290,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MainMenuSelectorScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Panel Name": "PauseMenuPanel"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 4928232860339676572,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1231365816552552,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    13094423240982910426,
+                    3902323271290731074
+                ]
+            },
+            {
+                "UID": 14152693772806445055,
+                "ParentUID": 3159586866435916127,
+                "Name": "GameOverController",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16167825956750194567,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "GameOverScript",
+                                "Enabled": true,
+                                "WasEnabled": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 15487521912179844522,
+                "ParentUID": 4019020532475778901,
+                "Name": "MenuItem_Continue",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4602891785380019556,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 5958575344106800196,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    12917922057551296934,
+                    11145112029650427970,
+                    11162600367697002291
+                ]
+            },
+            {
+                "UID": 5388294253742289967,
+                "ParentUID": 4019020532475778901,
+                "Name": "MenuItem_Menu",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.047382354736328125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -56.31134033203125,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11239561884377172535,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -0.047382354736328125,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            400.0,
+                            200.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 4346325083562599434,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    8255974382144459128,
+                    10121704999697209413,
+                    12880158349182088830
+                ]
+            },
+            {
+                "UID": 3873852755776457190,
+                "ParentUID": 13094423240982910426,
+                "Name": "ContinueLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    4.149784088134766,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15568437169259523509,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            4.149784088134766,
+                            0.0
+                        ],
+                        "Size": [
+                            60.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1285735055637162648,
+                        "Type": 10,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Continue",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11497358555916792432,
+                "ParentUID": 3902323271290731074,
+                "Name": "RightArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -72.86615753173828,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -7.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11362464417329874683,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -72.91354370117188,
+                            -63.31134033203125
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 6328370248740871341,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 7396924782600890653,
+                "ParentUID": 3902323271290731074,
+                "Name": "MenuLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    10.399360656738281,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16600421890457538228,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            10.351978302001953,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            100.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 135563477140202271,
+                        "Type": 10,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Main Menu",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11145112029650427970,
+                "ParentUID": 15487521912179844522,
+                "Name": "ContinueLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    4.149784088134766,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 616919659287834429,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            4.149784088134766,
+                            0.0
+                        ],
+                        "Size": [
+                            60.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 8021483100622074836,
+                        "Type": 10,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Label",
+                        "Text": "Continue",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10121704999697209413,
+                "ParentUID": 5388294253742289967,
+                "Name": "LeftArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -1.0,
+                    -5.642599489874556e-7,
+                    0.0,
+                    112.85718536376953,
+                    5.642599489874556e-7,
+                    -1.0,
+                    0.0,
+                    -6.999990463256836,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14920571837697149095,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            112.80979919433594,
+                            -63.31133270263672
+                        ],
+                        "Size": [
+                            50.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 13921419005776705262,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12880158349182088830,
+                "ParentUID": 5388294253742289967,
+                "Name": "MenuLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    10.399360656738281,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6507992373503652248,
+                        "Type": 8,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            10.351978302001953,
+                            -56.31134033203125
+                        ],
+                        "Size": [
+                            100.0,
+                            20.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 13596682251101483223,
+                        "Type": 10,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Label",
+                        "Text": "Main Menu",
+                        "FontSize": 24,
+                        "FontUID": 1978723677050761,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
                     }
                 ],
                 "Children": []
