@@ -258,8 +258,8 @@
                 "StateName": "Idle",
                 "ClipName": "CH_Ferdiad_idle_base",
                 "Position": {
-                    "x": -50.0,
-                    "y": 30.0
+                    "x": -20.0,
+                    "y": 10.0
                 },
                 "Triggers": []
             },
@@ -983,6 +983,42 @@
                 "FromState": "Idle",
                 "ToState": "WaterSpoutCharge",
                 "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Combo2",
+                "Trigger": "Combo2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Combo3",
+                "Trigger": "Combo3",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Idle",
+                "Trigger": "Idle",
                 "InterpolationTime": 200
             }
         ]
