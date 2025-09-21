@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1658393441912221,
-        "VersionUID": 1473057047704397476,
+        "VersionUID": 11764853588324014068,
         "Name": "FinalSoldier",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1658393441912221,
-                "PrefabVersionUID": 1473057047704397476,
+                "PrefabVersionUID": 11764853588324014068,
                 "PrefabChildUID": 8187168766903548737,
                 "LocalTransform": [
                     1.0,
@@ -147,10 +147,10 @@
                     658452541730084333,
                     10323973080279072004,
                     11010774235785582307,
-                    5625264484542538070,
                     17296384411250889270,
                     451405055736690805,
-                    2658785999875897971
+                    2658785999875897971,
+                    1916546947411169735
                 ]
             },
             {
@@ -321,73 +321,6 @@
                 "Children": []
             },
             {
-                "UID": 5625264484542538070,
-                "ParentUID": 6319866024102540465,
-                "Name": "Sword",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 18438508271698385571,
-                "LocalTransform": [
-                    0.5620044469833374,
-                    0.0,
-                    0.0,
-                    -21.478622436523438,
-                    0.0,
-                    0.2184959501028061,
-                    0.0,
-                    -7.001202583312988,
-                    0.0,
-                    0.0,
-                    1.3765294551849365,
-                    109.02098846435547,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10870054858887639472,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1175652718975713,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 0,
-                        "Type": 13,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Capsule Collider",
-                        "Mass": 1.0,
-                        "ColliderType": 2,
-                        "ColliderLayer": 5,
-                        "Radius": 0.800000011920929,
-                        "Length": 0.10210084915161133,
-                        "GenerateCallback": true,
-                        "FitToSize": false,
-                        "CenterOffset": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ],
-                        "CenterRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 17296384411250889270,
                 "ParentUID": 6319866024102540465,
                 "Name": "hair_jnt_03.001",
@@ -432,25 +365,25 @@
                 "UID": 451405055736690805,
                 "ParentUID": 6319866024102540465,
                 "Name": "AttackVFX",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 13254503935626680289,
                 "LocalTransform": [
-                    4.0,
+                    1.9790245294570923,
                     0.0,
-                    0.0,
-                    1.126112937927246,
+                    -1.7380638122558594,
+                    0.23363399505615234,
                     0.0,
                     1.0,
                     0.0,
-                    1.1701784133911133,
+                    1.1704273223876953,
+                    3.4761276245117188,
                     0.0,
-                    0.0,
-                    2.0,
-                    0.3447418212890625,
+                    0.9895122647285461,
+                    0.000339508056640625,
                     0.0,
                     0.0,
                     0.0,
@@ -482,7 +415,7 @@
                                 "RenderType": 1,
                                 "Cell width": 370.0,
                                 "Cell height": 358.0,
-                                "Update Rate": 0.10000000149011612,
+                                "Update Rate": 0.15000000596046448,
                                 "Row major": false,
                                 "Double sided": true,
                                 "Texture": 1234712712509106
@@ -496,7 +429,7 @@
                 "UID": 2658785999875897971,
                 "ParentUID": 6319866024102540465,
                 "Name": "ThrustVFX",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -514,7 +447,7 @@
                     4.166999340057373,
                     -0.000005066396170150256,
                     -2.384185791015625e-7,
-                    -0.01898956298828125,
+                    0.05536651611328125,
                     0.0,
                     0.0,
                     0.0,
@@ -551,6 +484,73 @@
                                 "Double sided": true,
                                 "Texture": 1268512063645580
                             }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1916546947411169735,
+                "ParentUID": 6319866024102540465,
+                "Name": "Sword",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3954076494732212267,
+                "LocalTransform": [
+                    0.5619999766349792,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.21799999475479126,
+                    0.0,
+                    0.5519999861717224,
+                    0.0,
+                    0.0,
+                    1.3769999742507935,
+                    0.6340000033378601,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12240761142472757906,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1175652718975713,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.800000011920929,
+                        "Length": 0.10199999809265137,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
                         ]
                     }
                 ],
