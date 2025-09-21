@@ -10,7 +10,10 @@
             "damageSmall",
             "damageBig",
             "overdraw",
-            "die"
+            "die",
+            "multi",
+            "dashStart",
+            "dashEnd"
         ],
         "Clips": [
             {
@@ -154,7 +157,7 @@
             {
                 "ClipUID": 1513361552826797,
                 "ClipName": "Ch_Archer_Animations_Tx_overdrawing",
-                "ClipTime": 1.0,
+                "ClipTime": 1.1299999952316284,
                 "Loop": false
             },
             {
@@ -168,6 +171,42 @@
                 "ClipName": "Ch_Archer_Running_running",
                 "ClipTime": 1.0,
                 "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_26",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1595199228252112,
+                "ClipName": "Ch_Archer_Enemy_Anims_v02_multishooting",
+                "ClipTime": 1.0499999523162842,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_28",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1577916143234917,
+                "ClipName": "Ch_Archer_New_Anims_dash_start",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_30",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1533333904140202,
+                "ClipName": "Ch_Archer_New_Anims_dash_end",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -175,41 +214,46 @@
                 "StateName": "Idle",
                 "ClipName": "Ch_Archer_Enemy_Animations_idle",
                 "Position": {
-                    "x": 210.0,
-                    "y": -130.0
-                }
+                    "x": 1110.0,
+                    "y": 140.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "aim",
                 "ClipName": "Ch_Archer_Animations_Tx_aiming",
                 "Position": {
-                    "x": 320.0,
-                    "y": 320.0
-                }
+                    "x": 760.0,
+                    "y": 100.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "attack",
                 "ClipName": "Ch_Archer_Animations_Tx_shooting",
                 "Position": {
-                    "x": 550.0,
-                    "y": 190.0
-                }
+                    "x": 520.0,
+                    "y": 210.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "Run",
                 "ClipName": "Ch_Archer_Running_running",
                 "Position": {
-                    "x": 610.0,
-                    "y": 80.0
-                }
+                    "x": 540.0,
+                    "y": 30.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "impactSmall",
                 "ClipName": "CH_ArcherEnemy_Anims_impacthitsmall",
                 "Position": {
-                    "x": 830.0,
-                    "y": 270.0
-                }
+                    "x": 870.0,
+                    "y": 390.0
+                },
+                "Triggers": []
             },
             {
                 "StateName": "death",
@@ -217,7 +261,8 @@
                 "Position": {
                     "x": 1020.0,
                     "y": 390.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "impactBig",
@@ -225,15 +270,44 @@
                 "Position": {
                     "x": 530.0,
                     "y": 400.0
-                }
+                },
+                "Triggers": []
             },
             {
                 "StateName": "overdrawing",
                 "ClipName": "Ch_Archer_Animations_Tx_overdrawing",
                 "Position": {
-                    "x": 840.0,
-                    "y": 490.0
-                }
+                    "x": 810.0,
+                    "y": 510.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "multishoot",
+                "ClipName": "Ch_Archer_Enemy_Anims_v02_multishooting",
+                "Position": {
+                    "x": 1230.0,
+                    "y": 510.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "dashStart",
+                "ClipName": "Ch_Archer_New_Anims_dash_start",
+                "Position": {
+                    "x": 910.0,
+                    "y": 20.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "dashEnd",
+                "ClipName": "Ch_Archer_New_Anims_dash_end",
+                "Position": {
+                    "x": 1280.0,
+                    "y": 20.0
+                },
+                "Triggers": []
             }
         ],
         "Transitions": [
@@ -421,6 +495,108 @@
                 "FromState": "impactSmall",
                 "ToState": "overdrawing",
                 "Trigger": "overdraw",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "aim",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "overdrawing",
+                "Trigger": "overdraw",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "overdrawing",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "attack",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "overdrawing",
+                "ToState": "multishoot",
+                "Trigger": "multi",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "multishoot",
+                "ToState": "overdrawing",
+                "Trigger": "overdraw",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "dashStart",
+                "Trigger": "dashStart",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashStart",
+                "ToState": "dashEnd",
+                "Trigger": "dashEnd",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashEnd",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashEnd",
+                "ToState": "aim",
+                "Trigger": "aim",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "multishoot",
+                "ToState": "aim",
+                "Trigger": "aim",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "impactSmall",
+                "ToState": "dashStart",
+                "Trigger": "dashStart",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashEnd",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashEnd",
+                "ToState": "attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "attack",
+                "ToState": "dashStart",
+                "Trigger": "dashStart",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "multishoot",
+                "ToState": "impactSmall",
+                "Trigger": "damageSmall",
                 "InterpolationTime": 200
             }
         ]
