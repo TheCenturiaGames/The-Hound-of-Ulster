@@ -5,19 +5,19 @@
         "RootGameObject": 8823869308913623498,
         "NavmeshUID": 2024566865993265,
         "Camera Position": [
-            84.95466613769531,
-            20.112865447998047,
-            -39.30046081542969
+            -33.279579162597656,
+            10.343040466308594,
+            -38.16325378417969
         ],
         "Camera Front": [
-            0.2615230977535248,
-            -0.6553739309310913,
-            -0.7085835933685303
+            0.5494148135185242,
+            -0.3335275948047638,
+            -0.766095757484436
         ],
         "Camera Up": [
-            0.2265327274799347,
-            0.7561371326446533,
-            -0.6139541268348694
+            0.19363650679588318,
+            0.9431638121604919,
+            -0.27008697390556335
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -1086,6 +1086,8 @@
                                 "Dash Icon Name": "DashCooldown",
                                 "Health Bar Name": "HealthBarFill",
                                 "Melee VFX delay": 0.10000000149011612,
+                                "Time Stop on hit duration": 0.05000000074505806,
+                                "Time Stop on death duration": 0.10000000149011612,
                                 "Dash unlocked": true,
                                 "Ultimate unlocked": true,
                                 "Ultimate object": "ultimate_attack",
@@ -1113,18 +1115,13 @@
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
                                 "Riastrad on damage taken": 2,
+                                "Riastrad on object destroyed": 1,
                                 "Riastrad on enemy hit": 5,
                                 "Riastrad on enemy defeated": 5,
                                 "Transform VFX Delay": 0.30000001192092896,
-                                "Riastrad VFX burst": "mesh_brust",
                                 "Riastrad VFX blur": "mesh_blur",
-                                "Riastrad VFX halo": "mesh_halo",
-                                "Riastrad VFX sphere": "mesh_sphere_glow",
                                 "Riastrad VFX crack": "mesh_crack",
                                 "Riastrad VFX waring": "mesh_warning",
-                                "Riastrad VFX smoke 1": "mesh_smoke_a",
-                                "Riastrad VFX smoke 2": "mesh_smoke_b",
-                                "Riastrad VFX smoke 3": "mesh_smoke_c",
                                 "Aim shadow object": "AimShadow",
                                 "Melee trail object": "SpearMeleeTrail",
                                 "Melee VFX object": "SpearVFX",
@@ -1134,6 +1131,7 @@
                                 "Melee VFX Vertical 2": "AttackVfxV2",
                                 "Melee VFX Horizontal 3": "AttackVfxH3",
                                 "Attack VFX Vertical 3": "AttackVfxV3",
+                                "Attack VFX Explosion": "AttackExplosion",
                                 "ArrowHit VFX object": "",
                                 "Arrow Hit VFX duration": 0.20000000298023224,
                                 "Dash Trail object": "DashTrail",
@@ -16673,7 +16671,7 @@
                         ]
                     },
                     {
-                        "UID": 7052792148017700866,
+                        "UID": 5558767640626766115,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -34369,6 +34367,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -40710,7 +40713,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -41667,6 +41673,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -42705,7 +42716,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -49392,6 +49406,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -51183,7 +51202,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 16201934481326138052,
+                "PrefabVersionUID": 17203693842301097885,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -51209,7 +51228,8 @@
                     265722870109452050,
                     17435794978728914258,
                     10219674173314423135,
-                    6046813583296433650
+                    6046813583296433650,
+                    16112859972678334333
                 ]
             },
             {
@@ -51276,7 +51296,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 9358092829899137464,
+                        "UID": 2173028019077506008,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -57212,6 +57232,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -89758,6 +89783,11 @@
                                 "AI Attack Range": 1.2999999523162842,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "AI Patrol Point": [
                                     18.3439998626709,
                                     12.666000366210938,
@@ -94771,6 +94801,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -96945,6 +96980,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -99970,7 +100006,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -144130,6 +144169,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -150607,7 +150651,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -153661,6 +153708,11 @@
                                 "AI Attack Range": 1.2999999523162842,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "AI Patrol Point": [
                                     18.3439998626709,
                                     12.666000366210938,
@@ -160468,6 +160520,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -161319,6 +161376,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -161423,6 +161485,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -162333,6 +162400,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -163152,6 +163224,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -163969,6 +164046,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -164755,6 +164837,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -166256,6 +166343,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
                                 "Time for rubble to disappear (s)": 5.0
@@ -167832,6 +167924,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -168683,6 +168780,11 @@
                                 "AI Attack Range": -1.0,
                                 "AI Max Detection Range": -1.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Greenish",
                                 "Time for rubble to disappear (s)": 5.0
@@ -170251,7 +170353,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.5475344657897949
+                        "CameraVFOV": 0.5221982002258301
                     }
                 ],
                 "Children": []
@@ -170529,17 +170631,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 16850315870164303092,
                 "LocalTransform": [
-                    -0.0000021457672119140625,
-                    -1.0000001192092896,
-                    -2.564191845522146e-7,
+                    -0.00001627206802368164,
+                    -1.0,
+                    -9.642897111916682e-7,
                     0.0,
-                    -0.0000016093254089355469,
-                    0.0,
-                    -4.302000522613525,
-                    0.5,
-                    6.0,
-                    -2.682209014892578e-7,
-                    -0.0000015385151073132874,
+                    -0.000002518296241760254,
+                    2.384185791015625e-7,
+                    -5.392699241638184,
+                    0.75,
+                    6.499999523162842,
+                    -0.0000025331974029541016,
+                    -0.0000019285794223833364,
                     0.5,
                     0.0,
                     0.0,
@@ -170570,12 +170672,13 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1389.0,
-                                "Cell height": 996.0,
-                                "Update Rate": 0.03500000014901161,
+                                "Cell width": 542.4000244140625,
+                                "Cell height": 450.0,
+                                "Update Rate": 0.014999999664723873,
                                 "Row major": false,
                                 "Double sided": true,
-                                "Texture": 1245368692058688
+                                "Is One Shot": true,
+                                "Texture": 1206752504080363
                             }
                         ]
                     }
@@ -172572,7 +172675,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -172755,7 +172861,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -173521,6 +173630,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -173585,6 +173695,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -173649,6 +173760,7 @@
                                 "Update Rate": 0.03999999910593033,
                                 "Row major": false,
                                 "Double sided": true,
+                                "Is One Shot": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -183056,6 +183168,11 @@
                                 "AI Attack Range": 1.2999999523162842,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "AI Patrol Point": [
                                     18.3439998626709,
                                     12.666000366210938,
@@ -189367,6 +189484,11 @@
                                 "AI Attack Range": 13.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "AI Patrol Point": [
                                     0.0,
                                     0.0,
@@ -192724,6 +192846,71 @@
                 "Children": [
                     15866152764333563743
                 ]
+            },
+            {
+                "UID": 16112859972678334333,
+                "ParentUID": 5045178486329626082,
+                "Name": "AttackExplosion",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9426985256426214260,
+                "LocalTransform": [
+                    2.1213202476501465,
+                    -0.38471534848213196,
+                    -0.000003891490450769197,
+                    0.0,
+                    -0.0000050961971282958984,
+                    -1.9457448274806666e-7,
+                    -4.0805230140686035,
+                    1.7000000476837158,
+                    2.1213202476501465,
+                    0.38471534848213196,
+                    -0.000005837235676153796,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16200694298006149652,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 9974012114958276891,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 551.4000244140625,
+                                "Cell height": 750.0,
+                                "Update Rate": 0.029999999329447746,
+                                "Row major": false,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Texture": 1224455642008240
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             }
         ],
         "Lights Config": {
