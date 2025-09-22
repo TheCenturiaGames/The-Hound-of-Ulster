@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1658393441912221,
-        "VersionUID": 9180115480934135219,
+        "VersionUID": 11597877392299741073,
         "Name": "FinalSoldier",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1658393441912221,
-                "PrefabVersionUID": 9180115480934135219,
+                "PrefabVersionUID": 11597877392299741073,
                 "PrefabChildUID": 8187168766903548737,
                 "LocalTransform": [
                     1.0,
@@ -68,7 +68,7 @@
                                 ],
                                 "Knockback Time": 0.20000000298023224,
                                 "Knockback Force": 7.0,
-                                "Second Attack Delay": 0.30000001192092896,
+                                "Second Attack Delay": 0.6000000238418579,
                                 "Chase Speed": 4.0,
                                 "Cheering distance": 5.0,
                                 "Max number of enemies nearby": 3,
@@ -149,8 +149,8 @@
                     11010774235785582307,
                     17296384411250889270,
                     451405055736690805,
-                    2658785999875897971,
-                    1916546947411169735
+                    1916546947411169735,
+                    10091368273461933633
                 ]
             },
             {
@@ -415,74 +415,10 @@
                                 "RenderType": 1,
                                 "Cell width": 370.0,
                                 "Cell height": 358.0,
-                                "Update Rate": 0.09000000357627869,
-                                "Row major": false,
-                                "Double sided": true,
-                                "Texture": 1234712712509106
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 2658785999875897971,
-                "ParentUID": 6319866024102540465,
-                "Name": "ThrustVFX",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 13254503935626680289,
-                "LocalTransform": [
-                    -0.00002086329368466977,
-                    -1.0000001192092896,
-                    -3.427267074584961e-7,
-                    -0.36920833587646484,
-                    -0.0000018627940789883723,
-                    7.748605526103347e-7,
-                    -0.4999999701976776,
-                    0.9370527267456055,
-                    4.166999340057373,
-                    -0.000005066396170150256,
-                    -2.384185791015625e-7,
-                    0.05536651611328125,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 999496812837122150,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": false
-                    },
-                    {
-                        "UID": 8590277219140313141,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 776.0,
-                                "Cell height": 124.62000274658203,
                                 "Update Rate": 0.10000000149011612,
                                 "Row major": false,
                                 "Double sided": true,
-                                "Texture": 1268512063645580
+                                "Texture": 1234712712509106
                             }
                         ]
                     }
@@ -551,6 +487,70 @@
                             0.0,
                             0.0,
                             0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10091368273461933633,
+                "ParentUID": 6319866024102540465,
+                "Name": "ThrustVFX",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17413972561878650471,
+                "LocalTransform": [
+                    -9.5367431640625e-7,
+                    -1.0,
+                    -1.4901161193847656e-8,
+                    -0.3056354522705078,
+                    -9.5367431640625e-7,
+                    5.960464477539063e-8,
+                    -0.5,
+                    0.9513721466064453,
+                    4.0,
+                    -1.4901161193847656e-7,
+                    -1.1920928955078125e-7,
+                    0.02606964111328125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7822757862847875811,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false
+                    },
+                    {
+                        "UID": 6725942175048171401,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 776.0,
+                                "Cell height": 124.625,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Texture": 1268512063645580
+                            }
                         ]
                     }
                 ],
