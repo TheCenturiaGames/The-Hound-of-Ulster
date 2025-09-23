@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 5931281247794514550,
+        "VersionUID": 678611933170778745,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 5931281247794514550,
+                "PrefabVersionUID": 678611933170778745,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -40,7 +40,8 @@
                     265722870109452050,
                     17435794978728914258,
                     10219674173314423135,
-                    10440729527072905711
+                    10440729527072905711,
+                    4505808652108770296
                 ]
             },
             {
@@ -469,6 +470,72 @@
                 ]
             },
             {
+                "UID": 4505808652108770296,
+                "ParentUID": 5045178486329626082,
+                "Name": "AttackExplosion",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12948056569153483436,
+                "LocalTransform": [
+                    2.1213202476501465,
+                    -0.7071068286895752,
+                    0.000003169882575093652,
+                    0.016721725463867188,
+                    9.83476752480783e-7,
+                    -8.344650268554688e-7,
+                    -4.090908050537109,
+                    2.146420478820801,
+                    2.1213207244873047,
+                    0.7071067094802856,
+                    -0.000001463022726966301,
+                    -0.01670074462890625,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7245875515492041907,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 16875115778407743411,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 551.4000244140625,
+                                "Cell height": 750.0,
+                                "Update Rate": 0.029999999329447746,
+                                "Row major": false,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Texture": 1251188638690907
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 16315202593625891460,
                 "ParentUID": 3705696451113484253,
                 "Name": "Camera",
@@ -525,7 +592,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.5221982002258301
+                        "CameraVFOV": 0.4287307858467102
                     }
                 ],
                 "Children": []
@@ -1153,13 +1220,13 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1389.0,
-                                "Cell height": 996.0,
-                                "Update Rate": 0.03500000014901161,
+                                "Cell width": 542.4000244140625,
+                                "Cell height": 450.0,
+                                "Update Rate": 0.014999999664723873,
                                 "Row major": false,
                                 "Double sided": true,
-                                "Is One Shot": false,
-                                "Texture": 1245368692058688
+                                "Is One Shot": true,
+                                "Texture": 1271849514254767
                             }
                         ]
                     }
