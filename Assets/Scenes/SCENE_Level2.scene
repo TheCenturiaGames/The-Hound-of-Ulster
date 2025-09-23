@@ -5,19 +5,19 @@
         "RootGameObject": 3408008172474305760,
         "NavmeshUID": 2083739643501027,
         "Camera Position": [
-            73.57218170166016,
-            10.86101245880127,
-            139.5841064453125
+            -59.87971878051758,
+            15.351250648498535,
+            12.723206520080566
         ],
         "Camera Front": [
-            0.46023234724998474,
-            -0.6231614351272583,
-            -0.6323416829109192
+            0.33644530177116394,
+            -0.9405099749565125,
+            0.047387223690748215
         ],
         "Camera Up": [
-            0.3655785322189331,
-            0.7835639119148254,
-            -0.5023742914199829
+            0.9305339455604553,
+            0.34199222922325134,
+            0.13095003366470337
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -156,7 +156,9 @@
                     17899024348411903514,
                     7488596019028965778,
                     9562241251873528500,
-                    18008857041072394063
+                    18008857041072394063,
+                    13280416889802328891,
+                    493658280295684227
                 ]
             },
             {
@@ -1966,7 +1968,7 @@
                         ]
                     },
                     {
-                        "UID": 5979326209376510837,
+                        "UID": 8012977080658312654,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -139196,7 +139198,7 @@
             {
                 "UID": 17534862706823778305,
                 "ParentUID": 2738637616833094546,
-                "Name": "CH_Pooka_Idle",
+                "Name": "CH_Pooka_Idle_Highlight",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
@@ -142135,6 +142137,53 @@
                 "Children": [
                     3945785591692507650
                 ]
+            },
+            {
+                "UID": 15441310463202870629,
+                "ParentUID": 493658280295684227,
+                "Name": "CameraTarget",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6824313157959183548,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MoveGOInSpline",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed Factor": 5.25,
+                                "PingPong effect": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 11181846024393691426,
@@ -219064,7 +219113,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.5936976671218872
+                        "CameraVFOV": 0.4174383282661438
                     }
                 ],
                 "Children": []
@@ -245775,6 +245824,136 @@
                 ]
             },
             {
+                "UID": 147319568720111093,
+                "ParentUID": 493658280295684227,
+                "Name": "CharacterHighlight",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0000019073486328125,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 18017545832037191884,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "HighlightCharacter",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Player": "walk",
+                                "Player camera pivot": "Camera Pivot",
+                                "Character to highlight": "CH_banshee_v2_Highlight",
+                                "Target spline points offset": 0.7699999809265137,
+                                "Zoom multiplier": 30.0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 7636846287888904300,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            3.0,
+                            3.0,
+                            2.0
+                        ]
+                    },
+                    {
+                        "UID": 6541596497533997846,
+                        "Type": 22,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Spline",
+                        "Alpha": 0.5,
+                        "Loop": false,
+                        "Points": [
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 0.8679999709129333
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 0.4020000100135803
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 16649449281604059911,
                 "ParentUID": 1959884913609018789,
                 "Name": "Rising tile",
@@ -249157,7 +249336,7 @@
             {
                 "UID": 3693530531405922586,
                 "ParentUID": 1478750505692735167,
-                "Name": "CH_banshee_v2",
+                "Name": "CH_banshee_v2_Highlight",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
@@ -302238,6 +302417,39 @@
                 "Children": []
             },
             {
+                "UID": 13280416889802328891,
+                "ParentUID": 3408008172474305760,
+                "Name": "CharacterHighlightBase",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -99.95880126953125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    4.500068664550781,
+                    0.0,
+                    0.0,
+                    1.0,
+                    17.168241500854492,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    7530639211987541742,
+                    14837929812564945915
+                ]
+            },
+            {
                 "UID": 1814230406146045349,
                 "ParentUID": 11363518221817886785,
                 "Name": "EN_Boss_Arena_Wall_01.001",
@@ -306331,6 +306543,216 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 7530639211987541742,
+                "ParentUID": 13280416889802328891,
+                "Name": "CharacterHighlight",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0000019073486328125,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1244273075664408201,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "HighlightCharacter",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Player": "walk",
+                                "Player camera pivot": "Camera Pivot",
+                                "Character to highlight": "CH_Pooka_Idle_Highlight",
+                                "Target spline points offset": 0.6000000238418579,
+                                "Zoom multiplier": 30.0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 5424920129521172161,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            3.0,
+                            3.0,
+                            8.0
+                        ]
+                    },
+                    {
+                        "UID": 10228200001988446521,
+                        "Type": 22,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Spline",
+                        "Alpha": 0.5,
+                        "Loop": false,
+                        "Points": [
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 0.8679999709129333
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 0.4020000100135803
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14837929812564945915,
+                "ParentUID": 13280416889802328891,
+                "Name": "CameraTarget",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3854883604966480302,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MoveGOInSpline",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed Factor": 6.46999979019165,
+                                "PingPong effect": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 493658280295684227,
+                "ParentUID": 3408008172474305760,
+                "Name": "CharacterHighlightBase",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -52.718318939208984,
+                    0.0,
+                    1.0,
+                    0.0,
+                    4.499947547912598,
+                    0.0,
+                    0.0,
+                    1.0,
+                    11.845190048217773,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    147319568720111093,
+                    15441310463202870629
+                ]
             }
         ],
         "Lights Config": {
