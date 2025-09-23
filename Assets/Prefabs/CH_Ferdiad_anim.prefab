@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 8840656873031717773,
+        "VersionUID": 8333839419970915643,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 8840656873031717773,
+                "PrefabVersionUID": 8333839419970915643,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
@@ -61,6 +61,11 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "CH_Ferdiad.001",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Phase Start": 1,
                                 "Dash Duration": 0.30000001192092896,
                                 "Close Area Damage": 3,
@@ -1263,6 +1268,21 @@
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
                         "ProduceShadows": true
+                    },
+                    {
+                        "UID": 10125531692904713296,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 2
+                            }
+                        ]
                     }
                 ],
                 "Children": []
