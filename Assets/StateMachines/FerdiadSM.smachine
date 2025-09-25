@@ -1020,6 +1020,18 @@
                 "ToState": "Idle",
                 "Trigger": "Idle",
                 "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
             }
         ]
     }
