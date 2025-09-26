@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -23.78616714477539,
-            26.286115646362305,
-            -56.967796325683594
+            -28.433177947998047,
+            10.447562217712402,
+            -65.75048828125
         ],
         "Camera Front": [
-            0.08504955470561981,
-            -0.8728222846984863,
-            -0.480570524930954
+            0.32723549008369446,
+            -0.9139237403869629,
+            0.24012580513954163
         ],
         "Camera Up": [
-            0.15199784934520721,
-            0.4889826774597168,
-            -0.8589486479759216
+            0.736484169960022,
+            0.40687522292137146,
+            0.540410578250885
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -437,7 +437,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.389176607131958
+                        "CameraVFOV": 0.3868323266506195
                     }
                 ],
                 "Children": []
@@ -779,7 +779,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 4200656106120183000,
+                "PrefabVersionUID": 5707378726948167214,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
@@ -831,7 +831,7 @@
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
-                                "Phase Start": 1,
+                                "Phase Start": 2,
                                 "1st Mirage": 47,
                                 "2nd Mirage": 30,
                                 "3rd Mirage": 10,
@@ -839,8 +839,9 @@
                                 "Close Area Damage": 3,
                                 "Spout": "Spout",
                                 "Shield Collider": "ShieldCollider",
-                                "Close Area": "CloseArea",
-                                "Big Area": "BigArea",
+                                "Overhead Close Area": "CloseArea",
+                                "Overhead Big Area": "BigArea",
+                                "Blast Area": "BlastArea",
                                 "Overhead Prepare": "OverheadPrepare",
                                 "Overhead Dash": "OverheadDash",
                                 "Overhead Attack": "OverheadAttack",
@@ -23699,7 +23700,7 @@
                         ]
                     },
                     {
-                        "UID": 12068815154935464496,
+                        "UID": 17250429882792216483,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -45610,6 +45611,70 @@
                 "Children": []
             },
             {
+                "UID": 2653727648996685932,
+                "ParentUID": 16883719823999062284,
+                "Name": "jnt_tail_jaw_R",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7072424774655570572,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    9.487936125651686e-8,
+                    7.511675192972689e-8,
+                    3.7252887441496796e-9,
+                    -9.487936125651686e-8,
+                    1.0,
+                    -2.71596093170956e-7,
+                    0.860000491142273,
+                    -7.511678745686368e-8,
+                    2.71596093170956e-7,
+                    1.0,
+                    0.07999971508979797,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 13741053547564564137,
+                "ParentUID": 13890528696528095028,
+                "Name": "jnt_arm_L_02",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10326673760837845561,
+                "LocalTransform": [
+                    0.8982813358306885,
+                    -0.2354113608598709,
+                    0.3716726303100586,
+                    0.16843463480472565,
+                    -0.3771272897720337,
+                    -0.8470019698143005,
+                    0.3769800662994385,
+                    -0.25218990445137024,
+                    0.22555533051490784,
+                    -0.4786488115787506,
+                    -0.8498900532722473,
+                    -0.03879528492689133,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    3638986435925447753
+                ]
+            },
+            {
                 "UID": 83672975728710304,
                 "ParentUID": 1070612835812166735,
                 "Name": "Obstacle",
@@ -45650,70 +45715,6 @@
                         "Additive": false
                     }
                 ],
-                "Children": []
-            },
-            {
-                "UID": 13741053547564564137,
-                "ParentUID": 13890528696528095028,
-                "Name": "jnt_arm_L_02",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 10326673760837845561,
-                "LocalTransform": [
-                    0.8982813358306885,
-                    -0.2354113608598709,
-                    0.3716726303100586,
-                    0.16843463480472565,
-                    -0.3771272897720337,
-                    -0.8470019698143005,
-                    0.3769800662994385,
-                    -0.25218990445137024,
-                    0.22555533051490784,
-                    -0.4786488115787506,
-                    -0.8498900532722473,
-                    -0.03879528492689133,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    3638986435925447753
-                ]
-            },
-            {
-                "UID": 2653727648996685932,
-                "ParentUID": 16883719823999062284,
-                "Name": "jnt_tail_jaw_R",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 7072424774655570572,
-                "LocalTransform": [
-                    1.0000001192092896,
-                    9.487936125651686e-8,
-                    7.511675192972689e-8,
-                    3.7252887441496796e-9,
-                    -9.487936125651686e-8,
-                    1.0,
-                    -2.71596093170956e-7,
-                    0.860000491142273,
-                    -7.511678745686368e-8,
-                    2.71596093170956e-7,
-                    1.0,
-                    0.07999971508979797,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
                 "Children": []
             },
             {
@@ -68477,7 +68478,8 @@
                     6732637772525446601,
                     6174256021812031359,
                     5360664371443763639,
-                    11799514523368213668
+                    11799514523368213668,
+                    16841097917766150499
                 ]
             },
             {
@@ -69042,22 +69044,22 @@
                 "Name": "BlastShield_1",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 4026801309685675268,
                 "LocalTransform": [
-                    1.0000001192092896,
+                    -1.0,
                     0.0,
-                    0.0,
+                    -2.3841860752327193e-7,
                     0.03264617919921875,
                     0.0,
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
+                    2.3841860752327193e-7,
                     -0.0,
-                    1.0000001192092896,
+                    -1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -69326,22 +69328,22 @@
                 "Name": "BlastSprite",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 7236697511232184711,
                 "LocalTransform": [
-                    -0.000006437302545236889,
-                    0.0,
-                    -8.0,
+                    -0.0000021457672119140625,
+                    -0.0,
+                    -7.999999523162842,
                     0.33667755126953125,
                     0.0,
                     1.0000061988830566,
-                    0.0,
-                    0.0,
-                    18.0,
                     -0.0,
-                    -0.00000286102294921875,
+                    0.0,
+                    17.999998092651367,
+                    0.0,
+                    -9.5367431640625e-7,
                     1.48760986328125,
                     0.0,
                     0.0,
@@ -70776,6 +70778,62 @@
                         "Name": "Animation",
                         "Animations": 1577427815367880,
                         "StateMachine": 0
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16841097917766150499,
+                "ParentUID": 11032983811558720633,
+                "Name": "BlastArea",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4295143486584541014,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.07275390625,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0,
+                    0.12578964233398438,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.44999998807907104,
+                        "Length": 14.699999809265137,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            -1.5709999799728394,
+                            0.0,
+                            0.0
+                        ]
                     }
                 ],
                 "Children": []

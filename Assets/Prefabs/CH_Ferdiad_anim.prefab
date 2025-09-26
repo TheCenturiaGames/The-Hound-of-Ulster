@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 15498671089272950880,
+        "VersionUID": 5707378726948167214,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 15498671089272950880,
+                "PrefabVersionUID": 5707378726948167214,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
@@ -74,8 +74,9 @@
                                 "Close Area Damage": 3,
                                 "Spout": "Spout",
                                 "Shield Collider": "ShieldCollider",
-                                "Close Area": "CloseArea",
-                                "Big Area": "BigArea",
+                                "Overhead Close Area": "CloseArea",
+                                "Overhead Big Area": "BigArea",
+                                "Blast Area": "BlastArea",
                                 "Overhead Prepare": "OverheadPrepare",
                                 "Overhead Dash": "OverheadDash",
                                 "Overhead Attack": "OverheadAttack",
@@ -1166,7 +1167,8 @@
                     6732637772525446601,
                     6174256021812031359,
                     5360664371443763639,
-                    11799514523368213668
+                    11799514523368213668,
+                    16841097917766150499
                 ]
             },
             {
@@ -2387,22 +2389,22 @@
                 "Name": "BlastShield_1",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 4026801309685675268,
                 "LocalTransform": [
-                    1.0000001192092896,
+                    -1.0,
                     0.0,
-                    0.0,
+                    -2.3841860752327193e-7,
                     0.03264617919921875,
                     0.0,
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
+                    2.3841860752327193e-7,
                     -0.0,
-                    1.0000001192092896,
+                    -1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -2743,22 +2745,22 @@
                 "Name": "BlastSprite",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 7236697511232184711,
                 "LocalTransform": [
-                    -0.000006437302545236889,
-                    0.0,
-                    -8.0,
+                    -0.0000021457672119140625,
+                    -0.0,
+                    -7.999999523162842,
                     0.33667755126953125,
                     0.0,
                     1.0000061988830566,
-                    0.0,
-                    0.0,
-                    18.0,
                     -0.0,
-                    -0.00000286102294921875,
+                    0.0,
+                    17.999998092651367,
+                    0.0,
+                    -9.5367431640625e-7,
                     1.48760986328125,
                     0.0,
                     0.0,
@@ -2798,6 +2800,62 @@
                                 "Is One Shot": false,
                                 "Texture": 1221434716556429
                             }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16841097917766150499,
+                "ParentUID": 11032983811558720633,
+                "Name": "BlastArea",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4295143486584541014,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.07275390625,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0,
+                    0.12578964233398438,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.44999998807907104,
+                        "Length": 14.699999809265137,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            -1.5709999799728394,
+                            0.0,
+                            0.0
                         ]
                     }
                 ],
