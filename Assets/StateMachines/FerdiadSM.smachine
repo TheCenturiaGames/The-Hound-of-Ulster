@@ -411,8 +411,8 @@
                 "StateName": "WaterSpoutCharge",
                 "ClipName": "CH_Ferdiad_Water_Sprout_Charge",
                 "Position": {
-                    "x": 670.0,
-                    "y": 20.0
+                    "x": 440.0,
+                    "y": -280.0
                 },
                 "Triggers": []
             },
@@ -420,8 +420,8 @@
                 "StateName": "WaterSpoutHit",
                 "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
                 "Position": {
-                    "x": 660.0,
-                    "y": 110.0
+                    "x": 440.0,
+                    "y": -150.0
                 },
                 "Triggers": []
             }
@@ -1031,6 +1031,12 @@
                 "FromState": "Overhead_Recover",
                 "ToState": "WaterSpoutCharge",
                 "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
                 "InterpolationTime": 200
             }
         ]

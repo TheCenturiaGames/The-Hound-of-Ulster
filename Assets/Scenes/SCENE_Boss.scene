@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -28.433177947998047,
-            10.447562217712402,
-            -65.75048828125
+            -31.8750057220459,
+            31.233657836914063,
+            -57.79041290283203
         ],
         "Camera Front": [
-            0.32723549008369446,
-            -0.9139237403869629,
-            0.24012580513954163
+            0.5784723162651062,
+            -0.8121687173843384,
+            -0.07583977282047272
         ],
         "Camera Up": [
-            0.736484169960022,
-            0.40687522292137146,
-            0.540410578250885
+            0.8046488165855408,
+            0.5843020081520081,
+            -0.10550551116466522
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -96,10 +96,8 @@
                     4811598074761623428,
                     2461763662634075369,
                     6900930839753930652,
-                    11410980385545439183,
                     5375593812395231491,
-                    1665762048196433077,
-                    3922724464719778753
+                    12135623633844892841
                 ]
             },
             {
@@ -175,6 +173,143 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 10010933506457265975,
+                "ParentUID": 451232957902463532,
+                "Name": "Camera",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3036950445380587086,
+                "LocalTransform": [
+                    1.0,
+                    0.000005692243576049805,
+                    -0.000002294778823852539,
+                    0.0,
+                    -0.0000037401914596557617,
+                    0.8580352067947388,
+                    0.5135916471481323,
+                    19.099000930786133,
+                    0.0000049173831939697266,
+                    -0.5135911703109741,
+                    0.8580359220504761,
+                    31.907489776611328,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4238028682657437961,
+                        "Type": 6,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Camera",
+                        "MainCamera": true,
+                        "DrawGizmos": true,
+                        "SeePreview": true,
+                        "CameraType": 0,
+                        "CameraPosition": [
+                            -57.151641845703125,
+                            21.548473358154297,
+                            -40.81022262573242
+                        ],
+                        "CameraFront": [
+                            0.6067240834236145,
+                            -0.5135911703109741,
+                            -0.6067207455635071
+                        ],
+                        "CameraUp": [
+                            0.36316782236099243,
+                            0.8580350875854492,
+                            -0.363159716129303
+                        ],
+                        "CameraNearPlane": 0.10000000149011612,
+                        "CameraFarPlane": 500.0,
+                        "CameraHFOV": 0.6108652353286743,
+                        "CameraVFOV": 0.431178480386734
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 455528819467665532,
+                "ParentUID": 1070612835812166735,
+                "Name": "Floor",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": true,
+                "LocalTransform": [
+                    -5.111761093139648,
+                    0.0,
+                    -3.7621538639068604,
+                    -13.751163482666016,
+                    -3.632067091530189e-9,
+                    1.0,
+                    -2.8192062018206343e-8,
+                    0.0003005862236022949,
+                    2.294735908508301,
+                    -9.83165104884165e-10,
+                    -8.380666732788086,
+                    18.971477508544922,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5329300615980546716,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 17251930186433148396,
+                "ParentUID": 6909050035807697822,
+                "Name": "tol_jnt_spike_6",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -0.6167248487472534,
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.102143406867981,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -0.19034092128276825,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    15897386612110119464
+                ]
             },
             {
                 "UID": 13372365087391029465,
@@ -301,143 +436,6 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 455528819467665532,
-                "ParentUID": 1070612835812166735,
-                "Name": "Floor",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
-                "NavmeshValid": true,
-                "LocalTransform": [
-                    -5.111761093139648,
-                    0.0,
-                    -3.7621538639068604,
-                    -13.751163482666016,
-                    -3.632067091530189e-9,
-                    1.0,
-                    -2.8192062018206343e-8,
-                    0.0003005862236022949,
-                    2.294735908508301,
-                    -9.83165104884165e-10,
-                    -8.380666732788086,
-                    18.971477508544922,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 5329300615980546716,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 17251930186433148396,
-                "ParentUID": 6909050035807697822,
-                "Name": "tol_jnt_spike_6",
-                "Mobility": 1,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -0.6167248487472534,
-                    0.0,
-                    1.0,
-                    0.0,
-                    1.102143406867981,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -0.19034092128276825,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    15897386612110119464
-                ]
-            },
-            {
-                "UID": 10010933506457265975,
-                "ParentUID": 451232957902463532,
-                "Name": "Camera",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 3036950445380587086,
-                "LocalTransform": [
-                    1.0,
-                    0.000005692243576049805,
-                    -0.000002294778823852539,
-                    0.0,
-                    -0.0000037401914596557617,
-                    0.8580352067947388,
-                    0.5135916471481323,
-                    19.099000930786133,
-                    0.0000049173831939697266,
-                    -0.5135911703109741,
-                    0.8580359220504761,
-                    31.907489776611328,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 4238028682657437961,
-                        "Type": 6,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Camera",
-                        "MainCamera": true,
-                        "DrawGizmos": true,
-                        "SeePreview": true,
-                        "CameraType": 0,
-                        "CameraPosition": [
-                            -57.151641845703125,
-                            21.548473358154297,
-                            -40.81022262573242
-                        ],
-                        "CameraFront": [
-                            0.6067240834236145,
-                            -0.5135911703109741,
-                            -0.6067207455635071
-                        ],
-                        "CameraUp": [
-                            0.36316782236099243,
-                            0.8580350875854492,
-                            -0.363159716129303
-                        ],
-                        "CameraNearPlane": 0.10000000149011612,
-                        "CameraFarPlane": 500.0,
-                        "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.3868323266506195
                     }
                 ],
                 "Children": []
@@ -771,7 +769,7 @@
             },
             {
                 "UID": 1665762048196433077,
-                "ParentUID": 6788591387451538717,
+                "ParentUID": 12135623633844892841,
                 "Name": "CH_Ferdiad_anim",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -779,13 +777,13 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 5707378726948167214,
+                "PrefabVersionUID": 4264361188924319496,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
                     0.0,
                     -0.9999999403953552,
-                    -9.501858711242676,
+                    -1.6722569465637207,
                     0.0,
                     1.0,
                     0.0,
@@ -793,7 +791,7 @@
                     0.9999999403953552,
                     0.0,
                     -1.1920928955078125e-7,
-                    -65.0813980102539,
+                    0.36875152587890625,
                     0.0,
                     0.0,
                     0.0,
@@ -831,7 +829,7 @@
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
-                                "Phase Start": 2,
+                                "Phase Start": 1,
                                 "1st Mirage": 47,
                                 "2nd Mirage": 30,
                                 "3rd Mirage": 10,
@@ -904,7 +902,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Audio Source",
-                        "DefaultEvent": 0,
+                        "DefaultEvent": 3435584311,
                         "Volume": 1.0,
                         "Pitch": 0.5,
                         "Spatialization": 0.0,
@@ -4914,6 +4912,7 @@
                                 "Row major": false,
                                 "Double sided": false,
                                 "Is One Shot": true,
+                                "Only Once": false,
                                 "Texture": 1251188638690907
                             }
                         ]
@@ -7788,6 +7787,43 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 12135623633844892841,
+                "ParentUID": 6788591387451538717,
+                "Name": "Boss",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1684382510347477,
+                "PrefabVersionUID": 13973369547509259973,
+                "PrefabChildUID": 13565163427625414931,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -7.829601764678955,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -65.45014953613281,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    3922724464719778753,
+                    1665762048196433077,
+                    11410980385545439183
+                ]
             },
             {
                 "UID": 14944540772262937810,
@@ -14090,6 +14126,7 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": false,
+                                "Only Once": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -23471,6 +23508,39 @@
                 "Children": []
             },
             {
+                "UID": 4966930550256986312,
+                "ParentUID": 6788591387451538717,
+                "Name": "Game",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    1022879414733014664,
+                    5131951258922761410
+                ]
+            },
+            {
                 "UID": 15544786788991934092,
                 "ParentUID": 1070612835812166735,
                 "Name": "Obstacle",
@@ -23512,39 +23582,6 @@
                     }
                 ],
                 "Children": []
-            },
-            {
-                "UID": 4966930550256986312,
-                "ParentUID": 6788591387451538717,
-                "Name": "Game",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    1022879414733014664,
-                    5131951258922761410
-                ]
             },
             {
                 "UID": 1022879414733014664,
@@ -23700,7 +23737,7 @@
                         ]
                     },
                     {
-                        "UID": 17250429882792216483,
+                        "UID": 4013143040745621593,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -27687,6 +27724,7 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": false,
+                                "Only Once": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -36347,6 +36385,7 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": false,
+                                "Only Once": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -45611,37 +45650,6 @@
                 "Children": []
             },
             {
-                "UID": 2653727648996685932,
-                "ParentUID": 16883719823999062284,
-                "Name": "jnt_tail_jaw_R",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 7072424774655570572,
-                "LocalTransform": [
-                    1.0000001192092896,
-                    9.487936125651686e-8,
-                    7.511675192972689e-8,
-                    3.7252887441496796e-9,
-                    -9.487936125651686e-8,
-                    1.0,
-                    -2.71596093170956e-7,
-                    0.860000491142273,
-                    -7.511678745686368e-8,
-                    2.71596093170956e-7,
-                    1.0,
-                    0.07999971508979797,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
                 "UID": 13741053547564564137,
                 "ParentUID": 13890528696528095028,
                 "Name": "jnt_arm_L_02",
@@ -45673,6 +45681,37 @@
                 "Children": [
                     3638986435925447753
                 ]
+            },
+            {
+                "UID": 2653727648996685932,
+                "ParentUID": 16883719823999062284,
+                "Name": "jnt_tail_jaw_R",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7072424774655570572,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    9.487936125651686e-8,
+                    7.511675192972689e-8,
+                    3.7252887441496796e-9,
+                    -9.487936125651686e-8,
+                    1.0,
+                    -2.71596093170956e-7,
+                    0.860000491142273,
+                    -7.511678745686368e-8,
+                    2.71596093170956e-7,
+                    1.0,
+                    0.07999971508979797,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 83672975728710304,
@@ -54296,6 +54335,7 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
+                                "Only Once": false,
                                 "Texture": 1271849514254767
                             }
                         ]
@@ -55878,6 +55918,7 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": false,
+                                "Only Once": false,
                                 "Texture": 1278205565769203
                             }
                         ]
@@ -59816,7 +59857,7 @@
             },
             {
                 "UID": 11410980385545439183,
-                "ParentUID": 6788591387451538717,
+                "ParentUID": 12135623633844892841,
                 "Name": "MirageArena",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -59830,7 +59871,7 @@
                     1.0,
                     0.0,
                     0.0,
-                    6.135609149932861,
+                    13.965210914611816,
                     0.0,
                     1.0,
                     0.0,
@@ -59838,7 +59879,7 @@
                     0.0,
                     0.0,
                     1.0,
-                    0.7325305938720703,
+                    66.18267822265625,
                     0.0,
                     0.0,
                     0.0,
@@ -69377,10 +69418,11 @@
                                 "RenderType": 1,
                                 "Cell width": 1024.0,
                                 "Cell height": 1024.0,
-                                "Update Rate": 0.05999999865889549,
+                                "Update Rate": 0.03500000014901161,
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
+                                "Only Once": true,
                                 "Texture": 1221434716556429
                             }
                         ]
@@ -70705,7 +70747,7 @@
             },
             {
                 "UID": 3922724464719778753,
-                "ParentUID": 6788591387451538717,
+                "ParentUID": 12135623633844892841,
                 "Name": "BossSpouts",
                 "Mobility": 0,
                 "SelectParent": false,
@@ -70719,15 +70761,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
+                    7.829601764678955,
                     0.0,
                     1.0,
                     0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    65.45014953613281,
                     0.0,
                     0.0,
                     0.0,
