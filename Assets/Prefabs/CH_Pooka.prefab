@@ -1,34 +1,33 @@
 {
     "Prefab": {
-        "UID": 1667661468865896,
-        "VersionUID": 14442868734774692226,
+        "UID": 1628549546874227,
+        "VersionUID": 11025477152194941041,
         "Name": "CH_Pooka",
         "GameObjects": [
             {
-                "UID": 8921633789661377213,
-                "ParentUID": 8823869308913623498,
+                "UID": 2738637616833094546,
+                "ParentUID": 1478750505692735167,
                 "Name": "CH_Pooka",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabUID": 1667661468865896,
-                "PrefabVersionUID": 14442868734774692226,
-                "PrefabChildUID": 7058584890079411930,
+                "PrefabVersionUID": 11025477152194941041,
+                "PrefabChildUID": 8761286098342629341,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
+                    -91.578125,
                     0.0,
                     1.0,
                     0.0,
+                    3.440840244293213,
+                    0.0,
+                    0.0,
+                    1.0,
+                    14.162504196166992,
                     0.0,
                     0.0,
                     0.0,
@@ -36,28 +35,28 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1162740007589268320,
-                    10710124868499213306,
-                    13218885984751462803,
-                    13857251433397276585,
-                    2888923183427522660,
-                    13614214115052174422,
-                    3629840060317447345,
-                    15149489458400954280,
-                    15743365797939256935,
-                    4400053753399131823
+                    17534862706823778305,
+                    8799182785349824683,
+                    275799851366467712,
+                    14449216691963766205,
+                    12685138645918932415,
+                    8646550118520810825,
+                    15753553964816942976,
+                    17330112502931770239,
+                    9033993849550896914,
+                    16574559695028244353
                 ]
             },
             {
-                "UID": 1162740007589268320,
-                "ParentUID": 8921633789661377213,
-                "Name": "CH_Pooka_Idle",
+                "UID": 17534862706823778305,
+                "ParentUID": 2738637616833094546,
+                "Name": "CH_Pooka_Idle_Highlight",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14658421437559944457,
+                "PrefabChildUID": 12161092841986285429,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -66,7 +65,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    -0.00002300739288330078,
                     0.0,
                     0.0,
                     1.0,
@@ -78,7 +77,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2353345072223522923,
+                        "UID": 16484617150829162616,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -99,11 +98,11 @@
                                 "Attack Hitbox Delay": 0.0,
                                 "Attack Hitbox Duration": 0.0,
                                 "Heal Cooldown": 1.0,
-                                "AI Chase Range": 10.0,
+                                "AI Chase Range": 15.0,
                                 "AI Attack Range": 5.0,
-                                "AI Max Detection Range": 15.0,
+                                "AI Max Detection Range": 20.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "Pooka_mesh",
+                                "Mesh name": "",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
@@ -120,25 +119,22 @@
                                 "Dash speed": 15.0,
                                 "Min dash distance": 1.0,
                                 "Version (0: Random)": 1,
-                                "Swap states chance per second (Only with version 0)": 0.10000000149011612,
-                                "Max enemies left for final attack": 3,
+                                "Swap states chance per second (Only with version 0)": 0.20000000298023224,
+                                "Max enemies left for final attack": 0,
+                                "Peek chance per second": 0.20000000298023224,
+                                "Buried travel speed": 3.5,
                                 "Chase speed": 3.0,
                                 "Chase Acceleration": 4.0,
-                                "Max sneak angle degrees": 45.0,
-                                "Min sneak speed": 0.0010000000474974513,
-                                "Max sneak speed": 2.0,
-                                "Distance to player for max sneak speed": 2.0,
-                                "Sneak Acceleration": 4.0,
-                                "Peek chance per second": 0.20000000298023224,
                                 "Dash angle degrees": 50.0,
                                 "Time between dashes": 0.5,
                                 "VFX_DigUpRocks": "VFX_DigUpRocks",
-                                "VFX_DigUpHole": "VFX_DigUpHole"
+                                "VFX_DigUpHole": "VFX_DigUpHole",
+                                "Highlight duration": 3.0
                             }
                         ]
                     },
                     {
-                        "UID": 7180843811749892766,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -162,7 +158,7 @@
                         ]
                     },
                     {
-                        "UID": 6609335049507863737,
+                        "UID": 10837402476383047305,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -171,12 +167,12 @@
                         "StateMachine": 1754373901920523
                     },
                     {
-                        "UID": 1045736767974114172,
+                        "UID": 15217927152189341377,
                         "Type": 15,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "AI Agent",
-                        "Speed": 5.0,
+                        "Speed": 7.0,
                         "Acceleration": 8.0,
                         "Radius": 0.6000000238418579,
                         "Height": 2.0,
@@ -184,7 +180,7 @@
                         "isRadians": true
                     },
                     {
-                        "UID": 9757921244047185319,
+                        "UID": 11708125054247074115,
                         "Type": 18,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -197,24 +193,24 @@
                     }
                 ],
                 "Children": [
-                    9843153696140502666,
-                    6963682201020294980,
-                    9617394619816073231,
-                    7909912326781890337,
-                    6242806486089780828,
-                    18087379382758693666
+                    3403393404417877268,
+                    6759806436579538559,
+                    3444331991191856474,
+                    1523066739564337045,
+                    11017639070602498059,
+                    10029541496202896545
                 ]
             },
             {
-                "UID": 10710124868499213306,
-                "ParentUID": 8921633789661377213,
+                "UID": 8799182785349824683,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5530932425498279148,
+                "PrefabChildUID": 5685572395011157591,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -235,9 +231,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7495709695399811380,
+                        "UID": 6925859642055250141,
                         "Type": 11,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
@@ -265,15 +261,15 @@
                 "Children": []
             },
             {
-                "UID": 13218885984751462803,
-                "ParentUID": 8921633789661377213,
+                "UID": 275799851366467712,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12062518733894357600,
+                "PrefabChildUID": 13097156301825001247,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -294,9 +290,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 14531540051126879866,
+                        "UID": 11038430987835061387,
                         "Type": 11,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
@@ -324,15 +320,15 @@
                 "Children": []
             },
             {
-                "UID": 13857251433397276585,
-                "ParentUID": 8921633789661377213,
+                "UID": 14449216691963766205,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17767744930075455327,
+                "PrefabChildUID": 6704137642731630002,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -353,9 +349,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 15892257221320230625,
+                        "UID": 17401962706632504916,
                         "Type": 11,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
@@ -383,15 +379,15 @@
                 "Children": []
             },
             {
-                "UID": 2888923183427522660,
-                "ParentUID": 8921633789661377213,
+                "UID": 12685138645918932415,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailCollision",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12717011870071309286,
+                "PrefabChildUID": 16773068961166039329,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -412,9 +408,9 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1293108908164362063,
+                        "UID": 12195863008409427793,
                         "Type": 11,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
@@ -442,15 +438,15 @@
                 "Children": []
             },
             {
-                "UID": 13614214115052174422,
-                "ParentUID": 8921633789661377213,
+                "UID": 8646550118520810825,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailObject",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1007210424259710471,
+                "PrefabChildUID": 8138703359862571161,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -471,21 +467,21 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3907960966814705735,
-                    9544912006289466397,
-                    919206255992049304
+                    7148530891783142232,
+                    12441217056783075594,
+                    3508270032503334133
                 ]
             },
             {
-                "UID": 3629840060317447345,
-                "ParentUID": 8921633789661377213,
+                "UID": 15753553964816942976,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailObject",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1007210424259710471,
+                "PrefabChildUID": 10295661322214430811,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -506,21 +502,21 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17334635614900320330,
-                    5031742103291741544,
-                    2321750531541644838
+                    18008058984557674347,
+                    6859112204210486201,
+                    17586570480184603803
                 ]
             },
             {
-                "UID": 15149489458400954280,
-                "ParentUID": 8921633789661377213,
+                "UID": 17330112502931770239,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailObject",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1007210424259710471,
+                "PrefabChildUID": 9825838538277528322,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -541,21 +537,21 @@
                 ],
                 "Components": [],
                 "Children": [
-                    143702288627639000,
-                    6665264788323734250,
-                    9901842077038411271
+                    3375550934972037488,
+                    17625257393854219170,
+                    14566731113987810184
                 ]
             },
             {
-                "UID": 15743365797939256935,
-                "ParentUID": 8921633789661377213,
+                "UID": 9033993849550896914,
+                "ParentUID": 2738637616833094546,
                 "Name": "DashTrailObject",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1007210424259710471,
+                "PrefabChildUID": 14344139541489765361,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -576,21 +572,21 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11081390174727130590,
-                    2819858427134155452,
-                    14073361889676709678
+                    8373955219407537427,
+                    11674330509754943702,
+                    13273883700556065833
                 ]
             },
             {
-                "UID": 4400053753399131823,
-                "ParentUID": 8921633789661377213,
+                "UID": 16574559695028244353,
+                "ParentUID": 2738637616833094546,
                 "Name": "FinalAttackObject",
                 "Mobility": 0,
                 "SelectParent": true,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9803304811773157468,
+                "PrefabChildUID": 13707915641201624297,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -611,7 +607,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13750543526125994167,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -638,15 +634,15 @@
                 "Children": []
             },
             {
-                "UID": 9843153696140502666,
-                "ParentUID": 1162740007589268320,
+                "UID": 3403393404417877268,
+                "ParentUID": 17534862706823778305,
                 "Name": "control",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9212664022331185077,
+                "PrefabChildUID": 12677450418164523564,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -667,19 +663,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12202472271349564756
+                    12058311161108091072
                 ]
             },
             {
-                "UID": 6963682201020294980,
-                "ParentUID": 1162740007589268320,
+                "UID": 6759806436579538559,
+                "ParentUID": 17534862706823778305,
                 "Name": "Pooka_mesh",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9972811501813404812,
+                "PrefabChildUID": 14753519821386180299,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -700,7 +696,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1725388920431136548,
+                        "UID": 16137620723070132743,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -709,80 +705,66 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            9617394619816073231,
-                            11303548412360475827,
-                            10427175953952671208,
-                            3025925300363639475,
-                            13756291582623620762,
-                            10215377139204142793,
-                            16444249026563671296,
-                            5457887205085705622,
-                            13797065699548867666,
-                            7711227990644251904,
-                            9859033302339175409,
-                            10908624822996972226,
-                            1903334889856492811,
-                            9498611164709069362,
-                            10365782047694416289,
-                            10288795112985701620,
-                            18429276862949572017,
-                            15454484062996923114,
-                            18074966025974274008,
-                            8334694402904933278,
-                            16746967841422987336,
-                            16613356754919596185,
-                            3846278279454160163,
-                            14224751598591817133,
-                            6868285093081375250,
-                            4368677920292173915,
-                            1995802821272584963,
-                            4523530330921041014,
-                            2770425073393206224,
-                            15898313064458435978,
-                            5506489546493740613,
-                            11737307558031218332,
-                            5364211088374656720,
-                            10025079910638182479,
-                            5095375729566620290,
-                            4532253563786876258,
-                            759978491254650749,
-                            436273885491235677,
-                            6418735171165477396,
-                            3205163581972045767,
-                            12050742069087685967
+                            3444331991191856474,
+                            3967679795789802176,
+                            17647605939841843948,
+                            2831180711395234199,
+                            5514708881333297258,
+                            12627877243791708697,
+                            8744100332761816540,
+                            17325440894356851790,
+                            17830338371424385778,
+                            13737939894911114491,
+                            18176203357608022237,
+                            5994246682290965612,
+                            5656927088674509474,
+                            8919329631205887634,
+                            16602801199173964556,
+                            10919846461657974911,
+                            13475745749822840587,
+                            14175702663540119778,
+                            4538962553189189044,
+                            15183933013036641055,
+                            15577889308545714769,
+                            11089285371720565458,
+                            17726239896652575251,
+                            6102119841668182450,
+                            6521949503997571156,
+                            1820018269045818700,
+                            3635818579906035947,
+                            12629260932885237523,
+                            12123208812452884486,
+                            1479512943466232582,
+                            17570607846627288533,
+                            3687797013608329656,
+                            6222705133482945837,
+                            13276012544194607685,
+                            10551771624818837438,
+                            581262357284313768,
+                            8367418551181371598,
+                            1780358671250442611,
+                            15808161519467936104,
+                            1891262357136617475,
+                            7889690537044796129
                         ],
                         "ModelUID": 1409894147510307,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
-                    },
-                    {
-                        "UID": 14203917856289686440,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "ColorChange",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 2
-                            }
-                        ]
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 9617394619816073231,
-                "ParentUID": 1162740007589268320,
+                "UID": 3444331991191856474,
+                "ParentUID": 17534862706823778305,
                 "Name": "Main",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14781480266906056235,
+                "PrefabChildUID": 340942367061075454,
                 "LocalTransform": [
                     1.0,
                     4.3300633960061173e-16,
@@ -803,19 +785,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11303548412360475827
+                    3967679795789802176
                 ]
             },
             {
-                "UID": 7909912326781890337,
-                "ParentUID": 1162740007589268320,
+                "UID": 1523066739564337045,
+                "ParentUID": 17534862706823778305,
                 "Name": "Weapon",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8714703115787084955,
+                "PrefabChildUID": 14933793524724593933,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -836,7 +818,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6094295628749874841,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -863,15 +845,15 @@
                 "Children": []
             },
             {
-                "UID": 6242806486089780828,
-                "ParentUID": 1162740007589268320,
+                "UID": 11017639070602498059,
+                "ParentUID": 17534862706823778305,
                 "Name": "VFX_DigUpRocks",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15099557648445500293,
+                "PrefabChildUID": 12087459575184225060,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -892,7 +874,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 18267411580466301307,
+                        "UID": 14631350245073646898,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -902,19 +884,19 @@
                     }
                 ],
                 "Children": [
-                    8290067324326467738
+                    1255283561720358091
                 ]
             },
             {
-                "UID": 18087379382758693666,
-                "ParentUID": 1162740007589268320,
+                "UID": 10029541496202896545,
+                "ParentUID": 17534862706823778305,
                 "Name": "VFX_DigUpHole",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10185561495437780910,
+                "PrefabChildUID": 11319460613594311683,
                 "LocalTransform": [
                     0.009999999776482582,
                     0.0,
@@ -935,7 +917,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10319494460597945116,
+                        "UID": 14812898917236109336,
                         "Type": 14,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -945,19 +927,19 @@
                     }
                 ],
                 "Children": [
-                    10236912175134220490
+                    4256635323761406974
                 ]
             },
             {
-                "UID": 3907960966814705735,
-                "ParentUID": 13614214115052174422,
+                "UID": 7148530891783142232,
+                "ParentUID": 8646550118520810825,
                 "Name": "DashTrailStartMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14241441003936140670,
+                "PrefabChildUID": 3552930943087664502,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -978,7 +960,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7846032457450416526,
+                        "UID": 7062122742054108323,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -986,21 +968,22 @@
                         "Mesh": 1142065618428478,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 9544912006289466397,
-                "ParentUID": 13614214115052174422,
+                "UID": 12441217056783075594,
+                "ParentUID": 8646550118520810825,
                 "Name": "DashTrailMidMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13949246124760603684,
+                "PrefabChildUID": 16625842792318725317,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1021,7 +1004,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1345946001352274357,
+                        "UID": 10351590343759136186,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1029,21 +1012,22 @@
                         "Mesh": 1199640880247056,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 919206255992049304,
-                "ParentUID": 13614214115052174422,
+                "UID": 3508270032503334133,
+                "ParentUID": 8646550118520810825,
                 "Name": "DashTrailEndMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6843073694530925588,
+                "PrefabChildUID": 16678416604038662428,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1064,7 +1048,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1048739990933460451,
+                        "UID": 17918126894478448588,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1072,21 +1056,22 @@
                         "Mesh": 1187976658526041,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 17334635614900320330,
-                "ParentUID": 3629840060317447345,
+                "UID": 18008058984557674347,
+                "ParentUID": 15753553964816942976,
                 "Name": "DashTrailStartMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14241441003936140670,
+                "PrefabChildUID": 4681170534047501884,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1107,7 +1092,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9594625237521107717,
+                        "UID": 5917508249828264350,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1115,21 +1100,22 @@
                         "Mesh": 1142065618428478,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 5031742103291741544,
-                "ParentUID": 3629840060317447345,
+                "UID": 6859112204210486201,
+                "ParentUID": 15753553964816942976,
                 "Name": "DashTrailMidMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13949246124760603684,
+                "PrefabChildUID": 12604840250631486044,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1150,7 +1136,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6690665177088605747,
+                        "UID": 563230383529904764,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1158,21 +1144,22 @@
                         "Mesh": 1199640880247056,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 2321750531541644838,
-                "ParentUID": 3629840060317447345,
+                "UID": 17586570480184603803,
+                "ParentUID": 15753553964816942976,
                 "Name": "DashTrailEndMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6843073694530925588,
+                "PrefabChildUID": 11977180323240297863,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1193,7 +1180,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13819027580542932981,
+                        "UID": 6872613249029156173,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1201,21 +1188,22 @@
                         "Mesh": 1187976658526041,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 143702288627639000,
-                "ParentUID": 15149489458400954280,
+                "UID": 3375550934972037488,
+                "ParentUID": 17330112502931770239,
                 "Name": "DashTrailStartMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14241441003936140670,
+                "PrefabChildUID": 15634654247355563214,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1236,7 +1224,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12923502135155030039,
+                        "UID": 5067191899176621563,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1244,21 +1232,22 @@
                         "Mesh": 1142065618428478,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 6665264788323734250,
-                "ParentUID": 15149489458400954280,
+                "UID": 17625257393854219170,
+                "ParentUID": 17330112502931770239,
                 "Name": "DashTrailMidMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13949246124760603684,
+                "PrefabChildUID": 4331973720220003689,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1279,7 +1268,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 3356958471784931493,
+                        "UID": 14791501275241969553,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1287,21 +1276,22 @@
                         "Mesh": 1199640880247056,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 9901842077038411271,
-                "ParentUID": 15149489458400954280,
+                "UID": 14566731113987810184,
+                "ParentUID": 17330112502931770239,
                 "Name": "DashTrailEndMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6843073694530925588,
+                "PrefabChildUID": 14829470105984259745,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1322,7 +1312,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 9735522025214013774,
+                        "UID": 7143968123738737480,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1330,21 +1320,22 @@
                         "Mesh": 1187976658526041,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 11081390174727130590,
-                "ParentUID": 15743365797939256935,
+                "UID": 8373955219407537427,
+                "ParentUID": 9033993849550896914,
                 "Name": "DashTrailStartMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14241441003936140670,
+                "PrefabChildUID": 13901018946237334051,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1365,7 +1356,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10338443360308788729,
+                        "UID": 4714838001282299398,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1373,21 +1364,22 @@
                         "Mesh": 1142065618428478,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 2819858427134155452,
-                "ParentUID": 15743365797939256935,
+                "UID": 11674330509754943702,
+                "ParentUID": 9033993849550896914,
                 "Name": "DashTrailMidMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13949246124760603684,
+                "PrefabChildUID": 1102986629337141910,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1408,7 +1400,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 861201189697622759,
+                        "UID": 32860885071797553,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1416,21 +1408,22 @@
                         "Mesh": 1199640880247056,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 14073361889676709678,
-                "ParentUID": 15743365797939256935,
+                "UID": 13273883700556065833,
+                "ParentUID": 9033993849550896914,
                 "Name": "DashTrailEndMesh",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
+                "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6843073694530925588,
+                "PrefabChildUID": 5594829243045427441,
                 "LocalTransform": [
                     0.9997779726982117,
                     0.0,
@@ -1451,7 +1444,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16531721400540277949,
+                        "UID": 2486666750549372779,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1459,21 +1452,22 @@
                         "Mesh": 1187976658526041,
                         "Material": 0,
                         "RenderMode": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 12202472271349564756,
-                "ParentUID": 9843153696140502666,
+                "UID": 12058311161108091072,
+                "ParentUID": 3403393404417877268,
                 "Name": "cw",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2043187438108600926,
+                "PrefabChildUID": 1074141105559501300,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1494,19 +1488,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12222830213756858245
+                    14166526720897982741
                 ]
             },
             {
-                "UID": 11303548412360475827,
-                "ParentUID": 9617394619816073231,
+                "UID": 3967679795789802176,
+                "ParentUID": 3444331991191856474,
                 "Name": "Body",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8284879448018880110,
+                "PrefabChildUID": 8853094466709460062,
                 "LocalTransform": [
                     -0.032241225242614746,
                     -8.940696716308594e-8,
@@ -1527,27 +1521,27 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10427175953952671208,
-                    3025925300363639475,
-                    13756291582623620762,
-                    10215377139204142793,
-                    16444249026563671296,
-                    7711227990644251904,
-                    1903334889856492811,
-                    9498611164709069362,
-                    10365782047694416289
+                    17647605939841843948,
+                    2831180711395234199,
+                    5514708881333297258,
+                    12627877243791708697,
+                    8744100332761816540,
+                    13737939894911114491,
+                    5656927088674509474,
+                    8919329631205887634,
+                    16602801199173964556
                 ]
             },
             {
-                "UID": 8290067324326467738,
-                "ParentUID": 6242806486089780828,
+                "UID": 1255283561720358091,
+                "ParentUID": 11017639070602498059,
                 "Name": "static_rocks",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10980175568133710208,
+                "PrefabChildUID": 9980680421770911854,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1568,22 +1562,22 @@
                 ],
                 "Components": [],
                 "Children": [
-                    346924593266523428,
-                    7157659975572514798,
-                    1460773353789534752,
-                    1697667579616499623
+                    7429653487911497911,
+                    5227738059856336709,
+                    8409122380388024639,
+                    3404041211951166490
                 ]
             },
             {
-                "UID": 10236912175134220490,
-                "ParentUID": 18087379382758693666,
+                "UID": 4256635323761406974,
+                "ParentUID": 10029541496202896545,
                 "Name": "hole",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1011668917397844297,
+                "PrefabChildUID": 13733792237889770493,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1604,20 +1598,20 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10756503317101663614,
-                    8953140084514758616
+                    10253144743171834617,
+                    9240677683358462644
                 ]
             },
             {
-                "UID": 12222830213756858245,
-                "ParentUID": 12202472271349564756,
+                "UID": 14166526720897982741,
+                "ParentUID": 12058311161108091072,
                 "Name": "ctrl_root",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16121788555554277885,
+                "PrefabChildUID": 12857412044120478357,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1638,19 +1632,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9647873374332189987
+                    3899004071055405319
                 ]
             },
             {
-                "UID": 10427175953952671208,
-                "ParentUID": 11303548412360475827,
+                "UID": 17647605939841843948,
+                "ParentUID": 3967679795789802176,
                 "Name": "Belly",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17807974139961940116,
+                "PrefabChildUID": 16487611822369937528,
                 "LocalTransform": [
                     -0.032241348177194595,
                     0.9994802474975586,
@@ -1673,15 +1667,15 @@
                 "Children": []
             },
             {
-                "UID": 3025925300363639475,
-                "ParentUID": 11303548412360475827,
+                "UID": 2831180711395234199,
+                "ParentUID": 3967679795789802176,
                 "Name": "But_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9410888952729968115,
+                "PrefabChildUID": 4770001226334568643,
                 "LocalTransform": [
                     -0.032241351902484894,
                     0.9994803071022034,
@@ -1704,15 +1698,15 @@
                 "Children": []
             },
             {
-                "UID": 13756291582623620762,
-                "ParentUID": 11303548412360475827,
+                "UID": 5514708881333297258,
+                "ParentUID": 3967679795789802176,
                 "Name": "But_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10846610258133780443,
+                "PrefabChildUID": 14156686782728485930,
                 "LocalTransform": [
                     -0.032241471111774445,
                     0.9994801878929138,
@@ -1735,15 +1729,15 @@
                 "Children": []
             },
             {
-                "UID": 10215377139204142793,
-                "ParentUID": 11303548412360475827,
+                "UID": 12627877243791708697,
+                "ParentUID": 3967679795789802176,
                 "Name": "Cloth1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5148838777139988110,
+                "PrefabChildUID": 14767173653553098713,
                 "LocalTransform": [
                     0.06263315677642822,
                     0.9980367422103882,
@@ -1766,15 +1760,15 @@
                 "Children": []
             },
             {
-                "UID": 16444249026563671296,
-                "ParentUID": 11303548412360475827,
+                "UID": 8744100332761816540,
+                "ParentUID": 3967679795789802176,
                 "Name": "Hip_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7920732117493762344,
+                "PrefabChildUID": 1217803325787811228,
                 "LocalTransform": [
                     -0.9569680690765381,
                     0.011660568416118622,
@@ -1795,19 +1789,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5457887205085705622
+                    17325440894356851790
                 ]
             },
             {
-                "UID": 7711227990644251904,
-                "ParentUID": 11303548412360475827,
+                "UID": 13737939894911114491,
+                "ParentUID": 3967679795789802176,
                 "Name": "Hip_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14631451131195790311,
+                "PrefabChildUID": 1287688971012079303,
                 "LocalTransform": [
                     -0.9974991083145142,
                     0.05768537521362305,
@@ -1828,19 +1822,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9859033302339175409
+                    18176203357608022237
                 ]
             },
             {
-                "UID": 1903334889856492811,
-                "ParentUID": 11303548412360475827,
+                "UID": 5656927088674509474,
+                "ParentUID": 3967679795789802176,
                 "Name": "skirt_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 836566799291922490,
+                "PrefabChildUID": 7256562830085176346,
                 "LocalTransform": [
                     -0.032241348177194595,
                     0.9994802474975586,
@@ -1863,15 +1857,15 @@
                 "Children": []
             },
             {
-                "UID": 9498611164709069362,
-                "ParentUID": 11303548412360475827,
+                "UID": 8919329631205887634,
+                "ParentUID": 3967679795789802176,
                 "Name": "skirt_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7079998921934426985,
+                "PrefabChildUID": 6270852231042898004,
                 "LocalTransform": [
                     -0.032241348177194595,
                     0.9994801878929138,
@@ -1894,15 +1888,15 @@
                 "Children": []
             },
             {
-                "UID": 10365782047694416289,
-                "ParentUID": 11303548412360475827,
+                "UID": 16602801199173964556,
+                "ParentUID": 3967679795789802176,
                 "Name": "Spine",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17299023797337820320,
+                "PrefabChildUID": 3804191912784424895,
                 "LocalTransform": [
                     0.996958315372467,
                     1.695603518703237e-10,
@@ -1923,19 +1917,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10288795112985701620
+                    10919846461657974911
                 ]
             },
             {
-                "UID": 346924593266523428,
-                "ParentUID": 8290067324326467738,
+                "UID": 7429653487911497911,
+                "ParentUID": 1255283561720358091,
                 "Name": "_staticrockA",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10812143278366748350,
+                "PrefabChildUID": 14880353640285319495,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1956,7 +1950,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11275851785188189700,
+                        "UID": 6952458462086239882,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1965,27 +1959,28 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            16760376379736538963
+                            17495519782100362246
                         ],
                         "ModelUID": 1410984122008536,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": [
-                    16760376379736538963
+                    17495519782100362246
                 ]
             },
             {
-                "UID": 7157659975572514798,
-                "ParentUID": 8290067324326467738,
+                "UID": 5227738059856336709,
+                "ParentUID": 1255283561720358091,
                 "Name": "staticrockB",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12769426597918738393,
+                "PrefabChildUID": 9870995323759106714,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2006,7 +2001,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10166287671889059709,
+                        "UID": 11740338913482301341,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2015,27 +2010,28 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            15189646962646109754
+                            14717503810784392928
                         ],
                         "ModelUID": 1410984122008536,
                         "SkinIndex": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": [
-                    15189646962646109754
+                    14717503810784392928
                 ]
             },
             {
-                "UID": 1460773353789534752,
-                "ParentUID": 8290067324326467738,
+                "UID": 8409122380388024639,
+                "ParentUID": 1255283561720358091,
                 "Name": "staticrockC",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4485930117427185052,
+                "PrefabChildUID": 5045856092828975829,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2056,7 +2052,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13796452690404749599,
+                        "UID": 9465056012689651399,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2065,27 +2061,28 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            9935155744902068586
+                            8749760014579838943
                         ],
                         "ModelUID": 1410984122008536,
                         "SkinIndex": 2,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": [
-                    9935155744902068586
+                    8749760014579838943
                 ]
             },
             {
-                "UID": 1697667579616499623,
-                "ParentUID": 8290067324326467738,
+                "UID": 3404041211951166490,
+                "ParentUID": 1255283561720358091,
                 "Name": "staticrockD",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17636028298455901883,
+                "PrefabChildUID": 1591161380164019896,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2106,7 +2103,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16861877035788701166,
+                        "UID": 9282731244536225866,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2115,27 +2112,28 @@
                         "Material": 0,
                         "RenderMode": 0,
                         "Bones": [
-                            1386449466526126885
+                            13434063327080251494
                         ],
                         "ModelUID": 1410984122008536,
                         "SkinIndex": 3,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": [
-                    1386449466526126885
+                    13434063327080251494
                 ]
             },
             {
-                "UID": 10756503317101663614,
-                "ParentUID": 10236912175134220490,
+                "UID": 10253144743171834617,
+                "ParentUID": 4256635323761406974,
                 "Name": "hole_bind",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1047563949694720908,
+                "PrefabChildUID": 14568254297290329336,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2156,7 +2154,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12546944540272072856,
+                        "UID": 3280642864231663537,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2165,25 +2163,26 @@
                         "Material": 0,
                         "RenderMode": 1,
                         "Bones": [
-                            8953140084514758616
+                            9240677683358462644
                         ],
                         "ModelUID": 1433094692063020,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 8953140084514758616,
-                "ParentUID": 10236912175134220490,
+                "UID": 9240677683358462644,
+                "ParentUID": 4256635323761406974,
                 "Name": "hole_01_JNT",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11357674721009890615,
+                "PrefabChildUID": 11150966929486401858,
                 "LocalTransform": [
                     0.9890328049659729,
                     -0.0,
@@ -2206,15 +2205,15 @@
                 "Children": []
             },
             {
-                "UID": 9647873374332189987,
-                "ParentUID": 12222830213756858245,
+                "UID": 3899004071055405319,
+                "ParentUID": 14166526720897982741,
                 "Name": "grp_hip",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12002362528424753056,
+                "PrefabChildUID": 15745888500758194225,
                 "LocalTransform": [
                     1.2660000324249268,
                     0.0,
@@ -2235,19 +2234,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7481390927092309128
+                    3528074151375295435
                 ]
             },
             {
-                "UID": 5457887205085705622,
-                "ParentUID": 16444249026563671296,
+                "UID": 17325440894356851790,
+                "ParentUID": 8744100332761816540,
                 "Name": "Knee_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8698663231695780522,
+                "PrefabChildUID": 7213031454079848243,
                 "LocalTransform": [
                     0.999781608581543,
                     -4.14253122471564e-7,
@@ -2268,19 +2267,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13797065699548867666
+                    17830338371424385778
                 ]
             },
             {
-                "UID": 9859033302339175409,
-                "ParentUID": 7711227990644251904,
+                "UID": 18176203357608022237,
+                "ParentUID": 13737939894911114491,
                 "Name": "Knee_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6093751494817757786,
+                "PrefabChildUID": 14736772832481840923,
                 "LocalTransform": [
                     0.9934872984886169,
                     1.0806027006537988e-7,
@@ -2301,19 +2300,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10908624822996972226
+                    5994246682290965612
                 ]
             },
             {
-                "UID": 10288795112985701620,
-                "ParentUID": 10365782047694416289,
+                "UID": 10919846461657974911,
+                "ParentUID": 16602801199173964556,
                 "Name": "Spine2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4806218356335101077,
+                "PrefabChildUID": 13494202674529956813,
                 "LocalTransform": [
                     0.9984955787658691,
                     -4.579669447183179e-16,
@@ -2334,19 +2333,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18429276862949572017
+                    13475745749822840587
                 ]
             },
             {
-                "UID": 16760376379736538963,
-                "ParentUID": 346924593266523428,
+                "UID": 17495519782100362246,
+                "ParentUID": 7429653487911497911,
                 "Name": "stone_01_JNT",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18354120477270407011,
+                "PrefabChildUID": 6032103519945645028,
                 "LocalTransform": [
                     0.016885194927453995,
                     0.0,
@@ -2369,15 +2368,15 @@
                 "Children": []
             },
             {
-                "UID": 15189646962646109754,
-                "ParentUID": 7157659975572514798,
+                "UID": 14717503810784392928,
+                "ParentUID": 5227738059856336709,
                 "Name": "stone_02_JNT",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2173706720811269590,
+                "PrefabChildUID": 14083966821166739139,
                 "LocalTransform": [
                     0.016885194927453995,
                     0.0,
@@ -2400,15 +2399,15 @@
                 "Children": []
             },
             {
-                "UID": 9935155744902068586,
-                "ParentUID": 1460773353789534752,
+                "UID": 8749760014579838943,
+                "ParentUID": 8409122380388024639,
                 "Name": "stone_03_JNT",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17835441785830930981,
+                "PrefabChildUID": 9896639975568554538,
                 "LocalTransform": [
                     0.016885194927453995,
                     0.0,
@@ -2431,15 +2430,15 @@
                 "Children": []
             },
             {
-                "UID": 1386449466526126885,
-                "ParentUID": 1697667579616499623,
+                "UID": 13434063327080251494,
+                "ParentUID": 3404041211951166490,
                 "Name": "stone_04_JNT",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17513954046192704380,
+                "PrefabChildUID": 1669041270228135397,
                 "LocalTransform": [
                     0.016885194927453995,
                     0.0,
@@ -2462,15 +2461,15 @@
                 "Children": []
             },
             {
-                "UID": 7481390927092309128,
-                "ParentUID": 9647873374332189987,
+                "UID": 3528074151375295435,
+                "ParentUID": 3899004071055405319,
                 "Name": "ctrl_hip",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16673976845851560556,
+                "PrefabChildUID": 4842309860800778557,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2491,25 +2490,25 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6612526038596110505,
-                    4989127180788787180,
-                    8836987000212197014,
-                    7722898817151214822,
-                    5245508418617024705,
-                    10442906032736115512,
-                    338707405945425283
+                    12272276164841154653,
+                    2272228742990504960,
+                    7209686857291232267,
+                    157541902616471870,
+                    5345660974251552345,
+                    5619667892521859100,
+                    18435791617897317691
                 ]
             },
             {
-                "UID": 13797065699548867666,
-                "ParentUID": 5457887205085705622,
+                "UID": 17830338371424385778,
+                "ParentUID": 17325440894356851790,
                 "Name": "Foot_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18179990854308621579,
+                "PrefabChildUID": 17790857219527869908,
                 "LocalTransform": [
                     1.0,
                     5.17218722961843e-7,
@@ -2532,15 +2531,15 @@
                 "Children": []
             },
             {
-                "UID": 10908624822996972226,
-                "ParentUID": 9859033302339175409,
+                "UID": 5994246682290965612,
+                "ParentUID": 18176203357608022237,
                 "Name": "Foot_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10072582623809268275,
+                "PrefabChildUID": 2162853600612921663,
                 "LocalTransform": [
                     1.0,
                     -2.0209701290241355e-7,
@@ -2563,15 +2562,15 @@
                 "Children": []
             },
             {
-                "UID": 18429276862949572017,
-                "ParentUID": 10288795112985701620,
+                "UID": 13475745749822840587,
+                "ParentUID": 10919846461657974911,
                 "Name": "Chest",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 913562010536706598,
+                "PrefabChildUID": 17692903830171326161,
                 "LocalTransform": [
                     0.33509868383407593,
                     -1.1102230246251565e-16,
@@ -2592,25 +2591,25 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15454484062996923114,
-                    16613356754919596185,
-                    4368677920292173915,
-                    1995802821272584963,
-                    4523530330921041014,
-                    2770425073393206224,
-                    12050742069087685967
+                    14175702663540119778,
+                    11089285371720565458,
+                    1820018269045818700,
+                    3635818579906035947,
+                    12629260932885237523,
+                    12123208812452884486,
+                    7889690537044796129
                 ]
             },
             {
-                "UID": 6612526038596110505,
-                "ParentUID": 7481390927092309128,
+                "UID": 12272276164841154653,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_bum_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1486548918324212737,
+                "PrefabChildUID": 333711693884610772,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2633,15 +2632,15 @@
                 "Children": []
             },
             {
-                "UID": 4989127180788787180,
-                "ParentUID": 7481390927092309128,
+                "UID": 2272228742990504960,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_bum_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13960406735241983097,
+                "PrefabChildUID": 13340206234693598259,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2664,15 +2663,15 @@
                 "Children": []
             },
             {
-                "UID": 8836987000212197014,
-                "ParentUID": 7481390927092309128,
+                "UID": 7209686857291232267,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_cloth_S_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11312425218566315324,
+                "PrefabChildUID": 13039989991815189530,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2695,15 +2694,15 @@
                 "Children": []
             },
             {
-                "UID": 7722898817151214822,
-                "ParentUID": 7481390927092309128,
+                "UID": 157541902616471870,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_cloth_S_M",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13697203947978948966,
+                "PrefabChildUID": 7251291153312301130,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2726,15 +2725,15 @@
                 "Children": []
             },
             {
-                "UID": 5245508418617024705,
-                "ParentUID": 7481390927092309128,
+                "UID": 5345660974251552345,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_cloth_S_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12717409564719671605,
+                "PrefabChildUID": 9732943800452780805,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2757,15 +2756,15 @@
                 "Children": []
             },
             {
-                "UID": 10442906032736115512,
-                "ParentUID": 7481390927092309128,
+                "UID": 5619667892521859100,
+                "ParentUID": 3528074151375295435,
                 "Name": "ctrl_spine_01",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10145706954506816023,
+                "PrefabChildUID": 10311130748092353896,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2786,19 +2785,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    1155768801888066145
+                    6198305819037856433
                 ]
             },
             {
-                "UID": 338707405945425283,
-                "ParentUID": 7481390927092309128,
+                "UID": 18435791617897317691,
+                "ParentUID": 3528074151375295435,
                 "Name": "pasted__ctrl_knife",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4773183397712024810,
+                "PrefabChildUID": 15497146385527293490,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2821,15 +2820,15 @@
                 "Children": []
             },
             {
-                "UID": 15454484062996923114,
-                "ParentUID": 18429276862949572017,
+                "UID": 14175702663540119778,
+                "ParentUID": 13475745749822840587,
                 "Name": "clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1270430649372627621,
+                "PrefabChildUID": 8442872548558658989,
                 "LocalTransform": [
                     -0.9451904296875,
                     0.3265197277069092,
@@ -2850,19 +2849,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    18074966025974274008
+                    4538962553189189044
                 ]
             },
             {
-                "UID": 16613356754919596185,
-                "ParentUID": 18429276862949572017,
+                "UID": 11089285371720565458,
+                "ParentUID": 13475745749822840587,
                 "Name": "clavicle_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16424982886835924988,
+                "PrefabChildUID": 12641544300377364175,
                 "LocalTransform": [
                     -0.9451903700828552,
                     -0.3265197277069092,
@@ -2883,19 +2882,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    3846278279454160163
+                    17726239896652575251
                 ]
             },
             {
-                "UID": 4368677920292173915,
-                "ParentUID": 18429276862949572017,
+                "UID": 1820018269045818700,
+                "ParentUID": 13475745749822840587,
                 "Name": "Collar_1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5332596395379564070,
+                "PrefabChildUID": 8380975822328391638,
                 "LocalTransform": [
                     -0.9451903700828552,
                     0.32199811935424805,
@@ -2918,15 +2917,15 @@
                 "Children": []
             },
             {
-                "UID": 1995802821272584963,
-                "ParentUID": 18429276862949572017,
+                "UID": 3635818579906035947,
+                "ParentUID": 13475745749822840587,
                 "Name": "Collar_2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13808481065850011637,
+                "PrefabChildUID": 18093187101614134309,
                 "LocalTransform": [
                     -0.9451903700828552,
                     0.32651981711387634,
@@ -2949,15 +2948,15 @@
                 "Children": []
             },
             {
-                "UID": 4523530330921041014,
-                "ParentUID": 18429276862949572017,
+                "UID": 12629260932885237523,
+                "ParentUID": 13475745749822840587,
                 "Name": "Collar_3",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14215841445719284429,
+                "PrefabChildUID": 4836076997716039047,
                 "LocalTransform": [
                     -0.9451903104782104,
                     0.32651975750923157,
@@ -2980,15 +2979,15 @@
                 "Children": []
             },
             {
-                "UID": 2770425073393206224,
-                "ParentUID": 18429276862949572017,
+                "UID": 12123208812452884486,
+                "ParentUID": 13475745749822840587,
                 "Name": "Head",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14942425900379486959,
+                "PrefabChildUID": 12001181732580216014,
                 "LocalTransform": [
                     0.2785116732120514,
                     0.17043191194534302,
@@ -3009,22 +3008,22 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15898313064458435978,
-                    5506489546493740613,
-                    11737307558031218332,
-                    3205163581972045767
+                    1479512943466232582,
+                    17570607846627288533,
+                    3687797013608329656,
+                    1891262357136617475
                 ]
             },
             {
-                "UID": 12050742069087685967,
-                "ParentUID": 18429276862949572017,
+                "UID": 7889690537044796129,
+                "ParentUID": 13475745749822840587,
                 "Name": "joint35",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3512358813158619895,
+                "PrefabChildUID": 17924066097299098973,
                 "LocalTransform": [
                     -0.9451901316642761,
                     0.3265199363231659,
@@ -3047,15 +3046,15 @@
                 "Children": []
             },
             {
-                "UID": 1155768801888066145,
-                "ParentUID": 10442906032736115512,
+                "UID": 6198305819037856433,
+                "ParentUID": 5619667892521859100,
                 "Name": "ctrl_spine_02",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7803585196008554175,
+                "PrefabChildUID": 1780818510788026624,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3076,19 +3075,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16622032454611870990
+                    17031764957600807968
                 ]
             },
             {
-                "UID": 18074966025974274008,
-                "ParentUID": 15454484062996923114,
+                "UID": 4538962553189189044,
+                "ParentUID": 14175702663540119778,
                 "Name": "Shoulder_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12841519329469134930,
+                "PrefabChildUID": 3206374919824169216,
                 "LocalTransform": [
                     0.830181360244751,
                     -2.086162567138672e-7,
@@ -3109,19 +3108,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    8334694402904933278
+                    15183933013036641055
                 ]
             },
             {
-                "UID": 3846278279454160163,
-                "ParentUID": 16613356754919596185,
+                "UID": 17726239896652575251,
+                "ParentUID": 11089285371720565458,
                 "Name": "Shoulder_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7012514159396949708,
+                "PrefabChildUID": 11911789017532272895,
                 "LocalTransform": [
                     0.8301812410354614,
                     -2.980232238769531e-7,
@@ -3142,19 +3141,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    14224751598591817133
+                    6102119841668182450
                 ]
             },
             {
-                "UID": 15898313064458435978,
-                "ParentUID": 2770425073393206224,
+                "UID": 1479512943466232582,
+                "ParentUID": 12123208812452884486,
                 "Name": "bottom_mouth",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10804871338475585131,
+                "PrefabChildUID": 7389057937146144903,
                 "LocalTransform": [
                     -0.01362383272498846,
                     0.8895266652107239,
@@ -3177,15 +3176,15 @@
                 "Children": []
             },
             {
-                "UID": 5506489546493740613,
-                "ParentUID": 2770425073393206224,
+                "UID": 17570607846627288533,
+                "ParentUID": 12123208812452884486,
                 "Name": "Eye",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9246102684359270546,
+                "PrefabChildUID": 16927608452585211854,
                 "LocalTransform": [
                     0.7647243738174438,
                     0.643532931804657,
@@ -3208,15 +3207,15 @@
                 "Children": []
             },
             {
-                "UID": 11737307558031218332,
-                "ParentUID": 2770425073393206224,
+                "UID": 3687797013608329656,
+                "ParentUID": 12123208812452884486,
                 "Name": "Flower",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4927705150628730125,
+                "PrefabChildUID": 13736904816784060509,
                 "LocalTransform": [
                     0.8632169961929321,
                     7.152556236178498e-7,
@@ -3237,22 +3236,22 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5364211088374656720,
-                    10025079910638182479,
-                    4532253563786876258,
-                    436273885491235677
+                    6222705133482945837,
+                    13276012544194607685,
+                    581262357284313768,
+                    1780358671250442611
                 ]
             },
             {
-                "UID": 3205163581972045767,
-                "ParentUID": 2770425073393206224,
+                "UID": 1891262357136617475,
+                "ParentUID": 12123208812452884486,
                 "Name": "top_mouth",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8531339902197662512,
+                "PrefabChildUID": 2014441645088173056,
                 "LocalTransform": [
                     0.9520915746688843,
                     -5.513429073289444e-7,
@@ -3275,15 +3274,15 @@
                 "Children": []
             },
             {
-                "UID": 16622032454611870990,
-                "ParentUID": 1155768801888066145,
+                "UID": 17031764957600807968,
+                "ParentUID": 6198305819037856433,
                 "Name": "ctrl_spine_03",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18209281382566265263,
+                "PrefabChildUID": 10100689955296738315,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3304,25 +3303,25 @@
                 ],
                 "Components": [],
                 "Children": [
-                    10069577077235019519,
-                    4094945291669460615,
-                    15647537219181589977,
-                    6050515372535284636,
-                    13530247371683312827,
-                    8374140004780887138,
-                    17962281428800199249
+                    9440665610446164770,
+                    8325481746287229725,
+                    5250640541050323136,
+                    7676587598761626315,
+                    3642912125438781950,
+                    8103332618427255064,
+                    3281817870366506082
                 ]
             },
             {
-                "UID": 8334694402904933278,
-                "ParentUID": 18074966025974274008,
+                "UID": 15183933013036641055,
+                "ParentUID": 4538962553189189044,
                 "Name": "Elbow_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7265675618504416194,
+                "PrefabChildUID": 9929130435181375805,
                 "LocalTransform": [
                     0.9984456300735474,
                     1.0265003425047325e-7,
@@ -3343,19 +3342,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16746967841422987336
+                    15577889308545714769
                 ]
             },
             {
-                "UID": 14224751598591817133,
-                "ParentUID": 3846278279454160163,
+                "UID": 6102119841668182450,
+                "ParentUID": 17726239896652575251,
                 "Name": "Elbow_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12220779999359225532,
+                "PrefabChildUID": 16987844296629331412,
                 "LocalTransform": [
                     0.9984457492828369,
                     -1.2767565841980484e-15,
@@ -3376,19 +3375,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6868285093081375250
+                    6521949503997571156
                 ]
             },
             {
-                "UID": 5364211088374656720,
-                "ParentUID": 11737307558031218332,
+                "UID": 6222705133482945837,
+                "ParentUID": 3687797013608329656,
                 "Name": "flower_top",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2853415103891678951,
+                "PrefabChildUID": 14814063086992740670,
                 "LocalTransform": [
                     0.9993667602539063,
                     -1.7697495025004173e-7,
@@ -3411,15 +3410,15 @@
                 "Children": []
             },
             {
-                "UID": 10025079910638182479,
-                "ParentUID": 11737307558031218332,
+                "UID": 13276012544194607685,
+                "ParentUID": 3687797013608329656,
                 "Name": "leaf_a_1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1092197754301068090,
+                "PrefabChildUID": 5015288516949415513,
                 "LocalTransform": [
                     -0.086356520652771,
                     0.9853377938270569,
@@ -3440,19 +3439,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5095375729566620290
+                    10551771624818837438
                 ]
             },
             {
-                "UID": 4532253563786876258,
-                "ParentUID": 11737307558031218332,
+                "UID": 581262357284313768,
+                "ParentUID": 3687797013608329656,
                 "Name": "leaf_b_1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4963930522805106282,
+                "PrefabChildUID": 15004052417247162384,
                 "LocalTransform": [
                     -0.29419568181037903,
                     0.9504497051239014,
@@ -3473,19 +3472,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    759978491254650749
+                    8367418551181371598
                 ]
             },
             {
-                "UID": 436273885491235677,
-                "ParentUID": 11737307558031218332,
+                "UID": 1780358671250442611,
+                "ParentUID": 3687797013608329656,
                 "Name": "leaf_c_1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5269081209042708517,
+                "PrefabChildUID": 8367810494775371675,
                 "LocalTransform": [
                     -0.9559094905853271,
                     0.29366177320480347,
@@ -3506,19 +3505,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6418735171165477396
+                    15808161519467936104
                 ]
             },
             {
-                "UID": 10069577077235019519,
-                "ParentUID": 16622032454611870990,
+                "UID": 9440665610446164770,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_clavicle_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17597417973884590460,
+                "PrefabChildUID": 16752823643216713794,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3539,19 +3538,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    636943941752161151
+                    7899354602042615624
                 ]
             },
             {
-                "UID": 4094945291669460615,
-                "ParentUID": 16622032454611870990,
+                "UID": 8325481746287229725,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_clavicle_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18083544236918606747,
+                "PrefabChildUID": 3465965392057476924,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3572,19 +3571,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16284534161689376529
+                    10676504096905777416
                 ]
             },
             {
-                "UID": 15647537219181589977,
-                "ParentUID": 16622032454611870990,
+                "UID": 5250640541050323136,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_cloth_Back",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11152795416898231362,
+                "PrefabChildUID": 466140614426688359,
                 "LocalTransform": [
                     -0.9949837923049927,
                     0.014059193432331085,
@@ -3607,15 +3606,15 @@
                 "Children": []
             },
             {
-                "UID": 6050515372535284636,
-                "ParentUID": 16622032454611870990,
+                "UID": 7676587598761626315,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_cloth_Top_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 357659217691298621,
+                "PrefabChildUID": 6483673367658836911,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3638,15 +3637,15 @@
                 "Children": []
             },
             {
-                "UID": 13530247371683312827,
-                "ParentUID": 16622032454611870990,
+                "UID": 3642912125438781950,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_cloth_Top_M",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17255423644906270676,
+                "PrefabChildUID": 16306047142604885430,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3669,15 +3668,15 @@
                 "Children": []
             },
             {
-                "UID": 8374140004780887138,
-                "ParentUID": 16622032454611870990,
+                "UID": 8103332618427255064,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_cloth_Top_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9523057002994043711,
+                "PrefabChildUID": 5725351854401776401,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3700,15 +3699,15 @@
                 "Children": []
             },
             {
-                "UID": 17962281428800199249,
-                "ParentUID": 16622032454611870990,
+                "UID": 3281817870366506082,
+                "ParentUID": 17031764957600807968,
                 "Name": "ctrl_Head",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8944698936788590802,
+                "PrefabChildUID": 6095892871374023444,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3729,19 +3728,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11832629975278151432
+                    886932768759233747
                 ]
             },
             {
-                "UID": 16746967841422987336,
-                "ParentUID": 8334694402904933278,
+                "UID": 15577889308545714769,
+                "ParentUID": 15183933013036641055,
                 "Name": "Hand_L",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9784834323339457357,
+                "PrefabChildUID": 4888347485338684543,
                 "LocalTransform": [
                     1.0,
                     -6.094034019679109e-15,
@@ -3764,15 +3763,15 @@
                 "Children": []
             },
             {
-                "UID": 6868285093081375250,
-                "ParentUID": 14224751598591817133,
+                "UID": 6521949503997571156,
+                "ParentUID": 6102119841668182450,
                 "Name": "Hand_R",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15191797891364478820,
+                "PrefabChildUID": 5773797834990778385,
                 "LocalTransform": [
                     1.0,
                     -2.1094239585460342e-15,
@@ -3795,15 +3794,15 @@
                 "Children": []
             },
             {
-                "UID": 5095375729566620290,
-                "ParentUID": 10025079910638182479,
+                "UID": 10551771624818837438,
+                "ParentUID": 13276012544194607685,
                 "Name": "leaf_a_2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8067819075604452931,
+                "PrefabChildUID": 8400312014108254216,
                 "LocalTransform": [
                     1.0,
                     -6.239861960466442e-8,
@@ -3826,15 +3825,15 @@
                 "Children": []
             },
             {
-                "UID": 759978491254650749,
-                "ParentUID": 4532253563786876258,
+                "UID": 8367418551181371598,
+                "ParentUID": 581262357284313768,
                 "Name": "leaf_b_2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12025801910708757930,
+                "PrefabChildUID": 13905531977754239943,
                 "LocalTransform": [
                     1.0,
                     2.7567148208618164e-7,
@@ -3857,15 +3856,15 @@
                 "Children": []
             },
             {
-                "UID": 6418735171165477396,
-                "ParentUID": 436273885491235677,
+                "UID": 15808161519467936104,
+                "ParentUID": 1780358671250442611,
                 "Name": "leaf_c_2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18080335887291141465,
+                "PrefabChildUID": 7088426613309864218,
                 "LocalTransform": [
                     1.0,
                     -1.1920926112907182e-7,
@@ -3888,15 +3887,15 @@
                 "Children": []
             },
             {
-                "UID": 636943941752161151,
-                "ParentUID": 10069577077235019519,
+                "UID": 7899354602042615624,
+                "ParentUID": 9440665610446164770,
                 "Name": "grp_arm_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14634232781790523153,
+                "PrefabChildUID": 1031442932355984725,
                 "LocalTransform": [
                     0.72385174036026,
                     0.15232864022254944,
@@ -3917,19 +3916,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9471512741688718023
+                    11023422024275075280
                 ]
             },
             {
-                "UID": 16284534161689376529,
-                "ParentUID": 4094945291669460615,
+                "UID": 10676504096905777416,
+                "ParentUID": 8325481746287229725,
                 "Name": "grp_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10736592801575194388,
+                "PrefabChildUID": 16958195931665845549,
                 "LocalTransform": [
                     -0.7238518595695496,
                     -0.15232861042022705,
@@ -3950,19 +3949,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    330523582471098394
+                    5144684248059576912
                 ]
             },
             {
-                "UID": 11832629975278151432,
-                "ParentUID": 17962281428800199249,
+                "UID": 886932768759233747,
+                "ParentUID": 3281817870366506082,
                 "Name": "group1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4688064845702779007,
+                "PrefabChildUID": 13216093553613998671,
                 "LocalTransform": [
                     0.7642520070075989,
                     0.0,
@@ -3983,25 +3982,25 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11762327878979165258,
-                    9335795802879332101,
-                    18136887169489484124,
-                    15606038190220319867,
-                    7953487469213402670,
-                    14607948787965619133,
-                    2363174706599525471
+                    2589119603401131995,
+                    14798786143194322562,
+                    802529598099022706,
+                    2085265691453599981,
+                    12435060696895832069,
+                    15575153713631842919,
+                    4690892169720156846
                 ]
             },
             {
-                "UID": 9471512741688718023,
-                "ParentUID": 636943941752161151,
+                "UID": 11023422024275075280,
+                "ParentUID": 7899354602042615624,
                 "Name": "ctl_arm_L_01",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7516361040369048594,
+                "PrefabChildUID": 8541497372446502754,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4022,19 +4021,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    5228846205151422695
+                    16021581521671495017
                 ]
             },
             {
-                "UID": 330523582471098394,
-                "ParentUID": 16284534161689376529,
+                "UID": 5144684248059576912,
+                "ParentUID": 10676504096905777416,
                 "Name": "ctl_arm_R_01",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5131617826616751245,
+                "PrefabChildUID": 17414600388900132188,
                 "LocalTransform": [
                     1.0,
                     -0.0,
@@ -4055,19 +4054,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    13277366052063720751
+                    12980302654050698913
                 ]
             },
             {
-                "UID": 11762327878979165258,
-                "ParentUID": 11832629975278151432,
+                "UID": 2589119603401131995,
+                "ParentUID": 886932768759233747,
                 "Name": "ctrl_leaf_a1",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8052169984037185199,
+                "PrefabChildUID": 3401437126772656263,
                 "LocalTransform": [
                     -2.0509228706359863,
                     -0.14591838419437408,
@@ -4088,19 +4087,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    16539512490133812033
+                    2721659705268843044
                 ]
             },
             {
-                "UID": 9335795802879332101,
-                "ParentUID": 11832629975278151432,
+                "UID": 14798786143194322562,
+                "ParentUID": 886932768759233747,
                 "Name": "ctrl_leaf_a3",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15817352705196091574,
+                "PrefabChildUID": 8564459125150013402,
                 "LocalTransform": [
                     0.13866731524467468,
                     0.2231583148241043,
@@ -4121,19 +4120,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2901897283051817412
+                    1210087807368831759
                 ]
             },
             {
-                "UID": 18136887169489484124,
-                "ParentUID": 11832629975278151432,
+                "UID": 802529598099022706,
+                "ParentUID": 886932768759233747,
                 "Name": "ctrl_leaf_a4",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10679547843538435589,
+                "PrefabChildUID": 15436889963961304585,
                 "LocalTransform": [
                     -0.4644151031970978,
                     0.10128431767225266,
@@ -4154,19 +4153,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11071911204345388451
+                    7457519373898609175
                 ]
             },
             {
-                "UID": 15606038190220319867,
-                "ParentUID": 11832629975278151432,
+                "UID": 2085265691453599981,
+                "ParentUID": 886932768759233747,
                 "Name": "ctrl_mouth_bottom",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5982510700073902184,
+                "PrefabChildUID": 9558060754999917121,
                 "LocalTransform": [
                     1.0,
                     -0.0,
@@ -4189,15 +4188,15 @@
                 "Children": []
             },
             {
-                "UID": 7953487469213402670,
-                "ParentUID": 11832629975278151432,
+                "UID": 12435060696895832069,
+                "ParentUID": 886932768759233747,
                 "Name": "ctrl_mouth_top",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5964133182009377075,
+                "PrefabChildUID": 15045839389778454712,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4220,15 +4219,15 @@
                 "Children": []
             },
             {
-                "UID": 14607948787965619133,
-                "ParentUID": 11832629975278151432,
+                "UID": 15575153713631842919,
+                "ParentUID": 886932768759233747,
                 "Name": "flower",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18057220982161174810,
+                "PrefabChildUID": 10570159536872701687,
                 "LocalTransform": [
                     11.647350311279297,
                     -13.610549926757813,
@@ -4249,19 +4248,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6562424153768747531
+                    5923087842092825834
                 ]
             },
             {
-                "UID": 2363174706599525471,
-                "ParentUID": 11832629975278151432,
+                "UID": 4690892169720156846,
+                "ParentUID": 886932768759233747,
                 "Name": "pasted__ctrl_eye",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17528225126705247561,
+                "PrefabChildUID": 16382049680622166718,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4284,15 +4283,15 @@
                 "Children": []
             },
             {
-                "UID": 5228846205151422695,
-                "ParentUID": 9471512741688718023,
+                "UID": 16021581521671495017,
+                "ParentUID": 11023422024275075280,
                 "Name": "grp_arm_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4096241413550325644,
+                "PrefabChildUID": 2001113179147934681,
                 "LocalTransform": [
                     0.9709697365760803,
                     0.22960227727890015,
@@ -4313,19 +4312,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    9010429099434321726
+                    8124414463536896264
                 ]
             },
             {
-                "UID": 13277366052063720751,
-                "ParentUID": 330523582471098394,
+                "UID": 12980302654050698913,
+                "ParentUID": 5144684248059576912,
                 "Name": "grp_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2990114154432788791,
+                "PrefabChildUID": 14301283615875254672,
                 "LocalTransform": [
                     0.9709697365760803,
                     0.22960229218006134,
@@ -4346,19 +4345,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2868846106369342553
+                    14397705261920634066
                 ]
             },
             {
-                "UID": 16539512490133812033,
-                "ParentUID": 11762327878979165258,
+                "UID": 2721659705268843044,
+                "ParentUID": 2589119603401131995,
                 "Name": "ctrl_leaf_a1.001",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16401611366135278334,
+                "PrefabChildUID": 10247754931408487696,
                 "LocalTransform": [
                     1.0,
                     -0.0,
@@ -4379,19 +4378,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    6675451941572777499
+                    2021319060068218701
                 ]
             },
             {
-                "UID": 2901897283051817412,
-                "ParentUID": 9335795802879332101,
+                "UID": 1210087807368831759,
+                "ParentUID": 14798786143194322562,
                 "Name": "ctrl_leaf_a1.002",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18313473463372714509,
+                "PrefabChildUID": 8856900754196501658,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4412,19 +4411,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    12428453757570667203
+                    10285359190827119472
                 ]
             },
             {
-                "UID": 11071911204345388451,
-                "ParentUID": 18136887169489484124,
+                "UID": 7457519373898609175,
+                "ParentUID": 802529598099022706,
                 "Name": "ctrl_leaf_a1.003",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6958775495009511461,
+                "PrefabChildUID": 14224123964846996681,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4445,19 +4444,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    4531080400222940725
+                    14166998625194266607
                 ]
             },
             {
-                "UID": 6562424153768747531,
-                "ParentUID": 14607948787965619133,
+                "UID": 5923087842092825834,
+                "ParentUID": 15575153713631842919,
                 "Name": "ctrl_flower",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16830398662970317180,
+                "PrefabChildUID": 1476955674190187276,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4480,15 +4479,15 @@
                 "Children": []
             },
             {
-                "UID": 9010429099434321726,
-                "ParentUID": 5228846205151422695,
+                "UID": 8124414463536896264,
+                "ParentUID": 16021581521671495017,
                 "Name": "ctl_arm_L_02",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15202084899926805403,
+                "PrefabChildUID": 4294400479557986487,
                 "LocalTransform": [
                     0.9896246194839478,
                     0.0,
@@ -4509,19 +4508,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17642591754827249421
+                    2401550358943626607
                 ]
             },
             {
-                "UID": 2868846106369342553,
-                "ParentUID": 13277366052063720751,
+                "UID": 14397705261920634066,
+                "ParentUID": 12980302654050698913,
                 "Name": "ctl_arm_R_02",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10678510081013308482,
+                "PrefabChildUID": 16625794640659848830,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4542,19 +4541,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    2712277965932827952
+                    8593541241036296577
                 ]
             },
             {
-                "UID": 6675451941572777499,
-                "ParentUID": 16539512490133812033,
+                "UID": 2021319060068218701,
+                "ParentUID": 2721659705268843044,
                 "Name": "ctrl_leaf_a2",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14450266880030694193,
+                "PrefabChildUID": 13549660667965909389,
                 "LocalTransform": [
                     0.9981635808944702,
                     0.04841461032629013,
@@ -4575,19 +4574,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17835264907620615087
+                    17407696194364909048
                 ]
             },
             {
-                "UID": 12428453757570667203,
-                "ParentUID": 2901897283051817412,
+                "UID": 10285359190827119472,
+                "ParentUID": 1210087807368831759,
                 "Name": "ctrl_leaf_a2.002",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6978931136882977332,
+                "PrefabChildUID": 17514084374792913829,
                 "LocalTransform": [
                     0.9802311062812805,
                     0.023498818278312683,
@@ -4608,19 +4607,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    362336886563376578
+                    12315056175678157367
                 ]
             },
             {
-                "UID": 4531080400222940725,
-                "ParentUID": 11071911204345388451,
+                "UID": 14166998625194266607,
+                "ParentUID": 7457519373898609175,
                 "Name": "ctrl_leaf_a2.004",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 921531219606364830,
+                "PrefabChildUID": 6961553370266863879,
                 "LocalTransform": [
                     0.9802311062812805,
                     0.023498862981796265,
@@ -4641,19 +4640,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    17558700050048434353
+                    3624843149941332991
                 ]
             },
             {
-                "UID": 17642591754827249421,
-                "ParentUID": 9010429099434321726,
+                "UID": 2401550358943626607,
+                "ParentUID": 8124414463536896264,
                 "Name": "grp_arm_L_03",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16862360145836301485,
+                "PrefabChildUID": 10744758250881590350,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4674,19 +4673,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    7800877106511098793
+                    8925578373042178913
                 ]
             },
             {
-                "UID": 2712277965932827952,
-                "ParentUID": 2868846106369342553,
+                "UID": 8593541241036296577,
+                "ParentUID": 14397705261920634066,
                 "Name": "grp_arm_R_03",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4209832731673189840,
+                "PrefabChildUID": 9575163695088822493,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4707,19 +4706,19 @@
                 ],
                 "Components": [],
                 "Children": [
-                    15283906233699666657
+                    10889443132285157592
                 ]
             },
             {
-                "UID": 17835264907620615087,
-                "ParentUID": 6675451941572777499,
+                "UID": 17407696194364909048,
+                "ParentUID": 2021319060068218701,
                 "Name": "ctrl_leaf_a2.001",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17622013666007668559,
+                "PrefabChildUID": 14380642879865335925,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4742,15 +4741,15 @@
                 "Children": []
             },
             {
-                "UID": 362336886563376578,
-                "ParentUID": 12428453757570667203,
+                "UID": 12315056175678157367,
+                "ParentUID": 10285359190827119472,
                 "Name": "ctrl_leaf_a2.003",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2351775773109556322,
+                "PrefabChildUID": 729507240168027992,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4773,15 +4772,15 @@
                 "Children": []
             },
             {
-                "UID": 17558700050048434353,
-                "ParentUID": 4531080400222940725,
+                "UID": 3624843149941332991,
+                "ParentUID": 14166998625194266607,
                 "Name": "ctrl_leaf_a2.005",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14875881918433481309,
+                "PrefabChildUID": 1052258154458929315,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4804,15 +4803,15 @@
                 "Children": []
             },
             {
-                "UID": 7800877106511098793,
-                "ParentUID": 17642591754827249421,
+                "UID": 8925578373042178913,
+                "ParentUID": 2401550358943626607,
                 "Name": "ctl_arm_L_03",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11081465324988136959,
+                "PrefabChildUID": 10110969288628094218,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4835,15 +4834,15 @@
                 "Children": []
             },
             {
-                "UID": 15283906233699666657,
-                "ParentUID": 2712277965932827952,
+                "UID": 10889443132285157592,
+                "ParentUID": 8593541241036296577,
                 "Name": "ctl_arm_R_03",
                 "Mobility": 0,
                 "SelectParent": true,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16996873117076843911,
+                "PrefabChildUID": 17738879116543418809,
                 "LocalTransform": [
                     1.0,
                     0.0,
