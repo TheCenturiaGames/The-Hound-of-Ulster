@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1684382510347477,
-        "VersionUID": 10096305448464606351,
+        "VersionUID": 8566482736089051836,
         "Name": "Boss",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1684382510347477,
-                "PrefabVersionUID": 10096305448464606351,
+                "PrefabVersionUID": 8566482736089051836,
                 "PrefabChildUID": 13565163427625414931,
                 "LocalTransform": [
                     1.0,
@@ -89,7 +89,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 6405959785719254187,
+                "PrefabVersionUID": 7787435681099943317,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.6970325112342834,
@@ -141,7 +141,7 @@
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
-                                "Phase Start": 2,
+                                "Phase Start": 1,
                                 "1st Mirage": 47,
                                 "2nd Mirage": 30,
                                 "3rd Mirage": 10,
@@ -149,6 +149,7 @@
                                 "Close Area Damage": 3,
                                 "Spout": "Spout",
                                 "Highlight Delay": 8.0,
+                                "Chase Time Limit": 8.0,
                                 "Shield Collider": "ShieldCollider",
                                 "Overhead Close Area": "CloseArea",
                                 "Overhead Big Area": "BigArea",
@@ -157,6 +158,7 @@
                                 "Overhead Dash": "OverheadDash",
                                 "Overhead Attack": "OverheadAttack",
                                 "Shield Blast": "ShieldBlast",
+                                "Emessive": "EmessiveVFX",
                                 "Atom": "ParticleAtom",
                                 "Smoke": "ParticleSmoke",
                                 "Charge Shield": "ParticleChargerShield"
@@ -2539,7 +2541,8 @@
                 "Children": [
                     2515129337425428262,
                     17266916824391309557,
-                    11876535586440201200
+                    11876535586440201200,
+                    16224665539006693175
                 ]
             },
             {
@@ -7320,6 +7323,50 @@
                             0.0,
                             0.0
                         ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16224665539006693175,
+                "ParentUID": 14301752951739462172,
+                "Name": "EmessiveVFX",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10741582509174398932,
+                "LocalTransform": [
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    -0.25,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.4000000059604645,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10592036015352709374,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1169044534756073,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
