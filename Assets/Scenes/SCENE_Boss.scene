@@ -5,19 +5,19 @@
         "RootGameObject": 6788591387451538717,
         "NavmeshUID": 2034445260204470,
         "Camera Position": [
-            -9.020435333251953,
-            4.479212760925293,
-            -57.08323287963867
+            -18.579853057861328,
+            13.250981330871582,
+            -50.63747024536133
         ],
         "Camera Front": [
-            -0.08532314002513885,
-            -0.14855942130088806,
-            -0.9852157235145569
+            0.08257127553224564,
+            -0.9774104356765747,
+            -0.194552943110466
         ],
         "Camera Up": [
-            -0.012732371687889099,
-            0.9890643954277039,
-            -0.14693443477153778
+            0.381740003824234,
+            0.21241545677185059,
+            -0.8995299935340881
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -558,7 +558,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 7787435681099943317,
+                "PrefabVersionUID": 16243104106726026143,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.6970325112342834,
@@ -610,7 +610,9 @@
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
-                                "Phase Start": 1,
+                                "Phase Start": 2,
+                                "Phase 2 Change": 40,
+                                "Phase 3 Change": 20,
                                 "1st Mirage": 47,
                                 "2nd Mirage": 30,
                                 "3rd Mirage": 10,
@@ -619,6 +621,7 @@
                                 "Spout": "Spout",
                                 "Highlight Delay": 8.0,
                                 "Chase Time Limit": 8.0,
+                                "Blast Area Disabled": 0.5,
                                 "Shield Collider": "ShieldCollider",
                                 "Overhead Close Area": "CloseArea",
                                 "Overhead Big Area": "BigArea",
@@ -7760,7 +7763,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1684382510347477,
-                "PrefabVersionUID": 8566482736089051836,
+                "PrefabVersionUID": 7671303436316433380,
                 "PrefabChildUID": 13565163427625414931,
                 "LocalTransform": [
                     1.0,
@@ -23742,7 +23745,7 @@
                         ]
                     },
                     {
-                        "UID": 2709338550041990246,
+                        "UID": 10445337564806415643,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -70990,16 +70993,14 @@
                 ],
                 "Components": [
                     {
-                        "UID": 0,
-                        "Type": 13,
+                        "UID": 14007417851372590201,
+                        "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Capsule Collider",
+                        "Name": "Cube Collider",
                         "Mass": 1.0,
                         "ColliderType": 2,
                         "ColliderLayer": 5,
-                        "Radius": 0.44999998807907104,
-                        "Length": 14.699999809265137,
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
@@ -71008,9 +71009,14 @@
                             0.0
                         ],
                         "CenterRotation": [
-                            -1.5709999799728394,
+                            0.0,
                             0.0,
                             0.0
+                        ],
+                        "Size": [
+                            0.44999998807907104,
+                            0.5,
+                            7.699999809265137
                         ]
                     }
                 ],
