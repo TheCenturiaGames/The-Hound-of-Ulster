@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1641734777784656,
-        "VersionUID": 8840656873031717773,
+        "VersionUID": 13561765559493917403,
         "Name": "CH_Ferdiad_anim",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 8840656873031717773,
+                "PrefabVersionUID": 13561765559493917403,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     -1.1920928955078125e-7,
@@ -61,6 +61,11 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
+                                "Mesh name": "CH_Ferdiad.001",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
                                 "Phase Start": 1,
                                 "Dash Duration": 0.30000001192092896,
                                 "Close Area Damage": 3,
@@ -1262,7 +1267,23 @@
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 12483687124870897595,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 2
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -1370,7 +1391,8 @@
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
@@ -1540,7 +1562,8 @@
                         ],
                         "ModelUID": 1490288275393574,
                         "SkinIndex": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
@@ -1655,7 +1678,8 @@
                         "Mesh": 1145675244430200,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
@@ -1698,7 +1722,8 @@
                         "Mesh": 1157683921817003,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
@@ -1741,7 +1766,8 @@
                         "Mesh": 1153157011129301,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 14599232843777432039,
@@ -1764,7 +1790,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -1809,7 +1838,8 @@
                         "Mesh": 1156647636514039,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 9785328050718316499,
@@ -1832,7 +1862,10 @@
                                     0.0,
                                     0.699999988079071
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -1877,7 +1910,8 @@
                         "Mesh": 1122065165613662,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 15859676870879773465,
@@ -1900,7 +1934,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -1945,7 +1982,8 @@
                         "Mesh": 1166451252713038,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 13108671652290605681,
@@ -1968,7 +2006,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2013,7 +2054,8 @@
                         "Mesh": 1146190229539334,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 6319605169330353766,
@@ -2036,7 +2078,10 @@
                                     0.4000000059604645,
                                     0.4000000059604645
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2081,7 +2126,8 @@
                         "Mesh": 1143509125169573,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 1971004162884887491,
@@ -2104,7 +2150,10 @@
                                     0.0,
                                     -0.6000000238418579
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2149,7 +2198,8 @@
                         "Mesh": 1121006613066598,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 9716494766849586794,
@@ -2172,7 +2222,10 @@
                                     0.0,
                                     0.30000001192092896
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2217,7 +2270,8 @@
                         "Mesh": 1154809900744196,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 5222410560488651243,
@@ -2240,7 +2294,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2285,7 +2342,8 @@
                         "Mesh": 1163058625637811,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 2188559808891463932,
@@ -2308,7 +2366,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2353,7 +2414,8 @@
                         "Mesh": 1165119560054577,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
@@ -2396,7 +2458,8 @@
                         "Mesh": 1107009996499806,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 0,
@@ -2443,7 +2506,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2488,7 +2554,8 @@
                         "Mesh": 1140338500664057,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 12696977129192020048,
@@ -2511,7 +2578,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2556,7 +2626,8 @@
                         "Mesh": 1192795949809468,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 3215276302231247786,
@@ -2579,7 +2650,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": false
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -2624,7 +2698,8 @@
                         "Mesh": 1128083755452392,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
                         "UID": 16030526679094831651,
@@ -2647,7 +2722,10 @@
                                     0.0,
                                     0.0
                                 ],
-                                "Double sided": true
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
                             }
                         ]
                     }
@@ -3207,7 +3285,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 0,
+                        "UID": 8371420576385970876,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,

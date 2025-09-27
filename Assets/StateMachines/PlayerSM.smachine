@@ -22,7 +22,9 @@
             "IdleBreak2",
             "Heal",
             "Transform",
-            "Hurt"
+            "Hurt",
+            "Hit2",
+            "Hurt2"
         ],
         "Clips": [
             {
@@ -94,7 +96,7 @@
             {
                 "ClipUID": 1599063586695627,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_RiastradTransfrom",
-                "ClipTime": 2.0,
+                "ClipTime": 1.100000023841858,
                 "Loop": false
             },
             {
@@ -178,6 +180,18 @@
             {
                 "ClipUID": 1531989351438272,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Ultimate_Attack",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_26",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1511072297829126,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitHeavy",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -360,6 +374,15 @@
                 "Position": {
                     "x": -790.0,
                     "y": -90.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Hit2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitHeavy",
+                "Position": {
+                    "x": -790.0,
+                    "y": -180.0
                 },
                 "Triggers": []
             }
@@ -1215,6 +1238,60 @@
                 "FromState": "Heal",
                 "ToState": "Hurt",
                 "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Death",
+                "Trigger": "Death",
                 "InterpolationTime": 200
             }
         ]
