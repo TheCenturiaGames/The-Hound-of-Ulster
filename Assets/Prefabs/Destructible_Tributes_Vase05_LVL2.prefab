@@ -1,34 +1,33 @@
 {
     "Prefab": {
-        "UID": 1655171795561701,
-        "VersionUID": 3025214398738039523,
-        "Name": "Destructible_Tributes_Jar02",
+        "UID": 1611991583854086,
+        "VersionUID": 5165934965430859958,
+        "Name": "Destructible_Tributes_Vase05_LVL2",
         "GameObjects": [
             {
-                "UID": 2752875664216639460,
-                "ParentUID": 3408008172474305760,
-                "Name": "Destructible_Tributes_Jar02",
+                "UID": 7789615575547280631,
+                "ParentUID": 1875947144559268897,
+                "Name": "Destructible_Tributes_Vase05_LVL2",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1655171795561701,
-                "PrefabVersionUID": 3025214398738039523,
-                "PrefabChildUID": 461547536306690717,
+                "PrefabVersionUID": 5165934965430859958,
+                "PrefabChildUID": 2349814255519296577,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -113.2869873046875,
+                    -0.1179046630859375,
                     0.0,
                     1.0,
                     0.0,
-                    3.4580078125,
+                    0.004293918609619141,
                     0.0,
                     0.0,
                     1.0,
-                    20.976408004760742,
+                    1.291769027709961,
                     0.0,
                     0.0,
                     0.0,
@@ -36,19 +35,19 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12929316880690866894,
+                        "UID": 718624729032057034,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1105990528757211,
-                        "Material": 1340497634521642,
+                        "Mesh": 1102193708652659,
+                        "Material": 1305501819995337,
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     },
                     {
-                        "UID": 6847803664067541854,
+                        "UID": 7090485860170203002,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -98,7 +97,7 @@
                         "GenerateCallback": true,
                         "FitToSize": false,
                         "CenterOffset": [
-                            0.0,
+                            -0.15000000596046448,
                             0.6000000238418579,
                             0.0
                         ],
@@ -110,20 +109,20 @@
                     }
                 ],
                 "Children": [
-                    15387205414986125371,
-                    18424662335415210877
+                    13788248134787224351,
+                    15237689454581878766
                 ]
             },
             {
-                "UID": 15387205414986125371,
-                "ParentUID": 2752875664216639460,
+                "UID": 13788248134787224351,
+                "ParentUID": 7789615575547280631,
                 "Name": "DestroyedMesh",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": false,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2204207727913722943,
+                "PrefabChildUID": 1360202762211736260,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -132,7 +131,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.01789379119873047,
+                    0.0,
                     0.0,
                     0.0,
                     1.0,
@@ -144,14 +143,14 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11880774504405957614,
+                        "UID": 7063999007456602535,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
-                        "Mesh": 1168918853127833,
-                        "Material": 1304089432007967,
-                        "RenderMode": 1,
+                        "Mesh": 1124423357021135,
+                        "Material": 1305501819995337,
+                        "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     }
@@ -159,15 +158,15 @@
                 "Children": []
             },
             {
-                "UID": 18424662335415210877,
-                "ParentUID": 2752875664216639460,
+                "UID": 15237689454581878766,
+                "ParentUID": 7789615575547280631,
                 "Name": "PT_Destruction_Smoke",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15066690458259508584,
+                "PrefabChildUID": 356410624689026735,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -176,7 +175,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.2196955680847168,
+                    0.0,
                     0.0,
                     0.0,
                     1.0,
@@ -188,12 +187,12 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2762458784948651552,
+                        "UID": 1309334479586768777,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "ParticleSystem",
-                        "ParticleSystemTag": "Destroyable_Smoke_Brown",
+                        "ParticleSystemTag": "Destroyable_Smoke_Blue",
                         "Emitters": [
                             {
                                 "EmitterTag": "Smaller_peaces",
@@ -444,16 +443,16 @@
                                         "ColorMarks": [
                                             [
                                                 0.0,
-                                                0.5568181872367859,
-                                                0.29681628942489624,
                                                 0.19931560754776,
+                                                0.5568181872367859,
+                                                0.5202553272247314,
                                                 1.0
                                             ],
                                             [
                                                 0.39165323972702026,
-                                                0.21590906381607056,
-                                                0.1917085200548172,
                                                 0.1472107321023941,
+                                                0.2088831067085266,
+                                                0.21590906381607056,
                                                 1.0
                                             ],
                                             [
@@ -745,16 +744,16 @@
                                         "ColorMarks": [
                                             [
                                                 0.0,
-                                                0.8522727489471436,
-                                                0.5183632373809814,
-                                                0.058109499514102936,
+                                                0.23863640427589417,
+                                                0.875,
+                                                0.8533057570457458,
                                                 1.0
                                             ],
                                             [
                                                 0.3883618116378784,
-                                                0.34659093618392944,
-                                                0.21829766035079956,
                                                 0.11618672311306,
+                                                0.291608065366745,
+                                                0.34659093618392944,
                                                 1.0
                                             ],
                                             [
