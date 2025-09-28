@@ -727,12 +727,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_Ferdiad_RangeAttack" ID="{1AE8B030-2BB8-4372-B963-DA7285850039}">
+						<Event Name="Play_SFX_Ferdiad_RangeAttackStart" ID="{1AE8B030-2BB8-4372-B963-DA7285850039}">
 							<ChildrenList>
-								<Action Name="" ID="{3926C2AB-B841-4906-B7FE-EDAE23024756}" ShortID="993289880">
+								<Action Name="" ID="{E8B4B403-D719-41B1-81C4-3573E1C352EB}" ShortID="724498215">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Boss_RangeAttack" ID="{0C52CE43-C929-464C-A963-F8D07C7196C3}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="SFX_Boss_RangeAttackStart" ID="{2B97456B-A320-4723-A778-02DA9193AEBE}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -777,6 +777,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Boss_Hurt" ID="{6EF9DA58-D325-40AC-8C83-1432C4A5435D}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Ferdiad_RangeAttackLoop" ID="{CD3E84DA-E5B6-4707-8325-1BDF0AE02C16}">
+							<ChildrenList>
+								<Action Name="" ID="{5EF4DEE4-EB82-4AA0-BE82-4A2F07809261}" ShortID="490460288">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Boss_RangeAttackLoop" ID="{A3FBE386-93A6-4A4E-A367-7CBF06CB90AA}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Ferdiad_AoeExpansion" ID="{7CC93F88-86F4-4B64-BE05-B0419ABA6300}">
+							<ChildrenList>
+								<Action Name="" ID="{141A5329-B899-4500-B47A-54423F1652D6}" ShortID="89780848">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Boss_AoeExpansion" ID="{32697257-1847-4762-8292-3BEFAB4B2CA1}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
