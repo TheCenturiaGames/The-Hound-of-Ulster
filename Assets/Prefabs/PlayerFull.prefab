@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 6288265655055496391,
+        "VersionUID": 11773931681435038391,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 6288265655055496391,
+                "PrefabVersionUID": 11773931681435038391,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -124,7 +124,7 @@
                     0.0,
                     1.0,
                     -0.0,
-                    0.019071578979492188,
+                    1.0,
                     1.0,
                     0.0,
                     -3.5762786865234375e-7,
@@ -148,7 +148,9 @@
                                 "WasEnabled": true,
                                 "Speed": 25.0,
                                 "Range": 20.525999069213867,
-                                "Damage": 1
+                                "Damage": 1,
+                                "Spritesheet vertical name": "RangedVFX_v",
+                                "Spritesheet horizotnal name": "RangedVFX_h"
                             }
                         ]
                     },
@@ -178,8 +180,9 @@
                     }
                 ],
                 "Children": [
-                    5980772339716808629,
-                    8219477941598107647
+                    8219477941598107647,
+                    15884763073399059873,
+                    354885469964493060
                 ]
             },
             {
@@ -285,6 +288,7 @@
                                 "Heal knockback object": "Charged",
                                 "Heal knockback delay": 1.0,
                                 "Riastrad Bar object": "BarFill",
+                                "Riastrad Eye object": "RiastradEye",
                                 "Riastrad duration": 5.0,
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
@@ -592,93 +596,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.47208717465400696
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 5980772339716808629,
-                "ParentUID": 6519637721851623522,
-                "Name": "SpearRangedTrail",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 7788134041217676009,
-                "LocalTransform": [
-                    -4.1605761680330033e-7,
-                    0.0,
-                    4.908268451690674,
-                    -0.03800201416015625,
-                    7.973812166106597e-10,
-                    5.0,
-                    8.173909233860177e-16,
-                    0.01701807975769043,
-                    -1.1633814573287964,
-                    3.426998240740886e-9,
-                    -0.0000017553336419950938,
-                    2.8530426025390625,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 14221579520551115916,
-                        "Type": 22,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Spline",
-                        "Alpha": 0.5,
-                        "Loop": false,
-                        "Points": []
-                    },
-                    {
-                        "UID": 1492879484908809783,
-                        "Type": 24,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Trail",
-                        "MinDistance": 0.20999999344348907,
-                        "LifeTime": 0.12999999523162842,
-                        "Width": 0.5099999904632568,
-                        "Cutoff": 0.20000000298023224,
-                        "UseCurve": true,
-                        "InvertCurve": true,
-                        "Curve": [
-                            0.0,
-                            0.0,
-                            1.0,
-                            0.015625,
-                            0.0
-                        ],
-                        "Texture": 1254486236908938,
-                        "HasTexture": true,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0,
-                            0.006818254943937063,
-                            0.9897959232330322,
-                            0.6942862272262573,
-                            0.13803277909755707,
-                            1.0,
-                            0.43409156799316406,
-                            1.0,
-                            0.541176438331604,
-                            0.0,
-                            0.7843137383460999,
-                            0.6204545497894287,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.5882353186607361,
-                            0.9886360168457031
-                        ]
+                        "CameraVFOV": 0.49304383993148804
                     }
                 ],
                 "Children": []
@@ -723,6 +641,138 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 15884763073399059873,
+                "ParentUID": 6519637721851623522,
+                "Name": "RangedVFX_v",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2625900688929153439,
+                "LocalTransform": [
+                    -0.000003337860107421875,
+                    -1.0000001192092896,
+                    -2.046363729510392e-12,
+                    0.0,
+                    -2.000000238418579,
+                    0.0000013709068298339844,
+                    0.00000451408232038375,
+                    0.0,
+                    -0.0000011285201253485866,
+                    1.1084466677857563e-12,
+                    -8.000004768371582,
+                    -1.2999992370605469,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15197233239109150155,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 8737344566112440706,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 75.0,
+                                "Cell height": 650.0,
+                                "Update Rate": 0.05999999865889549,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1286173988524526
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 354885469964493060,
+                "ParentUID": 6519637721851623522,
+                "Name": "RangedVFX_h",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2625900688929153439,
+                "LocalTransform": [
+                    2.0,
+                    0.0,
+                    0.0,
+                    -0.0387420654296875,
+                    0.0,
+                    -1.0,
+                    0.0000045140800466469955,
+                    0.0,
+                    0.0,
+                    -5.642599489874556e-7,
+                    -8.000000953674316,
+                    -1.2999992370605469,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17155922732272999139,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 13083880780804838730,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 75.0,
+                                "Cell height": 650.0,
+                                "Update Rate": 0.05999999865889549,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1286173988524526
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -4540,7 +4590,7 @@
                                 "Cell width": 1607.0,
                                 "Cell height": 316.79998779296875,
                                 "Update Rate": 0.05000000074505806,
-                                "Row major": false,
+                                "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": true,
                                 "Texture": 1238188663236418
@@ -4561,18 +4611,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 13133417116646016487,
                 "LocalTransform": [
-                    -0.000001430511474609375,
-                    -5.960465188081798e-8,
-                    0.737169623374939,
-                    0.000014066696166992188,
-                    4.0,
-                    -3.576279254957626e-7,
-                    1.9772429027398175e-7,
+                    0.34862223267555237,
+                    2.980232949312267e-8,
+                    0.7343639731407166,
+                    0.0000171661376953125,
+                    3.9847776889801025,
+                    -0.000003814698175119702,
+                    -0.06424839794635773,
                     0.0,
-                    0.0000010728836059570313,
+                    0.00001537799289508257,
                     1.000000238418579,
-                    0.0,
-                    0.0000057220458984375,
+                    -2.636322165017191e-7,
+                    0.000003814697265625,
                     0.0,
                     0.0,
                     0.0,
@@ -4603,13 +4653,13 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1286.0,
-                                "Cell height": 237.72999572753906,
-                                "Update Rate": 0.02500000037252903,
+                                "Cell width": 1607.0,
+                                "Cell height": 316.79998779296875,
+                                "Update Rate": 0.05000000074505806,
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
-                                "Texture": 1240334839247892
+                                "Texture": 1238188663236418
                             }
                         ]
                     }
@@ -4627,18 +4677,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 13133417116646016487,
                 "LocalTransform": [
-                    7.152557373046875e-7,
-                    1.0,
-                    -2.4020033606575453e-7,
-                    0.000014066696166992188,
-                    4.0,
-                    -3.5762786865234375e-7,
-                    0.0,
+                    0.000008344650268554688,
+                    0.999999463558197,
+                    7.450580596923828e-9,
+                    0.0000152587890625,
+                    4.000000953674316,
+                    -0.0000020563602447509766,
+                    2.980232238769531e-7,
                     -0.000629425048828125,
-                    -3.410605131648481e-13,
-                    -3.258413983076025e-7,
-                    -0.737169623374939,
-                    0.0000057220458984375,
+                    0.0000013113021850585938,
+                    -9.685754776000977e-8,
+                    -0.7371692657470703,
+                    0.00000667572021484375,
                     0.0,
                     0.0,
                     0.0,
@@ -4669,13 +4719,13 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 1286.0,
-                                "Cell height": 237.72999572753906,
-                                "Update Rate": 0.02500000037252903,
+                                "Cell width": 1607.0,
+                                "Cell height": 316.79998779296875,
+                                "Update Rate": 0.05000000074505806,
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
-                                "Texture": 1240334839247892
+                                "Texture": 1238188663236418
                             }
                         ]
                     }
@@ -9807,7 +9857,10 @@
                 ],
                 "Components": [],
                 "Children": [
-                    11208154190686364321
+                    11208154190686364321,
+                    12239132357097490855,
+                    2053468455094428294,
+                    9555534332679009708
                 ]
             },
             {
@@ -10514,6 +10567,204 @@
                     1.0
                 ],
                 "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 12239132357097490855,
+                "ParentUID": 7816883085581050047,
+                "Name": "chargeVFX1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4644249490446503077,
+                "LocalTransform": [
+                    3.999998092651367,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    4.000126838684082,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.999795913696289,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10753226620551738110,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 11077973442793563218,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 130.0,
+                                "Cell height": 130.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1273750691010835
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2053468455094428294,
+                "ParentUID": 7816883085581050047,
+                "Name": "chargeVFX2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4644249490446503077,
+                "LocalTransform": [
+                    4.000000476837158,
+                    0.000012636426617973484,
+                    4.5473870437413855e-13,
+                    0.0,
+                    3.637979240772582e-12,
+                    -0.0000014305248896562262,
+                    -3.9999239444732666,
+                    0.0,
+                    -0.000012636308383662254,
+                    4.000037670135498,
+                    -0.0000014304843034551595,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4869064367330005334,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 506691574118769073,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 130.0,
+                                "Cell height": 130.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1273750691010835
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9555534332679009708,
+                "ParentUID": 7816883085581050047,
+                "Name": "chargeVFX3",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4644249490446503077,
+                "LocalTransform": [
+                    -4.768372150465439e-7,
+                    -4.00003719329834,
+                    0.0,
+                    0.0,
+                    4.0,
+                    -4.76841648833215e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.9999239444732666,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6256609961637994060,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 17766334100643647979,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 130.0,
+                                "Cell height": 130.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1273750691010835
+                            }
+                        ]
+                    }
+                ],
                 "Children": []
             },
             {
