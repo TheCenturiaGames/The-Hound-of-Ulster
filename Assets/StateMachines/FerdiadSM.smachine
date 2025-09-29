@@ -411,8 +411,8 @@
                 "StateName": "WaterSpoutCharge",
                 "ClipName": "CH_Ferdiad_Water_Sprout_Charge",
                 "Position": {
-                    "x": 440.0,
-                    "y": -280.0
+                    "x": 420.0,
+                    "y": -350.0
                 },
                 "Triggers": []
             },
@@ -420,8 +420,8 @@
                 "StateName": "WaterSpoutHit",
                 "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
                 "Position": {
-                    "x": 440.0,
-                    "y": -150.0
+                    "x": 420.0,
+                    "y": -260.0
                 },
                 "Triggers": []
             }
@@ -964,7 +964,7 @@
             {
                 "FromState": "WaterSpoutHit",
                 "ToState": "ShieldBlast_Charge",
-                "Trigger": "Charge",
+                "Trigger": "BlastCharge",
                 "InterpolationTime": 200
             },
             {
@@ -1037,6 +1037,36 @@
                 "FromState": "WaterSpoutHit",
                 "ToState": "Taunt",
                 "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "WaterSpoutCharge",
+                "Trigger": "WaterSpoutCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "Overhead_Prepare",
+                "Trigger": "Prepare",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "ShieldBlast_Charge",
+                "Trigger": "BlastCharge",
                 "InterpolationTime": 200
             }
         ]
