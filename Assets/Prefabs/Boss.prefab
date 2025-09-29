@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1684382510347477,
-        "VersionUID": 7726350540750614613,
+        "VersionUID": 12745462679956138354,
         "Name": "Boss",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1684382510347477,
-                "PrefabVersionUID": 7726350540750614613,
+                "PrefabVersionUID": 12745462679956138354,
                 "PrefabChildUID": 13565163427625414931,
                 "LocalTransform": [
                     1.0,
@@ -89,7 +89,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1641734777784656,
-                "PrefabVersionUID": 6518092320323063109,
+                "PrefabVersionUID": 7288646691438036732,
                 "PrefabChildUID": 4897953369766356735,
                 "LocalTransform": [
                     0.6970325112342834,
@@ -141,7 +141,7 @@
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
-                                "Phase Start": 1,
+                                "Phase Start": 2,
                                 "Phase 2 Change": 40,
                                 "Phase 3 Change": 20,
                                 "1st Mirage": 47,
@@ -1514,7 +1514,10 @@
                     6174256021812031359,
                     5360664371443763639,
                     16841097917766150499,
-                    12290807488177747153
+                    12290807488177747153,
+                    7710003217916652079,
+                    1192312582331247181,
+                    17495480692967292
                 ]
             },
             {
@@ -3332,8 +3335,8 @@
                 "Name": "BlastShield_1",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 4026801309685675268,
                 "LocalTransform": [
@@ -3364,7 +3367,7 @@
                         "Mesh": 1165119560054577,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true,
+                        "ProduceShadows": false,
                         "Additive": false
                     }
                 ],
@@ -3798,10 +3801,211 @@
                                 "Cell height": 1024.0,
                                 "Update Rate": 0.05000000074505806,
                                 "Row major": true,
-                                "Double sided": false,
+                                "Double sided": true,
                                 "Is One Shot": false,
                                 "Only Once": true,
                                 "Texture": 1221434716556429
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 7710003217916652079,
+                "ParentUID": 11032983811558720633,
+                "Name": "BlastSprite2",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7236697511232184711,
+                "LocalTransform": [
+                    -0.000003814697265625,
+                    1.0001461505889893,
+                    -1.6391447843489004e-7,
+                    -0.08359146118164063,
+                    0.0000025332656150567345,
+                    5.961335602933104e-8,
+                    5.5002007484436035,
+                    -0.1627103090286255,
+                    17.000001907348633,
+                    2.384185791015625e-7,
+                    -0.0000013113160548527958,
+                    1.2000007629394531,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4710589264862150722,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 13592036481468587825,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 1024.0,
+                                "Cell height": 1024.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Only Once": true,
+                                "Texture": 1221434716556429
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1192312582331247181,
+                "ParentUID": 11032983811558720633,
+                "Name": "BlastSpriteEnergy",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7236697511232184711,
+                "LocalTransform": [
+                    1.7999999523162842,
+                    -4.601726999453604e-9,
+                    0.0,
+                    -0.08884811401367188,
+                    -4.3964830081090304e-15,
+                    -4.769045176544751e-7,
+                    -1.799999713897705,
+                    0.0,
+                    8.281937802223638e-9,
+                    1.0001411437988281,
+                    -8.583068051848386e-7,
+                    -7.099999904632568,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12900841168181923440,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 1003846624361038587,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 179.0,
+                                "Cell height": 179.0,
+                                "Update Rate": 0.1589999943971634,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Only Once": true,
+                                "Texture": 1218035361778486
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 17495480692967292,
+                "ParentUID": 11032983811558720633,
+                "Name": "BlastSpritePre",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7236697511232184711,
+                "LocalTransform": [
+                    -0.000005364418029785156,
+                    -0.0,
+                    -15.0,
+                    -0.00000762939453125,
+                    0.0,
+                    1.0001475811004639,
+                    -0.0,
+                    0.0,
+                    15.0,
+                    0.0,
+                    -0.000005364418029785156,
+                    0.20000000298023224,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13927502435937028507,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 9486347000327068237,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 255.0,
+                                "Cell height": 255.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Only Once": true,
+                                "Texture": 1279651675346846
                             }
                         ]
                     }
