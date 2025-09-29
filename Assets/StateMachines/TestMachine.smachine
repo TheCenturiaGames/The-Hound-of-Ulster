@@ -157,7 +157,7 @@
             {
                 "ClipUID": 1513361552826797,
                 "ClipName": "Ch_Archer_Animations_Tx_overdrawing",
-                "ClipTime": 1.1299999952316284,
+                "ClipTime": 1.0,
                 "Loop": false
             },
             {
@@ -179,10 +179,10 @@
                 "Loop": false
             },
             {
-                "ClipUID": 1595199228252112,
-                "ClipName": "Ch_Archer_Enemy_Anims_v02_multishooting",
-                "ClipTime": 1.0499999523162842,
-                "Loop": true
+                "ClipUID": 1528412024266471,
+                "ClipName": "Ch_Archer_New_Anims_multishooting",
+                "ClipTime": 1.0,
+                "Loop": false
             },
             {
                 "ClipUID": 0,
@@ -214,8 +214,8 @@
                 "StateName": "Idle",
                 "ClipName": "Ch_Archer_Enemy_Animations_idle",
                 "Position": {
-                    "x": 1110.0,
-                    "y": 140.0
+                    "x": 210.0,
+                    "y": -130.0
                 },
                 "Triggers": []
             },
@@ -223,8 +223,8 @@
                 "StateName": "aim",
                 "ClipName": "Ch_Archer_Animations_Tx_aiming",
                 "Position": {
-                    "x": 760.0,
-                    "y": 100.0
+                    "x": 120.0,
+                    "y": 110.0
                 },
                 "Triggers": []
             },
@@ -232,8 +232,8 @@
                 "StateName": "attack",
                 "ClipName": "Ch_Archer_Animations_Tx_shooting",
                 "Position": {
-                    "x": 520.0,
-                    "y": 210.0
+                    "x": 550.0,
+                    "y": 190.0
                 },
                 "Triggers": []
             },
@@ -241,8 +241,8 @@
                 "StateName": "Run",
                 "ClipName": "Ch_Archer_Running_running",
                 "Position": {
-                    "x": 540.0,
-                    "y": 30.0
+                    "x": 590.0,
+                    "y": 60.0
                 },
                 "Triggers": []
             },
@@ -250,8 +250,8 @@
                 "StateName": "impactSmall",
                 "ClipName": "CH_ArcherEnemy_Anims_impacthitsmall",
                 "Position": {
-                    "x": 870.0,
-                    "y": 390.0
+                    "x": 830.0,
+                    "y": 270.0
                 },
                 "Triggers": []
             },
@@ -277,17 +277,17 @@
                 "StateName": "overdrawing",
                 "ClipName": "Ch_Archer_Animations_Tx_overdrawing",
                 "Position": {
-                    "x": 810.0,
-                    "y": 510.0
+                    "x": 700.0,
+                    "y": 500.0
                 },
                 "Triggers": []
             },
             {
-                "StateName": "multishoot",
-                "ClipName": "Ch_Archer_Enemy_Anims_v02_multishooting",
+                "StateName": "multidraw",
+                "ClipName": "Ch_Archer_New_Anims_multishooting",
                 "Position": {
-                    "x": 1230.0,
-                    "y": 510.0
+                    "x": 590.0,
+                    "y": 130.0
                 },
                 "Triggers": []
             },
@@ -295,8 +295,8 @@
                 "StateName": "dashStart",
                 "ClipName": "Ch_Archer_New_Anims_dash_start",
                 "Position": {
-                    "x": 910.0,
-                    "y": 20.0
+                    "x": 960.0,
+                    "y": 60.0
                 },
                 "Triggers": []
             },
@@ -304,8 +304,8 @@
                 "StateName": "dashEnd",
                 "ClipName": "Ch_Archer_New_Anims_dash_end",
                 "Position": {
-                    "x": 1280.0,
-                    "y": 20.0
+                    "x": 360.0,
+                    "y": -60.0
                 },
                 "Triggers": []
             }
@@ -498,45 +498,39 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "aim",
-                "ToState": "Run",
-                "Trigger": "run",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Run",
-                "ToState": "overdrawing",
-                "Trigger": "overdraw",
+                "FromState": "overdrawing",
+                "ToState": "NewState_9",
+                "Trigger": "Trigger",
                 "InterpolationTime": 200
             },
             {
                 "FromState": "overdrawing",
-                "ToState": "Run",
-                "Trigger": "run",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Run",
-                "ToState": "Idle",
-                "Trigger": "idle",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "attack",
-                "ToState": "Idle",
-                "Trigger": "idle",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "overdrawing",
-                "ToState": "multishoot",
+                "ToState": "multidraw",
                 "Trigger": "multi",
                 "InterpolationTime": 200
             },
             {
-                "FromState": "multishoot",
-                "ToState": "overdrawing",
-                "Trigger": "overdraw",
+                "FromState": "multidraw",
+                "ToState": "aim",
+                "Trigger": "aim",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "overdrawing",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "multidraw",
+                "Trigger": "multi",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "multidraw",
+                "ToState": "Run",
+                "Trigger": "run",
                 "InterpolationTime": 200
             },
             {
@@ -547,32 +541,14 @@
             },
             {
                 "FromState": "dashStart",
+                "ToState": "NewState_11",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashStart",
                 "ToState": "dashEnd",
                 "Trigger": "dashEnd",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "dashEnd",
-                "ToState": "Run",
-                "Trigger": "run",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "dashEnd",
-                "ToState": "aim",
-                "Trigger": "aim",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "multishoot",
-                "ToState": "aim",
-                "Trigger": "aim",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "impactSmall",
-                "ToState": "dashStart",
-                "Trigger": "dashStart",
                 "InterpolationTime": 200
             },
             {
@@ -583,20 +559,14 @@
             },
             {
                 "FromState": "dashEnd",
-                "ToState": "attack",
-                "Trigger": "attack",
+                "ToState": "aim",
+                "Trigger": "aim",
                 "InterpolationTime": 200
             },
             {
-                "FromState": "attack",
-                "ToState": "dashStart",
-                "Trigger": "dashStart",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "multishoot",
-                "ToState": "impactSmall",
-                "Trigger": "damageSmall",
+                "FromState": "dashEnd",
+                "ToState": "Run",
+                "Trigger": "run",
                 "InterpolationTime": 200
             }
         ]
