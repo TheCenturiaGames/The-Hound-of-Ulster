@@ -5,19 +5,19 @@
         "RootGameObject": 3408008172474305760,
         "NavmeshUID": 2083739643501027,
         "Camera Position": [
-            -133.4595184326172,
-            18.38954734802246,
-            27.743762969970703
+            -114.12019348144531,
+            5.579356670379639,
+            21.698244094848633
         ],
         "Camera Front": [
-            0.7918793559074402,
-            -0.5951385498046875,
-            -0.13688398897647858
+            0.4823320508003235,
+            -0.5487677454948425,
+            -0.682795524597168
         ],
         "Camera Up": [
-            0.5845553278923035,
-            0.8050311207771301,
-            -0.10109397768974304
+            0.31544071435928345,
+            0.8372732996940613,
+            -0.4466214179992676
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -218,7 +218,8 @@
                     18008857041072394063,
                     13280416889802328891,
                     493658280295684227,
-                    6251720637641683259
+                    6251720637641683259,
+                    2648971045936147349
                 ]
             },
             {
@@ -1445,7 +1446,7 @@
                         ]
                     },
                     {
-                        "UID": 11526726674016411342,
+                        "UID": 16987108144481766038,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2326,7 +2327,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -3304,50 +3306,6 @@
                 "Children": []
             },
             {
-                "UID": 6017547450848478525,
-                "ParentUID": 290759499312642445,
-                "Name": "WaterfallRock",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "PrefabChildUID": 5836106730143887966,
-                "LocalTransform": [
-                    -0.8860177993774414,
-                    0.0,
-                    -0.46365126967430115,
-                    13.761432647705078,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -13.144926071166992,
-                    0.46365126967430115,
-                    0.0,
-                    -0.8860177993774414,
-                    12.5704345703125,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 7917352752381303252,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1167476682570038,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 7340041356607543309,
                 "ParentUID": 12748307059565113601,
                 "Name": "EN_PR_Vegetation_BushGreen_04_V1",
@@ -3392,39 +3350,6 @@
                 "Children": []
             },
             {
-                "UID": 11279206346462453116,
-                "ParentUID": 8544636932762705364,
-                "Name": "ctrl_pinky_L_01",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 1283135261200532504,
-                "LocalTransform": [
-                    -0.4640607237815857,
-                    0.8858516812324524,
-                    0.0,
-                    0.0,
-                    -0.8858516812324524,
-                    -0.4640607237815857,
-                    -0.0,
-                    0.0,
-                    -0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    13444735935466982124
-                ]
-            },
-            {
                 "UID": 1601970669510629838,
                 "ParentUID": 3198815822354669970,
                 "Name": "Chest",
@@ -3461,6 +3386,83 @@
                     14449767053699412910,
                     7713794820672544072
                 ]
+            },
+            {
+                "UID": 11279206346462453116,
+                "ParentUID": 8544636932762705364,
+                "Name": "ctrl_pinky_L_01",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 1283135261200532504,
+                "LocalTransform": [
+                    -0.4640607237815857,
+                    0.8858516812324524,
+                    0.0,
+                    0.0,
+                    -0.8858516812324524,
+                    -0.4640607237815857,
+                    -0.0,
+                    0.0,
+                    -0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    13444735935466982124
+                ]
+            },
+            {
+                "UID": 6017547450848478525,
+                "ParentUID": 290759499312642445,
+                "Name": "WaterfallRock",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5836106730143887966,
+                "LocalTransform": [
+                    -0.8860177993774414,
+                    0.0,
+                    -0.46365126967430115,
+                    13.761432647705078,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -13.144926071166992,
+                    0.46365126967430115,
+                    0.0,
+                    -0.8860177993774414,
+                    12.5704345703125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7917352752381303252,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1167476682570038,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 9537792548798930513,
@@ -11537,7 +11539,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -29574,7 +29577,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -35452,7 +35456,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -52508,7 +52513,7 @@
                         ]
                     },
                     {
-                        "UID": 6701213006062823693,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -68928,7 +68933,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -72842,7 +72848,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -74323,7 +74330,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -89279,7 +89287,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -90011,7 +90020,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -107134,7 +107144,7 @@
                         ]
                     },
                     {
-                        "UID": 13224151124478150345,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -113721,7 +113731,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -115310,7 +115321,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -116129,7 +116141,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -125728,7 +125741,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -127596,7 +127610,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -129059,7 +129074,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -130815,7 +130831,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -131794,7 +131811,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -132661,7 +132679,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -133078,7 +133097,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -134200,6 +134220,644 @@
                 "Children": [
                     11172023614269852892
                 ]
+            },
+            {
+                "UID": 12147243443903355633,
+                "ParentUID": 2648971045936147349,
+                "Name": "PT_Destruction_Smoke",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.14200648665428162,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16288719018025458664,
+                        "Type": 25,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "ParticleSystem",
+                        "ParticleSystemTag": "Smoke",
+                        "Emitters": [
+                            {
+                                "EmitterTag": "Center",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1288887284223300,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 0.44999998807907104,
+                                        "Loop": false,
+                                        "particlesPerSecond": 1,
+                                        "MaxParticles": 60,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 0.4000000059604645,
+                                        "MaxLifetime": 0.6000000238418579,
+                                        "randomizeSizeCombined": false,
+                                        "randomizeSizeX": true,
+                                        "randomizeSizeY": true,
+                                        "combinedSize": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesX": [
+                                            0.5,
+                                            2.0
+                                        ],
+                                        "sizeValuesY": [
+                                            0.5,
+                                            2.0
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0078125,
+                                            1.0,
+                                            0.9765625,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "randomRotation": true,
+                                        "burst": true,
+                                        "respawnLoop": true,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            0.0,
+                                            0.0,
+                                            0.5099999904632568,
+                                            0.6200000047683716,
+                                            1.0,
+                                            1.0,
+                                            -10000.0,
+                                            0.20000000298023224,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": true,
+                                        "sizeInterpolation": 0,
+                                        "sizeInterpolationX": 1,
+                                        "sizeInterpolationY": 1
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": false,
+                                        "gravityValue": -12.0,
+                                        "XSpeed": [
+                                            1.0,
+                                            3.0
+                                        ],
+                                        "YSpeed": [
+                                            1.0,
+                                            4.0
+                                        ],
+                                        "ZSpeed": [
+                                            1.0,
+                                            3.0
+                                        ],
+                                        "RandX": true,
+                                        "RandY": true,
+                                        "RandZ": true,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 0,
+                                        "speedYInterpolation": 0,
+                                        "speedZInterpoaltion": 0,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 3,
+                                        "Rows": 2,
+                                        "Columns": 2,
+                                        "AnimationSpeed": 30.0,
+                                        "MinXTiles": 1,
+                                        "MaxXTiles": 4,
+                                        "MinYTiles": 2,
+                                        "MaxYTiles": 3,
+                                        "RandomizeTiles": true
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.0,
+                                                0.29545456171035767,
+                                                0.16125239431858063,
+                                                0.11918904632329941,
+                                                1.0
+                                            ],
+                                            [
+                                                0.49295774102211,
+                                                0.5056818127632141,
+                                                0.36136919260025024,
+                                                0.2614605128765106,
+                                                1.0
+                                            ],
+                                            [
+                                                1.0,
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 5,
+                                        "currentShape": 2,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 0.5,
+                                        "coneAngle": 35.0,
+                                        "coneLength": 1.0,
+                                        "cubeSize": [
+                                            1.0,
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 5,
+                                "blendingMode": 1,
+                                "colorIntensity": 0.20499999821186066
+                            },
+                            {
+                                "EmitterTag": "Smaller_peaces",
+                                "UseTexture": true,
+                                "Material": 1300000000000000,
+                                "Texture": 1298155502878793,
+                                "Addons": [
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 1,
+                                        "Duration": 0.30000007152557373,
+                                        "Loop": false,
+                                        "particlesPerSecond": 1,
+                                        "MaxParticles": 31,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 1.0,
+                                        "MaxLifetime": 1.0,
+                                        "randomizeSizeCombined": false,
+                                        "randomizeSizeX": true,
+                                        "randomizeSizeY": true,
+                                        "combinedSize": [
+                                            0.0,
+                                            1.0
+                                        ],
+                                        "sizeValuesX": [
+                                            0.05000000074505806,
+                                            0.6000000238418579
+                                        ],
+                                        "sizeValuesY": [
+                                            0.05000000074505806,
+                                            0.6000000238418579
+                                        ],
+                                        "sizeBezierCombined": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierX": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "sizeBezierY": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "rotation": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "randomRotation": false,
+                                        "burst": true,
+                                        "respawnLoop": false,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorXPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorYPoints": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "updateXYApart": true,
+                                        "sizeInterpolation": 0,
+                                        "sizeInterpolationX": 0,
+                                        "sizeInterpolationY": 0
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 2,
+                                        "gravity": true,
+                                        "gravityValue": 12.0,
+                                        "XSpeed": [
+                                            5.0,
+                                            7.0
+                                        ],
+                                        "YSpeed": [
+                                            3.0,
+                                            5.0
+                                        ],
+                                        "ZSpeed": [
+                                            5.0,
+                                            7.0
+                                        ],
+                                        "RandX": true,
+                                        "RandY": true,
+                                        "RandZ": true,
+                                        "xBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "yBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "zBezier": [
+                                            0.0,
+                                            0.0,
+                                            1.0,
+                                            1.0,
+                                            0.0
+                                        ],
+                                        "speedXInterpolation": 0,
+                                        "speedYInterpolation": 0,
+                                        "speedZInterpoaltion": 0,
+                                        "MaxCurveEditorPoints": 10,
+                                        "curveEditorPointsX": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsY": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ],
+                                        "curveEditorPointsZ": [
+                                            -10000.0,
+                                            0.0,
+                                            0.10000000149011612,
+                                            0.10000000149011612,
+                                            0.20000000298023224,
+                                            0.20000000298023224,
+                                            0.30000001192092896,
+                                            0.30000001192092896,
+                                            0.4000000059604645,
+                                            0.4000000059604645,
+                                            0.5,
+                                            0.5,
+                                            0.6000000238418579,
+                                            0.6000000238418579,
+                                            0.699999988079071,
+                                            0.699999988079071,
+                                            0.800000011920929,
+                                            0.800000011920929,
+                                            0.8999999761581421,
+                                            0.8999999761581421
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 4,
+                                        "ColorMarks": [
+                                            [
+                                                0.0,
+                                                0.3238636255264282,
+                                                0.24498878419399261,
+                                                0.17297260463237762,
+                                                1.0
+                                            ],
+                                            [
+                                                0.20451349020004272,
+                                                0.2556818127632141,
+                                                0.2471563071012497,
+                                                0.23970170319080353,
+                                                1.0
+                                            ],
+                                            [
+                                                0.4217211902141571,
+                                                0.125,
+                                                0.09847622364759445,
+                                                0.07528409361839294,
+                                                1.0
+                                            ],
+                                            [
+                                                1.0,
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "Enabled": true,
+                                        "AddonType": 5,
+                                        "currentShape": 2,
+                                        "currentSpawn": 0,
+                                        "baseRadius": 1.0,
+                                        "coneAngle": 35.0,
+                                        "coneLength": 1.0,
+                                        "cubeSize": [
+                                            1.0,
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                ],
+                                "RenderPriority": 0,
+                                "blendingMode": 1,
+                                "colorIntensity": 0.875
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 6658129787094595743,
@@ -136258,7 +136916,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -146029,7 +146688,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -150393,7 +151053,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -151261,7 +151922,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -151576,7 +152238,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -151803,7 +152466,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -153209,7 +153873,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -162394,7 +163059,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -170022,7 +170687,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -195879,7 +196544,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -210094,7 +210760,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4779907166957855
+                        "CameraVFOV": 0.5270937085151672
                     }
                 ],
                 "Children": []
@@ -212711,6 +213377,126 @@
                 ],
                 "Children": [
                     14578948526892969764
+                ]
+            },
+            {
+                "UID": 2648971045936147349,
+                "ParentUID": 3408008172474305760,
+                "Name": "Destructible_Tributes_Jar01",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -112.78746032714844,
+                    0.0,
+                    1.0,
+                    0.0,
+                    3.4776554107666016,
+                    0.0,
+                    0.0,
+                    1.0,
+                    19.11469078063965,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12379252541985077612,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1124274426101180,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 15306407322218505228,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Destructible",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Max Health": 1,
+                                "Current Health": 1,
+                                "Invulnerable": false,
+                                "Dead": false,
+                                "Damage": 0,
+                                "Attack Range": -1.0,
+                                "Attack Duration": -1.0,
+                                "Attack Cooldown": -1.0,
+                                "Attack Hitbox Delay": 0.0,
+                                "Attack Hitbox Duration": 0.0,
+                                "Heal Cooldown": 1.0,
+                                "AI Chase Range": -1.0,
+                                "AI Attack Range": -1.0,
+                                "AI Max Detection Range": -1.0,
+                                "Player search duration": 5.0,
+                                "Mesh name": "",
+                                "On Hit VFX Duration": 0.10000000149011612,
+                                "On Hit Pivot Name": "OnHitPivot",
+                                "On Hit VFX 1": "OnHitVfx1",
+                                "On Hit VFX 2": "OnHitVfx2",
+                                "Destroyed mesh": "DestroyedMesh",
+                                "Destruction particle system": "PT_Destruction_Smoke",
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 2,
+                        "Radius": 0.6000000238418579,
+                        "Length": 0.5,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.5,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 15688025415499202570,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": [
+                    3159192822568933258,
+                    12147243443903355633
                 ]
             },
             {
@@ -224387,7 +225173,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -224837,7 +225624,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -225516,7 +226303,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -226634,7 +227421,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -227478,7 +228265,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -228271,7 +229059,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -229020,7 +229809,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -233537,7 +234327,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -233734,7 +234525,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -233844,7 +234636,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -234593,7 +235386,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -236069,7 +236863,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -269398,7 +270193,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -284811,7 +285606,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -288097,7 +288893,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -290168,7 +290965,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -291027,7 +291825,8 @@
                                 "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -292045,7 +292844,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -292676,7 +293475,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -293132,7 +293931,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -293812,7 +294611,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -294105,7 +294904,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -294359,7 +295158,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 10774247450366936408
+                                "Character": 0
                             }
                         ]
                     },
@@ -300144,7 +300943,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10799348913152388917,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -306063,6 +306862,49 @@
                     1.0
                 ],
                 "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 3159192822568933258,
+                "ParentUID": 2648971045936147349,
+                "Name": "DestroyedMesh",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17364152908222210105,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1135062528935504,
+                        "Material": 1304089432007967,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
                 "Children": []
             }
         ],
