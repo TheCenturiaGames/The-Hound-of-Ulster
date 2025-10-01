@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 5716871346957301199,
+        "VersionUID": 18241977269499859344,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 5716871346957301199,
+                "PrefabVersionUID": 18241977269499859344,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -42,7 +42,8 @@
                     2849091728319917028,
                     1837289647597498063,
                     8823081423046323238,
-                    3868016367549595572
+                    3868016367549595572,
+                    4054819321585419376
                 ]
             },
             {
@@ -385,7 +386,8 @@
                     16794962495237574802,
                     3973679485615354672,
                     13456473266325567871,
-                    6376078986242861414
+                    6376078986242861414,
+                    12206577652322465102
                 ]
             },
             {
@@ -600,6 +602,72 @@
                                 "Double sided": false,
                                 "Is One Shot": true,
                                 "Texture": 1293440460017741
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4054819321585419376,
+                "ParentUID": 3890225054250092079,
+                "Name": "RiastradSmoke",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10151127587455009717,
+                "LocalTransform": [
+                    7.071066856384277,
+                    -7.071068286895752,
+                    -0.000004470348358154297,
+                    0.0,
+                    -0.000006258487701416016,
+                    0.0,
+                    -10.0,
+                    2.5,
+                    7.071068286895752,
+                    7.071066856384277,
+                    -0.00000476837158203125,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13162367520930133321,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 6433018818956039719,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 270.0,
+                                "Cell height": 270.0,
+                                "Update Rate": 0.029999999329447746,
+                                "Row major": true,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Texture": 1218561399856290
                             }
                         ]
                     }
@@ -1484,6 +1552,72 @@
                 "Children": []
             },
             {
+                "UID": 12206577652322465102,
+                "ParentUID": 3494767918220471827,
+                "Name": "RiastradGroundExplosion",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 963343721837022186,
+                "LocalTransform": [
+                    5.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    5.0,
+                    0.0,
+                    0.10000000149011612,
+                    0.0,
+                    0.0,
+                    5.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14682481040355051042,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 1720540837379302782,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 216.0,
+                                "Cell height": 216.0,
+                                "Update Rate": 0.029999999329447746,
+                                "Row major": true,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Texture": 1235627578077974
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 58389137085688140,
                 "ParentUID": 2849091728319917028,
                 "Name": "QuadObject",
@@ -2342,7 +2476,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    0.15000000596046448,
                     0.0,
                     0.0,
                     1.0,
@@ -2376,7 +2510,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    0.10000000149011612,
                     0.0,
                     0.0,
                     1.0,
@@ -2410,7 +2544,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    0.10000000149011612,
                     0.0,
                     0.0,
                     1.0,
@@ -2778,7 +2912,7 @@
                         "ModelUID": 1442934734623441,
                         "SkinIndex": 0,
                         "ProduceShadows": true,
-                        "Additive": false
+                        "Additive": true
                     },
                     {
                         "UID": 14306370756386921362,
@@ -2886,7 +3020,7 @@
                         "ModelUID": 1442934734623441,
                         "SkinIndex": 1,
                         "ProduceShadows": true,
-                        "Additive": false
+                        "Additive": true
                     },
                     {
                         "UID": 11882251120918292271,
@@ -2994,7 +3128,7 @@
                         "ModelUID": 1442934734623441,
                         "SkinIndex": 2,
                         "ProduceShadows": true,
-                        "Additive": false
+                        "Additive": true
                     },
                     {
                         "UID": 2351980800991895855,
@@ -3102,7 +3236,7 @@
                         "ModelUID": 1442934734623441,
                         "SkinIndex": 3,
                         "ProduceShadows": true,
-                        "Additive": false
+                        "Additive": true
                     },
                     {
                         "UID": 298819977916717307,
