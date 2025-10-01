@@ -1,0 +1,1299 @@
+{
+    "StateMachine": {
+        "UID": 1725925740016938,
+        "Name": "PlayerSM",
+        "Triggers": [
+            "Idle",
+            "Walk",
+            "Attack",
+            "Ranged",
+            "Fall",
+            "Land",
+            "Death",
+            "Respawn",
+            "Dash",
+            "AttackEnd",
+            "Attack1",
+            "Attack2",
+            "Attack0",
+            "Ultimate",
+            "Charge",
+            "IdleBreak1",
+            "IdleBreak2",
+            "Heal",
+            "Transform",
+            "Hurt",
+            "Hit2",
+            "Hurt2"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 1583611059177285,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1555901362824640,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1546379296746282,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Hold",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1594159543637377,
+                "ClipName": "CH_EnemyArcher_walking",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1538463875313880,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Falling",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1539860318384358,
+                "ClipName": "ch_banshee_anim_shout_start",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1508582316097447,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1572253358779785,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1571290537903754,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Side",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1573845762573859,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1555994050920865,
+                "ClipName": "CH_Banshee_Anim_chase",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1599063586695627,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_RiastradTransfrom",
+                "ClipTime": 1.100000023841858,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1570447234795948,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Heal",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1567095702515157,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitNormal",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1547696372167228,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_1",
+                "ClipTime": 1.7000000476837158,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1577014427024987,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_2",
+                "ClipTime": 1.7000000476837158,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1589302847084802,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_3",
+                "ClipTime": 1.399999976158142,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1540594625730277,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Initial",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1569041536766205,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Run2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1508362286269015,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Final",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1530236908966386,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Dash",
+                "ClipTime": 2.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1564303224857880,
+                "ClipName": "CH_Banshee_Anim_hit",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1560472870599521,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Death",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1568366019769838,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Range",
+                "ClipTime": 2.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1503113728677048,
+                "ClipName": "ch_banshee_anim_Death",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1531989351438272,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Ultimate_Attack",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_26",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1511072297829126,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitHeavy",
+                "ClipTime": 1.0,
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle",
+                "Position": {
+                    "x": -310.0,
+                    "y": -50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Walk",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
+                "Position": {
+                    "x": -310.0,
+                    "y": -170.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Ranged",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Range",
+                "Position": {
+                    "x": 220.0,
+                    "y": 60.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Fall",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Falling",
+                "Position": {
+                    "x": -320.0,
+                    "y": 80.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Land",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
+                "Position": {
+                    "x": -340.0,
+                    "y": 160.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Death",
+                "Position": {
+                    "x": 240.0,
+                    "y": 170.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Respawn",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
+                "Position": {
+                    "x": 720.0,
+                    "y": 20.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Dash",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Dash",
+                "Position": {
+                    "x": 370.0,
+                    "y": -50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Attack_1",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_1",
+                "Position": {
+                    "x": -10.0,
+                    "y": -250.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Attack_2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_2",
+                "Position": {
+                    "x": 470.0,
+                    "y": -250.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Attack_3",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_3",
+                "Position": {
+                    "x": 950.0,
+                    "y": -250.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Ultimate",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Ultimate_Attack",
+                "Position": {
+                    "x": -20.0,
+                    "y": -400.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Charge",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Initial",
+                "Position": {
+                    "x": 240.0,
+                    "y": -150.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Charge_Hold",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Hold",
+                "Position": {
+                    "x": 760.0,
+                    "y": -150.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Charge_Release",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Final",
+                "Position": {
+                    "x": 1270.0,
+                    "y": -150.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Idle_Break_1",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Behind",
+                "Position": {
+                    "x": -940.0,
+                    "y": 110.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Idle_Break_2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Idle_Break_Side",
+                "Position": {
+                    "x": -940.0,
+                    "y": 30.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Heal",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Heal",
+                "Position": {
+                    "x": -660.0,
+                    "y": -290.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Transform",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_RiastradTransfrom",
+                "Position": {
+                    "x": -890.0,
+                    "y": 180.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Hurt",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitNormal",
+                "Position": {
+                    "x": -790.0,
+                    "y": -90.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Hit2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitHeavy",
+                "Position": {
+                    "x": -790.0,
+                    "y": -180.0
+                },
+                "Triggers": []
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack",
+                "Trigger": "Attack",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack",
+                "Trigger": "Attack",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Fall",
+                "ToState": "Land",
+                "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Respawn",
+                "Trigger": "Respawn",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Respawn",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Fall",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Death",
+                "ToState": "Respawn",
+                "Trigger": "Respawn",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "NewState_12",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Recovery",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Attack_2",
+                "Trigger": "Attack1",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Recovery",
+                "Trigger": "AttackEnd",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "NewState_12",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Attack_3",
+                "Trigger": "Attack2",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack_2",
+                "Trigger": "Attack1",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack_3",
+                "Trigger": "Attack2",
+                "InterpolationTime": 50
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "NewState_13",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Recovery",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "NewState_15",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charged_Attack",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Idle",
+                "Trigger": "AttackEnd",
+                "InterpolationTime": 100
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Idle",
+                "Trigger": "AttackEnd",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Idle",
+                "Trigger": "AttackEnd",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Charge_Hold",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "NewState_16",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Charge_Release",
+                "Trigger": "Attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Release",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Release",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Release",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "NewState_16",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Idle_Break_1",
+                "Trigger": "IdleBreak1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "NewState_17",
+                "Trigger": "Trigger",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Idle_Break_2",
+                "Trigger": "IdleBreak2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Ranged",
+                "Trigger": "Ranged",
+                "InterpolationTime": 0
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Charge",
+                "Trigger": "Charge",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack_2",
+                "Trigger": "Attack1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Attack_3",
+                "Trigger": "Attack2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Land",
+                "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Land",
+                "Trigger": "Land",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Ultimate",
+                "Trigger": "Ultimate",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Land",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Dash",
+                "Trigger": "Dash",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Heal",
+                "Trigger": "Heal",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Transform",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hurt",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Transform",
+                "Trigger": "Transform",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Heal",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Hit2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}

@@ -1,0 +1,188 @@
+{
+    "Scene": {
+        "UID": 13472115524489100656,
+        "Name": "SCENE_Level1Level2Loading",
+        "RootGameObject": 13456033149597576342,
+        "NavmeshUID": 0,
+        "Camera Position": [
+            -24.06644058227539,
+            16.757341384887695,
+            1.084241509437561
+        ],
+        "Camera Front": [
+            0.7345613241195679,
+            -0.6764642596244812,
+            -0.053065042942762375
+        ],
+        "Camera Up": [
+            0.6737684011459351,
+            0.7373337149620056,
+            -0.04873532056808472
+        ],
+        "WorldObjectsMask": 13,
+        "TriggerMask": 8,
+        "EnemyMask": 25,
+        "PlayerMask": 39,
+        "PlayerProjectileMask": 4,
+        "EnemyProjectileMask": 8,
+        "WallMask": 0,
+        "tags": [],
+        "tagsGO": [],
+        "GameObjects": [
+            {
+                "UID": 13456033149597576342,
+                "ParentUID": 0,
+                "Name": "SceneModule GameObject",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    15783730103916929042,
+                    5107556488626730192
+                ]
+            },
+            {
+                "UID": 15783730103916929042,
+                "ParentUID": 13456033149597576342,
+                "Name": "AsyncVideo",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16814912864411666492,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AsyncSceneLoading",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Use async loading": true,
+                                "Target Scene Name": "SCENE_Level2"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 8458674045215959169,
+                        "Type": 27,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Video",
+                        "Video Name": "Load2"
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5107556488626730192,
+                "ParentUID": 13456033149597576342,
+                "Name": "AsyncAudio",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17812855977708904585,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 2715237988,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": true
+                    },
+                    {
+                        "UID": 12170409610298926682,
+                        "Type": 19,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Listener"
+                    }
+                ],
+                "Children": []
+            }
+        ],
+        "Lights Config": {
+            "Ambient Color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Ambient Intensity": 0.20000000298023224,
+            "Skybox UID": 0
+        },
+        "Wind Config": {
+            "Apply wind globally": false,
+            "Wind direction": 0.0,
+            "Wind speed": 0.0,
+            "Gust frequency": 1.0,
+            "Gust speed": 0.0
+        }
+    }
+}
