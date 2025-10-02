@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1629817916870578,
-        "VersionUID": 9034968981847700326,
+        "VersionUID": 13553827171609245183,
         "Name": "PlayerFull",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1629817916870578,
-                "PrefabVersionUID": 9034968981847700326,
+                "PrefabVersionUID": 13553827171609245183,
                 "PrefabChildUID": 17108574683381294514,
                 "LocalTransform": [
                     1.0,
@@ -28,7 +28,7 @@
                     0.0,
                     0.0,
                     1.0,
-                    -39.294166564941406,
+                    -39.258514404296875,
                     0.0,
                     0.0,
                     0.0,
@@ -43,7 +43,8 @@
                     1837289647597498063,
                     8823081423046323238,
                     3868016367549595572,
-                    4054819321585419376
+                    4054819321585419376,
+                    11005259627429575034
                 ]
             },
             {
@@ -545,7 +546,7 @@
             {
                 "UID": 3868016367549595572,
                 "ParentUID": 3890225054250092079,
-                "Name": "DashSmoke",
+                "Name": "DashSmoke1",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -597,9 +598,9 @@
                                 "RenderType": 1,
                                 "Cell width": 135.0,
                                 "Cell height": 135.0,
-                                "Update Rate": 0.10000000149011612,
+                                "Update Rate": 0.014999999664723873,
                                 "Row major": true,
-                                "Double sided": false,
+                                "Double sided": true,
                                 "Is One Shot": true,
                                 "Texture": 1293440460017741
                             }
@@ -619,17 +620,17 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 10151127587455009717,
                 "LocalTransform": [
-                    4.9497456550598145,
-                    -4.949748516082764,
-                    -0.00024887919425964355,
+                    5.656853199005127,
+                    -5.656855583190918,
+                    -0.00003552436828613281,
                     0.0,
-                    -0.00018295642803423107,
-                    0.00016939640045166016,
-                    -7.0,
+                    -0.000028371810913085938,
+                    0.000020503997802734375,
+                    -8.000000953674316,
                     2.5,
-                    4.9497480392456055,
-                    4.949746131896973,
-                    -0.000009179115295410156,
+                    5.656855583190918,
+                    5.656854629516602,
+                    -0.0000057220458984375,
                     0.0,
                     0.0,
                     0.0,
@@ -668,6 +669,72 @@
                                 "Double sided": false,
                                 "Is One Shot": true,
                                 "Texture": 1218561399856290
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 11005259627429575034,
+                "ParentUID": 3890225054250092079,
+                "Name": "DashSmoke2",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14668080176711917251,
+                "LocalTransform": [
+                    1.7677667140960693,
+                    -1.767767071723938,
+                    -0.00002130866050720215,
+                    0.0,
+                    -0.000015720725059509277,
+                    0.00001430511474609375,
+                    -2.5,
+                    1.25,
+                    1.7677671909332275,
+                    1.7677667140960693,
+                    -8.940696716308594e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8668910046356265653,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 15902608548060458903,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 180.0,
+                                "Cell height": 180.0,
+                                "Update Rate": 0.014999999664723873,
+                                "Row major": true,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Texture": 1234226591882847
                             }
                         ]
                     }
@@ -716,7 +783,7 @@
                         "CameraPosition": [
                             -53.46188735961914,
                             28.049762725830078,
-                            -16.732166290283203
+                            -16.696514129638672
                         ],
                         "CameraFront": [
                             0.6067240834236145,
@@ -731,7 +798,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.6637897491455078
+                        "CameraVFOV": 0.41808608174324036
                     }
                 ],
                 "Children": []
