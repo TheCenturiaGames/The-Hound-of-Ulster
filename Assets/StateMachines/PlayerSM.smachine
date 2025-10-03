@@ -65,12 +65,6 @@
                 "Loop": false
             },
             {
-                "ClipUID": 1508582316097447,
-                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
-                "ClipTime": 1.0,
-                "Loop": false
-            },
-            {
                 "ClipUID": 1572253358779785,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
                 "ClipTime": 1.0,
@@ -140,7 +134,7 @@
                 "ClipUID": 1569041536766205,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_Run2",
                 "ClipTime": 1.0,
-                "Loop": false
+                "Loop": true
             },
             {
                 "ClipUID": 1508362286269015,
@@ -199,7 +193,7 @@
             {
                 "ClipUID": 1577501882838448,
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_RunRiastrad",
-                "ClipTime": 1.0,
+                "ClipTime": 2.0,
                 "Loop": true
             },
             {
@@ -219,6 +213,54 @@
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_Catch",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_32",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1508582316097447,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Landing",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1599756325954331,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GrabItem",
+                "ClipTime": 2.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_34",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1508032600567781,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_HoldThrow",
+                "ClipTime": 2.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1555404771177287,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_IdleRiastrad2",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1585686883076154,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_WalkNormal",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1578342653108991,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Chu_Walk_Pooka",
+                "ClipTime": 2.0,
+                "Loop": true
             }
         ],
         "States": [
@@ -233,7 +275,7 @@
             },
             {
                 "StateName": "Walk",
-                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Run",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Run2",
                 "Position": {
                     "x": -310.0,
                     "y": -170.0
@@ -241,11 +283,11 @@
                 "Triggers": []
             },
             {
-                "StateName": "Ranged",
-                "ClipName": "CH_MC_Chu_AllAnimations_AN_IdleRiastrad",
+                "StateName": "Ranged_Start",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_HoldThrow",
                 "Position": {
-                    "x": 220.0,
-                    "y": 60.0
+                    "x": 130.0,
+                    "y": 70.0
                 },
                 "Triggers": []
             },
@@ -280,8 +322,8 @@
                 "StateName": "Respawn",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
                 "Position": {
-                    "x": 720.0,
-                    "y": 20.0
+                    "x": 750.0,
+                    "y": 170.0
                 },
                 "Triggers": []
             },
@@ -289,7 +331,7 @@
                 "StateName": "Dash",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Dash",
                 "Position": {
-                    "x": 370.0,
+                    "x": 220.0,
                     "y": -50.0
                 },
                 "Triggers": []
@@ -413,10 +455,19 @@
             },
             {
                 "StateName": "Pick",
-                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_GrabItem",
                 "Position": {
                     "x": -280.0,
                     "y": -310.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Ranged_End",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Range",
+                "Position": {
+                    "x": 560.0,
+                    "y": 70.0
                 },
                 "Triggers": []
             }
@@ -457,18 +508,6 @@
                 "ToState": "Ranged",
                 "Trigger": "Ranged",
                 "InterpolationTime": 0
-            },
-            {
-                "FromState": "Ranged",
-                "ToState": "Idle",
-                "Trigger": "Idle",
-                "InterpolationTime": 50
-            },
-            {
-                "FromState": "Ranged",
-                "ToState": "Walk",
-                "Trigger": "Walk",
-                "InterpolationTime": 50
             },
             {
                 "FromState": "Walk",
@@ -538,12 +577,6 @@
             },
             {
                 "FromState": "Walk",
-                "ToState": "Death",
-                "Trigger": "Death",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Ranged",
                 "ToState": "Death",
                 "Trigger": "Death",
                 "InterpolationTime": 200
@@ -657,12 +690,6 @@
                 "InterpolationTime": 50
             },
             {
-                "FromState": "Ranged",
-                "ToState": "Attack_1",
-                "Trigger": "Attack0",
-                "InterpolationTime": 100
-            },
-            {
                 "FromState": "Idle",
                 "ToState": "NewState_13",
                 "Trigger": "Trigger",
@@ -772,12 +799,6 @@
             },
             {
                 "FromState": "Idle",
-                "ToState": "Charge",
-                "Trigger": "Charge",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Ranged",
                 "ToState": "Charge",
                 "Trigger": "Charge",
                 "InterpolationTime": 200
@@ -1059,12 +1080,6 @@
                 "InterpolationTime": 200
             },
             {
-                "FromState": "Ranged",
-                "ToState": "Ultimate",
-                "Trigger": "Ultimate",
-                "InterpolationTime": 200
-            },
-            {
                 "FromState": "Idle",
                 "ToState": "Land",
                 "Trigger": "Land",
@@ -1164,12 +1179,6 @@
                 "FromState": "Heal",
                 "ToState": "Death",
                 "Trigger": "Death",
-                "InterpolationTime": 200
-            },
-            {
-                "FromState": "Ranged",
-                "ToState": "Heal",
-                "Trigger": "Heal",
                 "InterpolationTime": 200
             },
             {
@@ -1350,6 +1359,102 @@
                 "FromState": "Pick",
                 "ToState": "Idle",
                 "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "PUT",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_2",
+                "ToState": "Ranged_Start",
+                "Trigger": "Ranged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Ranged_End",
+                "Trigger": "Ranged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Ranged_Start",
+                "Trigger": "Ranged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle_Break_1",
+                "ToState": "Ranged_Start",
+                "Trigger": "Ranged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Ranged_Start",
+                "Trigger": "Ranged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Attack_1",
+                "Trigger": "Attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_Start",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_End",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_End",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_End",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ranged_End",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Dash",
+                "ToState": "Ranged_Start",
+                "Trigger": "Ranged",
                 "InterpolationTime": 200
             }
         ]
