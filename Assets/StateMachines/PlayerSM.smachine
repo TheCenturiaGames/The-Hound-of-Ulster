@@ -24,7 +24,8 @@
             "Transform",
             "Hurt",
             "Hit2",
-            "Hurt2"
+            "Hurt2",
+            "Pick"
         ],
         "Clips": [
             {
@@ -194,6 +195,30 @@
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_GetHitHeavy",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 1577501882838448,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_RunRiastrad",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1512924493188250,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_IdleRiastrad",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_30",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1582444288965139,
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Catch",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -217,7 +242,7 @@
             },
             {
                 "StateName": "Ranged",
-                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Range",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_IdleRiastrad",
                 "Position": {
                     "x": 220.0,
                     "y": 60.0
@@ -383,6 +408,15 @@
                 "Position": {
                     "x": -790.0,
                     "y": -180.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Pick",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Combo_Attack_2",
+                "Position": {
+                    "x": -280.0,
+                    "y": -310.0
                 },
                 "Triggers": []
             }
@@ -1292,6 +1326,30 @@
                 "FromState": "Hit2",
                 "ToState": "Death",
                 "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Pick",
+                "Trigger": "Pick",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Walk",
+                "ToState": "Pick",
+                "Trigger": "Pick",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Pick",
+                "ToState": "Walk",
+                "Trigger": "Walk",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Pick",
+                "ToState": "Idle",
+                "Trigger": "Idle",
                 "InterpolationTime": 200
             }
         ]
