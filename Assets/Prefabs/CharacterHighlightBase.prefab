@@ -1,11 +1,11 @@
 {
     "Prefab": {
-        "UID": 1603214201346423,
-        "VersionUID": 1049201226357972868,
+        "UID": 1631749004883854,
+        "VersionUID": 1567705187105521883,
         "Name": "CharacterHighlightBase",
         "GameObjects": [
             {
-                "UID": 14194617031154150711,
+                "UID": 3397592364344912180,
                 "ParentUID": 8823869308913623498,
                 "Name": "CharacterHighlightBase",
                 "Mobility": 0,
@@ -13,22 +13,21 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1603214201346423,
-                "PrefabVersionUID": 1049201226357972868,
-                "PrefabChildUID": 2233071621564187942,
+                "PrefabVersionUID": 1567705187105521883,
+                "PrefabChildUID": 4940764584046561453,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -29.773237228393555,
+                    30.794710159301758,
                     0.0,
                     1.0,
                     0.0,
-                    7.167015075683594,
+                    5.828798770904541,
                     0.0,
                     0.0,
                     1.0,
-                    -19.05793571472168,
+                    -1.9811738729476929,
                     0.0,
                     0.0,
                     0.0,
@@ -36,20 +35,20 @@
                 ],
                 "Components": [],
                 "Children": [
-                    61782254906355466,
-                    8863093123673187692
+                    12670590325068364180,
+                    1813999002441998519
                 ]
             },
             {
-                "UID": 61782254906355466,
-                "ParentUID": 14194617031154150711,
+                "UID": 12670590325068364180,
+                "ParentUID": 3397592364344912180,
                 "Name": "CharacterHighlight",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8844479631985336065,
+                "PrefabChildUID": 2668506544609176016,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -70,7 +69,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11075506601224698810,
+                        "UID": 4248872074597099263,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -82,14 +81,15 @@
                                 "WasEnabled": true,
                                 "Player": "walk",
                                 "Player camera pivot": "Camera Pivot",
-                                "Character to highlight": "CH_Pooka_Idle",
-                                "Target spline points offset": 0.8500000238418579,
-                                "Zoom multiplier": 30.0
+                                "Character to highlight": "NewSoldier_Highlight",
+                                "Highlight focus": "NewSoldier_Highlight_FocusPt",
+                                "Target spline points offset": 2.0,
+                                "Zoom multiplier": 25.0
                             }
                         ]
                     },
                     {
-                        "UID": 10019329401674476277,
+                        "UID": 12006599951717662354,
                         "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -116,7 +116,7 @@
                         ]
                     },
                     {
-                        "UID": 15194432080456740300,
+                        "UID": 14165984365111149324,
                         "Type": 22,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -150,7 +150,7 @@
                                     0.0,
                                     1.0
                                 ],
-                                "Speed": 0.8679999709129333
+                                "Speed": 1.0
                             },
                             {
                                 "Pos": [
@@ -164,7 +164,21 @@
                                     0.0,
                                     1.0
                                 ],
-                                "Speed": 0.4020000100135803
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
                             }
                         ]
                     }
@@ -172,15 +186,15 @@
                 "Children": []
             },
             {
-                "UID": 8863093123673187692,
-                "ParentUID": 14194617031154150711,
+                "UID": 1813999002441998519,
+                "ParentUID": 3397592364344912180,
                 "Name": "CameraTarget",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 46297087718061956,
+                "PrefabChildUID": 14544150769152672592,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -201,7 +215,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2200400237816274967,
+                        "UID": 17181083642664419846,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -211,7 +225,7 @@
                                 "Script Name": "MoveGOInSpline",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Speed Factor": 5.25,
+                                "Speed Factor": 4.0,
                                 "PingPong effect": true
                             }
                         ]
