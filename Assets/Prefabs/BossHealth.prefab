@@ -1,0 +1,274 @@
+{
+    "Prefab": {
+        "UID": 1636048779295945,
+        "VersionUID": 2772882895384475313,
+        "Name": "BossHealth",
+        "GameObjects": [
+            {
+                "UID": 16978288505217222191,
+                "ParentUID": 5131951258922761410,
+                "Name": "BossHealth",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1636048779295945,
+                "PrefabVersionUID": 2772882895384475313,
+                "PrefabChildUID": 1490472022225392520,
+                "LocalTransform": [
+                    0.5,
+                    0.0,
+                    0.0,
+                    -200.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    360.0,
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4272697765386599490,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -200.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1204.0,
+                            176.0
+                        ],
+                        "Pivot": [
+                            0.0,
+                            1.0
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            1.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 7840917764276857661,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1272498915582832,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    3563038212945018848,
+                    4228168102540448428
+                ]
+            },
+            {
+                "UID": 3563038212945018848,
+                "ParentUID": 16978288505217222191,
+                "Name": "BossHealthBarFill",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7517256718777924423,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    602.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -80.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6833369518183407850,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -501.0,
+                            408.0
+                        ],
+                        "Size": [
+                            932.0,
+                            39.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 1270004036240703141,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1254066904072875,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 5816925486115912700,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "RiastradBarFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Transition Time": 0.75,
+                                "Wave Amplitude": 0.0,
+                                "Wave Frequency": 0.0,
+                                "Wave Speed": 0.0,
+                                "Texture Start": 0.0,
+                                "Texture End": 932.0,
+                                "Texture Width": 932.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4228168102540448428,
+                "ParentUID": 16978288505217222191,
+                "Name": "BossArmorBarFill",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7517256718777924423,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    602.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -80.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15540640957361279820,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -501.0,
+                            408.0
+                        ],
+                        "Size": [
+                            932.0,
+                            39.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 8433742073177394934,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1212826416231761,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 18363140982526448197,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "RiastradBarFill",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Transition Time": 0.75,
+                                "Wave Amplitude": 0.0,
+                                "Wave Frequency": 0.0,
+                                "Wave Speed": 0.0,
+                                "Texture Start": 0.0,
+                                "Texture End": 932.0,
+                                "Texture Width": 932.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
