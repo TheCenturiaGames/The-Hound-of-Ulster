@@ -13,7 +13,8 @@
             "detectPlayer",
             "patrol",
             "search",
-            "cheer"
+            "cheer",
+            "death2"
         ],
         "Clips": [
             {
@@ -201,6 +202,18 @@
                 "ClipName": "BaseEnemyAllAnimationsFinal_Thrust1",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_31",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1534656224347004,
+                "ClipName": "FinalSoldier_Death2",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -253,7 +266,7 @@
                 "StateName": "Death",
                 "ClipName": "BaseEnemyAllAnimationsFinal_Death1",
                 "Position": {
-                    "x": 1170.0,
+                    "x": 1180.0,
                     "y": 170.0
                 },
                 "Triggers": []
@@ -300,6 +313,15 @@
                 "Position": {
                     "x": 30.0,
                     "y": 50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death2",
+                "ClipName": "FinalSoldier_Death2",
+                "Position": {
+                    "x": 1340.0,
+                    "y": 250.0
                 },
                 "Triggers": []
             }
@@ -723,6 +745,78 @@
                 "FromState": "Cheer",
                 "ToState": "Death",
                 "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Death2",
+                "Trigger": "death2",
                 "InterpolationTime": 200
             }
         ]
