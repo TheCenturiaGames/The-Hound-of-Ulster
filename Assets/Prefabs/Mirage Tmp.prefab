@@ -1,0 +1,217 @@
+{
+    "Prefab": {
+        "UID": 1658341386384325,
+        "VersionUID": 16525262317861050429,
+        "Name": "Mirage Tmp",
+        "GameObjects": [
+            {
+                "UID": 17230770145881326674,
+                "ParentUID": 6788591387451538717,
+                "Name": "Mirage Tmp",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1658341386384325,
+                "PrefabVersionUID": 16525262317861050429,
+                "PrefabChildUID": 17688330900069575787,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -10.576175689697266,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.5248180627822876,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -59.06174087524414,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    3790893924426149552,
+                    4102003484753412411
+                ]
+            },
+            {
+                "UID": 3790893924426149552,
+                "ParentUID": 17230770145881326674,
+                "Name": "mirage_plane_border",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17355473729550032530,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11799398553076348131,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1153405191492123,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    }
+                ],
+                "Children": [
+                    9426407002720828557
+                ]
+            },
+            {
+                "UID": 4102003484753412411,
+                "ParentUID": 17230770145881326674,
+                "Name": "mirage_fire",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5872077883380114188,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5421479963866116017,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1186506669520222,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 1755279723048509015,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MirageVFX",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.09000000357627869,
+                                "Additive": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9426407002720828557,
+                "ParentUID": 3790893924426149552,
+                "Name": "mirage_plane_arrow",
+                "Mobility": 1,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9651704916636373163,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8004139256207462230,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1107453137624891,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true
+                    },
+                    {
+                        "UID": 3442469362531573737,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVPostScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.10000000149011612,
+                                "Moving UV Direction": [
+                                    -1.0,
+                                    0.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}

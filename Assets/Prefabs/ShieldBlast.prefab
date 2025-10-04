@@ -1,0 +1,403 @@
+{
+    "Prefab": {
+        "UID": 1695253108237125,
+        "VersionUID": 15767525311883126774,
+        "Name": "ShieldBlast",
+        "GameObjects": [
+            {
+                "UID": 5022323757356082860,
+                "ParentUID": 505130474230277025,
+                "Name": "ShieldBlast",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabVersionUID": 15767525311883126774,
+                "PrefabChildUID": 7898003301822477895,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9999939799308777,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    8.5,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    2042608913815889452,
+                    1375528746741742295,
+                    15153041952156570346,
+                    16687724000580681167,
+                    9217443131385168740
+                ]
+            },
+            {
+                "UID": 2042608913815889452,
+                "ParentUID": 5022323757356082860,
+                "Name": "BlastShield_1",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14538915866485950350,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.03264617919921875,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -0.0,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 339171278522674359,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1165119560054577,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1375528746741742295,
+                "ParentUID": 5022323757356082860,
+                "Name": "BlastShield_2",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 791521813621293609,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    -5.208056750617696e-13,
+                    4.199309303065668e-12,
+                    0.0,
+                    5.208057292718782e-13,
+                    1.0,
+                    -8.881785255792436e-16,
+                    0.0,
+                    -4.199309303065668e-12,
+                    8.881784197001252e-16,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6187175892300212069,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1107009996499806,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 5,
+                        "Radius": 0.5000143051147461,
+                        "Length": 14.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            -1.570796012878418,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 7920851652666199372,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.5,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 15153041952156570346,
+                "ParentUID": 5022323757356082860,
+                "Name": "BlackLights",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 977414593498646708,
+                "LocalTransform": [
+                    -1.0,
+                    5.642599489874556e-7,
+                    -3.2584154041614966e-7,
+                    -0.000141143798828125,
+                    5.642597216137801e-7,
+                    1.0,
+                    5.642599489874556e-7,
+                    0.0000050067901611328125,
+                    3.258418814766628e-7,
+                    5.642597216137801e-7,
+                    -1.0,
+                    0.4140782356262207,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 1612024723860582553,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1140338500664057,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 12696977129192020048,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.5,
+                                "Moving UV Direction": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16687724000580681167,
+                "ParentUID": 5022323757356082860,
+                "Name": "SphereEnergy",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4019427774991207711,
+                "LocalTransform": [
+                    -1.0000001192092896,
+                    0.0,
+                    -3.2584142672931193e-7,
+                    0.0,
+                    0.0,
+                    1.000006079673767,
+                    0.0,
+                    0.04273343086242676,
+                    3.2584142672931193e-7,
+                    -0.0,
+                    -1.0000001192092896,
+                    -0.09697961807250977,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5301941943788213975,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1192795949809468,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 3215276302231247786,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.0,
+                                "Moving UV Direction": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 9217443131385168740,
+                "ParentUID": 5022323757356082860,
+                "Name": "BlackExpansion",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16598825300679001009,
+                "LocalTransform": [
+                    -1.0000001192092896,
+                    0.0,
+                    -3.2584142672931193e-7,
+                    0.0,
+                    0.0,
+                    1.000006079673767,
+                    0.0,
+                    0.0,
+                    3.2584142672931193e-7,
+                    -0.0,
+                    -1.0000001192092896,
+                    -0.23952388763427734,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11835700291009108548,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1128083755452392,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 16030526679094831651,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.2999999523162842,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}

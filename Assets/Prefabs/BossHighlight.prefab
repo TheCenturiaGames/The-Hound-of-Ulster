@@ -1,0 +1,224 @@
+{
+    "Prefab": {
+        "UID": 1685774530963488,
+        "VersionUID": 5184755288916556258,
+        "Name": "BossHighlight",
+        "GameObjects": [
+            {
+                "UID": 10794629079902896772,
+                "ParentUID": 6788591387451538717,
+                "Name": "BossHighlight",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1685774530963488,
+                "PrefabVersionUID": 5184755288916556258,
+                "PrefabChildUID": 15752276826999251087,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -34.245086669921875,
+                    0.0,
+                    1.0,
+                    0.0,
+                    3.7432777881622314,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -63.411251068115234,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    13245619028981215331,
+                    2955370307995943422
+                ]
+            },
+            {
+                "UID": 13245619028981215331,
+                "ParentUID": 10794629079902896772,
+                "Name": "CharacterHighlight",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15031830126126367638,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.2700614929199219,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 9009551932634627787,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "HighlightCharacter",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Player": "walk",
+                                "Player camera pivot": "Camera Pivot",
+                                "Character to highlight": "CH_Ferdiad_anim",
+                                "Target spline points offset": 0.8500000238418579,
+                                "Zoom multiplier": 25.0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 6296803338031480317,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            2.0,
+                            3.0,
+                            3.0
+                        ]
+                    },
+                    {
+                        "UID": 5433071924905208980,
+                        "Type": 22,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Spline",
+                        "Alpha": 0.5,
+                        "Loop": false,
+                        "Points": [
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    10.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    23.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2955370307995943422,
+                "ParentUID": 10794629079902896772,
+                "Name": "CameraTarget",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5062671110823043569,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 11236069950642155790,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MoveGOInSpline",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed Factor": 5.0,
+                                "PingPong effect": true
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
