@@ -1,0 +1,189 @@
+{
+    "Prefab": {
+        "UID": 1694366569009709,
+        "VersionUID": 4561898333804462593,
+        "Name": "OverheadPrepare",
+        "GameObjects": [
+            {
+                "UID": 17535897346857066753,
+                "ParentUID": 11507286314706200762,
+                "Name": "OverheadPrepare",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabUID": 1694366569009709,
+                "PrefabVersionUID": 4561898333804462593,
+                "PrefabChildUID": 11773331737793221837,
+                "LocalTransform": [
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0000001192092896,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    8402460043676704307,
+                    3250181508910097548
+                ]
+            },
+            {
+                "UID": 8402460043676704307,
+                "ParentUID": 17535897346857066753,
+                "Name": "Cyl_Charger",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3159845496378979820,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.10000000149011612,
+                    0.0,
+                    0.0,
+                    0.9999998807907104,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16262819103581890074,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1154809900744196,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 13164651604383072841,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.6000000238418579,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.800000011920929
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 3250181508910097548,
+                "ParentUID": 17535897346857066753,
+                "Name": "Cyl_Charger_Lights",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10998545496868072598,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.15000000596046448,
+                    0.0,
+                    0.0,
+                    0.9999998807907104,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7163025765194315319,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1163058625637811,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 2626332653677146122,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.5,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -0.800000011920929
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
