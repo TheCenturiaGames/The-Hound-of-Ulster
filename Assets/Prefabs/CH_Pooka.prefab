@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1651962939496799,
-        "VersionUID": 18057573441480796906,
+        "VersionUID": 5388643057985426075,
         "Name": "CH_Pooka",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabUID": 1651962939496799,
-                "PrefabVersionUID": 18057573441480796906,
+                "PrefabVersionUID": 5388643057985426075,
                 "PrefabChildUID": 4510538574399980475,
                 "LocalTransform": [
                     1.0,
@@ -46,7 +46,9 @@
                     262082688880208133,
                     1603928841267131240,
                     13107634422350056282,
-                    10917559676626814598
+                    10917559676626814598,
+                    12165621503142601904,
+                    12215350265227735096
                 ]
             },
             {
@@ -208,7 +210,6 @@
                     18350899779411805354,
                     4316155077775330844,
                     9185447623236727961,
-                    12165621503142601904,
                     10926107079271272075
                 ]
             },
@@ -606,7 +607,7 @@
                     -0.0000016093254089355469,
                     -0.000001430511474609375,
                     -1.4999998807907104,
-                    0.6000000238418579,
+                    0.5999999046325684,
                     1.0606602430343628,
                     1.0606600046157837,
                     -0.0000021457672119140625,
@@ -647,8 +648,12 @@
                                 "Row major": true,
                                 "Double sided": false,
                                 "Is One Shot": true,
-                                "Look At Camera": false,
-                                "Texture": 1297393906319061
+                                "Texture": 1297393906319061,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -714,8 +719,154 @@
                                 "Row major": true,
                                 "Double sided": false,
                                 "Is One Shot": true,
-                                "Look At Camera": false,
-                                "Texture": 1217881199727236
+                                "Texture": 1217881199727236,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12165621503142601904,
+                "ParentUID": 2689131144383600691,
+                "Name": "VFX_Dash",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9532527215795581706,
+                "LocalTransform": [
+                    -0.000002503395535313757,
+                    -1.2000001668930054,
+                    -2.503395251096663e-7,
+                    0.0,
+                    -0.000002458692051732214,
+                    7.152557657263969e-8,
+                    -1.2000001668930054,
+                    0.43541955947875977,
+                    1.5000004768371582,
+                    -0.0000018596649624669226,
+                    -0.0000021457672119140625,
+                    -0.7912921905517578,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10205275985479358255,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 8797835728626160950,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 215.0,
+                                "Cell height": 172.0,
+                                "Update Rate": 0.03200000151991844,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Texture": 1278624713916515,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12215350265227735096,
+                "ParentUID": 2689131144383600691,
+                "Name": "VFX_Dig",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10892615669894808928,
+                "LocalTransform": [
+                    1.0606601238250732,
+                    -1.0606603622436523,
+                    -4.470348358154297e-8,
+                    0.0,
+                    -3.129243850708008e-7,
+                    -3.5762786865234375e-7,
+                    -1.5,
+                    0.6000000238418579,
+                    1.0606603622436523,
+                    1.0606601238250732,
+                    -3.5762786865234375e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17894005726624173725,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 10128593143679473724,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 214.8000030517578,
+                                "Cell height": 215.0,
+                                "Update Rate": 0.05000000074505806,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Texture": 1267660479308811,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -1081,75 +1232,12 @@
                                 "Row major": false,
                                 "Double sided": true,
                                 "Is One Shot": true,
-                                "Look At Camera": false,
-                                "Texture": 1217551722224851
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 12165621503142601904,
-                "ParentUID": 3278530530689062,
-                "Name": "VFX_Dash",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 9532527215795581706,
-                "LocalTransform": [
-                    -0.000002503395535313757,
-                    -1.2000001668930054,
-                    -2.503395251096663e-7,
-                    0.0,
-                    -0.000002458692051732214,
-                    7.152557657263969e-8,
-                    -1.2000001668930054,
-                    0.43541955947875977,
-                    1.5000004768371582,
-                    -0.0000018596649624669226,
-                    -0.0000021457672119140625,
-                    -0.7912921905517578,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10205275985479358255,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    },
-                    {
-                        "UID": 8797835728626160950,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 215.0,
-                                "Cell height": 172.0,
-                                "Update Rate": 0.03200000151991844,
-                                "Row major": true,
-                                "Double sided": true,
-                                "Is One Shot": true,
-                                "Look At Camera": false,
-                                "Texture": 1278624713916515
+                                "Texture": 1217551722224851,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -1266,9 +1354,9 @@
                 "Components": [],
                 "Children": [
                     6040467447203012479,
-                    6663196844013638541,
-                    14576063331548172266,
-                    3642528449790916719
+                    15974267132984108921,
+                    9150333952646005067,
+                    4653768305885793845
                 ]
             },
             {
@@ -1314,7 +1402,7 @@
                     }
                 ],
                 "Children": [
-                    10437714484171963849
+                    14359323240036715399
                 ]
             },
             {
@@ -2072,8 +2160,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": true,
-                                "Look At Camera": false,
-                                "Texture": 1217059037128114
+                                "Texture": 1217059037128114,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2133,14 +2225,18 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 246.2729949951172,
-                                "Cell height": 420.8580017089844,
+                                "Cell width": 118.0,
+                                "Cell height": 202.0,
                                 "Update Rate": 0.03200000151991844,
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1264900150250840,
+                                "Number of variations to use": 2,
+                                "Variation 1": 1259305992552794,
+                                "Variation 2": 1206387494601203,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2192,7 +2288,7 @@
                 "Children": []
             },
             {
-                "UID": 6663196844013638541,
+                "UID": 15974267132984108921,
                 "ParentUID": 9675065802825613325,
                 "Name": "VFX_DashTrail",
                 "Mobility": 0,
@@ -2200,153 +2296,19 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7416021444466859437,
+                "PrefabChildUID": 13471522409955982132,
                 "LocalTransform": [
                     0.6577847599983215,
-                    0.23941421508789063,
-                    0.0,
+                    0.239414244890213,
+                    -7.117987621541033e-8,
                     1.25,
-                    1.668930025289228e-7,
-                    -4.172325134277344e-7,
-                    -1.194199800491333,
-                    0.800000011920929,
-                    -0.23941421508789063,
-                    0.6577847599983215,
-                    -7.117986342564109e-7,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 18264270160399113636,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    },
-                    {
-                        "UID": 6598892706640396931,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 246.2729949951172,
-                                "Cell height": 420.8580017089844,
-                                "Update Rate": 0.03200000151991844,
-                                "Row major": true,
-                                "Double sided": true,
-                                "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 14576063331548172266,
-                "ParentUID": 9675065802825613325,
-                "Name": "VFX_DashTrail",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 8512869349338408645,
-                "LocalTransform": [
-                    0.6577847599983215,
-                    0.23941422998905182,
-                    -3.5589938107705166e-8,
-                    0.0,
                     3.5464762504489045e-7,
-                    -0.0000010013581004386651,
-                    -1.194200038909912,
-                    0.800000011920929,
-                    -0.23941421508789063,
-                    0.6577848196029663,
-                    -0.000001850676767389814,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 5701681308935861668,
-                        "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Mesh",
-                        "Mesh": 1165703895193424,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    },
-                    {
-                        "UID": 2833593147731401348,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "AttackVfxSpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 1,
-                                "Cell width": 246.2729949951172,
-                                "Cell height": 420.8580017089844,
-                                "Update Rate": 0.03200000151991844,
-                                "Row major": true,
-                                "Double sided": true,
-                                "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 3642528449790916719,
-                "ParentUID": 9675065802825613325,
-                "Name": "VFX_DashTrail",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 21644473470722856,
-                "LocalTransform": [
-                    0.6577847599983215,
-                    0.23941422998905182,
-                    -3.558993455499149e-8,
-                    -1.25,
-                    6.571411859113141e-7,
-                    -0.0000019192696072423132,
-                    -1.1942001581192017,
+                    -0.0000010848045803868445,
+                    -1.1942002773284912,
                     0.800000011920929,
                     -0.23941422998905182,
-                    0.6577848196029663,
-                    -0.0000034166337172791827,
+                    0.6577848792076111,
+                    -0.000001993036448766361,
                     0.0,
                     0.0,
                     0.0,
@@ -2355,7 +2317,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 17978373265658121334,
+                        "UID": 7643133912694405180,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
@@ -2367,7 +2329,7 @@
                         "Additive": false
                     },
                     {
-                        "UID": 4394764389664232401,
+                        "UID": 14839736171946579035,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2378,14 +2340,18 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 246.2729949951172,
-                                "Cell height": 420.8580017089844,
+                                "Cell width": 118.0,
+                                "Cell height": 202.0,
                                 "Update Rate": 0.03200000151991844,
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1264900150250840,
+                                "Number of variations to use": 2,
+                                "Variation 1": 1259305992552794,
+                                "Variation 2": 1206387494601203,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2393,7 +2359,149 @@
                 "Children": []
             },
             {
-                "UID": 10437714484171963849,
+                "UID": 9150333952646005067,
+                "ParentUID": 9675065802825613325,
+                "Name": "VFX_DashTrail",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13471522409955982132,
+                "LocalTransform": [
+                    0.6577847599983215,
+                    0.239414244890213,
+                    -7.117987621541033e-8,
+                    0.0,
+                    3.5464762504489045e-7,
+                    -0.0000010848045803868445,
+                    -1.1942002773284912,
+                    0.800000011920929,
+                    -0.23941422998905182,
+                    0.6577848792076111,
+                    -0.000001993036448766361,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10455636251574119549,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 2145515112109414176,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 118.0,
+                                "Cell height": 202.0,
+                                "Update Rate": 0.03200000151991844,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1264900150250840,
+                                "Number of variations to use": 2,
+                                "Variation 1": 1259305992552794,
+                                "Variation 2": 1206387494601203,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4653768305885793845,
+                "ParentUID": 9675065802825613325,
+                "Name": "VFX_DashTrail",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13471522409955982132,
+                "LocalTransform": [
+                    0.6577847599983215,
+                    0.239414244890213,
+                    -7.117987621541033e-8,
+                    -1.25,
+                    3.5464762504489045e-7,
+                    -0.0000010848045803868445,
+                    -1.1942002773284912,
+                    0.800000011920929,
+                    -0.23941422998905182,
+                    0.6577848792076111,
+                    -0.000001993036448766361,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3376560324483290893,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 11381109112460997935,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 118.0,
+                                "Cell height": 202.0,
+                                "Update Rate": 0.03200000151991844,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Texture": 1264900150250840,
+                                "Number of variations to use": 2,
+                                "Variation 1": 1259305992552794,
+                                "Variation 2": 1206387494601203,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14359323240036715399,
                 "ParentUID": 9843196917096998437,
                 "Name": "VFX_DashTrail",
                 "Mobility": 0,
@@ -2401,19 +2509,19 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3966964594832248307,
+                "PrefabChildUID": 13471522409955982132,
                 "LocalTransform": [
                     0.6577847599983215,
-                    0.23941421508789063,
+                    0.239414244890213,
+                    -7.117987621541033e-8,
                     0.0,
-                    0.0,
-                    1.2516974834397843e-7,
-                    -3.337860050578456e-7,
-                    -1.194199800491333,
+                    3.5464762504489045e-7,
+                    -0.0000010848045803868445,
+                    -1.1942002773284912,
                     0.800000011920929,
-                    -0.23941421508789063,
-                    0.6577847599983215,
-                    -5.694388960364449e-7,
+                    -0.23941422998905182,
+                    0.6577848792076111,
+                    -0.000001993036448766361,
                     0.0,
                     0.0,
                     0.0,
@@ -2422,7 +2530,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7885425114406224908,
+                        "UID": 2943719397575164633,
                         "Type": 1,
                         "Enabled": false,
                         "WasEnabled": false,
@@ -2434,7 +2542,7 @@
                         "Additive": false
                     },
                     {
-                        "UID": 17719152686299212203,
+                        "UID": 9452898034505349265,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -2445,14 +2553,18 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 246.2729949951172,
-                                "Cell height": 420.8580017089844,
+                                "Cell width": 118.0,
+                                "Cell height": 202.0,
                                 "Update Rate": 0.03200000151991844,
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1264900150250840,
+                                "Number of variations to use": 2,
+                                "Variation 1": 1259305992552794,
+                                "Variation 2": 1206387494601203,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2518,8 +2630,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2629,8 +2745,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2696,8 +2816,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2763,8 +2887,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2830,8 +2958,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -2897,8 +3029,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3008,8 +3144,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3075,8 +3215,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3142,8 +3286,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3209,8 +3357,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3276,8 +3428,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3387,8 +3543,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3454,8 +3614,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3521,8 +3685,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
@@ -3588,8 +3756,12 @@
                                 "Row major": true,
                                 "Double sided": true,
                                 "Is One Shot": false,
-                                "Look At Camera": false,
-                                "Texture": 1257837949854949
+                                "Texture": 1257837949854949,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
                             }
                         ]
                     }
