@@ -5,19 +5,19 @@
         "RootGameObject": 8823869308913623498,
         "NavmeshUID": 2024566865993265,
         "Camera Position": [
-            90.58932495117188,
-            15.80990219116211,
-            -36.70399856567383
+            12.171466827392578,
+            21.366527557373047,
+            8.368698120117188
         ],
         "Camera Front": [
-            0.491263747215271,
-            -0.3862853944301605,
-            -0.7806686758995056
+            0.3002626597881317,
+            -0.5364678502082825,
+            -0.788698136806488
         ],
         "Camera Up": [
-            0.20504562556743622,
-            0.922889232635498,
-            -0.3259320855140686
+            0.19042550027370453,
+            0.8446305990219116,
+            -0.5003372430801392
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -33,49 +33,26 @@
             "ExitArea",
             "ArcherArea",
             "Wood",
-            "Rock"
+            "Rock",
+            "MainAreaUltimate"
         ],
         "tagsGO": [
             [
                 12650215936964645878,
-                17556547691082771926,
-                16166533279489006592,
-                2491453762471283723,
-                4637637577468588325,
-                3389060612814910631,
-                5100853576701654961,
                 7313562943641484747,
-                1314307204610003504,
-                10377806999995255478,
-                5635216188162758675,
-                3698463832285296170,
-                11543045980324564284,
-                3711635791375315982,
                 11214339984461530428,
-                15516591993372686264,
-                7409211216749306424,
-                747428668262197629,
-                8250465511957772967,
-                2900403671078402185,
-                16135094803268544619,
-                13491769991389762926,
-                3906288393538000248,
-                11629544016586197170,
-                4320704784612540619,
-                7951862218653518310,
-                11387132583905890240,
-                18269973698839025906
-            ],
-            [],
-            [
-                7313562943641484747,
-                11214339984461530428
-            ],
-            [
-                12650215936964645878,
                 13491769991389762926
             ],
             [],
+            [
+                7313562943641484747
+            ],
+            [
+                12650215936964645878
+            ],
+            [
+                13491769991389762926
+            ],
             [],
             [
                 4197881834398873565,
@@ -125,6 +102,9 @@
                 1805447918950903172,
                 434566148747360332,
                 2044188641279490528
+            ],
+            [
+                11214339984461530428
             ]
         ],
         "GameObjects": [
@@ -253,7 +233,9 @@
                     12885444345608045324,
                     17980534901903524481,
                     16367962741227435699,
-                    3890225054250092079
+                    3890225054250092079,
+                    8220135524635419960,
+                    18101109035212377502
                 ]
             },
             {
@@ -13132,6 +13114,79 @@
                 "Children": []
             },
             {
+                "UID": 8068789182707993834,
+                "ParentUID": 10652746229044303156,
+                "Name": "MAIN_AREA_ULTIMATE",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    20.297910690307617,
+                    0.0,
+                    1.0,
+                    0.0,
+                    6.848195552825928,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -11.821380615234375,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2785214624992217765,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "PlayerLocationScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Location tag": "MainAreaUltimate"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 1339287525879142408,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 3,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            9.850000381469727,
+                            4.900000095367432,
+                            13.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 6634414706390888637,
                 "ParentUID": 1359763504491058511,
                 "Name": "grp_Upper_R_01",
@@ -16154,7 +16209,7 @@
                         ]
                     },
                     {
-                        "UID": 7914303052827478117,
+                        "UID": 12216466029918311840,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -32842,6 +32897,49 @@
                 "Children": []
             },
             {
+                "UID": 8373040380839044480,
+                "ParentUID": 9408953621979721699,
+                "Name": "EN_Rock_Wall_2x2_03",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.20571084320545197,
+                    0.30709415674209595,
+                    0.9290897846221924,
+                    -7.663841247558594,
+                    0.06717763096094131,
+                    -0.9516583681106567,
+                    0.2996330261230469,
+                    -8.510903358459473,
+                    0.9761947989463806,
+                    0.0007760119624435902,
+                    -0.21641941368579865,
+                    -8.51947021484375,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17207659892276410751,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1117338309580264,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 15220048316301875633,
                 "ParentUID": 13688293382782872230,
                 "Name": "PR_Torch02",
@@ -32886,49 +32984,6 @@
                     11940709811831883930,
                     3614455710530776197
                 ]
-            },
-            {
-                "UID": 8373040380839044480,
-                "ParentUID": 9408953621979721699,
-                "Name": "EN_Rock_Wall_2x2_03",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.20571084320545197,
-                    0.30709415674209595,
-                    0.9290897846221924,
-                    -7.663841247558594,
-                    0.06717763096094131,
-                    -0.9516583681106567,
-                    0.2996330261230469,
-                    -8.510903358459473,
-                    0.9761947989463806,
-                    0.0007760119624435902,
-                    -0.21641941368579865,
-                    -8.51947021484375,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 17207659892276410751,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1117338309580264,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 11758570709534306474,
@@ -42772,7 +42827,7 @@
                     0.0,
                     0.0,
                     1.0,
-                    -10.875283241271973,
+                    -11.821380615234375,
                     0.0,
                     0.0,
                     0.0,
@@ -42818,7 +42873,7 @@
                         "Size": [
                             9.850000381469727,
                             4.900000095367432,
-                            12.449999809265137
+                            13.0
                         ]
                     }
                 ],
@@ -47502,7 +47557,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 6568966620294751309,
+                        "UID": 912741890417344253,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -52902,6 +52957,82 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 18101109035212377502,
+                "ParentUID": 8823869308913623498,
+                "Name": "UltimateAttackSpawner",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    16.327960968017578,
+                    0.0,
+                    1.0,
+                    0.0,
+                    6.175291538238525,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -6.188462734222412,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 399635322173300665,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "EnemySpawnerScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Prefab UID": 1682242295416412,
+                                "Location Tag": "MainAreaUltimate",
+                                "Spawn Once": true,
+                                "Enemies to Spawn": 5
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 15959546576858062449,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            -6.0,
+                            4.0,
+                            -22.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            3.0,
+                            3.0,
+                            3.0
+                        ]
                     }
                 ],
                 "Children": []
@@ -60050,92 +60181,6 @@
                 "Children": []
             },
             {
-                "UID": 13037776995518263276,
-                "ParentUID": 8257732899109873785,
-                "Name": "EN_Sides_small_wall_ThickSide",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -7.056235062918859e-7,
-                    -0.9998546242713928,
-                    -0.01443701796233654,
-                    1.177009105682373,
-                    -0.7435789108276367,
-                    0.009654445573687553,
-                    -0.6685822606086731,
-                    -11.806892395019531,
-                    0.6686213612556458,
-                    0.010734470561146736,
-                    -0.74346524477005,
-                    2.597362518310547,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12828698000013010571,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1103770139766765,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 6774654215994103489,
-                "ParentUID": 8257732899109873785,
-                "Name": "EN_Tutorail_Pillar_02.001",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -0.029518676921725273,
-                    -0.7977855205535889,
-                    0.0015818009851500392,
-                    0.9861898422241211,
-                    -0.7397602796554565,
-                    0.01658722013235092,
-                    -0.67255038022995,
-                    6.280033111572266,
-                    0.6722251772880554,
-                    -0.016769472509622574,
-                    -0.7400469183921814,
-                    -9.389142990112305,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 3129814499461599556,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1168210292801467,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 8694968275860664483,
                 "ParentUID": 7066964657432929277,
                 "Name": "PR_Rocks_DecorativeScaled_wind_v01",
@@ -60213,6 +60258,92 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1151794692014466,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 6774654215994103489,
+                "ParentUID": 8257732899109873785,
+                "Name": "EN_Tutorail_Pillar_02.001",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -0.029518676921725273,
+                    -0.7977855205535889,
+                    0.0015818009851500392,
+                    0.9861898422241211,
+                    -0.7397602796554565,
+                    0.01658722013235092,
+                    -0.67255038022995,
+                    6.280033111572266,
+                    0.6722251772880554,
+                    -0.016769472509622574,
+                    -0.7400469183921814,
+                    -9.389142990112305,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3129814499461599556,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1168210292801467,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13037776995518263276,
+                "ParentUID": 8257732899109873785,
+                "Name": "EN_Sides_small_wall_ThickSide",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -7.056235062918859e-7,
+                    -0.9998546242713928,
+                    -0.01443701796233654,
+                    1.177009105682373,
+                    -0.7435789108276367,
+                    0.009654445573687553,
+                    -0.6685822606086731,
+                    -11.806892395019531,
+                    0.6686213612556458,
+                    0.010734470561146736,
+                    -0.74346524477005,
+                    2.597362518310547,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12828698000013010571,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1103770139766765,
                         "Material": 0,
                         "RenderMode": 0,
                         "ProduceShadows": true,
@@ -66932,15 +67063,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    68.12237548828125,
+                    10.836872100830078,
                     0.0,
                     1.0,
                     0.0,
-                    9.766351699829102,
+                    6.64528226852417,
                     0.0,
                     0.0,
                     1.0,
-                    -27.330928802490234,
+                    -10.64356517791748,
                     0.0,
                     0.0,
                     0.0,
@@ -79522,7 +79653,8 @@
                 "Children": [
                     15165569784559938805,
                     4682650242986416781,
-                    6158540477433583802
+                    6158540477433583802,
+                    8068789182707993834
                 ]
             },
             {
@@ -131636,9 +131768,9 @@
                         "SeePreview": true,
                         "CameraType": 0,
                         "CameraPosition": [
-                            45.56037139892578,
-                            28.865352630615234,
-                            -4.768928527832031
+                            -11.72513198852539,
+                            25.74428367614746,
+                            11.918435096740723
                         ],
                         "CameraFront": [
                             0.6067240834236145,
@@ -131653,7 +131785,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.4473937451839447
+                        "CameraVFOV": 0.506834089756012
                     }
                 ],
                 "Children": []
@@ -138156,37 +138288,6 @@
                 ]
             },
             {
-                "UID": 9371883407451558565,
-                "ParentUID": 1846785634915574975,
-                "Name": "jnt_pelt_end",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 10978099123945625376,
-                "LocalTransform": [
-                    -2.384220181284036e-7,
-                    1.0000218152999878,
-                    -8.642829243399319e-7,
-                    5.07669684068901e-9,
-                    -0.11187849193811417,
-                    -8.344832167495042e-7,
-                    -0.9937399625778198,
-                    0.17365187406539917,
-                    -0.9937363862991333,
-                    -1.4901486622420634e-7,
-                    0.11187885701656342,
-                    0.00234054122120142,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
                 "UID": 3604583705615657064,
                 "ParentUID": 18410676247782327935,
                 "Name": "tol_jnt_spike_1",
@@ -138217,6 +138318,37 @@
                 "Children": [
                     5544139694086793617
                 ]
+            },
+            {
+                "UID": 9371883407451558565,
+                "ParentUID": 1846785634915574975,
+                "Name": "jnt_pelt_end",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10978099123945625376,
+                "LocalTransform": [
+                    -2.384220181284036e-7,
+                    1.0000218152999878,
+                    -8.642829243399319e-7,
+                    5.07669684068901e-9,
+                    -0.11187849193811417,
+                    -8.344832167495042e-7,
+                    -0.9937399625778198,
+                    0.17365187406539917,
+                    -0.9937363862991333,
+                    -1.4901486622420634e-7,
+                    0.11187885701656342,
+                    0.00234054122120142,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 280289955976310658,
@@ -142790,7 +142922,7 @@
                                 "Script Name": "MagicBarrier",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Area tag": "MainArea"
+                                "Area tag": "MainAreaUltimate"
                             }
                         ]
                     },
@@ -151436,6 +151568,82 @@
                     12055748239563393373,
                     3607358015992298752
                 ]
+            },
+            {
+                "UID": 8220135524635419960,
+                "ParentUID": 8823869308913623498,
+                "Name": "MeeleAttackSpawner",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    21.025381088256836,
+                    0.0,
+                    1.0,
+                    0.0,
+                    6.175291061401367,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -11.822126388549805,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4672901832053621241,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "EnemySpawnerScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Prefab UID": 1682242295416412,
+                                "Location Tag": "MainArea",
+                                "Spawn Once": true,
+                                "Enemies to Spawn": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 13402701242386395284,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 0,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            19.0,
+                            0.0,
+                            16.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            3.0,
+                            3.0,
+                            3.0
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 9617876230895789516,
