@@ -21,7 +21,9 @@
             "BlastCharge",
             "BlastHit",
             "WaterSpoutHit",
-            "WaterSpoutCharge"
+            "WaterSpoutCharge",
+            "GetHit1",
+            "GetHit2"
         ],
         "Clips": [
             {
@@ -365,6 +367,30 @@
                 "ClipName": "CH_Ferdiad_anim_Water_Sprout_Hit",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_57",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1546939349459231,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_59",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1570311119793657,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -372,8 +398,8 @@
                 "StateName": "Idle",
                 "ClipName": "CH_Ferdiad_anim_idle_base",
                 "Position": {
-                    "x": -20.0,
-                    "y": 0.0
+                    "x": 380.0,
+                    "y": -110.0
                 },
                 "Triggers": []
             },
@@ -462,8 +488,8 @@
                 "StateName": "Taunt",
                 "ClipName": "CH_Ferdiad_anim_idle_taunt",
                 "Position": {
-                    "x": 30.0,
-                    "y": -100.0
+                    "x": 340.0,
+                    "y": 60.0
                 },
                 "Triggers": []
             },
@@ -471,8 +497,8 @@
                 "StateName": "Run",
                 "ClipName": "CH_Ferdiad_anim_Run",
                 "Position": {
-                    "x": 350.0,
-                    "y": 0.0
+                    "x": 380.0,
+                    "y": -20.0
                 },
                 "Triggers": []
             },
@@ -536,6 +562,24 @@
                 "Position": {
                     "x": 420.0,
                     "y": -260.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit1",
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1",
+                "Position": {
+                    "x": 810.0,
+                    "y": -100.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit2",
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2",
+                "Position": {
+                    "x": 820.0,
+                    "y": -10.0
                 },
                 "Triggers": []
             }
@@ -1187,6 +1231,30 @@
                 "FromState": "WaterSpoutCharge",
                 "ToState": "Taunt",
                 "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit1",
+                "Trigger": "GetHit1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit2",
+                "Trigger": "GetHit2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
                 "InterpolationTime": 200
             }
         ]
