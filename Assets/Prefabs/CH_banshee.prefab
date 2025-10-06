@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1651609802231761,
-        "VersionUID": 17669450613573481250,
+        "VersionUID": 13318688228584826848,
         "Name": "CH_banshee",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1651609802231761,
-                "PrefabVersionUID": 17669450613573481250,
+                "PrefabVersionUID": 13318688228584826848,
                 "PrefabChildUID": 1364327797273638419,
                 "LocalTransform": [
                     1.0,
@@ -164,7 +164,7 @@
                     8220297091039126750,
                     5228821384133079352,
                     5260172082683998975,
-                    14558687089670094729
+                    4223157911910186710
                 ]
             },
             {
@@ -413,7 +413,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 12821814481785505869,
                 "LocalTransform": [
@@ -457,7 +457,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 12551871574692514917,
                 "LocalTransform": [
@@ -501,7 +501,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 17769101491715816380,
                 "LocalTransform": [
@@ -545,7 +545,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 14649397698141104770,
                 "LocalTransform": [
@@ -589,7 +589,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 18070777523151918961,
                 "LocalTransform": [
@@ -901,7 +901,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 16752093078912177437,
                 "LocalTransform": [
@@ -996,7 +996,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 5676369771599692151,
                 "LocalTransform": [
@@ -1056,7 +1056,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 8438858613216758490,
                 "LocalTransform": [
@@ -1090,7 +1090,7 @@
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 12551871574692514917,
                 "LocalTransform": [
@@ -1128,334 +1128,40 @@
                 "Children": []
             },
             {
-                "UID": 14558687089670094729,
+                "UID": 4223157911910186710,
                 "ParentUID": 2021725774294176341,
-                "Name": "PS_BansheeDeath",
+                "Name": "VFX_Death_Spritesheet",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16966405924800107719,
+                "PrefabChildUID": 9877521434784530556,
                 "LocalTransform": [
-                    1.0,
+                    -1.1920930376163597e-7,
                     0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.902945339679718,
+                    0.9999998807907104,
                     0.0,
                     0.0,
                     1.0,
+                    0.0,
+                    1.1501457691192627,
+                    -1.0,
+                    0.0,
+                    -1.1920928244535389e-7,
                     0.0,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [
-                    {
-                        "UID": 6423141445244704716,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "PS_Banshee_Death",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "DeathRing",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1259679658766199,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 0.699999988079071,
-                                        "Loop": false,
-                                        "particlesPerSecond": 15,
-                                        "MaxParticles": 1,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.800000011920929,
-                                        "randomizeSizeCombined": false,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.0,
-                                            3.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": true,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 2,
-                                        "Columns": 3,
-                                        "AnimationSpeed": 5.0,
-                                        "RandomizeTiles": false
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 0,
-                                "colorIntensity": 1.0
-                            },
-                            {
-                                "EmitterTag": "DeathSmoke",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1249543495651135,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 0.699999988079071,
-                                        "Loop": false,
-                                        "particlesPerSecond": 15,
-                                        "MaxParticles": 1,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.800000011920929,
-                                        "randomizeSizeCombined": false,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.0,
-                                            3.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 2,
-                                        "Columns": 4,
-                                        "AnimationSpeed": 7.0,
-                                        "RandomizeTiles": false
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 0,
-                                "colorIntensity": 1.0
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
+                "Components": [],
+                "Children": [
+                    4567151438837708700,
+                    12539927463576527502,
+                    15252415916383686114,
+                    523120047380241405
+                ]
             },
             {
                 "UID": 15340424268017304439,
@@ -1730,6 +1436,294 @@
                                 "Fade Out": false,
                                 "Fade Out Time": 0.0,
                                 "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4567151438837708700,
+                "ParentUID": 4223157911910186710,
+                "Name": "XZ_Circles",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 12861500622909029019,
+                "LocalTransform": [
+                    4.999987602233887,
+                    0.0015052087837830186,
+                    0.009294824674725533,
+                    0.0,
+                    6.652482731350773e-11,
+                    0.7771769165992737,
+                    -3.1464133262634277,
+                    0.0,
+                    -0.011959720402956009,
+                    0.6292804479598999,
+                    3.885874032974243,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8819205083507165371,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 10367233529650643043,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 500.0,
+                                "Cell height": 500.0,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 3,
+                                "Use animation duration": true,
+                                "Animation Duration": 1.0399999618530273,
+                                "Texture": 1259679658766199
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12539927463576527502,
+                "ParentUID": 4223157911910186710,
+                "Name": "XY_Circles",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 5601118212197483342,
+                "LocalTransform": [
+                    -0.0000010408432444819482,
+                    -1.306214869600808e-7,
+                    -5.000004291534424,
+                    0.0,
+                    3.3103384971618652,
+                    0.7494444251060486,
+                    -0.0000014901173699399806,
+                    0.0,
+                    3.747218370437622,
+                    -0.6620676517486572,
+                    2.9802350809404743e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5521734088533656873,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 9657683809893103925,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 500.0,
+                                "Cell height": 500.0,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 3,
+                                "Use animation duration": true,
+                                "Animation Duration": 1.0399999618530273,
+                                "Texture": 1259679658766199
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 15252415916383686114,
+                "ParentUID": 4223157911910186710,
+                "Name": "XZ_Smoke",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13726192827203768286,
+                "LocalTransform": [
+                    4.999987602233887,
+                    0.0015052087837830186,
+                    0.009294824674725533,
+                    0.0,
+                    6.652482731350773e-11,
+                    0.7771769165992737,
+                    -3.1464133262634277,
+                    0.0,
+                    -0.011959720402956009,
+                    0.6292804479598999,
+                    3.885874032974243,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6524809083742195666,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 11828829739498056269,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 500.0,
+                                "Cell height": 500.0,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 4,
+                                "Use animation duration": true,
+                                "Animation Duration": 1.0399999618530273,
+                                "Texture": 1249543495651135
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 523120047380241405,
+                "ParentUID": 4223157911910186710,
+                "Name": "XY_Smoke",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2083180313588658169,
+                "LocalTransform": [
+                    -0.0000010408432444819482,
+                    -1.306214869600808e-7,
+                    -5.000004291534424,
+                    0.0,
+                    3.3103384971618652,
+                    0.7494444251060486,
+                    -0.0000014901173699399806,
+                    0.0,
+                    3.747218370437622,
+                    -0.6620676517486572,
+                    2.9802350809404743e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2371035392971262624,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 14703350225301751200,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 500.0,
+                                "Cell height": 500.0,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 4,
+                                "Use animation duration": true,
+                                "Animation Duration": 1.0399999618530273,
+                                "Texture": 1249543495651135
                             }
                         ]
                     }
