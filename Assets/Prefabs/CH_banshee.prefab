@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1651609802231761,
-        "VersionUID": 10654665346030118277,
+        "VersionUID": 4998427430389376031,
         "Name": "CH_banshee",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1651609802231761,
-                "PrefabVersionUID": 10654665346030118277,
+                "PrefabVersionUID": 4998427430389376031,
                 "PrefabChildUID": 1364327797273638419,
                 "LocalTransform": [
                     1.0,
@@ -70,6 +70,7 @@
                                     1.0,
                                     1.5
                                 ],
+                                "Teleport VFX duration": 0.5,
                                 "Attack Angular Speed": 3.200000047683716,
                                 "Main scream duration": 2.0,
                                 "Warning duration": 0.6000000238418579,
@@ -165,7 +166,8 @@
                     5228821384133079352,
                     5260172082683998975,
                     4223157911910186710,
-                    12198431951595813506
+                    12198431951595813506,
+                    802583805760021784
                 ]
             },
             {
@@ -1199,6 +1201,41 @@
                 ]
             },
             {
+                "UID": 802583805760021784,
+                "ParentUID": 2021725774294176341,
+                "Name": "VFX_Teleport_Spritesheet",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 3280350230481327955,
+                "LocalTransform": [
+                    1.0000008344650269,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.0742487907409668,
+                    0.0,
+                    0.0,
+                    1.0000008344650269,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    16645148270289594428,
+                    12481844446657094323,
+                    1044621106364423436
+                ]
+            },
+            {
                 "UID": 15340424268017304439,
                 "ParentUID": 14120571994867681393,
                 "Name": "jnt_root",
@@ -1903,6 +1940,222 @@
                                 "Use animation duration": false,
                                 "Animation Duration": 0.10000000149011612,
                                 "Texture": 1278284579283050
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16645148270289594428,
+                "ParentUID": 802583805760021784,
+                "Name": "Smoke_1",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 18261106388959809897,
+                "LocalTransform": [
+                    2.9999969005584717,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    2.999997615814209,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7727479233502311527,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 7813445814780875961,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 0.10000000149011612,
+                                "Cell height": 0.10000000149011612,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 4,
+                                "Use animation duration": true,
+                                "Animation Duration": 0.5,
+                                "Texture": 1257566398023708
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 12481844446657094323,
+                "ParentUID": 802583805760021784,
+                "Name": "Smoke_2",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 18261106388959809897,
+                "LocalTransform": [
+                    -0.000001072882469088654,
+                    -2.999999761581421,
+                    0.0,
+                    0.0,
+                    2.9999966621398926,
+                    -0.0000010728834922701935,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    3.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17683439252458292890,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 10756873420432940745,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 0.10000000149011612,
+                                "Cell height": 0.10000000149011612,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 4,
+                                "Use animation duration": true,
+                                "Animation Duration": 0.5,
+                                "Texture": 1257566398023708
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1044621106364423436,
+                "ParentUID": 802583805760021784,
+                "Name": "Smoke_3",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 18261106388959809897,
+                "LocalTransform": [
+                    2.9999969005584717,
+                    -1.0658141036401503e-14,
+                    -2.6822101517609553e-7,
+                    -0.0020613670349121094,
+                    -2.6822075938071066e-7,
+                    -0.0000010728836059570313,
+                    -3.0,
+                    0.0,
+                    -6.394877845577324e-14,
+                    3.0,
+                    -0.0000010728836059570313,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8925431302388066998,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 14660776092764467205,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 0.10000000149011612,
+                                "Cell height": 0.10000000149011612,
+                                "Update Rate": 0.10000000149011612,
+                                "Row major": true,
+                                "Double sided": true,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 2,
+                                "Colums": 4,
+                                "Use animation duration": true,
+                                "Animation Duration": 0.5,
+                                "Texture": 1257566398023708
                             }
                         ]
                     }
