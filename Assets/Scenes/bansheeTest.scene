@@ -5,19 +5,19 @@
         "RootGameObject": 10538405280947958420,
         "NavmeshUID": 2006188584490643,
         "Camera Position": [
-            -13.03563117980957,
-            10.924752235412598,
-            -0.002952772192656994
+            -8.037125587463379,
+            6.050779342651367,
+            2.665438175201416
         ],
         "Camera Front": [
-            0.7572330832481384,
-            -0.6446762084960938,
-            0.10483710467815399
+            0.8231160044670105,
+            -0.48177504539489746,
+            -0.3006207048892975
         ],
         "Camera Up": [
-            0.6375182867050171,
-            0.7653689980506897,
-            0.08820926398038864
+            0.45135512948036194,
+            0.8769768476486206,
+            -0.16489440202713013
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -231,10 +231,10 @@
                                 "Only Once": false,
                                 "Use row columns": true,
                                 "Rows": 2,
-                                "Colums": 4,
-                                "Use animation duration": true,
-                                "Animation Duration": 0.5,
-                                "Texture": 1257566398023708
+                                "Colums": 2,
+                                "Use animation duration": false,
+                                "Animation Duration": 0.10000000149011612,
+                                "Texture": 1278284579283050
                             }
                         ]
                     }
@@ -276,39 +276,6 @@
                 ]
             },
             {
-                "UID": 8992789279730721731,
-                "ParentUID": 9220513799309153050,
-                "Name": "jnt_Tail_L_Outer_02",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 8195889972511959157,
-                "LocalTransform": [
-                    0.9861836433410645,
-                    -0.13904966413974762,
-                    -0.09003929793834686,
-                    0.24580222368240356,
-                    0.14430652558803558,
-                    0.9880174994468689,
-                    0.05474530905485153,
-                    -5.511532208402059e-8,
-                    0.08134809136390686,
-                    -0.06698217988014221,
-                    0.9944324493408203,
-                    5.878341369225382e-9,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    8217064418617600497
-                ]
-            },
-            {
                 "UID": 10269396741956391632,
                 "ParentUID": 1288545006230211223,
                 "Name": "ctrl_spear_spine_2",
@@ -339,6 +306,39 @@
                 "Components": [],
                 "Children": [
                     7198479370776940716
+                ]
+            },
+            {
+                "UID": 8992789279730721731,
+                "ParentUID": 9220513799309153050,
+                "Name": "jnt_Tail_L_Outer_02",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 8195889972511959157,
+                "LocalTransform": [
+                    0.9861836433410645,
+                    -0.13904966413974762,
+                    -0.09003929793834686,
+                    0.24580222368240356,
+                    0.14430652558803558,
+                    0.9880174994468689,
+                    0.05474530905485153,
+                    -5.511532208402059e-8,
+                    0.08134809136390686,
+                    -0.06698217988014221,
+                    0.9944324493408203,
+                    5.878341369225382e-9,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    8217064418617600497
                 ]
             },
             {
@@ -3878,10 +3878,10 @@
                                 "Only Once": false,
                                 "Use row columns": true,
                                 "Rows": 2,
-                                "Colums": 4,
-                                "Use animation duration": true,
-                                "Animation Duration": 0.5,
-                                "Texture": 1257566398023708
+                                "Colums": 2,
+                                "Use animation duration": false,
+                                "Animation Duration": 0.10000000149011612,
+                                "Texture": 1278284579283050
                             }
                         ]
                     }
@@ -4638,7 +4638,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.2980462312698364
+                        "CameraVFOV": 0.4389505684375763
                     }
                 ],
                 "Children": []
@@ -12632,7 +12632,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1651609802231761,
-                "PrefabVersionUID": 8703756161917211328,
+                "PrefabVersionUID": 8878291957930302858,
                 "PrefabChildUID": 1364327797273638419,
                 "LocalTransform": [
                     1.0,
@@ -16432,7 +16432,7 @@
             {
                 "UID": 11895375830307188166,
                 "ParentUID": 3627697339414626666,
-                "Name": "PS_BansheeHit",
+                "Name": "PS_BansheeChase",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
@@ -16470,18 +16470,18 @@
                                 "EmitterTag": "Smoke",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1278284579283050,
+                                "Texture": 1231237957496905,
                                 "Addons": [
                                     {
                                         "Enabled": true,
                                         "AddonType": 1,
-                                        "Duration": 0.5,
-                                        "Loop": false,
-                                        "particlesPerSecond": 15,
-                                        "MaxParticles": 10,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.5,
+                                        "Duration": 1.0,
+                                        "Loop": true,
+                                        "particlesPerSecond": 3,
+                                        "MaxParticles": 12,
+                                        "RandomLifetime": true,
+                                        "MinLifetime": 0.20000000298023224,
+                                        "MaxLifetime": 1.0,
                                         "randomizeSizeCombined": false,
                                         "randomizeSizeX": false,
                                         "randomizeSizeY": false,
@@ -16523,22 +16523,22 @@
                                             0.0
                                         ],
                                         "randomRotation": false,
-                                        "burst": true,
-                                        "respawnLoop": false,
+                                        "burst": false,
+                                        "respawnLoop": true,
                                         "MaxCurveEditorPoints": 10,
                                         "curveEditorPoints": [
                                             0.0,
                                             0.0,
-                                            0.20000000298023224,
-                                            1.0,
+                                            0.2824999988079071,
+                                            0.4100000262260437,
+                                            0.41749998927116394,
+                                            0.19999998807907104,
+                                            0.7475000023841858,
+                                            0.42000001668930054,
                                             1.0,
                                             0.02000001072883606,
                                             -10000.0,
                                             0.20000000298023224,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
                                             0.6000000238418579,
                                             0.6000000238418579,
                                             0.699999988079071,
@@ -16711,14 +16711,6 @@
                                     },
                                     {
                                         "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 2,
-                                        "Columns": 2,
-                                        "AnimationSpeed": 6.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
                                         "AddonType": 5,
                                         "currentShape": 0,
                                         "currentSpawn": 0,
@@ -16726,9 +16718,9 @@
                                         "coneAngle": 35.0,
                                         "coneLength": 1.0,
                                         "cubeSize": [
-                                            0.4000000059604645,
+                                            0.6499999761581421,
                                             1.0,
-                                            0.5
+                                            0.6399999856948853
                                         ]
                                     }
                                 ],
@@ -17314,10 +17306,10 @@
                                 "Only Once": false,
                                 "Use row columns": true,
                                 "Rows": 2,
-                                "Colums": 4,
-                                "Use animation duration": true,
-                                "Animation Duration": 0.5,
-                                "Texture": 1257566398023708
+                                "Colums": 2,
+                                "Use animation duration": false,
+                                "Animation Duration": 0.10000000149011612,
+                                "Texture": 1278284579283050
                             }
                         ]
                     }
