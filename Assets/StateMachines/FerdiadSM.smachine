@@ -25,7 +25,8 @@
             "GetHit1",
             "GetHit2",
             "GetHit1Behind",
-            "GetHit2Behind"
+            "GetHit2Behind",
+            "Death"
         ],
         "Clips": [
             {
@@ -555,6 +556,18 @@
                 "ClipName": "ferdiad_gltf_combo_attack3",
                 "ClipTime": 1.0,
                 "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_88",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580616816959685,
+                "ClipName": "ferdiad_gltf_Death",
+                "ClipTime": 1.0,
+                "Loop": false
             }
         ],
         "States": [
@@ -762,6 +775,15 @@
                 "Position": {
                     "x": 810.0,
                     "y": 130.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "ferdiad_gltf_Death",
+                "Position": {
+                    "x": 900.0,
+                    "y": -260.0
                 },
                 "Triggers": []
             }
@@ -1509,6 +1531,192 @@
                 "FromState": "GetHit2Behind",
                 "ToState": "Idle",
                 "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutCharge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Charge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Start",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Charge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Prepare",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Jump",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Dash",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Land",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Attack",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Death",
+                "Trigger": "Death",
                 "InterpolationTime": 200
             }
         ]
