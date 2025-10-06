@@ -1,6 +1,1288 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}" SchemaVersion="123">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Music" ID="{78DBC98B-74AE-4801-B2E7-01C9DEAA41F5}" ShortID="140443744">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{E0C8725D-22F0-46B1-8BB7-A983EEBEFE74}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{6603C0F5-337D-4922-A203-610E62292482}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{9D785295-97E4-43A1-90F0-1B1B29B9E35F}" ShortID="426082856">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="83509.8958333333"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{326B699F-92BA-4F70-BAAC-C925BC948AB9}" ShortID="439555360">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{8BBCF443-5B80-42E0-9FE9-F2681E50EC4A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{2617E669-14D3-4C28-B55D-C19355D0778B}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_KM1_Tutorial_Morrígan.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="461746489"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{DB92F643-D3DD-4247-AFB4-521F73614034}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{91400F8B-D41F-49E7-8208-17486AB6E154}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="83509.8958333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{2617E669-14D3-4C28-B55D-C19355D0778B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{4806E180-4692-4F64-91D7-AAAD3ECC4244}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E23F4636-569A-409F-B706-A7CDBF0A3B1C}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="83509.8958333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg" ID="{2FE080E1-FD5B-435B-8296-CD23644417B1}" ShortID="1038168570">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="16019.2083333333"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg" ID="{D587B554-138D-48F8-94FF-19F42E754F3D}" ShortID="194560412">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{AA7F2D55-F3D4-4462-BCD9-1F41F1B0617F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg" ID="{9103A625-5DCE-4D42-AAD9-E210CF8940EA}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="247316819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F24E426F-AB79-4915-8C5E-E6505F277677}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg" ID="{9B700A80-0347-4DAB-A77C-B8159B2B2D4A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="16019.2083333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_KM2_Tutorial_Gáe Bolg" ID="{9103A625-5DCE-4D42-AAD9-E210CF8940EA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{6003FCA3-801E-43EE-A390-6717FD87250F}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{0B08411D-3BCA-4EBE-A655-DDAF396F953D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="16019.2083333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M1 y M2_Tutorial" ID="{3067E068-8D75-4611-8F35-3B6CB878D5ED}" ShortID="1072177200">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="163000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M1 y M2_Tutorial" ID="{F69C8F2A-11E6-4E6A-94CD-E1FFF32B5169}" ShortID="790182189">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{276144E7-C0D7-44AC-AF32-725110C9FA1C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M1 y M2_Tutorial" ID="{619E3BFF-4FA5-47C4-8E11-FDF2D4DC0A0A}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M1 y M2_Tutorial.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="560296172"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C897BEF3-8BD2-4025-9BCB-C47D17EC6FBB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M1 y M2_Tutorial" ID="{08093C3E-53D2-4AE1-87FB-FB8EE1E1C21D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="163000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M1 y M2_Tutorial" ID="{619E3BFF-4FA5-47C4-8E11-FDF2D4DC0A0A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{2699DD37-66DF-4C54-A61C-E2769B1044A8}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{1D291835-5515-4FE4-ABD4-B5F5500378F5}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="163000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M1_Tutorial_Exp" ID="{913A37BC-8725-4556-ABA6-5E0E0EC03792}" ShortID="659957299">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="56000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M1_Tutorial_Exp" ID="{71F19D79-714E-492F-8D7F-45FF6B2179AD}" ShortID="993853934">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C47DDC6C-3061-4D27-BA12-6F4F89F4D570}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M1_Tutorial_Exp" ID="{F257904C-C035-4058-AF09-4B2066FCD42E}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M1_Tutorial_Exp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581319862"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8E134720-A5CC-4568-89B4-6142FF8DCD6A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M1_Tutorial_Exp" ID="{05E345FC-DE13-4A59-9A50-6A6192B4CDCF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="56000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M1_Tutorial_Exp" ID="{F257904C-C035-4058-AF09-4B2066FCD42E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{C9BF0FB8-993D-4523-897E-2D4D1C73EFCE}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{460C4D0C-80BF-4AAC-B3B1-5CE239714A77}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="56000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M2_Tutorial_Com" ID="{C8783F34-60CA-48DB-B7D5-7772E249449F}" ShortID="175577657">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="115000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M2_Tutorial_Com" ID="{378BAA97-CDE0-424E-8B44-DB594E9834D7}" ShortID="1051895782">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{0C1A9C04-9DDB-4AAF-B8E4-A671935FF89C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M2_Tutorial_Com" ID="{1C113310-613A-4F2A-AE22-6D847141022E}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M2_Tutorial_Com.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="437752506"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2282E9ED-1EC1-4A0C-899D-2F0807A7EF1E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M2_Tutorial_Com" ID="{B8067792-D856-4577-B9BE-8D49C8712376}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="115000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M2_Tutorial_Com" ID="{1C113310-613A-4F2A-AE22-6D847141022E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{FD42ACDF-3D23-468D-A191-3C83CD66FECF}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E7CFB7A1-305B-4D51-945A-490E0EE8BB9D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="115000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{3D8144C5-3642-4166-BA8F-E3B926225F62}" ShortID="860769792">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="15000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{A4B96410-5942-4BAC-8DEE-44A1FDBFBD5B}" ShortID="754625526">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{4FB870C1-41C1-46A5-BDA4-FF68225758F0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{FCFB4BC9-5DC8-40C3-A4D8-B659B49FBE1B}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="214167100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5E2C15F7-7A31-4FCF-BE97-0870C16DCFF6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{3F7E3C2C-9E7A-451F-A868-93575E5603AE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="15000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{FCFB4BC9-5DC8-40C3-A4D8-B659B49FBE1B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{961FC338-A506-48E3-8C5F-B6D486F2B2B4}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{5E0A4BDD-38D6-47DB-9A2A-84E82EC91207}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="15000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M1_LVL 1_Exploration" ID="{45A4DD7A-05AA-4F8F-B781-08CB0B480979}" ShortID="442814597">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="49500"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M1_LVL 1_Exploration" ID="{F9F982C6-AD93-4BA2-B089-707F8C297F70}" ShortID="879081512">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C242B043-BB29-486B-86F2-FD2703229698}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M1_LVL 1_Exploration" ID="{5BE7D87F-09EA-4107-AD04-C6E4CB755B13}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M1_LVL 1_Exploration.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="785866202"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{BF8919BF-8F07-4123-8A91-F44EF1ED4CF4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M1_LVL 1_Exploration" ID="{C00CDF34-6139-4883-A0F9-342F4978D6E5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="49500"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M1_LVL 1_Exploration" ID="{5BE7D87F-09EA-4107-AD04-C6E4CB755B13}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{47CCA8D5-E1D7-4223-88BB-D1C60B65A21C}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{650ED8D8-BB8E-43E6-B95E-1E7E31E918A0}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="49500"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M2_LVL 1_Combat" ID="{08F18E08-0417-4F1E-8631-37DF7EB87598}" ShortID="624876933">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="123000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M2_LVL 1_Combat" ID="{B4A56764-C0B7-429A-81EE-95DE301D38EB}" ShortID="1059122294">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{1A1BF2F4-C0F6-4BC8-80E4-BAC9FE81C45F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M2_LVL 1_Combat" ID="{DFA4D0C3-E7A1-434F-9256-2FE44ED5798B}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M2_LVL 1_Combat.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="79438850"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{30EE3858-4626-4903-B123-2FB04ACC5A0C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M2_LVL 1_Combat" ID="{DB6D3162-600A-4B16-9B94-D68C9D2C3599}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="123000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M2_LVL 1_Combat" ID="{DFA4D0C3-E7A1-434F-9256-2FE44ED5798B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{0C147275-1A8A-4EB1-9EA4-4F9234E4B0DC}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{7AB09A30-B3A6-4484-8849-6D213BCB8A13}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="123000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp" ID="{4ACF2EF5-E7F6-4E7B-B48A-126652458B1C}" ShortID="467518525">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="66000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp" ID="{747B8AD3-4B0F-4293-BBBC-7F711D55E5AB}" ShortID="362304631">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{439C9262-DD96-4FC2-AEA2-761B039F5FF2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp" ID="{54EB50D8-83DE-42A6-996B-44234D35F4F7}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643497744"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8B962C72-4F3F-4477-A74E-F31F2F13BA38}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp" ID="{5D1248EA-FC20-4D98-B299-9238F544DC62}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="66000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M1_LvL2_Waterfall area_Exp" ID="{54EB50D8-83DE-42A6-996B-44234D35F4F7}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{FE50A158-08B0-437A-A727-E4DA7F1BAE72}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{969F7416-1F42-4D17-BF49-A30500723EDD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="66000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com" ID="{21A1F6F3-32A1-4F86-ABC2-EEE0A7A0FB89}" ShortID="851602053">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="46080"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com" ID="{25771E71-09E9-48B3-8F7F-F9D3896DAE64}" ShortID="386769923">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{AE1E5DF7-A048-4A6F-B39C-90FFCBD18F3A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com" ID="{37133362-1355-4210-9088-4DEBAED25B98}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="145200686"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{26EBCB3F-46BD-43DE-AD2B-5CF9EEEF56B2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com" ID="{D272ABE4-319A-4E8C-8C19-76433D50E7B8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="46080"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M2_LvL2_Waterfall area_Com" ID="{37133362-1355-4210-9088-4DEBAED25B98}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{5A58E715-765B-4AA6-B767-63532C2447B8}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E162BC1C-9681-4354-9816-1C88331A986C}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="46080"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss" ID="{068B0A48-FB87-42E9-A3B4-21143C2A2C1C}" ShortID="317171065">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="74318.1666666667"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss" ID="{9F639E47-ABBE-4A6C-977D-A06E07C7DED4}" ShortID="149842331">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{BA5CA677-7604-4A17-A087-C4661B90BF5C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss" ID="{7DCAD426-8263-4910-AE9F-9C265102E813}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239720905"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E96E3FE5-A6E5-4C8E-A491-9167622D48B0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss" ID="{67A5A06C-BEE3-43DB-9100-236CF91B260D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="74318.1666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_KM2_LvL2_Outskirts_Mini Boss" ID="{7DCAD426-8263-4910-AE9F-9C265102E813}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{A310C193-7033-4E6A-B8FE-E12067AA6E9C}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{90E61E74-CF66-4E45-869E-788D5FA1C385}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="74318.1666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp" ID="{9861DB0B-019B-47AB-B3C9-421B938CC883}" ShortID="698064353">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="66000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp" ID="{99EE2630-258C-43E0-93CC-1EE5936A09FD}" ShortID="935772968">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{78B9A6A9-7EEF-4D83-8928-337CFD7AA15E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp" ID="{7ADD589D-6E22-4988-B6D7-BEFFDC52EB44}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="7418671"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F76ABF68-D494-43FE-8A3E-546C9D8C7BAB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp" ID="{B820474B-BC14-4338-9478-DC52871781A6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="66000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M1_LvL2_Outskirts_Exp" ID="{7ADD589D-6E22-4988-B6D7-BEFFDC52EB44}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{B0A71F56-9936-4227-927B-FBE666774497}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{B5F54ABC-D713-4F9C-81D6-BC7392F52CC3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="66000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com" ID="{582FAAB9-5CBC-43D8-8B45-D0A0D07536AD}" ShortID="1019794578">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="61113.625"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com" ID="{B8995450-2D8D-41E9-AC77-F3F5D9A6690A}" ShortID="413208205">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{EF14BB3B-B114-45DF-89E1-2A219B241E78}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com" ID="{F6C7C27B-6401-4D60-A557-28354691C62F}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="529447243"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{24FD6D96-B9F7-4948-8A0D-07446E3C8B74}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com" ID="{A3B52EC7-B694-409F-9E0B-200C4C54EBEB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="61113.625"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_M2_LvL2_Outskirts_Com" ID="{F6C7C27B-6401-4D60-A557-28354691C62F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{87C2AD8C-2584-4742-B774-1AB6BD4352B2}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{66BBE1A7-97CC-4B15-9D4D-B7E8040CE61D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="61113.625"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle" ID="{FB24C6DA-46F5-4DAE-BE76-405832FBACA8}" ShortID="818089262">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="26400"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle" ID="{116FAFEE-1DCF-4E9B-8EC5-C89DE19FA65D}" ShortID="327115587">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{DDECD0A1-9EB5-4BDC-A6CA-C55084E6BEF4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle" ID="{B563C327-4100-4564-B7E9-999EE5F7E69F}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="257187037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5DB4474B-B638-4FAB-A001-B70FFC5AB0E6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle" ID="{0C29BB60-3C87-4E60-BA2B-96910F9C9C88}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="26400"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_AT_KM_LvL2_Outskirts_Puzzle" ID="{B563C327-4100-4564-B7E9-999EE5F7E69F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{CD37E8BD-A13A-4E05-82AB-EDBFFC5F82D8}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{AA8C9A2D-38BF-4313-A061-684E90A4326C}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="26400"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo MusicSyncType="1">
+								<StateGroupRef Name="Level" ID="{DA60CF5B-8833-47DE-B311-860C5B802AA9}"/>
+							</StateGroupInfo>
+							<StateGroupInfo MusicSyncType="1">
+								<StateGroupRef Name="Gamestate" ID="{A185F94B-EFF1-413F-988B-2F6ECA61EFDC}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Idle" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}"/>
+								<CustomState Name="" ID="{9E724ED6-FEC9-489B-BD4C-A5413126BD81}" ShortID="826588155"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}"/>
+								<CustomState Name="" ID="{E9E90B15-7140-40DF-972D-342981D37DAF}" ShortID="922439587"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}"/>
+								<CustomState Name="" ID="{FC86F0FB-4DE5-4120-ACAD-46EEA7669352}" ShortID="579174804"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}"/>
+								<CustomState Name="" ID="{248FE388-6BAE-4027-A124-67A0C1A28EF8}" ShortID="468806144"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}"/>
+								<CustomState Name="" ID="{4B9A4749-5070-4B6F-BF94-5837C9608848}" ShortID="908709514"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Level2" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}"/>
+								<CustomState Name="" ID="{34C66FC3-8D3B-4F59-B5C1-85B5775DB6FB}" ShortID="19843953"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}"/>
+								<CustomState Name="" ID="{3B20360D-01B8-47D4-8C9D-4BE2484E6BF3}" ShortID="930694188"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}"/>
+								<CustomState Name="" ID="{2D7243E6-EC85-4529-BFB0-8E6C787B5C2F}" ShortID="13775172"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}"/>
+								<CustomState Name="" ID="{0A5FFA5D-AFBE-4E33-B511-11007A0E0B96}" ShortID="611391150"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
