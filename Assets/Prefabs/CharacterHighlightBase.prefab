@@ -1,11 +1,11 @@
 {
     "Prefab": {
-        "UID": 1603214201346423,
-        "VersionUID": 1049201226357972868,
+        "UID": 1631415668404698,
+        "VersionUID": 1503543739448736848,
         "Name": "CharacterHighlightBase",
         "GameObjects": [
             {
-                "UID": 14194617031154150711,
+                "UID": 16732091100574491075,
                 "ParentUID": 8823869308913623498,
                 "Name": "CharacterHighlightBase",
                 "Mobility": 0,
@@ -13,22 +13,21 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1603214201346423,
-                "PrefabVersionUID": 1049201226357972868,
-                "PrefabChildUID": 2233071621564187942,
+                "PrefabVersionUID": 1503543739448736848,
+                "PrefabChildUID": 8362671083664425094,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -29.773237228393555,
+                    30.038484573364258,
                     0.0,
                     1.0,
                     0.0,
-                    7.167015075683594,
+                    6.015044212341309,
                     0.0,
                     0.0,
                     1.0,
-                    -19.05793571472168,
+                    -2.1204774379730225,
                     0.0,
                     0.0,
                     0.0,
@@ -36,20 +35,20 @@
                 ],
                 "Components": [],
                 "Children": [
-                    61782254906355466,
-                    8863093123673187692
+                    4934604470297052470,
+                    13640471496828340709
                 ]
             },
             {
-                "UID": 61782254906355466,
-                "ParentUID": 14194617031154150711,
+                "UID": 4934604470297052470,
+                "ParentUID": 16732091100574491075,
                 "Name": "CharacterHighlight",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8844479631985336065,
+                "PrefabChildUID": 16776218941241802581,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -70,7 +69,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11075506601224698810,
+                        "UID": 1392288131122554513,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -82,20 +81,21 @@
                                 "WasEnabled": true,
                                 "Player": "walk",
                                 "Player camera pivot": "Camera Pivot",
-                                "Character to highlight": "CH_Pooka_Idle",
-                                "Target spline points offset": 0.8500000238418579,
-                                "Zoom multiplier": 30.0
+                                "Character to highlight": "NewSoldier_Highlight",
+                                "Highlight focus": "NewSoldier_Highlight_Focus",
+                                "Target spline points offset": 2.0,
+                                "Zoom multiplier": 25.0
                             }
                         ]
                     },
                     {
-                        "UID": 10019329401674476277,
+                        "UID": 5685416042782198420,
                         "Type": 11,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
-                        "ColliderType": 2,
+                        "ColliderType": 3,
                         "ColliderLayer": 1,
                         "GenerateCallback": true,
                         "FitToSize": false,
@@ -116,7 +116,30 @@
                         ]
                     },
                     {
-                        "UID": 15194432080456740300,
+                        "UID": 3150122134101553843,
+                        "Type": 12,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Sphere Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 3,
+                        "ColliderLayer": 1,
+                        "Radius": 3.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            10.0,
+                            0.0,
+                            5.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "UID": 18266542522696237043,
                         "Type": 22,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -150,7 +173,7 @@
                                     0.0,
                                     1.0
                                 ],
-                                "Speed": 0.8679999709129333
+                                "Speed": 1.0
                             },
                             {
                                 "Pos": [
@@ -164,7 +187,21 @@
                                     0.0,
                                     1.0
                                 ],
-                                "Speed": 0.4020000100135803
+                                "Speed": 1.0
+                            },
+                            {
+                                "Pos": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Rot": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Speed": 1.0
                             }
                         ]
                     }
@@ -172,15 +209,15 @@
                 "Children": []
             },
             {
-                "UID": 8863093123673187692,
-                "ParentUID": 14194617031154150711,
+                "UID": 13640471496828340709,
+                "ParentUID": 16732091100574491075,
                 "Name": "CameraTarget",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 46297087718061956,
+                "PrefabChildUID": 4858002297880612653,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -201,7 +238,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 2200400237816274967,
+                        "UID": 2902327143231651144,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -211,7 +248,7 @@
                                 "Script Name": "MoveGOInSpline",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Speed Factor": 5.25,
+                                "Speed Factor": 4.0,
                                 "PingPong effect": true
                             }
                         ]
