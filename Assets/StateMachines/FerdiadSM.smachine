@@ -23,7 +23,9 @@
             "WaterSpoutHit",
             "WaterSpoutCharge",
             "GetHit1",
-            "GetHit2"
+            "GetHit2",
+            "GetHit1Behind",
+            "GetHit2Behind"
         ],
         "Clips": [
             {
@@ -365,7 +367,7 @@
             {
                 "ClipUID": 1530613014966175,
                 "ClipName": "CH_Ferdiad_anim_Water_Sprout_Hit",
-                "ClipTime": 1.0,
+                "ClipTime": 0.800000011920929,
                 "Loop": false
             },
             {
@@ -389,6 +391,30 @@
             {
                 "ClipUID": 1570311119793657,
                 "ClipName": "CH_Ferdiad_anim_Get_Hit_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_61",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1561298443749287,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_63",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1552902400494268,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2_Behind",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -560,7 +586,7 @@
                 "StateName": "WaterSpoutHit",
                 "ClipName": "CH_Ferdiad_anim_Water_Sprout_Hit",
                 "Position": {
-                    "x": 420.0,
+                    "x": 410.0,
                     "y": -260.0
                 },
                 "Triggers": []
@@ -578,8 +604,26 @@
                 "StateName": "GetHit2",
                 "ClipName": "CH_Ferdiad_anim_Get_Hit_2",
                 "Position": {
-                    "x": 820.0,
-                    "y": -10.0
+                    "x": 810.0,
+                    "y": -30.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit1Behind",
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1_Behind",
+                "Position": {
+                    "x": 810.0,
+                    "y": 50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit2Behind",
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2_Behind",
+                "Position": {
+                    "x": 810.0,
+                    "y": 130.0
                 },
                 "Triggers": []
             }
@@ -1253,6 +1297,78 @@
             },
             {
                 "FromState": "GetHit2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit1",
+                "Trigger": "GetHit1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit2",
+                "Trigger": "GetHit2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit1Behind",
+                "Trigger": "GetHit1Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit2Behind",
+                "Trigger": "GetHit2Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit1Behind",
+                "Trigger": "GetHit1Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit2Behind",
+                "Trigger": "GetHit2Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
                 "ToState": "Idle",
                 "Trigger": "Idle",
                 "InterpolationTime": 200
