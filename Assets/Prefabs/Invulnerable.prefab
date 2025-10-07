@@ -1,0 +1,446 @@
+{
+    "Prefab": {
+        "UID": 1685261215320748,
+        "VersionUID": 8434823795405367536,
+        "Name": "Invulnerable",
+        "GameObjects": [
+            {
+                "UID": 8386461945999495748,
+                "ParentUID": 2673234980817612913,
+                "Name": "Invulnerable",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1685261215320748,
+                "PrefabVersionUID": 8434823795405367536,
+                "PrefabChildUID": 11862932173711651448,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.9999999403953552,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    11874203488769636156,
+                    5633583618859967747,
+                    8410772963075645466,
+                    12896952132513638921,
+                    14218324947736349880
+                ]
+            },
+            {
+                "UID": 11874203488769636156,
+                "ParentUID": 8386461945999495748,
+                "Name": "PlaneWaterAnimation",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 17771719630255119031,
+                "LocalTransform": [
+                    -3.5762786865234375e-7,
+                    -6.776263578034403e-21,
+                    -1.0,
+                    0.0,
+                    1.6816409376119168e-13,
+                    1.0,
+                    -4.743384504624082e-20,
+                    0.05000000074505806,
+                    1.0,
+                    -1.6816409376119168e-13,
+                    -3.5762786865234375e-7,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 8657399622298074637,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1154467117132690,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "Bones": [
+                            13235974218633894747
+                        ],
+                        "ModelUID": 1472668932491276,
+                        "SkinIndex": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 11491327460781372452,
+                        "Type": 14,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Animation",
+                        "Animations": 1506110625828267,
+                        "StateMachine": 0
+                    }
+                ],
+                "Children": [
+                    13235974218633894747
+                ]
+            },
+            {
+                "UID": 5633583618859967747,
+                "ParentUID": 8386461945999495748,
+                "Name": "EnergyBarrierVFX",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11187937782630596734,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13736850634893352554,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1188758452469701,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 14899245248498796864,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 1.7000000476837158,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 8410772963075645466,
+                "ParentUID": 8386461945999495748,
+                "Name": "ShieldAnimation",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2952420266183703438,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2055938157157809804,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1106514574444053,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "Bones": [
+                            16550868142536698953
+                        ],
+                        "ModelUID": 1403754724016109,
+                        "SkinIndex": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 2109039206134562871,
+                        "Type": 14,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Animation",
+                        "Animations": 1581338839340804,
+                        "StateMachine": 0
+                    }
+                ],
+                "Children": [
+                    16550868142536698953
+                ]
+            },
+            {
+                "UID": 12896952132513638921,
+                "ParentUID": 8386461945999495748,
+                "Name": "WaterNoisefallVFX",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16594446197003310632,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 3462355095695031873,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1144912665179385,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 937128702009968270,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 2.200000047683716,
+                                "Moving UV Direction": [
+                                    -1.0,
+                                    0.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": true,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14218324947736349880,
+                "ParentUID": 8386461945999495748,
+                "Name": "WavesWaterVFX",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15829955090850265319,
+                "LocalTransform": [
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 15104567478292660983,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1104867591602763,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 6019732422029451734,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MovingUVTransparent",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.4000000059604645,
+                                "Moving UV Direction": [
+                                    0.0,
+                                    -1.0
+                                ],
+                                "Start UV Offset": [
+                                    0.0,
+                                    0.0
+                                ],
+                                "Double sided": false,
+                                "Fade Out": false,
+                                "Fade Out Time": 0.0,
+                                "Fade Out Duration": 0.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13235974218633894747,
+                "ParentUID": 11874203488769636156,
+                "Name": "base_invulnerableVFX_joint",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 9711729002475304250,
+                "LocalTransform": [
+                    44.69072341918945,
+                    0.0,
+                    -0.0,
+                    0.0,
+                    -0.0,
+                    44.69072341918945,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    44.69072341918945,
+                    -0.04717991501092911,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 16550868142536698953,
+                "ParentUID": 8410772963075645466,
+                "Name": "joint1",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 10604101912240478325,
+                "LocalTransform": [
+                    -0.49013301730155945,
+                    -1.4240848628320311e-16,
+                    -0.8729924559593201,
+                    -0.050447724759578705,
+                    -3.7286446586415955e-17,
+                    1.0,
+                    -1.4257544441804082e-16,
+                    1.7562094926834106,
+                    0.8729924559593201,
+                    -3.7242781376240505e-17,
+                    -0.49013301730155945,
+                    0.09880127757787704,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            }
+        ]
+    }
+}
