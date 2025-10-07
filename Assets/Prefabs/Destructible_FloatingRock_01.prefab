@@ -1,33 +1,34 @@
 {
     "Prefab": {
         "UID": 1660170681171080,
-        "VersionUID": 12486499390488844433,
+        "VersionUID": 6343382609675058795,
         "Name": "Destructible_FloatingRock_01",
         "GameObjects": [
             {
-                "UID": 4482620894562687107,
-                "ParentUID": 6788591387451538717,
+                "UID": 2037526652466090853,
+                "ParentUID": 5714192309089552404,
                 "Name": "Destructible_FloatingRock_01",
-                "Mobility": 0,
+                "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 12486499390488844433,
+                "PrefabUID": 1660170681171080,
+                "PrefabVersionUID": 6343382609675058795,
                 "PrefabChildUID": 10733591343876090616,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -34.111175537109375,
+                    8.223226547241211,
                     0.0,
                     1.0,
                     0.0,
-                    0.9885082244873047,
+                    -4.76837158203125e-7,
                     0.0,
                     0.0,
                     1.0,
-                    -65.32766723632813,
+                    0.02501678466796875,
                     0.0,
                     0.0,
                     0.0,
@@ -35,18 +36,19 @@
                 ],
                 "Components": [
                     {
-                        "UID": 530618120965154294,
+                        "UID": 7901348568636783304,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1154299700017694,
-                        "Material": 1389355398316896,
+                        "Material": 0,
                         "RenderMode": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     },
                     {
-                        "UID": 10786119379092496720,
+                        "UID": 9291974310015301778,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -56,24 +58,10 @@
                                 "Script Name": "Destructible",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Max Health": 1,
-                                "Current Health": 1,
-                                "Invulnerable": false,
-                                "Dead": false,
-                                "Damage": 0,
-                                "Attack Range": -1.0,
-                                "Attack Duration": -1.0,
-                                "Attack Cooldown": -1.0,
-                                "Attack Hitbox Delay": 0.0,
-                                "Attack Hitbox Duration": 0.0,
-                                "Heal Cooldown": 1.0,
-                                "AI Chase Range": -1.0,
-                                "AI Attack Range": -1.0,
-                                "AI Max Detection Range": -1.0,
-                                "Player search duration": 5.0,
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke_Blueish",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 2
                             }
                         ]
                     },
@@ -84,7 +72,7 @@
                         "WasEnabled": true,
                         "Name": "Capsule Collider",
                         "Mass": 1.0,
-                        "ColliderType": 2,
+                        "ColliderType": 0,
                         "ColliderLayer": 2,
                         "Radius": 0.6000000238418579,
                         "Length": 0.5,
@@ -100,21 +88,33 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "UID": 13544527407347827953,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
                     }
                 ],
                 "Children": [
-                    13603541708532109271,
-                    2768139143074392394
+                    7263990022675847984,
+                    564134132313147637
                 ]
             },
             {
-                "UID": 13603541708532109271,
-                "ParentUID": 4482620894562687107,
+                "UID": 7263990022675847984,
+                "ParentUID": 2037526652466090853,
                 "Name": "DestroyedMesh",
-                "Mobility": 0,
+                "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 14864877518444842807,
                 "LocalTransform": [
@@ -125,7 +125,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    -0.47070884704589844,
                     0.0,
                     0.0,
                     1.0,
@@ -137,22 +137,23 @@
                 ],
                 "Components": [
                     {
-                        "UID": 16853879114397322409,
+                        "UID": 6309003145580317114,
                         "Type": 1,
-                        "Enabled": false,
-                        "WasEnabled": true,
+                        "Enabled": true,
+                        "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1113987301757907,
-                        "Material": 1389355398316896,
+                        "Material": 0,
                         "RenderMode": 0,
-                        "ProduceShadows": true
+                        "ProduceShadows": true,
+                        "Additive": false
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 2768139143074392394,
-                "ParentUID": 4482620894562687107,
+                "UID": 564134132313147637,
+                "ParentUID": 2037526652466090853,
                 "Name": "PT_Destruction_Smoke_Blueish",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -180,7 +181,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1011156871686534149,
+                        "UID": 9031315365742910413,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -191,7 +192,7 @@
                                 "EmitterTag": "Center",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1288887284223300,
+                                "Texture": 1200000000000000,
                                 "Addons": [
                                     {
                                         "Enabled": true,
@@ -492,7 +493,7 @@
                                 "EmitterTag": "Smaller_peaces",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1298155502878793,
+                                "Texture": 1200000000000000,
                                 "Addons": [
                                     {
                                         "Enabled": true,

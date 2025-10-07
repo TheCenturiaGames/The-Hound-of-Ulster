@@ -1,33 +1,34 @@
 {
     "Prefab": {
         "UID": 1667942509846108,
-        "VersionUID": 6665123138006211589,
+        "VersionUID": 8014489565023871559,
         "Name": "Destructible_Fish_Basket",
         "GameObjects": [
             {
-                "UID": 15540507248567016692,
-                "ParentUID": 3408008172474305760,
+                "UID": 12910422794241158036,
+                "ParentUID": 1821322504251350322,
                 "Name": "Destructible_Fish_Basket",
-                "Mobility": 0,
+                "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 6665123138006211589,
+                "PrefabUID": 1667942509846108,
+                "PrefabVersionUID": 8014489565023871559,
                 "PrefabChildUID": 11555876677256204620,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -118.40156555175781,
+                    0.10601043701171875,
                     0.0,
                     1.0,
                     0.0,
-                    3.1755306720733643,
+                    0.000006198883056640625,
                     0.0,
                     0.0,
                     1.0,
-                    18.89361572265625,
+                    2.3923473358154297,
                     0.0,
                     0.0,
                     0.0,
@@ -35,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 377325693515180824,
+                        "UID": 18082762450003728627,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -47,7 +48,7 @@
                         "Additive": false
                     },
                     {
-                        "UID": 9642039056313122363,
+                        "UID": 9066200763711498970,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -57,29 +58,10 @@
                                 "Script Name": "Destructible",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Max Health": 1,
-                                "Current Health": 1,
-                                "Invulnerable": false,
-                                "Dead": false,
-                                "Damage": 0,
-                                "Attack Range": -1.0,
-                                "Attack Duration": -1.0,
-                                "Attack Cooldown": -1.0,
-                                "Attack Hitbox Delay": 0.0,
-                                "Attack Hitbox Duration": 0.0,
-                                "Heal Cooldown": 1.0,
-                                "AI Chase Range": -1.0,
-                                "AI Attack Range": -1.0,
-                                "AI Max Detection Range": -1.0,
-                                "Player search duration": 5.0,
-                                "Mesh name": "",
-                                "On Hit VFX Duration": 0.10000000149011612,
-                                "On Hit Pivot Name": "OnHitPivot",
-                                "On Hit VFX 1": "OnHitVfx1",
-                                "On Hit VFX 2": "OnHitVfx2",
                                 "Destroyed mesh": "DestroyedMesh",
                                 "Destruction particle system": "PT_Destruction_Smoke",
-                                "Time for rubble to disappear (s)": 5.0
+                                "Time until mesh switch (s)": 0.10000000149011612,
+                                "0: Vase, 1: Box, 2: Crystal": 1
                             }
                         ]
                     },
@@ -90,7 +72,7 @@
                         "WasEnabled": true,
                         "Name": "Capsule Collider",
                         "Mass": 1.0,
-                        "ColliderType": 2,
+                        "ColliderType": 0,
                         "ColliderLayer": 2,
                         "Radius": 0.6000000238418579,
                         "Length": 0.5,
@@ -106,21 +88,33 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "UID": 5640029709052521343,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
                     }
                 ],
                 "Children": [
-                    16849535010977399044,
-                    18190768678214707958
+                    7221086701328958200,
+                    10733081316832131458
                 ]
             },
             {
-                "UID": 16849535010977399044,
-                "ParentUID": 15540507248567016692,
+                "UID": 7221086701328958200,
+                "ParentUID": 12910422794241158036,
                 "Name": "DestroyedMesh",
-                "Mobility": 0,
+                "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 14809737439346519275,
                 "LocalTransform": [
@@ -131,7 +125,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    0.0,
+                    -0.0614323616027832,
                     0.0,
                     0.0,
                     1.0,
@@ -143,7 +137,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 5561705815251934808,
+                        "UID": 11244326467616302904,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -158,10 +152,10 @@
                 "Children": []
             },
             {
-                "UID": 18190768678214707958,
-                "ParentUID": 15540507248567016692,
+                "UID": 10733081316832131458,
+                "ParentUID": 12910422794241158036,
                 "Name": "PT_Destruction_Smoke",
-                "Mobility": 0,
+                "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
@@ -187,7 +181,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 15165176226032057937,
+                        "UID": 9967775948990148209,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
