@@ -3,22 +3,24 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Level" ID="{DA60CF5B-8833-47DE-B311-860C5B802AA9}">
+				<StateGroup Name="GameState" ID="{4501F75B-57BF-4402-816A-0557C55A4118}">
 					<ChildrenList>
-						<State Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}"/>
-						<State Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}"/>
-						<State Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}"/>
-						<State Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}"/>
-						<State Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}"/>
-						<State Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}"/>
+						<State Name="None" ID="{66F25415-B718-4402-A58F-BC08172F1D67}"/>
+						<State Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}"/>
+						<State Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}"/>
+						<State Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}"/>
+						<State Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Gamestate" ID="{A185F94B-EFF1-413F-988B-2F6ECA61EFDC}">
+				<StateGroup Name="LevelState" ID="{C23C0EAB-91E5-4089-B074-D7B291B8F504}">
 					<ChildrenList>
-						<State Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}"/>
-						<State Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}"/>
-						<State Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}"/>
-						<State Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}"/>
+						<State Name="None" ID="{EB2E28D8-9FF5-4F37-9799-15C215EF9A31}"/>
+						<State Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}"/>
+						<State Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}"/>
+						<State Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}"/>
+						<State Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}"/>
+						<State Name="MainMenu" ID="{BADBA308-93C6-421D-857F-41EE72E3A9B3}"/>
+						<State Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

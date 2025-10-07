@@ -252,58 +252,6 @@
 											</ObjectLists>
 										</MusicTrack>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Gamestate" ID="{A185F94B-EFF1-413F-988B-2F6ECA61EFDC}"/>
-											</StateGroupInfo>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{DA60CF5B-8833-47DE-B311-860C5B802AA9}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}"/>
-												<CustomState Name="" ID="{B3C61630-63DD-4673-9894-0B56E22EA059}" ShortID="252352998"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}"/>
-												<CustomState Name="" ID="{A02C9BD8-4B60-4FF4-9C27-67D09924B205}" ShortID="761116381"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}"/>
-												<CustomState Name="" ID="{09161F5C-0A2B-4F21-A364-3F9C4EB64C9E}" ShortID="82103183"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}"/>
-												<CustomState Name="" ID="{2D54450B-01EB-4CE2-8504-24D345E73DD8}" ShortID="349184780"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}"/>
-												<CustomState Name="" ID="{AF7847AF-4D3A-4C3A-8B6D-BA4F90E2EF93}" ShortID="362900654"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}"/>
-												<CustomState Name="" ID="{EBF0B429-45D8-469E-B4B8-D3B92062DB07}" ShortID="539420818"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}"/>
-												<CustomState Name="" ID="{9068FAEB-1874-4C97-A6C1-AB9595AE4D18}" ShortID="162270222"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}"/>
-												<CustomState Name="" ID="{D260D367-C69F-46DB-8B03-D4CEBAB3DF3B}" ShortID="205149213"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}"/>
-												<CustomState Name="" ID="{5AB6307D-DCAC-4AE6-8D4F-A04FCAB17E06}" ShortID="480906704"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}"/>
-												<CustomState Name="" ID="{71ABEF43-24DB-48A3-BD31-8C47DCAAC71E}" ShortID="627787506"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ObjectLists>
 										<ObjectList Name="Cues">
 											<Reference>
@@ -2072,131 +2020,68 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
-								<StateGroupRef Name="Level" ID="{DA60CF5B-8833-47DE-B311-860C5B802AA9}"/>
+								<StateGroupRef Name="GameState" ID="{4501F75B-57BF-4402-816A-0557C55A4118}"/>
 							</StateGroupInfo>
 							<StateGroupInfo>
-								<StateGroupRef Name="Gamestate" ID="{A185F94B-EFF1-413F-988B-2F6ECA61EFDC}"/>
+								<StateGroupRef Name="LevelState" ID="{C23C0EAB-91E5-4089-B074-D7B291B8F504}"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
 							<CustomState>
-								<StateRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}"/>
-								<CustomState Name="" ID="{9E724ED6-FEC9-489B-BD4C-A5413126BD81}" ShortID="826588155"/>
+								<StateRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}"/>
+								<CustomState Name="" ID="{F5A19E69-A11A-4952-934A-334ABA0676C8}" ShortID="802141050"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}"/>
-								<CustomState Name="" ID="{E9E90B15-7140-40DF-972D-342981D37DAF}" ShortID="922439587"/>
+								<StateRef Name="MainMenu" ID="{BADBA308-93C6-421D-857F-41EE72E3A9B3}"/>
+								<CustomState Name="" ID="{BE61EC4F-18F4-4B24-B619-2C6869447826}" ShortID="106226818"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}"/>
-								<CustomState Name="" ID="{FC86F0FB-4DE5-4120-ACAD-46EEA7669352}" ShortID="579174804"/>
+								<StateRef Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}"/>
+								<CustomState Name="" ID="{FF07A027-08D9-4E5A-807E-2D391D6E5F1E}" ShortID="707729732"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}"/>
-								<CustomState Name="" ID="{248FE388-6BAE-4027-A124-67A0C1A28EF8}" ShortID="468806144"/>
+								<StateRef Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}"/>
+								<CustomState Name="" ID="{2BF4DB74-0EDF-4ADB-AF24-C021A6DA0CD7}" ShortID="361093125"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}"/>
-								<CustomState Name="" ID="{4B9A4749-5070-4B6F-BF94-5837C9608848}" ShortID="908709514"/>
+								<StateRef Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}"/>
+								<CustomState Name="" ID="{23D434A7-C4F1-4C66-BBCF-B015E46A55BE}" ShortID="319357425"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}"/>
-								<CustomState Name="" ID="{12093001-02C6-4FC5-A9FC-98847E7F709D}" ShortID="640820944"/>
+								<StateRef Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}"/>
+								<CustomState Name="" ID="{D970669E-AB4D-47AA-AD89-35908E2FB23F}" ShortID="309586774"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}"/>
-								<CustomState Name="" ID="{34C66FC3-8D3B-4F59-B5C1-85B5775DB6FB}" ShortID="19843953"/>
+								<StateRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}"/>
+								<CustomState Name="" ID="{AC54BDBB-4578-40F9-99AF-17E57EBFEB5E}" ShortID="371845486"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}"/>
-								<CustomState Name="" ID="{3B20360D-01B8-47D4-8C9D-4BE2484E6BF3}" ShortID="930694188"/>
+								<StateRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}"/>
+								<CustomState Name="" ID="{6A1CBD8F-AFF8-4D9D-AE41-A8A6DEC47090}" ShortID="207783155"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}"/>
-								<CustomState Name="" ID="{2D7243E6-EC85-4529-BFB0-8E6C787B5C2F}" ShortID="13775172"/>
+								<StateRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}"/>
+								<CustomState Name="" ID="{5955E894-F889-447D-914C-971B6B1A08F7}" ShortID="553027144"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}"/>
-								<CustomState Name="" ID="{0A5FFA5D-AFBE-4E33-B511-11007A0E0B96}" ShortID="611391150"/>
+								<StateRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}"/>
+								<CustomState Name="" ID="{5CC83A11-A173-4A3B-90D0-8474C1451935}" ShortID="634676249"/>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="Level" ID="{DA60CF5B-8833-47DE-B311-860C5B802AA9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+								<ObjectRef Name="LevelState" ID="{C23C0EAB-91E5-4089-B074-D7B291B8F504}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 							</Reference>
 							<Reference>
-								<ObjectRef Name="Gamestate" ID="{A185F94B-EFF1-413F-988B-2F6ECA61EFDC}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+								<ObjectRef Name="GameState" ID="{4501F75B-57BF-4402-816A-0557C55A4118}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{8EF455B2-531A-426E-A8AF-9E17D9201831}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Exploration" ID="{2E309012-9D54-44F5-B2EF-00683835F618}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{8D0F276F-C030-4DD4-9AFD-01A3C157B418}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="MainMenu" ID="{1F15A3F0-16DF-4EEE-AA23-1F2F2C667328}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{0331435C-5668-43C2-A771-A9A088B4EB91}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Combat" ID="{8F1F1B21-C36C-4F74-A657-BD28A3C483A3}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{3F144C5F-721E-496D-8B76-CA0D648942AC}">
+									<MultiSwitchEntry Name="" ID="{0E613234-58D4-4230-84FE-A8F04A930D01}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
@@ -2205,10 +2090,10 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2217,19 +2102,19 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{4A3CFAA8-ECCB-40A3-9D9D-614D895646FC}">
+									<MultiSwitchEntry Name="" ID="{CA94758E-F039-475E-BA65-AD789F1CE8C4}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2238,19 +2123,19 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{56640136-9684-4790-9688-987B53C420E1}">
+									<MultiSwitchEntry Name="" ID="{A372782B-2C43-4BCC-A28C-F3E543E1C6E8}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2259,19 +2144,19 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{8991F117-DD3F-42D8-98DA-FE49511262D4}">
+									<MultiSwitchEntry Name="" ID="{DF2646B1-0FDC-473D-BC17-48C718AE9A2A}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2280,19 +2165,19 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{8B5D3EF4-6D58-4047-A09E-C96D0F1E3C94}">
+									<MultiSwitchEntry Name="" ID="{684BAB0A-6DDB-4F34-97FD-8B9DC9A6F83E}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Riastrad" ID="{50F56CB7-7AFF-4D52-A824-4BBF4AC64BB4}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2301,70 +2186,7 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{5F202C38-BA24-45F9-86FE-0C4C1F2A8A20}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Level2_Miniboss" ID="{7D19A25B-3195-4CFC-AB23-844F6C3401F2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{9D518C91-F3BD-4FF3-9968-0F121B210B66}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Level2_Outskirts_Combat" ID="{7260DB52-0090-4B8A-96B4-E0D3EB5DAC2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{AFCAE329-D89F-4924-A40F-2D0E1903FC16}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Level1_Combat" ID="{8198E44A-1040-418C-896D-98143E0CA948}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{4AECE575-3B9A-4657-9A55-D52566B94FF9}">
+									<MultiSwitchEntry Name="" ID="{E52313C4-62DF-47EC-8471-9412ACDB7590}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="Level2_Puzzle" ID="{ED7D72F2-8A0B-437B-AEE0-4382E2E8B422}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
@@ -2373,10 +2195,10 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2385,28 +2207,7 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{52EEF37D-D106-4BA5-9F43-C7B48661354B}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Level2_Outskirts_Exploration" ID="{1CD83653-2B21-4577-88CF-86E68F401110}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{2941D0FE-FB08-4E84-AE0B-6AEC3F85F162}">
+									<MultiSwitchEntry Name="" ID="{4511A693-33A1-4722-8A0D-BF2FE7C18C5B}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="Level1_Exploration" ID="{73B3B29F-1A91-4893-A94B-3B63B3DFC725}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
@@ -2415,10 +2216,10 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2427,70 +2228,7 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{682C67C9-2120-40D7-B630-70A8D85768E7}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{F8FD843D-D49C-4966-B4AD-8865A74B581D}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{FF659858-6096-4137-97B8-9A4BF4C9CFFA}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{83E04CFF-658E-4B05-86EE-28E688FF8A54}">
+									<MultiSwitchEntry Name="" ID="{634EC5DC-ACEB-4141-BD93-7CEF6D9BA85F}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="Level2_Waterfall_Exploration" ID="{8FD4327F-2867-4518-9C2A-DBC0A25EF205}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
@@ -2499,10 +2237,10 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2511,19 +2249,19 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{C2C97313-FFC1-403C-BF12-3AEF5A7AC140}">
+									<MultiSwitchEntry Name="" ID="{941C697B-AA2F-4D31-81D8-C2F1D5C93BF3}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Level2_Waterfall_Combat" ID="{F6486ECF-FAB7-45CC-BE12-9AEF484A91CC}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="Tutorial_Exploration" ID="{2E309012-9D54-44F5-B2EF-00683835F618}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2532,7 +2270,28 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{A5B33358-962E-4A42-A9C2-8BF3A7CB944B}">
+									<MultiSwitchEntry Name="" ID="{29551973-5B76-483A-A598-A974FA92B089}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Level2_Outskirts_Exploration" ID="{1CD83653-2B21-4577-88CF-86E68F401110}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Exploring" ID="{47BFBA9B-0968-41BA-AE8D-C2B600E20CBB}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{CE1E0E29-52B2-414F-B281-22D5E73EB98A}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
@@ -2541,10 +2300,10 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -2553,19 +2312,208 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{220CD0CA-D91A-4627-91D8-80F1A2EB4AC5}">
+									<MultiSwitchEntry Name="" ID="{0A19845B-F92F-412F-AB1D-3DB34A541C86}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="AllLevels_Riastrad" ID="{6993024C-2539-48A6-B890-33CA941160A2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 												<Reference>
-													<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{00B13D77-D172-4038-B8FE-2DF58B17C2EB}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{F9AF115F-B3C7-4CFC-A3CA-75C11E499AF6}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{A566800C-57EB-4E1F-858C-7C271FD1FD8C}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{7B230D44-5703-499E-A07A-B7D13D9AF8F6}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="MainMenu" ID="{1F15A3F0-16DF-4EEE-AA23-1F2F2C667328}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="MainMenu" ID="{BADBA308-93C6-421D-857F-41EE72E3A9B3}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Menu" ID="{DBE12C20-5E19-4D64-AD92-F0ABC8E3B488}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D00A38F4-36B6-4534-BF69-22D52C97A1A9}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Level2_Miniboss" ID="{7D19A25B-3195-4CFC-AB23-844F6C3401F2}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{AB3409B1-895B-4A34-A220-00F1056D208F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Level1_Combat" ID="{8198E44A-1040-418C-896D-98143E0CA948}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level1" ID="{305C9BD5-2D97-4C18-94D8-1E43A2F26F6C}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{DBCA9DEE-195E-4606-B0E2-DDEE5CE21A6A}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Level2_Waterfall_Combat" ID="{F6486ECF-FAB7-45CC-BE12-9AEF484A91CC}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level2Waterfall" ID="{427E3ACE-7AF4-43FF-833E-75184E613BE7}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{16B9453A-A8AA-4F65-A2CA-FF1DE6082F64}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Tutorial_Combat" ID="{8F1F1B21-C36C-4F74-A657-BD28A3C483A3}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Tutorial" ID="{96C38E7C-47DA-495B-A6CC-373A2C28B193}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{6A1F396E-631A-406C-8984-3D6DF1BE3EC1}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Level2_Outskirts_Combat" ID="{7260DB52-0090-4B8A-96B4-E0D3EB5DAC2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Level2Outskirts" ID="{BDFB4DE8-8E20-467E-A8C7-DE799736A1FF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Combat" ID="{9F0F1D8E-E0BB-4E92-8120-FC06D20CADB9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
