@@ -509,56 +509,152 @@
 				</Folder>
 				<Folder Name="Music" ID="{BEAA0DE1-1558-4325-9D37-CF5BB9F4C39F}" ShortID="364784765">
 					<ChildrenList>
-						<Event Name="Play_Forest" ID="{D9075865-6940-4B90-93EC-7CF39C73CF94}">
+						<Event Name="Play_Background_Music" ID="{60126271-22A9-455B-A290-84E5D7D39EC4}">
 							<ChildrenList>
-								<Action Name="" ID="{089080E3-550F-4EB7-8276-A8F63707F58A}" ShortID="1055568395">
+								<Action Name="" ID="{22EE8E62-97A8-4296-9282-349DD5923D78}" ShortID="841468624">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Forest" ID="{2985C4E4-FF5B-49CE-ACC4-5E6AD6722C3B}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Music" ID="{78DBC98B-74AE-4801-B2E7-01C9DEAA41F5}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_First_Theme" ID="{2ABEE26A-A339-497C-A192-98ADF7BDDD2E}">
+						<Event Name="Set_LevelState_Boss" ID="{F89B739A-E292-4EFD-8C7A-4BD772C936E8}">
 							<ChildrenList>
-								<Action Name="" ID="{2E8C1132-E7E4-43F0-90CC-7415F8E4E434}" ShortID="243367060">
+								<Action Name="" ID="{CE8615A2-DEA5-428E-A46C-73D335887795}" ShortID="545584455">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="First_Theme" ID="{2126705B-3649-4305-B9AB-B8200B3AA463}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Boss" ID="{2E800FCE-5C44-48A1-B892-E1BD48D0525E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Tutorial_Theme" ID="{EE418FCD-261D-49DA-A3D5-6241F3CEEFCA}">
+						<Event Name="Set_LevelState_Level1" ID="{7D8C05C2-FC9A-4BBA-B3BE-0605C13C9F90}">
 							<ChildrenList>
-								<Action Name="" ID="{D45F795B-66C0-47D6-B381-42FEA35FEEAD}" ShortID="422597869">
+								<Action Name="" ID="{901B8F77-4814-4378-9F3C-A856C2C43F08}" ShortID="376132662">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AT_M1_LVL Tutorial" ID="{67902B66-84B0-4EA7-A0F6-563471DBFE45}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Level1" ID="{5FE5FA10-52A3-4F22-BD25-3209EF2BC636}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Level1_Ambient_Theme" ID="{A1CACFF1-B9F6-4492-BEEE-130E87DC57AF}">
+						<Event Name="Set_LevelState_Level2Outskirts" ID="{E9697150-6DFE-4CB0-BCA7-AA17CF53F957}">
 							<ChildrenList>
-								<Action Name="" ID="{BAC9EFD5-D797-4D09-9B4B-8C55C879B271}" ShortID="448382226">
+								<Action Name="" ID="{AB725960-5567-48BE-8DD8-547967294C43}" ShortID="51556494">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AT_M1_LVL 1_Exploration" ID="{8B9CC105-078F-4F83-9F41-26C394931B0F}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Level2Outskirts" ID="{A43902AA-93A1-4ACD-A6D6-0DDE3F69299E}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Level1_Fight_Theme" ID="{D69F1F5A-DF21-47ED-8BBC-D9BCF7564BFA}">
+						<Event Name="Set_LevelState_Level2Waterfall" ID="{72DDE01F-71D4-41CC-833E-26C0FB4B072C}">
 							<ChildrenList>
-								<Action Name="" ID="{73EE7CEE-61E4-4F15-8126-2D2F67BCC327}" ShortID="778123467">
+								<Action Name="" ID="{44667C70-AFDC-4532-8521-8621767CCA90}" ShortID="449403336">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AT_M1_LVL 1_Combat" ID="{B463B2BA-773B-4DFD-B685-B874F4863D5F}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Level2Waterfall" ID="{2D692179-2C59-4A7A-9B53-CEA55A2431D8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_LevelState_MainMenu" ID="{B7E0C176-AAB1-4128-9115-D27B40F06A81}">
+							<ChildrenList>
+								<Action Name="" ID="{21FB412E-4F6A-4F9A-9394-467E8C65FCAD}" ShortID="180664400">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMenu" ID="{966E2431-1A41-4DE8-8B4A-E7C627AF68E8}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_LevelState_Tutorial" ID="{1FCE44E6-FA5D-4ED3-B717-925BD4A2DE23}">
+							<ChildrenList>
+								<Action Name="" ID="{098D71E2-54C8-4191-9030-D66E483E7569}" ShortID="345163636">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tutorial" ID="{4A687B3C-3084-4637-8CEC-988F99FB19F9}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_GameState_Combat" ID="{F44A3166-979E-483C-B436-5E10E2F7F892}">
+							<ChildrenList>
+								<Action Name="" ID="{9120CDEA-E5B7-4044-8F0F-82E7544DED2F}" ShortID="132829831">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Combat" ID="{A287044C-C30C-4BF8-B35C-3260698E84AF}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_GameState_Exploring" ID="{CC52F6E7-82A5-48E0-93F6-6CA5C56238DC}">
+							<ChildrenList>
+								<Action Name="" ID="{B35C01FE-02D5-41E3-8606-72C68EE5218F}" ShortID="922333626">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Exploring" ID="{850194A0-EEB0-42EA-91A5-8624A58F7F0B}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_GameState_Menu" ID="{505CEB41-B376-40BF-9B47-9B949A084622}">
+							<ChildrenList>
+								<Action Name="" ID="{48FB7C55-278E-4C68-99EC-6171FC07EF6E}" ShortID="563491332">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu" ID="{EBDEEDC6-174B-40BE-8D0A-01D5C0D17C6F}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_GameState_Riastrad" ID="{CDF21935-A3CD-4334-B69C-68022E7C50D4}">
+							<ChildrenList>
+								<Action Name="" ID="{DAC036BD-B001-4DA0-918B-17EDCA826F0F}" ShortID="857629236">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riastrad" ID="{1C421BC3-5B57-45BE-8488-5CFDCB516AA6}" WorkUnitID="{33DDE347-4B1C-4ED1-8DC2-43CF7A5D9C34}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
