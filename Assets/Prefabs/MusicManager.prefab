@@ -1,11 +1,11 @@
 {
     "Prefab": {
-        "UID": 1661966166892460,
-        "VersionUID": 202108249372931029,
+        "UID": 1607225247349182,
+        "VersionUID": 2415555026906212491,
         "Name": "MusicManager",
         "GameObjects": [
             {
-                "UID": 6984725962037593141,
+                "UID": 5513984480406667175,
                 "ParentUID": 10309131146409751111,
                 "Name": "MusicManager",
                 "Mobility": 1,
@@ -13,8 +13,8 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 202108249372931029,
-                "PrefabChildUID": 15354700081660530154,
+                "PrefabVersionUID": 2415555026906212491,
+                "PrefabChildUID": 18263947963909678343,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -35,7 +35,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 15620490912139189516,
+                        "UID": 2263467636489135610,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -43,26 +43,31 @@
                         "Scripts": [
                             {
                                 "Script Name": "MusicManager",
-                                "Enabled": false,
-                                "WasEnabled": true
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 1734839042,
+                                "Second audio event": 3630582617,
+                                "Third audio event": 0
                             }
                         ]
                     }
                 ],
                 "Children": [
-                    11158090823750073003
+                    17837348833763078953,
+                    2957337031170946572,
+                    10456915137471836657
                 ]
             },
             {
-                "UID": 11158090823750073003,
-                "ParentUID": 6984725962037593141,
+                "UID": 17837348833763078953,
+                "ParentUID": 5513984480406667175,
                 "Name": "Trigger_BackgroundMusic",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14294292120419586970,
+                "PrefabChildUID": 17562869435661541454,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -83,7 +88,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 1259365938475600605,
+                        "UID": 10045944435469897312,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -93,12 +98,14 @@
                                 "Script Name": "MusicTrigger",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Audio to emit": 65769146
+                                "First audio event": 1734839042,
+                                "Second audio event": 3630582617,
+                                "Third audio event": 65769146
                             }
                         ]
                     },
                     {
-                        "UID": 2429684465691306845,
+                        "UID": 9138685318594792288,
                         "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -125,7 +132,183 @@
                         ]
                     },
                     {
-                        "UID": 9594956045559561595,
+                        "UID": 11094339367432343659,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2957337031170946572,
+                "ParentUID": 5513984480406667175,
+                "Name": "Trigger_BackgroundMusic",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 6732948127598101725,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -53.91204071044922,
+                    0.0,
+                    1.0,
+                    0.0,
+                    9.734397888183594,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -12.219200134277344,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2655062726862388151,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MusicTrigger",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 2438311370,
+                                "Second audio event": 0,
+                                "Third audio event": 0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 7948535729740614025,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 3,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            5.0,
+                            5.0,
+                            5.0
+                        ]
+                    },
+                    {
+                        "UID": 16540497801668108736,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10456915137471836657,
+                "ParentUID": 5513984480406667175,
+                "Name": "Trigger_BackgroundMusic",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 460311093963857024,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -35.34513854980469,
+                    0.0,
+                    1.0,
+                    0.0,
+                    9.734404563903809,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -2.6355583667755127,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10341015322906196713,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MusicTrigger",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 2841888884,
+                                "Second audio event": 0,
+                                "Third audio event": 0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 14191343792108943392,
+                        "Type": 11,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Cube Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 3,
+                        "ColliderLayer": 1,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            5.0,
+                            5.0,
+                            5.0
+                        ]
+                    },
+                    {
+                        "UID": 1192493613842331435,
                         "Type": 18,
                         "Enabled": true,
                         "WasEnabled": true,
