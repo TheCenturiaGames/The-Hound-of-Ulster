@@ -1,0 +1,119 @@
+{
+    "Prefab": {
+        "UID": 1612027133521716,
+        "VersionUID": 9038831126289917128,
+        "Name": "RT_Tutorial_5",
+        "GameObjects": [
+            {
+                "UID": 9395472437411825554,
+                "ParentUID": 8823869308913623498,
+                "Name": "RT_Tutorial_5",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabUID": 1612027133521716,
+                "PrefabVersionUID": 9038831126289917128,
+                "PrefabChildUID": 8849936515045178858,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -5.08128547668457,
+                    0.0,
+                    1.0,
+                    0.0,
+                    7.682858943939209,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -5.700173854827881,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    16291081958356194305
+                ]
+            },
+            {
+                "UID": 16291081958356194305,
+                "ParentUID": 9395472437411825554,
+                "Name": "Rising tile",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 2413497236063388570,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2067913042213307524,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1173655983481481,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 15424703741614236259,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "TileFloatScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 40,
+                                "MinDistanceToPlayer": 10.0,
+                                "Starting Position": [
+                                    0.0,
+                                    -8.0,
+                                    0.0
+                                ],
+                                "Starting Rotation": [
+                                    0.0,
+                                    -90.0,
+                                    0.0
+                                ],
+                                "Starting Scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            }
+        ]
+    }
+}
