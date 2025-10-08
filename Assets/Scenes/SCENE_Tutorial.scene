@@ -5,19 +5,19 @@
         "RootGameObject": 8823869308913623498,
         "NavmeshUID": 2048468320742573,
         "Camera Position": [
-            -37.36100769042969,
-            16.945138931274414,
-            -30.715593338012695
+            -35.10170364379883,
+            13.698511123657227,
+            -33.48088073730469
         ],
         "Camera Front": [
-            0.5692849159240723,
-            -0.7506252527236938,
-            -0.33537495136260986
+            0.5928575992584229,
+            -0.8039040565490723,
+            -0.04751960560679436
         ],
         "Camera Up": [
-            0.6459457874298096,
-            0.6617457270622253,
-            -0.3805873692035675
+            0.8005259037017822,
+            0.5958481431007385,
+            -0.0642138421535492
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -10006,9 +10006,11 @@
                                 "WasEnabled": true,
                                 "Player": "walk",
                                 "Player camera pivot": "Camera Pivot",
-                                "Character to highlight": "NewSoldier",
+                                "Character to highlight": "CH_Soldier",
                                 "Setup character on collision": true,
                                 "Highlight focus": "",
+                                "Hide player": true,
+                                "Use only zoom": false,
                                 "Target spline points offset": 2.0,
                                 "Zoom multiplier": 25.0
                             }
@@ -20440,7 +20442,7 @@
                         ]
                     },
                     {
-                        "UID": 17262007502703043584,
+                        "UID": 5707235118093810401,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -33009,7 +33011,7 @@
                         "CameraType": 0,
                         "CameraPosition": [
                             -52.80546951293945,
-                            28.113300323486328,
+                            27.815500259399414,
                             -16.315738677978516
                         ],
                         "CameraFront": [
@@ -33025,7 +33027,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.589767336845398
+                        "CameraVFOV": 0.6349231004714966
                     }
                 ],
                 "Children": []
@@ -56216,7 +56218,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 11922411820670913993,
+                        "UID": 12517988483719303631,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -60664,6 +60666,36 @@
                 ]
             },
             {
+                "UID": 14147845981817121645,
+                "ParentUID": 16846997228283846167,
+                "Name": "PlayerFocusPoint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.3645286560058594,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
                 "UID": 804991702242167664,
                 "ParentUID": 2351211340832969525,
                 "Name": "MC_Spear",
@@ -60831,7 +60863,7 @@
                                 "Script Name": "EnemySpawnerScript",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Prefab UID": 1682242295416412,
+                                "Prefab UID": 1679446309259522,
                                 "Location Tag": "MainAreaUltimate",
                                 "Spawn Once": true,
                                 "Enemies to Spawn": 5
@@ -171163,15 +171195,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    -31.12002182006836,
+                    -29.466550827026367,
                     0.0,
                     1.0,
                     0.0,
-                    9.293452262878418,
+                    8.269286155700684,
                     0.0,
                     0.0,
                     1.0,
-                    -36.66405487060547,
+                    -30.621496200561523,
                     0.0,
                     0.0,
                     0.0,
@@ -171498,7 +171530,7 @@
                                 "Script Name": "EnemySpawnerScript",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Prefab UID": 1682242295416412,
+                                "Prefab UID": 1679446309259522,
                                 "Location Tag": "MainArea",
                                 "Spawn Once": true,
                                 "Enemies to Spawn": 1
@@ -209643,7 +209675,8 @@
                     10179713978770267345,
                     1592769356085424082,
                     9541491589214154619,
-                    12968233600310795967
+                    12968233600310795967,
+                    14147845981817121645
                 ]
             },
             {
@@ -220954,6 +220987,8 @@
                                 "Character to highlight": "HighlightArcher",
                                 "Setup character on collision": false,
                                 "Highlight focus": "ArcherHighlightFocusPoint",
+                                "Hide player": true,
+                                "Use only zoom": false,
                                 "Target spline points offset": 2.0,
                                 "Zoom multiplier": 25.0
                             }
@@ -242968,17 +243003,19 @@
                                 "Player camera pivot": "Camera Pivot",
                                 "Character to highlight": "walk",
                                 "Setup character on collision": false,
-                                "Highlight focus": "",
+                                "Highlight focus": "PlayerFocusPoint",
+                                "Hide player": false,
+                                "Use only zoom": true,
                                 "Target spline points offset": 2.0,
-                                "Zoom multiplier": 25.0
+                                "Zoom multiplier": 30.0
                             }
                         ]
                     },
                     {
                         "UID": 4975279109872264737,
                         "Type": 11,
-                        "Enabled": false,
-                        "WasEnabled": true,
+                        "Enabled": true,
+                        "WasEnabled": false,
                         "Name": "Cube Collider",
                         "Mass": 1.0,
                         "ColliderType": 3,
@@ -243091,7 +243128,7 @@
                     0.0,
                     1.0,
                     0.0,
-                    9.014298439025879,
+                    8.716499328613281,
                     0.0,
                     0.0,
                     1.0,
