@@ -21,7 +21,12 @@
             "BlastCharge",
             "BlastHit",
             "WaterSpoutHit",
-            "WaterSpoutCharge"
+            "WaterSpoutCharge",
+            "GetHit1",
+            "GetHit2",
+            "GetHit1Behind",
+            "GetHit2Behind",
+            "Death"
         ],
         "Clips": [
             {
@@ -249,6 +254,318 @@
             {
                 "ClipUID": 1526733547884199,
                 "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
+                "ClipTime": 0.800000011920929,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1584058106637949,
+                "ClipName": "CH_Ferdiad_anim_idle_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1529302639761685,
+                "ClipName": "CH_Ferdiad_anim_idle_taunt",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1519945347859502,
+                "ClipName": "CH_Ferdiad_anim_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1537770337595987,
+                "ClipName": "CH_Ferdiad_anim_combo_attack1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1564638474328390,
+                "ClipName": "CH_Ferdiad_anim_combo_attack2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1502102907462176,
+                "ClipName": "CH_Ferdiad_anim_combo_attack3",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1549595328400787,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_prepare",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1532362983302705,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_jump",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1515226040516418,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_dash",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1543530502806836,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_land",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1539495308045048,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_attack",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1506146676361851,
+                "ClipName": "CH_Ferdiad_anim_OverheadStrike_recover",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1587234823838801,
+                "ClipName": "CH_Ferdiad_anim_ChargeShield_start",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1571672901195498,
+                "ClipName": "CH_Ferdiad_anim_ChargeShield_charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1550274735330457,
+                "ClipName": "CH_Ferdiad_anim_ChargeShield_end",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1518405386992062,
+                "ClipName": "CH_Ferdiad_anim_Shield_Blast_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1576638753262441,
+                "ClipName": "CH_Ferdiad_anim_Shield_Blast_Hit",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1542289315546272,
+                "ClipName": "CH_Ferdiad_anim_Water_Sprout_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1530613014966175,
+                "ClipName": "CH_Ferdiad_anim_Water_Sprout_Hit",
+                "ClipTime": 0.800000011920929,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_57",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1546939349459231,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_59",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1570311119793657,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_61",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1561298443749287,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_1_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_63",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1552902400494268,
+                "ClipName": "CH_Ferdiad_anim_Get_Hit_2_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1523368146633275,
+                "ClipName": "ferdiad_gltf_Get_Hit_1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1575356663792901,
+                "ClipName": "ferdiad_gltf_Get_Hit_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1543045578382620,
+                "ClipName": "ferdiad_gltf_Get_Hit_1_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1583957037604333,
+                "ClipName": "ferdiad_gltf_Get_Hit_2_Behind",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1514873144041389,
+                "ClipName": "ferdiad_gltf_idle_base",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1586217786132928,
+                "ClipName": "ferdiad_gltf_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 1576252639942852,
+                "ClipName": "ferdiad_gltf_idle_taunt",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1597332441402260,
+                "ClipName": "ferdiad_gltf_Water_Sprout_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1523349264361727,
+                "ClipName": "ferdiad_gltf_Water_Sprout_Hit",
+                "ClipTime": 0.800000011920929,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1509543031151552,
+                "ClipName": "ferdiad_gltf_Shield_Blast_Charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1503477703349501,
+                "ClipName": "ferdiad_gltf_Shield_Blast_Hit",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1542120298080525,
+                "ClipName": "ferdiad_gltf_ChargeShield_start",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1538824828132090,
+                "ClipName": "ferdiad_gltf_ChargeShield_charge",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1575137108144181,
+                "ClipName": "ferdiad_gltf_ChargeShield_end",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1513032414520247,
+                "ClipName": "ferdiad_gltf_OverheadStrike_prepare",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1599897473347896,
+                "ClipName": "ferdiad_gltf_OverheadStrike_jump",
+                "ClipTime": 0.949999988079071,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1574578331461313,
+                "ClipName": "ferdiad_gltf_OverheadStrike_dash",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1532739235857272,
+                "ClipName": "ferdiad_gltf_OverheadStrike_land",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1521184342615215,
+                "ClipName": "ferdiad_gltf_OverheadStrike_attack",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1562537165435273,
+                "ClipName": "ferdiad_gltf_OverheadStrike_recover",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1568292779460388,
+                "ClipName": "ferdiad_gltf_combo_attack1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1579414410878979,
+                "ClipName": "ferdiad_gltf_combo_attack2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1504754110591350,
+                "ClipName": "ferdiad_gltf_combo_attack3",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_88",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1580616816959685,
+                "ClipName": "ferdiad_gltf_Death",
                 "ClipTime": 1.0,
                 "Loop": false
             }
@@ -256,16 +573,16 @@
         "States": [
             {
                 "StateName": "Idle",
-                "ClipName": "CH_Ferdiad_idle_base",
+                "ClipName": "ferdiad_gltf_idle_base",
                 "Position": {
-                    "x": -20.0,
-                    "y": 10.0
+                    "x": 380.0,
+                    "y": -110.0
                 },
                 "Triggers": []
             },
             {
                 "StateName": "Combo1",
-                "ClipName": "CH_Ferdiad_combo_attack1",
+                "ClipName": "ferdiad_gltf_combo_attack1",
                 "Position": {
                     "x": 190.0,
                     "y": 160.0
@@ -274,7 +591,7 @@
             },
             {
                 "StateName": "Combo2",
-                "ClipName": "CH_Ferdiad_combo_attack2",
+                "ClipName": "ferdiad_gltf_combo_attack2",
                 "Position": {
                     "x": 190.0,
                     "y": 240.0
@@ -283,7 +600,7 @@
             },
             {
                 "StateName": "Combo3",
-                "ClipName": "CH_Ferdiad_combo_attack3",
+                "ClipName": "ferdiad_gltf_combo_attack3",
                 "Position": {
                     "x": 190.0,
                     "y": 320.0
@@ -292,7 +609,7 @@
             },
             {
                 "StateName": "Overhead_Prepare",
-                "ClipName": "CH_Ferdiad_OverheadStrike_prepare",
+                "ClipName": "ferdiad_gltf_OverheadStrike_prepare",
                 "Position": {
                     "x": -330.0,
                     "y": 160.0
@@ -301,7 +618,7 @@
             },
             {
                 "StateName": "Overhead_Jump",
-                "ClipName": "CH_Ferdiad_OverheadStrike_jump",
+                "ClipName": "ferdiad_gltf_OverheadStrike_jump",
                 "Position": {
                     "x": -330.0,
                     "y": 230.0
@@ -310,7 +627,7 @@
             },
             {
                 "StateName": "Overhead_Dash",
-                "ClipName": "CH_Ferdiad_OverheadStrike_dash",
+                "ClipName": "ferdiad_gltf_OverheadStrike_dash",
                 "Position": {
                     "x": -330.0,
                     "y": 310.0
@@ -319,7 +636,7 @@
             },
             {
                 "StateName": "Overhead_Land",
-                "ClipName": "CH_Ferdiad_OverheadStrike_land",
+                "ClipName": "ferdiad_gltf_OverheadStrike_land",
                 "Position": {
                     "x": -330.0,
                     "y": 390.0
@@ -328,7 +645,7 @@
             },
             {
                 "StateName": "Overhead_Attack",
-                "ClipName": "CH_Ferdiad_OverheadStrike_attack",
+                "ClipName": "ferdiad_gltf_OverheadStrike_attack",
                 "Position": {
                     "x": -330.0,
                     "y": 480.0
@@ -337,7 +654,7 @@
             },
             {
                 "StateName": "Overhead_Recover",
-                "ClipName": "CH_Ferdiad_OverheadStrike_recover",
+                "ClipName": "ferdiad_gltf_OverheadStrike_recover",
                 "Position": {
                     "x": -330.0,
                     "y": 560.0
@@ -346,25 +663,25 @@
             },
             {
                 "StateName": "Taunt",
-                "ClipName": "CH_Ferdiad_idle_taunt",
+                "ClipName": "ferdiad_gltf_idle_taunt",
                 "Position": {
-                    "x": 30.0,
-                    "y": -100.0
+                    "x": 340.0,
+                    "y": 60.0
                 },
                 "Triggers": []
             },
             {
                 "StateName": "Run",
-                "ClipName": "CH_Ferdiad_Run",
+                "ClipName": "ferdiad_gltf_Run",
                 "Position": {
-                    "x": 360.0,
-                    "y": 0.0
+                    "x": 380.0,
+                    "y": -20.0
                 },
                 "Triggers": []
             },
             {
                 "StateName": "ChargeShield_Start",
-                "ClipName": "CH_Ferdiad_ChargeShield_start",
+                "ClipName": "ferdiad_gltf_ChargeShield_start",
                 "Position": {
                     "x": -570.0,
                     "y": -250.0
@@ -373,7 +690,7 @@
             },
             {
                 "StateName": "ChargeShield_Charge",
-                "ClipName": "CH_Ferdiad_ChargeShield_charge",
+                "ClipName": "ferdiad_gltf_ChargeShield_charge",
                 "Position": {
                     "x": -570.0,
                     "y": -170.0
@@ -382,7 +699,7 @@
             },
             {
                 "StateName": "ChargeShield_End",
-                "ClipName": "CH_Ferdiad_ChargeShield_end",
+                "ClipName": "ferdiad_gltf_ChargeShield_end",
                 "Position": {
                     "x": -570.0,
                     "y": -90.0
@@ -391,25 +708,25 @@
             },
             {
                 "StateName": "ShieldBlast_Charge",
-                "ClipName": "CH_Ferdiad_Shield_Blast_Charge",
+                "ClipName": "ferdiad_gltf_Shield_Blast_Charge",
                 "Position": {
-                    "x": -70.0,
-                    "y": -340.0
+                    "x": -80.0,
+                    "y": -420.0
                 },
                 "Triggers": []
             },
             {
                 "StateName": "ShieldBlast_Hit",
-                "ClipName": "CH_Ferdiad_Shield_Blast_Hit",
+                "ClipName": "ferdiad_gltf_Shield_Blast_Hit",
                 "Position": {
                     "x": -70.0,
-                    "y": -260.0
+                    "y": -330.0
                 },
                 "Triggers": []
             },
             {
                 "StateName": "WaterSpoutCharge",
-                "ClipName": "CH_Ferdiad_Water_Sprout_Charge",
+                "ClipName": "ferdiad_gltf_Water_Sprout_Charge",
                 "Position": {
                     "x": 420.0,
                     "y": -350.0
@@ -418,9 +735,54 @@
             },
             {
                 "StateName": "WaterSpoutHit",
-                "ClipName": "CH_Ferdiad_Water_Sprout_Hit",
+                "ClipName": "ferdiad_gltf_Water_Sprout_Hit",
                 "Position": {
-                    "x": 420.0,
+                    "x": 410.0,
+                    "y": -260.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit1",
+                "ClipName": "ferdiad_gltf_Get_Hit_1",
+                "Position": {
+                    "x": 810.0,
+                    "y": -100.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit2",
+                "ClipName": "ferdiad_gltf_Get_Hit_2",
+                "Position": {
+                    "x": 810.0,
+                    "y": -30.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit1Behind",
+                "ClipName": "ferdiad_gltf_Get_Hit_1_Behind",
+                "Position": {
+                    "x": 810.0,
+                    "y": 50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "GetHit2Behind",
+                "ClipName": "ferdiad_gltf_Get_Hit_2_Behind",
+                "Position": {
+                    "x": 810.0,
+                    "y": 130.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "ferdiad_gltf_Death",
+                "Position": {
+                    "x": 900.0,
                     "y": -260.0
                 },
                 "Triggers": []
@@ -1073,6 +1435,288 @@
                 "FromState": "WaterSpoutCharge",
                 "ToState": "Taunt",
                 "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit1",
+                "Trigger": "GetHit1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit2",
+                "Trigger": "GetHit2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit1",
+                "Trigger": "GetHit1",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit2",
+                "Trigger": "GetHit2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit1Behind",
+                "Trigger": "GetHit1Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit2Behind",
+                "Trigger": "GetHit2Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "GetHit1Behind",
+                "Trigger": "GetHit1Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Run",
+                "Trigger": "Run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "GetHit2Behind",
+                "Trigger": "GetHit2Behind",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "ChargeShield_Start",
+                "Trigger": "Start",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Taunt",
+                "Trigger": "Taunt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Taunt",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutHit",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "WaterSpoutCharge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Hit",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ShieldBlast_Charge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Start",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_Charge",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "ChargeShield_End",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Prepare",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Jump",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Dash",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Land",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Attack",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Overhead_Recover",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Combo3",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit1Behind",
+                "ToState": "Death",
+                "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "GetHit2Behind",
+                "ToState": "Death",
+                "Trigger": "Death",
                 "InterpolationTime": 200
             }
         ]
