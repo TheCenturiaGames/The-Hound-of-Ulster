@@ -42,7 +42,9 @@
 				"baseColorTexture":{
 					"index":0
 				},
-				"metallicFactor":0
+				"metallicRoughnessTexture":{
+					"index":1
+				}
 			}
 		}
 	],
@@ -97,6 +99,10 @@
 		{
 			"sampler":0,
 			"source":0
+		},
+		{
+			"sampler":0,
+			"source":1
 		}
 	],
 	"images":[
@@ -104,6 +110,11 @@
 			"mimeType":"image/png",
 			"name":"TX_Pooka_trail_test",
 			"uri":"TX_Pooka_trail_test.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"TX_Pooka_trail_metallic",
+			"uri":"TX_Pooka_trail_metallic.png"
 		}
 	],
 	"accessors":[
