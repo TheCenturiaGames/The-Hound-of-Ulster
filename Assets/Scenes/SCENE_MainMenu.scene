@@ -66,7 +66,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -126,19 +126,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 9362472448979327501,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -236,8 +223,8 @@
                 "Components": [],
                 "Children": [
                     13706715131137638225,
-                    3267487359428142372,
-                    1043029571844337526
+                    1043029571844337526,
+                    6095324788316057197
                 ]
             },
             {
@@ -277,7 +264,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -337,19 +324,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 2659830415413209511,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -414,6 +388,66 @@
                 "Children": []
             },
             {
+                "UID": 6095324788316057197,
+                "ParentUID": 3355083529253807717,
+                "Name": "MusicManager",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7277765666384839056,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MusicManager",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 327831964,
+                                "Second audio event": 1779817015,
+                                "Third audio event": 65769146
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 5781477120478326042,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 8885573196576391382,
                 "ParentUID": 17429903124395306502,
                 "Name": "MULTISELECT_DUMMY",
@@ -450,7 +484,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -510,19 +544,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 4491345531905594210,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -698,7 +719,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -758,19 +779,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 7238432319593817527,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -908,8 +916,8 @@
                 "Name": "RightArrow",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     -1.0,
@@ -1055,6 +1063,18 @@
                             1.0,
                             1.0
                         ]
+                    },
+                    {
+                        "UID": 15891238215221389677,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
                     }
                 ],
                 "Children": [
@@ -1156,7 +1176,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0549750328063965,
@@ -1180,7 +1200,7 @@
                     {
                         "UID": 14399214258716216367,
                         "Type": 8,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Transform 2D",
                         "Position": [
@@ -1217,19 +1237,6 @@
                                 "WasEnabled": true,
                                 "Target Scene Name": "SCENE_MenuTutorialLoading"
                             }
-                        ]
-                    },
-                    {
-                        "UID": 8473042124842235879,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -1274,7 +1281,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -1343,49 +1350,6 @@
                 ]
             },
             {
-                "UID": 3267487359428142372,
-                "ParentUID": 3355083529253807717,
-                "Name": "music",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10140883104053267971,
-                        "Type": 18,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Audio Source",
-                        "DefaultEvent": 1086074370,
-                        "Volume": 0.30000001192092896,
-                        "Pitch": 0.5,
-                        "Spatialization": 0.0,
-                        "PlayOnStart": true
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 13706715131137638225,
                 "ParentUID": 3355083529253807717,
                 "Name": "Canvas",
@@ -1449,7 +1413,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 11679155429672753707,
+                        "UID": 17175646091565740469,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1473,7 +1437,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -1536,19 +1500,6 @@
                         ]
                     },
                     {
-                        "UID": 4429824904878000883,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 4923545072360691783,
                         "Type": 17,
                         "Enabled": true,
@@ -1586,7 +1537,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     2.1827352046966553,
@@ -1649,19 +1600,6 @@
                         ]
                     },
                     {
-                        "UID": 2684622549639830060,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 11394510074329358354,
                         "Type": 17,
                         "Enabled": true,
@@ -1699,7 +1637,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -1762,19 +1700,6 @@
                         ]
                     },
                     {
-                        "UID": 12635631314462055159,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 6240860233060724100,
                         "Type": 17,
                         "Enabled": true,
@@ -1812,7 +1737,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -1875,19 +1800,6 @@
                         ]
                     },
                     {
-                        "UID": 8240324672091875348,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 684424058734096230,
                         "Type": 17,
                         "Enabled": true,
@@ -1925,7 +1837,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0549750328063965,
@@ -1998,7 +1910,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     0.9478897452354431,
@@ -2069,7 +1981,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2132,19 +2044,6 @@
                         ]
                     },
                     {
-                        "UID": 6911758065174705986,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 18104967365661812008,
                         "Type": 17,
                         "Enabled": true,
@@ -2182,7 +2081,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2242,19 +2141,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 1450024014568212296,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -2421,7 +2307,7 @@
                     {
                         "UID": 15526901941727186544,
                         "Type": 16,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Image",
                         "TextureUID": 1204790345600293,
@@ -2447,7 +2333,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2510,19 +2396,6 @@
                         ]
                     },
                     {
-                        "UID": 9412038313199309634,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 4304258349506611773,
                         "Type": 17,
                         "Enabled": true,
@@ -2564,7 +2437,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2627,19 +2500,6 @@
                         ]
                     },
                     {
-                        "UID": 14742631915683841589,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 16134350331634401395,
                         "Type": 17,
                         "Enabled": true,
@@ -2677,7 +2537,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2740,22 +2600,9 @@
                         ]
                     },
                     {
-                        "UID": 12291478403009649835,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 5782326129015992130,
                         "Type": 17,
-                        "Enabled": false,
+                        "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Button",
                         "IsInteractable": true,
@@ -2790,7 +2637,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2853,19 +2700,6 @@
                         ]
                     },
                     {
-                        "UID": 7096173111830195628,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 12328931923812572958,
                         "Type": 17,
                         "Enabled": true,
@@ -2903,7 +2737,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -2966,19 +2800,6 @@
                         ]
                     },
                     {
-                        "UID": 11648876085130619428,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
                         "UID": 15571854180370560106,
                         "Type": 17,
                         "Enabled": true,
@@ -3015,8 +2836,8 @@
                 "Name": "OptionsLabel",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0549750328063965,
@@ -3089,7 +2910,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -3149,19 +2970,6 @@
                                 "Enabled": true,
                                 "WasEnabled": true
                             }
-                        ]
-                    },
-                    {
-                        "UID": 694251446805721567,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     },
                     {
@@ -3259,10 +3067,22 @@
                         "Scripts": [
                             {
                                 "Script Name": "OptionsMenuSwitcherScript",
-                                "Enabled": true,
+                                "Enabled": false,
                                 "WasEnabled": true
                             }
                         ]
+                    },
+                    {
+                        "UID": 2219157862353056901,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
                     }
                 ],
                 "Children": [
@@ -3279,7 +3099,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -3349,8 +3169,8 @@
                 "Name": "LeftArrow",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -3421,7 +3241,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     -1.0,
@@ -3492,7 +3312,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -3565,7 +3385,7 @@
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": false,
-                "WasEnabled": true,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     -0.9478897452354431,
@@ -3645,6 +3465,29 @@
             "Wind speed": 0.0,
             "Gust frequency": 1.0,
             "Gust speed": 0.0
+        },
+        "HeightFogParameters": {
+            "EnableFog": false,
+            "FollowCamera": false,
+            "DensityConstant": 1.0,
+            "HeightFalloff": 1.0,
+            "FogStartHeight": 0.0,
+            "MaxFog": 1.0,
+            "FogColor": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "RenderPassConfig": {
+            "stepSize": 0.5,
+            "fogIntensity": 1.0,
+            "noiseAmmount": 0.0,
+            "extinctionCoefficient": 0.03999999910593033,
+            "anisotropy": 0.5,
+            "blurrPasses": 10,
+            "useNoiseTexture": false,
+            "noiseTexture": 1200000000000000
         }
     }
 }

@@ -1,0 +1,776 @@
+{
+    "StateMachine": {
+        "UID": 1784893833074423,
+        "Name": "FinalSoldierSM",
+        "Triggers": [
+            "run",
+            "idle",
+            "search",
+            "patrol",
+            "attack",
+            "thrust",
+            "damaged",
+            "death",
+            "idleCombat",
+            "detectPlayer",
+            "cheer",
+            "death2"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1571550254374093,
+                "ClipName": "CH_Soldier_IdleNormal",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1527943383689284,
+                "ClipName": "CH_Soldier_Run",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_4",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1566082592307247,
+                "ClipName": "CH_Soldier_Search",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_6",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1526512599999937,
+                "ClipName": "CH_Soldier_Patrol",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_8",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1556579934718329,
+                "ClipName": "CH_Soldier_Cheer",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_10",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1539021243117111,
+                "ClipName": "CH_Soldier_Thrust1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_12",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1525150543484254,
+                "ClipName": "CH_Soldier_AttackCombo",
+                "ClipTime": 1.7000000476837158,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_14",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_15",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1536004101518930,
+                "ClipName": "CH_Soldier_GetHitThrust",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_17",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1553997712644656,
+                "ClipName": "CH_Soldier_Death1",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_19",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1532985941758139,
+                "ClipName": "CH_Soldier_Death2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_22",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1504623973435490,
+                "ClipName": "CH_Soldier_DetectPlayer",
+                "ClipTime": 1.0,
+                "Loop": false
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "CH_Soldier_IdleNormal",
+                "Position": {
+                    "x": 0.0,
+                    "y": -50.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Run",
+                "ClipName": "CH_Soldier_Run",
+                "Position": {
+                    "x": 420.0,
+                    "y": -20.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Search",
+                "ClipName": "CH_Soldier_Search",
+                "Position": {
+                    "x": 760.0,
+                    "y": -100.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Patrol",
+                "ClipName": "CH_Soldier_Patrol",
+                "Position": {
+                    "x": 440.0,
+                    "y": -130.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Cheer",
+                "ClipName": "CH_Soldier_Cheer",
+                "Position": {
+                    "x": 50.0,
+                    "y": 80.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Thrust",
+                "ClipName": "CH_Soldier_Thrust1",
+                "Position": {
+                    "x": -130.0,
+                    "y": 170.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Attack",
+                "ClipName": "CH_Soldier_AttackCombo",
+                "Position": {
+                    "x": 280.0,
+                    "y": 160.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "IdleCombat",
+                "ClipName": "CH_Soldier_IdleNormal",
+                "Position": {
+                    "x": 140.0,
+                    "y": 260.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Damaged",
+                "ClipName": "CH_Soldier_GetHitThrust",
+                "Position": {
+                    "x": 800.0,
+                    "y": 0.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death",
+                "ClipName": "CH_Soldier_Death1",
+                "Position": {
+                    "x": 870.0,
+                    "y": 100.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Death2",
+                "ClipName": "CH_Soldier_Death2",
+                "Position": {
+                    "x": 830.0,
+                    "y": 190.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "DetectPlayer",
+                "ClipName": "CH_Soldier_DetectPlayer",
+                "Position": {
+                    "x": 650.0,
+                    "y": 290.0
+                },
+                "Triggers": []
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Idle",
+                "Trigger": "idle",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Idle",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Patrol",
+                "Trigger": "patrol",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "DetectPlayer",
+                "Trigger": "detectPlayer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Cheer",
+                "Trigger": "cheer",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Search",
+                "Trigger": "search",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Cheer",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Thrust",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Thrust",
+                "Trigger": "thrust",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Attack",
+                "Trigger": "attack",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Patrol",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "IdleCombat",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "DetectPlayer",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Search",
+                "ToState": "Damaged",
+                "Trigger": "damaged",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "IdleCombat",
+                "Trigger": "idleCombat",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Death",
+                "Trigger": "death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Damaged",
+                "ToState": "Death2",
+                "Trigger": "death2",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
