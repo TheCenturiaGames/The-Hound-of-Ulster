@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1692091012027069,
-        "VersionUID": 5802937182243980586,
+        "VersionUID": 17664748278304388962,
         "Name": "Spout",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1692091012027069,
-                "PrefabVersionUID": 5802937182243980586,
+                "PrefabVersionUID": 17664748278304388962,
                 "PrefabChildUID": 4813072011170921878,
                 "LocalTransform": [
                     1.0,
@@ -59,7 +59,7 @@
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
                                 "Water Spout Duration": 2.5,
-                                "Character": 6697080583537424294
+                                "Character": 0
                             }
                         ]
                     },
@@ -146,8 +146,8 @@
                         "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1115697844309149,
-                        "Material": 1380655176148367,
-                        "RenderMode": 1,
+                        "Material": 1300000000000000,
+                        "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -217,7 +217,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Decal",
-                        "Material": 1300000000000000
+                        "Material": 1338702755853407
                     }
                 ],
                 "Children": []
@@ -258,8 +258,8 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1110371863899177,
-                        "Material": 1383745101046858,
-                        "RenderMode": 2,
+                        "Material": 1300000000000000,
+                        "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     }
@@ -302,8 +302,8 @@
                         "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1147036519960865,
-                        "Material": 1319627665747143,
-                        "RenderMode": 1,
+                        "Material": 1300000000000000,
+                        "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -374,8 +374,8 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1170650399825485,
-                        "Material": 1317169225857399,
-                        "RenderMode": 1,
+                        "Material": 1300000000000000,
+                        "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -416,8 +416,8 @@
                 "Name": "Particles_bot",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 3453350847153721532,
                 "LocalTransform": [
@@ -456,19 +456,19 @@
                                     {
                                         "Enabled": true,
                                         "AddonType": 1,
-                                        "Duration": 1.0,
+                                        "Duration": 2.5,
                                         "Loop": false,
-                                        "particlesPerSecond": 100,
+                                        "particlesPerSecond": 200,
                                         "MaxParticles": 150,
                                         "RandomLifetime": true,
-                                        "MinLifetime": 0.0,
-                                        "MaxLifetime": 1.0,
+                                        "MinLifetime": 0.20000000298023224,
+                                        "MaxLifetime": 2.0,
                                         "randomizeSizeCombined": true,
                                         "randomizeSizeX": false,
                                         "randomizeSizeY": false,
                                         "combinedSize": [
-                                            0.25,
-                                            0.800000011920929
+                                            0.05000000074505806,
+                                            0.5
                                         ],
                                         "sizeValuesX": [
                                             0.0,
@@ -588,8 +588,8 @@
                                             1.0
                                         ],
                                         "YSpeed": [
-                                            1.0,
-                                            3.0
+                                            0.0,
+                                            4.0
                                         ],
                                         "ZSpeed": [
                                             0.0,
@@ -607,8 +607,8 @@
                                         ],
                                         "yBezier": [
                                             0.0,
-                                            1.0,
-                                            1.0,
+                                            0.0,
+                                            0.0,
                                             1.0,
                                             0.0
                                         ],
@@ -705,26 +705,19 @@
                                             [
                                                 0.021868791431188583,
                                                 0.0,
-                                                0.07058823853731155,
+                                                0.09019608050584793,
                                                 0.13725490868091583,
                                                 1.0
                                             ],
                                             [
-                                                0.3178335726261139,
-                                                0.0,
-                                                0.42352941632270813,
-                                                0.8117647171020508,
+                                                0.6407333016395569,
+                                                0.07276599854230881,
+                                                0.8860681056976318,
+                                                0.9147727489471436,
                                                 1.0
                                             ],
                                             [
-                                                0.6585903763771057,
-                                                0.0,
-                                                1.0,
-                                                0.8980392217636108,
-                                                1.0
-                                            ],
-                                            [
-                                                0.9229075908660889,
+                                                0.9764788150787354,
                                                 1.0,
                                                 1.0,
                                                 1.0,
@@ -738,8 +731,8 @@
                                         "currentShape": 3,
                                         "currentSpawn": 0,
                                         "baseRadius": 1.3799999952316284,
-                                        "coneAngle": 19.649999618530273,
-                                        "coneLength": 0.8999999761581421,
+                                        "coneAngle": 27.200000762939453,
+                                        "coneLength": 0.8299999833106995,
                                         "cubeSize": [
                                             1.0,
                                             1.0,
@@ -791,7 +784,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Decal",
-                        "Material": 1369120592298319
+                        "Material": 1300000000000000
                     }
                 ],
                 "Children": []
@@ -802,8 +795,8 @@
                 "Name": "Particles_top",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
+                "Enabled": true,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabChildUID": 11780128225687677368,
                 "LocalTransform": [
@@ -837,7 +830,7 @@
                                 "EmitterTag": "foam_1",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1200000000000000,
+                                "Texture": 1227432155129596,
                                 "Addons": [
                                     {
                                         "Enabled": true,
@@ -1134,7 +1127,7 @@
                                 "EmitterTag": "foam_2",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1200000000000000,
+                                "Texture": 1212105066207645,
                                 "Addons": [
                                     {
                                         "Enabled": true,
