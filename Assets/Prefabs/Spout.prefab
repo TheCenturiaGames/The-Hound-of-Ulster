@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1692091012027069,
-        "VersionUID": 17664748278304388962,
+        "VersionUID": 7325305213792525043,
         "Name": "Spout",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1692091012027069,
-                "PrefabVersionUID": 17664748278304388962,
+                "PrefabVersionUID": 7325305213792525043,
                 "PrefabChildUID": 4813072011170921878,
                 "LocalTransform": [
                     1.0,
@@ -58,8 +58,11 @@
                                 "Initial Scale Tornado": 12.0,
                                 "Rotation Speed Blue Waves": 7.5,
                                 "Explosion Duration": 0.33000001311302185,
+                                "Rotation Speed Cylinder": 5.0,
+                                "Rotation Speed Tornado After": 3.0,
                                 "Water Spout Duration": 2.5,
-                                "Character": 0
+                                "Damage Cooldown": 0.5,
+                                "Character": 6697080583537424294
                             }
                         ]
                     },
@@ -146,8 +149,8 @@
                         "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1115697844309149,
-                        "Material": 1300000000000000,
-                        "RenderMode": 0,
+                        "Material": 1380655176148367,
+                        "RenderMode": 1,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -258,8 +261,8 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1110371863899177,
-                        "Material": 1300000000000000,
-                        "RenderMode": 0,
+                        "Material": 1383745101046858,
+                        "RenderMode": 2,
                         "ProduceShadows": true,
                         "Additive": false
                     }
@@ -302,8 +305,8 @@
                         "WasEnabled": false,
                         "Name": "Mesh",
                         "Mesh": 1147036519960865,
-                        "Material": 1300000000000000,
-                        "RenderMode": 0,
+                        "Material": 1319627665747143,
+                        "RenderMode": 1,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -374,8 +377,8 @@
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1170650399825485,
-                        "Material": 1300000000000000,
-                        "RenderMode": 0,
+                        "Material": 1317169225857399,
+                        "RenderMode": 1,
                         "ProduceShadows": true,
                         "Additive": false
                     },
@@ -416,8 +419,8 @@
                 "Name": "Particles_bot",
                 "Mobility": 0,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 3453350847153721532,
                 "LocalTransform": [
@@ -703,21 +706,21 @@
                                         "AddonType": 4,
                                         "ColorMarks": [
                                             [
-                                                0.021868791431188583,
+                                                0.03526164963841438,
                                                 0.0,
-                                                0.09019608050584793,
+                                                0.07058823853731155,
                                                 0.13725490868091583,
                                                 1.0
                                             ],
                                             [
-                                                0.6407333016395569,
-                                                0.07276599854230881,
-                                                0.8860681056976318,
-                                                0.9147727489471436,
+                                                0.6295726299285889,
+                                                0.0,
+                                                1.0,
+                                                0.9254902005195618,
                                                 1.0
                                             ],
                                             [
-                                                0.9764788150787354,
+                                                0.9697824120521545,
                                                 1.0,
                                                 1.0,
                                                 1.0,
@@ -784,7 +787,7 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Decal",
-                        "Material": 1300000000000000
+                        "Material": 1369120592298319
                     }
                 ],
                 "Children": []
@@ -795,8 +798,8 @@
                 "Name": "Particles_top",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabChildUID": 11780128225687677368,
                 "LocalTransform": [
@@ -830,7 +833,7 @@
                                 "EmitterTag": "foam_1",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1227432155129596,
+                                "Texture": 1284393453266897,
                                 "Addons": [
                                     {
                                         "Enabled": true,
@@ -1424,7 +1427,7 @@
                                 "EmitterTag": "foam_particles",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1200000000000000,
+                                "Texture": 1284393453266897,
                                 "Addons": [
                                     {
                                         "Enabled": true,
