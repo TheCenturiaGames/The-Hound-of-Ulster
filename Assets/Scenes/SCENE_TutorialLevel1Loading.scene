@@ -30,39 +30,6 @@
         "tagsGO": [],
         "GameObjects": [
             {
-                "UID": 13456033149597576342,
-                "ParentUID": 0,
-                "Name": "SceneModule GameObject",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    15783730103916929042,
-                    3677320688408705926
-                ]
-            },
-            {
                 "UID": 3677320688408705926,
                 "ParentUID": 13456033149597576342,
                 "Name": "AsyncAudio",
@@ -111,6 +78,40 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 13456033149597576342,
+                "ParentUID": 0,
+                "Name": "SceneModule GameObject",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": [
+                    15783730103916929042,
+                    3677320688408705926,
+                    4625016336602279330
+                ]
             },
             {
                 "UID": 15783730103916929042,
@@ -166,6 +167,66 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 4625016336602279330,
+                "ParentUID": 13456033149597576342,
+                "Name": "MusicManagerSilent",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7879797456383525277,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MusicManager",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 2746918576,
+                                "Second audio event": 0,
+                                "Third audio event": 65769146
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 10540673004605281087,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": []
             }
         ],
         "Lights Config": {
@@ -183,6 +244,29 @@
             "Wind speed": 0.0,
             "Gust frequency": 1.0,
             "Gust speed": 0.0
+        },
+        "HeightFogParameters": {
+            "EnableFog": false,
+            "FollowCamera": false,
+            "DensityConstant": 1.0,
+            "HeightFalloff": 1.0,
+            "FogStartHeight": 0.0,
+            "MaxFog": 1.0,
+            "FogColor": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "RenderPassConfig": {
+            "stepSize": 0.5,
+            "fogIntensity": 1.0,
+            "noiseAmmount": 0.0,
+            "extinctionCoefficient": 0.03999999910593033,
+            "anisotropy": 0.5,
+            "blurrPasses": 10,
+            "useNoiseTexture": false,
+            "noiseTexture": 0
         }
     }
 }
