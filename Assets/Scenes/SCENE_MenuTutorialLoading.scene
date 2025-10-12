@@ -59,7 +59,8 @@
                 "Components": [],
                 "Children": [
                     15783730103916929042,
-                    11706449611885777693
+                    11706449611885777693,
+                    4518472014402124311
                 ]
             },
             {
@@ -176,6 +177,56 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 4518472014402124311,
+                "ParentUID": 13456033149597576342,
+                "Name": "AsyncAudio",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16871163644352041625,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 669282958,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": true
+                    },
+                    {
+                        "UID": 5470238584487412970,
+                        "Type": 19,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Listener"
+                    }
+                ],
+                "Children": []
             }
         ],
         "Lights Config": {
@@ -215,7 +266,7 @@
             "anisotropy": 0.5,
             "blurrPasses": 10,
             "useNoiseTexture": false,
-            "noiseTexture": 0
+            "noiseTexture": 1200000000000000
         }
     }
 }
