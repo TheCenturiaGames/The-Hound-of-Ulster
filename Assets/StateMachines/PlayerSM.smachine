@@ -304,8 +304,8 @@
                 "StateName": "Respawn",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
                 "Position": {
-                    "x": 720.0,
-                    "y": 20.0
+                    "x": 800.0,
+                    "y": 170.0
                 },
                 "Triggers": []
             },
@@ -313,8 +313,8 @@
                 "StateName": "Dash",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Dash",
                 "Position": {
-                    "x": 370.0,
-                    "y": -50.0
+                    "x": 420.0,
+                    "y": -40.0
                 },
                 "Triggers": []
             },
@@ -1461,6 +1461,48 @@
                 "FromState": "Charge",
                 "ToState": "Hurt",
                 "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Transform",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "RangedStart",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Fall",
+                "Trigger": "Fall",
                 "InterpolationTime": 200
             }
         ]
