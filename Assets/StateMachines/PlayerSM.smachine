@@ -358,8 +358,8 @@
                 "StateName": "Charge",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Attack_Charge_Initial",
                 "Position": {
-                    "x": 240.0,
-                    "y": -150.0
+                    "x": 150.0,
+                    "y": -140.0
                 },
                 "Triggers": []
             },
@@ -1449,6 +1449,18 @@
                 "FromState": "Shoot",
                 "ToState": "Death",
                 "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
                 "InterpolationTime": 200
             }
         ]
