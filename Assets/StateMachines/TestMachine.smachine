@@ -568,6 +568,24 @@
                 "ToState": "Run",
                 "Trigger": "run",
                 "InterpolationTime": 200
+            },
+            {
+                "FromState": "aim",
+                "ToState": "Run",
+                "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "overdrawing",
+                "Trigger": "overdraw",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "multidraw",
+                "ToState": "overdrawing",
+                "Trigger": "overdraw",
+                "InterpolationTime": 200
             }
         ]
     }
