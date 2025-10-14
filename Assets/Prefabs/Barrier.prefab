@@ -1,34 +1,34 @@
 {
     "Prefab": {
-        "UID": 1650512296088959,
-        "VersionUID": 9839494243080542549,
+        "UID": 1602992953726779,
+        "VersionUID": 15684488194894863356,
         "Name": "Barrier",
         "GameObjects": [
             {
-                "UID": 10445598522659488350,
-                "ParentUID": 3408008172474305760,
+                "UID": 10114172574407034357,
+                "ParentUID": 10309131146409751111,
                 "Name": "Barrier",
                 "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1650512296088959,
-                "PrefabVersionUID": 9839494243080542549,
-                "PrefabChildUID": 12635059516197155707,
+                "PrefabUID": 1602992953726779,
+                "PrefabVersionUID": 15684488194894863356,
+                "PrefabChildUID": 17949057117505198124,
                 "LocalTransform": [
-                    1.0,
+                    0.9983413815498352,
                     0.0,
-                    0.0,
-                    -88.99846649169922,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.9629998207092285,
-                    0.0,
+                    0.0575716607272625,
+                    17.68488311767578,
                     0.0,
                     1.0,
-                    16.609893798828125,
+                    0.0,
+                    13.983193397521973,
+                    -0.0575716607272625,
+                    0.0,
+                    0.9983413815498352,
+                    -45.42304229736328,
                     0.0,
                     0.0,
                     0.0,
@@ -36,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 18332331050598702701,
+                        "UID": 3927576997429928152,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -46,12 +46,13 @@
                                 "Script Name": "MagicBarrier",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Area tag": "LevelStart"
+                                "Area tag": "MainAreaUltimate",
+                                "Game state audio event": 1734839042
                             }
                         ]
                     },
                     {
-                        "UID": 6523746985537896837,
+                        "UID": 15638563581368387095,
                         "Type": 11,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -76,40 +77,54 @@
                             2.3449759483337402,
                             4.17642879486084
                         ]
+                    },
+                    {
+                        "UID": 13936931120026616030,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
                     }
                 ],
                 "Children": [
-                    13617828959858644957,
-                    10891952954288380800,
-                    17514610035771250867,
-                    14360858664194517621,
-                    15684403286310051183,
-                    6878218693120921081
+                    14549395876827179245,
+                    11177557739273541394,
+                    9195801715980661167,
+                    2119839922587486481,
+                    1045288310284429830,
+                    14493325552862941488,
+                    13262066786958444993,
+                    2766311437359281784
                 ]
             },
             {
-                "UID": 13617828959858644957,
-                "ParentUID": 10445598522659488350,
-                "Name": "VFX_Barrier_rectengular_light",
+                "UID": 14549395876827179245,
+                "ParentUID": 10114172574407034357,
+                "Name": "VFX_Barrier_rectengular_light-longer",
                 "Mobility": 1,
                 "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
+                "Enabled": false,
+                "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5367824056250064145,
+                "PrefabChildUID": 8549439698880027863,
                 "LocalTransform": [
+                    0.9999933242797852,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
                     1.0,
                     0.0,
-                    0.0,
-                    0.15643024444580078,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -0.979924201965332,
+                    -0.5160255432128906,
                     0.0,
                     0.0,
-                    3.3884341716766357,
-                    -0.09802436828613281,
+                    0.9999933242797852,
+                    0.0,
                     0.0,
                     0.0,
                     0.0,
@@ -117,171 +132,80 @@
                 ],
                 "Components": [
                     {
-                        "UID": 8426104612759345024,
+                        "UID": 12717899061487167503,
                         "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
+                        "Enabled": false,
+                        "WasEnabled": false,
                         "Name": "Mesh",
-                        "Mesh": 1189061309559716,
+                        "Mesh": 1106501141911835,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 10891952954288380800,
-                "ParentUID": 10445598522659488350,
-                "Name": "VFX_Barrier_rim_light",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 13942177172609244424,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
                     {
-                        "UID": 3194971330514251659,
-                        "Type": 1,
+                        "UID": 6426204949047181090,
+                        "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1157579658383512,
-                        "Material": 0,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MirageVFX",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.0,
+                                "Additive": true,
+                                "Color 1": [
+                                    0.18799999356269836,
+                                    0.3569999933242798,
+                                    0.7329999804496765
+                                ],
+                                "Color 2": [
+                                    0.25999999046325684,
+                                    0.23999999463558197,
+                                    0.7300000190734863
+                                ],
+                                "Color 3": [
+                                    0.019999999552965164,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Color 4": [
+                                    0.0,
+                                    0.0,
+                                    0.6100000143051147
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
             },
             {
-                "UID": 17514610035771250867,
-                "ParentUID": 10445598522659488350,
-                "Name": "VFX_Barrier_Symbols",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 10505085282199815827,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -0.04819488525390625,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 10393217562392231078,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1119367066858527,
-                        "Material": 0,
-                        "RenderMode": 1,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 14360858664194517621,
-                "ParentUID": 10445598522659488350,
-                "Name": "VFX_Barrier_Main",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 13203753311243086725,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -0.040584564208984375,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.09429359436035156,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 16080099144786555213,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1186507398584049,
-                        "Material": 0,
-                        "RenderMode": 2,
-                        "ProduceShadows": true
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 15684403286310051183,
-                "ParentUID": 10445598522659488350,
+                "UID": 11177557739273541394,
+                "ParentUID": 10114172574407034357,
                 "Name": "VFX_Barrier_Particles",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9971938561329967581,
+                "PrefabChildUID": 1052701853247779242,
                 "LocalTransform": [
-                    -0.07765563577413559,
-                    -0.9993464350700378,
+                    -7.682347131776623e-7,
+                    -0.9998764991760254,
+                    0.1150856614112854,
                     0.0,
-                    -0.35025596618652344,
-                    2.146735668182373,
-                    -0.03615018352866173,
+                    2.1481399536132813,
+                    -2.734070960741519e-7,
+                    -0.000002788895017147297,
+                    -0.28339433670043945,
+                    5.761760348832468e-7,
+                    0.01459426898509264,
+                    7.884628772735596,
                     0.0,
-                    1.3648309707641602,
-                    0.0,
-                    0.0,
-                    7.885600566864014,
-                    0.17740631103515625,
                     0.0,
                     0.0,
                     0.0,
@@ -289,7 +213,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 5187702818132130177,
+                        "UID": 6954791723711879053,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -312,12 +236,12 @@
                                         "RandomLifetime": true,
                                         "MinLifetime": 1.0,
                                         "MaxLifetime": 3.0,
-                                        "randomizeSizeCombined": false,
+                                        "randomizeSizeCombined": true,
                                         "randomizeSizeX": true,
                                         "randomizeSizeY": true,
                                         "combinedSize": [
-                                            0.0,
-                                            1.0
+                                            0.10000000149011612,
+                                            0.30000001192092896
                                         ],
                                         "sizeValuesX": [
                                             0.10000000149011612,
@@ -422,7 +346,7 @@
                                             0.8999999761581421,
                                             0.8999999761581421
                                         ],
-                                        "updateXYApart": true,
+                                        "updateXYApart": false,
                                         "sizeInterpolation": 0,
                                         "sizeInterpolationX": 0,
                                         "sizeInterpolationY": 0
@@ -545,15 +469,15 @@
                                         "ColorMarks": [
                                             [
                                                 0.015432041138410568,
-                                                0.1668388396501541,
-                                                0.24602046608924866,
-                                                0.8636363744735718,
+                                                0.005940063390880823,
+                                                0.0,
+                                                0.022727251052856445,
                                                 1.0
                                             ],
                                             [
                                                 0.45679011940956116,
-                                                0.12357954680919647,
                                                 0.0,
+                                                0.314566045999527,
                                                 0.9886363744735718,
                                                 1.0
                                             ],
@@ -591,27 +515,27 @@
                 "Children": []
             },
             {
-                "UID": 6878218693120921081,
-                "ParentUID": 10445598522659488350,
-                "Name": "Point_Light_Barrier",
+                "UID": 9195801715980661167,
+                "ParentUID": 10114172574407034357,
+                "Name": "VFX_Barrier_Main",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7763825828800633092,
+                "PrefabChildUID": 11474887841899100505,
                 "LocalTransform": [
-                    1.0,
+                    1.0912410020828247,
                     0.0,
                     0.0,
+                    -0.19118118286132813,
+                    0.0,
+                    1.0912410020828247,
+                    0.0,
+                    0.3513374328613281,
                     0.0,
                     0.0,
-                    1.0,
-                    0.0,
-                    0.41925692558288574,
-                    0.0,
-                    0.0,
-                    1.0,
+                    1.0912410020828247,
                     0.0,
                     0.0,
                     0.0,
@@ -620,18 +544,278 @@
                 ],
                 "Components": [
                     {
-                        "UID": 13163588836153014960,
+                        "UID": 15224714839553153974,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1186507398584049,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2119839922587486481,
+                "ParentUID": 10114172574407034357,
+                "Name": "VFX_Barrier_Symbols",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14745938763392924432,
+                "LocalTransform": [
+                    1.055999994277954,
+                    0.0,
+                    0.0,
+                    -0.1395111083984375,
+                    0.0,
+                    1.055999994277954,
+                    0.0,
+                    0.3363795280456543,
+                    0.0,
+                    0.0,
+                    1.055999994277954,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5038802598515480851,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1119367066858527,
+                        "Material": 0,
+                        "RenderMode": 2,
+                        "ProduceShadows": false,
+                        "Additive": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 1045288310284429830,
+                "ParentUID": 10114172574407034357,
+                "Name": "VFX_Barrier_rim_light",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 13408049864745708175,
+                "LocalTransform": [
+                    0.9197899699211121,
+                    0.0,
+                    0.0,
+                    -0.12231063842773438,
+                    0.0,
+                    0.9197899699211121,
+                    0.0,
+                    0.42974090576171875,
+                    0.0,
+                    0.0,
+                    0.9197899699211121,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 2778599744143793366,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1157579658383512,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 14493325552862941488,
+                "ParentUID": 10114172574407034357,
+                "Name": "Point_Light_Barrier",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 389380887170952610,
+                "LocalTransform": [
+                    0.035144031047821045,
+                    0.0,
+                    0.9993822574615479,
+                    -0.08872222900390625,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.6598491668701172,
+                    -0.9993822574615479,
+                    0.0,
+                    0.035144031047821045,
+                    -0.00311279296875,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 16205643542062489519,
                         "Type": 2,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Point Light",
                         "Intensity": 19.607999801635742,
-                        "ColorRed": 0.12999999523162842,
-                        "ColorGreen": 0.0729999989271164,
+                        "ColorRed": 0.0,
+                        "ColorGreen": 0.12200000137090683,
                         "ColorBlue": 1.0,
                         "DrawGizmos": true,
-                        "Range": 4.0879998207092285,
+                        "Range": 4.572999954223633,
                         "GizmosMode": 0
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13262066786958444993,
+                "ParentUID": 10114172574407034357,
+                "Name": "Point_Light_Barrier",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 11876742130470572434,
+                "LocalTransform": [
+                    0.03546569496393204,
+                    0.0,
+                    0.9993652701377869,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    3.33270263671875,
+                    -0.9993652701377869,
+                    0.0,
+                    0.03546569496393204,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10992904837768625208,
+                        "Type": 3,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Spot Light",
+                        "Intensity": 35.507999420166016,
+                        "ColorRed": 0.0,
+                        "ColorGreen": 0.09099999815225601,
+                        "ColorBlue": 1.0,
+                        "DrawGizmos": true,
+                        "Range": 37.68199920654297,
+                        "InnerAngle": 7.173999786376953,
+                        "OuterAngle": 26.73900032043457
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 2766311437359281784,
+                "ParentUID": 10114172574407034357,
+                "Name": "VFX_Barrier_rectengular_light1",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 16926953721452482049,
+                "LocalTransform": [
+                    0.9999875426292419,
+                    0.0,
+                    7.674098014831543e-7,
+                    -0.06736183166503906,
+                    0.0,
+                    0.45007598400115967,
+                    0.0,
+                    -1.160050392150879,
+                    2.4586915969848633e-7,
+                    0.0,
+                    1.6999369859695435,
+                    -0.20513916015625,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5258067841016917699,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1183791044525506,
+                        "Material": 0,
+                        "RenderMode": 1,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 11657547425360423477,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MirageVFX",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Animation Speed": 0.10000000149011612,
+                                "Additive": true,
+                                "Color 1": [
+                                    0.18000000715255737,
+                                    0.3499999940395355,
+                                    0.7300000190734863
+                                ],
+                                "Color 2": [
+                                    0.44999998807907104,
+                                    0.36000001430511475,
+                                    0.9399999976158142
+                                ],
+                                "Color 3": [
+                                    0.0,
+                                    0.14000000059604645,
+                                    1.0
+                                ],
+                                "Color 4": [
+                                    0.33000001311302185,
+                                    0.3499999940395355,
+                                    0.6100000143051147
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
