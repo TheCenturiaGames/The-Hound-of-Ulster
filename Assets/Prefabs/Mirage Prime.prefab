@@ -1,76 +1,77 @@
 {
     "Prefab": {
         "UID": 1623755579412978,
-        "VersionUID": 61706279998261032,
+        "VersionUID": 6897290070104559486,
         "Name": "Mirage Prime",
         "GameObjects": [
             {
                 "UID": 4909047772253660592,
-                "ParentUID": 6788591387451538717,
+                "ParentUID": 9458252163101920130,
                 "Name": "Mirage Prime",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 61706279998261032,
+                "PrefabUID": 1623755579412978,
+                "PrefabVersionUID": 6897290070104559486,
                 "PrefabChildUID": 18195195310768991478,
                 "LocalTransform": [
+                    -1.192093463942001e-7,
+                    -0.000001128507733483275,
+                    -1.0000004768371582,
+                    -1.4403038024902344,
+                    -7.77000195412679e-14,
                     1.0,
-                    0.0,
-                    0.0,
-                    -14.799747467041016,
-                    0.0,
-                    1.0,
-                    0.0,
-                    -2.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -60.0,
+                    -0.000001128507278735924,
+                    0.03538942337036133,
+                    1.0000004768371582,
+                    3.6016616799432535e-14,
+                    -1.192093463942001e-7,
+                    -1.6588163375854492,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [],
+                "Components": [
+                    {
+                        "UID": 14094024401742000712,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "Mirage",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Delay Before Damage": 1.0,
+                                "Damage Duration": 1.0,
+                                "Damage": 1,
+                                "Weight Order": 1
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 10553966448814498244,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
                 "Children": [
-                    14166999278039877991,
                     1629393659880794654,
+                    14166999278039877991,
                     5111992011907431902,
                     8705341859482127035
                 ]
-            },
-            {
-                "UID": 14166999278039877991,
-                "ParentUID": 4909047772253660592,
-                "Name": "Endpoint",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 4477828642695737424,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -12.912590026855469,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
             },
             {
                 "UID": 1629393659880794654,
@@ -118,7 +119,7 @@
                                 "Dead": false,
                                 "Damage": 1,
                                 "Attack Range": 1.0,
-                                "Attack Duration": 0.5,
+                                "Attack Duration": 3.0,
                                 "Attack Cooldown": 1.0,
                                 "Attack Hitbox Delay": 0.0,
                                 "Attack Hitbox Duration": 0.0,
@@ -127,7 +128,7 @@
                         ]
                     },
                     {
-                        "UID": 3646901974213651913,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -192,6 +193,37 @@
                     17806247934559252050,
                     16126435051048342635
                 ]
+            },
+            {
+                "UID": 14166999278039877991,
+                "ParentUID": 4909047772253660592,
+                "Name": "Endpoint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 4477828642695737424,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -12.912590026855469,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 5111992011907431902,
@@ -352,7 +384,7 @@
                     {
                         "UID": 14199304252188332075,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1158902902588960,
@@ -428,17 +460,23 @@
                         "Additive": false
                     },
                     {
-                        "UID": 16862037923576644690,
+                        "UID": 17599881486799774573,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
                         "Scripts": [
                             {
-                                "Script Name": "ColorChange",
+                                "Script Name": "MirageHumanVFX",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 1,
+                                "Additive": false,
+                                "Color Tint": [
+                                    0.0,
+                                    1.0,
+                                    1.0
+                                ]
                             }
                         ]
                     }
@@ -477,7 +515,7 @@
                     {
                         "UID": 9820320197534440175,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1188303771162906,
@@ -553,17 +591,23 @@
                         "Additive": false
                     },
                     {
-                        "UID": 4297568442953321218,
+                        "UID": 2149278294605956760,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
                         "Scripts": [
                             {
-                                "Script Name": "ColorChange",
+                                "Script Name": "MirageHumanVFX",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 1,
+                                "Additive": false,
+                                "Color Tint": [
+                                    0.0,
+                                    1.0,
+                                    1.0
+                                ]
                             }
                         ]
                     }
@@ -602,7 +646,7 @@
                     {
                         "UID": 3522189452573191401,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1132196570431706,
@@ -678,17 +722,23 @@
                         "Additive": false
                     },
                     {
-                        "UID": 4967507755973364267,
+                        "UID": 18436066762257327249,
                         "Type": 26,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Shader script",
                         "Scripts": [
                             {
-                                "Script Name": "ColorChange",
+                                "Script Name": "MirageHumanVFX",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 1,
+                                "Additive": false,
+                                "Color Tint": [
+                                    0.0,
+                                    1.0,
+                                    1.0
+                                ]
                             }
                         ]
                     }
@@ -727,7 +777,7 @@
                     {
                         "UID": 11522427183145014476,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1191556743726131,
@@ -801,6 +851,27 @@
                         "SkinIndex": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    },
+                    {
+                        "UID": 4941384284858196207,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MirageHumanVFX",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Additive": false,
+                                "Color Tint": [
+                                    0.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -816,18 +887,18 @@
                 "NavmeshValid": false,
                 "PrefabChildUID": 3066921878726072014,
                 "LocalTransform": [
-                    1.0,
-                    2.928983286277023e-16,
-                    3.422854533141617e-8,
-                    0.0,
-                    -8.786949858831069e-16,
-                    1.0,
-                    1.7114272665708086e-8,
-                    0.0,
-                    -3.422854533141617e-8,
-                    -1.7114272665708086e-8,
-                    1.0,
-                    0.0,
+                    1.0000020265579224,
+                    9.033828973770142e-8,
+                    2.2351741790771484e-8,
+                    -0.000087738037109375,
+                    -9.872019290924072e-8,
+                    0.9999926090240479,
+                    5.885958671569824e-7,
+                    -9.5367431640625e-7,
+                    0.0000011622905731201172,
+                    -5.736947059631348e-7,
+                    0.9999969005584717,
+                    -0.033946990966796875,
                     0.0,
                     0.0,
                     0.0,
@@ -976,10 +1047,7 @@
                 "Components": [],
                 "Children": [
                     12607443515457945123,
-                    2494576924336467606,
-                    8916909218986165616,
-                    5675813448352804650,
-                    8684532869477749013
+                    8916909218986165616
                 ]
             },
             {
@@ -1210,332 +1278,6 @@
                 "Children": []
             },
             {
-                "UID": 2494576924336467606,
-                "ParentUID": 5604116173736536675,
-                "Name": "ParticleChargerShield",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 1216017230390352514,
-                "LocalTransform": [
-                    0.9909632205963135,
-                    -0.032325174659490585,
-                    -0.1301794946193695,
-                    0.0,
-                    0.032602593302726746,
-                    0.9994683861732483,
-                    -1.1851047077016119e-7,
-                    0.20000000298023224,
-                    0.13011063635349274,
-                    -0.004244083538651466,
-                    0.9914876818656921,
-                    0.10000000149011612,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 4749995292267951344,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "ChargerShield",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "Charger",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1298027847005657,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 0.20000000298023224,
-                                        "Loop": true,
-                                        "particlesPerSecond": 50,
-                                        "MaxParticles": 1,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.6000000238418579,
-                                        "randomizeSizeCombined": false,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.5,
-                                            1.5
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 1,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 2,
-                                        "gravity": false,
-                                        "gravityValue": 0.0,
-                                        "XSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "YSpeed": [
-                                            0.20000000298023224,
-                                            0.0
-                                        ],
-                                        "ZSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "RandX": false,
-                                        "RandY": false,
-                                        "RandZ": false,
-                                        "xBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "yBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "zBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "speedXInterpolation": 0,
-                                        "speedYInterpolation": 0,
-                                        "speedZInterpoaltion": 0,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPointsX": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsY": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsZ": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 1,
-                                        "Columns": 1,
-                                        "AnimationSpeed": 1.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 4,
-                                        "ColorMarks": [
-                                            [
-                                                0.12273906171321869,
-                                                0.0,
-                                                0.0,
-                                                0.0,
-                                                1.0
-                                            ],
-                                            [
-                                                0.5206719040870667,
-                                                0.19369837641716003,
-                                                0.470598965883255,
-                                                0.8522727489471436,
-                                                1.0
-                                            ],
-                                            [
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        ]
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 1,
-                                "colorIntensity": 1.0,
-                                "linkToParent": false
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 8916909218986165616,
                 "ParentUID": 5604116173736536675,
                 "Name": "ShieldCollider",
@@ -1565,7 +1307,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 5255775734435086842,
+                        "UID": 0,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1590,86 +1332,6 @@
                     }
                 ],
                 "Children": []
-            },
-            {
-                "UID": 5675813448352804650,
-                "ParentUID": 5604116173736536675,
-                "Name": "EmessiveVFX",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 2862387362998031475,
-                "LocalTransform": [
-                    1.2882521152496338,
-                    -0.04202273115515709,
-                    -0.13018068671226501,
-                    0.0,
-                    0.04238337278366089,
-                    1.2993090152740479,
-                    -1.1757948925605888e-7,
-                    -0.25,
-                    0.1691448986530304,
-                    -0.005517345387488604,
-                    0.9914904236793518,
-                    0.20000000298023224,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 11321654956545837786,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1169044534756073,
-                        "Material": 0,
-                        "RenderMode": 1,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 8684532869477749013,
-                "ParentUID": 5604116173736536675,
-                "Name": "EnergyBlast",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 6774485927857621594,
-                "LocalTransform": [
-                    0.9909632205963135,
-                    -0.032325148582458496,
-                    -0.13018061220645905,
-                    0.0,
-                    0.032602570950984955,
-                    0.9994683861732483,
-                    -1.175794679397768e-7,
-                    -0.25,
-                    0.130111426115036,
-                    -0.004244106821715832,
-                    0.9914902448654175,
-                    0.30000001192092896,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    11184151505720481821,
-                    8193843000867129159,
-                    16351384345407268944,
-                    17667155264238708438
-                ]
             },
             {
                 "UID": 16913215758102363818,
@@ -1863,1366 +1525,6 @@
                 "Children": [
                     17960192554775206999
                 ]
-            },
-            {
-                "UID": 11184151505720481821,
-                "ParentUID": 8684532869477749013,
-                "Name": "ParticleEnergyBlast1",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 12994053356480312965,
-                "LocalTransform": [
-                    0.0,
-                    -2.682208730675484e-7,
-                    -1.0000019073486328,
-                    0.0,
-                    -1.0,
-                    -3.576278118089249e-7,
-                    -5.960475135680099e-8,
-                    0.0,
-                    -2.682208730675484e-7,
-                    0.9999998807907104,
-                    -3.576284939299512e-7,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 13172543751900296639,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "EnergyBlast",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "Blast",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1287093177482901,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 5.0,
-                                        "Loop": true,
-                                        "particlesPerSecond": 20,
-                                        "MaxParticles": 2,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.5,
-                                        "randomizeSizeCombined": false,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.0,
-                                            3.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 2,
-                                        "gravity": false,
-                                        "gravityValue": 0.0,
-                                        "XSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "YSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "ZSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "RandX": false,
-                                        "RandY": false,
-                                        "RandZ": false,
-                                        "xBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "yBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "zBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "speedXInterpolation": 0,
-                                        "speedYInterpolation": 0,
-                                        "speedZInterpoaltion": 0,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPointsX": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsY": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsZ": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 1,
-                                        "Columns": 1,
-                                        "AnimationSpeed": 1.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 4,
-                                        "ColorMarks": [
-                                            [
-                                                0.0,
-                                                0.0235294122248888,
-                                                0.05098039284348488,
-                                                0.29411765933036804,
-                                                1.0
-                                            ],
-                                            [
-                                                0.5261120200157166,
-                                                0.0941176488995552,
-                                                0.32549020648002625,
-                                                0.8196078538894653,
-                                                1.0
-                                            ],
-                                            [
-                                                0.9961314797401428,
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 5,
-                                        "currentShape": 1,
-                                        "currentSpawn": 0,
-                                        "baseRadius": 0.0,
-                                        "coneAngle": 35.0,
-                                        "coneLength": 1.0,
-                                        "cubeSize": [
-                                            1.0,
-                                            1.0,
-                                            1.0
-                                        ]
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 1,
-                                "colorIntensity": 1.3600000143051147,
-                                "linkToParent": false
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 8193843000867129159,
-                "ParentUID": 8684532869477749013,
-                "Name": "ParticleEnergyBlast2",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11646863100112983271,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    -3.5762786865234375e-7,
-                    -1.0,
-                    -0.000007867813110351563,
-                    0.0,
-                    1.0,
-                    -3.5762786865234375e-7,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 15252178950606831769,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "EnergyBlast2",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "Blast2",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1287093177482901,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 2.0,
-                                        "Loop": true,
-                                        "particlesPerSecond": 100,
-                                        "MaxParticles": 3,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.30000001192092896,
-                                        "randomizeSizeCombined": true,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.4000000059604645,
-                                            1.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 2,
-                                        "gravity": false,
-                                        "gravityValue": 0.0,
-                                        "XSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "YSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "ZSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "RandX": false,
-                                        "RandY": false,
-                                        "RandZ": false,
-                                        "xBezier": [
-                                            0.0,
-                                            0.03099999949336052,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "yBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "zBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "speedXInterpolation": 1,
-                                        "speedYInterpolation": 0,
-                                        "speedZInterpoaltion": 0,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPointsX": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsY": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsZ": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 1,
-                                        "Columns": 1,
-                                        "AnimationSpeed": 1.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 4,
-                                        "ColorMarks": [
-                                            [
-                                                0.23752149939537048,
-                                                0.0117647061124444,
-                                                0.08627451211214066,
-                                                0.43921568989753723,
-                                                1.0
-                                            ],
-                                            [
-                                                0.6781397461891174,
-                                                0.11372549086809158,
-                                                0.8196078538894653,
-                                                1.0,
-                                                1.0
-                                            ],
-                                            [
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 5,
-                                        "currentShape": 3,
-                                        "currentSpawn": 0,
-                                        "baseRadius": 0.38999998569488525,
-                                        "coneAngle": 19.149999618530273,
-                                        "coneLength": 0.5799999833106995,
-                                        "cubeSize": [
-                                            1.0,
-                                            1.0,
-                                            1.0
-                                        ]
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 1,
-                                "colorIntensity": 1.784999966621399,
-                                "linkToParent": false
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 16351384345407268944,
-                "ParentUID": 8684532869477749013,
-                "Name": "ParticleEnergyBlast3",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 11671722833925570863,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    -3.576278118089249e-7,
-                    -0.9999998807907104,
-                    0.0,
-                    0.0,
-                    0.9999998807907104,
-                    -3.576278118089249e-7,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 14563872157023538639,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "EnergyBlast2",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "Blast2",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1287093177482901,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 2.0,
-                                        "Loop": true,
-                                        "particlesPerSecond": 100,
-                                        "MaxParticles": 3,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.30000001192092896,
-                                        "randomizeSizeCombined": true,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.4000000059604645,
-                                            1.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 2,
-                                        "gravity": false,
-                                        "gravityValue": 0.0,
-                                        "XSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "YSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "ZSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "RandX": false,
-                                        "RandY": false,
-                                        "RandZ": false,
-                                        "xBezier": [
-                                            0.0,
-                                            0.03099999949336052,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "yBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "zBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "speedXInterpolation": 1,
-                                        "speedYInterpolation": 0,
-                                        "speedZInterpoaltion": 0,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPointsX": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsY": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsZ": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 1,
-                                        "Columns": 1,
-                                        "AnimationSpeed": 1.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 4,
-                                        "ColorMarks": [
-                                            [
-                                                0.23752149939537048,
-                                                0.0117647061124444,
-                                                0.08627451211214066,
-                                                0.43921568989753723,
-                                                1.0
-                                            ],
-                                            [
-                                                0.6781397461891174,
-                                                0.11372549086809158,
-                                                0.8196078538894653,
-                                                1.0,
-                                                1.0
-                                            ],
-                                            [
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 5,
-                                        "currentShape": 3,
-                                        "currentSpawn": 0,
-                                        "baseRadius": 0.38999998569488525,
-                                        "coneAngle": 19.149999618530273,
-                                        "coneLength": 0.5799999833106995,
-                                        "cubeSize": [
-                                            1.0,
-                                            1.0,
-                                            1.0
-                                        ]
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 1,
-                                "colorIntensity": 1.784999966621399,
-                                "linkToParent": false
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 17667155264238708438,
-                "ParentUID": 8684532869477749013,
-                "Name": "ParticleEnergyBlast4",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 9138053209421504321,
-                "LocalTransform": [
-                    0.0,
-                    -2.682209014892578e-7,
-                    -1.0,
-                    0.0,
-                    -0.9999999403953552,
-                    -3.5762786865234375e-7,
-                    -5.960463766996327e-8,
-                    0.0,
-                    -2.6822084464583895e-7,
-                    1.0,
-                    -3.576278118089249e-7,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 1328408841621064497,
-                        "Type": 25,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "ParticleSystem",
-                        "ParticleSystemTag": "EnergyBlast",
-                        "Emitters": [
-                            {
-                                "EmitterTag": "Blast",
-                                "UseTexture": true,
-                                "Material": 1300000000000000,
-                                "Texture": 1287093177482901,
-                                "Addons": [
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 1,
-                                        "Duration": 5.0,
-                                        "Loop": true,
-                                        "particlesPerSecond": 20,
-                                        "MaxParticles": 2,
-                                        "RandomLifetime": false,
-                                        "MinLifetime": 0.5,
-                                        "MaxLifetime": 0.5,
-                                        "randomizeSizeCombined": false,
-                                        "randomizeSizeX": false,
-                                        "randomizeSizeY": false,
-                                        "combinedSize": [
-                                            0.0,
-                                            3.0
-                                        ],
-                                        "sizeValuesX": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeValuesY": [
-                                            0.0,
-                                            1.0
-                                        ],
-                                        "sizeBezierCombined": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierX": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "sizeBezierY": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "rotation": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "randomRotation": false,
-                                        "burst": false,
-                                        "respawnLoop": false,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorXPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorYPoints": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "updateXYApart": false,
-                                        "sizeInterpolation": 0,
-                                        "sizeInterpolationX": 0,
-                                        "sizeInterpolationY": 0
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 2,
-                                        "gravity": false,
-                                        "gravityValue": 0.0,
-                                        "XSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "YSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "ZSpeed": [
-                                            0.0,
-                                            0.0
-                                        ],
-                                        "RandX": false,
-                                        "RandY": false,
-                                        "RandZ": false,
-                                        "xBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "yBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "zBezier": [
-                                            0.0,
-                                            0.0,
-                                            1.0,
-                                            1.0,
-                                            0.0
-                                        ],
-                                        "speedXInterpolation": 0,
-                                        "speedYInterpolation": 0,
-                                        "speedZInterpoaltion": 0,
-                                        "MaxCurveEditorPoints": 10,
-                                        "curveEditorPointsX": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsY": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ],
-                                        "curveEditorPointsZ": [
-                                            -10000.0,
-                                            0.0,
-                                            0.10000000149011612,
-                                            0.10000000149011612,
-                                            0.20000000298023224,
-                                            0.20000000298023224,
-                                            0.30000001192092896,
-                                            0.30000001192092896,
-                                            0.4000000059604645,
-                                            0.4000000059604645,
-                                            0.5,
-                                            0.5,
-                                            0.6000000238418579,
-                                            0.6000000238418579,
-                                            0.699999988079071,
-                                            0.699999988079071,
-                                            0.800000011920929,
-                                            0.800000011920929,
-                                            0.8999999761581421,
-                                            0.8999999761581421
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 3,
-                                        "Rows": 1,
-                                        "Columns": 1,
-                                        "AnimationSpeed": 1.0,
-                                        "RandomizeTiles": false
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 4,
-                                        "ColorMarks": [
-                                            [
-                                                0.0,
-                                                0.0235294122248888,
-                                                0.05098039284348488,
-                                                0.29411765933036804,
-                                                1.0
-                                            ],
-                                            [
-                                                0.5261120200157166,
-                                                0.0941176488995552,
-                                                0.32549020648002625,
-                                                0.8196078538894653,
-                                                1.0
-                                            ],
-                                            [
-                                                0.9961314797401428,
-                                                1.0,
-                                                1.0,
-                                                1.0,
-                                                1.0
-                                            ]
-                                        ]
-                                    },
-                                    {
-                                        "Enabled": true,
-                                        "AddonType": 5,
-                                        "currentShape": 1,
-                                        "currentSpawn": 0,
-                                        "baseRadius": 0.0,
-                                        "coneAngle": 35.0,
-                                        "coneLength": 1.0,
-                                        "cubeSize": [
-                                            1.0,
-                                            1.0,
-                                            1.0
-                                        ]
-                                    }
-                                ],
-                                "RenderPriority": 0,
-                                "blendingMode": 1,
-                                "colorIntensity": 1.3600000143051147,
-                                "linkToParent": false
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
             },
             {
                 "UID": 15669805297652574760,
