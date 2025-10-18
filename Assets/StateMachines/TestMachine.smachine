@@ -91,8 +91,8 @@
             {
                 "ClipUID": 1582992203549432,
                 "ClipName": "Ch_Archer_Enemy_Animations_idle",
-                "ClipTime": 1.0,
-                "Loop": false
+                "ClipTime": 0.7599999904632568,
+                "Loop": true
             },
             {
                 "ClipUID": 0,
@@ -585,6 +585,18 @@
                 "FromState": "multidraw",
                 "ToState": "overdrawing",
                 "Trigger": "overdraw",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashStart",
+                "ToState": "impactSmall",
+                "Trigger": "damageSmall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "dashEnd",
+                "ToState": "impactSmall",
+                "Trigger": "damageSmall",
                 "InterpolationTime": 200
             }
         ]
