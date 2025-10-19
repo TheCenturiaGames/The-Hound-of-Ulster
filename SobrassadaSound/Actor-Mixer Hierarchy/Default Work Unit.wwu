@@ -7223,6 +7223,50 @@
 										<ActiveSource Name="SFX_Boss_PrepareMirage" ID="{465A214E-10A9-4AF9-AB86-0D2760C7FDB4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SFX_Boss_Hit" ID="{6F82A26D-F070-437B-9F31-4B379565021A}" ShortID="491761521">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Boss_Hit" ID="{604E633E-F6DF-41C0-9123-178EA9FABAB6}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Boss_Hit.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="623102180"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Boss_Hit" ID="{604E633E-F6DF-41C0-9123-178EA9FABAB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Boss_Charge" ID="{3F9D7DB8-90FE-4D1C-B5C7-290D86AC1951}" ShortID="970617830">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Boss_Charge" ID="{F37E0CEB-4F36-4B0F-AD1D-0BCB17921442}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Boss_Charge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="811304164"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Boss_Charge" ID="{F37E0CEB-4F36-4B0F-AD1D-0BCB17921442}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
