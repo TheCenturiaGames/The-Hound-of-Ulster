@@ -5451,13 +5451,6 @@
 									</ChildrenList>
 								</Folder>
 								<Sound Name="SFX_MC_Transformation" ID="{7BAE53F4-48AF-4C0F-BAE0-891A73ECB04E}" ShortID="227548138">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
@@ -5468,6 +5461,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_MC_Transformation" ID="{E2054A53-74F7-4E29-AC79-C592021E296A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.100505685018114"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.239299250043128"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_MC_Transformation.wav</AudioFile>
 											<MediaIDList>
@@ -5727,13 +5725,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_MC_Heal" ID="{D0ABF145-EF9D-48D3-8AC8-0E718E753A97}" ShortID="812772444">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
