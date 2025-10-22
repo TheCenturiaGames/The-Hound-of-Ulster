@@ -724,7 +724,7 @@
 							<ChildrenList>
 								<MusicSegment Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{3D8144C5-3642-4166-BA8F-E3B926225F62}" ShortID="860769792">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="15000"/>
+										<Property Name="EndPosition" Type="Real64" Value="15058.380189285"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -776,6 +776,117 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="The Hound Of Ulster_AT_KM_LVL 1_Ríastrad mode" ID="{FCFB4BC9-5DC8-40C3-A4D8-B659B49FBE1B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Riastrad_Fire" ID="{DD124B63-3050-4B1D-B29C-D1FBEB5CB07C}" ShortID="937456532">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{AE01A48C-1AEC-478D-A973-661C45FFC30D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_MC_Rhiastrad" ID="{9A89E913-7EF4-4B25-8DF9-B313465FCC55}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_MC_Rhiastrad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032216340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{196E3459-A896-4DE3-9484-D4DCC2DD22EF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SFX_MC_Rhiastrad" ID="{A162A7B2-5108-42FB-B475-6A97570085BB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14996.8206817611"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SFX_MC_Rhiastrad" ID="{9A89E913-7EF4-4B25-8DF9-B313465FCC55}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{BDC410D4-C334-435A-9DFE-EB821366D56B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.99682</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{CCECBEEB-1442-4841-AB79-68DAD3305F66}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.99682</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{2FEB0446-DB67-46A9-9713-60A57347FE28}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.99682</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
