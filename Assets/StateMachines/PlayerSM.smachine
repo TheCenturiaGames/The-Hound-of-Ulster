@@ -304,8 +304,8 @@
                 "StateName": "Respawn",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_MC_Respawn",
                 "Position": {
-                    "x": 720.0,
-                    "y": 20.0
+                    "x": 750.0,
+                    "y": -10.0
                 },
                 "Triggers": []
             },
@@ -1430,7 +1430,7 @@
             {
                 "FromState": "RangedStart",
                 "ToState": "Attack_1",
-                "Trigger": "Attack",
+                "Trigger": "Attack0",
                 "InterpolationTime": 200
             },
             {
@@ -1449,6 +1449,84 @@
                 "FromState": "Shoot",
                 "ToState": "Death",
                 "Trigger": "Death",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Hurt",
+                "Trigger": "Hurt",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Hit2",
+                "Trigger": "Hurt2",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Ultimate",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "RangedStart",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Shoot",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Transform",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_1",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_2",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Attack_3",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Hold",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Charge_Release",
+                "ToState": "Fall",
+                "Trigger": "Fall",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Shoot",
+                "ToState": "Attack_1",
+                "Trigger": "Attack0",
                 "InterpolationTime": 200
             }
         ]
