@@ -1,34 +1,34 @@
 {
     "Prefab": {
         "UID": 1684612429709188,
-        "VersionUID": 15592439308755717551,
+        "VersionUID": 14178447819206168870,
         "Name": "Destructible_Stump_1_LP_v02",
         "GameObjects": [
             {
-                "UID": 14905887368471348877,
-                "ParentUID": 1821322504251350322,
+                "UID": 6514984083711096181,
+                "ParentUID": 4008689787552526507,
                 "Name": "Destructible_Stump_1_LP_v02",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1684612429709188,
-                "PrefabVersionUID": 15592439308755717551,
+                "PrefabVersionUID": 14178447819206168870,
                 "PrefabChildUID": 12074925532157404999,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    0.10709953308105469,
+                    1.3854446411132813,
                     0.0,
                     1.0,
                     0.0,
-                    4.76837158203125e-7,
+                    0.0001163482666015625,
                     0.0,
                     0.0,
                     1.0,
-                    0.21951770782470703,
+                    0.0037841796875,
                     0.0,
                     0.0,
                     0.0,
@@ -36,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7931692102505642149,
+                        "UID": 10710479071603823703,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -48,7 +48,7 @@
                         "Additive": false
                     },
                     {
-                        "UID": 4493854555031950856,
+                        "UID": 16457578295675813150,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -66,7 +66,7 @@
                         ]
                     },
                     {
-                        "UID": 0,
+                        "UID": 4225924242108306233,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -90,7 +90,7 @@
                         ]
                     },
                     {
-                        "UID": 16540449826105745846,
+                        "UID": 9516805911772558833,
                         "Type": 18,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -103,13 +103,13 @@
                     }
                 ],
                 "Children": [
-                    11242449665334194067,
-                    10649612656009562844
+                    1688327682530129944,
+                    12397665648725496984
                 ]
             },
             {
-                "UID": 11242449665334194067,
-                "ParentUID": 14905887368471348877,
+                "UID": 1688327682530129944,
+                "ParentUID": 6514984083711096181,
                 "Name": "DestroyedMesh",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -121,15 +121,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
+                    0.02365875244140625,
                     0.0,
                     1.0,
                     0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.012149810791015625,
                     0.0,
                     0.0,
                     0.0,
@@ -137,13 +137,13 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6669308428141022341,
+                        "UID": 2685155795653362520,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1118553491742059,
-                        "Material": 0,
+                        "Material": 1396507909390902,
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
@@ -152,8 +152,8 @@
                 "Children": []
             },
             {
-                "UID": 10649612656009562844,
-                "ParentUID": 14905887368471348877,
+                "UID": 12397665648725496984,
+                "ParentUID": 6514984083711096181,
                 "Name": "PT_Destruction_Smoke",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -181,7 +181,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 10451316024264417788,
+                        "UID": 6202333511383002083,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -475,13 +475,14 @@
                                 ],
                                 "RenderPriority": 11,
                                 "blendingMode": 1,
-                                "colorIntensity": 0.4300000071525574
+                                "colorIntensity": 0.4300000071525574,
+                                "linkToParent": false
                             },
                             {
                                 "EmitterTag": "Center",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1207264774640255,
+                                "Texture": 1284393453266897,
                                 "Addons": [
                                     {
                                         "Enabled": true,
@@ -726,10 +727,6 @@
                                         "Rows": 2,
                                         "Columns": 2,
                                         "AnimationSpeed": 30.0,
-                                        "MinXTiles": 1,
-                                        "MaxXTiles": 4,
-                                        "MinYTiles": 2,
-                                        "MaxYTiles": 3,
                                         "RandomizeTiles": true
                                     },
                                     {
@@ -776,7 +773,8 @@
                                 ],
                                 "RenderPriority": 5,
                                 "blendingMode": 1,
-                                "colorIntensity": 0.22499999403953552
+                                "colorIntensity": 0.22499999403953552,
+                                "linkToParent": false
                             }
                         ]
                     }
