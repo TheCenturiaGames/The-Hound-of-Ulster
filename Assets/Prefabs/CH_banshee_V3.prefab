@@ -1,7 +1,7 @@
 {
     "Prefab": {
         "UID": 1643467819950114,
-        "VersionUID": 9835959182879842206,
+        "VersionUID": 16963659205740620838,
         "Name": "CH_banshee_V3",
         "GameObjects": [
             {
@@ -14,7 +14,7 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1643467819950114,
-                "PrefabVersionUID": 9835959182879842206,
+                "PrefabVersionUID": 16963659205740620838,
                 "PrefabChildUID": 2894948583344060317,
                 "LocalTransform": [
                     1.0,
@@ -46,8 +46,8 @@
                                 "Script Name": "Banshee",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Max Health": 15,
-                                "Current Health": 15,
+                                "Max Health": 2,
+                                "Current Health": 2,
                                 "Invulnerable": false,
                                 "Dead": false,
                                 "Damage": 2,
@@ -251,7 +251,7 @@
                     {
                         "UID": 15071037873152825335,
                         "Type": 1,
-                        "Enabled": true,
+                        "Enabled": false,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1102026906680321,
@@ -339,7 +339,27 @@
                                 "Script Name": "ColorChange",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 2,
+                                "Target Color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "Script Name": "DissolveOpaque",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 0,
+                                "Noise texture": 1264180119443370,
+                                "Animation Duration": 1.0,
+                                "Glow Range": 0.10000000149011612,
+                                "Glow Fallof": 0.10000000149011612,
+                                "Glow Color": [
+                                    0.09019608050584793,
+                                    0.7529411911964417,
+                                    0.9019607901573181
+                                ]
                             }
                         ]
                     }
@@ -1356,7 +1376,7 @@
                 "UID": 954161912174526148,
                 "ParentUID": 17712680447921907912,
                 "Name": "VFX_Hit_Aftermath",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
