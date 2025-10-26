@@ -60,7 +60,8 @@
                 "Children": [
                     15783730103916929042,
                     5107556488626730192,
-                    3227541420111514106
+                    3227541420111514106,
+                    12912017477023304107
                 ]
             },
             {
@@ -114,6 +115,56 @@
                         "WasEnabled": true,
                         "Name": "Video",
                         "Video Name": "Load2"
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 5107556488626730192,
+                "ParentUID": 13456033149597576342,
+                "Name": "AsyncAudio",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17812855977708904585,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 2715237988,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": true
+                    },
+                    {
+                        "UID": 12170409610298926682,
+                        "Type": 19,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Listener"
                     }
                 ],
                 "Children": []
@@ -179,9 +230,9 @@
                 "Children": []
             },
             {
-                "UID": 5107556488626730192,
+                "UID": 12912017477023304107,
                 "ParentUID": 13456033149597576342,
-                "Name": "AsyncAudio",
+                "Name": "Loading_Canvas",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -207,23 +258,147 @@
                 ],
                 "Components": [
                     {
-                        "UID": 17812855977708904585,
-                        "Type": 18,
+                        "UID": 5373152414625133010,
+                        "Type": 8,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Audio Source",
-                        "DefaultEvent": 2715237988,
-                        "Volume": 1.0,
-                        "Pitch": 0.5,
-                        "Spatialization": 0.0,
-                        "PlayOnStart": true
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
                     },
                     {
-                        "UID": 12170409610298926682,
-                        "Type": 19,
+                        "UID": 687146360508709965,
+                        "Type": 9,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Audio Listener"
+                        "Name": "Canvas",
+                        "RenderMode": 0
+                    },
+                    {
+                        "UID": 13907389091587121252,
+                        "Type": 20,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas Scaler",
+                        "ReferenceResolution": [
+                            1920.0,
+                            1080.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    6146036572680879950
+                ]
+            },
+            {
+                "UID": 6146036572680879950,
+                "ParentUID": 12912017477023304107,
+                "Name": "SkipHint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    530.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    -300.0,
+                    0.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13548771230245743581,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            530.0,
+                            -300.0
+                        ],
+                        "Size": [
+                            106.0,
+                            51.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 16031175856744897396,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1204481324136546,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 16219452394996922835,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "UIFadeInOut",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Start visible": false,
+                                "Fade in duration": 1.0,
+                                "Fade in opacity": 1.0,
+                                "Fade out duration": 1.0,
+                                "Fade out opacity": 0.0,
+                                "Automatic fade in": true,
+                                "Fade in start": 1.0,
+                                "Automatic fade out": true,
+                                "Fade out start": 5.0
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -263,10 +438,9 @@
             "fogIntensity": 1.0,
             "noiseAmmount": 0.0,
             "extinctionCoefficient": 0.03999999910593033,
-            "anisotropy": 0.5,
             "blurrPasses": 10,
             "useNoiseTexture": false,
-            "noiseTexture": 0
+            "noiseTexture": 1200000000000000
         }
     }
 }
