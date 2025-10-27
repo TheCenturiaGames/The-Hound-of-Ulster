@@ -1,11 +1,11 @@
 {
     "Prefab": {
         "UID": 1690458033335868,
-        "VersionUID": 12752479962813386105,
+        "VersionUID": 4222438703683258900,
         "Name": "RT_Tutorial_1_medium",
         "GameObjects": [
             {
-                "UID": 7621103525861513714,
+                "UID": 18297872841297055122,
                 "ParentUID": 8823869308913623498,
                 "Name": "RT_Tutorial_1_medium",
                 "Mobility": 0,
@@ -13,41 +13,9 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 12752479962813386105,
+                "PrefabUID": 1690458033335868,
+                "PrefabVersionUID": 4222438703683258900,
                 "PrefabChildUID": 2652132884608838438,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -4.881595134735107,
-                    0.0,
-                    1.0,
-                    0.0,
-                    5.9046196937561035,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -8.72453498840332,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": [
-                    402723183130063725
-                ]
-            },
-            {
-                "UID": 402723183130063725,
-                "ParentUID": 7621103525861513714,
-                "Name": "Rising tile",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "PrefabChildUID": 7723468154359960833,
                 "LocalTransform": [
                     0.75,
                     0.0,
@@ -68,19 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6379800017247100560,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1197453547033326,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": false,
-                        "Additive": false
-                    },
-                    {
-                        "UID": 12825108040650437135,
+                        "UID": 17818586278523916303,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -90,17 +46,17 @@
                                 "Script Name": "TileFloatScript",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Speed": 40,
+                                "Speed": 10.0,
                                 "MinDistanceToPlayer": 10.0,
                                 "Starting Position": [
                                     0.0,
-                                    -7.0,
+                                    0.0,
                                     0.0
                                 ],
                                 "Starting Rotation": [
-                                    -0.0,
-                                    45.0,
-                                    -0.0
+                                    0.0,
+                                    0.0,
+                                    0.0
                                 ],
                                 "Starting Scale": [
                                     1.0,
@@ -109,6 +65,52 @@
                                 ]
                             }
                         ]
+                    }
+                ],
+                "Children": [
+                    4889443248042338818
+                ]
+            },
+            {
+                "UID": 4889443248042338818,
+                "ParentUID": 18297872841297055122,
+                "Name": "Rising tile",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 7723468154359960833,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14532572745508444913,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1197453547033326,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
                     }
                 ],
                 "Children": []
