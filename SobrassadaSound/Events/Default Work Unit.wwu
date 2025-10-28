@@ -32,7 +32,7 @@
 								<Action Name="" ID="{803ABEE2-184F-4CC3-A4EB-D71712D29D1F}" ShortID="833716478">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Cave_01" ID="{4E70A53F-D3C4-4275-A227-0FFAC17ABC51}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Sound_Cave_Drops_Variation" ID="{8B278C85-DCE7-42B9-A752-5083E9C1E762}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -126,12 +126,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_Wind_01" ID="{596D568A-4C77-45BD-AD51-436B8A895265}">
+						<Event Name="Play_SFX_Wind_Background" ID="{596D568A-4C77-45BD-AD51-436B8A895265}">
 							<ChildrenList>
 								<Action Name="" ID="{CAB38ABB-8403-4BCD-B9DC-77F50FC81955}" ShortID="650155443">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Wind_01" ID="{54F796F5-0F19-4430-80A4-6E3046ECAEA5}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="SFX_Wind_Background" ID="{54F796F5-0F19-4430-80A4-6E3046ECAEA5}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -209,6 +209,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Tiles" ID="{80F651CB-04E5-4B8D-974E-1B3FE2241857}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Wind_Highlight" ID="{4EEDFDDC-99ED-4FA2-A008-4B8509AE9CA5}">
+							<ChildrenList>
+								<Action Name="" ID="{77CAEECC-3A06-4A58-84AF-594008C36294}" ShortID="959229742">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Wind_Highlight" ID="{04F088F1-EB6D-4C11-A69D-E995AFA765E9}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -381,7 +392,7 @@
 								<Action Name="" ID="{D8BA8174-E1A0-4347-8C27-B038AD3B13FD}" ShortID="9565246">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Soldier_Hurt" ID="{BF256CC8-39A8-49C6-9230-736780BA01E9}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Soldier_Hurt_Variation" ID="{A5BE490F-AEAB-4DB8-836B-5DD67EDBE811}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -917,7 +928,7 @@
 								<Action Name="" ID="{FA409E7A-05CF-404B-8AC5-8CA7E9E069EC}" ShortID="922826180">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Archer_Attack_01" ID="{C7D50980-26D2-4176-AFB5-D8D82E987CEE}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Archer_Attack_Variation" ID="{040B4BF7-4E8D-4747-B547-B20D2A75C603}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -950,7 +961,7 @@
 								<Action Name="" ID="{29A9A6FB-8CCA-4AF5-A5B5-E55737073E62}" ShortID="456690430">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Archer_Hurt" ID="{51E73EAE-21FE-4ECD-86F3-1E7C2FAFEEED}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
+											<ObjectRef Name="Archer_Hurt_Variation" ID="{84793371-EB1B-4BE5-B5F0-6F7D0B387CD6}" WorkUnitID="{79F98431-D7BF-4B94-86E4-8582D81D9EAF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

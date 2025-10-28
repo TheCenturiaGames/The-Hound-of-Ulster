@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{78DBC98B-74AE-4801-B2E7-01C9DEAA41F5}" ShortID="140443744">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
@@ -2959,6 +2966,10 @@
 								<CustomState Name="" ID="{FF07A027-08D9-4E5A-807E-2D391D6E5F1E}" ShortID="707729732"/>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="None" ID="{66F25415-B718-4402-A58F-BC08172F1D67}"/>
+								<CustomState Name="" ID="{7CD1D208-9158-4972-925E-226EBE2F9E0F}" ShortID="962592877"/>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="BossPhase2" ID="{07DB972F-2B99-4575-9077-89895BEFAA55}"/>
 								<CustomState Name="" ID="{156E0DB8-E779-4B49-9A2C-6B75D35EFF9F}" ShortID="798709410"/>
 							</CustomState>
@@ -3001,6 +3012,10 @@
 							<CustomState>
 								<StateRef Name="Boss" ID="{7D9B4E80-DD34-4EF4-AB17-062C529B5057}"/>
 								<CustomState Name="" ID="{5CC83A11-A173-4A3B-90D0-8474C1451935}" ShortID="634676249"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{EB2E28D8-9FF5-4F37-9799-15C215EF9A31}"/>
+								<CustomState Name="" ID="{A7537961-0124-435B-873D-7FAA176ABA87}" ShortID="881302516"/>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
@@ -3334,7 +3349,7 @@
 									<MultiSwitchEntry Name="" ID="{7B230D44-5703-499E-A07A-B7D13D9AF8F6}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MainMenu" ID="{1F15A3F0-16DF-4EEE-AA23-1F2F2C667328}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
