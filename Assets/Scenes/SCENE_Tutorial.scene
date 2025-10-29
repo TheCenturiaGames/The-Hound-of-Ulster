@@ -5,19 +5,19 @@
         "RootGameObject": 8823869308913623498,
         "NavmeshUID": 2024566865993265,
         "Camera Position": [
-            -32.62511444091797,
-            13.770418167114258,
-            -31.866605758666992
+            -32.27648162841797,
+            24.17012596130371,
+            -28.537973403930664
         ],
         "Camera Front": [
-            0.23912838101387024,
-            -0.5305350422859192,
-            -0.8132345080375671
+            0.15036386251449585,
+            -0.5424652099609375,
+            -0.8265121579170227
         ],
         "Camera Up": [
-            0.1493004858493805,
-            0.8484286069869995,
-            -0.5078172087669373
+            0.09685634076595306,
+            0.8408616185188293,
+            -0.5325136184692383
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -125,7 +125,8 @@
                 15111121305191240607,
                 4371020918766434305,
                 3864829909725296239,
-                5692858710390882009
+                5692858710390882009,
+                13943517340093693288
             ],
             [
                 5418390805808134402
@@ -413,6 +414,49 @@
                 ]
             },
             {
+                "UID": 14084379041629954752,
+                "ParentUID": 3183948367375988263,
+                "Name": "En_Temple_Pilar_Small",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0000340938568115,
+                    4.4955120870326937e-7,
+                    0.0,
+                    -9.491455078125,
+                    -4.4956652800465235e-7,
+                    1.0,
+                    4.4956635747439577e-7,
+                    -4.780430316925049,
+                    2.0211000299578952e-13,
+                    -4.4956641431781463e-7,
+                    0.9999998807907104,
+                    8.831340789794922,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6305815455080422602,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1128623454016822,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 6101803774196427715,
                 "ParentUID": 10867923635798645602,
                 "Name": "Destructible_Crate02",
@@ -515,27 +559,27 @@
                 ]
             },
             {
-                "UID": 14084379041629954752,
-                "ParentUID": 3183948367375988263,
-                "Name": "En_Temple_Pilar_Small",
+                "UID": 11881006359088880729,
+                "ParentUID": 8429925086753323471,
+                "Name": "point_light",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
-                    1.0000340938568115,
-                    4.4955120870326937e-7,
-                    0.0,
-                    -9.491455078125,
-                    -4.4956652800465235e-7,
                     1.0,
-                    4.4956635747439577e-7,
-                    -4.780430316925049,
-                    2.0211000299578952e-13,
-                    -4.4956641431781463e-7,
-                    0.9999998807907104,
-                    8.831340789794922,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.465423583984375,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.1682262420654297,
                     0.0,
                     0.0,
                     0.0,
@@ -543,16 +587,18 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6305815455080422602,
-                        "Type": 1,
+                        "UID": 9077172366798239260,
+                        "Type": 2,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1128623454016822,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
+                        "Name": "Point Light",
+                        "Intensity": 7.191999912261963,
+                        "ColorRed": 1.0,
+                        "ColorGreen": 0.11900000274181366,
+                        "ColorBlue": 0.0,
+                        "DrawGizmos": true,
+                        "Range": 10.0,
+                        "GizmosMode": 1
                     }
                 ],
                 "Children": []
@@ -596,51 +642,6 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 11881006359088880729,
-                "ParentUID": 8429925086753323471,
-                "Name": "point_light",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.465423583984375,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.1682262420654297,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 9077172366798239260,
-                        "Type": 2,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Point Light",
-                        "Intensity": 7.191999912261963,
-                        "ColorRed": 1.0,
-                        "ColorGreen": 0.11900000274181366,
-                        "ColorBlue": 0.0,
-                        "DrawGizmos": true,
-                        "Range": 10.0,
-                        "GizmosMode": 1
                     }
                 ],
                 "Children": []
@@ -8268,7 +8269,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2894089347100817e-7,
@@ -8961,7 +8961,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -11193,7 +11192,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     -3.0547380447387695e-7,
                     -2.842170943040401e-14,
@@ -12241,7 +12239,6 @@
                 "WasEnabled": false,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999804496765137,
                     0.0,
@@ -14765,7 +14762,7 @@
                     0.0,
                     0.75,
                     0.0,
-                    360.0,
+                    350.0,
                     0.0,
                     0.0,
                     0.75,
@@ -14784,7 +14781,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             0.0,
-                            0.0
+                            -10.0
                         ],
                         "Size": [
                             546.0,
@@ -20675,7 +20672,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -22444,7 +22440,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.9999995231628418,
                     -5.642596647703613e-7,
@@ -23961,7 +23956,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.5069982409477234,
                     0.0,
@@ -29370,7 +29364,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185723128102836e-7,
@@ -30239,7 +30232,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9810559749603271,
                     0.0,
@@ -32595,7 +32587,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -33697,7 +33688,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -36435,7 +36425,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -38623,7 +38612,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2344787120819092,
                     4.2894089347100817e-7,
@@ -40694,7 +40682,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999804496765137,
                     0.0,
@@ -51597,7 +51584,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7346969113715293111,
                 "LocalTransform": [
                     0.22304539382457733,
                     0.0,
@@ -55325,7 +55311,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -62264,7 +62249,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -63356,7 +63340,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363729238510132,
                     3.94820688143227e-7,
@@ -64050,6 +64033,49 @@
                 "Children": []
             },
             {
+                "UID": 10592147127957752164,
+                "ParentUID": 1111223814350125607,
+                "Name": "EN_Sides_Big_wall_Stepped_short",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -0.9999350309371948,
+                    -3.577689839127174e-21,
+                    -0.016613027080893517,
+                    6.325115203857422,
+                    -3.2659857502742522e-18,
+                    1.0,
+                    2.7930700504654353e-18,
+                    -1.3791913986206055,
+                    0.016550669446587563,
+                    -3.225836367894883e-19,
+                    -1.000070333480835,
+                    6.655859470367432,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 14802303606628773955,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1147465718402796,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 8656994299664078106,
                 "ParentUID": 11293095456456717495,
                 "Name": "Destructible_Tributes_Jar01",
@@ -64152,92 +64178,6 @@
                 ]
             },
             {
-                "UID": 10592147127957752164,
-                "ParentUID": 1111223814350125607,
-                "Name": "EN_Sides_Big_wall_Stepped_short",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -0.9999350309371948,
-                    -3.577689839127174e-21,
-                    -0.016613027080893517,
-                    6.325115203857422,
-                    -3.2659857502742522e-18,
-                    1.0,
-                    2.7930700504654353e-18,
-                    -1.3791913986206055,
-                    0.016550669446587563,
-                    -3.225836367894883e-19,
-                    -1.000070333480835,
-                    6.655859470367432,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 14802303606628773955,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1147465718402796,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 11657423831378099885,
-                "ParentUID": 5517367161287626191,
-                "Name": "EN_Wall_03",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.9998368620872498,
-                    0.0,
-                    -0.016322780400514603,
-                    13.337471008300781,
-                    -3.789529267776226e-15,
-                    1.0,
-                    1.1055547026252186e-18,
-                    1.2525415420532227,
-                    0.016305197030305862,
-                    0.0,
-                    1.0000091791152954,
-                    3.158174514770508,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 6807998503176011717,
-                        "Type": 1,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Mesh",
-                        "Mesh": 1140013721275400,
-                        "Material": 0,
-                        "RenderMode": 0,
-                        "ProduceShadows": true,
-                        "Additive": false
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 11929183332925627549,
                 "ParentUID": 12067591945601372079,
                 "Name": "PR_Pillarl_Big",
@@ -64281,6 +64221,49 @@
                 "Children": [
                     6838517296026268747
                 ]
+            },
+            {
+                "UID": 11657423831378099885,
+                "ParentUID": 5517367161287626191,
+                "Name": "EN_Wall_03",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.9998368620872498,
+                    0.0,
+                    -0.016322780400514603,
+                    13.337471008300781,
+                    -3.789529267776226e-15,
+                    1.0,
+                    1.1055547026252186e-18,
+                    1.2525415420532227,
+                    0.016305197030305862,
+                    0.0,
+                    1.0000091791152954,
+                    3.158174514770508,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6807998503176011717,
+                        "Type": 1,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Mesh",
+                        "Mesh": 1140013721275400,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 698897796268531139,
@@ -64346,7 +64329,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 517135437429304496,
+                        "UID": 9126793959122219467,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -65031,7 +65014,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2343159914016724,
                     4.2885321249741537e-7,
@@ -69749,7 +69731,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2894089347100817e-7,
@@ -72053,7 +72034,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185723128102836e-7,
@@ -73085,7 +73065,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -75348,6 +75327,105 @@
                 "Children": []
             },
             {
+                "UID": 8029054310095610402,
+                "ParentUID": 20996537086395745,
+                "Name": "RiastradFire",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4563744160280326026,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1287.205322265625,
+                            721.308837890625
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3019247999743700314,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1290233345777347,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 16721448407119887350,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "UISpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 5,
+                                "Disable default image": true,
+                                "Cell width": 0.10000000149011612,
+                                "Cell height": 0.10000000149011612,
+                                "Update Rate": 0.05999999865889549,
+                                "Row major": true,
+                                "Is One Shot": false,
+                                "Is Fade Out": false,
+                                "Fade Out Duration": 0.4000000059604645,
+                                "Fade Out Start": 0.0,
+                                "Texture": 1203660399971127,
+                                "Use row columns": true,
+                                "Rows": 4,
+                                "Colums": 6
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 7238358393418332503,
                 "ParentUID": 1807473174889011198,
                 "Name": "Cave",
@@ -76032,7 +76110,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -78588,7 +78665,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -82643,7 +82719,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.04736112058162689,
                     0.0,
@@ -84595,7 +84670,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2047818899154663,
                     4.1857177279780444e-7,
@@ -90448,7 +90522,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -94036,7 +94109,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.7881392011531716e-7,
                     -0.0000011285197842880734,
@@ -97276,7 +97348,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -101164,7 +101235,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -574.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             400.0,
@@ -101655,7 +101726,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -102972,11 +103042,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.30000001192092896,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "Body",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "Body",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "VFX_Hit",
@@ -103667,7 +103737,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7346969113715293111,
                 "LocalTransform": [
                     0.22304539382457733,
                     0.0,
@@ -106538,7 +106607,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7346969113715293111,
                 "LocalTransform": [
                     -0.6221750974655151,
                     1.7500972048262653e-29,
@@ -109382,7 +109450,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363729238510132,
                     3.94820688143227e-7,
@@ -117023,11 +117090,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.699999988079071,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 9.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
@@ -119111,7 +119178,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -119814,7 +119880,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -122389,7 +122454,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -123168,7 +123232,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2894089347100817e-7,
@@ -123785,7 +123848,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.0002607420610729605,
                     0.0,
@@ -125303,7 +125365,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     -3.0547380447387695e-7,
                     -2.842170943040401e-14,
@@ -126049,7 +126110,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.00031603442039340734,
                     0.0,
@@ -127652,7 +127712,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.04736112058162689,
                     0.0,
@@ -129212,7 +129271,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.5069980025291443,
                     0.0,
@@ -130841,7 +130899,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9810559749603271,
                     0.0,
@@ -132358,7 +132415,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9810559749603271,
                     0.0,
@@ -133961,7 +134017,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999997615814209,
                     -5.642596647703613e-7,
@@ -135521,7 +135576,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.7881399116959074e-7,
                     -7.598363976844905e-21,
@@ -137081,7 +137135,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -138797,7 +138850,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -139414,7 +139466,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999804496765137,
                     0.0,
@@ -140975,7 +141026,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -141593,7 +141643,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -142211,7 +142260,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -142829,7 +142877,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -143773,7 +143820,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -144494,7 +144540,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.136396884918213,
                     3.948206028780987e-7,
@@ -145189,7 +145234,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363729238510132,
                     3.94820688143227e-7,
@@ -145807,7 +145851,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2047818899154663,
                     4.1857177279780444e-7,
@@ -146612,7 +146655,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -151065,7 +151107,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -152185,7 +152226,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -158688,7 +158728,7 @@
                         ]
                     },
                     {
-                        "UID": 18111037270750814000,
+                        "UID": 14457271986458351869,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -158715,7 +158755,8 @@
                     999250659976302342,
                     13489884740770038350,
                     2367933495833785187,
-                    10849567322331379722
+                    10849567322331379722,
+                    8029054310095610402
                 ]
             },
             {
@@ -163813,7 +163854,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -706.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             546.0,
@@ -168158,7 +168199,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999997615814209,
                     -5.642596647703613e-7,
@@ -174549,7 +174589,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -179018,7 +179057,7 @@
                     0.0,
                     0.75,
                     0.0,
-                    360.0,
+                    350.0,
                     0.0,
                     0.0,
                     0.75,
@@ -179037,7 +179076,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             0.0,
-                            0.0
+                            -10.0
                         ],
                         "Size": [
                             546.0,
@@ -179076,9 +179115,7 @@
                     7752782666103818665,
                     7046161130715579298,
                     824592257839378130,
-                    2219640723288516034,
-                    14050509407007404428,
-                    186482204973759919
+                    2219640723288516034
                 ]
             },
             {
@@ -182175,11 +182212,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.30000001192092896,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "Body",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "Body",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "VFX_Hit",
@@ -192573,7 +192610,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.04736112058162689,
                     0.0,
@@ -194300,7 +194336,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     -0.04736112058162689,
                     0.0,
@@ -195886,7 +195921,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -553.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             400.0,
@@ -203610,7 +203645,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -205327,7 +205361,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7346969113715293111,
                 "LocalTransform": [
                     -0.6221750974655151,
                     1.7500972048262653e-29,
@@ -214974,7 +215007,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9810559749603271,
                     0.0,
@@ -219491,7 +219523,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7346969113715293111,
                 "LocalTransform": [
                     0.46475669741630554,
                     0.0,
@@ -219612,7 +219643,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -225021,9 +225051,9 @@
                         "SeePreview": true,
                         "CameraType": 0,
                         "CameraPosition": [
-                            -53.24047088623047,
-                            27.854625701904297,
-                            -16.024303436279297
+                            -52.833290100097656,
+                            28.825780868530273,
+                            -16.13324737548828
                         ],
                         "CameraFront": [
                             0.6067240834236145,
@@ -225038,7 +225068,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.44379937648773193
+                        "CameraVFOV": 0.4178909361362457
                     }
                 ],
                 "Children": []
@@ -229156,7 +229186,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999997615814209,
                     -5.642596647703613e-7,
@@ -230703,7 +230732,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     0.9999997615814209,
                     -5.642596647703613e-7,
@@ -232345,7 +232373,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -234189,7 +234216,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -805.375,
-                            352.0
+                            342.0
                         ],
                         "Size": [
                             99.0,
@@ -236600,11 +236627,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.699999988079071,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 9.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
@@ -243441,7 +243468,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -244575,11 +244601,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.30000001192092896,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "Body",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "Body",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "VFX_Hit",
@@ -247346,11 +247372,11 @@
                                 "Attack Hitbox Delay": 0.5,
                                 "Attack Hitbox Duration": 0.699999988079071,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "",
                                 "AI Chase Range": 10.0,
                                 "AI Attack Range": 9.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
@@ -282510,7 +282536,6 @@
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabVersionUID": 4263548228631497790,
-                "PrefabChildUID": 499163985040092939,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -292805,7 +292830,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -293423,7 +293447,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -294041,7 +294064,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -294752,7 +294774,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -295370,7 +295391,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -295988,7 +296008,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -296912,7 +296931,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -297562,7 +297580,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -298350,7 +298367,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -299198,7 +299214,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -299864,7 +299879,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -300527,7 +300541,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -301145,7 +301158,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -301763,7 +301775,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -302426,7 +302437,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -303134,7 +303144,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -303752,7 +303761,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -304495,7 +304503,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -305145,7 +305152,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -305840,7 +305846,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -306503,7 +306508,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363970041275024,
                     3.9483202840528975e-7,
@@ -307121,7 +307125,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -307739,7 +307742,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.1363953351974487,
                     3.948314315493917e-7,
@@ -308479,7 +308481,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2048547267913818,
                     4.185532418432558e-7,
@@ -309188,7 +309189,6 @@
                 "NavmeshValid": false,
                 "PrefabUID": 1674983939926484,
                 "PrefabVersionUID": 5990627993426384743,
-                "PrefabChildUID": 3792158439130342378,
                 "LocalTransform": [
                     1.2346041202545166,
                     4.2895331375802925e-7,
@@ -318258,105 +318258,6 @@
                                 "Variation 2": 0,
                                 "Variation 3": 0,
                                 "Variation 4": 0
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 14050509407007404428,
-                "ParentUID": 15530078697063090374,
-                "Name": "RiastradFireUp",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    2.299999952316284,
-                    0.0,
-                    0.0,
-                    850.0,
-                    0.0,
-                    2.299999952316284,
-                    0.0,
-                    -340.0,
-                    0.0,
-                    0.0,
-                    2.299999952316284,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 8003845398371605303,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -275.5,
-                            175.0
-                        ],
-                        "Size": [
-                            748.833984375,
-                            281.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 1079954214686272778,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
-                        "UID": 9452546069115042244,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "UISpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 5,
-                                "Disable default image": true,
-                                "Cell width": 0.10000000149011612,
-                                "Cell height": 0.10000000149011612,
-                                "Update Rate": 0.03999999910593033,
-                                "Row major": true,
-                                "Is One Shot": false,
-                                "Is Fade Out": false,
-                                "Fade Out Duration": 0.0,
-                                "Fade Out Start": 0.0,
-                                "Texture": 1299420262505998,
-                                "Use row columns": true,
-                                "Rows": 4,
-                                "Colums": 6
                             }
                         ]
                     }
@@ -333018,15 +332919,15 @@
                     1.0,
                     0.0,
                     0.0,
-                    -30.678468704223633,
+                    -30.271286010742188,
                     0.0,
                     1.0,
                     0.0,
-                    8.75562572479248,
+                    9.72677993774414,
                     0.0,
                     0.0,
                     1.0,
-                    -38.5863037109375,
+                    -38.695247650146484,
                     0.0,
                     0.0,
                     0.0,
@@ -333044,7 +332945,8 @@
                     15183068439285187760,
                     14483894171490170089,
                     6554975129505426782,
-                    11329886716927195312
+                    11329886716927195312,
+                    13943517340093693288
                 ]
             },
             {
@@ -333253,6 +333155,7 @@
                                 "Attack Hitbox Delay": 0.20000000298023224,
                                 "Attack Hitbox Duration": 0.10000000149011612,
                                 "Heal Cooldown": 1.0,
+                                "Mesh name": "CH_MC_Chu_V02",
                                 "God Mode": false,
                                 "Default speed": 7.0,
                                 "Step time": 0.367000013589859,
@@ -333290,7 +333193,7 @@
                                 "Heal knockback delay": 1.0,
                                 "Riastrad Bar object": "BarFill",
                                 "Riastrad Eye object": "RiastradEye",
-                                "Riastrad duration": 5.0,
+                                "Riastrad duration": 10.0,
                                 "Riastrad movement speed": 12.0,
                                 "Riastrad animations speed ratio": 1.5,
                                 "Riastrad on damage taken": 2,
@@ -334174,6 +334077,26 @@
                         "SkinIndex": 1,
                         "ProduceShadows": true,
                         "Additive": false
+                    },
+                    {
+                        "UID": 15088818707508553894,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 3,
+                                "Target Color": [
+                                    1.0,
+                                    0.6637167930603027,
+                                    0.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -344440,7 +344363,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -708.625,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             546.0,
@@ -344533,7 +344456,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -564.25,
-                            395.5
+                            385.5
                         ],
                         "Size": [
                             30.0,
@@ -344604,7 +344527,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -574.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             30.0,
@@ -344675,7 +344598,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -553.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             30.0,
@@ -344746,7 +344669,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -563.5,
-                            394.75
+                            384.75
                         ],
                         "Size": [
                             400.0,
@@ -344845,7 +344768,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -563.5,
-                            394.75
+                            384.75
                         ],
                         "Size": [
                             400.0,
@@ -344944,7 +344867,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -574.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             400.0,
@@ -345043,7 +344966,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -553.75,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             400.0,
@@ -345142,7 +345065,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -850.0,
-                            377.5
+                            367.5
                         ],
                         "Size": [
                             68.0,
@@ -345159,7 +345082,7 @@
                             0.5
                         ],
                         "RenderAnchors": true,
-                        "OrderInCanvas": 0
+                        "OrderInCanvas": 1
                     },
                     {
                         "UID": 6890539058061050771,
@@ -345233,7 +345156,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -784.0750122070313,
-                            348.3999938964844
+                            338.3999938964844
                         ],
                         "Size": [
                             232.0,
@@ -345304,7 +345227,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -850.0,
-                            394.75
+                            384.75
                         ],
                         "Size": [
                             68.0,
@@ -345321,7 +345244,7 @@
                             0.5
                         ],
                         "RenderAnchors": true,
-                        "OrderInCanvas": 0
+                        "OrderInCanvas": 2
                     },
                     {
                         "UID": 6475439816247084996,
@@ -345403,7 +345326,7 @@
                         "Name": "Transform 2D",
                         "Position": [
                             -850.0,
-                            394.75
+                            384.75
                         ],
                         "Size": [
                             68.0,
@@ -345460,105 +345383,6 @@
                                 "Use row columns": false,
                                 "Rows": 1,
                                 "Colums": 1
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 186482204973759919,
-                "ParentUID": 15530078697063090374,
-                "Name": "RiastradFireDown",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    2.299999952316284,
-                    0.0,
-                    0.0,
-                    850.0,
-                    0.0,
-                    2.299999952316284,
-                    0.0,
-                    -640.0,
-                    0.0,
-                    0.0,
-                    2.299999952316284,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 15075950914343061430,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -275.5,
-                            -50.0
-                        ],
-                        "Size": [
-                            748.833984375,
-                            281.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 3538926807709656326,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": false,
-                        "Name": "Image",
-                        "TextureUID": 1290233345777347,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
-                        "UID": 1677811576698580961,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "UISpritesheet",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 5,
-                                "Disable default image": true,
-                                "Cell width": 0.10000000149011612,
-                                "Cell height": 0.10000000149011612,
-                                "Update Rate": 0.03999999910593033,
-                                "Row major": true,
-                                "Is One Shot": false,
-                                "Is Fade Out": false,
-                                "Fade Out Duration": 0.0,
-                                "Fade Out Start": 0.0,
-                                "Texture": 1201503131304375,
-                                "Use row columns": true,
-                                "Rows": 4,
-                                "Colums": 6
                             }
                         ]
                     }
@@ -346837,6 +346661,83 @@
                             0.0,
                             0.0,
                             0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 13943517340093693288,
+                "ParentUID": 16252643654308515270,
+                "Name": "OnHitVfx",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    -0.0000017881393432617188,
+                    -2.980232238769531e-7,
+                    5.000000476837158,
+                    0.0,
+                    5.0,
+                    -0.0000017881393432617188,
+                    0.000001341104507446289,
+                    0.0,
+                    0.000001341104507446289,
+                    5.000000476837158,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 4466932795470069561,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": true,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 14395550746846439305,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 0.10000000149011612,
+                                "Cell height": 0.10000000149011612,
+                                "Update Rate": 0.03999999910593033,
+                                "Row major": false,
+                                "Double sided": false,
+                                "Is One Shot": true,
+                                "Only Once": false,
+                                "Use row columns": true,
+                                "Rows": 3,
+                                "Colums": 3,
+                                "Use animation duration": false,
+                                "Animation Duration": 0.10000000149011612,
+                                "Texture": 1207574446519205,
+                                "Variations are random": true,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
                         ]
                     }
                 ],
