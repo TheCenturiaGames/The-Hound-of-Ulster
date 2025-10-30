@@ -1,11 +1,11 @@
 {
     "Prefab": {
         "UID": 1694728478582100,
-        "VersionUID": 17713368723293029108,
+        "VersionUID": 12060946003045894316,
         "Name": "RT_Tutorial_4",
         "GameObjects": [
             {
-                "UID": 11814037237208682749,
+                "UID": 8737650952570984522,
                 "ParentUID": 8823869308913623498,
                 "Name": "RT_Tutorial_4",
                 "Mobility": 0,
@@ -13,34 +13,67 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabVersionUID": 17713368723293029108,
+                "PrefabUID": 1694728478582100,
+                "PrefabVersionUID": 12060946003045894316,
                 "PrefabChildUID": 17521354605259453701,
                 "LocalTransform": [
                     1.0,
                     0.0,
                     0.0,
-                    -6.680251121520996,
-                    0.0,
-                    1.0,
-                    0.0,
-                    5.76846981048584,
                     0.0,
                     0.0,
                     1.0,
-                    -12.593205451965332,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [],
+                "Components": [
+                    {
+                        "UID": 10716381092289813998,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "TileFloatScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Speed": 10.0,
+                                "MinDistanceToPlayer": 10.0,
+                                "Starting Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Starting Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Starting Scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Children": [
-                    10115530209806624661
+                    18229820128847756025
                 ]
             },
             {
-                "UID": 10115530209806624661,
-                "ParentUID": 11814037237208682749,
+                "UID": 18229820128847756025,
+                "ParentUID": 8737650952570984522,
                 "Name": "Rising tile",
                 "Mobility": 0,
                 "SelectParent": true,
@@ -68,7 +101,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 11329962202201081207,
+                        "UID": 508703678653837244,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -78,37 +111,6 @@
                         "RenderMode": 0,
                         "ProduceShadows": false,
                         "Additive": false
-                    },
-                    {
-                        "UID": 14773904521873536318,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "TileFloatScript",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "Speed": 40,
-                                "MinDistanceToPlayer": 10.0,
-                                "Starting Position": [
-                                    0.0,
-                                    -7.5,
-                                    0.0
-                                ],
-                                "Starting Rotation": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Starting Scale": [
-                                    1.0,
-                                    1.0,
-                                    1.0
-                                ]
-                            }
-                        ]
                     }
                 ],
                 "Children": []
