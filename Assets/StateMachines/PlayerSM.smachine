@@ -269,7 +269,7 @@
             },
             {
                 "StateName": "Walk",
-                "ClipName": "CH_Pooka_Run2",
+                "ClipName": "CH_MC_Chu_AllAnimations_AN_Run2",
                 "Position": {
                     "x": -310.0,
                     "y": -170.0
@@ -451,8 +451,8 @@
                 "StateName": "Pick",
                 "ClipName": "CH_MC_Chu_AllAnimations_AN_GrabItem",
                 "Position": {
-                    "x": -290.0,
-                    "y": -320.0
+                    "x": 720.0,
+                    "y": -130.0
                 },
                 "Triggers": []
             },
@@ -1539,6 +1539,12 @@
                 "FromState": "Shoot",
                 "ToState": "Attack_1",
                 "Trigger": "Attack0",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Respawn",
+                "ToState": "Walk",
+                "Trigger": "Walk",
                 "InterpolationTime": 200
             }
         ]
