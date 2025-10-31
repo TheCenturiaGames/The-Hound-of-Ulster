@@ -1,0 +1,98 @@
+{
+    "StateMachine": {
+        "UID": 1752750239296712,
+        "Name": "CrowStateMachine",
+        "Triggers": [
+            "Idle",
+            "Take_off",
+            "Fly"
+        ],
+        "Clips": [
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_0",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1554159757262120,
+                "ClipName": "AN_Crow_Idle",
+                "ClipTime": 1.0,
+                "Loop": true
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_2",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 0,
+                "ClipName": "Clip_3",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1509598343325671,
+                "ClipName": "AN_Crow_Take_off",
+                "ClipTime": 1.0,
+                "Loop": false
+            },
+            {
+                "ClipUID": 1553817627538993,
+                "ClipName": "AN_Crow_Fly",
+                "ClipTime": 1.0,
+                "Loop": true
+            }
+        ],
+        "States": [
+            {
+                "StateName": "Idle",
+                "ClipName": "AN_Crow_Idle",
+                "Position": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Take_Off",
+                "ClipName": "AN_Crow_Take_off",
+                "Position": {
+                    "x": 370.0,
+                    "y": 10.0
+                },
+                "Triggers": []
+            },
+            {
+                "StateName": "Fly",
+                "ClipName": "AN_Crow_Fly",
+                "Position": {
+                    "x": 210.0,
+                    "y": 110.0
+                },
+                "Triggers": []
+            }
+        ],
+        "Transitions": [
+            {
+                "FromState": "Idle",
+                "ToState": "Take_Off",
+                "Trigger": "Take_off",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Take_Off",
+                "ToState": "Fly",
+                "Trigger": "Fly",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Fly",
+                "ToState": "Idle",
+                "Trigger": "Idle",
+                "InterpolationTime": 200
+            }
+        ]
+    }
+}
