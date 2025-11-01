@@ -91,7 +91,7 @@
             {
                 "ClipUID": 1582992203549432,
                 "ClipName": "Ch_Archer_Enemy_Animations_idle",
-                "ClipTime": 0.8299999833106995,
+                "ClipTime": 0.7900000214576721,
                 "Loop": true
             },
             {
@@ -169,7 +169,7 @@
             {
                 "ClipUID": 1521644796535248,
                 "ClipName": "Ch_Archer_Running_running",
-                "ClipTime": 1.0,
+                "ClipTime": 0.6800000071525574,
                 "Loop": true
             },
             {
@@ -241,8 +241,8 @@
                 "StateName": "Run",
                 "ClipName": "Ch_Archer_Running_running",
                 "Position": {
-                    "x": 590.0,
-                    "y": 60.0
+                    "x": 450.0,
+                    "y": 50.0
                 },
                 "Triggers": []
             },
@@ -277,8 +277,8 @@
                 "StateName": "overdrawing",
                 "ClipName": "Ch_Archer_Animations_Tx_overdrawing",
                 "Position": {
-                    "x": 440.0,
-                    "y": -160.0
+                    "x": 700.0,
+                    "y": 500.0
                 },
                 "Triggers": []
             },
@@ -573,6 +573,12 @@
                 "FromState": "aim",
                 "ToState": "Run",
                 "Trigger": "run",
+                "InterpolationTime": 200
+            },
+            {
+                "FromState": "Run",
+                "ToState": "Idle",
+                "Trigger": "idle",
                 "InterpolationTime": 200
             }
         ]
