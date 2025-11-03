@@ -5,19 +5,19 @@
         "RootGameObject": 13456033149597576342,
         "NavmeshUID": 0,
         "Camera Position": [
-            -30.198497772216797,
-            20.826675415039063,
-            13.816826820373535
+            -21.044857025146484,
+            14.324090957641602,
+            0.2869437038898468
         ],
         "Camera Front": [
-            0.5269160270690918,
-            -0.10657614469528198,
-            -0.8432088494300842
+            0.8821969032287598,
+            -0.4692862927913666,
+            -0.03871599957346916
         ],
         "Camera Up": [
-            0.055770717561244965,
-            0.9944390654563904,
-            -0.08933471143245697
+            0.4677126705646515,
+            0.8836410641670227,
+            -0.02057780511677265
         ],
         "WorldObjectsMask": 13,
         "TriggerMask": 8,
@@ -154,7 +154,8 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Use async loading": true,
-                                "Target Scene Name": "SCENE_Level1"
+                                "Target Scene Name": "SCENE_Level1",
+                                "Minimum play time before skip": 1.0
                             }
                         ]
                     },
@@ -164,7 +165,9 @@
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Video",
-                        "Video Name": "Load1"
+                        "Video Name": "Load1",
+                        "Loop": false,
+                        "AutoPlay": false
                     }
                 ],
                 "Children": []
@@ -238,9 +241,6 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1663788648232425,
-                "PrefabVersionUID": 7099594864661988593,
-                "PrefabChildUID": 5795515259663606107,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -296,7 +296,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 10248437009041337660,
+                        "UID": 4056691029953744651,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -320,7 +320,6 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3947687747577537538,
                 "LocalTransform": [
                     0.800000011920929,
                     0.0,
@@ -444,6 +443,8 @@
             "extinctionCoefficient": 0.03999999910593033,
             "blurrPasses": 10,
             "useNoiseTexture": false,
+            "bloomEnabled": true,
+            "bloomIntensity": 1.0,
             "noiseTexture": 1200000000000000
         }
     }
