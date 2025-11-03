@@ -568,7 +568,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>27</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1460,6 +1460,7 @@
 						<Sound Name="SFX_Waterfall_01" ID="{366AC2D8-B4FE-440F-818B-B688E67E8C70}" ShortID="909650121">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="3"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2029,6 +2030,7 @@
 						<Sound Name="SFX_Waterfall_02" ID="{F265706E-719D-4E62-B86E-DD6D086B2FCA}" ShortID="371094836">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="4"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2310,6 +2312,155 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_Wind_01" ID="{1DD19EC9-6587-42D5-88CA-9C0E3F056610}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Waterfall_03" ID="{BACF64A1-F66A-4F80-B5DF-12DED890D135}" ShortID="427022218">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="4"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-480</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Waterfall_02" ID="{D776C7EB-3B4D-4C6E-86BA-478A9998C482}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Waterfall_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="904930164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{EB3B047A-2C44-4119-800E-60DDA1A4B33F}" ShortID="667164871">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Pitch" ID="{D3F43A1C-F866-482C-A368-2D33F58CA992}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{33C6E534-D970-4F95-8F9A-80A75A62F8F5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1507</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1493</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{F54FFBFC-7DA6-49A1-867D-613AE9C5B128}" ShortID="651576396">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Spatialization" ID="{567C7AE0-F9CF-4A83-B523-D2869D369424}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{35476983-29FC-47C8-8709-83882BEC3784}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>100</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{899A1B58-95CA-4E77-9CC6-1BB8F804DF2F}" ShortID="218600492">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Volume" ID="{30DC10CF-4BAB-456C-9C95-4F67C938F642}" WorkUnitID="{F54EFFA5-C0EE-4E73-8EA2-2818367281FE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{CF791450-1214-49C2-91EA-9B15DCB81E19}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Waterfall_02" ID="{D776C7EB-3B4D-4C6E-86BA-478A9998C482}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -2768,7 +2919,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2906,6 +3057,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_Button_02" ID="{EC25ABA8-905B-4B47-A9FC-308D7700D686}" ShortID="448764628">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
@@ -3936,9 +4094,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="SFX_Banshee_Attack" ID="{5ED8F074-13B9-4FC0-9A32-520ED81D2DD1}">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.435705806261086"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.410017935597167"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.12688800364125"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.552831022997937"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_Banshee_Attack.wav</AudioFile>
@@ -4084,14 +4243,15 @@
 											<ChildrenList>
 												<AudioFileSource Name="SFX_Banshee_Attack" ID="{6ED530A2-C481-4FF7-AB0B-E91EA1D35C2F}">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.426335788922138"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.410017935597167"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.12688800364125"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.534090988320041"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_Banshee_Attack.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="79160856"/>
+														<MediaID ID="847121226"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4213,6 +4373,11 @@
 								<RandomSequenceContainer Name="Banshee_Hurt_Variation" ID="{498280E2-162D-49A0-905A-4A589070BDA0}" ShortID="657275735">
 									<PropertyList>
 										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3.5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -7227,7 +7392,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10675,7 +10840,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -10704,7 +10869,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
