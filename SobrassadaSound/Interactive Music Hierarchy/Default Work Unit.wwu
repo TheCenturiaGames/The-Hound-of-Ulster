@@ -81,6 +81,108 @@
 												</DestinationFadeIn>
 											</TransitionInfo>
 										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{222B938C-1F35-4BAA-8CAD-83DEC01C0731}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Boss_Combat_Outro" ID="{0714FFEB-3EAB-4355-AFA6-F476486969A6}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{84DC5733-F795-4EB2-89FA-7CA3F6B73F2E}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{8323F647-FD37-417D-959B-A680623B05A3}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{23EC0609-EB6D-42BD-A318-69F71E6D35CE}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+												<TransitionFadeIn>
+													<MusicFade Name="Transition Fade-in" ID="{9E26D3E0-E58E-4C92-BA97-6F3F973715C6}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeIn>
+												<TransitionFadeOut>
+													<MusicFade Name="Transition Fade-out" ID="{2DECF3D1-5604-4A09-8C12-412C40A48A5A}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{27C8773A-EE49-45C6-8BF7-39C628D27D77}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{33FCD691-EC79-446D-B891-1F15C13D64CD}" WorkUnitID="{95A697C3-49E5-4214-9446-E140B2AEB6A6}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{E29EC449-9BD8-4C4C-B278-8E412629E69F}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{53E43FAC-2416-4214-9F7C-9D0ECC5C02D4}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+												<TransitionFadeIn>
+													<MusicFade Name="Transition Fade-in" ID="{99938C71-1E11-40E8-9B8C-203D0BEA7BD7}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeIn>
+												<TransitionFadeOut>
+													<MusicFade Name="Transition Fade-out" ID="{E0C4A8CB-FB1D-4399-962C-7CB716DCADF9}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
 								</MusicTransition>
@@ -2938,6 +3040,178 @@
 								</MusicSegment>
 							</ChildrenList>
 						</MusicPlaylistContainer>
+						<MusicSegment Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{33FCD691-EC79-446D-B891-1F15C13D64CD}" ShortID="156666682">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="9715.72916666667"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{1AF2EFC2-9AFB-482D-89DA-FBAB6D396D72}" ShortID="810222191">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C62DABA9-29A8-41D2-A5A7-E67E6A09B36C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{C7973855-E71C-4252-A8F6-63BC39CB97FA}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_M_Screens_Defeat_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="284771517"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0C554AB7-A8FF-4104-8E8B-5009BAF24A4A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{08724395-EF74-4F71-84A8-89BD33FA8C85}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9715.72916666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_M_Screens_Defeat_V2" ID="{C7973855-E71C-4252-A8F6-63BC39CB97FA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{A8FAEADE-5ED4-4E24-8EC3-A666C9916352}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{9845D354-C300-4196-BCDC-714A73A94932}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="9715.72916666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{84DC5733-F795-4EB2-89FA-7CA3F6B73F2E}" ShortID="293280312">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="11428.5833333333"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{A0EE8E26-2F1D-48BD-A71C-FE00154D6970}" ShortID="755765933">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD7EA9DF-63B2-4518-9420-029C2731405E}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{639BC414-1FC7-49A4-A3E9-D47EFDD00717}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{37A6EC2D-0D52-43CF-927D-3862475FE330}">
+											<Language>SFX</Language>
+											<AudioFile>The Hound Of Ulster_M_Screens_Victory_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="598855561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2E0BAF81-D581-4D3A-AD18-40E1C4395D8A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{10BAC0B8-D7DA-4CCD-AD1E-C9F295CE415A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="11428.5833333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="The Hound Of Ulster_M_Screens_Victory_V2" ID="{37A6EC2D-0D52-43CF-927D-3862475FE330}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{E85040D1-0A49-4E45-996D-487AB7F46A01}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{F66ECBE0-0DA7-4BFE-AB99-3249805EE01A}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="11428.5833333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
