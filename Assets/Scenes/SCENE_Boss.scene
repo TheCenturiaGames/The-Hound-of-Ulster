@@ -46,7 +46,8 @@
                 13709036018761919519,
                 17529767964096768525,
                 2409515165600375294,
-                5504346095434644043
+                5504346095434644043,
+                15928952350274432147
             ],
             [
                 16355090004474382147,
@@ -2893,36 +2894,6 @@
                 ]
             },
             {
-                "UID": 1336656115675766227,
-                "ParentUID": 5734216754765281973,
-                "Name": "jnt_Index_L_02",
-                "Mobility": 0,
-                "SelectParent": true,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.000000238418579,
-                    -2.1170131958569982e-7,
-                    2.3283999173173697e-9,
-                    0.012698782607913017,
-                    2.117014048508281e-7,
-                    0.9999998807907104,
-                    -8.842905572237214e-7,
-                    -0.03918786719441414,
-                    -2.3282138439384426e-9,
-                    8.842907845973969e-7,
-                    0.9999996423721313,
-                    0.009294956922531128,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
                 "UID": 10997877760363488497,
                 "ParentUID": 9989913939382921276,
                 "Name": "jnt_shield",
@@ -2978,6 +2949,36 @@
                 "Children": [
                     15287509975835776366
                 ]
+            },
+            {
+                "UID": 1336656115675766227,
+                "ParentUID": 5734216754765281973,
+                "Name": "jnt_Index_L_02",
+                "Mobility": 0,
+                "SelectParent": true,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.000000238418579,
+                    -2.1170131958569982e-7,
+                    2.3283999173173697e-9,
+                    0.012698782607913017,
+                    2.117014048508281e-7,
+                    0.9999998807907104,
+                    -8.842905572237214e-7,
+                    -0.03918786719441414,
+                    -2.3282138439384426e-9,
+                    8.842907845973969e-7,
+                    0.9999996423721313,
+                    0.009294956922531128,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 16841619786226889826,
@@ -3055,6 +3056,36 @@
                 ]
             },
             {
+                "UID": 3460204446154062412,
+                "ParentUID": 16611405635613712497,
+                "Name": "EndPoint",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.9999999403953552,
+                    -1.280568540096283e-9,
+                    -2.3283064365386963e-9,
+                    0.5953421592712402,
+                    0.0,
+                    0.9999834895133972,
+                    -7.159542292356491e-9,
+                    0.47412946820259094,
+                    -5.811452865600586e-7,
+                    1.0477378964424133e-9,
+                    0.9999998807907104,
+                    -0.8496193885803223,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
                 "UID": 13167533423828853577,
                 "ParentUID": 14358247913118712210,
                 "Name": "jnt_Pink_R_01",
@@ -3085,36 +3116,6 @@
                 "Children": [
                     17365590573044674869
                 ]
-            },
-            {
-                "UID": 3460204446154062412,
-                "ParentUID": 16611405635613712497,
-                "Name": "EndPoint",
-                "Mobility": 0,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.9999999403953552,
-                    -1.280568540096283e-9,
-                    -2.3283064365386963e-9,
-                    0.5953421592712402,
-                    0.0,
-                    0.9999834895133972,
-                    -7.159542292356491e-9,
-                    0.47412946820259094,
-                    -5.811452865600586e-7,
-                    1.0477378964424133e-9,
-                    0.9999998807907104,
-                    -0.8496193885803223,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
             },
             {
                 "UID": 16546002003149666119,
@@ -6316,7 +6317,7 @@
                         "CameraNearPlane": 0.10000000149011612,
                         "CameraFarPlane": 500.0,
                         "CameraHFOV": 0.6108652353286743,
-                        "CameraVFOV": 0.5335329174995422
+                        "CameraVFOV": 0.5004990100860596
                     }
                 ],
                 "Children": []
@@ -19081,7 +19082,7 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "Player name": "walk",
-                                "Target Scene Name": "SCENE_BossMenuLoading",
+                                "Target Scene Name": "SCENE_BossCreditLoading",
                                 "Fade out game object": "SceneFadeOut"
                             }
                         ]
@@ -57018,9 +57019,8 @@
                                 "Character to highlight": "BossFerdiad",
                                 "Setup character on collision": false,
                                 "Highlight focus": "Boss_Focus_Point",
-                                "Hide player": true,
                                 "Use only zoom": false,
-                                "Name display name": "",
+                                "Name display name": "BossTitleDisplay",
                                 "Target spline points offset": 2.0,
                                 "Zoom multiplier": 30.0
                             }
@@ -81140,7 +81140,6 @@
                                 "AI Attack Range": 2.0,
                                 "AI Max Detection Range": 15.0,
                                 "Player search duration": 5.0,
-                                "Mesh name": "CH_Ferdiad",
                                 "Mesh 2 name": "CH_Ferdiad_Braid",
                                 "Mesh 3 name": "CH_Ferdiad_Fixes",
                                 "Mesh 4 name": "knife_holer",
@@ -85774,6 +85773,101 @@
                 "Children": [
                     13777998295474377486
                 ]
+            },
+            {
+                "UID": 5853667572708658164,
+                "ParentUID": 15928952350274432147,
+                "Name": "Image",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10588944052635620958,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            512.0,
+                            512.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.699999988079071
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 15681157827563623021,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1226612626764746,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 14782790150085203332,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "UIFadeInOut",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Start visible": false,
+                                "Fade in duration": 1.0,
+                                "Fade in opacity": 1.0,
+                                "Fade out duration": 1.0,
+                                "Fade out opacity": 0.0,
+                                "Automatic fade in": false,
+                                "Fade in start": -1.0,
+                                "Automatic fade out": false,
+                                "Fade out start": -1.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             },
             {
                 "UID": 16157297532752837247,
@@ -119009,7 +119103,7 @@
                         ]
                     },
                     {
-                        "UID": 8429805933839172056,
+                        "UID": 14356975774723991709,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -119038,7 +119132,8 @@
                     12224627794083033017,
                     15666396850845150661,
                     9113201558868324904,
-                    960308990486922416
+                    960308990486922416,
+                    15928952350274432147
                 ]
             },
             {
@@ -156926,6 +157021,8 @@
                                 "Attack VFX Explosion": "AttackExplosion",
                                 "ArrowHit VFX object": "",
                                 "Arrow Hit VFX duration": 0.20000000298023224,
+                                "Mark Arrow VFX object": "ArrowMark",
+                                "Mark Arrow VFX duration": 0.5,
                                 "Dash Trail object": "DashTrail",
                                 "Dash decal object": "DashDecal",
                                 "Dash decal disappear": 5.0,
@@ -244552,6 +244649,166 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 15928952350274432147,
+                "ParentUID": 1171866273834353714,
+                "Name": "BossTitleDisplay",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 17785073024589623674,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "NameDisplay",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Show automatically": false,
+                                "Show delay": 1.0,
+                                "Second show delay": 0.5,
+                                "Show duration": 4.0,
+                                "Audio to play when showing": 0
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 8867094818159874741,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": [
+                    17905399772362061708,
+                    5853667572708658164
+                ]
+            },
+            {
+                "UID": 17905399772362061708,
+                "ParentUID": 15928952350274432147,
+                "Name": "Image",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 10376958725908902198,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            512.0,
+                            512.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.699999988079071
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3364684448618803857,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1240218002903450,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 4069323064247826068,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "UIFadeInOut",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Start visible": false,
+                                "Fade in duration": 1.0,
+                                "Fade in opacity": 1.0,
+                                "Fade out duration": 1.0,
+                                "Fade out opacity": 0.0,
+                                "Automatic fade in": false,
+                                "Fade in start": -1.0,
+                                "Automatic fade out": false,
+                                "Fade out start": -1.0
+                            }
+                        ]
                     }
                 ],
                 "Children": []
