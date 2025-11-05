@@ -60,7 +60,8 @@
                 "Children": [
                     15783730103916929042,
                     11706449611885777693,
-                    4518472014402124311
+                    4518472014402124311,
+                    5765557729352691128
                 ]
             },
             {
@@ -117,6 +118,85 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 5765557729352691128,
+                "ParentUID": 13456033149597576342,
+                "Name": "Loading_Canvas",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 13673079206653959159,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 4859028180333627338,
+                        "Type": 9,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas",
+                        "RenderMode": 0
+                    },
+                    {
+                        "UID": 1331362985193490596,
+                        "Type": 20,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Canvas Scaler",
+                        "ReferenceResolution": [
+                            1920.0,
+                            1080.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    13313133392913054952
+                ]
             },
             {
                 "UID": 11706449611885777693,
@@ -227,6 +307,101 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 13313133392913054952,
+                "ParentUID": 5765557729352691128,
+                "Name": "SkipHint",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    530.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    -300.0,
+                    0.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12466212290420390322,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            530.0,
+                            -300.0
+                        ],
+                        "Size": [
+                            106.0,
+                            51.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 650248260994921773,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1204481324136546,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 1434193144153436752,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "UIFadeInOut",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 4,
+                                "Start visible": false,
+                                "Fade in duration": 1.0,
+                                "Fade in opacity": 1.0,
+                                "Fade out duration": 1.0,
+                                "Fade out opacity": 0.0,
+                                "Automatic fade in": true,
+                                "Fade in start": 1.0,
+                                "Automatic fade out": true,
+                                "Fade out start": 5.0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
             }
         ],
         "Lights Config": {
@@ -263,7 +438,6 @@
             "fogIntensity": 1.0,
             "noiseAmmount": 0.0,
             "extinctionCoefficient": 0.03999999910593033,
-            "anisotropy": 0.5,
             "blurrPasses": 10,
             "useNoiseTexture": false,
             "noiseTexture": 1200000000000000

@@ -1,7 +1,7 @@
 {
     "Prefab": {
-        "UID": 1639863978524706,
-        "VersionUID": 17763972728001387043,
+        "UID": 1645329238909067,
+        "VersionUID": 2967348757932082253,
         "Name": "Ferdiad",
         "GameObjects": [
             {
@@ -13,9 +13,9 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabUID": 1639863978524706,
-                "PrefabVersionUID": 17763972728001387043,
-                "PrefabChildUID": 14752938891872725685,
+                "PrefabUID": 1645329238909067,
+                "PrefabVersionUID": 2967348757932082253,
+                "PrefabChildUID": 9750231663356147613,
                 "LocalTransform": [
                     0.6970274448394775,
                     -0.0,
@@ -63,10 +63,13 @@
                                 "Player search duration": 5.0,
                                 "Mesh name": "CH_Ferdiad",
                                 "Mesh 2 name": "CH_Ferdiad_Braid",
+                                "Mesh 3 name": "CH_Ferdiad_Fixes",
+                                "Mesh 4 name": "knife_holer",
                                 "On Hit VFX Duration": 0.10000000149011612,
                                 "On Hit Pivot Name": "OnHitPivot",
                                 "On Hit VFX 1": "OnHitVfx1",
                                 "On Hit VFX 2": "OnHitVfx2",
+                                "Music Manager": "MusicManager",
                                 "Change Scene": "LevelSwitch",
                                 "Time to ChangeScene": 5.0,
                                 "Health Bar": "BossHealth",
@@ -186,7 +189,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9732765019541110679,
+                "PrefabChildUID": 4171226337060657472,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -295,7 +298,12 @@
                                 "Script Name": "ColorChange",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 2,
+                                "Target Color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
                             }
                         ]
                     }
@@ -311,7 +319,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12574881955803999838,
+                "PrefabChildUID": 8216793603654803275,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -420,7 +428,12 @@
                                 "Script Name": "ColorChange",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 2
+                                "RenderType": 2,
+                                "Target Color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
                             }
                         ]
                     }
@@ -436,7 +449,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5435389505351064184,
+                "PrefabChildUID": 89253710473091710,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -533,6 +546,26 @@
                         "SkinIndex": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    },
+                    {
+                        "UID": 3613492930760146076,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 2,
+                                "Target Color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -546,7 +579,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 751077323599348408,
+                "PrefabChildUID": 1165302645661529496,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -656,7 +689,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14627377232843491575,
+                "PrefabChildUID": 12226835898332910807,
                 "LocalTransform": [
                     1.0,
                     2.928983286277023e-16,
@@ -692,7 +725,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2704074454009273535,
+                "PrefabChildUID": 17851717806757034398,
                 "LocalTransform": [
                     10.0,
                     0.0,
@@ -747,7 +780,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9136945794282694225,
+                "PrefabChildUID": 19111939312282553,
                 "LocalTransform": [
                     30.0,
                     0.0,
@@ -802,7 +835,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3912619295135476820,
+                "PrefabChildUID": 14988242399236688496,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -838,7 +871,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8381436830115947455,
+                "PrefabChildUID": 2999411852781448944,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -863,7 +896,8 @@
                     9136787328895571890,
                     8685733461147506127,
                     10521760483857054845,
-                    7008028367004171431
+                    7008028367004171431,
+                    12678286949619945766
                 ]
             },
             {
@@ -875,7 +909,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 18098883656324089158,
+                "PrefabChildUID": 12133888924269178735,
                 "LocalTransform": [
                     1.0000001192092896,
                     0.0,
@@ -1208,7 +1242,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15570111585107066389,
+                "PrefabChildUID": 6065546309504207735,
                 "LocalTransform": [
                     1.0000001192092896,
                     0.0,
@@ -1555,7 +1589,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16677855375859546093,
+                "PrefabChildUID": 482995541903719242,
                 "LocalTransform": [
                     1.0000001192092896,
                     0.0,
@@ -1589,7 +1623,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7746376970733469455,
+                "PrefabChildUID": 1660301939563935237,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1626,7 +1660,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3877804181151067671,
+                "PrefabChildUID": 10793577762241259613,
                 "LocalTransform": [
                     0.9999998807907104,
                     0.0,
@@ -1651,7 +1685,8 @@
                     14464521141178670402,
                     16989477269665662159,
                     3457243237245907848,
-                    8282006132746195034
+                    8282006132746195034,
+                    10429377246273998636
                 ]
             },
             {
@@ -1663,7 +1698,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2781242162526787818,
+                "PrefabChildUID": 8753612293322187776,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1694,7 +1729,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2395085907468252837,
+                "PrefabChildUID": 8623394925944632330,
                 "LocalTransform": [
                     1.0,
                     -5.820756765473334e-9,
@@ -1731,7 +1766,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11599644168621077501,
+                "PrefabChildUID": 6348144263699011770,
                 "LocalTransform": [
                     1.0,
                     -6.902532920683853e-31,
@@ -1768,7 +1803,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6610602695293969056,
+                "PrefabChildUID": 15451023495916511220,
                 "LocalTransform": [
                     2.0,
                     -4.010193344352739e-23,
@@ -1799,7 +1834,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1598499828701842859,
+                "PrefabChildUID": 2626760233192376927,
                 "LocalTransform": [
                     1.0,
                     5.293955920339377e-23,
@@ -1830,7 +1865,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10539506863426635230,
+                "PrefabChildUID": 11956280665006601970,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1874,7 +1909,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9838570187362825720,
+                "PrefabChildUID": 1145184898898782317,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1918,7 +1953,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12591059985462772280,
+                "PrefabChildUID": 13252355725666679684,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -1990,7 +2025,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6613298110137482371,
+                "PrefabChildUID": 12897870991236686179,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2062,7 +2097,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11148685474596055542,
+                "PrefabChildUID": 15363749475334875082,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2091,7 +2126,7 @@
                         "Mesh": 1122065165613662,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true,
+                        "ProduceShadows": false,
                         "Additive": false
                     },
                     {
@@ -2134,7 +2169,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3759751895948805457,
+                "PrefabChildUID": 13010242170976783994,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2206,7 +2241,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5744364982094746451,
+                "PrefabChildUID": 8915087401766668213,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2278,7 +2313,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13480289014104605243,
+                "PrefabChildUID": 13957705522098631831,
                 "LocalTransform": [
                     1.0,
                     -0.0,
@@ -2350,7 +2385,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7638623346528689645,
+                "PrefabChildUID": 10211188138157435754,
                 "LocalTransform": [
                     1.0000004768371582,
                     0.0,
@@ -2414,6 +2449,83 @@
                 "Children": []
             },
             {
+                "UID": 12678286949619945766,
+                "ParentUID": 9172747907750908458,
+                "Name": "ImpactSprite",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "PrefabChildUID": 15925293923728295193,
+                "LocalTransform": [
+                    8.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0001415014266968,
+                    0.0,
+                    0.10000000149011612,
+                    0.0,
+                    0.0,
+                    8.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7492269443844016896,
+                        "Type": 1,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Mesh",
+                        "Mesh": 1165703895193424,
+                        "Material": 0,
+                        "RenderMode": 0,
+                        "ProduceShadows": false,
+                        "Additive": false
+                    },
+                    {
+                        "UID": 18410019287525438207,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "AttackVfxSpritesheet",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 1,
+                                "Cell width": 405.0,
+                                "Cell height": 405.0,
+                                "Update Rate": 0.07000000029802322,
+                                "Row major": false,
+                                "Double sided": true,
+                                "Is One Shot": false,
+                                "Only Once": true,
+                                "Use row columns": false,
+                                "Rows": 1,
+                                "Colums": 1,
+                                "Use animation duration": false,
+                                "Animation Duration": 0.10000000149011612,
+                                "Texture": 1211396483011355,
+                                "Number of variations to use": 0,
+                                "Variation 1": 0,
+                                "Variation 2": 0,
+                                "Variation 3": 0,
+                                "Variation 4": 0
+                            }
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 371806575370410700,
                 "ParentUID": 7260997322557017975,
                 "Name": "Cyl_Charger",
@@ -2422,7 +2534,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4933560144955585807,
+                "PrefabChildUID": 3371322471126137052,
                 "LocalTransform": [
                     0.9999999403953552,
                     0.0,
@@ -2451,7 +2563,7 @@
                         "Mesh": 1154809900744196,
                         "Material": 0,
                         "RenderMode": 1,
-                        "ProduceShadows": true,
+                        "ProduceShadows": false,
                         "Additive": false
                     },
                     {
@@ -2465,7 +2577,7 @@
                                 "Script Name": "MovingUVTransparent",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "RenderType": 0,
+                                "RenderType": 1,
                                 "Animation Speed": 0.6000000238418579,
                                 "Moving UV Direction": [
                                     0.0,
@@ -2494,7 +2606,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4413431268661031958,
+                "PrefabChildUID": 2449411239538397191,
                 "LocalTransform": [
                     0.9999999403953552,
                     0.0,
@@ -2566,7 +2678,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12593862320955367013,
+                "PrefabChildUID": 7504052177537852250,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -2625,7 +2737,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2187766081773956552,
+                "PrefabChildUID": 9945314817199748489,
                 "LocalTransform": [
                     -0.000008940698535297997,
                     -0.0,
@@ -2702,7 +2814,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12322491137990611858,
+                "PrefabChildUID": 2022049285064908236,
                 "LocalTransform": [
                     -0.00010013580322265625,
                     1.0001463890075684,
@@ -2779,7 +2891,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13739225420935905281,
+                "PrefabChildUID": 7981707004245362038,
                 "LocalTransform": [
                     1.7999999523162842,
                     -4.601726999453604e-9,
@@ -2856,20 +2968,20 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9013620359109894265,
+                "PrefabChildUID": 11787859687283692741,
                 "LocalTransform": [
-                    -0.000008940698535297997,
-                    -0.0,
+                    -0.000011444091796875,
+                    0.0,
                     -15.0,
-                    -0.10000000149011612,
+                    0.0199737548828125,
                     0.0,
                     1.0001475811004639,
-                    -0.0,
                     0.0,
-                    25.000003814697266,
                     0.0,
-                    -0.000005364418029785156,
-                    5.300000190734863,
+                    25.00000762939453,
+                    0.0,
+                    -0.0000019073486328125,
+                    5.299816131591797,
                     0.0,
                     0.0,
                     0.0,
@@ -2885,7 +2997,7 @@
                         "Mesh": 1165703895193424,
                         "Material": 0,
                         "RenderMode": 0,
-                        "ProduceShadows": true,
+                        "ProduceShadows": false,
                         "Additive": false
                     },
                     {
@@ -2900,8 +3012,8 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Cell width": 255.0,
-                                "Cell height": 255.0,
+                                "Cell width": 650.0,
+                                "Cell height": 650.0,
                                 "Update Rate": 0.05000000074505806,
                                 "Row major": true,
                                 "Double sided": true,
@@ -2912,7 +3024,7 @@
                                 "Colums": 1,
                                 "Use animation duration": false,
                                 "Animation Duration": 0.10000000149011612,
-                                "Texture": 1279651675346846,
+                                "Texture": 1292000074203674,
                                 "Number of variations to use": 0,
                                 "Variation 1": 0,
                                 "Variation 2": 0,
@@ -2933,19 +3045,19 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8631547588926056764,
+                "PrefabChildUID": 17326873379364794652,
                 "LocalTransform": [
-                    -3.5762786865234375e-7,
-                    -6.776263578034403e-21,
-                    -1.0,
+                    -0.5399999022483826,
+                    3.3855587844300317e-7,
+                    -0.7200000286102295,
+                    0.20000000298023224,
+                    1.0156674790096076e-7,
+                    1.0,
+                    3.047002792300191e-7,
                     0.0,
-                    1.6816409376119168e-13,
-                    1.0,
-                    -4.743384504624082e-20,
-                    0.05000000074505806,
-                    1.0,
-                    -1.6816409376119168e-13,
-                    -3.5762786865234375e-7,
+                    0.7200000286102295,
+                    1.1285194290167055e-7,
+                    -0.5399999022483826,
                     0.0,
                     0.0,
                     0.0,
@@ -2993,7 +3105,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14542961486315187558,
+                "PrefabChildUID": 11447134082145744443,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3065,7 +3177,7 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10534531535611098421,
+                "PrefabChildUID": 14225071836544418274,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -3125,17 +3237,17 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11873958916482401804,
+                "PrefabChildUID": 1435464423540773853,
                 "LocalTransform": [
                     1.0,
-                    0.0,
-                    0.0,
+                    -0.0,
+                    -3.278256244243494e-8,
                     0.0,
                     0.0,
                     1.0,
+                    -0.0,
                     0.0,
-                    0.0,
-                    0.0,
+                    3.278256244243494e-8,
                     0.0,
                     1.0,
                     0.0,
@@ -3197,9 +3309,9 @@
                 "Enabled": true,
                 "WasEnabled": false,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10862820272932543403,
+                "PrefabChildUID": 2569503151872291712,
                 "LocalTransform": [
-                    0.800000011920929,
+                    0.6000000238418579,
                     0.0,
                     0.0,
                     0.0,
@@ -3209,7 +3321,7 @@
                     0.0,
                     0.0,
                     0.0,
-                    0.800000011920929,
+                    0.6000000238418579,
                     0.0,
                     0.0,
                     0.0,
@@ -3241,10 +3353,10 @@
                                 "Enabled": true,
                                 "WasEnabled": true,
                                 "RenderType": 1,
-                                "Animation Speed": 0.4000000059604645,
+                                "Animation Speed": 0.3199999928474426,
                                 "Moving UV Direction": [
                                     0.0,
-                                    -1.0
+                                    -0.8500000238418579
                                 ],
                                 "Start UV Offset": [
                                     0.0,
@@ -3261,6 +3373,62 @@
                 "Children": []
             },
             {
+                "UID": 10429377246273998636,
+                "ParentUID": 928735280734091781,
+                "Name": "BlockArea",
+                "Mobility": 0,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "PrefabChildUID": 14424406733334009727,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 0,
+                        "Type": 13,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Capsule Collider",
+                        "Mass": 1.0,
+                        "ColliderType": 2,
+                        "ColliderLayer": 0,
+                        "Radius": 1.399999976158142,
+                        "Length": 1.0,
+                        "GenerateCallback": true,
+                        "FitToSize": false,
+                        "CenterOffset": [
+                            0.0,
+                            0.5,
+                            0.0
+                        ],
+                        "CenterRotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 11691174635214197950,
                 "ParentUID": 14908851253187502732,
                 "Name": "jnt_cloth_front",
@@ -3269,7 +3437,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14395685460679341010,
+                "PrefabChildUID": 15533809615242312454,
                 "LocalTransform": [
                     1.0,
                     7.883716804922038e-17,
@@ -3302,7 +3470,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15314743396161535553,
+                "PrefabChildUID": 9727307621076837845,
                 "LocalTransform": [
                     1.1920928955078125e-7,
                     0.0,
@@ -3335,7 +3503,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12610047299983871160,
+                "PrefabChildUID": 2349946448165597623,
                 "LocalTransform": [
                     -0.6478149890899658,
                     -0.37904050946235657,
@@ -3368,7 +3536,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3241030524727554818,
+                "PrefabChildUID": 12949270750319976318,
                 "LocalTransform": [
                     -0.9533565044403076,
                     0.3018377423286438,
@@ -3401,7 +3569,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16124627102503050226,
+                "PrefabChildUID": 6953563965933621913,
                 "LocalTransform": [
                     1.0,
                     7.883716804922038e-17,
@@ -3434,7 +3602,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7353934649967764845,
+                "PrefabChildUID": 5694735126119668316,
                 "LocalTransform": [
                     1.0,
                     -6.902532920683853e-31,
@@ -3465,7 +3633,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14652730015419105423,
+                "PrefabChildUID": 14893085160519509383,
                 "LocalTransform": [
                     0.9909632205963135,
                     -0.032325174659490585,
@@ -3791,7 +3959,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2178732708587312034,
+                "PrefabChildUID": 10765242699306306778,
                 "LocalTransform": [
                     0.990963339805603,
                     -0.032325174659490585,
@@ -3847,7 +4015,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 4199122906791573404,
+                "PrefabChildUID": 16604792313863688969,
                 "LocalTransform": [
                     1.2882521152496338,
                     -0.04202273115515709,
@@ -3891,7 +4059,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16169220413501343931,
+                "PrefabChildUID": 1832119097468833612,
                 "LocalTransform": [
                     0.9909632205963135,
                     -0.032325148582458496,
@@ -3927,7 +4095,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1593236286728958062,
+                "PrefabChildUID": 6991231194888563446,
                 "LocalTransform": [
                     44.69072341918945,
                     0.0,
@@ -3958,7 +4126,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6650562408793990141,
+                "PrefabChildUID": 7209919330459471430,
                 "LocalTransform": [
                     0.9531471133232117,
                     -9.945659732524173e-20,
@@ -3989,7 +4157,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14857238975677489812,
+                "PrefabChildUID": 238975544881950497,
                 "LocalTransform": [
                     1.0,
                     1.0224614044318514e-8,
@@ -4022,7 +4190,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 356069847869818879,
+                "PrefabChildUID": 9831509258340357796,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4053,6 +4221,26 @@
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
+                    },
+                    {
+                        "UID": 4714654912448531901,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Shader script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ColorChange",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "RenderType": 2,
+                                "Target Color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "Children": []
@@ -4066,7 +4254,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11810857191874500497,
+                "PrefabChildUID": 93879546839655311,
                 "LocalTransform": [
                     0.9991914629936218,
                     0.038724567741155624,
@@ -4100,7 +4288,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16214380076657656712,
+                "PrefabChildUID": 13705765227887685271,
                 "LocalTransform": [
                     0.9999369978904724,
                     -0.007261499296873808,
@@ -4134,7 +4322,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 13106909952702835527,
+                "PrefabChildUID": 3955479348280464746,
                 "LocalTransform": [
                     1.0,
                     -1.2525623713146444e-13,
@@ -4167,7 +4355,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17672357979898844302,
+                "PrefabChildUID": 3285433591360507685,
                 "LocalTransform": [
                     0.0,
                     -2.682208730675484e-7,
@@ -4507,7 +4695,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16452491554602579741,
+                "PrefabChildUID": 6061679522127083656,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -4847,7 +5035,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 11698295475706621108,
+                "PrefabChildUID": 16931795344768792647,
                 "LocalTransform": [
                     1.0,
                     0.0,
@@ -5187,7 +5375,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7055896261394227475,
+                "PrefabChildUID": 12082107714367076751,
                 "LocalTransform": [
                     0.0,
                     -2.682209014892578e-7,
@@ -5527,7 +5715,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7107388501212414459,
+                "PrefabChildUID": 14392509190682608801,
                 "LocalTransform": [
                     1.0,
                     -1.595772403106821e-8,
@@ -5560,7 +5748,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 15854317996267409314,
+                "PrefabChildUID": 2876495129026773028,
                 "LocalTransform": [
                     -0.5921123027801514,
                     -0.2533455789089203,
@@ -5591,7 +5779,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5259487522519880604,
+                "PrefabChildUID": 15171358807119679747,
                 "LocalTransform": [
                     -0.6406479477882385,
                     -0.18148431181907654,
@@ -5624,7 +5812,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3492656190304044220,
+                "PrefabChildUID": 14705999769150990955,
                 "LocalTransform": [
                     -0.8505545854568481,
                     -0.29465579986572266,
@@ -5655,7 +5843,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3384679331555503335,
+                "PrefabChildUID": 2423602242436357277,
                 "LocalTransform": [
                     -0.9512537717819214,
                     0.29465559124946594,
@@ -5688,7 +5876,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16141818142389197102,
+                "PrefabChildUID": 14162929404137170484,
                 "LocalTransform": [
                     1.0,
                     9.121108951676629e-14,
@@ -5723,7 +5911,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3174205432615261897,
+                "PrefabChildUID": 5674636432140684948,
                 "LocalTransform": [
                     0.994645357131958,
                     0.06744921952486038,
@@ -5754,7 +5942,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10778615137834571019,
+                "PrefabChildUID": 2010258700043588606,
                 "LocalTransform": [
                     1.0,
                     -2.181747049689875e-8,
@@ -5785,7 +5973,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16451025499586023986,
+                "PrefabChildUID": 16655301080423379725,
                 "LocalTransform": [
                     1.0,
                     -4.364086336750006e-8,
@@ -5816,7 +6004,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2337112955164854701,
+                "PrefabChildUID": 16592983350379331876,
                 "LocalTransform": [
                     1.0,
                     -2.7755575615628914e-16,
@@ -5850,7 +6038,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9228409520297091792,
+                "PrefabChildUID": 6958610578476939791,
                 "LocalTransform": [
                     1.0,
                     -4.440892098500626e-16,
@@ -5884,7 +6072,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 14010558872001344591,
+                "PrefabChildUID": 15950607874875212065,
                 "LocalTransform": [
                     1.0,
                     1.1641613895108094e-8,
@@ -5917,7 +6105,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10222309805539088727,
+                "PrefabChildUID": 1214920303731693732,
                 "LocalTransform": [
                     1.0,
                     4.873847814224064e-8,
@@ -5950,7 +6138,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10396165302064613930,
+                "PrefabChildUID": 6951430221657957764,
                 "LocalTransform": [
                     1.0,
                     -1.1179881991691103e-17,
@@ -5981,7 +6169,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8428398952760442340,
+                "PrefabChildUID": 13593520996553812846,
                 "LocalTransform": [
                     1.0,
                     -1.029349642310296e-16,
@@ -6014,7 +6202,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16399813188798972099,
+                "PrefabChildUID": 4301854941338044158,
                 "LocalTransform": [
                     1.0,
                     2.4809253564921595e-16,
@@ -6045,7 +6233,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 28191058937130038,
+                "PrefabChildUID": 1195163735213440537,
                 "LocalTransform": [
                     1.0,
                     -5.984813089554564e-9,
@@ -6080,7 +6268,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8019074400968025477,
+                "PrefabChildUID": 10224337651384527323,
                 "LocalTransform": [
                     0.9996891021728516,
                     0.009821739979088306,
@@ -6113,7 +6301,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10049276009706511325,
+                "PrefabChildUID": 11369306024587143298,
                 "LocalTransform": [
                     0.9996891021728516,
                     -0.009821747429668903,
@@ -6146,7 +6334,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 7283408567493557120,
+                "PrefabChildUID": 11713830104539981170,
                 "LocalTransform": [
                     -0.05413007736206055,
                     0.7981477975845337,
@@ -6179,7 +6367,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17065178579563667327,
+                "PrefabChildUID": 3716670468011041517,
                 "LocalTransform": [
                     0.9648218154907227,
                     -0.02087346836924553,
@@ -6210,7 +6398,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1944945405091017490,
+                "PrefabChildUID": 16306355375929303556,
                 "LocalTransform": [
                     0.9959312081336975,
                     0.013582837767899036,
@@ -6241,7 +6429,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3206613758237119373,
+                "PrefabChildUID": 14780472939012522991,
                 "LocalTransform": [
                     1.0,
                     -5.852198228240013e-7,
@@ -6278,7 +6466,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2963783005397503408,
+                "PrefabChildUID": 8712570522581314562,
                 "LocalTransform": [
                     1.0,
                     3.9080623537302017e-7,
@@ -6315,7 +6503,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17719458295356143663,
+                "PrefabChildUID": 8774626062096694525,
                 "LocalTransform": [
                     0.9925069808959961,
                     0.07778257131576538,
@@ -6348,7 +6536,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 16294170768516116022,
+                "PrefabChildUID": 10308582455443465119,
                 "LocalTransform": [
                     1.0,
                     0.0000010577787179499865,
@@ -6381,7 +6569,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 41416048847964049,
+                "PrefabChildUID": 14555467057542215206,
                 "LocalTransform": [
                     1.0,
                     6.835907697677612e-7,
@@ -6414,7 +6602,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3503796957714867092,
+                "PrefabChildUID": 16269830205881014262,
                 "LocalTransform": [
                     1.0,
                     9.869108907878399e-7,
@@ -6447,7 +6635,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10032041551292170495,
+                "PrefabChildUID": 17684114483802227536,
                 "LocalTransform": [
                     1.0,
                     9.444484021514654e-7,
@@ -6480,7 +6668,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 2092877549156518034,
+                "PrefabChildUID": 7020297698315583707,
                 "LocalTransform": [
                     0.9999897480010986,
                     -0.0039840941317379475,
@@ -6513,7 +6701,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12292858552992759052,
+                "PrefabChildUID": 1685303482610481038,
                 "LocalTransform": [
                     0.9999999403953552,
                     -0.0000012352538760751486,
@@ -6546,7 +6734,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17513479139665615531,
+                "PrefabChildUID": 16575846866052104734,
                 "LocalTransform": [
                     0.9999999403953552,
                     -6.581831257790327e-7,
@@ -6579,7 +6767,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 10197850115760057053,
+                "PrefabChildUID": 8132806815348650041,
                 "LocalTransform": [
                     0.9999999403953552,
                     -8.398201885029266e-7,
@@ -6612,7 +6800,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1256988631246377600,
+                "PrefabChildUID": 5921878969591962363,
                 "LocalTransform": [
                     0.9999999403953552,
                     -6.831542123109102e-7,
@@ -6645,7 +6833,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 9660278927034531455,
+                "PrefabChildUID": 6155865674472235170,
                 "LocalTransform": [
                     0.9999896883964539,
                     0.003984260372817516,
@@ -6678,7 +6866,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 1330743915752282642,
+                "PrefabChildUID": 10329772148930161809,
                 "LocalTransform": [
                     0.9917280077934265,
                     -0.051430828869342804,
@@ -6711,7 +6899,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5764679239681557133,
+                "PrefabChildUID": 7392278106715205769,
                 "LocalTransform": [
                     1.0,
                     -2.214801497757435e-8,
@@ -6742,7 +6930,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3785965915032257712,
+                "PrefabChildUID": 9175937028498096331,
                 "LocalTransform": [
                     1.0,
                     8.573988452553749e-8,
@@ -6773,7 +6961,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8027328164823508795,
+                "PrefabChildUID": 434922022621261822,
                 "LocalTransform": [
                     1.0,
                     -2.4601467885077e-7,
@@ -6804,7 +6992,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 861313938711730926,
+                "PrefabChildUID": 16883801584321883917,
                 "LocalTransform": [
                     1.0,
                     5.2299583330750465e-8,
@@ -6835,7 +7023,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 5876625515714423433,
+                "PrefabChildUID": 11923713706491321636,
                 "LocalTransform": [
                     0.9999999403953552,
                     -3.608874976634979e-8,
@@ -6866,7 +7054,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 8177758594423143104,
+                "PrefabChildUID": 14078251836453373443,
                 "LocalTransform": [
                     0.9999999403953552,
                     3.5329139791429043e-7,
@@ -6897,7 +7085,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 291178991273358539,
+                "PrefabChildUID": 6424153828396689270,
                 "LocalTransform": [
                     0.9999999403953552,
                     3.492459099696532e-10,
@@ -6928,7 +7116,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12259619824933159934,
+                "PrefabChildUID": 17392741154993415877,
                 "LocalTransform": [
                     0.9999999403953552,
                     2.601882620467677e-8,
@@ -6959,7 +7147,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 3818194957223056153,
+                "PrefabChildUID": 1909145301700080413,
                 "LocalTransform": [
                     0.9999999403953552,
                     5.820762621899789e-11,
@@ -6990,7 +7178,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 17808497284048643792,
+                "PrefabChildUID": 15094339449177278644,
                 "LocalTransform": [
                     0.9999999403953552,
                     6.28642737865448e-9,
@@ -7021,7 +7209,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 6753874488076310607,
+                "PrefabChildUID": 4907059110030085406,
                 "LocalTransform": [
                     0.9854521751403809,
                     0.16920489072799683,
@@ -7054,7 +7242,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 61190686586457442,
+                "PrefabChildUID": 12168532361332978477,
                 "LocalTransform": [
                     0.9993264079093933,
                     -0.004318122752010822,
@@ -7087,7 +7275,7 @@
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
-                "PrefabChildUID": 12767930108270658396,
+                "PrefabChildUID": 6939304928704663620,
                 "LocalTransform": [
                     1.0,
                     -1.0244549031313e-7,

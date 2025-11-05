@@ -1,20 +1,20 @@
 {
     "Prefab": {
         "UID": 1649923349343818,
-        "VersionUID": 10211082381463428462,
+        "VersionUID": 18356078704862388334,
         "Name": "Destructible_Stump_2_LP_v02",
         "GameObjects": [
             {
-                "UID": 3759610065239732283,
-                "ParentUID": 1821322504251350322,
+                "UID": 10157357740371524219,
+                "ParentUID": 4008689787552526507,
                 "Name": "Destructible_Stump_2_LP_v02",
-                "Mobility": 1,
+                "Mobility": 0,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "PrefabUID": 1649923349343818,
-                "PrefabVersionUID": 10211082381463428462,
+                "PrefabVersionUID": 18356078704862388334,
                 "PrefabChildUID": 9834539136298810976,
                 "LocalTransform": [
                     1.0,
@@ -36,7 +36,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6389584734126955501,
+                        "UID": 11575003898309837859,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -48,7 +48,7 @@
                         "Additive": false
                     },
                     {
-                        "UID": 1644056653922009872,
+                        "UID": 18351608280111699082,
                         "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -66,7 +66,7 @@
                         ]
                     },
                     {
-                        "UID": 0,
+                        "UID": 4964512779484898629,
                         "Type": 13,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -90,7 +90,7 @@
                         ]
                     },
                     {
-                        "UID": 4008193517511812500,
+                        "UID": 6821605472195128744,
                         "Type": 18,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -103,13 +103,13 @@
                     }
                 ],
                 "Children": [
-                    7286511259212864202,
-                    11450462843133177821
+                    11014744928695802450,
+                    1827220358751600748
                 ]
             },
             {
-                "UID": 7286511259212864202,
-                "ParentUID": 3759610065239732283,
+                "UID": 11014744928695802450,
+                "ParentUID": 10157357740371524219,
                 "Name": "DestroyedMesh",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -137,13 +137,13 @@
                 ],
                 "Components": [
                     {
-                        "UID": 7676026374877616517,
+                        "UID": 5262384116892655820,
                         "Type": 1,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Mesh",
                         "Mesh": 1119199871851523,
-                        "Material": 0,
+                        "Material": 1396507909390902,
                         "RenderMode": 0,
                         "ProduceShadows": true,
                         "Additive": false
@@ -152,8 +152,8 @@
                 "Children": []
             },
             {
-                "UID": 11450462843133177821,
-                "ParentUID": 3759610065239732283,
+                "UID": 1827220358751600748,
+                "ParentUID": 10157357740371524219,
                 "Name": "PT_Destruction_Smoke",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -181,7 +181,7 @@
                 ],
                 "Components": [
                     {
-                        "UID": 8680619562555846527,
+                        "UID": 14497082099527447307,
                         "Type": 25,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -475,13 +475,14 @@
                                 ],
                                 "RenderPriority": 11,
                                 "blendingMode": 1,
-                                "colorIntensity": 0.4300000071525574
+                                "colorIntensity": 0.4300000071525574,
+                                "linkToParent": false
                             },
                             {
                                 "EmitterTag": "Center",
                                 "UseTexture": true,
                                 "Material": 1300000000000000,
-                                "Texture": 1207264774640255,
+                                "Texture": 1284393453266897,
                                 "Addons": [
                                     {
                                         "Enabled": true,
@@ -726,10 +727,6 @@
                                         "Rows": 2,
                                         "Columns": 2,
                                         "AnimationSpeed": 30.0,
-                                        "MinXTiles": 1,
-                                        "MaxXTiles": 4,
-                                        "MinYTiles": 2,
-                                        "MaxYTiles": 3,
                                         "RandomizeTiles": true
                                     },
                                     {
@@ -776,7 +773,8 @@
                                 ],
                                 "RenderPriority": 5,
                                 "blendingMode": 1,
-                                "colorIntensity": 0.22499999403953552
+                                "colorIntensity": 0.22499999403953552,
+                                "linkToParent": false
                             }
                         ]
                     }
