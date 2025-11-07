@@ -10904,7 +10904,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -11046,7 +11046,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_Catapult" ID="{E36D01F7-E115-439C-8630-EA6084ADDE40}" ShortID="325613135">
+							<PropertyList>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default_Attenuation" ID="{FF1F4EBA-05B6-4C37-BCB2-D5B3DA57495D}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
 								</Reference>
@@ -11187,6 +11198,7 @@
 					<ChildrenList>
 						<Sound Name="SFX_Water_02" ID="{D24AC443-2ECA-4EF9-ABAE-18A3DCD1A4C0}" ShortID="449627822">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-400</Value>
@@ -11194,11 +11206,14 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Water_Attenuation" ID="{3241C2AC-3E70-4B51-AE74-42BDCD909245}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
 								</Reference>
@@ -11222,6 +11237,7 @@
 						<Sound Name="SFX_Wind_03" ID="{4227C375-948D-4D71-8DEC-AE9A4F81F445}" ShortID="835374282">
 							<PropertyList>
 								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="3"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-180</Value>
@@ -11260,6 +11276,7 @@
 						<Sound Name="SFX_Wind_04" ID="{FCF5D9D6-F8F9-4832-92A9-C67F437B2E55}" ShortID="1047751128">
 							<PropertyList>
 								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="3"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -11396,9 +11413,10 @@
 						<Sound Name="SFX_Water_04" ID="{D7316529-3411-4484-988E-172EBD43B494}" ShortID="452219735">
 							<PropertyList>
 								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -11431,7 +11449,18 @@
 				<Folder Name="Boss" ID="{E46E0028-B1E7-4297-A237-4F4F2FD3938B}" ShortID="650113701">
 					<ChildrenList>
 						<Sound Name="SFX_Water_03" ID="{ED1E0506-C441-47E0-B8D7-5D1422DB7133}" ShortID="101101742">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Water_Attenuation" ID="{3241C2AC-3E70-4B51-AE74-42BDCD909245}" WorkUnitID="{7B6D69B1-EF03-4645-9CF8-7E7105A91E72}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
 								</Reference>
