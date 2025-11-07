@@ -36,6 +36,36 @@
         ],
         "GameObjects": [
             {
+                "UID": 14801668349193356208,
+                "ParentUID": 3209473123229898032,
+                "Name": "MULTISELECT_DUMMY",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
                 "UID": 16268608577120507301,
                 "ParentUID": 3355083529253807717,
                 "Name": "new Game Object",
@@ -205,8 +235,8 @@
                 ]
             },
             {
-                "UID": 14801668349193356208,
-                "ParentUID": 3209473123229898032,
+                "UID": 576039549441549799,
+                "ParentUID": 18049417582991836604,
                 "Name": "MULTISELECT_DUMMY",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -365,9 +395,9 @@
                 "Children": []
             },
             {
-                "UID": 576039549441549799,
-                "ParentUID": 18049417582991836604,
-                "Name": "MULTISELECT_DUMMY",
+                "UID": 6095324788316057197,
+                "ParentUID": 3355083529253807717,
+                "Name": "MusicManager",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -391,37 +421,37 @@
                     0.0,
                     1.0
                 ],
-                "Components": [],
-                "Children": []
-            },
-            {
-                "UID": 8885573196576391382,
-                "ParentUID": 17429903124395306502,
-                "Name": "MULTISELECT_DUMMY",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                "Components": [
+                    {
+                        "UID": 7277765666384839056,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MusicManager",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "First audio event": 327831964,
+                                "Second audio event": 1779817015,
+                                "Third audio event": 65769146
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 5781477120478326042,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
                 ],
-                "Components": [],
                 "Children": []
             },
             {
@@ -525,68 +555,8 @@
                 "Children": []
             },
             {
-                "UID": 6095324788316057197,
-                "ParentUID": 3355083529253807717,
-                "Name": "MusicManager",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 7277765666384839056,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "MusicManager",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "First audio event": 327831964,
-                                "Second audio event": 1779817015,
-                                "Third audio event": 65769146
-                            }
-                        ]
-                    },
-                    {
-                        "UID": 5781477120478326042,
-                        "Type": 18,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Audio Source",
-                        "DefaultEvent": 0,
-                        "Volume": 1.0,
-                        "Pitch": 0.5,
-                        "Spatialization": 0.0,
-                        "PlayOnStart": false
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 16266592332169781521,
-                "ParentUID": 8472622985074546978,
+                "UID": 8885573196576391382,
+                "ParentUID": 17429903124395306502,
                 "Name": "MULTISELECT_DUMMY",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -690,6 +660,66 @@
                 ]
             },
             {
+                "UID": 16266592332169781521,
+                "ParentUID": 8472622985074546978,
+                "Name": "MULTISELECT_DUMMY",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
+                "UID": 14089691907806863999,
+                "ParentUID": 9175279694572925204,
+                "Name": "MULTISELECT_DUMMY",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [],
+                "Children": []
+            },
+            {
                 "UID": 4193966577530141141,
                 "ParentUID": 13239605436121162506,
                 "Name": "ControllerButton",
@@ -790,68 +820,8 @@
                 "Children": []
             },
             {
-                "UID": 14089691907806863999,
-                "ParentUID": 9175279694572925204,
-                "Name": "MULTISELECT_DUMMY",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
                 "UID": 9002255326346380617,
                 "ParentUID": 7203444068376107950,
-                "Name": "MULTISELECT_DUMMY",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [],
-                "Children": []
-            },
-            {
-                "UID": 12507836017188471693,
-                "ParentUID": 18290872824488144091,
                 "Name": "MULTISELECT_DUMMY",
                 "Mobility": 1,
                 "SelectParent": false,
@@ -918,13 +888,13 @@
                 "Children": []
             },
             {
-                "UID": 5374491005831033335,
-                "ParentUID": 13706715131137638225,
-                "Name": "MainMenuPanel",
+                "UID": 12507836017188471693,
+                "ParentUID": 18290872824488144091,
+                "Name": "MULTISELECT_DUMMY",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
-                "WasEnabled": false,
+                "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
                     1.0,
@@ -938,49 +908,14 @@
                     0.0,
                     0.0,
                     1.0,
-                    -1.0,
+                    0.0,
                     0.0,
                     0.0,
                     0.0,
                     1.0
                 ],
-                "Components": [
-                    {
-                        "UID": 5239257228609690736,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "MainMenuSelectorScript",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "Panel Name": "PauseMenuPanel"
-                            }
-                        ]
-                    },
-                    {
-                        "UID": 15891238215221389677,
-                        "Type": 18,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Audio Source",
-                        "DefaultEvent": 0,
-                        "Volume": 1.0,
-                        "Pitch": 0.5,
-                        "Spatialization": 0.0,
-                        "PlayOnStart": false
-                    }
-                ],
-                "Children": [
-                    6329843691220854716,
-                    13914836067117832593,
-                    2687466495450007069,
-                    815505454393416511,
-                    15360946628732887225,
-                    2111589719317607357
-                ]
+                "Components": [],
+                "Children": []
             },
             {
                 "UID": 2464187575308884743,
@@ -1052,6 +987,146 @@
                     }
                 ],
                 "Children": []
+            },
+            {
+                "UID": 5374491005831033335,
+                "ParentUID": 13706715131137638225,
+                "Name": "MainMenuPanel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 5239257228609690736,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "MainMenuSelectorScript",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Panel Name": "PauseMenuPanel"
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 15891238215221389677,
+                        "Type": 18,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Audio Source",
+                        "DefaultEvent": 0,
+                        "Volume": 1.0,
+                        "Pitch": 0.5,
+                        "Spatialization": 0.0,
+                        "PlayOnStart": false
+                    }
+                ],
+                "Children": [
+                    6329843691220854716,
+                    13914836067117832593,
+                    2687466495450007069,
+                    815505454393416511,
+                    15360946628732887225,
+                    2111589719317607357
+                ]
+            },
+            {
+                "UID": 8293179031328193983,
+                "ParentUID": 14507621488754123348,
+                "Name": "OptionsKeyboardPanel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": false,
+                "WasEnabled": false,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 7526072934897975801,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            1280.0,
+                            720.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 2115831824200756185,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1278436117788934,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": [
+                    16371723436897603340,
+                    5056118671221318516,
+                    1006354745529712283
+                ]
             },
             {
                 "UID": 6329843691220854716,
@@ -1159,81 +1234,6 @@
                 ]
             },
             {
-                "UID": 8293179031328193983,
-                "ParentUID": 14507621488754123348,
-                "Name": "OptionsKeyboardPanel",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": false,
-                "WasEnabled": false,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 7526072934897975801,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            1280.0,
-                            720.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 2115831824200756185,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1278436117788934,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    }
-                ],
-                "Children": [
-                    16371723436897603340,
-                    5056118671221318516,
-                    1006354745529712283
-                ]
-            },
-            {
                 "UID": 13706715131137638225,
                 "ParentUID": 3355083529253807717,
                 "Name": "Canvas",
@@ -1297,7 +1297,7 @@
                         "RenderMode": 0
                     },
                     {
-                        "UID": 4690505345810161834,
+                        "UID": 9880762748820333814,
                         "Type": 20,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1614,106 +1614,6 @@
                 "Children": []
             },
             {
-                "UID": 12278625195789457882,
-                "ParentUID": 6381940659352053411,
-                "Name": "KeyboardButton",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    -421.34033203125,
-                    0.0,
-                    1.0,
-                    0.0,
-                    225.4365234375,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12208351648600928627,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            -421.34033203125,
-                            225.4365234375
-                        ],
-                        "Size": [
-                            75.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 9512682813772375861,
-                        "Type": 7,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Script",
-                        "Scripts": [
-                            {
-                                "Script Name": "ButtonScript",
-                                "Enabled": true,
-                                "WasEnabled": true
-                            }
-                        ]
-                    },
-                    {
-                        "UID": 684424058734096230,
-                        "Type": 17,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Button",
-                        "IsInteractable": true,
-                        "DefaultColor": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ],
-                        "HoverColor": [
-                            0.0,
-                            1.0,
-                            1.0
-                        ],
-                        "ClickedColor": [
-                            1.0,
-                            1.0,
-                            0.0
-                        ],
-                        "DisabledColor": [
-                            0.5,
-                            0.5,
-                            0.5
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 2687466495450007069,
                 "ParentUID": 5374491005831033335,
                 "Name": "MenuItem_Credits",
@@ -1819,6 +1719,250 @@
                 ]
             },
             {
+                "UID": 12278625195789457882,
+                "ParentUID": 6381940659352053411,
+                "Name": "KeyboardButton",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    -421.34033203125,
+                    0.0,
+                    1.0,
+                    0.0,
+                    225.4365234375,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12208351648600928627,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            -421.34033203125,
+                            225.4365234375
+                        ],
+                        "Size": [
+                            75.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 9512682813772375861,
+                        "Type": 7,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "ButtonScript",
+                                "Enabled": true,
+                                "WasEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "UID": 684424058734096230,
+                        "Type": 17,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Button",
+                        "IsInteractable": true,
+                        "DefaultColor": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "HoverColor": [
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "ClickedColor": [
+                            1.0,
+                            1.0,
+                            0.0
+                        ],
+                        "DisabledColor": [
+                            0.5,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10374908636067270459,
+                "ParentUID": 815505454393416511,
+                "Name": "ExitLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.5,
+                    0.0,
+                    0.0,
+                    5.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    5.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6848295488745046766,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            406.0,
+                            -78.0
+                        ],
+                        "Size": [
+                            100.0,
+                            40.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 11238662254534402685,
+                        "Type": 10,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Exit",
+                        "FontSize": 50,
+                        "FontUID": 1965743124100730,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 4554354621157200041,
+                "ParentUID": 6329843691220854716,
+                "Name": "LeftArrow",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.9478897452354431,
+                    0.0,
+                    0.0,
+                    -100.0,
+                    0.0,
+                    0.9445434212684631,
+                    0.0,
+                    -5.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    -0.10000000149011612,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 6962073958806532320,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            280.0,
+                            27.0
+                        ],
+                        "Size": [
+                            25.0,
+                            25.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 17735624745595387872,
+                        "Type": 16,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Image",
+                        "TextureUID": 1210069086411047,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 1006354745529712283,
                 "ParentUID": 8293179031328193983,
                 "Name": "ControllerButton",
@@ -1919,25 +2063,25 @@
                 "Children": []
             },
             {
-                "UID": 4554354621157200041,
-                "ParentUID": 6329843691220854716,
-                "Name": "LeftArrow",
+                "UID": 14682139249907130774,
+                "ParentUID": 2687466495450007069,
+                "Name": "RightArrow",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
-                    0.9478897452354431,
+                    -1.0,
+                    -5.642599489874556e-7,
+                    -0.0,
+                    75.0,
+                    5.642599489874556e-7,
+                    -1.0,
                     0.0,
                     0.0,
-                    -100.0,
                     0.0,
-                    0.9445434212684631,
-                    0.0,
-                    -5.0,
-                    0.0,
-                    0.0,
+                    -0.0,
                     1.0,
                     -0.10000000149011612,
                     0.0,
@@ -1947,14 +2091,14 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6962073958806532320,
+                        "UID": 17495832052759551973,
                         "Type": 8,
                         "Enabled": true,
                         "WasEnabled": true,
                         "Name": "Transform 2D",
                         "Position": [
-                            280.0,
-                            27.0
+                            490.0,
+                            -43.0
                         ],
                         "Size": [
                             25.0,
@@ -1974,7 +2118,7 @@
                         "OrderInCanvas": 0
                     },
                     {
-                        "UID": 17735624745595387872,
+                        "UID": 4683516191149683517,
                         "Type": 16,
                         "Enabled": true,
                         "WasEnabled": true,
@@ -1984,79 +2128,6 @@
                             1.0,
                             1.0,
                             1.0
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 10374908636067270459,
-                "ParentUID": 815505454393416511,
-                "Name": "ExitLabel",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.5,
-                    0.0,
-                    0.0,
-                    5.0,
-                    0.0,
-                    0.5,
-                    0.0,
-                    5.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 6848295488745046766,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            406.0,
-                            -78.0
-                        ],
-                        "Size": [
-                            100.0,
-                            40.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 11238662254534402685,
-                        "Type": 10,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Label",
-                        "Text": "Exit",
-                        "FontSize": 50,
-                        "FontUID": 1965743124100730,
-                        "FontColor": [
-                            0.0,
-                            0.0,
-                            0.0
                         ]
                     }
                 ],
@@ -2157,77 +2228,6 @@
                             0.5,
                             0.5,
                             0.5
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 14682139249907130774,
-                "ParentUID": 2687466495450007069,
-                "Name": "RightArrow",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    -1.0,
-                    -5.642599489874556e-7,
-                    -0.0,
-                    75.0,
-                    5.642599489874556e-7,
-                    -1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    -0.0,
-                    1.0,
-                    -0.10000000149011612,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 17495832052759551973,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            490.0,
-                            -43.0
-                        ],
-                        "Size": [
-                            25.0,
-                            25.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 4683516191149683517,
-                        "Type": 16,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1210069086411047,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
                         ]
                     }
                 ],
@@ -2890,6 +2890,79 @@
                 "Children": []
             },
             {
+                "UID": 17168247753033077237,
+                "ParentUID": 13914836067117832593,
+                "Name": "OptionsLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.5,
+                    0.0,
+                    0.0,
+                    -12.0,
+                    0.0,
+                    0.5,
+                    0.0,
+                    8.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 958081966599425240,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            385.6000061035156,
+                            0.7739639282226563
+                        ],
+                        "Size": [
+                            100.0,
+                            30.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 2602432658748981794,
+                        "Type": 10,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "Options",
+                        "FontSize": 50,
+                        "FontUID": 1965743124100730,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
                 "UID": 5056118671221318516,
                 "ParentUID": 8293179031328193983,
                 "Name": "VideoButton",
@@ -2984,79 +3057,6 @@
                             0.5,
                             0.5,
                             0.5
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
-                "UID": 17168247753033077237,
-                "ParentUID": 13914836067117832593,
-                "Name": "OptionsLabel",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    0.5,
-                    0.0,
-                    0.0,
-                    -12.0,
-                    0.0,
-                    0.5,
-                    0.0,
-                    8.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 958081966599425240,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            385.6000061035156,
-                            0.7739639282226563
-                        ],
-                        "Size": [
-                            100.0,
-                            30.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 2602432658748981794,
-                        "Type": 10,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Label",
-                        "Text": "Options",
-                        "FontSize": 50,
-                        "FontUID": 1965743124100730,
-                        "FontColor": [
-                            0.0,
-                            0.0,
-                            0.0
                         ]
                     }
                 ],
@@ -3223,101 +3223,6 @@
                 "Children": []
             },
             {
-                "UID": 14035274872403504777,
-                "ParentUID": 2111589719317607357,
-                "Name": "Logo",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.25,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.649999976158142,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    -1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 16803402728120879295,
-                        "Type": 8,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            0.0,
-                            0.0
-                        ],
-                        "Size": [
-                            400.0,
-                            200.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 9302484222403616448,
-                        "Type": 16,
-                        "Enabled": false,
-                        "WasEnabled": true,
-                        "Name": "Image",
-                        "TextureUID": 1242812384590720,
-                        "Color": [
-                            1.0,
-                            1.0,
-                            1.0
-                        ]
-                    },
-                    {
-                        "UID": 8802328062360163819,
-                        "Type": 26,
-                        "Enabled": true,
-                        "WasEnabled": false,
-                        "Name": "Shader script",
-                        "Scripts": [
-                            {
-                                "Script Name": "UIFadeInOut",
-                                "Enabled": true,
-                                "WasEnabled": true,
-                                "RenderType": 4,
-                                "Start visible": false,
-                                "Fade in duration": 0.5,
-                                "Fade in opacity": 1.0,
-                                "Fade out duration": 1.0,
-                                "Fade out opacity": 0.0,
-                                "Automatic fade in": true,
-                                "Fade in start": 0.5,
-                                "Automatic fade out": true,
-                                "Fade out start": 3.5
-                            }
-                        ]
-                    }
-                ],
-                "Children": []
-            },
-            {
                 "UID": 9840368248733135196,
                 "ParentUID": 13914836067117832593,
                 "Name": "LeftArrow",
@@ -3389,9 +3294,9 @@
                 "Children": []
             },
             {
-                "UID": 2111589719317607357,
-                "ParentUID": 5374491005831033335,
-                "Name": "FadeInOut",
+                "UID": 14035274872403504777,
+                "ParentUID": 2111589719317607357,
+                "Name": "Logo",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
@@ -3409,7 +3314,7 @@
                     0.0,
                     0.0,
                     1.0,
-                    0.0,
+                    -1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -3417,28 +3322,71 @@
                 ],
                 "Components": [
                     {
-                        "UID": 6251091805581493344,
-                        "Type": 7,
+                        "UID": 16803402728120879295,
+                        "Type": 8,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Script",
+                        "Name": "Transform 2D",
+                        "Position": [
+                            0.0,
+                            0.0
+                        ],
+                        "Size": [
+                            500.0,
+                            350.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 9302484222403616448,
+                        "Type": 16,
+                        "Enabled": false,
+                        "WasEnabled": false,
+                        "Name": "Image",
+                        "TextureUID": 1242812384590720,
+                        "Color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "UID": 8802328062360163819,
+                        "Type": 26,
+                        "Enabled": true,
+                        "WasEnabled": false,
+                        "Name": "Shader script",
                         "Scripts": [
                             {
-                                "Script Name": "NameDisplay",
+                                "Script Name": "UIFadeInOut",
                                 "Enabled": true,
                                 "WasEnabled": true,
-                                "Show automatically": false,
-                                "Show delay": 2.0,
-                                "Second show delay": 0.20000000298023224,
-                                "Show duration": 5.0,
-                                "Audio to play when showing": 0
+                                "RenderType": 4,
+                                "Start visible": false,
+                                "Fade in duration": 0.5,
+                                "Fade in opacity": 1.0,
+                                "Fade out duration": 1.0,
+                                "Fade out opacity": 0.0,
+                                "Automatic fade in": true,
+                                "Fade in start": 0.5,
+                                "Automatic fade out": true,
+                                "Fade out start": 3.5
                             }
                         ]
                     }
                 ],
-                "Children": [
-                    14035274872403504777
-                ]
+                "Children": []
             },
             {
                 "UID": 1700592134679604509,
@@ -3512,21 +3460,21 @@
                 "Children": []
             },
             {
-                "UID": 10178089084698447096,
-                "ParentUID": 6329843691220854716,
-                "Name": "NewAdventureLabel",
+                "UID": 2111589719317607357,
+                "ParentUID": 5374491005831033335,
+                "Name": "FadeInOut",
                 "Mobility": 1,
                 "SelectParent": false,
                 "Enabled": true,
                 "WasEnabled": true,
                 "NavmeshValid": false,
                 "LocalTransform": [
-                    0.800000011920929,
+                    1.0,
                     0.0,
                     0.0,
-                    -15.0,
                     0.0,
-                    0.800000011920929,
+                    0.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0,
@@ -3540,90 +3488,28 @@
                 ],
                 "Components": [
                     {
-                        "UID": 12590711434626814274,
-                        "Type": 8,
+                        "UID": 6251091805581493344,
+                        "Type": 7,
                         "Enabled": true,
                         "WasEnabled": true,
-                        "Name": "Transform 2D",
-                        "Position": [
-                            382.0,
-                            32.0
-                        ],
-                        "Size": [
-                            150.0,
-                            30.0
-                        ],
-                        "Pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "Anchors": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "RenderAnchors": true,
-                        "OrderInCanvas": 0
-                    },
-                    {
-                        "UID": 3181689959653808189,
-                        "Type": 10,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Label",
-                        "Text": "New Adventure\n",
-                        "FontSize": 30,
-                        "FontUID": 1965743124100730,
-                        "FontColor": [
-                            0.0,
-                            0.0,
-                            0.0
+                        "Name": "Script",
+                        "Scripts": [
+                            {
+                                "Script Name": "NameDisplay",
+                                "Enabled": true,
+                                "WasEnabled": true,
+                                "Show automatically": false,
+                                "Show delay": 2.0,
+                                "Second show delay": 0.20000000298023224,
+                                "Show duration": 5.0,
+                                "Audio to play when showing": 0
+                            }
                         ]
                     }
                 ],
-                "Children": []
-            },
-            {
-                "UID": 16024014943558038628,
-                "ParentUID": 3355083529253807717,
-                "Name": "BackgroundVideo",
-                "Mobility": 1,
-                "SelectParent": false,
-                "Enabled": true,
-                "WasEnabled": true,
-                "NavmeshValid": false,
-                "LocalTransform": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "Components": [
-                    {
-                        "UID": 12830403168324879171,
-                        "Type": 27,
-                        "Enabled": true,
-                        "WasEnabled": true,
-                        "Name": "Video",
-                        "Video Name": "VID_MainMenu_Background",
-                        "Loop": true,
-                        "AutoPlay": true
-                    }
-                ],
-                "Children": []
+                "Children": [
+                    14035274872403504777
+                ]
             },
             {
                 "UID": 2835218376816101123,
@@ -3691,6 +3577,120 @@
                             1.0,
                             1.0,
                             1.0
+                        ]
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 16024014943558038628,
+                "ParentUID": 3355083529253807717,
+                "Name": "BackgroundVideo",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12830403168324879171,
+                        "Type": 27,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Video",
+                        "Video Name": "VID_MainMenu_Background",
+                        "Loop": true,
+                        "AutoPlay": true
+                    }
+                ],
+                "Children": []
+            },
+            {
+                "UID": 10178089084698447096,
+                "ParentUID": 6329843691220854716,
+                "Name": "NewAdventureLabel",
+                "Mobility": 1,
+                "SelectParent": false,
+                "Enabled": true,
+                "WasEnabled": true,
+                "NavmeshValid": false,
+                "LocalTransform": [
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    -15.0,
+                    0.0,
+                    0.800000011920929,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "Components": [
+                    {
+                        "UID": 12590711434626814274,
+                        "Type": 8,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Transform 2D",
+                        "Position": [
+                            382.0,
+                            32.0
+                        ],
+                        "Size": [
+                            150.0,
+                            30.0
+                        ],
+                        "Pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "Anchors": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "RenderAnchors": true,
+                        "OrderInCanvas": 0
+                    },
+                    {
+                        "UID": 3181689959653808189,
+                        "Type": 10,
+                        "Enabled": true,
+                        "WasEnabled": true,
+                        "Name": "Label",
+                        "Text": "New Adventure\n",
+                        "FontSize": 30,
+                        "FontUID": 1965743124100730,
+                        "FontColor": [
+                            0.0,
+                            0.0,
+                            0.0
                         ]
                     }
                 ],
