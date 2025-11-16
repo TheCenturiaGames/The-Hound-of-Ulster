@@ -191,6 +191,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Tutorial_Morrigan" ID="{1918502B-C0BA-4A99-8A8F-3FF23E718E2D}" ShortID="166516141">
+							<PropertyList>
+								<Property Name="PlaybackSpeed" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9FB71488-A1FD-4671-AC51-D3922C439477}"/>
@@ -238,7 +245,7 @@
 							<ChildrenList>
 								<MusicSegment Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{9D785295-97E4-43A1-90F0-1B1B29B9E35F}" ShortID="426082856">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="83509.8958333337"/>
+										<Property Name="EndPosition" Type="Real64" Value="87279.8363883472"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -285,7 +292,7 @@
 																			<Local>
 																				<MusicClip Name="The Hound Of Ulster_AT_KM1_Tutorial_Morrígan" ID="{91400F8B-D41F-49E7-8208-17486AB6E154}">
 																					<PropertyList>
-																						<Property Name="BeginTrimOffset" Type="Real64" Value="21313.7195530223"/>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="21085.2383072639"/>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="83509.8958333333"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
@@ -298,7 +305,7 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>21.31372</XPos>
+																										<XPos>21.08524</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
@@ -317,7 +324,7 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>21.31372</XPos>
+																										<XPos>21.08524</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
@@ -336,7 +343,7 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>21.31372</XPos>
+																										<XPos>21.08524</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
@@ -365,7 +372,11 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{4806E180-4692-4F64-91D7-AAAD3ECC4244}"/>
+													<MusicCue Name="Entry Cue" ID="{4806E180-4692-4F64-91D7-AAAD3ECC4244}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="21248.7558555342"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
